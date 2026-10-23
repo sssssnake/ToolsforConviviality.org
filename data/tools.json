@@ -576,5 +576,185 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "firefox",
+    "name": "Firefox",
+    "url": "https://www.firefox.com"
+  },
+  {
+    "slug": "tor-browser",
+    "name": "Tor Browser",
+    "url": "https://www.torproject.org/download/"
+  },
+  {
+    "slug": "librewolf",
+    "name": "LibreWolf",
+    "url": "https://librewolf.net"
+  },
+  {
+    "slug": "mullvad-browser",
+    "name": "Mullvad Browser",
+    "url": "https://mullvad.net/en/browser"
+  },
+  {
+    "slug": "ladybird",
+    "name": "Ladybird",
+    "url": "https://ladybird.org"
+  },
+  {
+    "slug": "f-droid",
+    "name": "F-Droid",
+    "url": "https://f-droid.org"
+  },
+  {
+    "slug": "obtainium",
+    "name": "Obtainium",
+    "url": "https://obtainium.imranr.dev"
+  },
+  {
+    "slug": "aurora-store",
+    "name": "Aurora Store",
+    "url": "https://auroraoss.com"
+  },
+  {
+    "slug": "izzyondroid",
+    "name": "IzzyOnDroid",
+    "url": "https://apt.izzysoft.de/fdroid/"
+  },
+  {
+    "slug": "flathub",
+    "name": "Flathub",
+    "url": "https://flathub.org"
+  },
+  {
+    "slug": "vlc",
+    "name": "VLC",
+    "url": "https://www.videolan.org/vlc/"
+  },
+  {
+    "slug": "jellyfin",
+    "name": "Jellyfin",
+    "url": "https://jellyfin.org"
+  },
+  {
+    "slug": "navidrome",
+    "name": "Navidrome",
+    "url": "https://www.navidrome.org"
+  },
+  {
+    "slug": "mpv",
+    "name": "mpv",
+    "url": "https://mpv.io"
+  },
+  {
+    "slug": "funkwhale",
+    "name": "Funkwhale",
+    "url": "https://funkwhale.audio"
+  },
+  {
+    "slug": "home-assistant",
+    "name": "Home Assistant",
+    "url": "https://www.home-assistant.io"
+  },
+  {
+    "slug": "esphome",
+    "name": "ESPHome",
+    "url": "https://esphome.io"
+  },
+  {
+    "slug": "zigbee2mqtt",
+    "name": "Zigbee2MQTT",
+    "url": "https://www.zigbee2mqtt.io"
+  },
+  {
+    "slug": "pi-hole",
+    "name": "Pi-hole",
+    "url": "https://pi-hole.net"
+  },
+  {
+    "slug": "openhab",
+    "name": "openHAB",
+    "url": "https://www.openhab.org"
+  },
+  {
+    "slug": "libreoffice",
+    "name": "LibreOffice",
+    "url": "https://www.libreoffice.org"
+  },
+  {
+    "slug": "onlyoffice",
+    "name": "ONLYOFFICE",
+    "url": "https://www.onlyoffice.com"
+  },
+  {
+    "slug": "collabora-online",
+    "name": "Collabora Online",
+    "url": "https://www.collaboraonline.com"
+  },
+  {
+    "slug": "etherpad",
+    "name": "Etherpad",
+    "url": "https://etherpad.org"
+  },
+  {
+    "slug": "gnumeric",
+    "name": "Gnumeric",
+    "url": "http://www.gnumeric.org"
+  },
+  {
+    "slug": "tiddlywiki",
+    "name": "TiddlyWiki",
+    "url": "https://tiddlywiki.com"
+  },
+  {
+    "slug": "anki",
+    "name": "Anki",
+    "url": "https://apps.ankiweb.net"
+  },
+  {
+    "slug": "datasette",
+    "name": "Datasette",
+    "url": "https://datasette.io"
+  },
+  {
+    "slug": "chrome",
+    "name": "Google Chrome",
+    "url": "https://www.google.com/chrome/",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-play",
+    "name": "Google Play",
+    "url": "https://play.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "spotify",
+    "name": "Spotify",
+    "url": "https://www.spotify.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "amazon-alexa",
+    "name": "Amazon Alexa",
+    "url": "https://alexa.amazon.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "microsoft-365",
+    "name": "Microsoft 365",
+    "url": "https://www.microsoft.com/microsoft-365",
+    "capture": {
+      "shot": false
+    }
   }
 ]

@@ -23,6 +23,11 @@
   <url><loc>https://toolsforconviviality.com/category/social/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/email/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/books/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/browsers/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/apps/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/media/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/home/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/office/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/collect/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/localsend/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/netnewswire/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
@@ -104,6 +109,34 @@
   <url><loc>https://toolsforconviviality.com/tools/miniflux/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/feedbin/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/newsboat/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/firefox/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/tor-browser/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/librewolf/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/mullvad-browser/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/ladybird/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/f-droid/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/obtainium/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/aurora-store/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/izzyondroid/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/flathub/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/vlc/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/jellyfin/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/navidrome/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/mpv/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/funkwhale/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/home-assistant/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/esphome/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/zigbee2mqtt/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/pi-hole/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/openhab/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/libreoffice/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/onlyoffice/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/collabora-online/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/etherpad/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/gnumeric/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/tiddlywiki/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/anki/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/datasette/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/microsoft-word/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/whatsapp/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/adobe-creative-cloud/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
@@ -121,4 +154,9 @@
   <url><loc>https://toolsforconviviality.com/benchmarks/tiktok/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/snapchat/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/google-news/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/chrome/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/google-play/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/spotify/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/amazon-alexa/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/microsoft-365/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
 </urlset>
