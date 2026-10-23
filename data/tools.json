@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "localsend",
+    "name": "LocalSend",
+    "url": "https://localsend.org"
+  },
+  {
+    "slug": "netnewswire",
+    "name": "NetNewsWire",
+    "url": "https://netnewswire.com"
+  },
+  {
+    "slug": "comaps",
+    "name": "CoMaps",
+    "url": "https://comaps.app"
+  },
+  {
+    "slug": "syncthing",
+    "name": "Syncthing",
+    "url": "https://syncthing.net"
+  },
+  {
+    "slug": "obsidian",
+    "name": "Obsidian",
+    "url": "https://obsidian.md"
+  },
+  {
+    "slug": "ente",
+    "name": "Ente Photos",
+    "url": "https://ente.io"
+  },
+  {
+    "slug": "cryptpad",
+    "name": "CryptPad",
+    "url": "https://cryptpad.org"
+  },
+  {
+    "slug": "kagi",
+    "name": "Kagi",
+    "url": "https://kagi.com"
+  },
+  {
+    "slug": "bitwarden",
+    "name": "Bitwarden",
+    "url": "https://bitwarden.com"
+  },
+  {
+    "slug": "photomosh",
+    "name": "PhotoMosh",
+    "url": "https://photomosh.com"
+  },
+  {
+    "slug": "ferdium",
+    "name": "Ferdium",
+    "url": "https://ferdium.org"
+  },
+  {
+    "slug": "arena",
+    "name": "Are.na",
+    "url": "https://www.are.na"
+  },
+  {
+    "slug": "airtime",
+    "name": "Airtime",
+    "url": "https://www.airtime.com"
+  }
+]

@@ -102,6 +102,19 @@ main .wrap { padding-block: 48px 64px; }
 .crumbs a { text-decoration: none; }
 .crumbs a:hover { color: var(--fg); }
 .tool-list { margin-top: 32px; border-top: 1px solid var(--line); }
+.logo { display: inline-grid; place-items: center; flex: none; overflow: hidden; border: 1px solid var(--line); background: var(--surface, transparent); font-family: "Oswald", sans-serif; font-weight: 600; color: #fff; line-height: 1; }
+.logo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
+.logo.sm { width: 44px; height: 44px; font-size: 22px; }
+.logo.lg { width: 72px; height: 72px; font-size: 34px; }
+.tool-row .lead { display: flex; gap: 14px; align-items: flex-start; }
+.tool-row .lead > div { min-width: 0; }
+.review-head { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
+.review-head .page-head { margin: 0; }
+.window { margin: 18px 0 6px; border: 1px solid var(--line); }
+.window .bar { display: flex; gap: 6px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); font: 12px "IBM Plex Mono", monospace; color: var(--muted); }
+.window .bar i { width: 9px; height: 9px; border: 1px solid var(--muted); border-radius: 50%; }
+.window img { display: block; width: 100%; height: auto; }
+.shot-credit { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
 .tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
@@ -366,13 +379,31 @@ const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const view = document.getElementById("view");
 let featureIndex = Math.floor(Math.random() * TOOLS.length);
 
+// Images come from assets/manifest.json, written by scripts/capture.mjs. If it is missing, everything falls back to monogram tiles.
+let IMG = {};
+fetch("assets/manifest.json").then(r => r.ok ? r.json() : null).then(m => { if (m && m.tools) { IMG = m.tools; render(); } }).catch(() => {});
+const FALLBACKS = ["#3b5bdb", "#d9480f", "#2b8a3e", "#862e9c", "#0b7285", "#a61e4d"];
+function logo(t, size) {
+  const im = IMG[t.slug], ic = im && im.icon;
+  const src = ic && (ic.svg || ic[256] || ic[128]);
+  if (src) return `<span class="logo ${size}"><img src="${esc(src)}" alt="" loading="lazy" width="72" height="72"></span>`;
+  const col = (im && im.color) || FALLBACKS[[...t.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % FALLBACKS.length];
+  return `<span class="logo ${size}" style="background:${col}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
+}
+function shot(t) {
+  const im = IMG[t.slug]; if (!im || !im.shot) return "";
+  const w = im.shot, host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
+  return `<figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>${esc(host)}</span></div>
+    <img src="${esc(w[960])}" srcset="${esc(w[480])} 480w, ${esc(w[960])} 960w, ${esc(w[1600])} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.alt || "Screenshot of " + t.name)}" loading="lazy" width="960" height="600"></figure>
+    <p class="shot-credit">Screenshot of ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
+}
 function chips(t) {
   return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
 }
 function row(t) {
   const n = total(t);
   return `<a class="tool-row" href="#tool-${t.slug}">
-    <div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div>
+    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div></div>
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
 }
 
@@ -444,9 +475,10 @@ function tool(slug) {
   return `<p class="crumbs"><a href="#home">Home</a> / <a href="#cat-${c.id}">${esc(c.name)}</a> / ${esc(t.name)}</p>
   <div class="review">
     <article class="review-body">
-      <div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div>
+      <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
       <p class="instead">Instead of <b>${esc(t.replaces)}</b></p>
       ${chips(t)}
+      ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
     </article>
@@ -509,6 +541,8 @@ function about() {
     <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
     <h2>Corrections</h2>
     <p>If you make a tool we have reviewed and we got something wrong, tell us through the <a href="#submit">suggestion form</a> and we will fix it.</p>
+    <h2>Pictures</h2>
+    <p>Logos and screenshots on this site belong to the people who make the tools. We show them so you can recognise what you are reading about, and each screenshot says where it came from and when it was taken. A script fetches them from each tool's own public page, identifies itself as ToolsForConvivialityBot, and skips any site whose robots.txt says no. If you make a tool listed here and would rather we use a different image, or none, write to <span class="addr">hello@toolsforconviviality.com</span> and we will change it.</p>
   </div>`;
 }
 
@@ -531,6 +565,7 @@ function submit() {
       <div class="field"><label for="f-price">Price</label><input id="f-price" placeholder="Free, pay once, subscription…"></div>
     </div>
     <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
+    <div class="field"><label for="f-img">A logo or screenshot we may use, if you have one</label><input id="f-img" type="url" placeholder="https://… link to an image or press kit"></div>
     <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
     <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
     <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
@@ -597,7 +632,7 @@ function bind() {
   if (form) form.onsubmit = e => {
     e.preventDefault();
     const v = id => document.getElementById(id).value.trim() || "(not given)";
-    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
     document.getElementById("out-text").textContent = text;
     const out = document.getElementById("out"); out.hidden = false;
     document.getElementById("copy").onclick = async () => {

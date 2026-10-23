@@ -1,0 +1,7 @@
+[
+  { "slug": "svg-site", "name": "SVG Site", "url": "http://127.0.0.1:4101/" },
+  { "slug": "png-site", "name": "PNG Site", "url": "http://127.0.0.1:4102/" },
+  { "slug": "manifest-site", "name": "Manifest Site", "url": "http://127.0.0.1:4103/" },
+  { "slug": "robots-site", "name": "Robots Site", "url": "http://127.0.0.1:4104/" },
+  { "slug": "optout-site", "name": "Opt-out Site", "url": "http://127.0.0.1:4105/", "images": false }
+]

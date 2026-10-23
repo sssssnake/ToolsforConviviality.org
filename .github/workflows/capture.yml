@@ -1,0 +1,39 @@
+name: Capture tool images
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Capture a single tool (its slug). Leave empty for all that are missing or older than 30 days."
+        required: false
+      force:
+        description: "Recapture everything"
+        type: boolean
+        default: false
+  push:
+    paths: ["data/tools.json"]
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Capture
+        run: |
+          args=""
+          [ -n "${{ inputs.only }}" ] && args="$args --only ${{ inputs.only }}"
+          [ "${{ inputs.force }}" = "true" ] && args="$args --force"
+          node scripts/capture.mjs $args
+      - name: Commit images
+        run: |
+          git config user.name "capture-bot"
+          git config user.email "hello@toolsforconviviality.com"
+          git add assets
+          git diff --cached --quiet || git commit -m "Update tool images" && git push
