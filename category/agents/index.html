@@ -246,9 +246,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 .foot-links a { text-decoration: none; color: var(--muted); }
 .foot-links a:hover { color: var(--fg); }
 .foot-right { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
-.button88 { width: 88px; height: 31px; border: 1px solid var(--accent); display: grid; grid-template-columns: 30px 1fr; text-decoration: none; font-family: var(--mono); font-size: 9px; line-height: 1.1; letter-spacing: .04em; }
-.button88 .m { background: var(--band); color: var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 13px; font-weight: 600; }
-.button88 .t { display: grid; place-items: center; text-transform: uppercase; color: var(--accent); }
+.button88 { width: 88px; height: 31px; border: 1px solid var(--band); display: grid; grid-template-columns: 31px 1fr; text-decoration: none; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10px; line-height: 1.15; letter-spacing: -.005em; font-weight: 700; background: var(--band); color: var(--band-fg); }
+.button88 .m { display: block; margin: 5px; background: var(--band-fg); -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; }
+.button88 .t { display: grid; align-items: center; padding-right: 6px; color: var(--band-fg); }
 
 @media (max-width: 860px) {
   .home, .review { grid-template-columns: minmax(0, 1fr); gap: 36px; }
@@ -317,7 +317,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     </div>
     <div class="foot-right">
       <span>Useful to people. Accountable to people.</span>
-      <a class="button88" href="/suggest/" title="Listed on Tools for Conviviality"><span class="m">T/C</span><span class="t">Listed<br>here</span></a>
+      <a class="button88" href="/suggest/" title="Listed on Tools for Conviviality"><span class="m" aria-hidden="true"></span><span class="t">Listed<br>here</span></a>
     </div>
   </div>
 </footer>
