@@ -214,7 +214,12 @@ async function captureTool(browser, tool, previous) {
           entry.icon.from = best.href; entry.icon.scalable = true;
         } else {
           const info = await sharp(buf).metadata();
-          iconBuf = buf;
+          // Trim empty margins and pad to a square so icons sit centred in their tile
+          try {
+            const t = await sharp(buf).trim({ threshold: 5 }).toBuffer({ resolveWithObject: true });
+            const side = Math.max(t.info.width, t.info.height);
+            iconBuf = await sharp(t.data).resize(side, side, { fit: "contain", background: { r: 0, g: 0, b: 0, alpha: 0 } }).png().toBuffer();
+          } catch { iconBuf = buf; }
           entry.icon = { from: best.href, sourceWidth: info.width, scalable: false, lowRes: (info.width || 0) < 128 };
         }
         Object.assign(entry.icon, await saveVariants(iconBuf, dir, "icon", ICON_WIDTHS, { quality: 90 }));

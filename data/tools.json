@@ -57,7 +57,8 @@
     "name": "Ferdium",
     "url": "https://ferdium.org",
     "brand": {
-      "icon": "https://ferdium.org/_next/static/media/logo.9fc5c374.png"
+      "icon": "https://ferdium.org/_next/static/media/logo.9fc5c374.png",
+      "v": 2
     }
   },
   {
