@@ -30,7 +30,7 @@
     "slug": "ente",
     "name": "Ente Photos",
     "url": "https://ente.io",
-    "repo": "ente-io/ente"
+    "repo": "ente/ente"
   },
   {
     "slug": "cryptpad",
@@ -206,7 +206,7 @@
     "slug": "deltachat",
     "name": "Delta Chat",
     "url": "https://delta.chat",
-    "repo": "deltachat/deltachat-core-rust"
+    "repo": "chatmail/core"
   },
   {
     "slug": "openclaw",
@@ -518,7 +518,7 @@
     "slug": "rawtherapee",
     "name": "RawTherapee",
     "url": "https://rawtherapee.com",
-    "repo": "Beep6581/RawTherapee"
+    "repo": "RawTherapee/RawTherapee"
   },
   {
     "slug": "shotcut",
@@ -750,7 +750,7 @@
     "slug": "etherpad",
     "name": "Etherpad",
     "url": "https://etherpad.org",
-    "repo": "ether/etherpad-lite"
+    "repo": "ether/etherpad"
   },
   {
     "slug": "gnumeric",

@@ -33,17 +33,18 @@ async function repoInfo(repo) {
 }
 
 const problems = [], notes = [];
-const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+const host = u => { try { return new URL(u).hostname.split(".").slice(-2).join("."); } catch { return ""; } };
+const signIn = u => /accounts\.google\.com|login\.microsoftonline|signin|\/login/i.test(u);
 const pool = 6; let i = 0;
 async function worker() {
   while (i < TOOLS.length) {
     const t = TOOLS[i++];
     const r = await visit(t.url);
-    if (r.error) problems.push(`**${t.name}** (${t.slug}): could not reach ${t.url} (${r.error}).`);
+    if (r.error) (/abort|timeout/i.test(r.error) ? notes : problems).push(`${/abort|timeout/i.test(r.error) ? "" : "**"}${t.name}${/abort|timeout/i.test(r.error) ? "" : "**"} (${t.slug}): could not reach ${t.url} (${r.error}).${/abort|timeout/i.test(r.error) ? " Timeouts are often bot blocking." : ""}`);
     else if (r.status === 404 || r.status === 410) problems.push(`**${t.name}** (${t.slug}): ${t.url} answers ${r.status}. The page may be gone.`);
     else if (r.status >= 500) problems.push(`**${t.name}** (${t.slug}): ${t.url} answers ${r.status}. Check again in a few days.`);
     else if ([401, 403, 429, 999].includes(r.status)) notes.push(`${t.name}: ${t.url} refused the check (${r.status}), which usually means it blocks bots.`);
-    else if (host(r.finalUrl) && host(r.finalUrl) !== host(t.url)) notes.push(`${t.name}: ${t.url} now lands on ${r.finalUrl}. Update the address if the move is permanent.`);
+    else if (host(r.finalUrl) && host(r.finalUrl) !== host(t.url) && !signIn(r.finalUrl)) notes.push(`${t.name}: ${t.url} now lands on ${r.finalUrl}. Update the address if the move is permanent.`);
     if (t.repo) {
       try {
         const g = await repoInfo(t.repo);
