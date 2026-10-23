@@ -200,6 +200,17 @@ main .wrap { padding-block: 48px 64px; }
 .verdict-mini.v1, .verdict-mini.v2, .verdict-mini.v3 { color: var(--accent); } .verdict-mini.v4 { color: var(--stamp); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
+.list-note { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 26px 0 8px; }
+.tool-row { padding-right: 16px; }
+.compare { margin-top: 44px; max-width: 760px; }
+.compare h2 { font-size: 20px; margin: 0 0 4px; }
+.compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
+.cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.cmp:hover { border-color: var(--accent); }
+.cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
+.about-cat { margin-top: 48px; }
 .tool-row.offender { background: transparent; }
 .tool-row.offender .rank-n { color: var(--muted); }
 .tool-row:not(.offender) + .tool-row.offender { border-top: 2px dashed var(--line); }
@@ -223,6 +234,7 @@ main .wrap { padding-block: 48px 64px; }
 .big-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
 .big-list li { position: relative; padding-left: 28px; font-size: clamp(19px, 2.6vw, 24px); line-height: 1.35; }
 .big-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 11px; height: 11px; background: var(--accent); }
+.big-list.bad li::before { background: var(--stamp); }
 .big-list.six { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
 .big-list.six li { font-size: 20px; display: grid; gap: 2px; }
 .big-list.six li span { font-size: 14px; color: var(--muted); font-family: var(--mono); }
@@ -382,25 +394,20 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/directory/">Directory</a> / AI agents</p>
   <div class="page-head" style="margin-top:14px"><h1>Alternatives to ChatGPT and Claude</h1><p>AI assistants and agents you run yourself, on models you choose.</p></div>
-  <div class="prose"><p>ChatGPT and Claude are hosted services: your prompts, files and logins live on their makers' servers, and you use them on those companies' terms. An AI agent goes further, because it acts for you and needs your logins, your files and your trust. <a href="/tools/ollama/">Ollama</a> and <a href="/tools/jan/">Jan</a> run open models on your own computer, so your prompts can stay there, and <a href="/tools/openclaw/">OpenClaw</a>, {hermes-agent} and <a href="/tools/goose/">goose</a> are open-source agents that work through the apps you already use and connect to whichever models you pick.</p><p>All of them are young, so we score them on how much control they give you and mark how much care they ask for.</p></div>
-  <h2 class="list-h">The tools</h2>
+  <p class="list-note">Ranked by score out of 30, most convivial first.</p>
   <div class="tool-list"><a class="tool-row ranked" href="/tools/ollama/"><span class="rank-n" aria-label="Rank 1">1</span>
     <div class="lead"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">O</span><div><h3>Ollama</h3><p class="one">Runs open AI models on your own computer and gives other apps a local server to use them.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Runs locally</span></div></div></div>
-    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/goose/"><span class="rank-n" aria-label="Rank 2">2</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/goose/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>goose</h3><p class="one">An open-source AI agent that runs on your machine and works with the model you choose.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Runs locally</span><span class="chip">Needs care</span></div></div></div>
-    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/jan/"><span class="rank-n" aria-label="Rank 2">2</span>
+    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/jan/"><span class="rank-n" aria-label="Rank 2">2</span>
     <div class="lead"><span class="logo sm" style="background:#fff;color:#121a20" aria-hidden="true">J</span><div><h3>Jan</h3><p class="one">An open-source chat app that runs AI models fully offline on your computer.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Runs locally</span></div></div></div>
+    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/goose/"><span class="rank-n" aria-label="Rank 2">2</span>
+    <div class="lead"><span class="logo sm"><img src="/assets/tools/goose/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>goose</h3><p class="one">An open-source AI agent that runs on your machine and works with the model you choose.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Runs locally</span><span class="chip">Needs care</span></div></div></div>
     <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/openclaw/"><span class="rank-n" aria-label="Rank 4">4</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/openclaw/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>OpenClaw</h3><p class="one">An open-source AI assistant that runs on your own computer and works through your chat apps.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Self-hostable</span><span class="chip">Needs care</span></div></div></div>
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/hermes-agent/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/hermes-agent/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Hermes Agent</h3><p class="one">An open-source AI agent that learns skills from the tasks it does and remembers you.</p><div class="chips"><span class="chip">L · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Self-hostable</span><span class="chip">Needs care</span></div></div></div>
-    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/claude/"><span class="rank-n" aria-label="Rank 6">6</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/claude/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Claude</h3><p class="one">Anthropic's assistant, a capable hosted service you cannot run yourself.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row ranked offender" href="/benchmarks/chatgpt/"><span class="rank-n" aria-label="Rank 7">7</span>
-    <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">C</span><div><h3>ChatGPT</h3><p class="one">The assistant that made generative AI mainstream, and a closed service all the way down.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
-  <p class="empty">The rows marked benchmark review are the giants these tools are measured against. <a href="/benchmarks/chatgpt/">Read the full ChatGPT review</a> or <a href="/benchmarks/claude/">Read the full Claude review</a>. They sit outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
-  <div class="prose"><h2>How to choose</h2><p>Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use an open licence. Local models are smaller than the biggest hosted ones, so expect a quality trade-off in return for privacy.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an open-source alternative to ChatGPT?</h3><p><a href="/tools/jan/">Jan</a> and <a href="/tools/ollama/">Ollama</a> run open models on your own computer, with no account for local use. They are less powerful than the largest hosted models.</p></div><div class="qa"><h3>Is there an open-source alternative to ChatGPT agents?</h3><p>Yes. <a href="/tools/openclaw/">OpenClaw</a>, {hermes-agent} and <a href="/tools/goose/">goose</a> are open-source agents you run on your own computer or server.</p></div><div class="qa"><h3>Are AI agents safe to run?</h3><p>They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so.</p></div><div class="qa"><h3>Do I still need an AI model provider?</h3><p>Not necessarily. Local tools like <a href="/tools/ollama/">Ollama</a> and <a href="/tools/jan/">Jan</a> run models on your machine, while agents such as <a href="/tools/goose/">goose</a> can use either local models or a hosted provider you choose.</p></div></section></div></main>
+    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="cmp" href="/benchmarks/chatgpt/"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">C</span><span class="cmp-t"><b>ChatGPT</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a><a class="cmp" href="/benchmarks/claude/"><span class="logo sm"><img src="/assets/tools/claude/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Claude</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
+  <div class="prose about-cat"><h2>About these tools</h2><p>ChatGPT and Claude are hosted services: your prompts, files and logins live on their makers' servers, and you use them on those companies' terms. An AI agent goes further, because it acts for you and needs your logins, your files and your trust. <a href="/tools/ollama/">Ollama</a> and <a href="/tools/jan/">Jan</a> run open models on your own computer, so your prompts can stay there, and <a href="/tools/openclaw/">OpenClaw</a>, {hermes-agent} and <a href="/tools/goose/">goose</a> are open-source agents that work through the apps you already use and connect to whichever models you pick.</p><p>All of them are young, so we score them on how much control they give you and mark how much care they ask for.</p><h2>How to choose</h2><p>Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use an open licence. Local models are smaller than the biggest hosted ones, so expect a quality trade-off in return for privacy.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an open-source alternative to ChatGPT?</h3><p><a href="/tools/jan/">Jan</a> and <a href="/tools/ollama/">Ollama</a> run open models on your own computer, with no account for local use. They are less powerful than the largest hosted models.</p></div><div class="qa"><h3>Is there an open-source alternative to ChatGPT agents?</h3><p>Yes. <a href="/tools/openclaw/">OpenClaw</a>, {hermes-agent} and <a href="/tools/goose/">goose</a> are open-source agents you run on your own computer or server.</p></div><div class="qa"><h3>Are AI agents safe to run?</h3><p>They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so.</p></div><div class="qa"><h3>Do I still need an AI model provider?</h3><p>Not necessarily. Local tools like <a href="/tools/ollama/">Ollama</a> and <a href="/tools/jan/">Jan</a> run models on your machine, while agents such as <a href="/tools/goose/">goose</a> can use either local models or a hosted provider you choose.</p></div></section></div></main>
 
 <footer>
   <div class="wrap">
@@ -1094,7 +1101,7 @@ const CATCOPY = {
     faq: [["What is a private alternative to WhatsApp?", "{signal} offers end-to-end encryption by default and is run by a nonprofit. {element} and {deltachat} are open alternatives that are harder to start with and harder for anyone to shut down."],
       ["Is there a messaging app that doesn't need a phone number?", "{deltachat} runs on email, so you sign up with an address or a chat relay and give out no phone number."]] },
   social: { h1: "Alternatives to Instagram and TikTok", lede: "Photos, video and following people on networks that no single company runs.",
-    intro: ["Instagram and TikTok show what the score is for. They are free because advertising pays for them, and their feeds use infinite scroll, autoplay, notifications and recommendations. You can see where our scoring puts them in the ranking below, and what the open alternatives score next to them.",
+    intro: ["Instagram and TikTok show what the score is for. They are free because advertising pays for them, and their feeds use infinite scroll, autoplay, notifications and recommendations. Our scoring puts them far below the open alternatives, and the comparison above shows by how much.",
       "{mastodon} is a network of independent servers with no ads and no algorithmic feed, {pixelfed} shares photos the way Instagram does, {loops} is a short-video app from the same developer, and {peertube} is video hosting from a French non-profit. They are smaller, and some are young, so the honest trade-off is audience."],
     choose: "Start with where your friends already are, since a social network is only as good as the people on it. Then check how the feed works, who pays for it, and whether you could take your followers with you if you left. Most of these let you follow people across servers, which makes leaving easier than it is on the big apps.",
     faq: [["What is an alternative to Instagram?", "{pixelfed} is a free, open-source photo-sharing network that doesn't run on one company's servers, and {mastodon} handles photos and text together."],
@@ -1138,14 +1145,15 @@ const linkify = s => esc(s).replace(/\{([a-z0-9]+)\}/g, (m, slug) => { const t =
 
 function category(id) {
   const c = catOf(id); if (!c) return notFound();
-  const list = toolsIn(id), k = CATCOPY[id];
+  const list = toolsIn(id), k = CATCOPY[id], bench = BENCH.filter(x => x.cat === id);
+  let last = null, r = 0; const rk = new Map(list.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; }));
+  const vcls = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
   return `<p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
-  ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
-  <h2 class="list-h">The tools</h2>
-  ${(() => { const b = BENCH.filter(x => x.cat === id), all = [...list, ...b].sort((x, y) => total(y) - total(x) || (x.bench ? 1 : 0) - (y.bench ? 1 : 0) || x.name.localeCompare(y.name)); let last = null, r = 0; const rk = new Map(all.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; })); return `<div class="tool-list">${all.map(t => row(t, rk.get(t.slug))).join("")}</div>`; })()}
-  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">${b.length > 1 ? "The rows marked benchmark review are the giants" : "The row marked benchmark review is the giant"} these tools are measured against. ${b.map(x => `<a href="#bench-${x.slug}">Read the full ${esc(x.name)} review</a>`).join(" or ")}. ${b.length > 1 ? "They sit" : "It sits"} outside the directory, and you can see more on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
-  ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
+  <p class="list-note">Ranked by score out of 30, most convivial first.</p>
+  <div class="tool-list">${list.map(t => row(t, rk.get(t.slug))).join("")}</div>
+  ${bench.length ? `<section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid">${bench.map(x => `<a class="cmp" href="#bench-${x.slug}">${logo(x, "sm")}<span class="cmp-t"><b>${esc(x.name)}</b><small>Benchmark review</small></span><span class="cmp-s"><b>${total(x)}<span>/30</span></b><small class="verdict-mini v${vcls(total(x))}">${band(total(x))}</small></span></a>`).join("")}</div></section>` : ""}
+  ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
 }
 
 const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "az" };
@@ -1257,7 +1265,7 @@ function what() {
   </section>
   <section class="skim">
     <h2>The opposite is a tool that</h2>
-    <ul class="big-list">
+    <ul class="big-list bad">
       <li>only works inside a system you can’t see or leave</li>
       <li>decides what you may do with it</li>
       <li>gets harder to live without the longer you use it</li>
@@ -1266,7 +1274,7 @@ function what() {
   </section>
   <section class="skim">
     <h2>Illich saw six ways tools go wrong</h2>
-    <ul class="big-list six">${CRITERIA.map(k => `<li><b>${esc(k.from)}</b><span>becomes our ${esc(k.name)} question</span></li>`).join("")}</ul>
+    <ul class="big-list six bad">${CRITERIA.map(k => `<li><b>${esc(k.from)}</b><span>becomes our ${esc(k.name)} question</span></li>`).join("")}</ul>
     <p class="skim-note">Those six became the six questions on <a href="#method">How we score</a>.</p>
   </section>
   <section class="skim">
