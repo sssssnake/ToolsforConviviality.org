@@ -223,11 +223,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
   .tool-row { grid-template-columns: minmax(0, 1fr); }
   .score-mini { justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 10px; }
 }
+.theme-btn { font: inherit; letter-spacing: inherit; text-transform: inherit; background: transparent; color: inherit; border: 1px solid var(--band-fg); padding: 3px 9px; cursor: pointer; }
+.theme-btn:hover, .theme-btn:focus-visible { background: var(--band-fg); color: var(--band); }
 </style>
 </head>
 <body>
 
 
+<script>
+try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || saved === "light") document.documentElement.setAttribute("data-theme", saved); } catch (e) {}
+</script>
 <header class="band">
   <div class="wrap">
     <a class="brand" href="#home" aria-label="Tools for Conviviality, home">
@@ -239,6 +244,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
       <a href="#directory" data-nav="directory">Directory</a>
       <a href="#method" data-nav="method">How we score</a>
       <a href="#submit" data-nav="submit">Suggest a tool</a>
+      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
     </nav>
   </div>
 </header>
@@ -669,6 +675,17 @@ function bind() {
   };
 }
 
+const themeBtn = document.getElementById("theme");
+const isDark = () => { const t = document.documentElement.getAttribute("data-theme"); return t ? t === "dark" : !matchMedia("(prefers-color-scheme: light)").matches; };
+const paintTheme = () => { themeBtn.textContent = isDark() ? "Light mode" : "Dark mode"; };
+themeBtn.onclick = () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("tfc-theme", next); } catch (e) {}
+  paintTheme();
+};
+matchMedia("(prefers-color-scheme: light)").addEventListener("change", paintTheme);
+paintTheme();
 window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 render();
 </script>
