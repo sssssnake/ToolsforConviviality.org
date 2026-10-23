@@ -401,5 +401,29 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "ref-andrewism",
+    "name": "We Need Better Tools (Andrewism)",
+    "url": "https://www.youtube.com/watch?v=bP2rObVK1zg",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "ref-krycho",
+    "name": "Computing, Convivially (Chris Krycho)",
+    "url": "https://v5.chriskrycho.com/essays/computing-convivially/",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "ref-wikipedia",
+    "name": "Tools for Conviviality (Wikipedia)",
+    "url": "https://en.wikipedia.org/wiki/Tools_for_Conviviality",
+    "capture": {
+      "shot": false
+    }
   }
 ]

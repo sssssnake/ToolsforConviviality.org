@@ -67,7 +67,7 @@ p { margin: 0; }
 /* Band */
 .band { background: var(--band); color: var(--band-fg); }
 .band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
-.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.brand { display: flex; align-items: center; gap: 8px; text-decoration: none; }
 .mark { width: 44px; height: 44px; background: var(--band-fg); -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; display: block; }
 .brand-name { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: -.015em; font-size: 17px; line-height: 1.25; }
 .nav { display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
@@ -201,6 +201,45 @@ main .wrap { padding-block: 48px 64px; }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
 .tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
+.dict { margin: 28px 0 8px; max-width: 760px; border: 1.5px solid var(--fg); background: var(--panel); padding: 26px 28px 22px; }
+.dict-tag { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.dict .hw { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(40px, 7vw, 64px); line-height: 1.05; margin: 0; letter-spacing: -.01em; }
+.dict-meta { margin: 6px 0 18px; font-family: Georgia, "Times New Roman", serif; font-size: 18px; color: var(--muted); }
+.dict-meta .pron { font-family: var(--mono); font-size: 15px; margin-right: 10px; }
+.senses { margin: 0; padding: 0 0 0 28px; display: grid; gap: 16px; font-family: Georgia, "Times New Roman", serif; font-size: 20px; line-height: 1.4; }
+.senses li::marker { font-weight: 700; }
+.senses li > span { display: block; }
+.sense-label { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px; }
+.senses li.ours { border-left: 4px solid var(--accent); padding-left: 14px; margin-left: -18px; }
+.senses li.ours .sense-label { color: var(--accent); }
+.senses em { color: var(--muted); }
+.etym { margin: 18px 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-family: Georgia, "Times New Roman", serif; font-size: 16px; color: var(--muted); }
+.etym b { font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; margin-right: 8px; color: var(--fg); font-weight: 500; }
+.big-prose { margin-top: 36px; }
+.skim { margin-top: 44px; max-width: 760px; }
+.skim h2 { font-size: clamp(26px, 4vw, 36px); line-height: 1.1; margin: 0 0 14px; }
+.big-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.big-list li { position: relative; padding-left: 28px; font-size: clamp(19px, 2.6vw, 24px); line-height: 1.35; }
+.big-list li::before { content: ""; position: absolute; left: 0; top: .5em; width: 11px; height: 11px; background: var(--accent); }
+.big-list.six { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 28px; }
+.big-list.six li { font-size: 20px; display: grid; gap: 2px; }
+.big-list.six li span { font-size: 14px; color: var(--muted); font-family: var(--mono); }
+.skim-note { color: var(--muted); font-size: 16px; margin: 14px 0 0; }
+.refs { margin-top: 56px; }
+.refs h2 { font-size: clamp(26px, 4vw, 36px); margin: 0 0 6px; }
+.ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; margin-top: 18px; }
+.ref-card { display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--line); background: var(--panel); text-decoration: none; }
+.ref-card:hover { border-color: var(--accent); }
+.ref-thumb { position: relative; display: block; aspect-ratio: 16 / 9; background: var(--band); overflow: hidden; }
+.ref-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ref-thumb b { position: absolute; left: 10px; top: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; background: var(--bg); color: var(--fg); padding: 3px 8px; }
+.ref-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--band-fg); }
+.ref-fallback i { font-style: normal; font-size: 44px; }
+.ref-body { display: grid; gap: 6px; padding: 14px 16px 18px; align-content: start; }
+.ref-body small { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); }
+.ref-body strong { font-size: 18px; line-height: 1.25; font-weight: 600; }
+.ref-body span { color: var(--muted); font-size: 14px; line-height: 1.45; }
+@media (max-width: 520px) { .big-list.six { grid-template-columns: minmax(0, 1fr); } .dict { padding: 20px 18px; } }
 .jump { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; margin-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .jump .label { margin: 0; color: var(--muted); }
 .jump a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
@@ -286,6 +325,10 @@ textarea { min-height: 96px; resize: vertical; }
 /* Footer */
 footer { border-top: 1px solid var(--line); }
 footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
+.foot-cats { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.foot-cats .label { margin: 0; color: var(--muted); }
+.foot-cats a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
+.foot-cats a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
 .foot-links a { text-decoration: none; color: var(--muted); }
 .foot-links a:hover { color: var(--fg); }
@@ -340,23 +383,24 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   <div class="prose"><p>Instagram and TikTok show what the score is for. They are free because advertising pays for them, and their feeds use infinite scroll, autoplay, notifications and recommendations. You can see where our scoring puts them in the ranking below, and what the open alternatives score next to them.</p><p><a href="/tools/mastodon/">Mastodon</a> is a network of independent servers with no ads and no algorithmic feed, <a href="/tools/pixelfed/">Pixelfed</a> shares photos the way Instagram does, <a href="/tools/loops/">Loops</a> is a short-video app from the same developer, and <a href="/tools/peertube/">PeerTube</a> is video hosting from a French non-profit. They are smaller, and some are young, so the honest trade-off is audience.</p></div>
   <h2 class="list-h">The tools</h2>
   <div class="tool-list"><a class="tool-row ranked" href="/tools/peertube/"><span class="rank-n" aria-label="Rank 1">1</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/peertube/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>PeerTube</h3><p class="one">Video sharing on servers run by many people, built by a French non-profit.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">No ads</span><span class="chip">Non-profit</span></div></div></div>
+    <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">P</span><div><h3>PeerTube</h3><p class="one">Video sharing on servers run by many people, built by a French non-profit.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">No ads</span><span class="chip">Non-profit</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/mastodon/"><span class="rank-n" aria-label="Rank 2">2</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/mastodon/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Mastodon</h3><p class="one">A social network of independent servers with no ads and no algorithmic feed.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">No ads</span><span class="chip">Chronological feed</span></div></div></div>
+    <div class="lead"><span class="logo sm" style="background:#a61e4d;color:#fff" aria-hidden="true">M</span><div><h3>Mastodon</h3><p class="one">A social network of independent servers with no ads and no algorithmic feed.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">No ads</span><span class="chip">Chronological feed</span></div></div></div>
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/pixelfed/"><span class="rank-n" aria-label="Rank 3">3</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/pixelfed/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Pixelfed</h3><p class="one">A free, open-source photo-sharing network that works like Instagram without the company.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Open source</span><span class="chip">Decentralised</span><span class="chip">Photos</span></div></div></div>
+    <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">P</span><div><h3>Pixelfed</h3><p class="one">A free, open-source photo-sharing network that works like Instagram without the company.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Open source</span><span class="chip">Decentralised</span><span class="chip">Photos</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/loops/"><span class="rank-n" aria-label="Rank 4">4</span>
     <div class="lead"><span class="logo sm" style="background:#a61e4d;color:#fff" aria-hidden="true">L</span><div><h3>Loops</h3><p class="one">A federated short-video app from the Pixelfed team, with no ads.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Open source</span><span class="chip">No ads</span><span class="chip">Short video</span></div></div></div>
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/instagram/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">I</span><div><h3>Instagram</h3><p class="one">Where a huge number of people share photos and short video, paid for by advertising.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>7<span>/30</span></b><span class="verdict-mini v4">Manipulative</span></div></a><a class="tool-row ranked offender" href="/benchmarks/tiktok/"><span class="rank-n" aria-label="Rank 6">6</span>
-    <div class="lead"><span class="logo sm"><img src="/assets/tools/tiktok/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>TikTok</h3><p class="one">A feed of short videos chosen for you by an algorithm, paid for by advertising.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>6<span>/30</span></b><span class="verdict-mini v4">Manipulative</span></div></a></div>
+    <div class="score-mini"><b>7<span>/30</span></b><span class="verdict-mini v4">Restrictive</span></div></a><a class="tool-row ranked offender" href="/benchmarks/tiktok/"><span class="rank-n" aria-label="Rank 6">6</span>
+    <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">T</span><div><h3>TikTok</h3><p class="one">A feed of short videos chosen for you by an algorithm, paid for by advertising.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
+    <div class="score-mini"><b>6<span>/30</span></b><span class="verdict-mini v4">Restrictive</span></div></a></div>
   <p class="empty">The highlighted rows are the giants these tools are measured against. <a href="/benchmarks/instagram/">Read the full Instagram review</a> or <a href="/benchmarks/tiktok/">Read the full TikTok review</a>. They sit outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
   <div class="prose"><h2>How to choose</h2><p>Start with where your friends already are, since a social network is only as good as the people on it. Then check how the feed works, who pays for it, and whether you could take your followers with you if you left. Most of these let you follow people across servers, which makes leaving easier than it is on the big apps.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to Instagram?</h3><p><a href="/tools/pixelfed/">Pixelfed</a> is a free, open-source photo-sharing network that doesn't run on one company's servers, and <a href="/tools/mastodon/">Mastodon</a> handles photos and text together.</p></div><div class="qa"><h3>What is an alternative to TikTok?</h3><p><a href="/tools/loops/">Loops</a> is a federated short-video app from the Pixelfed developer, and <a href="/tools/peertube/">PeerTube</a> hosts longer video on servers run by many people. Both are much smaller than TikTok.</p></div><div class="qa"><h3>Do these apps have an algorithm?</h3><p><a href="/tools/mastodon/">Mastodon</a> shows posts from the people you follow in chronological order. <a href="/tools/loops/">Loops</a> has a For You feed driven by engagement, hashtags and your social graph, so check how it behaves.</p></div></section></div></main>
 
 <footer>
   <div class="wrap">
+    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/agents/">AI agents</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/reading/">Search &amp; reading</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/images/">Images &amp; video</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/talk/">Chat</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/collect/">Collecting &amp; research</a></nav>
     <div class="foot-links">
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
@@ -384,10 +428,10 @@ const CRITERIA = [
   { key: "deliv", name: "Delivery", from: "Frustration", q: "Does it actually do the job, without ads, engagement bait, or a promise the product can't keep?" }
 ];
 const SIZES = {
-  S: { name: "Small", def: "One person or a few friends, usually self-funded. Most vibe-coded apps live here." },
-  M: { name: "Medium", def: "A small team or a community project with little or no outside money." },
-  L: { name: "Large", def: "An established company with serious investors behind it." },
-  XL: { name: "Extra large", def: "The behemoths. Reviewed rarely, as benchmarks outside the directory, to show what everything else is measured against." }
+  S: { name: "Small", short: "One person or a few friends, usually self-funded.", def: "One person or a few friends, usually self-funded. Most vibe-coded apps live here." },
+  M: { name: "Medium", short: "A small team or a community project with little or no outside money.", def: "A small team or a community project with little or no outside money." },
+  L: { name: "Large", short: "An established company with serious investors behind it.", def: "An established company with serious investors behind it." },
+  XL: { name: "Extra large", short: "One of the biggest companies in the world.", def: "One of the biggest companies in the world. We review a few as benchmarks, outside the directory, so there is something to measure the rest against." }
 };
 const SCOPES = {
   gadget: { name: "Gadget", def: "Does one thing, usually needs no account. You could lose it without losing anything." },
@@ -896,7 +940,7 @@ const HL = {
 [...TOOLS, ...BENCH].forEach(t => { t.points = HL[t.slug] || []; });
 
 const total = t => t.s.reduce((a, b) => a + b, 0);
-const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Manipulative";
+const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Restrictive";
 const catOf = id => CATS.find(c => c.id === id);
 const toolsIn = id => TOOLS.filter(t => t.cat === id).sort((a, b) => total(b) - total(a));
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
@@ -937,7 +981,6 @@ function row(t, rank) {
 
 function home() {
   const t = TOOLS[featureIndex % TOOLS.length];
-  const counts = k => k === "XL" ? BENCH.length : TOOLS.filter(x => x.size === k).length;
   return `<div class="home">
     <section class="hero">
       <p class="label">A directory of convivial software</p>
@@ -974,15 +1017,15 @@ function home() {
     <h2>Six questions, one score, no payment.</h2>
     <div class="size-grid">
       <a class="size-cell" href="#method"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, like a heuristic evaluation of how software treats its people.</small></a>
-      <a class="size-cell" href="#method"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Manipulative. Scores are dated and open to change.</small></a>
+      <a class="size-cell" href="#method"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Restrictive. Scores are dated and open to change.</small></a>
       <a class="size-cell" href="#about"><span class="size-letter">0</span><span>Paid for by nobody</span><small>We take no payment for listings, reviews or badges, so a score means what it says.</small></a>
       <a class="size-cell" href="#improve"><span class="size-letter">+</span><span>Make software?</span><small>A free field guide shows which changes raise a score, and what they do to your income.</small></a>
     </div>
   </section>
   <section class="sizes">
-    <p class="label">Browse by who makes it</p>
-    <h2>Small makers first. Giants for comparison.</h2>
-    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<a class="size-cell" href="#${k === "XL" ? "benchmarks" : "size-" + k}"><span class="size-letter">${k}</span><span>${v.name} (${counts(k)})</span><small>${v.def}</small></a>`).join("")}</div>
+    <p class="label">Who makes it</p>
+    <h2>Every tool has a size, from one person to a giant.</h2>
+    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<div class="size-cell"><span class="size-letter">${k}</span><span>${v.name}</span><small>${v.short}</small></div>`).join("")}</div>
   </section>`;
 }
 
@@ -1112,7 +1155,6 @@ function directory(preset) {
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
   <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, listed A to Z with its score out of 30. Switch the order to see the most convivial first, where tools with the same score share a rank.</p></div>
-  <nav class="jump" aria-label="Categories"><span class="label">Jump to</span>${CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</nav>
   <div class="filters">
     ${grp("sort", "Order", [["az", "A to Z"], ["score", "Most convivial first"]])}
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
@@ -1170,23 +1212,86 @@ function tool(slug, isBench) {
   </div>`;
 }
 
+const REFS = [
+  { id: "ref-andrewism", href: "https://www.youtube.com/watch?v=bP2rObVK1zg&t=664s", kind: "Video", src: "Andrewism on YouTube", title: "We Need Better Tools", desc: "A video essay on Illich's idea that tools can grow past the point where they help. The chapter on Tools for Conviviality starts at 11:04." },
+  { id: "ref-krycho", href: "https://v5.chriskrycho.com/essays/computing-convivially/", kind: "Essay", src: "Chris Krycho, 2026", title: "Computing, Convivially", desc: "Computers can be a bicycle for the mind when they support real thinking, and harmful when they replace it. How do we shape them into convivial tools?" },
+  { id: "ref-kell", href: "https://www.cl.cam.ac.uk/users/srk31/research/papers/kell20convivial.pdf", kind: "Paper", src: "Stephen Kell, 2020", title: "Convivial Design Heuristics for Software Systems", desc: "Design rules for programming systems drawn from Illich, such as keeping systems small and favouring referencing over defining." },
+  { id: "ref-wikipedia", href: "https://en.wikipedia.org/wiki/Tools_for_Conviviality", kind: "Reference", src: "Wikipedia", title: "Tools for Conviviality", desc: "A summary of the 1973 book, how it was received and how its ideas spread into degrowth and appropriate technology." }
+];
+function refCard(r) {
+  const im = IMG[r.id], w = im && im.social;
+  const thumb = w ? `<img src="${esc(A(w[600]))}" srcset="${esc(A(w[600]))} 600w, ${esc(A(w[1200]))} 1200w" sizes="(min-width: 900px) 280px, 100vw" alt="" loading="lazy" width="600" height="315">` : `<span class="ref-fallback"><i aria-hidden="true">${r.kind === "Video" ? "▶" : "↗"}</i></span>`;
+  return `<a class="ref-card" href="${r.href}" target="_blank" rel="noopener"><span class="ref-thumb">${thumb}<b>${esc(r.kind)}</b></span><span class="ref-body"><small>${esc(r.src)}</small><strong>${esc(r.title)}</strong><span>${esc(r.desc)}</span></span></a>`;
+}
+
 function what() {
   return `<p class="crumbs"><a href="#home">Home</a> / What is conviviality?</p>
   <div class="page-head" style="margin-top:14px"><h1>What is conviviality?</h1><p>A word from an old book, and a useful test for the software you use every day.</p></div>
-  <div class="prose">
-    <p>Ivan Illich was an Austrian-born philosopher and priest who spent much of his life asking what happens when the things we build to help us start running our lives instead. In 1973 he published <i>Tools for Conviviality</i>, a short book about exactly that. He chose “convivial” for tools that people can pick up, use freely, and bend to their own purposes, and he set it against tools that arrange us around themselves.</p>
-    <h2>The idea in plain terms</h2>
-    <p>A convivial tool leaves you more able to do what you want with your own time, attention and company. A hammer is convivial, and so is a bicycle, because anyone can use them, repair them and put them to uses their makers never imagined. The opposite is a tool that only works inside a system you can't see or leave, that decides what you may do with it, and that gets harder to live without the longer you use it.</p>
-    <p>Illich saw that tools tend to go bad in a few predictable ways. They grow past the point where they help. They turn into the only way to do a job, so nobody can do without them. They make people passive, concentrate power in a few hands, wear out their purpose, and promise more than they deliver. Those six failures became the six questions on <a href="#method">How we score</a>.</p>
-    <h2>Why it fits software</h2>
-    <p>Most of what we use online is built to hold us: accounts that are hard to leave, files in formats only one company reads, feeds designed around what keeps us scrolling. Software doesn't have to work that way. A small tool that does one job, keeps your files on your own device and lets you walk away with them is convivial in exactly Illich's sense, and the same goes for a large open-source project with the same habits.</p>
-    <p>Cheap AI-assisted building has made this more interesting, because more people can now make a small tool for themselves and their friends. That is how tools were supposed to feel all along, and it's a good reason to keep a directory of the ones worth knowing about.</p>
-    <h2>What conviviality is not</h2>
-    <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
-    <h2>Read the book</h2>
-    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools rated Convivial.</p>
+  <article class="dict" aria-label="Dictionary definition of convivial">
+    <p class="dict-tag">Definition</p>
+    <p class="hw">con·viv·i·al</p>
+    <p class="dict-meta"><span class="pron">/kənˈvɪv.i.əl/</span> <i>adjective</i></p>
+    <ol class="senses">
+      <li><span class="sense-label">Everyday English</span><span>Friendly, lively and cheerful, usually said of a person or a gathering. <em>“A convivial evening with old friends.”</em></span></li>
+      <li class="ours"><span class="sense-label">Illich, 1973 · the one we use</span><span>Of a tool: easy for anyone to pick up, free to use for their own purposes, and leaving people more able to do things for themselves. In Illich's words, <em>“individual freedom realized in personal interdependence.”</em></span></li>
+    </ol>
+    <p class="etym"><b>Origin</b> Latin <i>convivium</i>, a feast, from <i>con-</i> “together” and <i>vivere</i> “to live”.</p>
+  </article>
+  <div class="prose big-prose">
+    <h2>Why not the dictionary meaning?</h2>
+    <p>Ivan Illich was an Austrian-born philosopher and priest who spent his life asking what happens when the things we build to help us start running our lives instead. In <i>Tools for Conviviality</i> he knew that English readers would hear a good party, and he wrote that the English word leans toward a tipsy kind of jollity. So he took his meaning from the French and Spanish versions of the word, which come from the same Latin root and keep the older idea of living well together, and he applied it to tools instead of people to avoid the confusion. In French, Brillat-Savarin had already given the word a technical meaning in the kitchen.</p>
+    <p>The two senses are closer than they look. A good table makes the people around it more alive, and a convivial tool does the same for the person using it.</p>
   </div>
-  ${pdfCard()}`;
+  <section class="skim">
+    <h2>A convivial tool is one that</h2>
+    <ul class="big-list">
+      <li>anyone can learn by using it</li>
+      <li>you can bend to your own purposes</li>
+      <li>lets you leave with your own stuff</li>
+      <li>needs you less than you need it</li>
+    </ul>
+  </section>
+  <section class="skim">
+    <h2>The opposite is a tool that</h2>
+    <ul class="big-list">
+      <li>only works inside a system you can’t see or leave</li>
+      <li>decides what you may do with it</li>
+      <li>gets harder to live without the longer you use it</li>
+    </ul>
+    <p class="skim-note">A hammer and a bicycle are convivial, because anyone can use them, repair them and find uses their makers never imagined.</p>
+  </section>
+  <section class="skim">
+    <h2>Illich saw six ways tools go wrong</h2>
+    <ul class="big-list six">${CRITERIA.map(k => `<li><b>${esc(k.from)}</b><span>becomes our ${esc(k.name)} question</span></li>`).join("")}</ul>
+    <p class="skim-note">Those six became the six questions on <a href="#method">How we score</a>.</p>
+  </section>
+  <section class="skim">
+    <h2>Why it fits software</h2>
+    <ul class="big-list">
+      <li>Accounts are hard to leave and files sit in formats only one company reads.</li>
+      <li>Feeds are built around what keeps us scrolling.</li>
+      <li>A small tool that does one job and lets you walk away with your files is convivial in exactly Illich’s sense, and so is a large open-source project with the same habits.</li>
+      <li>Cheap AI-assisted building means more people can now make a small tool for themselves and their friends, which is how tools were supposed to feel all along.</li>
+    </ul>
+  </section>
+  <section class="skim">
+    <h2>What conviviality is not</h2>
+    <ul class="big-list">
+      <li>Free, open source or small, though those often help.</li>
+      <li>Against technology. Illich argued for tools that serve people, and he was fine with sophisticated ones.</li>
+      <li>Decided by who made the tool. A big company can build a fairly convivial one, and a charming indie app can still lock you in, so each review scores the actual tool.</li>
+    </ul>
+  </section>
+  <div class="prose">
+    <h2>Read the book</h2>
+    <p>This is our own short reading, and Illich's book says it better. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools rated Convivial.</p>
+  </div>
+  ${pdfCard()}
+  <section class="refs">
+    <h2>Keep going</h2>
+    <p class="skim-note">Videos, essays and papers that take the idea further.</p>
+    <div class="ref-grid">${REFS.map(refCard).join("")}</div>
+  </section>`;
 }
 
 const AGENT_PROMPT = [
@@ -1321,13 +1426,13 @@ function method() {
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>
-    <p>The total becomes a verdict, shown on every review as a badge that runs from full blue for convivial to red for manipulative. The verdict is a judgement made by people, dated, and open to change.</p>
+    <p>The total becomes a verdict, shown on every review as a badge that runs from full blue for convivial to red for restrictive. The verdict is a judgement made by people, dated, and open to change.</p>
   </div>
   <div class="bands">
     <div class="band-cell b1"><b>Convivial</b><span>25 to 30</span></div>
     <div class="band-cell b2"><b>Leaning convivial</b><span>18 to 24</span></div>
     <div class="band-cell b3"><b>Mixed</b><span>10 to 17</span></div>
-    <div class="band-cell b4"><b>Manipulative</b><span>0 to 9</span></div>
+    <div class="band-cell b4"><b>Restrictive</b><span>0 to 9</span></div>
   </div>
   <div class="prose">
     <h2>Size: who makes it</h2>
@@ -1586,6 +1691,7 @@ document.addEventListener("click", e => {
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
+document.getElementById("foot-cats").innerHTML = '<span class="label">Categories</span>' + CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("");
 fixLinks(document);
 render();
 </script>

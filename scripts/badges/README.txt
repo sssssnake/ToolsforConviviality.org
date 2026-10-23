@@ -49,7 +49,7 @@ VERDICT SYSTEM
 25–30  Convivial          Solid cobalt; paper lettering. Example: 27/30.
 18–24  Leaning convivial  Cobalt outline on paper. Example: 21/30.
 10–17  Mixed              Ink outline on paper. Example: 14/30.
- 0–9   Manipulative       Dashed ink outline on paper. Example: 6/30.
+ 0–9   Restrictive         Dashed ink outline on paper. Example: 6/30.
 
 EDITING AND TYPE
 Use editable-svg files to change the separate score, verdict and review-date
