@@ -197,6 +197,7 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
 .score-mini b { font-family: var(--display); font-weight: 500; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
+.verdict-mini.v1, .verdict-mini.v2, .verdict-mini.v3 { color: var(--accent); } .verdict-mini.v4 { color: #b3441f; }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
 .tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
@@ -256,7 +257,11 @@ a.fbtn { text-decoration: none; display: inline-block; }
 .crit h3 { font-size: 21px; color: var(--accent); }
 .crit .from { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 .bands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
-.band-cell { border: 1.5px solid var(--stamp); color: var(--stamp); padding: 12px; display: grid; gap: 2px; }
+.band-cell { border: 1.5px solid #193bc5; padding: 12px; padding: 12px; display: grid; gap: 2px; }
+.band-cell.b1 { background: #193bc5; color: #f1f2ed; }
+.band-cell.b2 { background: #c9d5f4; color: #193bc5; }
+.band-cell.b3 { background: #fff; color: #193bc5; }
+.band-cell.b4 { background: #b3441f; border-color: #b3441f; color: #f1f2ed; }
 .band-cell b { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 18px; letter-spacing: .02em; line-height: 1.1; }
 .band-cell span { font-family: var(--mono); font-size: 12px; }
 .def { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px 18px; margin-top: 8px; }
@@ -336,19 +341,19 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   <h2 class="list-h">The tools</h2>
   <div class="tool-list"><a class="tool-row ranked" href="/tools/ollama/"><span class="rank-n" aria-label="Rank 1">1</span>
     <div class="lead"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">O</span><div><h3>Ollama</h3><p class="one">Runs open AI models on your own computer and gives other apps a local server to use them.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Runs locally</span></div></div></div>
-    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row ranked" href="/tools/goose/"><span class="rank-n" aria-label="Rank 2">2</span>
+    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/goose/"><span class="rank-n" aria-label="Rank 2">2</span>
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">G</span><div><h3>goose</h3><p class="one">An open-source AI agent that runs on your machine and works with the model you choose.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Runs locally</span><span class="chip">Needs care</span></div></div></div>
-    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/jan/"><span class="rank-n" aria-label="Rank 2">2</span>
+    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/jan/"><span class="rank-n" aria-label="Rank 2">2</span>
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">J</span><div><h3>Jan</h3><p class="one">An open-source chat app that runs AI models fully offline on your computer.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Runs locally</span></div></div></div>
-    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/openclaw/"><span class="rank-n" aria-label="Rank 4">4</span>
+    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/openclaw/"><span class="rank-n" aria-label="Rank 4">4</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/openclaw/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>OpenClaw</h3><p class="one">An open-source AI assistant that runs on your own computer and works through your chat apps.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Self-hostable</span><span class="chip">Needs care</span></div></div></div>
-    <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/hermes-agent/"><span class="rank-n" aria-label="Rank 5">5</span>
+    <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/hermes-agent/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/hermes-agent/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Hermes Agent</h3><p class="one">An open-source AI agent that learns skills from the tasks it does and remembers you.</p><div class="chips"><span class="chip">L · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Self-hostable</span><span class="chip">Needs care</span></div></div></div>
-    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/claude/"><span class="rank-n" aria-label="Rank 6">6</span>
+    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/claude/"><span class="rank-n" aria-label="Rank 6">6</span>
     <div class="lead"><span class="logo sm" style="background:#0b7285;color:#fff" aria-hidden="true">C</span><div><h3>Claude</h3><p class="one">Anthropic's assistant, a capable hosted service you cannot run yourself.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row ranked offender" href="/benchmarks/chatgpt/"><span class="rank-n" aria-label="Rank 7">7</span>
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row ranked offender" href="/benchmarks/chatgpt/"><span class="rank-n" aria-label="Rank 7">7</span>
     <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">C</span><div><h3>ChatGPT</h3><p class="one">The assistant that made generative AI mainstream, and a closed service all the way down.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a></div>
+    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
   <p class="empty">The highlighted rows are the giants these tools are measured against. <a href="/benchmarks/chatgpt/">Read the full ChatGPT review</a> or <a href="/benchmarks/claude/">Read the full Claude review</a>. They sit outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
   <div class="prose"><h2>How to choose</h2><p>Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use an open licence. Local models are smaller than the biggest hosted ones, so expect a quality trade-off in return for privacy.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an open-source alternative to ChatGPT?</h3><p><a href="/tools/jan/">Jan</a> and <a href="/tools/ollama/">Ollama</a> run open models on your own computer, with no account for local use. They are less powerful than the largest hosted models.</p></div><div class="qa"><h3>Is there an open-source alternative to ChatGPT agents?</h3><p>Yes. <a href="/tools/openclaw/">OpenClaw</a>, {hermes-agent} and <a href="/tools/goose/">goose</a> are open-source agents you run on your own computer or server.</p></div><div class="qa"><h3>Are AI agents safe to run?</h3><p>They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so.</p></div><div class="qa"><h3>Do I still need an AI model provider?</h3><p>Not necessarily. Local tools like <a href="/tools/ollama/">Ollama</a> and <a href="/tools/jan/">Jan</a> run models on your machine, while agents such as <a href="/tools/goose/">goose</a> can use either local models or a hosted provider you choose.</p></div></section></div></main>
 
@@ -858,7 +863,7 @@ function row(t, rank) {
   const n = total(t);
   return `<a class="tool-row${rank ? " ranked" : ""}${t.bench ? " offender" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
     <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${t.bench ? '<div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div>' : chips(t)}</div></div>
-    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
+    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini v${n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4}">${band(n)}</span></div></a>`;
 }
 
 function home() {
@@ -1104,7 +1109,7 @@ function what() {
     <h2>What conviviality is not</h2>
     <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
     <h2>Read the book</h2>
-    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
+    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools rated Convivial.</p>
   </div>
   ${pdfCard()}`;
 }
@@ -1241,13 +1246,13 @@ function method() {
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>
-    <p>The total becomes a verdict, stamped on every review. The stamp is a judgement made by people, dated, and open to change.</p>
+    <p>The total becomes a verdict, shown on every review as a badge that runs from full blue for convivial to red for manipulative. The verdict is a judgement made by people, dated, and open to change.</p>
   </div>
   <div class="bands">
-    <div class="band-cell"><b>Convivial</b><span>25 to 30</span></div>
-    <div class="band-cell"><b>Leaning convivial</b><span>18 to 24</span></div>
-    <div class="band-cell"><b>Mixed</b><span>10 to 17</span></div>
-    <div class="band-cell"><b>Manipulative</b><span>0 to 9</span></div>
+    <div class="band-cell b1"><b>Convivial</b><span>25 to 30</span></div>
+    <div class="band-cell b2"><b>Leaning convivial</b><span>18 to 24</span></div>
+    <div class="band-cell b3"><b>Mixed</b><span>10 to 17</span></div>
+    <div class="band-cell b4"><b>Manipulative</b><span>0 to 9</span></div>
   </div>
   <div class="prose">
     <h2>Size: who makes it</h2>

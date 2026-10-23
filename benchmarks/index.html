@@ -197,6 +197,7 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
 .score-mini b { font-family: var(--display); font-weight: 500; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
+.verdict-mini.v1, .verdict-mini.v2, .verdict-mini.v3 { color: var(--accent); } .verdict-mini.v4 { color: #b3441f; }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
 .tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
@@ -256,7 +257,11 @@ a.fbtn { text-decoration: none; display: inline-block; }
 .crit h3 { font-size: 21px; color: var(--accent); }
 .crit .from { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 .bands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
-.band-cell { border: 1.5px solid var(--stamp); color: var(--stamp); padding: 12px; display: grid; gap: 2px; }
+.band-cell { border: 1.5px solid #193bc5; padding: 12px; padding: 12px; display: grid; gap: 2px; }
+.band-cell.b1 { background: #193bc5; color: #f1f2ed; }
+.band-cell.b2 { background: #c9d5f4; color: #193bc5; }
+.band-cell.b3 { background: #fff; color: #193bc5; }
+.band-cell.b4 { background: #b3441f; border-color: #b3441f; color: #f1f2ed; }
 .band-cell b { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 18px; letter-spacing: .02em; line-height: 1.1; }
 .band-cell span { font-family: var(--mono); font-size: 12px; }
 .def { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px 18px; margin-top: 8px; }
@@ -337,31 +342,31 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
   <div class="tool-list"><a class="tool-row offender" href="/benchmarks/microsoft-word/">
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">M</span><div><h3>Microsoft Word</h3><p class="one">The word processor that set the standard, and still sets the terms.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/whatsapp/">
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/whatsapp/">
     <div class="lead"><span class="logo sm"><img src="/assets/tools/whatsapp/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>WhatsApp</h3><p class="one">The chat app three billion people can't easily leave.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/adobe-creative-cloud/">
+    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/adobe-creative-cloud/">
     <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">A</span><div><h3>Adobe Creative Cloud</h3><p class="one">The creative suite that set the standard, rented by the month.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>12<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/chatgpt/">
+    <div class="score-mini"><b>12<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/chatgpt/">
     <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">C</span><div><h3>ChatGPT</h3><p class="one">The assistant that made generative AI mainstream, and a closed service all the way down.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/claude/">
+    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/claude/">
     <div class="lead"><span class="logo sm" style="background:#0b7285;color:#fff" aria-hidden="true">C</span><div><h3>Claude</h3><p class="one">Anthropic's assistant, a capable hosted service you cannot run yourself.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-drive/">
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-drive/">
     <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">G</span><div><h3>Google Drive</h3><p class="one">Free cloud storage that ties your files to one Google account.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-maps/">
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-maps/">
     <div class="lead"><span class="logo sm" style="background:#a61e4d;color:#fff" aria-hidden="true">G</span><div><h3>Google Maps</h3><p class="one">The map most of us use, and one that also learns where we go.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>17<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-search/">
+    <div class="score-mini"><b>17<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-search/">
     <div class="lead"><span class="logo sm" style="background:#0b7285;color:#fff" aria-hidden="true">G</span><div><h3>Google Search</h3><p class="one">The search engine that sets the default for the web, and sells attention to pay for it.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-photos/">
+    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-photos/">
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">G</span><div><h3>Google Photos</h3><p class="one">Effortless photo backup, with your library living in a Google account.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/kindle/">
+    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/kindle/">
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">A</span><div><h3>Amazon Kindle</h3><p class="one">The easiest way to buy and read a book, on terms that keep the book Amazon's.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>13<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/pinterest/">
+    <div class="score-mini"><b>13<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/pinterest/">
     <div class="lead"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">P</span><div><h3>Pinterest</h3><p class="one">A lovely place to collect ideas, run as an advertising business.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>13<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-password-manager/">
+    <div class="score-mini"><b>13<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/google-password-manager/">
     <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">G</span><div><h3>Google Password Manager</h3><p class="one">Passwords built into Chrome and Android, tied to your Google account.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/gmail/">
+    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/gmail/">
     <div class="lead"><span class="logo sm"><img src="/assets/tools/gmail/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Gmail</h3><p class="one">Excellent email that anchors your whole Google life.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a></div>
+    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
   <div class="prose">
     <h2>What they show</h2>
     <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. Open the <a href="/directory/">directory</a> to see the alternatives, or read <a href="/how-we-score/">how we score</a> to see how the questions work.</p>
@@ -873,7 +878,7 @@ function row(t, rank) {
   const n = total(t);
   return `<a class="tool-row${rank ? " ranked" : ""}${t.bench ? " offender" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
     <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${t.bench ? '<div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div>' : chips(t)}</div></div>
-    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
+    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini v${n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4}">${band(n)}</span></div></a>`;
 }
 
 function home() {
@@ -1119,7 +1124,7 @@ function what() {
     <h2>What conviviality is not</h2>
     <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
     <h2>Read the book</h2>
-    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
+    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools rated Convivial.</p>
   </div>
   ${pdfCard()}`;
 }
@@ -1256,13 +1261,13 @@ function method() {
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>
-    <p>The total becomes a verdict, stamped on every review. The stamp is a judgement made by people, dated, and open to change.</p>
+    <p>The total becomes a verdict, shown on every review as a badge that runs from full blue for convivial to red for manipulative. The verdict is a judgement made by people, dated, and open to change.</p>
   </div>
   <div class="bands">
-    <div class="band-cell"><b>Convivial</b><span>25 to 30</span></div>
-    <div class="band-cell"><b>Leaning convivial</b><span>18 to 24</span></div>
-    <div class="band-cell"><b>Mixed</b><span>10 to 17</span></div>
-    <div class="band-cell"><b>Manipulative</b><span>0 to 9</span></div>
+    <div class="band-cell b1"><b>Convivial</b><span>25 to 30</span></div>
+    <div class="band-cell b2"><b>Leaning convivial</b><span>18 to 24</span></div>
+    <div class="band-cell b3"><b>Mixed</b><span>10 to 17</span></div>
+    <div class="band-cell b4"><b>Manipulative</b><span>0 to 9</span></div>
   </div>
   <div class="prose">
     <h2>Size: who makes it</h2>
