@@ -10,6 +10,5 @@
 ## Key pages
 
 - [How we score](https://toolsforconviviality.com/how-we-score/)
-- [Leaderboard](https://toolsforconviviality.com/leaderboard/)
-- [Directory](https://toolsforconviviality.com/directory/)
+- [Directory and leaderboard, ranked by score](https://toolsforconviviality.com/directory/)
 - [Benchmarks](https://toolsforconviviality.com/benchmarks/)

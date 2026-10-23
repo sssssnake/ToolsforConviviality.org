@@ -2,7 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://toolsforconviviality.com/</loc><lastmod>2026-10-23</lastmod><priority>1.0</priority></url>
   <url><loc>https://toolsforconviviality.com/directory/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
-  <url><loc>https://toolsforconviviality.com/leaderboard/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/for-agents/</loc><lastmod>2026-10-23</lastmod><priority>0.5</priority></url>
   <url><loc>https://toolsforconviviality.com/improve-my-conviviality-score/</loc><lastmod>2026-10-23</lastmod><priority>0.5</priority></url>
@@ -41,6 +40,10 @@
   <url><loc>https://toolsforconviviality.com/tools/cryptomator/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/freshrss/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/calibre/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/standard-ebooks/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/gutenberg/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/koreader/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/audiobookshelf/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/deltachat/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/openclaw/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/hermes-agent/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>

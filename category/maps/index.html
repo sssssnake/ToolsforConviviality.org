@@ -278,7 +278,6 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <nav class="nav" aria-label="Main">
       <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
       <a href="/directory/" data-nav="directory" aria-current="page">Directory</a>
-      <a href="/leaderboard/" data-nav="leaderboard">Leaderboard</a>
       <a href="/how-we-score/" data-nav="method">How we score</a>
       <a href="/suggest/" data-nav="submit">Suggest a tool</a>
     </nav>
@@ -343,7 +342,7 @@ const CATS = [
   { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
   { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
   { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
-  { id: "books", name: "Books & libraries", verb: "Keep and read my own books", instead: "Kindle, Apple Books, Google Play Books" },
+  { id: "books", name: "Books & libraries", verb: "Own my books, not rent them", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
@@ -474,6 +473,30 @@ const TOOLS = [
     tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,3,4,5,5],
     body: ["Kovid Goyal started Calibre in 2006 so his e-reader would work on Linux, and it has grown into the standard way to keep your own books in order. It converts between formats, edits them, sends them to your reader and fetches news from the web. Your library is a folder of files you can open without it.",
       "That makes it the opposite of an ebook store that rents you books and can take them away. The interface is dense, so beginners may feel buried, and a project this big leans heavily on one lead developer. Since 2025 it can also connect to AI models, including ones you run yourself, so check its settings before you use that."] },
+  { slug: "standard-ebooks", name: "Standard Ebooks", cat: "books", size: "S", scope: "tool", url: "https://standardebooks.org",
+    one: "Free, carefully made editions of public-domain books, with no account and no catch.", replaces: "Free and cheap Kindle classics",
+    price: "Free", source: "Public domain (CC0)", platforms: "Any browser or e-reader",
+    tags: ["Free", "No account", "Public domain"], s: [4,5,4,5,5,4],
+    body: ["Standard Ebooks is a volunteer project that takes public-domain books and gives them the care a good publisher would, with proper typography, clean formatting and covers. Everything it produces is dedicated to the public domain, so you can copy, share and keep the files without asking anyone. It is paid for by reader donations, with a few sponsors listed on its site.",
+      "The limit is the shelf: you will find the classics, and nothing recent. It is the best answer to the Kindle store's free-classics section, because the files are yours, in standard formats, and look better than most paid editions. Check which file type your reader needs before you download."] },
+  { slug: "gutenberg", name: "Project Gutenberg", cat: "books", size: "M", scope: "tool", url: "https://www.gutenberg.org",
+    one: "More than 75,000 free ebooks from a volunteer library that started in 1971.", replaces: "Kindle's free book section",
+    price: "Free", source: "Nonprofit foundation, volunteer-run", platforms: "Any browser or e-reader",
+    tags: ["Free", "No account", "No ads", "Nonprofit"], s: [4,5,3,5,5,4],
+    body: ["Project Gutenberg says it has more than 75,000 free ebooks, and promises that they are free and always will be, with no fees, no registration and no ads. Michael Hart started the project in 1971, and thousands of volunteers have digitised and proofread the books since. A foundation runs it and takes donations.",
+      "It is the oldest and biggest free library of its kind, and the books are plain files you can keep. The site looks its age and the formatting varies from book to book, which is why Standard Ebooks exists for the titles it covers. Like the rest of the free shelf, it holds older books, so anything new has to come from somewhere else."] },
+  { slug: "koreader", name: "KOReader", cat: "books", size: "M", scope: "tool", url: "https://koreader.rocks",
+    one: "An open-source reading app for e-ink readers, phones and computers that opens almost any file.", replaces: "The Kindle reading app",
+    price: "Free", source: "Open source (AGPL)", platforms: "Kindle, Kobo, PocketBook, reMarkable, Android, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,3,5,5,4],
+    body: ["KOReader is a document reader that volunteers around the world develop. It runs on Kindle, Kobo, PocketBook and reMarkable e-readers as well as Android and Linux, and it opens EPUB, PDF, DjVu, Mobi, comics and many other formats. It can also connect to a Calibre library, so your books stay in your own folder.",
+      "It gives you control of fonts, margins and layout that the store apps hide, and it needs no account. The settings are deep and take time to learn, and installing it on a Kindle means unlocking the device first, so read the project's notes before you try. It takes donations through Liberapay."] },
+  { slug: "audiobookshelf", name: "Audiobookshelf", cat: "books", size: "S", scope: "system", url: "https://www.audiobookshelf.org",
+    one: "A server you run yourself for your audiobooks, podcasts and ebooks, with apps to listen on your phone.", replaces: "Audible",
+    price: "Free", source: "Open source (GPL)", platforms: "Self-hosted server; Android and iOS apps in beta",
+    tags: ["Open source", "Free", "Self-hosted"], s: [3,4,3,5,4,3],
+    body: ["Audiobookshelf is a self-hosted server for audiobooks and podcasts that also handles basic ebooks in EPUB, PDF and comic formats. You put your files on a computer or small server you control, add the people who should have access, and listen through a web page or a phone app. It is open source under the GPL.",
+      "It is the way out of Audible if you own your audio files, because it plays what you have and keeps your place. It is also the one tool here that asks you to run a server, so it suits people who are comfortable with that. When we looked, the phone apps were still in beta, and one developer owns most of the project."] },
   { slug: "deltachat", name: "Delta Chat", cat: "talk", size: "M", scope: "tool", url: "https://delta.chat",
     one: "A chat app that runs on ordinary email, with no phone number needed.", replaces: "WhatsApp, Telegram",
     price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
@@ -655,11 +678,16 @@ const CATCOPY = {
     faq: [["Is there an open-source alternative to ChatGPT agents?", "Yes. {openclaw} and {hermes-agent} are both MIT licensed and run on your own computer or server."],
       ["Are AI agents safe to run?", "They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so."],
       ["Do I still need an AI model provider?", "Usually yes. The agents are free, but they send your prompts to a model you choose, either a hosted one you pay for or one you run yourself."]] },
-  books: { h1: "Alternatives to Kindle and Apple Books", lede: "Keep your own ebook library, in files you control.",
-    intro: ["Buying books from a store that can change or end the deal at any time makes your shelf a rental. {calibre} keeps your library on your own computer, converts between formats and sends books to your reader.",
-      "It is a shelf you own, with no store attached."],
-    choose: "Look at where your books are stored and whether you could read them if the store disappeared. A folder of open files is the safe answer. Then check that your reader can read what you keep, since some devices only take certain formats.",
-    faq: [["Can I manage ebooks without Amazon or Apple?", "Yes. {calibre} is a free library manager for Windows, Mac and Linux."]] }
+  books: { h1: "Alternatives to the Kindle store", lede: "Leave the Kindle ecosystem for books you keep, in files you control.",
+    intro: ["Buying a book from the Kindle store means buying a licence to read it inside Amazon's system, on Amazon's terms. The book sits in a format only Amazon's apps and devices are built around, and it can be changed or taken back without your say. That is the opposite of a convivial tool, because the shelf only works as long as the store is willing.",
+      "You can leave without giving up reading. {standard-ebooks} and {gutenberg} give you tens of thousands of free books as plain files. {calibre} keeps your library in a folder on your own computer and converts between formats. {koreader} replaces the reading app on your device, and {audiobookshelf} does the same job for audiobooks if you want out of Audible.",
+      "A public library lends ebooks and audiobooks too, usually through an app, and it is the oldest convivial tool on this page. Buying from authors and publishers who sell files without copy protection is the other piece, because a file you can move is a book you own."],
+    choose: "Start with where your books are stored and whether you could read them if the store vanished tomorrow. A folder of open files is the safe answer. Then check that your reader opens what you keep, since some devices take only certain formats, and that you are happy to run anything that needs a server. Leave your existing Kindle purchases where they are until you know what you want to do with them.",
+    faq: [["What is an alternative to the Kindle store?", "There is no single replacement, and that is the point. Free libraries such as {standard-ebooks} and {gutenberg} cover older books, your public library covers new ones, and {calibre} holds everything you own. Some authors and publishers sell books without copy protection."],
+      ["Can I move my Kindle books to Calibre?", "Books bought from Amazon are usually protected, and the rules on removing that protection differ from country to country, so we don't cover how to do it. The safe path is to keep reading them in the Kindle app and to buy new books as files you can keep."],
+      ["Can I keep my Kindle device?", "Yes, with limits. A Kindle opens files you load onto it, and {koreader} can replace its reading software once the device is unlocked. Many people simply move to an e-reader that takes open formats."],
+      ["How do I listen to audiobooks without Audible?", "Buy or borrow audio files you can keep and play them with {audiobookshelf}, which runs on your own server, or with any player that opens the files. Check that the audiobook comes without copy protection before you pay."],
+      ["Are free ebooks any good?", "Yes, for older books. {standard-ebooks} editions are carefully typeset, and {gutenberg} holds more than 75,000 titles, though the formatting varies."]] }
 };
 const linkify = s => esc(s).replace(/\{([a-z0-9]+)\}/g, (m, slug) => { const t = TOOLS.find(x => x.slug === slug); return t ? `<a href="#tool-${slug}">${esc(t.name)}</a>` : m; });
 
@@ -675,22 +703,26 @@ function category(id) {
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p><h2>Questions people ask</h2>${k.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${linkify(a)}</p>`).join("")}</div>` : ""}`;
 }
 
-const filt = { size: "all", scope: "all", cat: "all", verdict: "all", lbcat: "all" };
+const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "score" };
 const VERDICT_MIN = { all: 0, leaning: 18, convivial: 25 };
 function directory(preset) {
-  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all" }, preset);
+  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all", sort: "score" }, preset);
   const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat) && total(t) >= VERDICT_MIN[filt.verdict])
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .sort((a, b) => filt.sort === "az" ? a.name.localeCompare(b.name) : total(b) - total(a) || a.name.localeCompare(b.name));
+  let last = null, rank = 0;
+  const ranks = new Map(list.map((t, i) => { if (total(t) !== last) { rank = i + 1; last = total(t); } return [t.slug, rank]; }));
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
-  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, A to Z, with its score. Want the best of the lot? See the <a href="#leaderboard">leaderboard</a>.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, ranked from most to least convivial by its score out of 30. Tools with the same score share a rank. Switch to A to Z if you are looking for a name.</p></div>
   <div class="filters">
+    ${grp("sort", "Order", [["score", "Most convivial first"], ["az", "A to Z"]])}
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
   <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
-  <div class="tool-list">${list.length ? list.map(t => row(t)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>`;
+  <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "az" ? 0 : ranks.get(t.slug))).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
+  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
 
 function tool(slug, isBench) {
@@ -700,7 +732,7 @@ function tool(slug, isBench) {
   <div class="review">
     <article class="review-body">
       <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
-      ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory or the leaderboard, and it is an example, not a recommendation.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
+      ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
       ${chips(t)}
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
@@ -741,18 +773,6 @@ function what() {
     <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
   </div>
   ${pdfCard()}`;
-}
-
-function leaderboard() {
-  const list = TOOLS.filter(t => filt.lbcat === "all" || t.cat === filt.lbcat).sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name));
-  let last = null, rank = 0;
-  const rows = list.map((t, i) => { if (total(t) !== last) { rank = i + 1; last = total(t); } return row(t, rank); }).join("");
-  const grp = `<div class="filter-group" role="group" aria-label="Category"><span class="label">Category</span>${[["all", "All"]].concat(CATS.map(c => [c.id, c.name])).map(([v, l]) => `<button class="fbtn" type="button" data-f="lbcat" data-v="${v}" aria-pressed="${filt.lbcat === v}">${l}</button>`).join("")}</div>`;
-  return `<p class="crumbs"><a href="#home">Home</a> / Leaderboard</p>
-  <div class="page-head" style="margin-top:14px"><h1>The leaderboard</h1><p>Every tool in the directory, ranked by its score out of 30. Tools with the same score share a rank.</p></div>
-  <div class="filters">${grp}</div>
-  <div class="tool-list">${rows}</div>
-  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
 
 const AGENT_PROMPT = [
@@ -819,7 +839,7 @@ function forAgents() {
   <div class="prose">
     <h2>Submitting and re-submitting</h2>
     <p>The last step of the prompt builds a link to the <a href="#submit">suggestion form</a> with everything filled in, including the agent's own scores and evidence. You open it, check it, and send it by email. The form sends nothing by itself, and nobody should submit on your behalf without you seeing it first. To update a tool that is already listed, say so in the form and list what changed, and we will look at it again.</p>
-    <p>You can also read the <a href="#method">full rubric</a> and the <a href="#what">idea behind it</a>, or look at the <a href="#leaderboard">leaderboard</a> to see where tools stand today.</p>
+    <p>You can also read the <a href="#method">full rubric</a> and the <a href="#what">idea behind it</a>, or look at the <a href="#directory">directory</a>, ranked from most to least convivial, to see where tools stand today.</p>
     <p class="note">Agents: this page is also summarised at <a href="/llms.txt">/llms.txt</a>.</p>
   </div>`;
 }
@@ -828,7 +848,7 @@ function benchmarks() {
   return `<p class="crumbs"><a href="#home">Home</a> / Benchmarks</p>
   <div class="page-head" style="margin-top:14px"><h1>Benchmarks: how the giants score</h1><p>A few extra large tools, scored with the same six questions, so you can see what everything else is measured against.</p></div>
   <div class="prose">
-    <p>The directory is for small and medium tools. Now and then we review a giant too, so a score of 25 has something to be compared with. These reviews are examples, not recommendations, and they are not listed in the directory or the leaderboard.</p>
+    <p>The directory is for small and medium tools. Now and then we review a giant too, so a score of 25 has something to be compared with. These reviews are examples, not recommendations, and they are not listed in the directory.</p>
   </div>
   <div class="tool-list">${BENCH.map(t => row(t)).join("")}</div>
   <div class="prose">
@@ -896,10 +916,10 @@ function method() {
     <h2>Scope: how much of your life it holds</h2>
     <dl class="def">${Object.entries(SCOPES).map(([k, v]) => `<dt>${v.name}</dt><dd>${v.def}</dd>`).join("")}</dl>
     <p>Scope sets how deep a review goes. A gadget gets a short card. A system that holds your passwords or photos gets the long treatment.</p>
-    <h2>The leaderboard</h2>
-    <p>Every tool in the directory is ranked by its total on the <a href="#leaderboard">leaderboard</a>, so you can see at a glance which ones come out most convivial. A total hides detail, though, so open a review to see how a tool did on each of the six questions, and compare within a category when you are choosing, because a password manager and a painting program do different jobs.</p>
+    <h2>The ranking</h2>
+    <p>Every tool in the directory is ranked by its total in the <a href="#directory">directory</a>, so you can see at a glance which ones come out most convivial. A total hides detail, though, so open a review to see how a tool did on each of the six questions, and compare within a category when you are choosing, because a password manager and a painting program do different jobs.</p>
     <h2>Benchmarks</h2>
-    <p>Now and then we score one of the giants, so you can see what everything else is measured against. These <a href="#benchmarks">benchmark reviews</a> use the same questions and the same scale, and they stay outside the directory and the leaderboard.</p>
+    <p>Now and then we score one of the giants, so you can see what everything else is measured against. These <a href="#benchmarks">benchmark reviews</a> use the same questions and the same scale, and they stay outside the directory.</p>
     <h2>Our own tools</h2>
     <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
     <h2>Credit where it's due</h2>
@@ -987,7 +1007,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -1003,10 +1023,9 @@ function listLd(list) { return { "@type": "ItemList", itemListElement: list.map(
 function seo(id) {
   const out = (title, desc, extra) => Object.assign({ title: title + " | Tools for Conviviality", desc: clip(desc, 158), image: SITE + "/assets/og-default.png", noindex: false, type: "website", ld: [] }, extra || {});
   if (id === "home") return out("", "Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big Tech apps.", { title: "Tools for Conviviality: a directory of small, independent software", ld: [{ "@type": "WebSite", name: "Tools for Conviviality", url: SITE + "/", description: "An independent directory of small, convivial software." }] });
-  if (id === "directory") return out("Directory of convivial software and alternatives", `All ${TOOLS.length} reviewed tools, from offline maps to password managers, each scored out of 30 against Illich's six tests. Filter by maker, scope and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS)] });
+  if (id === "directory") return out("Directory and leaderboard of the most convivial software", `All ${TOOLS.length} reviewed tools, ranked from most to least convivial and scored out of 30 against Illich's six tests. Filter by maker, scope, category and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)))] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
-  if (id === "leaderboard") { const ranked = TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)); return out("Leaderboard of the most convivial software", `The ${TOOLS.length} tools in the directory, ranked by how convivial they are, scored out of 30 on six questions from Ivan Illich.`, { ld: [crumbs([["Home", "/"], ["Leaderboard", "/leaderboard/"]]), listLd(ranked)] }); }
   if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
   if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
@@ -1059,7 +1078,6 @@ function render() {
   else if (h === "improve") { html = improve(); nav = ""; }
   else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
-  else if (h === "leaderboard") { html = leaderboard(); nav = "leaderboard"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
   else if (h === "directory") { html = directory(); nav = "directory"; }
   else if (h === "what") { html = what(); nav = "what"; }
@@ -1078,7 +1096,7 @@ function render() {
 function bind() {
   const another = document.getElementById("another");
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
-  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(b.dataset.f === "lbcat" ? leaderboard() : directory()); bind(); });
+  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
   const form = document.getElementById("suggest");
   if (form && !form.dataset.filled) {   // links built by an AI agent can prefill the form: /suggest/?name=...&url=...
     form.dataset.filled = "1";

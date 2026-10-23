@@ -113,7 +113,31 @@
   {
     "slug": "calibre",
     "name": "Calibre",
-    "url": "https://calibre-ebook.com"
+    "url": "https://calibre-ebook.com",
+    "brand": {
+      "icon": "https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png",
+      "v": 1
+    }
+  },
+  {
+    "slug": "standard-ebooks",
+    "name": "Standard Ebooks",
+    "url": "https://standardebooks.org"
+  },
+  {
+    "slug": "gutenberg",
+    "name": "Project Gutenberg",
+    "url": "https://www.gutenberg.org"
+  },
+  {
+    "slug": "koreader",
+    "name": "KOReader",
+    "url": "https://koreader.rocks"
+  },
+  {
+    "slug": "audiobookshelf",
+    "name": "Audiobookshelf",
+    "url": "https://www.audiobookshelf.org"
   },
   {
     "slug": "deltachat",
