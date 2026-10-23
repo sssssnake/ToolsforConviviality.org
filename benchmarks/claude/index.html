@@ -338,17 +338,15 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/benchmarks/">Benchmarks</a> / Claude</p>
   <div class="review">
     <article class="review-body">
-      <div class="review-head"><span class="logo lg"><img src="/assets/tools/claude/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div class="page-head"><h1>Claude</h1><p>Anthropic's assistant, a capable hosted service you cannot run yourself.</p></div></div>
-      <p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation.</p>
+      <div class="review-head"><span class="logo lg" style="background:#0b7285;color:#fff" aria-hidden="true">C</span><div class="page-head"><h1>Claude</h1><p>Anthropic's assistant, a capable hosted service you cannot run yourself.</p></div></div>
+      <p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated October 2026.</p>
       <div class="chips"><span class="chip">XL · System</span><span class="chip">Benchmark</span><span class="chip">Closed source</span><span class="chip">Hosted</span></div>
-      <figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>claude.ai</span></div>
-    <img src="/assets/tools/claude/social-600.webp" srcset="/assets/tools/claude/social-600.webp 480w, /assets/tools/claude/social-600.webp 960w, /assets/tools/claude/social-1200.webp 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="Preview image for Claude" loading="lazy" width="960" height="600"></figure>
-    <p class="shot-credit">Image from claude.ai, taken 2026-10-23, shown to help you recognise the tool. It belongs to its maker. <a href="/about/">Ask us to remove it</a>.</p>
+      
       <p>Claude is a capable assistant that does writing, analysis and coding well, so it scores a 4 on Delivery. Like ChatGPT it is a closed service that runs on its maker's servers, needs an account and cannot be run on your own machine.</p><p>It scores a point higher than ChatGPT on Power mostly because of how it handles your data. Anthropic's consumer terms ask Free, Pro and Max users to choose whether their chats may be used to improve Claude, with five years of retention if you say yes and 30 days if you say no, and commercial and API use sit outside that choice. This site was built with help from Claude, so weigh this review with that in mind. Either way it is a hosted product from one company, which is the gap the open tools in this category fill.</p>
       <ul class="points" aria-label="What makes Claude unusual"><h2>What stands out</h2><li>Capable at writing, analysis and coding</li><li>A closed hosted service you can't run yourself</li><li>Asks free and paid users to choose whether chats improve Claude</li></ul>
       <div class="visit"><a class="btn" href="https://claude.ai" target="_blank" rel="noopener">Visit Claude <span aria-hidden="true">↗</span></a></div>
       
-      <section class="related"><h2>Compare with tools in AI agents</h2><ul><li><a href="/tools/ollama/"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">O</span><span class="rt"><b>Ollama</b><span>Runs open AI models on your own computer and gives other apps a local server to use them.</span></span></a></li><li><a href="/tools/jan/"><span class="logo sm" style="background:#fff;color:#121a20" aria-hidden="true">J</span><span class="rt"><b>Jan</b><span>An open-source chat app that runs AI models fully offline on your computer.</span></span></a></li><li><a href="/tools/goose/"><span class="logo sm"><img src="/assets/tools/goose/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>goose</b><span>An open-source AI agent that runs on your machine and works with the model you choose.</span></span></a></li><li><a href="/tools/openclaw/"><span class="logo sm"><img src="/assets/tools/openclaw/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>OpenClaw</b><span>An open-source AI assistant that runs on your own computer and works through your chat apps.</span></span></a></li><li><a href="/tools/hermes-agent/"><span class="logo sm"><img src="/assets/tools/hermes-agent/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Hermes Agent</b><span>An open-source AI agent that learns skills from the tasks it does and remembers you.</span></span></a></li></ul></section>
+      <section class="related"><h2>Compare with tools in AI agents</h2><ul><li><a href="/tools/ollama/"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">O</span><span class="rt"><b>Ollama</b><span>Runs open AI models on your own computer and gives other apps a local server to use them.</span></span></a></li><li><a href="/tools/jan/"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">J</span><span class="rt"><b>Jan</b><span>An open-source chat app that runs AI models fully offline on your computer.</span></span></a></li><li><a href="/tools/goose/"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">G</span><span class="rt"><b>goose</b><span>An open-source AI agent that runs on your machine and works with the model you choose.</span></span></a></li><li><a href="/tools/openclaw/"><span class="logo sm"><img src="/assets/tools/openclaw/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>OpenClaw</b><span>An open-source AI assistant that runs on your own computer and works through your chat apps.</span></span></a></li><li><a href="/tools/hermes-agent/"><span class="logo sm"><img src="/assets/tools/hermes-agent/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Hermes Agent</b><span>An open-source AI agent that learns skills from the tasks it does and remembers you.</span></span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Claude Info</span><i aria-hidden="true"></i></div>
@@ -415,6 +413,7 @@ const CATS = [
   { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
   { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
   { id: "talk", name: "Chat", verb: "Chat with people", instead: "WhatsApp, Slack and Teams" },
+  { id: "social", name: "Social feeds", verb: "Share and follow without being hooked", instead: "Instagram, TikTok and Facebook" },
   { id: "email", name: "Email", verb: "Send and read email", instead: "Gmail and Outlook" },
   { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
@@ -714,6 +713,30 @@ const TOOLS = [
     tags: ["Encrypted", "Free tier", "Passkeys"], s: [4,3,4,3,3,4],
     body: ["Proton Pass comes from Proton AG in Geneva, the company behind Proton Mail. It says it uses zero-knowledge, end-to-end encryption, so not even Proton can read what you store. The free plan has unlimited logins and devices, passkey support and 10 hide-my-email aliases, and Pass Plus costs $2.99 a month billed yearly and adds unlimited aliases, a built-in authenticator and file attachments.",
       "The Android and iOS apps are on GitHub under GPL-3.0, and Proton says Pass is open source, though we could not confirm which parts. It is one company's service, so a change at Proton changes your vault, and we found how to import from other managers but not how to export from Proton Pass, which is why Lock-in is only a 3. If you want your passwords in a file you own, KeePassXC is the better fit."] },
+  { slug: "mastodon", name: "Mastodon", cat: "social", size: "M", scope: "system", url: "https://joinmastodon.org",
+    one: "A social network of independent servers with no ads and no algorithmic feed.", replaces: "Instagram, X and Facebook",
+    price: "Free; funded by donations", source: "Open source", platforms: "Web, iOS, Android",
+    tags: ["Open source", "No ads", "Chronological feed"], s: [3,3,4,4,4,3],
+    body: ["Mastodon is free and open-source social networking software developed by a non-profit, and its homepage says there are no algorithms or ads, with posts from the people you follow arriving in chronological order. It is not one company's site. Each Mastodon server is an independent entity, and servers connect through the open ActivityPub standard, so people on different servers can follow each other. Development is paid for by donations and sponsors, and the homepage says sponsorship does not equal influence.",
+      "The cost is that you pick a server before you start, which puts people off, and the network is far smaller than Instagram's, so your friends may not be there. Its homepage doesn't explain how to move an account between servers, so we scored Lock-in cautiously. We also did not check its licence or its finances."] },
+  { slug: "pixelfed", name: "Pixelfed", cat: "social", size: "S", scope: "system", url: "https://pixelfed.org",
+    one: "A free, open-source photo-sharing network that works like Instagram without the company.", replaces: "Instagram",
+    price: "Free", source: "Open source", platforms: "Web",
+    tags: ["Open source", "Decentralised", "Photos"], s: [3,3,4,4,3,3],
+    body: ["Pixelfed describes itself as the free and open-source decentralised photo-sharing platform, and its site credits a developer known as Dansup as its creator. It does the job of Instagram's photo feed, run by whoever hosts each server and not by one advertising company.",
+      "Its homepage tells us nothing about ads, tracking, funding, apps or moving your account, so we scored those questions cautiously and will update the review when we have more. It also shares a developer with Loops, which means a lot rests on one person."] },
+  { slug: "loops", name: "Loops", cat: "social", size: "S", scope: "system", url: "https://joinloops.org",
+    one: "A federated short-video app from the Pixelfed team, with no ads.", replaces: "TikTok",
+    price: "Free", source: "Open source", platforms: "Web, iOS, Android",
+    tags: ["Open source", "No ads", "Short video"], s: [3,3,4,4,3,2],
+    body: ["Loops describes itself as a federated, open-source short-video platform built on ActivityPub. Its homepage lists no ads and says it has no dark-pattern growth hacks. It is made by the Pixelfed developer and has apps for iOS and Android as well as the web.",
+      "It is young, and its signup links to a beta page. Its For You feed is still driven by engagement, hashtags and your social graph, so it is worth watching how it handles that as it grows. We did not find its licence on the homepage, and the audience is small, which is why Delivery is only a 2."] },
+  { slug: "peertube", name: "PeerTube", cat: "social", size: "M", scope: "system", url: "https://joinpeertube.org",
+    one: "Video sharing on servers run by many people, built by a French non-profit.", replaces: "TikTok and YouTube",
+    price: "Free", source: "Open source", platforms: "Web",
+    tags: ["Open source", "No ads", "Non-profit"], s: [3,3,4,5,4,3],
+    body: ["PeerTube is video-sharing software that runs on a server of your own, and each site connects to others to form a network. Framasoft, a French non-profit, develops it and says it does not make money from it, with over 90% of its funding coming from donations. The software depends on no advertising and does not track you, and each platform's owners build, manage and moderate their own.",
+      "That makes it a different thing from a short-video feed, and closer to a place to keep and share video you made. The cost is that rules differ from one platform to the next, since each owner sets their own, and the audience is small next to the giants. We did not check how easy it is to take your videos and followers elsewhere."] },
 ];
 
 const BENCH = [
@@ -794,7 +817,19 @@ const BENCH = [
     price: "Free; paid storage", source: "Closed source", platforms: "Web, Android, iOS",
     tags: ["Benchmark", "Closed source", "Free"], s: [2,3,2,1,3,5],
     body: ["Gmail is excellent mail: it filters spam well, stays up and works everywhere. It also anchors your whole Google life, with 15 GB of free storage shared with Drive and Photos, and an address that only Google can host unless you pay for Workspace and your own domain. Until 2017 Google scanned message text to target ads, and its terms still let it analyse mail to power its own features.",
-      "You can leave in principle, because Gmail supports IMAP and POP and Google lets you export your data, but your address, your contacts and years of logins stay behind with the old account. Google also has a record of retiring services, such as Inbox in 2019 and the basic HTML view in 2024. Gmail is a good example of a tool that is hard to fault on delivery and hard to trust on power."] }
+      "You can leave in principle, because Gmail supports IMAP and POP and Google lets you export your data, but your address, your contacts and years of logins stay behind with the old account. Google also has a record of retiring services, such as Inbox in 2019 and the basic HTML view in 2024. Gmail is a good example of a tool that is hard to fault on delivery and hard to trust on power."] },
+  { slug: "instagram", name: "Instagram", cat: "social", size: "XL", scope: "system", url: "https://www.instagram.com",
+    one: "Where a huge number of people share photos and short video, paid for by advertising.", replaces: "The tool the social apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Web, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Ad-funded"], s: [1,2,1,0,1,2],
+    body: ["Instagram is free because advertising pays for it, and eMarketer projected that it would account for 50.3% of Meta's US ad revenue in 2025, about $32 billion. The feed leans on infinite scroll, autoplay, notifications and recommendations based on what you did before, which is the mix our Self-direction question is about. It does connect people and works on nearly any phone, which is why Delivery is a 2 and not lower.",
+      "US states are suing Meta, and a federal trial over whether these features were built to hook children was under way in August, with no verdict reported. Meta denies it and points to its Teen Accounts. Those are allegations, and we left them out of the score, which rests on the design and the business model as they stand today. We have not checked how much of your data you can take with you, so Lock-in is our estimate. As of October 2026 this is our opinion, based on the public sources named here, and if you spot an error, write to hello@toolsforconviviality.com and we will check it and correct it. Compare it with the tools in Social feeds."] },
+  { slug: "tiktok", name: "TikTok", cat: "social", size: "XL", scope: "system", url: "https://www.tiktok.com",
+    one: "A feed of short videos chosen for you by an algorithm, paid for by advertising.", replaces: "The tool the social apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Web, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Ad-funded"], s: [1,1,1,0,1,2],
+    body: ["TikTok is built around a For You feed that chooses short videos for you, and it is paid for by advertising. In January 2026 a US joint venture led by Oracle, Silver Lake and MGX took over its US operations, with ByteDance keeping a 19.9% stake. US user data and the retrained algorithm are hosted in Oracle's cloud, which changes who holds the data and does not change how the feed works. It is very good at what it does, so Delivery is a 2.",
+      "Arizona's attorney general sued TikTok this month over infinite scrolling, autoplay and reward loops that she says maximise compulsive use among minors, and other states have filed similar cases. Those are allegations, we have not seen TikTok's response, and we left them out of the score, which rests on how the product is built and paid for. We have not checked how much of your data you can export, so Lock-in is our estimate. As of October 2026 this is our opinion, based on the public sources named here, and if you spot an error, write to hello@toolsforconviviality.com and we will check it and correct it. Compare it with the tools in Social feeds."] },
 ].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
@@ -859,6 +894,12 @@ const HL = {
 "osmand": ["Offline OpenStreetMap maps and navigation, with no roaming charges abroad", "The free version caps map downloads at 16 files", "Dense, with a setting for nearly everything"],
 "immich": ["Backs up your phone's photos and videos to a server you run", "Searches by faces and by what is in the picture", "AGPL-3.0, with a warning not to treat it as your only copy"],
 "proton-pass": ["Zero-knowledge encryption, so Proton says it can't read your passwords", "The free plan has unlimited logins and devices, plus passkeys", "Android and iOS apps are on GitHub under GPL-3.0"],
+"mastodon": ["Independent servers that connect through the open ActivityPub standard", "No ads and no algorithmic feed, with posts in chronological order", "Developed by a non-profit and funded by donations and sponsors"],
+"pixelfed": ["Free, open-source and decentralised photo sharing", "Run by whoever hosts each server, not one advertising company", "Shares a developer with Loops, so a lot rests on one person"],
+"loops": ["A federated short-video app that lists no ads", "Built on ActivityPub, with iOS, Android and web apps", "Young, with its signup pointing to a beta page"],
+"peertube": ["Video hosting on servers run by many different owners", "Built by Framasoft, a French non-profit funded over 90% by donations", "Says it depends on no advertising and does not track you"],
+"instagram": ["Paid for by advertising, projected at about half of Meta's US ad revenue by eMarketer", "Infinite scroll, autoplay, notifications and recommendations shape the feed", "The legal cases are allegations and are not part of the score"],
+"tiktok": ["An algorithm picks the videos for your For You feed, and advertising pays for it", "US operations moved to an Oracle-led joint venture in January 2026", "The legal cases are allegations and are not part of the score"],
 "gmail": ["Excellent mail that filters spam well and works everywhere", "15 GB free, shared with Drive and Photos", "Supports IMAP and export, so you can leave in principle"]
 };
 [...TOOLS, ...BENCH].forEach(t => { t.points = HL[t.slug] || []; });
@@ -1014,6 +1055,13 @@ const CATCOPY = {
     choose: "The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control. Look at who runs the network and whether you could take your contacts with you.",
     faq: [["What is a private alternative to WhatsApp?", "{signal} offers end-to-end encryption by default and is run by a nonprofit. {element} and {deltachat} are open alternatives that are harder to start with and harder for anyone to shut down."],
       ["Is there a messaging app that doesn't need a phone number?", "{deltachat} runs on email, so you sign up with an address or a chat relay and give out no phone number."]] },
+  social: { h1: "Alternatives to Instagram and TikTok", lede: "Photos, video and following people on networks that no single company runs.",
+    intro: ["Instagram and TikTok show what the score is for. They are free because advertising pays for them, and their feeds use infinite scroll, autoplay, notifications and recommendations. You can see where our scoring puts them in the ranking below, and what the open alternatives score next to them.",
+      "{mastodon} is a network of independent servers with no ads and no algorithmic feed, {pixelfed} shares photos the way Instagram does, {loops} is a short-video app from the same developer, and {peertube} is video hosting from a French non-profit. They are smaller, and some are young, so the honest trade-off is audience."],
+    choose: "Start with where your friends already are, since a social network is only as good as the people on it. Then check how the feed works, who pays for it, and whether you could take your followers with you if you left. Most of these let you follow people across servers, which makes leaving easier than it is on the big apps.",
+    faq: [["What is an alternative to Instagram?", "{pixelfed} is a free, open-source photo-sharing network that doesn't run on one company's servers, and {mastodon} handles photos and text together."],
+      ["What is an alternative to TikTok?", "{loops} is a federated short-video app from the Pixelfed developer, and {peertube} hosts longer video on servers run by many people. Both are much smaller than TikTok."],
+      ["Do these apps have an algorithm?", "{mastodon} shows posts from the people you follow in chronological order. {loops} has a For You feed driven by engagement, hashtags and your social graph, so check how it behaves."]] },
   email: { h1: "Alternatives to Gmail and Outlook", lede: "Email you can take with you, from providers that are not selling your attention.",
     intro: ["Email is the one messaging system nobody owns, and Gmail has quietly turned it into a Google account. {thunderbird} is a free app that works with the mail you already have and keeps a copy on your computer, so you can leave a provider without losing your archive. {proton-mail} and {tuta} are encrypted mail services from European companies that say they are paid for by subscribers, not advertising.",
       "The first fixes how you read mail and the other two fix where it lives, and you can use both. {ferdium} takes a different route and puts your email and chat accounts in one desktop window, which does not replace Gmail or Outlook but makes them easier to live with."],
@@ -1105,7 +1153,7 @@ function tool(slug, isBench) {
   <div class="review">
     <article class="review-body">
       <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
-      ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
+      ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated ${REVIEWED}.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
       ${chips(t)}
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
@@ -1324,7 +1372,7 @@ function about() {
     <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
     <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
     <h2>Corrections</h2>
-    <p>If you make a tool we have reviewed and we got something wrong, tell us through the <a href="#submit">suggestion form</a> and we will fix it.</p>
+    <p>If you make a tool we have reviewed, or you spot a mistake in any review, including the benchmarks, tell us through the <a href="#submit">suggestion form</a> or at <span class="addr">hello@toolsforconviviality.com</span> and we will check it and correct it. Reviews state our opinion and rely on public sources, and where something is only alleged, we say so and keep it out of the score. Product and company names belong to their owners, and we are not affiliated with any of them.</p>
     <h2>Pictures</h2>
     <p>Logos and screenshots on this site belong to the people who make the tools. We show them so you can recognise what you are reading about, and each screenshot says where it came from and when it was taken. A script fetches them from each tool's own public page, identifies itself as ToolsForConvivialityBot, and skips any site whose robots.txt says no. If you make a tool listed here and would rather we use a different image, or none, write to <span class="addr">hello@toolsforconviviality.com</span> and we will change it.</p>
   </div>`;

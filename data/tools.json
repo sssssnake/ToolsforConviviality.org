@@ -365,5 +365,41 @@
     "slug": "proton-pass",
     "name": "Proton Pass",
     "url": "https://proton.me/pass"
+  },
+  {
+    "slug": "mastodon",
+    "name": "Mastodon",
+    "url": "https://joinmastodon.org"
+  },
+  {
+    "slug": "pixelfed",
+    "name": "Pixelfed",
+    "url": "https://pixelfed.org"
+  },
+  {
+    "slug": "loops",
+    "name": "Loops",
+    "url": "https://joinloops.org"
+  },
+  {
+    "slug": "peertube",
+    "name": "PeerTube",
+    "url": "https://joinpeertube.org"
+  },
+  {
+    "slug": "instagram",
+    "name": "Instagram",
+    "url": "https://www.instagram.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "tiktok",
+    "name": "TikTok",
+    "url": "https://www.tiktok.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]

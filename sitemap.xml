@@ -18,6 +18,7 @@
   <url><loc>https://toolsforconviviality.com/category/images/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/design/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/talk/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/social/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/email/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/books/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/collect/</loc><lastmod>2026-10-23</lastmod><priority>0.7</priority></url>
@@ -70,6 +71,10 @@
   <url><loc>https://toolsforconviviality.com/tools/osmand/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/immich/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/proton-pass/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/mastodon/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/pixelfed/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/loops/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/peertube/</loc><lastmod>2026-10-23</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/microsoft-word/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/whatsapp/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/adobe-creative-cloud/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
@@ -83,4 +88,6 @@
   <url><loc>https://toolsforconviviality.com/benchmarks/pinterest/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/google-password-manager/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/gmail/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/instagram/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/tiktok/</loc><lastmod>2026-10-23</lastmod><priority>0.6</priority></url>
 </urlset>
