@@ -691,7 +691,146 @@
       "colorFrom": "icon",
       "notes": [],
       "cfg": "[\"https://delta.chat\",null,null]"
+    },
+    "openclaw": {
+      "slug": "openclaw",
+      "name": "OpenClaw",
+      "source": "https://openclaw.ai",
+      "capturedAt": "2026-10-23T10:56:52.867Z",
+      "alt": "Screenshot of the OpenClaw website",
+      "pageTitle": "OpenClaw — Open-Source AI Assistant",
+      "pageDescription": "OpenClaw is the open-source AI assistant that runs on your machine and works from WhatsApp, Telegram, or any chat app: inbox, email, calendar, flights.",
+      "shot": {
+        "480": "assets/tools/openclaw/shot-480.webp",
+        "960": "assets/tools/openclaw/shot-960.webp",
+        "1600": "assets/tools/openclaw/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/openclaw/mobile-390.webp",
+        "780": "assets/tools/openclaw/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/openclaw/icon-128.webp",
+        "256": "assets/tools/openclaw/icon-256.webp",
+        "svg": "assets/tools/openclaw/icon.svg",
+        "from": "https://openclaw.ai/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/openclaw/social-600.webp",
+        "1200": "assets/tools/openclaw/social-1200.webp",
+        "from": "https://openclaw.ai/og-image.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://openclaw.ai\",null,null]"
+    },
+    "hermes-agent": {
+      "slug": "hermes-agent",
+      "name": "Hermes Agent",
+      "source": "https://hermes-agent.nousresearch.com",
+      "capturedAt": "2026-10-23T10:57:00.674Z",
+      "alt": "Screenshot of the Hermes Agent website",
+      "pageTitle": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
+      "pageDescription": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux — free under the MIT license.",
+      "shot": {
+        "480": "assets/tools/hermes-agent/shot-480.webp",
+        "960": "assets/tools/hermes-agent/shot-960.webp",
+        "1600": "assets/tools/hermes-agent/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/hermes-agent/mobile-390.webp",
+        "780": "assets/tools/hermes-agent/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/hermes-agent/icon-128.webp",
+        "256": "assets/tools/hermes-agent/icon-256.webp",
+        "from": "https://web-assets.nousresearch.com/marketing/91c82c2ded0a59b710de7ade55cd3f5e7df823b8/assets/hermes-agent/icon.png",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/hermes-agent/social-600.webp",
+        "1200": "assets/tools/hermes-agent/social-1200.webp",
+        "from": "https://web-assets.nousresearch.com/marketing/91c82c2ded0a59b710de7ade55cd3f5e7df823b8/assets/hermes-agent/og-image.png"
+      },
+      "color": "#0000f2",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://hermes-agent.nousresearch.com\",null,null]"
+    },
+    "microsoft-word": {
+      "slug": "microsoft-word",
+      "name": "Microsoft Word",
+      "source": "https://www.microsoft.com/en-us/microsoft-365/word",
+      "capturedAt": "2026-10-23T10:57:09.798Z",
+      "alt": "Screenshot of the Microsoft Word website",
+      "pageTitle": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "pageDescription": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, and collaborate anywhere. ",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.microsoft.com/en-us/microsoft-365/word\",{\"shot\":false},null]"
+    },
+    "whatsapp": {
+      "slug": "whatsapp",
+      "name": "WhatsApp",
+      "source": "https://www.whatsapp.com",
+      "capturedAt": "2026-10-23T10:57:31.156Z",
+      "alt": "Screenshot of the WhatsApp website",
+      "pageTitle": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "pageDescription": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world.",
+      "icon": {
+        "128": "assets/tools/whatsapp/icon-128.webp",
+        "256": "assets/tools/whatsapp/icon-256.webp",
+        "svg": "assets/tools/whatsapp/icon.svg",
+        "from": "https://static.whatsapp.net/rsrc.php/y1/r/FJbTMJqMap7.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/whatsapp/social-600.webp",
+        "1200": "assets/tools/whatsapp/social-1200.webp",
+        "from": "https://static.whatsapp.net/rsrc.php/v4/yO/r/rukeqTVNJDY.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.whatsapp.com\",{\"shot\":false},null]"
+    },
+    "gmail": {
+      "slug": "gmail",
+      "name": "Gmail",
+      "source": "https://workspace.google.com/products/gmail/",
+      "capturedAt": "2026-10-23T10:57:35.375Z",
+      "alt": "Screenshot of the Gmail website",
+      "pageTitle": "Gmail: Private & Secure Email for Personal or Business | Google Workspace",
+      "pageDescription": "Stay on top of your inbox and keep your business safer with the secure, smart, and easy to use Gmail.",
+      "icon": {
+        "128": "assets/tools/gmail/icon-128.webp",
+        "256": "assets/tools/gmail/icon-256.webp",
+        "from": "https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png",
+        "sourceWidth": 20,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/gmail/social-600.webp",
+        "1200": "assets/tools/gmail/social-1200.webp",
+        "from": "https://lh3.googleusercontent.com/zfCzNQT9BG0O1YG74RedDwe8BYKJda4NOnHC4dYMbYvzD2nrCn_BPoGW1jTk8COkj745M14oS6d5xErjvuvqctzQwpiSsUwO8VQ4=w1200-e365"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://workspace.google.com/products/gmail/\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T10:32:48.800Z"
+  "updatedAt": "2026-10-23T10:57:40.902Z"
 }

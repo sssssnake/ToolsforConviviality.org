@@ -1,0 +1,33 @@
+{
+  "slug": "openclaw",
+  "name": "OpenClaw",
+  "source": "https://openclaw.ai",
+  "capturedAt": "2026-10-23T10:56:52.867Z",
+  "alt": "Screenshot of the OpenClaw website",
+  "pageTitle": "OpenClaw — Open-Source AI Assistant",
+  "pageDescription": "OpenClaw is the open-source AI assistant that runs on your machine and works from WhatsApp, Telegram, or any chat app: inbox, email, calendar, flights.",
+  "shot": {
+    "480": "assets/tools/openclaw/shot-480.webp",
+    "960": "assets/tools/openclaw/shot-960.webp",
+    "1600": "assets/tools/openclaw/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/openclaw/mobile-390.webp",
+    "780": "assets/tools/openclaw/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/openclaw/icon-128.webp",
+    "256": "assets/tools/openclaw/icon-256.webp",
+    "svg": "assets/tools/openclaw/icon.svg",
+    "from": "https://openclaw.ai/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/openclaw/social-600.webp",
+    "1200": "assets/tools/openclaw/social-1200.webp",
+    "from": "https://openclaw.ai/og-image.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,49 +1,32 @@
 {
-  "startedAt": "2026-10-23T10:31:01.297Z",
+  "startedAt": "2026-10-23T10:56:20.006Z",
   "captured": [
     {
-      "slug": "zotero",
+      "slug": "openclaw",
+      "notes": []
+    },
+    {
+      "slug": "hermes-agent",
+      "notes": []
+    },
+    {
+      "slug": "microsoft-word",
       "notes": [
+        "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "kiwix",
-      "notes": []
-    },
-    {
-      "slug": "keepassxc",
-      "notes": []
-    },
-    {
-      "slug": "joplin",
-      "notes": []
-    },
-    {
-      "slug": "krita",
+      "slug": "whatsapp",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "excalidraw",
-      "notes": []
-    },
-    {
-      "slug": "cryptomator",
+      "slug": "gmail",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "screenshot skipped by override"
       ]
-    },
-    {
-      "slug": "freshrss",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "deltachat",
-      "notes": []
     }
   ],
   "skipped": [
@@ -98,6 +81,42 @@
     {
       "slug": "airtime",
       "reason": "recent"
+    },
+    {
+      "slug": "zotero",
+      "reason": "recent"
+    },
+    {
+      "slug": "kiwix",
+      "reason": "recent"
+    },
+    {
+      "slug": "keepassxc",
+      "reason": "recent"
+    },
+    {
+      "slug": "joplin",
+      "reason": "recent"
+    },
+    {
+      "slug": "krita",
+      "reason": "recent"
+    },
+    {
+      "slug": "excalidraw",
+      "reason": "recent"
+    },
+    {
+      "slug": "cryptomator",
+      "reason": "recent"
+    },
+    {
+      "slug": "freshrss",
+      "reason": "recent"
+    },
+    {
+      "slug": "deltachat",
+      "reason": "recent"
     }
   ],
   "failed": [
@@ -106,5 +125,5 @@
       "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-23T10:32:48.801Z"
+  "finishedAt": "2026-10-23T10:57:40.902Z"
 }

@@ -1,0 +1,27 @@
+{
+  "slug": "gmail",
+  "name": "Gmail",
+  "source": "https://workspace.google.com/products/gmail/",
+  "capturedAt": "2026-10-23T10:57:35.375Z",
+  "alt": "Screenshot of the Gmail website",
+  "pageTitle": "Gmail: Private & Secure Email for Personal or Business | Google Workspace",
+  "pageDescription": "Stay on top of your inbox and keep your business safer with the secure, smart, and easy to use Gmail.",
+  "icon": {
+    "128": "assets/tools/gmail/icon-128.webp",
+    "256": "assets/tools/gmail/icon-256.webp",
+    "from": "https://www.gstatic.com/images/branding/googleg_gradient/1x/googleg_gradient_standard_20dp.png",
+    "sourceWidth": 20,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/gmail/social-600.webp",
+    "1200": "assets/tools/gmail/social-1200.webp",
+    "from": "https://lh3.googleusercontent.com/zfCzNQT9BG0O1YG74RedDwe8BYKJda4NOnHC4dYMbYvzD2nrCn_BPoGW1jTk8COkj745M14oS6d5xErjvuvqctzQwpiSsUwO8VQ4=w1200-e365"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

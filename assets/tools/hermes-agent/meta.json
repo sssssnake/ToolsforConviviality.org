@@ -1,0 +1,34 @@
+{
+  "slug": "hermes-agent",
+  "name": "Hermes Agent",
+  "source": "https://hermes-agent.nousresearch.com",
+  "capturedAt": "2026-10-23T10:57:00.674Z",
+  "alt": "Screenshot of the Hermes Agent website",
+  "pageTitle": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
+  "pageDescription": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux — free under the MIT license.",
+  "shot": {
+    "480": "assets/tools/hermes-agent/shot-480.webp",
+    "960": "assets/tools/hermes-agent/shot-960.webp",
+    "1600": "assets/tools/hermes-agent/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/hermes-agent/mobile-390.webp",
+    "780": "assets/tools/hermes-agent/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/hermes-agent/icon-128.webp",
+    "256": "assets/tools/hermes-agent/icon-256.webp",
+    "from": "https://web-assets.nousresearch.com/marketing/91c82c2ded0a59b710de7ade55cd3f5e7df823b8/assets/hermes-agent/icon.png",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/hermes-agent/social-600.webp",
+    "1200": "assets/tools/hermes-agent/social-1200.webp",
+    "from": "https://web-assets.nousresearch.com/marketing/91c82c2ded0a59b710de7ade55cd3f5e7df823b8/assets/hermes-agent/og-image.png"
+  },
+  "color": "#0000f2",
+  "colorFrom": "theme-color",
+  "notes": []
+}

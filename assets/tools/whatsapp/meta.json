@@ -1,0 +1,26 @@
+{
+  "slug": "whatsapp",
+  "name": "WhatsApp",
+  "source": "https://www.whatsapp.com",
+  "capturedAt": "2026-10-23T10:57:31.156Z",
+  "alt": "Screenshot of the WhatsApp website",
+  "pageTitle": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+  "pageDescription": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging and calling, available on phones all over the world.",
+  "icon": {
+    "128": "assets/tools/whatsapp/icon-128.webp",
+    "256": "assets/tools/whatsapp/icon-256.webp",
+    "svg": "assets/tools/whatsapp/icon.svg",
+    "from": "https://static.whatsapp.net/rsrc.php/y1/r/FJbTMJqMap7.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/whatsapp/social-600.webp",
+    "1200": "assets/tools/whatsapp/social-1200.webp",
+    "from": "https://static.whatsapp.net/rsrc.php/v4/yO/r/rukeqTVNJDY.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}
