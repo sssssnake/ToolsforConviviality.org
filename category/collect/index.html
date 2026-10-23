@@ -158,7 +158,35 @@ main .wrap { padding-block: 48px 64px; }
 .related li a b { font-weight: 500; }
 .related li a:hover b { color: var(--accent); }
 .related li span { color: var(--muted); font-size: 14px; }
-.shot-credit { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
+.review-body p.shot-credit { font-family: "IBM Plex Mono", monospace; color: var(--muted); font-size: 11px; line-height: 1.5; margin: -6px 0 6px; }
+.points { list-style: none; margin: 18px 0 8px; padding: 14px 0 2px; border-top: 1px solid var(--line); display: grid; gap: 8px; max-width: 640px; }
+.points h2 { font-size: 13px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 4px; font-weight: 500; }
+.points li { position: relative; padding-left: 20px; font-size: 15px; }
+.points li::before { content: ""; position: absolute; left: 0; top: .5em; width: 8px; height: 8px; background: var(--accent); }
+.badge-ask { margin: 24px 0; max-width: 640px; border-top: 1px solid var(--line); padding-top: 12px; font-size: 12px; color: var(--muted); }
+.badge-ask summary { cursor: pointer; font-size: 13px; color: var(--muted); }
+.badge-ask summary:hover { color: var(--fg); }
+.badge-ask p { margin: 8px 0; font-size: 12px; line-height: 1.5; }
+.badge-ask textarea { width: 100%; font-family: var(--mono); font-size: 11px; background: var(--bg); color: var(--fg); border: 1px solid var(--line); padding: 8px; resize: vertical; min-height: 70px; }
+.score-badge { padding: 18px 16px 20px; border-top: 1px solid var(--line); display: grid; justify-items: center; gap: 8px; }
+.score-badge .bimg svg, .score-badge .bimg img { display: block; width: 255px; max-width: 100%; height: auto; }
+.score-badge .bd { display: none; }
+.score-badge .bl { display: block; }
+.score-badge small { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .score-badge .bl { display: none; } :root:not([data-theme="light"]) .score-badge .bd { display: block; } }
+:root[data-theme="dark"] .score-badge .bl { display: none; } :root[data-theme="dark"] .score-badge .bd { display: block; }
+.related ul { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 0 24px; }
+.related li a { grid-template-columns: 44px 1fr; gap: 2px 12px; align-items: center; }
+.related li a .rt { display: grid; gap: 2px; }
+.foot-brand { display: inline-flex; align-items: center; gap: 12px; }
+.foot-c { width: 34px; height: 34px; background: var(--fg); -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; display: block; }
+.faq { margin-top: 44px; max-width: 760px; }
+.faq h2 { margin-bottom: 14px; }
+.faq .qa { border: 1px solid var(--line); background: var(--panel); padding: 16px 18px; margin: 0 0 -1px; }
+.faq .qa h3 { margin: 0 0 6px; font-size: 17px; display: grid; grid-template-columns: 26px 1fr; gap: 8px; align-items: start; }
+.faq .qa h3::before { content: "Q"; font-family: var(--mono); font-size: 12px; background: var(--accent); color: var(--on-accent); width: 22px; height: 22px; display: grid; place-items: center; margin-top: 1px; }
+.faq .qa p { margin: 0 0 0 34px; font-size: 15px; }
+.shot-credit-old { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
 .tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
@@ -183,6 +211,7 @@ a.fbtn { text-decoration: none; display: inline-block; }
 .review { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 48px; margin-top: 28px; align-items: start; }
 .review-body { display: grid; gap: 18px; max-width: 64ch; }
 .review-body p { font-size: 17px; }
+.review-body .badge-ask p { font-size: 12px; }
 .review h2 { font-size: 22px; margin-top: 18px; }
 .instead { font-size: 15px; color: var(--muted); }
 .instead b { color: var(--fg); font-weight: 500; }
@@ -288,8 +317,8 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <span class="brand-name">Tools for<br>Conviviality</span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
       <a href="/directory/" data-nav="directory" aria-current="page">Directory</a>
+      <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
       <a href="/how-we-score/" data-nav="method">How we score</a>
       <a href="/suggest/" data-nav="submit">Suggest a tool</a>
     </nav>
@@ -308,7 +337,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/arena/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Are.na</h3><p class="one">A quiet place to collect things and connect ideas over time.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">No ads</span><span class="chip">No algorithmic feed</span></div></div></div>
     <div class="score-mini"><b>23<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a></div>
   <p class="empty">For comparison, we also reviewed <a href="/benchmarks/pinterest/">Pinterest</a> (13/30, Mixed), the giant these tools are measured against. They sit outside the directory, on the <a href="/benchmarks/">benchmarks page</a>.</p>
-  <div class="prose"><h2>How to choose</h2><p>Ask how easily you can take your collection with you. Zotero exports to standard formats and Excalidraw saves open files. If you are building a body of work over years, pick the tool whose export you would trust on the day you leave it.</p><h2>Questions people ask</h2><h3>What is an alternative to Pinterest?</h3><p><a href="/tools/arena/">Are.na</a> is a place to collect images, links and ideas with no algorithmic feed and no ads.</p><h3>What is an open-source alternative to EndNote or Mendeley?</h3><p><a href="/tools/zotero/">Zotero</a> is open source, built by a non-profit, and exports your library to standard formats.</p><h3>Is there a free alternative to Miro for quick diagrams?</h3><p><a href="/tools/excalidraw/">Excalidraw</a> is a free browser whiteboard that needs no account for basic use.</p></div></div></main>
+  <div class="prose"><h2>How to choose</h2><p>Ask how easily you can take your collection with you. Zotero exports to standard formats and Excalidraw saves open files. If you are building a body of work over years, pick the tool whose export you would trust on the day you leave it.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to Pinterest?</h3><p><a href="/tools/arena/">Are.na</a> is a place to collect images, links and ideas with no algorithmic feed and no ads.</p></div><div class="qa"><h3>What is an open-source alternative to EndNote or Mendeley?</h3><p><a href="/tools/zotero/">Zotero</a> is open source, built by a non-profit, and exports your library to standard formats.</p></div><div class="qa"><h3>Is there a free alternative to Miro for quick diagrams?</h3><p><a href="/tools/excalidraw/">Excalidraw</a> is a free browser whiteboard that needs no account for basic use.</p></div></section></div></main>
 
 <footer>
   <div class="wrap">
@@ -323,7 +352,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
     </div>
     <div class="foot-right">
-      <span>Useful to people. Accountable to people.</span>
+      <span class="foot-brand"><span class="foot-c" aria-hidden="true"></span><span>Small tools that serve the people using them.</span></span>
       <a class="button88" href="/suggest/" title="Listed on Tools for Conviviality"><span class="m" aria-hidden="true"></span><span class="t">Listed<br>here</span></a>
     </div>
   </div>
@@ -718,6 +747,68 @@ const BENCH = [
       "You can leave in principle, because Gmail supports IMAP and POP and Google lets you export your data, but your address, your contacts and years of logins stay behind with the old account. Google also has a record of retiring services, such as Inbox in 2019 and the basic HTML view in 2024. Gmail is a good example of a tool that is hard to fault on delivery and hard to trust on power."] }
 ].map(t => Object.assign(t, { bench: true }));
 
+const HL = {
+"localsend": ["Sends files straight between devices over your own network, with encryption", "Needs no account and no company server in the middle", "Works across Windows, Mac, Linux, Android and iOS"],
+"netnewswire": ["Reads RSS, so you choose what shows up, with no algorithm or ads", "Imports and exports subscriptions as standard OPML files", "Made by one developer, Brent Simmons, since 2002"],
+"comaps": ["Offline maps and navigation on OpenStreetMap, with no account and no tracking", "A community fork that removed affiliate links and Google Firebase code", "You can host the map files yourself"],
+"syncthing": ["Syncs folders directly between your own devices, with no cloud in the middle", "Excellent on the desktop, rougher on phones", "Setup asks you to understand device IDs and folder sharing"],
+"obsidian": ["Your notes are plain Markdown files in a folder on your own computer", "Still opens in any text editor if the company disappears", "Sync and publishing are paid extras, and the app is closed source"],
+"ente": ["Encrypts photos before they leave your phone, so only you can see them", "Open-source apps on every platform, and you can run the server yourself", "Sharing an album works for people with no account"],
+"cryptpad": ["Documents, spreadsheets and slides encrypted in your browser", "Even the people running the server can't read what you write", "Funded largely by European research grants"],
+"kagi": ["A paid search engine with no ads to sell and no tracking", "Lets you block sites you hate and boost ones you trust", "Closed source, from $5 a month, and nothing stays with you if you stop paying"],
+"bitwarden": ["Open-source core with a generous free tier", "Export your whole vault or host it yourself", "Moving toward an open-core model, so we may re-score it"],
+"photomosh": ["Glitches photos, video and webcam right in the browser", "Your images are never stored online", "Made by one developer, and the code is closed"],
+"ferdium": ["Puts WhatsApp, Slack, Telegram and more in one desktop window", "Community-run free software with a self-hostable server", "Helps you live with the messaging monopolies, not escape them"],
+"arena": ["A calm place to collect things and arrange them into channels", "No ads, no likes and no feed tuned to keep you there", "A public API that people have built their own tools on"],
+"zotero": ["Saves a web page, paper or book in one click and keeps your notes", "Built by a non-profit, with a copy of your library on your own computer", "Won a court case over letting you move your style files"],
+"kiwix": ["Download Wikipedia and other libraries as a single file to read offline", "Run by a Swiss non-profit that publishes audited accounts", "A download is a snapshot, so it goes stale"],
+"keepassxc": ["Keeps your passwords in one encrypted file on your own machine", "Uses the long-standing KeePass format that other apps can read", "You handle syncing yourself, for example with Syncthing"],
+"joplin": ["Notes saved as Markdown with attachments", "You choose where they sync: Nextcloud, Dropbox, WebDAV or paid Joplin Cloud", "End-to-end encryption is available but off until you turn it on"],
+"krita": ["A full painting and illustration studio with deep brush tools", "Made by a KDE community and free forever, with no sign-in or upsell", "What you draw is yours, in open file formats"],
+"excalidraw": ["Open the page and sketch, with nothing to sign up for", "Live collaboration is end-to-end encrypted", "MIT licensed, with what you need to host your own copy"],
+"cryptomator": ["Locks your files in an encrypted vault inside any cloud folder", "Open code from a German company, free on the desktop", "Editing on a phone costs about 30 euros per platform"],
+"freshrss": ["A feed reader you host yourself, light enough for a Raspberry Pi", "Supports several users and exports standard OPML", "Mobile reader apps connect through its API"],
+"calibre": ["Converts, edits and organises your ebooks on your own computer", "Your library is a folder of files you can open without it", "Started in 2006 and still led mainly by one developer"],
+"standard-ebooks": ["Public-domain books made with proper typography and clean formatting", "Dedicated to the public domain, so you can copy and share freely", "Paid for by reader donations, but only the classics"],
+"gutenberg": ["More than 75,000 free ebooks from a volunteer library started in 1971", "No fees, no registration and no ads", "Plain files you can keep, though the formatting varies"],
+"koreader": ["Opens EPUB, PDF, DjVu, Mobi, comics and more", "Runs on Kindle, Kobo, PocketBook, reMarkable, Android and Linux", "Gives you control of fonts and margins, with no account"],
+"audiobookshelf": ["A server you run for your audiobooks, podcasts and ebooks", "Plays the files you own and keeps your place", "Asks you to run a server, so it suits people who are comfortable with that"],
+"inkscape": ["A vector editor built on the open SVG format", "Imports and exports AI, EPS, PDF and PNG", "Belongs to the Software Freedom Conservancy, a US nonprofit"],
+"gimp": ["A long-running image editor for retouching and compositing", "Free under the GPL, with no sign-in or upsell", "The interface takes time to learn"],
+"penpot": ["Open-source interface design and prototyping in the browser", "Works with CSS, HTML, SVG and JSON, with its own open file format", "Sign up for free or host it yourself"],
+"blender": ["Modelling, animation, rendering and more in one program", "GPL licensed for any purpose, including commercial work", "Funded mostly by donations and Development Fund memberships"],
+"darktable": ["Non-destructive RAW editing, so your originals stay as they were", "Keeps your library on your own computer, with no account or cloud", "The closest open-source counterpart to Lightroom"],
+"kdenlive": ["Multi-track video editing with no watermark or subscription", "Developed by the KDE community, started in 2002", "Exports to standard video formats"],
+"comfyui": ["Builds image, video and 3D workflows as a visual graph of nodes", "The core runs fully offline and you choose the models", "Needs a capable computer and some setup effort"],
+"artcraft": ["2D and 3D compositing and character posing around AI image and video", "The whole studio is on GitHub under MIT or Apache-2.0", "What leaves your computer depends on the model you pick"],
+"affinity": ["Designer, Photo and Publisher combined in one app, free for individuals", "A polished Adobe alternative owned by Canva", "Closed source, and some AI tools need a Canva premium plan"],
+"signal": ["End-to-end encrypted messages and calls, on by default", "Run by an independent nonprofit funded by grants and donations", "Centralised, so you can't move to another provider with your contacts"],
+"element": ["Built on Matrix, an open standard that different providers share", "Messages and calls are end-to-end encrypted", "You can host it yourself and move providers without losing your place"],
+"thunderbird": ["Mail, calendar and contacts in one app from the Mozilla family", "Works with the mail accounts you already have", "Keeps mail on your own computer and speaks standard protocols"],
+"proton-mail": ["Zero-access encryption, so Proton says it can't read your inbox", "A free plan with 1 GB, and paid plans from $3.99 a month", "Open-source apps from a Swiss company"],
+"tuta": ["Encrypted mail, calendar and contacts from Germany", "All clients are open source, with post-quantum encryption", "As far as we know, no IMAP, so ordinary mail apps can't connect"],
+"ollama": ["Runs open AI models on your own machine behind a local server", "MIT licensed, with installers for Mac, Windows and Linux", "Cloud models are optional and send your prompts off your computer"],
+"jan": ["A ChatGPT-style window that runs fully offline", "Apache 2.0, with models such as Llama, Gemma and Qwen", "Can also connect to cloud models if you choose"],
+"goose": ["A general-purpose agent that runs on your own machine", "Works with more than 15 model providers, including local ones", "Apache-2.0, within the Linux Foundation's Agentic AI Foundation"],
+"deltachat": ["Chat that runs on ordinary email, with no phone number needed", "Messages are end-to-end encrypted", "Only works if your friends are on it too"],
+"openclaw": ["Runs on your own computer and talks to you through your chat apps", "Memory and credentials stay on your own hardware", "MIT licensed, run by a non-profit foundation, with no paid tier"],
+"hermes-agent": ["Writes reusable skills from the tasks it completes", "MIT licensed, and runs on a laptop, a cheap server or a container", "From a venture-backed start-up, Nous Research"],
+"microsoft-word": ["The standard for word processing since the 1990s", "The .docx format is an open standard, but formatting often shifts elsewhere", "Sold mostly through a subscription that includes Copilot"],
+"whatsapp": ["Used by about three billion people", "End-to-end encrypted, but you need a phone number and Meta runs it", "Leaving costs you your whole circle"],
+"adobe-creative-cloud": ["The standard toolbox for designers, photographers and video editors", "Rented by the month, so access ends when payments do", "Cancelling early on an annual plan paid monthly costs 50% of the balance"],
+"chatgpt": ["Does a huge range of tasks well", "A closed hosted service you can't run yourself", "May train on your content unless you opt out"],
+"claude": ["Capable at writing, analysis and coding", "A closed hosted service you can't run yourself", "Asks free and paid users to choose whether chats improve Claude"],
+"google-drive": ["Files appear on every device and sharing just works", "15 GB free, shared with Gmail and Google Photos", "Docs, Sheets and Slides use Google's own formats unless you export"],
+"google-maps": ["Used by over a billion people a month, strong on routes and live traffic", "Offline maps are possible, and Timeline is off by default", "The map data is something you can't take with you"],
+"google-search": ["About 90% of global searches in 2025", "A US judge ruled in 2024 that Google held an illegal search monopoly", "Paid for by ads, with AI Overviews above the results"],
+"google-photos": ["Effortless backup and excellent automatic organisation", "15 GB free, and inactive accounts can lose content after two years", "Your library and face groupings live with Google"],
+"kindle": ["A huge store and smooth syncing across devices", "You buy a licence to read, not the book itself", "Amazon removed download-and-transfer by USB in February 2025"],
+"pinterest": ["A pleasant way to collect visual ideas", "Requires registration and shows promoted pins", "Copies of shared content can remain after you delete your account"],
+"google-password-manager": ["Built into Chrome and Android with no setup", "Saves to your Google Account when you're signed in", "Puts the keys to all your accounts in one Google account"],
+"gmail": ["Excellent mail that filters spam well and works everywhere", "15 GB free, shared with Drive and Photos", "Supports IMAP and export, so you can leave in principle"]
+};
+[...TOOLS, ...BENCH].forEach(t => { t.points = HL[t.slug] || []; });
+
 const total = t => t.s.reduce((a, b) => a + b, 0);
 const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Manipulative";
 const catOf = id => CATS.find(c => c.id === id);
@@ -746,7 +837,7 @@ function shot(t) {
   const host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
   return `<figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>${esc(host)}</span></div>
     <img src="${esc(A(w[960]))}" srcset="${esc(A(w[480]))} 480w, ${esc(A(w[960]))} 960w, ${esc(A(w[1600]))} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
-    <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
+    <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}, shown to help you recognise the tool. It belongs to its maker. <a href="#about">Ask us to remove it</a>.</p>`;
 }
 function chips(t) {
   return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
@@ -915,7 +1006,7 @@ function category(id) {
   <h2 class="list-h">The tools</h2>
   <div class="tool-list">${list.map(t => row(t)).join("")}</div>
   ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">For comparison, we also reviewed ${b.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30, ${band(total(x))})`).join(" and ")}, the giant${b.length > 1 ? "s" : ""} these tools are measured against. They sit outside the directory, on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
-  ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p><h2>Questions people ask</h2>${k.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${linkify(a)}</p>`).join("")}</div>` : ""}`;
+  ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
 }
 
 const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "az" };
@@ -943,11 +1034,15 @@ function directory(preset) {
 function badgeBox(t) {
   const n = total(t), u = "https://toolsforconviviality.com";
   const snip = mode => `<a href="${u}/tools/${t.slug}/"><img src="${u}/badges/${t.slug}-${mode}.svg" alt="Tools for Conviviality review: ${n}/30, ${band(n)}" width="255" height="72"></a>`;
-  return `<section class="badge-box" aria-label="Review badge"><h2>Show this score</h2>
-    <div class="badge-img"><span><img src="/badges/${t.slug}-light.svg" alt="Badge: ${n} out of 30, ${band(n)}" width="255" height="72"></span><span class="dk"><img src="/badges/${t.slug}-dark.svg" alt="Dark-background badge: ${n} out of 30, ${band(n)}" width="255" height="72"></span></div>
-    <p>If you make ${esc(t.name)}, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
+  return `<details class="badge-ask"><summary>Do you make ${esc(t.name)}? Get the badge for your site</summary>
+    <p>This badge reports a dated review. It is not a certification and it costs nothing. Link it to this page and leave the numbers alone: the image always shows the current score.</p>
     <label class="visually-hidden" for="bs-${t.slug}">Badge code for light backgrounds</label><textarea id="bs-${t.slug}" readonly onfocus="this.select()">${esc(snip("light"))}</textarea>
-    <p>For dark backgrounds, use <code>${t.slug}-dark.svg</code> in place of <code>${t.slug}-light.svg</code>.</p></section>`;
+    <p>For dark backgrounds, use <code>${t.slug}-dark.svg</code> in place of <code>${t.slug}-light.svg</code>.</p></details>`;
+}
+
+function scoreBadge(t) {
+  const n = total(t), alt = `Tools for Conviviality review: ${n} out of 30, ${band(n)}`;
+  return `<div class="score-badge" data-n="${n}"><div class="bimg bl" data-src="/badges/${t.slug}-light.svg"><img src="/badges/${t.slug}-light.svg" alt="${alt}" width="255" height="72"></div><div class="bimg bd" data-src="/badges/${t.slug}-dark.svg"><img src="/badges/${t.slug}-dark.svg" alt="${alt}" width="255" height="72"></div></div>`;
 }
 
 function tool(slug, isBench) {
@@ -961,9 +1056,10 @@ function tool(slug, isBench) {
       ${chips(t)}
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
+      ${t.points && t.points.length ? `<ul class="points" aria-label="What makes ${esc(t.name)} unusual"><h2>What stands out</h2>${t.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
       ${isBench ? "" : badgeBox(t)}
-      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""); })()}
+      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 6); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}">${logo(x, "sm")}<span class="rt"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></span></a></li>`).join("")}</ul></section>` : ""); })()}
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
@@ -977,7 +1073,7 @@ function tool(slug, isBench) {
         <dt>Reviewed</dt><dd>${REVIEWED}</dd>
       </dl>
       <div class="meters">${CRITERIA.map((k, i) => `<div class="meter-row"><span>${k.name}</span><span class="meter" aria-hidden="true">${[0,1,2,3,4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b></div>`).join("")}</div>
-      <div class="stamp-holder"><div class="stamp" role="img" aria-label="Verdict: ${band(n)}, ${n} out of 30"><div class="stamp-inner"><span class="verdict">${band(n)}</span><span class="num">${n} / 30</span></div></div></div>
+      ${scoreBadge(t)}
     </aside>
   </div>`;
 }
@@ -1297,7 +1393,23 @@ function applySeo(id) {
   $("ld").textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": s.ld });
 }
 const fixLinks = root => root.querySelectorAll('a[href^="#"]').forEach(a => a.setAttribute("href", idToPath(a.getAttribute("href").slice(1))));
-function setView(html) { view.innerHTML = html; fixLinks(view); }
+function setView(html) { view.innerHTML = html; fixLinks(view); animateBadge(); }
+function animateBadge() {
+  if (navigator.webdriver || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll(".score-badge").forEach(box => {
+    const n = +box.dataset.n, vis = [...box.querySelectorAll(".bimg")].find(x => x.offsetParent !== null); if (!vis) return;
+    fetch(vis.dataset.src).then(r => r.text()).then(txt => {
+      if (!vis.isConnected) return;
+      vis.innerHTML = txt.replace(/ id="[^"]*"/g, "").replace(/ aria-labelledby="[^"]*"/, "");
+      const svg = vis.querySelector("svg"); if (!svg) return;
+      svg.setAttribute("aria-label", "Tools for Conviviality review: " + n + " out of 30"); svg.removeAttribute("width"); svg.removeAttribute("height");
+      svg.querySelectorAll("path").forEach((p, i) => { const len = p.getTotalLength(); p.style.strokeDasharray = len; p.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], { duration: 800, delay: 120 + i * 160, easing: "cubic-bezier(.3,.7,.2,1)", fill: "backwards" }); });
+      const sc = svg.querySelectorAll("text")[0], vd = svg.querySelectorAll("text")[1];
+      if (vd) vd.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, delay: 900, fill: "backwards" });
+      if (sc) { const t0 = performance.now() + 150, D = 1000; const tick = now => { const k = Math.min(1, Math.max(0, (now - t0) / D)); sc.textContent = Math.round((1 - Math.pow(1 - k, 3)) * n) + "/30"; if (k < 1) requestAnimationFrame(tick); }; sc.textContent = "0/30"; requestAnimationFrame(tick); }
+    }).catch(() => {});
+  });
+}
 
 function render() {
   if (location.hash && location.pathname === "/") {   // old #tool-x style links keep working

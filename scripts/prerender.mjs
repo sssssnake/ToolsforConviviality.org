@@ -57,7 +57,7 @@ await fs.writeFile(path.join(ROOT, "404.html"), "<!doctype html>\n" + await page
 // Review badges: one light and one dark SVG per tool, made from the editable templates in scripts/badges.
 // Each badge reports the tool's current score and verdict and links nowhere by itself; makers wrap it in a link to the review.
 const BADGE_TPL = { convivial: "06-convivial", leaning: "07-leaning-convivial", mixed: "08-mixed", manipulative: "09-manipulative" };
-const badgeData = await page.evaluate(() => TOOLS.map(t => ({ slug: t.slug, n: total(t), verdict: band(total(t)) })));
+const badgeData = await page.evaluate(() => [...TOOLS, ...BENCH].map(t => ({ slug: t.slug, n: total(t), verdict: band(total(t)) })));
 await fs.mkdir(path.join(ROOT, "badges"), { recursive: true });
 for (const b of badgeData) {
   const key = b.n >= 25 ? "convivial" : b.n >= 18 ? "leaning" : b.n >= 10 ? "mixed" : "manipulative";
