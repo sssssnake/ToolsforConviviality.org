@@ -1,0 +1,22 @@
+{
+  "slug": "tiktok",
+  "name": "TikTok",
+  "source": "https://www.tiktok.com",
+  "capturedAt": "2026-10-23T15:38:38.854Z",
+  "alt": "Screenshot of the TikTok website",
+  "pageTitle": "TikTok - Make Your Day",
+  "pageDescription": null,
+  "icon": {
+    "128": "assets/tools/tiktok/icon-128.webp",
+    "256": "assets/tools/tiktok/icon-256.webp",
+    "from": "https://sf16-sg.tiktokcdn.com/obj/eden-sg/uvkuhyieh7lpqpbj/pwa/512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

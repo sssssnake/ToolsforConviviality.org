@@ -1,0 +1,34 @@
+{
+  "slug": "mastodon",
+  "name": "Mastodon",
+  "source": "https://joinmastodon.org",
+  "capturedAt": "2026-10-23T15:38:02.189Z",
+  "alt": "Screenshot of the Mastodon website",
+  "pageTitle": "Mastodon - Decentralized social media",
+  "pageDescription": "Learn more about Mastodon, the radically different, free and open-source decentralized social media platform.",
+  "shot": {
+    "480": "assets/tools/mastodon/shot-480.webp",
+    "960": "assets/tools/mastodon/shot-960.webp",
+    "1600": "assets/tools/mastodon/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/mastodon/mobile-390.webp",
+    "780": "assets/tools/mastodon/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/mastodon/icon-128.webp",
+    "256": "assets/tools/mastodon/icon-256.webp",
+    "from": "https://joinmastodon.org/_next/static/media/favicon-32x32.2_1axy1s32xu0.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/mastodon/social-600.webp",
+    "1200": "assets/tools/mastodon/social-1200.webp",
+    "from": "https://joinmastodon.org/_next/static/media/preview.3j8ty3n8nhkjn.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

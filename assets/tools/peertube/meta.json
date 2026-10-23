@@ -1,0 +1,34 @@
+{
+  "slug": "peertube",
+  "name": "PeerTube",
+  "source": "https://joinpeertube.org",
+  "capturedAt": "2026-10-23T15:38:25.779Z",
+  "alt": "Screenshot of the PeerTube website",
+  "pageTitle": "What is PeerTube? | JoinPeerTube",
+  "pageDescription": "A free software to take back control of your videos! With more than 600,000 hosted videos, viewed more than 70 millions times and 150,000 users, PeerTube is the decentralized free software alternative to videos platforms developed by Framasoft",
+  "shot": {
+    "480": "assets/tools/peertube/shot-480.webp",
+    "960": "assets/tools/peertube/shot-960.webp",
+    "1600": "assets/tools/peertube/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/peertube/mobile-390.webp",
+    "780": "assets/tools/peertube/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/peertube/icon-128.webp",
+    "256": "assets/tools/peertube/icon-256.webp",
+    "from": "https://joinpeertube.org/img/icons/apple-touch-icon.png",
+    "sourceWidth": 144,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/peertube/social-600.webp",
+    "1200": "assets/tools/peertube/social-1200.webp",
+    "from": "https://joinpeertube.org/img/card-opengraph.jpg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

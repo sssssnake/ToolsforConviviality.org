@@ -1,165 +1,29 @@
 {
-  "startedAt": "2026-10-23T15:20:23.628Z",
+  "startedAt": "2026-10-23T15:38:00.587Z",
   "captured": [
     {
-      "slug": "inkscape",
+      "slug": "mastodon",
       "notes": []
     },
     {
-      "slug": "gimp",
+      "slug": "pixelfed",
       "notes": []
     },
     {
-      "slug": "penpot",
-      "notes": [
-        "dismissed banner with button:has-text(\"Reject all\")",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "blender",
-      "notes": []
-    },
-    {
-      "slug": "darktable",
+      "slug": "loops",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "kdenlive",
+      "slug": "peertube",
       "notes": []
     },
     {
-      "slug": "comfyui",
-      "notes": []
-    },
-    {
-      "slug": "artcraft",
-      "notes": []
-    },
-    {
-      "slug": "affinity",
+      "slug": "tiktok",
       "notes": [
         "screenshot skipped by override"
       ]
-    },
-    {
-      "slug": "signal",
-      "notes": []
-    },
-    {
-      "slug": "element",
-      "notes": []
-    },
-    {
-      "slug": "thunderbird",
-      "notes": []
-    },
-    {
-      "slug": "proton-mail",
-      "notes": []
-    },
-    {
-      "slug": "tuta",
-      "notes": []
-    },
-    {
-      "slug": "ollama",
-      "notes": [
-        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
-      ]
-    },
-    {
-      "slug": "jan",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "goose",
-      "notes": []
-    },
-    {
-      "slug": "chatgpt",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "claude",
-      "notes": [
-        "screenshot skipped by override",
-        "manifest unreadable: HTTP 403 for https://claude.ai/manifest.json"
-      ]
-    },
-    {
-      "slug": "google-drive",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "google-maps",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "google-search",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "google-photos",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "kindle",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "google-password-manager",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "adobe-creative-cloud",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "openstreetmap",
-      "notes": []
-    },
-    {
-      "slug": "osmand",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "immich",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "proton-pass",
-      "notes": []
     }
   ],
   "skipped": [
@@ -232,6 +96,42 @@
       "reason": "recent"
     },
     {
+      "slug": "inkscape",
+      "reason": "recent"
+    },
+    {
+      "slug": "gimp",
+      "reason": "recent"
+    },
+    {
+      "slug": "penpot",
+      "reason": "recent"
+    },
+    {
+      "slug": "blender",
+      "reason": "recent"
+    },
+    {
+      "slug": "darktable",
+      "reason": "recent"
+    },
+    {
+      "slug": "kdenlive",
+      "reason": "recent"
+    },
+    {
+      "slug": "comfyui",
+      "reason": "recent"
+    },
+    {
+      "slug": "artcraft",
+      "reason": "recent"
+    },
+    {
+      "slug": "affinity",
+      "reason": "recent"
+    },
+    {
       "slug": "excalidraw",
       "reason": "recent"
     },
@@ -288,10 +188,98 @@
       "reason": "recent"
     },
     {
+      "slug": "signal",
+      "reason": "recent"
+    },
+    {
+      "slug": "element",
+      "reason": "recent"
+    },
+    {
+      "slug": "thunderbird",
+      "reason": "recent"
+    },
+    {
+      "slug": "proton-mail",
+      "reason": "recent"
+    },
+    {
+      "slug": "tuta",
+      "reason": "recent"
+    },
+    {
+      "slug": "ollama",
+      "reason": "recent"
+    },
+    {
+      "slug": "jan",
+      "reason": "recent"
+    },
+    {
+      "slug": "goose",
+      "reason": "recent"
+    },
+    {
+      "slug": "chatgpt",
+      "reason": "recent"
+    },
+    {
+      "slug": "claude",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-drive",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-maps",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-search",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-photos",
+      "reason": "recent"
+    },
+    {
+      "slug": "kindle",
+      "reason": "recent"
+    },
+    {
       "slug": "pinterest",
+      "reason": "robots.txt disallows"
+    },
+    {
+      "slug": "google-password-manager",
+      "reason": "recent"
+    },
+    {
+      "slug": "adobe-creative-cloud",
+      "reason": "recent"
+    },
+    {
+      "slug": "openstreetmap",
+      "reason": "recent"
+    },
+    {
+      "slug": "osmand",
+      "reason": "recent"
+    },
+    {
+      "slug": "immich",
+      "reason": "recent"
+    },
+    {
+      "slug": "proton-pass",
+      "reason": "recent"
+    },
+    {
+      "slug": "instagram",
       "reason": "robots.txt disallows"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-10-23T15:24:50.706Z"
+  "finishedAt": "2026-10-23T15:38:48.700Z"
 }

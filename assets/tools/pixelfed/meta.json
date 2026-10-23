@@ -1,0 +1,34 @@
+{
+  "slug": "pixelfed",
+  "name": "Pixelfed",
+  "source": "https://pixelfed.org",
+  "capturedAt": "2026-10-23T15:38:10.422Z",
+  "alt": "Screenshot of the Pixelfed website",
+  "pageTitle": "Pixelfed - Decentralized social media",
+  "pageDescription": "Learn more about Pixelfed, the free and open-source decentralized photo sharing social media platform",
+  "shot": {
+    "480": "assets/tools/pixelfed/shot-480.webp",
+    "960": "assets/tools/pixelfed/shot-960.webp",
+    "1600": "assets/tools/pixelfed/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/pixelfed/mobile-390.webp",
+    "780": "assets/tools/pixelfed/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/pixelfed/icon-128.webp",
+    "256": "assets/tools/pixelfed/icon-256.webp",
+    "from": "https://pixelfed-web1.nyc3.cdn.digitaloceanspaces.com/assets/images/pixelfed-icon-white.png",
+    "sourceWidth": 500,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/pixelfed/social-600.webp",
+    "1200": "assets/tools/pixelfed/social-1200.webp",
+    "from": "https://pixelfed-web1.nyc3.cdn.digitaloceanspaces.com/assets/images/og-image.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}
