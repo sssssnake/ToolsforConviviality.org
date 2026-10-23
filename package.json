@@ -5,7 +5,8 @@
   "description": "Static site for toolsforconviviality.com plus its image capture pipeline",
   "scripts": {
     "capture": "node scripts/capture.mjs",
-    "capture:test": "node scripts/capture.mjs --data test/fixture-tools.json --out test/out"
+    "capture:test": "node scripts/capture.mjs --data test/fixture-tools.json --out test/out",
+    "prerender": "node scripts/prerender.mjs"
   },
   "dependencies": {
     "playwright": "1.56.1",

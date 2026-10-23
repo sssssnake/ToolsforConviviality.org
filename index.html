@@ -1,13 +1,22 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<title>Tools for Conviviality</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="An independent public directory of small, convivial software, scored against Ivan Illich's ideas about tools.">
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Tools for Conviviality: a directory of small, independent software</title>
+<meta id="m-desc" name="description" content="Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big…">
+<meta id="m-robots" name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#b3c5ff">
+<link id="m-canon" rel="canonical" href="https://toolsforconviviality.com/">
+<meta property="og:site_name" content="Tools for Conviviality">
+<meta id="og-type" property="og:type" content="website">
+<meta id="og-title" property="og:title" content="Tools for Conviviality: a directory of small, independent software">
+<meta id="og-desc" property="og:description" content="Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big…">
+<meta id="og-url" property="og:url" content="https://toolsforconviviality.com/">
+<meta id="og-image" property="og:image" content="https://toolsforconviviality.com/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<script id="ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Tools for Conviviality","url":"https://toolsforconviviality.com/","description":"An independent directory of small, convivial software."}]}</script>
+<link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 /* Layout: a public notice board. Periwinkle band on top, purposes on the left,
    one tool on the right; reviews read like a catalogue card with a Get Info panel and a verdict stamp. */
@@ -115,6 +124,13 @@ main .wrap { padding-block: 48px 64px; }
 .window .bar { display: flex; gap: 6px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); font: 12px "IBM Plex Mono", monospace; color: var(--muted); }
 .window .bar i { width: 9px; height: 9px; border: 1px solid var(--muted); border-radius: 50%; }
 .window img { display: block; width: 100%; height: auto; }
+.related { margin-top: 40px; }
+.related h2 { font-size: 20px; margin-bottom: 8px; }
+.related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.related li a { display: grid; gap: 2px; text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.related li a b { font-weight: 500; }
+.related li a:hover b { color: var(--accent); }
+.related li span { color: var(--muted); font-size: 14px; }
 .shot-credit { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
 .tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
 .tool-row:hover h3 { color: var(--accent); }
@@ -237,33 +253,61 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 </script>
 <header class="band">
   <div class="wrap">
-    <a class="brand" href="#home" aria-label="Tools for Conviviality, home">
+    <a class="brand" href="/" aria-label="Tools for Conviviality, home">
       <span class="mark">T/C</span>
       <span class="brand-name">Tools for<br>Conviviality</span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#what" data-nav="what">What is conviviality?</a>
-      <a href="#directory" data-nav="directory">Directory</a>
-      <a href="#method" data-nav="method">How we score</a>
-      <a href="#submit" data-nav="submit">Suggest a tool</a>
+      <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
+      <a href="/directory/" data-nav="directory">Directory</a>
+      <a href="/how-we-score/" data-nav="method">How we score</a>
+      <a href="/suggest/" data-nav="submit">Suggest a tool</a>
     </nav>
   </div>
 </header>
 
-<main id="app"><div class="wrap" id="view"></div></main>
+<main id="app"><div class="wrap" id="view"><div class="home">
+    <section class="hero">
+      <h1>What would you like to do?</h1>
+      <p class="lede">Useful software, made at a human scale. Start with a purpose, then find a tool you can make your own.</p>
+      <div class="purposes"><a class="purpose" href="/category/notes/"><span class="p-verb">Keep my own notes and documents</span><span class="p-meta">Joplin, Obsidian, CryptPad ↗</span></a><a class="purpose" href="/category/files/"><span class="p-verb">Move files between my devices</span><span class="p-meta">LocalSend, Cryptomator, Syncthing ↗</span></a><a class="purpose" href="/category/maps/"><span class="p-verb">Find my way without being tracked</span><span class="p-meta">CoMaps ↗</span></a><a class="purpose" href="/category/reading/"><span class="p-verb">Read the web on my own terms</span><span class="p-meta">NetNewsWire, Kiwix, FreshRSS, Kagi ↗</span></a><a class="purpose" href="/category/passwords/"><span class="p-verb">Keep my passwords safe</span><span class="p-meta">KeePassXC, Bitwarden ↗</span></a><a class="purpose" href="/category/images/"><span class="p-verb">Make pictures and video</span><span class="p-meta">Krita, Ente Photos, PhotoMosh, Airtime ↗</span></a><a class="purpose" href="/category/talk/"><span class="p-verb">Tame my chat apps</span><span class="p-meta">Delta Chat, Ferdium ↗</span></a><a class="purpose" href="/category/books/"><span class="p-verb">Keep and read my own books</span><span class="p-meta">Calibre ↗</span></a><a class="purpose" href="/category/collect/"><span class="p-verb">Collect and connect ideas</span><span class="p-meta">Zotero, Excalidraw, Are.na ↗</span></a></div>
+    </section>
+    <aside>
+      <div class="card feature" aria-live="polite">
+        <p class="label">A random tool in the collection</p>
+        <h2>Krita</h2>
+        <p class="desc">A full painting and illustration studio that costs nothing.</p>
+        <ul><li>Instead of Adobe Photoshop and Procreate for drawing</li><li>Medium maker · Tool</li><li>27/30 · Convivial</li></ul>
+        <div class="btn-row">
+          <a class="btn" href="/tools/krita/">Read the review <span aria-hidden="true">↗</span></a>
+          <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+      <div class="side-links">
+        <a href="/suggest/">Suggest a tool for the directory +</a>
+        <a href="/what-is-conviviality/">What is conviviality? ↗</a>
+        <a href="/how-we-score/">How tools are selected ↗</a>
+      </div>
+    </aside>
+  </div>
+  <section class="sizes">
+    <p class="label">Browse by who makes it</p>
+    <h2>Small makers first. Giants for comparison.</h2>
+    <div class="size-grid"><a class="size-cell" href="/size/S/"><span class="size-letter">S</span><span>Small (3)</span><small>One person or a few friends, usually self-funded. Most vibe-coded apps live here.</small></a><a class="size-cell" href="/size/M/"><span class="size-letter">M</span><span>Medium (17)</span><small>A small team or a community project with little or no outside money.</small></a><a class="size-cell" href="/size/L/"><span class="size-letter">L</span><span>Large (3)</span><small>An established company with serious investors behind it.</small></a><a class="size-cell" href="/size/XL/"><span class="size-letter">XL</span><span>Extra large (0)</span><small>The behemoths. Reviewed rarely, as the baseline a category is measured against.</small></a></div>
+  </section></div></main>
 
 <footer>
   <div class="wrap">
     <div class="foot-links">
-      <a href="#method">How tools are selected</a>
-      <a href="#about">About &amp; disclaimers</a>
-      <a href="#impressum">Legal notice (Impressum)</a>
-      <a href="#privacy">Privacy policy</a>
-      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
+      <a href="/how-we-score/">How tools are selected</a>
+      <a href="/about/">About &amp; disclaimers</a>
+      <a href="/legal-notice/">Legal notice (Impressum)</a>
+      <a href="/privacy/">Privacy policy</a>
+      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
     </div>
     <div class="foot-right">
       <span>Useful to people. Accountable to people.</span>
-      <a class="button88" href="#submit" title="Listed on Tools for Conviviality"><span class="m">T/C</span><span class="t">Listed<br>here</span></a>
+      <a class="button88" href="/suggest/" title="Listed on Tools for Conviviality"><span class="m">T/C</span><span class="t">Listed<br>here</span></a>
     </div>
   </div>
 </footer>
@@ -451,12 +495,13 @@ let featureIndex = Math.floor(Math.random() * TOOLS.length);
 
 // Images come from assets/manifest.json, written by scripts/capture.mjs. If it is missing, everything falls back to monogram tiles.
 let IMG = {};
-fetch("assets/manifest.json").then(r => r.ok ? r.json() : null).then(m => { if (m && m.tools) { IMG = m.tools; render(); } }).catch(() => {});
+const A = p => !p ? p : (p[0] === "/" ? p : "/" + p);
+fetch("/assets/manifest.json").then(r => r.ok ? r.json() : null).then(m => { if (m && m.tools) { IMG = m.tools; render(); } }).catch(() => {}).finally(() => { window.__ready = true; });
 const FALLBACKS = ["#3b5bdb", "#d9480f", "#2b8a3e", "#862e9c", "#0b7285", "#a61e4d"];
 function logo(t, size) {
   const im = IMG[t.slug], ic = im && im.icon;
   const src = ic && (ic.svg || ic[256] || ic[128]);
-  if (src) return `<span class="logo ${size}"><img src="${esc(src)}" alt="" loading="lazy" width="72" height="72"></span>`;
+  if (src) return `<span class="logo ${size}"><img src="${esc(A(src))}" alt="" loading="lazy" width="72" height="72"></span>`;
   const col = (im && im.color) || FALLBACKS[[...t.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % FALLBACKS.length];
   const lum = (h => { const n = parseInt(h.replace("#", "").replace(/^(.)(.)(.)$/, "$1$1$2$2$3$3").slice(0, 6), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; })(col);
   return `<span class="logo ${size}" style="background:${col};color:${lum > 0.6 ? "#121a20" : "#fff"}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
@@ -467,7 +512,7 @@ function shot(t) {
   const kind = im.shot ? "Screenshot" : "Image";
   const host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
   return `<figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>${esc(host)}</span></div>
-    <img src="${esc(w[960])}" srcset="${esc(w[480])} 480w, ${esc(w[960])} 960w, ${esc(w[1600])} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
+    <img src="${esc(A(w[960]))}" srcset="${esc(A(w[480]))} 480w, ${esc(A(w[960]))} 960w, ${esc(A(w[1600]))} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
     <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
 }
 function chips(t) {
@@ -556,6 +601,7 @@ function tool(slug) {
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
+      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); return rel.length ? `<section class="related"><h2>Other tools for “${esc(c.verb.toLowerCase())}”</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""; })()}
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
@@ -694,13 +740,67 @@ function privacy() {
 }
 
 function notFound() {
-  return `<div class="page-head"><h1>Nothing here</h1><p>That page doesn't exist. <a href="#home">Go back to the start</a>.</p></div>`;
+  return `<div class="page-head"><h1>Nothing here</h1><p>That page doesn't exist. <a href="#home">Go back to the start</a> or <a href="#directory">browse the directory</a>.</p></div>`;
 }
 
+const SITE = "https://toolsforconviviality.com";
+const ROUTES = { home: "/", directory: "/directory/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
+function currentId() {
+  let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
+  for (const [id, path] of Object.entries(ROUTES)) if (path === p) return id;
+  const m = p.match(/^\/(category|tools|size)\/([A-Za-z0-9-]+)\/$/);
+  if (m) return ({ category: "cat-", tools: "tool-", size: "size-" })[m[1]] + m[2];
+  return "__404";
+}
+const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
+const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication" };
+function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
+function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
+function seo(id) {
+  const out = (title, desc, extra) => Object.assign({ title: title + " | Tools for Conviviality", desc: clip(desc, 158), image: SITE + "/assets/og-default.png", noindex: false, type: "website", ld: [] }, extra || {});
+  if (id === "home") return out("", "Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big Tech apps.", { title: "Tools for Conviviality: a directory of small, independent software", ld: [{ "@type": "WebSite", name: "Tools for Conviviality", url: SITE + "/", description: "An independent directory of small, convivial software." }] });
+  if (id === "directory") return out("Directory of convivial software and alternatives", `All ${TOOLS.length} reviewed tools, from offline maps to password managers, each scored out of 30 against Illich's six tests. Filter by maker, scope and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS)] });
+  if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const list = toolsIn(c.id); return out(`${c.name}: alternatives to ${c.instead}`, `${c.verb}, instead of ${c.instead}. ${list.map(x => x.name).join(", ")}: each reviewed and scored for how convivial it is.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+  if (id.startsWith("tool-")) { const t = TOOLS.find(x => x.slug === id.slice(5)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const n = total(t), c = catOf(t.cat), im = IMG[t.slug], soc = im && im.social && im.social[1200];
+    return out(`${t.name} review: ${band(n)} (${n}/30)`, `${t.one} Instead of ${t.replaces}. Scored ${n}/30 (${band(n)}) on Illich's six tests of a convivial tool.`, {
+      image: soc ? SITE + A(soc) : SITE + "/assets/og-default.png", type: "article",
+      ld: [{ "@type": "Review", name: `${t.name} review`, datePublished: "2026-10-23", author: { "@type": "Organization", name: "Tools for Conviviality", url: SITE + "/" },
+        reviewBody: t.body.join(" "), reviewRating: { "@type": "Rating", ratingValue: n, bestRating: 30, worstRating: 0, name: band(n) },
+        itemReviewed: { "@type": "SoftwareApplication", name: t.name, url: t.url, description: t.one, applicationCategory: APPCAT[t.cat] || "UtilitiesApplication", operatingSystem: t.platforms } },
+        crumbs([["Home", "/"], [c.name, "/category/" + c.id + "/"], [t.name, idToPath(id)]])] }); }
+  if (id === "what") return out("What is conviviality? Illich's idea applied to software", "Ivan Illich called tools convivial when people can use them freely and bend them to their own purposes. What that means for the software you use every day.", { ld: [crumbs([["Home", "/"], ["What is conviviality?", "/what-is-conviviality/"]])] });
+  if (id === "method") return out("How we score tools: six questions from Ivan Illich", "Every tool is scored 0 to 5 on six questions about footprint, lock-in, self-direction, power, longevity and delivery, for a total out of 30.", { ld: [crumbs([["Home", "/"], ["How we score", "/how-we-score/"]])] });
+  if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
+  if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
+  if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
+  if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
+  return out("Page not found", "That page doesn't exist.", { noindex: true });
+}
+function applySeo(id) {
+  const s = seo(id), path = id === "__404" ? location.pathname : idToPath(id), $ = x => document.getElementById(x);
+  document.title = s.title;
+  $("m-desc").setAttribute("content", s.desc);
+  $("m-robots").setAttribute("content", s.noindex ? "noindex,follow" : "index,follow,max-image-preview:large");
+  $("m-canon").setAttribute("href", SITE + path);
+  $("og-type").setAttribute("content", s.type); $("og-title").setAttribute("content", s.title); $("og-desc").setAttribute("content", s.desc);
+  $("og-url").setAttribute("content", SITE + path); $("og-image").setAttribute("content", s.image);
+  $("ld").textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": s.ld });
+}
+const fixLinks = root => root.querySelectorAll('a[href^="#"]').forEach(a => a.setAttribute("href", idToPath(a.getAttribute("href").slice(1))));
+function setView(html) { view.innerHTML = html; fixLinks(view); }
+
 function render() {
-  const h = (location.hash || "#home").slice(1);
+  if (location.hash && location.pathname === "/") {   // old #tool-x style links keep working
+    const hid = location.hash.slice(1), target = idToPath(hid);
+    if (hid === "home" || target !== "/") history.replaceState({}, "", target);
+  }
+  const h = currentId();
   let html, nav = "";
-  if (h === "home" || h === "") html = home();
+  if (h === "home") html = home();
   else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
   else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
@@ -712,7 +812,8 @@ function render() {
   else if (h === "impressum") html = impressum();
   else if (h === "privacy") html = privacy();
   else html = notFound();
-  view.innerHTML = html;
+  setView(html);
+  applySeo(h);
   document.querySelectorAll("[data-nav]").forEach(a => { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
   bind();
 }
@@ -720,7 +821,7 @@ function render() {
 function bind() {
   const another = document.getElementById("another");
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
-  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; view.innerHTML = directory(); bind(); });
+  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
   const form = document.getElementById("suggest");
   if (form) form.onsubmit = e => {
     e.preventDefault();
@@ -750,9 +851,19 @@ themeBtn.onclick = () => {
 };
 matchMedia("(prefers-color-scheme: light)").addEventListener("change", paintTheme);
 paintTheme();
-window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
+document.addEventListener("click", e => {
+  if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[href^='/']");
+  if (!a || a.target === "_blank" || a.origin !== location.origin) return;
+  e.preventDefault();
+  if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
+  render(); window.scrollTo(0, 0);
+});
+window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
+fixLinks(document);
 render();
 </script>
 
-</body>
-</html>
+
+
+</body></html>

@@ -31,9 +31,11 @@ jobs:
           [ -n "${{ inputs.only }}" ] && args="$args --only ${{ inputs.only }}"
           [ "${{ inputs.force }}" = "true" ] && args="$args --force"
           node scripts/capture.mjs $args
+      - name: Rebuild static pages
+        run: node scripts/prerender.mjs
       - name: Commit images
         run: |
           git config user.name "capture-bot"
           git config user.email "hello@toolsforconviviality.com"
-          git add assets
+          git add -A
           git diff --cached --quiet || git commit -m "Update tool images" && git push

@@ -1,0 +1,868 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>KeePassXC review: Convivial (27/30) | Tools for Conviviality</title>
+<meta id="m-desc" name="description" content="A password manager that keeps one encrypted file on your own computer. Instead of Google Password Manager, Microsoft Authenticator. Scored 27/30 (Convivial)…">
+<meta id="m-robots" name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#b3c5ff">
+<link id="m-canon" rel="canonical" href="https://toolsforconviviality.com/tools/keepassxc/">
+<meta property="og:site_name" content="Tools for Conviviality">
+<meta id="og-type" property="og:type" content="article">
+<meta id="og-title" property="og:title" content="KeePassXC review: Convivial (27/30) | Tools for Conviviality">
+<meta id="og-desc" property="og:description" content="A password manager that keeps one encrypted file on your own computer. Instead of Google Password Manager, Microsoft Authenticator. Scored 27/30 (Convivial)…">
+<meta id="og-url" property="og:url" content="https://toolsforconviviality.com/tools/keepassxc/">
+<meta id="og-image" property="og:image" content="https://toolsforconviviality.com/assets/tools/keepassxc/social-1200.webp">
+<meta name="twitter:card" content="summary_large_image">
+<script id="ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Review","name":"KeePassXC review","datePublished":"2026-10-23","author":{"@type":"Organization","name":"Tools for Conviviality","url":"https://toolsforconviviality.com/"},"reviewBody":"KeePassXC stores your passwords in a single KeePass database file on your own machine, and nothing about it needs a company or an account. The file format is the long-standing KeePass one, so other apps can read it, and browser extensions let it fill in logins without sending anything to a server. A volunteer team maintains it, and a security review of an earlier version was published in 2022. It leaves you in charge of syncing, which means pairing it with something like Syncthing to get the same file onto your phone. That is the price of the freedom, and it costs a few points on Self-direction. There is no official phone app, though several independent ones open the same file.","reviewRating":{"@type":"Rating","ratingValue":27,"bestRating":30,"worstRating":0,"name":"Convivial"},"itemReviewed":{"@type":"SoftwareApplication","name":"KeePassXC","url":"https://keepassxc.org","description":"A password manager that keeps one encrypted file on your own computer.","applicationCategory":"SecurityApplication","operatingSystem":"Windows, Mac, Linux"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolsforconviviality.com/"},{"@type":"ListItem","position":2,"name":"Passwords & security","item":"https://toolsforconviviality.com/category/passwords/"},{"@type":"ListItem","position":3,"name":"KeePassXC","item":"https://toolsforconviviality.com/tools/keepassxc/"}]}]}</script>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+/* Layout: a public notice board. Periwinkle band on top, purposes on the left,
+   one tool on the right; reviews read like a catalogue card with a Get Info panel and a verdict stamp. */
+:root {
+  --bg: #172027;
+  --panel: #213039;
+  --panel-2: #1c2830;
+  --line: #36495a;
+  --fg: #dde6f3;
+  --muted: #9aaabd;
+  --accent: #b3c5ff;
+  --band: #b3c5ff;
+  --band-fg: #121a20;
+  --on-accent: #121a20;
+  --stamp: #f2967a;
+  --gold: #cdae62;
+  --meter-off: #2c3c48;
+  --display: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --stampface: "Oswald", "Arial Narrow", Impact, sans-serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
+    --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
+  --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0; letter-spacing: -0.015em; }
+p { margin: 0; }
+
+/* Band */
+.band { background: var(--band); color: var(--band-fg); }
+.band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.mark { width: 52px; height: 40px; border: 1.5px solid var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }
+.brand-name { font-weight: 600; font-size: 15px; line-height: 1.25; }
+.nav { display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.nav a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--band-fg); }
+
+main .wrap { padding-block: 48px 64px; }
+
+/* Home */
+.home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
+.hero .lede { margin-top: 22px; color: var(--fg); max-width: 34ch; font-size: 17px; }
+.purposes { margin-top: 32px; border-top: 1px solid var(--line); }
+.purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); }
+.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.purpose:hover .p-verb { color: var(--accent); }
+.purpose:hover .p-meta { color: var(--fg); }
+
+.card { background: var(--panel); padding: 24px; }
+.feature h2 { font-size: 30px; color: var(--accent); margin-top: 18px; }
+.feature .desc { margin-top: 10px; }
+.feature ul { list-style: none; padding: 16px 0 0; margin: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; font-size: 15px; }
+.btn { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--accent); padding: 12px 16px; text-decoration: none; color: var(--fg); background: transparent; font: inherit; font-size: 15px; cursor: pointer; width: 100%; text-align: left; }
+.btn:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.btn-row { display: grid; gap: 10px; margin-top: 22px; }
+.ghost { border-color: var(--line); color: var(--muted); }
+.side-links { margin-top: 18px; display: grid; gap: 8px; font-size: 15px; }
+
+.sizes { margin-top: 64px; }
+.sizes h2 { font-size: 24px; margin-top: 8px; }
+.size-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 20px; }
+.size-cell { background: var(--bg); padding: 18px; text-decoration: none; display: grid; gap: 6px; align-content: start; }
+.size-cell:hover { background: var(--panel-2); }
+.size-letter { font-family: var(--display); font-size: 40px; line-height: 1; color: var(--accent); }
+.size-cell small { color: var(--muted); font-size: 14px; }
+
+/* Lists of tools */
+.page-head { display: grid; gap: 10px; max-width: 760px; }
+.page-head h1 { font-size: clamp(36px, 5vw, 54px); line-height: 1.02; color: var(--accent); }
+.page-head p { color: var(--fg); font-size: 17px; }
+.crumbs { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--fg); }
+.tool-list { margin-top: 32px; border-top: 1px solid var(--line); }
+.logo { display: inline-grid; place-items: center; flex: none; overflow: hidden; border: 1px solid var(--line); background: var(--surface, transparent); font-family: "Oswald", sans-serif; font-weight: 600; color: #fff; line-height: 1; }
+.logo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
+.logo.sm { width: 44px; height: 44px; font-size: 22px; }
+.logo.lg { width: 72px; height: 72px; font-size: 34px; }
+.tool-row .lead { display: flex; gap: 14px; align-items: flex-start; }
+.tool-row .lead > div { min-width: 0; }
+.review-head { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
+.review-head .page-head { margin: 0; }
+.window { margin: 18px 0 6px; border: 1px solid var(--line); }
+.window .bar { display: flex; gap: 6px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); font: 12px "IBM Plex Mono", monospace; color: var(--muted); }
+.window .bar i { width: 9px; height: 9px; border: 1px solid var(--muted); border-radius: 50%; }
+.window img { display: block; width: 100%; height: auto; }
+.related { margin-top: 40px; }
+.related h2 { font-size: 20px; margin-bottom: 8px; }
+.related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.related li a { display: grid; gap: 2px; text-decoration: none; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.related li a b { font-weight: 500; }
+.related li a:hover b { color: var(--accent); }
+.related li span { color: var(--muted); font-size: 14px; }
+.shot-credit { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
+.tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
+.tool-row:hover h3 { color: var(--accent); }
+.tool-row h3 { font-size: 22px; }
+.tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
+.chip.made { border-color: var(--gold); color: var(--gold); }
+.score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
+.score-mini b { font-family: var(--display); font-weight: 500; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1; }
+.score-mini b span { font-size: 14px; color: var(--muted); }
+.verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; align-items: center; }
+.filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.filter-group .label { margin-right: 4px; }
+.fbtn { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 5px 10px; cursor: pointer; }
+.fbtn[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+.empty { color: var(--muted); padding-block: 24px; }
+
+/* Review */
+.review { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 48px; margin-top: 28px; align-items: start; }
+.review-body { display: grid; gap: 18px; max-width: 64ch; }
+.review-body p { font-size: 17px; }
+.review h2 { font-size: 22px; margin-top: 18px; }
+.instead { font-size: 15px; color: var(--muted); }
+.instead b { color: var(--fg); font-weight: 500; }
+.visit { margin-top: 6px; }
+.visit .btn { width: auto; display: inline-flex; }
+
+.info { background: var(--panel); border: 1px solid var(--line); }
+.info-bar { display: flex; justify-content: space-between; align-items: center; padding: 7px 12px; background: var(--band); color: var(--band-fg); font-family: var(--mono); font-size: 12px; }
+.info-bar i { width: 10px; height: 10px; border: 1.5px solid var(--band-fg); display: block; }
+.info dl { margin: 0; padding: 14px 16px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 7px 16px; font-size: 14px; }
+.info dt { font-family: var(--mono); font-size: 12px; color: var(--muted); text-align: right; padding-top: 2px; }
+.info dd { margin: 0; overflow-wrap: anywhere; }
+.info .meters { border-top: 1px solid var(--line); padding: 14px 16px 18px; display: grid; gap: 10px; }
+.meter-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; font-size: 14px; }
+.meter { display: flex; gap: 3px; }
+.meter i { width: 14px; height: 10px; background: var(--meter-off); display: block; }
+.meter i.on { background: var(--accent); }
+.meter-row b { font-family: var(--mono); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums; width: 1.2ch; text-align: right; }
+.stamp-holder { display: flex; justify-content: center; padding: 22px 16px 26px; border-top: 1px solid var(--line); }
+.stamp { width: 168px; height: 168px; border-radius: 50%; border: 2.5px solid var(--stamp); color: var(--stamp); display: grid; place-items: center; text-align: center; transform: rotate(-7deg); position: relative; }
+.stamp::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; border: 1px solid var(--stamp); opacity: .7; }
+.stamp-inner { display: grid; gap: 2px; }
+.stamp .verdict { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 22px; line-height: 1; letter-spacing: .02em; max-width: 120px; }
+.stamp .num { font-family: var(--stampface); font-weight: 500; font-size: 15px; letter-spacing: .1em; }
+@media (prefers-reduced-motion: no-preference) {
+  .stamp { animation: press .5s cubic-bezier(.2,.9,.3,1.3) both; }
+  @keyframes press { from { transform: rotate(-7deg) scale(1.35); opacity: 0; } to { transform: rotate(-7deg) scale(1); opacity: 1; } }
+}
+
+/* Method, about */
+.prose { display: grid; gap: 16px; max-width: 66ch; margin-top: 32px; }
+.prose p, .prose li { font-size: 17px; }
+.prose h2 { font-size: 26px; margin-top: 20px; }
+.prose ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.criteria { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+.crit { background: var(--bg); padding: 20px; display: grid; gap: 8px; align-content: start; }
+.crit h3 { font-size: 21px; color: var(--accent); }
+.crit .from { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.bands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.band-cell { border: 1.5px solid var(--stamp); color: var(--stamp); padding: 12px; display: grid; gap: 2px; }
+.band-cell b { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 18px; letter-spacing: .02em; line-height: 1.1; }
+.band-cell span { font-family: var(--mono); font-size: 12px; }
+.def { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px 18px; margin-top: 8px; }
+.def dt { font-family: var(--display); font-size: 22px; color: var(--accent); line-height: 1.2; }
+.def dd { margin: 0; font-size: 16px; }
+.note { border-left: 2px solid var(--gold); padding: 4px 0 4px 16px; color: var(--fg); }
+.placeholder { background: color-mix(in srgb, var(--gold) 18%, transparent); padding: 0 4px; }
+
+/* Form */
+form { display: grid; gap: 16px; max-width: 640px; margin-top: 28px; }
+.field { display: grid; gap: 6px; }
+.field label { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+input, select, textarea { font: inherit; font-size: 16px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); padding: 10px 12px; width: 100%; }
+textarea { min-height: 96px; resize: vertical; }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.submit-out { margin-top: 24px; max-width: 640px; display: grid; gap: 12px; }
+.submit-out pre { background: var(--panel); border: 1px solid var(--line); padding: 14px; font-family: var(--mono); font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.copyline { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.copyline .btn { width: auto; }
+.addr { font-family: var(--mono); user-select: all; }
+
+/* Footer */
+footer { border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
+.foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.foot-links a { text-decoration: none; color: var(--muted); }
+.foot-links a:hover { color: var(--fg); }
+.foot-right { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.button88 { width: 88px; height: 31px; border: 1px solid var(--accent); display: grid; grid-template-columns: 30px 1fr; text-decoration: none; font-family: var(--mono); font-size: 9px; line-height: 1.1; letter-spacing: .04em; }
+.button88 .m { background: var(--band); color: var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 13px; font-weight: 600; }
+.button88 .t { display: grid; place-items: center; text-transform: uppercase; color: var(--accent); }
+
+@media (max-width: 860px) {
+  .home, .review { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .size-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .criteria { grid-template-columns: minmax(0, 1fr); }
+  .bands { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  main .wrap { padding-block: 32px 48px; }
+  .row2 { grid-template-columns: minmax(0, 1fr); }
+  .purpose { flex-direction: column; gap: 2px; }
+  .tool-row { grid-template-columns: minmax(0, 1fr); }
+  .score-mini { justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 10px; }
+}
+.theme-btn { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
+.theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
+</style>
+</head>
+<body>
+
+
+<script>
+try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || saved === "light") document.documentElement.setAttribute("data-theme", saved); } catch (e) {}
+</script>
+<header class="band">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Tools for Conviviality, home">
+      <span class="mark">T/C</span>
+      <span class="brand-name">Tools for<br>Conviviality</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
+      <a href="/directory/" data-nav="directory" aria-current="page">Directory</a>
+      <a href="/how-we-score/" data-nav="method">How we score</a>
+      <a href="/suggest/" data-nav="submit">Suggest a tool</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/category/passwords/">Passwords &amp; security</a> / KeePassXC</p>
+  <div class="review">
+    <article class="review-body">
+      <div class="review-head"><span class="logo lg"><img src="/assets/tools/keepassxc/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div class="page-head"><h1>KeePassXC</h1><p>A password manager that keeps one encrypted file on your own computer.</p></div></div>
+      <p class="instead">Instead of <b>Google Password Manager, Microsoft Authenticator</b></p>
+      <div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">No account</span><span class="chip">Plain files</span></div>
+      <figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>keepassxc.org</span></div>
+    <img src="/assets/tools/keepassxc/shot-960.webp" srcset="/assets/tools/keepassxc/shot-480.webp 480w, /assets/tools/keepassxc/shot-960.webp 960w, /assets/tools/keepassxc/shot-1600.webp 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="Screenshot of the KeePassXC website" loading="lazy" width="960" height="600"></figure>
+    <p class="shot-credit">Screenshot from keepassxc.org, taken 2026-10-23. The images belong to their makers and are shown to help you recognise the tool. <a href="/about/">Ask us to remove one</a>.</p>
+      <p>KeePassXC stores your passwords in a single KeePass database file on your own machine, and nothing about it needs a company or an account. The file format is the long-standing KeePass one, so other apps can read it, and browser extensions let it fill in logins without sending anything to a server. A volunteer team maintains it, and a security review of an earlier version was published in 2022.</p><p>It leaves you in charge of syncing, which means pairing it with something like Syncthing to get the same file onto your phone. That is the price of the freedom, and it costs a few points on Self-direction. There is no official phone app, though several independent ones open the same file.</p>
+      <div class="visit"><a class="btn" href="https://keepassxc.org" target="_blank" rel="noopener">Visit KeePassXC <span aria-hidden="true">↗</span></a></div>
+      <section class="related"><h2>Other tools for “keep my passwords safe”</h2><ul><li><a href="/tools/bitwarden/"><b>Bitwarden</b><span>A password manager with an open-source core and a generous free tier.</span></a></li></ul></section>
+    </article>
+    <aside class="info" aria-label="Tool information">
+      <div class="info-bar"><span>KeePassXC Info</span><i aria-hidden="true"></i></div>
+      <dl>
+        <dt>Kind</dt><dd>System</dd>
+        <dt>Size</dt><dd>M · Medium maker</dd>
+        <dt>Where</dt><dd>Passwords &amp; security</dd>
+        <dt>Runs on</dt><dd>Windows, Mac, Linux</dd>
+        <dt>Price</dt><dd>Free</dd>
+        <dt>Source</dt><dd>Open source (GPL)</dd>
+        <dt>Reviewed</dt><dd>October 2026</dd>
+      </dl>
+      <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b aria-label="5 out of 5">5</b></div><div class="meter-row"><span>Lock-in</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b aria-label="5 out of 5">5</b></div><div class="meter-row"><span>Self-direction</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i></span><b aria-label="3 out of 5">3</b></div><div class="meter-row"><span>Power</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b aria-label="5 out of 5">5</b></div><div class="meter-row"><span>Longevity</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b aria-label="5 out of 5">5</b></div><div class="meter-row"><span>Delivery</span><span class="meter" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></span><b aria-label="4 out of 5">4</b></div></div>
+      <div class="stamp-holder"><div class="stamp" role="img" aria-label="Verdict: Convivial, 27 out of 30"><div class="stamp-inner"><span class="verdict">Convivial</span><span class="num">27 / 30</span></div></div></div>
+    </aside>
+  </div></div></main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="/how-we-score/">How tools are selected</a>
+      <a href="/about/">About &amp; disclaimers</a>
+      <a href="/legal-notice/">Legal notice (Impressum)</a>
+      <a href="/privacy/">Privacy policy</a>
+      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
+    </div>
+    <div class="foot-right">
+      <span>Useful to people. Accountable to people.</span>
+      <a class="button88" href="/suggest/" title="Listed on Tools for Conviviality"><span class="m">T/C</span><span class="t">Listed<br>here</span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const REVIEWED = "October 2026";
+const CRITERIA = [
+  { key: "foot", name: "Footprint", from: "Biological degradation", q: "Does it run light, work offline, and keep going on an old laptop, or does it need new hardware and a data centre?" },
+  { key: "lock", name: "Lock-in", from: "Radical monopoly", q: "Can you leave with your stuff in an open format, or does it make you depend on a whole category of product to take part?" },
+  { key: "self", name: "Self-direction", from: "Overprogramming", q: "Can a normal person learn it by using it and point it at their own purposes, without dark patterns training their habits?" },
+  { key: "power", name: "Power", from: "Polarization", q: "Who holds the controls? Team size, governance, open source, whether the price shuts people out, and whether your data is the product." },
+  { key: "long", name: "Longevity", from: "Obsolescence", q: "Does it keep working if the company folds or you stop paying, and does it respect the hardware you already own?" },
+  { key: "deliv", name: "Delivery", from: "Frustration", q: "Does it actually do the job, without ads, engagement bait, or a promise the product can't keep?" }
+];
+const SIZES = {
+  S: { name: "Small", def: "One person or a few friends, usually self-funded. Most vibe-coded apps live here." },
+  M: { name: "Medium", def: "A small team or a community project with little or no outside money." },
+  L: { name: "Large", def: "An established company with serious investors behind it." },
+  XL: { name: "Extra large", def: "The behemoths. Reviewed rarely, as the baseline a category is measured against." }
+};
+const SCOPES = {
+  gadget: { name: "Gadget", def: "Does one thing, usually needs no account. You could lose it without losing anything." },
+  tool: { name: "Tool", def: "An app you use regularly as part of how you work or live." },
+  system: { name: "System", def: "Something your data lives in and your life runs on. Gets the most scrutiny." }
+};
+const CATS = [
+  { id: "notes", name: "Writing & notes", verb: "Keep my own notes and documents", instead: "Microsoft Word, OneNote, Google Docs" },
+  { id: "files", name: "Files & sync", verb: "Move files between my devices", instead: "Google Drive, OneDrive, AirDrop" },
+  { id: "maps", name: "Maps & places", verb: "Find my way without being tracked", instead: "Google Maps" },
+  { id: "reading", name: "Search & reading", verb: "Read the web on my own terms", instead: "Google Search, Google News" },
+  { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
+  { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
+  { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
+  { id: "books", name: "Books & libraries", verb: "Keep and read my own books", instead: "Kindle, Apple Books, Google Play Books" },
+  { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
+];
+const TOOLS = [
+  { slug: "localsend", name: "LocalSend", cat: "files", size: "M", scope: "gadget", url: "https://localsend.org",
+    one: "Send files between any two devices on the same Wi-Fi.", replaces: "AirDrop, Google Quick Share",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Free", "No account"], s: [5,5,5,5,5,4],
+    body: ["LocalSend does one job: getting a file from your phone to your laptop, or from your laptop to a friend's, whatever mix of operating systems happens to be in the room. Transfers go device to device over your own network with encryption, so nothing passes through a company server and there is nothing to sign up for.",
+      "It is about as close to a hand tool as software gets. The only thing keeping it from a perfect score is that both devices have to share a network, which is a small price for a tool that asks nothing else of you."] },
+  { slug: "netnewswire", name: "NetNewsWire", cat: "reading", size: "S", scope: "tool", url: "https://netnewswire.com",
+    one: "A fast, free RSS reader that brings the sites you choose to you.", replaces: "Google News, algorithmic feeds",
+    price: "Free", source: "Open source", platforms: "Mac, iPhone, iPad",
+    tags: ["Open source", "Free", "No account", "Apple only"], s: [5,4,5,4,5,4],
+    body: ["Brent Simmons first released NetNewsWire in 2002, and after retiring he has spent his time making this one free app as good as it can be, away from any commercial pressure. It reads RSS feeds, the old open plumbing of the web, so you decide what shows up and in what order. No algorithm, no feed ranking, no ads.",
+      "Your subscriptions import and export as standard OPML files, so leaving is trivial. It loses points only because it runs on Apple hardware alone, which ties a convivial tool to an expensive platform."] },
+  { slug: "comaps", name: "CoMaps", cat: "maps", size: "M", scope: "tool", url: "https://comaps.app",
+    one: "Offline maps and navigation built on OpenStreetMap, run by its community.", replaces: "Google Maps",
+    price: "Free", source: "Open source", platforms: "Android, iOS, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [5,5,4,5,5,3],
+    body: ["CoMaps exists because its contributors forked Organic Maps in 2025 over concerns about governance, transparency and shareholder profit. Since then they have removed the Kayak affiliate links and Google Firebase code, rewritten the map server so it collects nothing, and made it possible to host the map files yourself. A fork as self-defence is about as Illich as open source gets.",
+      "You download a region once and navigate on your phone with no account and no tracking. It drops points on Delivery because offline maps still can't match Google on live traffic or business listings, and some days that matters."] },
+  { slug: "syncthing", name: "Syncthing", cat: "files", size: "M", scope: "system", url: "https://syncthing.net",
+    one: "Keeps folders in sync directly between your own devices.", replaces: "Google Drive, OneDrive sync",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux; Android via community fork",
+    tags: ["Open source", "Free", "No account"], s: [5,5,2,5,4,4],
+    body: ["Syncthing copies changes between your own computers with no cloud in the middle, which makes it the purest answer on this list to rented storage. On the desktop it is excellent and has been for years.",
+      "It scores low on Self-direction because setup asks you to understand device IDs and folder sharing, which is more than most people want. On phones, the official Android app was discontinued at the end of 2024, and the recommended community fork went through a messy change of maintainer, so Longevity takes a hit too."] },
+  { slug: "obsidian", name: "Obsidian", cat: "notes", size: "M", scope: "tool", url: "https://obsidian.md",
+    one: "A notes app that works on a plain folder of Markdown files.", replaces: "OneNote, Google Keep, Notion",
+    price: "Free; paid sync and publishing", source: "Closed source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Free", "Works offline", "Plain files"], s: [4,5,3,3,5,4],
+    body: ["Obsidian's best decision is that your notes are just Markdown files in a folder on your own computer. If the company disappeared tomorrow, every note would still open in any text editor, which is why it scores full marks on Lock-in and Longevity.",
+      "The app itself is closed source, so Power suffers, and the plugin ecosystem can turn note-taking into a hobby of configuring note-taking. Sync and publishing are paid add-ons, though free alternatives work fine."] },
+  { slug: "ente", name: "Ente Photos", cat: "images", size: "M", scope: "system", url: "https://ente.io",
+    one: "End-to-end encrypted photo backup and sharing.", replaces: "Google Photos, iCloud Photos",
+    price: "Paid storage plans", source: "Open source", platforms: "Android, iOS, web, desktop",
+    tags: ["Open source", "Encrypted", "Self-hostable"], s: [3,4,5,4,4,4],
+    body: ["Ente does what Google Photos does, backing up and sharing your pictures across devices, except the photos are encrypted before they leave your phone so only you can see them. The apps are open source on every platform and you can run the server yourself.",
+      "It reads simply, and sharing an album with someone who has no account works. Photos in the cloud carry a real physical footprint, and most people will pay for storage, so it lands just short of the top band."] },
+  { slug: "cryptpad", name: "CryptPad", cat: "notes", size: "M", scope: "system", url: "https://cryptpad.org",
+    one: "An encrypted office suite for writing, spreadsheets and slides together.", replaces: "Google Docs, Microsoft 365",
+    price: "Free; paid storage on the main instance", source: "Open source (AGPL)", platforms: "Web",
+    tags: ["Open source", "Encrypted", "Self-hostable"], s: [3,3,4,5,4,3],
+    body: ["CryptPad comes from XWiki, a Paris company that has made open-source software for nearly twenty years, and it has been funded largely by French and European research grants on the principle that public money should pay for public code. Everything is encrypted in your browser, so even the people running the server can't read your documents.",
+      "It scores perfectly on Power. It is rougher to use than Google Docs, though, and moving documents in and out of Microsoft formats is workable rather than smooth."] },
+  { slug: "kagi", name: "Kagi", cat: "reading", size: "L", scope: "tool", url: "https://kagi.com",
+    one: "A paid search engine with no ads and no tracking.", replaces: "Google Search",
+    price: "From $5 a month", source: "Closed source", platforms: "Web, browser extensions",
+    tags: ["Subscription", "No ads"], s: [3,4,5,2,2,5],
+    body: ["Kagi gives the best search experience on this list. Because users pay for it, there are no ads to sell and the results are built for the person searching. You can block sites you hate and boost the ones you trust.",
+      "It sits lowest of the convivial picks on purpose. It is closed, the cheapest plan starts at $5 a month, which shuts some people out, and nothing stays with you if you stop paying. A good product, and an honest example of where convenience and conviviality pull apart."] },
+  { slug: "bitwarden", name: "Bitwarden", cat: "passwords", size: "L", scope: "system", url: "https://bitwarden.com",
+    one: "A password manager with an open-source core and a generous free tier.", replaces: "Google Password Manager, Microsoft Authenticator",
+    price: "Free; premium about $10 a year", source: "Open core", platforms: "Every major platform and browser",
+    tags: ["Open source core", "Free tier", "Self-hostable"], s: [4,5,4,3,4,5],
+    body: ["Bitwarden stores passwords well, works everywhere, and lets you export your whole vault or host it yourself, so leaving is easy. The core apps are GPL and the server is AGPL.",
+      "Power gets a 3 because the company has been steadily moving toward an open-core model. In October 2026 it announced that the versions in the app stores will be its commercially licensed builds, while the GPL code stays on GitHub. That follows a 2024 scare over a restrictive build licence that the company fixed after pushback. Still a strong pick; we will re-score if anything else changes."] },
+  { slug: "photomosh", name: "PhotoMosh", cat: "images", size: "S", scope: "gadget", url: "https://photomosh.com",
+    one: "Glitch your photos, videos and webcam in the browser.", replaces: "Photoshop filters, Instagram effects",
+    price: "Free; paid Pro desktop version", source: "Closed source", platforms: "Web browser",
+    tags: ["Free", "No account"], s: [3,5,5,3,3,5],
+    body: ["PhotoMosh is the work of one developer, Felix Turner of Airtight Interactive. You load an image or turn on your webcam, press Mosh, and get something strange. It is a toy in the best sense, and the opposite of a filter app designed to keep you scrolling.",
+      "Your images are never stored online and anything you make is yours to use anywhere. It loses points because the code is closed, it needs a fairly recent device, and the free version lives only as long as the website does."] },
+  { slug: "ferdium", name: "Ferdium", cat: "talk", size: "M", scope: "tool", url: "https://ferdium.org",
+    one: "Puts all your messaging services in one desktop app.", replaces: "A dozen chat tabs",
+    price: "Free", source: "Open source (Apache)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Self-hostable"], s: [2,4,4,5,4,4],
+    body: ["Ferdium gathers WhatsApp, Slack, Telegram and the rest into one window with workspaces, so the messengers stop owning your browser. It is community-run free software, and you can host your own Ferdium server to keep your settings off anyone else's machine.",
+      "Be clear about what it is, though. It helps you live with the messaging monopolies rather than escape them, and wrapping a dozen web apps in one Electron app is heavy on your computer."] },
+  { slug: "arena", name: "Are.na", cat: "collect", size: "M", scope: "tool", url: "https://www.are.na",
+    one: "A quiet place to collect things and connect ideas over time.", replaces: "Pinterest, Google Keep boards",
+    price: "Free; paid membership", source: "Closed source, public API", platforms: "Web, iOS, Android",
+    tags: ["No ads", "No algorithmic feed"], s: [4,3,5,4,3,4],
+    body: ["Are.na is where designers, artists and researchers keep the things they find and arrange them into channels. There are no ads, no likes to chase and no feed tuned to keep you there, and people have built their own tools on its public API.",
+      "Its scores come from the product. We haven't yet verified current details on the company's size and funding, and we will update this review when we have."] },
+  { slug: "airtime", name: "Airtime", cat: "images", size: "L", scope: "tool", url: "https://www.airtime.com",
+    one: "Camera and presentation tools for video calls, formerly mmhmm.", replaces: "Teams and Meet backgrounds, slide sharing",
+    price: "$10 a month (annual); Camera available as a one-time purchase", source: "Closed source", platforms: "Mac, Windows, web",
+    tags: ["Subscription", "One-time option"], s: [2,2,4,1,2,5],
+    body: ["Airtime is a delight to use. It puts you next to your slides, makes video calls feel like presenting rather than enduring, and it does exactly what it promises, which is why Delivery gets full marks.",
+      "On almost everything else it is a venture-backed company, with more than $100 million raised from Sequoia, SoftBank and others, a monthly subscription for the full toolkit, and presentations that live in its own format. The convivial bright spot is that Airtime Camera can be bought outright with a single payment, and we'd love to see more of that."] },
+  { slug: "zotero", name: "Zotero", cat: "collect", size: "M", scope: "tool", url: "https://www.zotero.org",
+    one: "Collects, cites and organises your research sources, and keeps them yours.", replaces: "EndNote, Mendeley, Google Scholar libraries",
+    price: "Free; paid file storage", source: "Open source (AGPL)", platforms: "Windows, Mac, Linux, iOS, Android",
+    tags: ["Open source", "Free", "Works offline", "Non-profit"], s: [4,5,4,5,5,5],
+    body: ["Zotero began at George Mason University and is now built by the Corporation for Digital Scholarship, a non-profit. Its money comes from research foundations, donations and optional storage subscriptions, so nobody earns more from you by keeping you inside it. You save a web page, a paper or a book with one click, and Zotero keeps the details, your notes and a copy on your own computer.",
+      "Portability is baked into its history. In 2008 a rival company sued over Zotero's ability to convert its style files, and the court dismissed the case. Your library exports to standard formats, and the free storage allowance is small enough that heavy users will pay, though that payment is what keeps the project independent."] },
+  { slug: "kiwix", name: "Kiwix", cat: "reading", size: "M", scope: "tool", url: "https://kiwix.org",
+    one: "Wikipedia and other libraries of knowledge, saved to read with no internet.", replaces: "Google Search, always-online reference",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Free", "No account", "Works offline", "Non-profit"], s: [4,5,5,5,5,3],
+    body: ["Kiwix is a Swiss non-profit association, founded in 2006 and registered in Lausanne, that lets you download Wikipedia, Project Gutenberg and other collections in a single file and read them anywhere with no connection. Its funding comes mostly from grants, led by the Wikimedia Foundation, along with donations and paid services for organisations, and it publishes audited accounts.",
+      "There is nothing to sign up for and nothing watching what you look up. It scores lower on Delivery because a download is a snapshot that goes stale, and the biggest collections need a lot of storage. For a classroom, a long flight or a village with a poor connection, it is hard to beat."] },
+  { slug: "keepassxc", name: "KeePassXC", cat: "passwords", size: "M", scope: "system", url: "https://keepassxc.org",
+    one: "A password manager that keeps one encrypted file on your own computer.", replaces: "Google Password Manager, Microsoft Authenticator",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Plain files"], s: [5,5,3,5,5,4],
+    body: ["KeePassXC stores your passwords in a single KeePass database file on your own machine, and nothing about it needs a company or an account. The file format is the long-standing KeePass one, so other apps can read it, and browser extensions let it fill in logins without sending anything to a server. A volunteer team maintains it, and a security review of an earlier version was published in 2022.",
+      "It leaves you in charge of syncing, which means pairing it with something like Syncthing to get the same file onto your phone. That is the price of the freedom, and it costs a few points on Self-direction. There is no official phone app, though several independent ones open the same file."] },
+  { slug: "joplin", name: "Joplin", cat: "notes", size: "M", scope: "tool", url: "https://joplinapp.org",
+    one: "Open-source notes with sync through whichever service you choose.", replaces: "Evernote, OneNote, Google Keep",
+    price: "Free; optional paid sync", source: "Open source (AGPL)", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Free", "Works offline", "Self-hostable"], s: [4,5,3,5,5,4],
+    body: ["Joplin was started by Laurent Cozic and keeps your notes as Markdown with attachments. You decide where they sync: Nextcloud, Dropbox, any WebDAV server or the paid Joplin Cloud at a few euros a month. End-to-end encryption is available and, usefully, you can read the whole source.",
+      "Nothing is hidden from you, and the cost of that is some setup work. Encryption is off until you turn it on, and the app is plainer and less polished than the commercial ones. If you want a notes app you can still use in ten years, it is a safe bet."] },
+  { slug: "krita", name: "Krita", cat: "images", size: "M", scope: "tool", url: "https://krita.org",
+    one: "A full painting and illustration studio that costs nothing.", replaces: "Adobe Photoshop and Procreate for drawing",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,4,5,5,4],
+    body: ["Krita is made by a community inside KDE, with the Krita Foundation looking after its funding and trademark. The program is free to download from its own site, and the paid copies on Steam and the Microsoft Store are the same software, offered to people who want to chip in. What you draw is yours, in open file formats, and nobody can lock the studio behind a subscription.",
+      "It is built for painters and illustrators, with a deep set of brushes and tools to match. That depth takes time to learn and there is no sign-in prompt or upsell to push you around. It is not a photo-retouching tool, so photographers may still want something else."] },
+  { slug: "excalidraw", name: "Excalidraw", cat: "collect", size: "M", scope: "gadget", url: "https://excalidraw.com",
+    one: "A browser whiteboard for sketching diagrams that look hand-drawn.", replaces: "Miro, Lucidchart, Microsoft Whiteboard",
+    price: "Free; paid Excalidraw+", source: "Open source (MIT)", platforms: "Web",
+    tags: ["Open source", "Free", "No account", "Self-hostable"], s: [5,4,5,4,4,5],
+    body: ["Open the page and start drawing. There is nothing to sign up for, your work saves in the browser, and you can share a live link so others draw with you. Collaboration is end-to-end encrypted, so the server only relays scrambled data.",
+      "The code is MIT licensed and the repository includes what you need to host your own copy. A paid version, Excalidraw+, funds the project and adds team features, so the free tool is a gadget with a business next to it. Files are open, which keeps the Lock-in score high."] },
+  { slug: "cryptomator", name: "Cryptomator", cat: "files", size: "M", scope: "tool", url: "https://cryptomator.org",
+    one: "Encrypts the files you keep in any cloud folder before they leave your device.", replaces: "Trusting Google Drive, Dropbox or OneDrive with readable files",
+    price: "Free on desktop; about 30 euros per phone platform to edit", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Encrypted", "Free"], s: [5,5,4,4,5,4],
+    body: ["Cryptomator is a different answer to the cloud question: keep using the storage you already have, but lock your files in an encrypted vault first. It works with any sync service because it only sees a folder, and the company behind it, Skymatic in Germany, has made the code open for anyone to inspect.",
+      "The desktop apps are free with every feature. On phones the free versions only read, and editing costs a one-time payment of about 30 euros per platform, which is how development is paid for. That choice keeps it from the top Power score but is hard to call unfair."] },
+  { slug: "freshrss", name: "FreshRSS", cat: "reading", size: "M", scope: "system", url: "https://freshrss.org",
+    one: "A self-hosted RSS reader that runs on a Raspberry Pi.", replaces: "Feedly, Google News",
+    price: "Free", source: "Open source (AGPL)", platforms: "Web; mobile through its API",
+    tags: ["Open source", "Free", "Self-hostable", "Light"], s: [5,5,3,5,5,4],
+    body: ["FreshRSS is a feed reader you run yourself, on a home server, a cheap host or a service like PikaPods. It is light enough for a Raspberry Pi, supports several users, exports your subscriptions as standard OPML and has an API that mobile reader apps can use. It is community-run, with a release every couple of months.",
+      "You get the old open web the way it was meant to work, with no tracking and no ranking. The cost is that somebody has to host it, which puts it out of reach for people who don't want to run a server. Pair it with a friend who does, or a hosted plan, and it is a strong choice."] },
+  { slug: "calibre", name: "Calibre", cat: "books", size: "S", scope: "tool", url: "https://calibre-ebook.com",
+    one: "Manages, converts and reads your ebook library on your own computer.", replaces: "Kindle's walled library, Apple Books",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,3,4,5,5],
+    body: ["Kovid Goyal started Calibre in 2006 so his e-reader would work on Linux, and it has grown into the standard way to keep your own books in order. It converts between formats, edits them, sends them to your reader and fetches news from the web. Your library is a folder of files you can open without it.",
+      "That makes it the opposite of an ebook store that rents you books and can take them away. The interface is dense, so beginners may feel buried, and a project this big leans heavily on one lead developer. Since 2025 it can also connect to AI models, including ones you run yourself, so check its settings before you use that."] },
+  { slug: "deltachat", name: "Delta Chat", cat: "talk", size: "M", scope: "tool", url: "https://delta.chat",
+    one: "A chat app that runs on ordinary email, with no phone number needed.", replaces: "WhatsApp, Telegram",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Free", "Encrypted", "No phone number"], s: [4,4,4,5,4,3],
+    body: ["Delta Chat borrows the oldest messaging network there is, email. It works with any email account, or with a simple chat relay, so there is no central company to close it down or sell your contact list, and messages are end-to-end encrypted. The developers are based in Germany and the apps are free and open source.",
+      "The catch is the one every chat app has: it only works if your friends are on it too, which is what keeps Delivery at 3. Privacy also depends on the mail server carrying the messages, so a modern relay is better than an old inbox."] }
+];
+
+const total = t => t.s.reduce((a, b) => a + b, 0);
+const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Manipulative";
+const catOf = id => CATS.find(c => c.id === id);
+const toolsIn = id => TOOLS.filter(t => t.cat === id).sort((a, b) => total(b) - total(a));
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const view = document.getElementById("view");
+let featureIndex = Math.floor(Math.random() * TOOLS.length);
+
+// Images come from assets/manifest.json, written by scripts/capture.mjs. If it is missing, everything falls back to monogram tiles.
+let IMG = {};
+const A = p => !p ? p : (p[0] === "/" ? p : "/" + p);
+fetch("/assets/manifest.json").then(r => r.ok ? r.json() : null).then(m => { if (m && m.tools) { IMG = m.tools; render(); } }).catch(() => {}).finally(() => { window.__ready = true; });
+const FALLBACKS = ["#3b5bdb", "#d9480f", "#2b8a3e", "#862e9c", "#0b7285", "#a61e4d"];
+function logo(t, size) {
+  const im = IMG[t.slug], ic = im && im.icon;
+  const src = ic && (ic.svg || ic[256] || ic[128]);
+  if (src) return `<span class="logo ${size}"><img src="${esc(A(src))}" alt="" loading="lazy" width="72" height="72"></span>`;
+  const col = (im && im.color) || FALLBACKS[[...t.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % FALLBACKS.length];
+  const lum = (h => { const n = parseInt(h.replace("#", "").replace(/^(.)(.)(.)$/, "$1$1$2$2$3$3").slice(0, 6), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; })(col);
+  return `<span class="logo ${size}" style="background:${col};color:${lum > 0.6 ? "#121a20" : "#fff"}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
+}
+function shot(t) {
+  const im = IMG[t.slug]; if (!im) return "";
+  const w = im.shot || (im.social && { 480: im.social[600], 960: im.social[600], 1600: im.social[1200] }); if (!w) return "";
+  const kind = im.shot ? "Screenshot" : "Image";
+  const host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
+  return `<figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>${esc(host)}</span></div>
+    <img src="${esc(A(w[960]))}" srcset="${esc(A(w[480]))} 480w, ${esc(A(w[960]))} 960w, ${esc(A(w[1600]))} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
+    <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
+}
+function chips(t) {
+  return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
+}
+function row(t) {
+  const n = total(t);
+  return `<a class="tool-row" href="#tool-${t.slug}">
+    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div></div>
+    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
+}
+
+function home() {
+  const t = TOOLS[featureIndex % TOOLS.length];
+  const counts = k => TOOLS.filter(x => x.size === k).length;
+  return `<div class="home">
+    <section class="hero">
+      <h1>What would you like to do?</h1>
+      <p class="lede">Useful software, made at a human scale. Start with a purpose, then find a tool you can make your own.</p>
+      <div class="purposes">${CATS.map(c => {
+        const list = toolsIn(c.id);
+        return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.map(x => x.name).join(", ")} ↗</span></a>`;
+      }).join("")}</div>
+    </section>
+    <aside>
+      <div class="card feature" aria-live="polite">
+        <p class="label">A random tool in the collection</p>
+        <h2>${esc(t.name)}</h2>
+        <p class="desc">${esc(t.one)}</p>
+        <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li>${total(t)}/30 · ${band(total(t))}</li></ul>
+        <div class="btn-row">
+          <a class="btn" href="#tool-${t.slug}">Read the review <span aria-hidden="true">↗</span></a>
+          <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+      <div class="side-links">
+        <a href="#submit">Suggest a tool for the directory +</a>
+        <a href="#what">What is conviviality? ↗</a>
+        <a href="#method">How tools are selected ↗</a>
+      </div>
+    </aside>
+  </div>
+  <section class="sizes">
+    <p class="label">Browse by who makes it</p>
+    <h2>Small makers first. Giants for comparison.</h2>
+    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<a class="size-cell" href="#size-${k}"><span class="size-letter">${k}</span><span>${v.name} (${counts(k)})</span><small>${v.def}</small></a>`).join("")}</div>
+  </section>`;
+}
+
+function category(id) {
+  const c = catOf(id); if (!c) return notFound();
+  const list = toolsIn(id);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
+  <div class="page-head" style="margin-top:14px"><h1>${esc(c.name)}</h1><p>Instead of ${esc(c.instead)}.</p></div>
+  <div class="tool-list">${list.map(row).join("")}</div>
+  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`;
+}
+
+const filt = { size: "all", scope: "all", cat: "all", verdict: "all" };
+const VERDICT_MIN = { all: 0, leaning: 18, convivial: 25 };
+function directory(preset) {
+  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all" }, preset);
+  const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat) && total(t) >= VERDICT_MIN[filt.verdict])
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
+  return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
+  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, A to Z. Scores sit beside each one, but there is no sitewide top ten. Compare tools within a category, against the giant they replace.</p></div>
+  <div class="filters">
+    ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
+    ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
+    ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
+  </div>
+  <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
+  <div class="tool-list">${list.length ? list.map(row).join("") : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>'}</div>`;
+}
+
+function tool(slug) {
+  const t = TOOLS.find(x => x.slug === slug); if (!t) return notFound();
+  const n = total(t), c = catOf(t.cat);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#cat-${c.id}">${esc(c.name)}</a> / ${esc(t.name)}</p>
+  <div class="review">
+    <article class="review-body">
+      <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
+      <p class="instead">Instead of <b>${esc(t.replaces)}</b></p>
+      ${chips(t)}
+      ${shot(t)}
+      ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
+      <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
+      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); return rel.length ? `<section class="related"><h2>Other tools for “${esc(c.verb.toLowerCase())}”</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""; })()}
+    </article>
+    <aside class="info" aria-label="Tool information">
+      <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
+      <dl>
+        <dt>Kind</dt><dd>${SCOPES[t.scope].name}</dd>
+        <dt>Size</dt><dd>${t.size} · ${SIZES[t.size].name} maker</dd>
+        <dt>Where</dt><dd>${esc(c.name)}</dd>
+        <dt>Runs on</dt><dd>${esc(t.platforms)}</dd>
+        <dt>Price</dt><dd>${esc(t.price)}</dd>
+        <dt>Source</dt><dd>${esc(t.source)}</dd>
+        <dt>Reviewed</dt><dd>${REVIEWED}</dd>
+      </dl>
+      <div class="meters">${CRITERIA.map((k, i) => `<div class="meter-row"><span>${k.name}</span><span class="meter" aria-hidden="true">${[0,1,2,3,4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b></div>`).join("")}</div>
+      <div class="stamp-holder"><div class="stamp" role="img" aria-label="Verdict: ${band(n)}, ${n} out of 30"><div class="stamp-inner"><span class="verdict">${band(n)}</span><span class="num">${n} / 30</span></div></div></div>
+    </aside>
+  </div>`;
+}
+
+function what() {
+  return `<p class="crumbs"><a href="#home">Home</a> / What is conviviality?</p>
+  <div class="page-head" style="margin-top:14px"><h1>What is conviviality?</h1><p>A word from an old book, and a useful test for the software you use every day.</p></div>
+  <div class="prose">
+    <p>Ivan Illich was an Austrian-born philosopher and priest who spent much of his life asking what happens when the things we build to help us start running our lives instead. In 1973 he published <i>Tools for Conviviality</i>, a short book about exactly that. He chose “convivial” for tools that people can pick up, use freely, and bend to their own purposes, and he set it against tools that arrange us around themselves.</p>
+    <h2>The idea in plain terms</h2>
+    <p>A convivial tool leaves you more able to do what you want with your own time, attention and company. A hammer is convivial, and so is a bicycle, because anyone can use them, repair them and put them to uses their makers never imagined. The opposite is a tool that only works inside a system you can't see or leave, that decides what you may do with it, and that gets harder to live without the longer you use it.</p>
+    <p>Illich saw that tools tend to go bad in a few predictable ways. They grow past the point where they help. They turn into the only way to do a job, so nobody can do without them. They make people passive, concentrate power in a few hands, wear out their purpose, and promise more than they deliver. Those six failures became the six questions on <a href="#method">How we score</a>.</p>
+    <h2>Why it fits software</h2>
+    <p>Most of what we use online is built to hold us: accounts that are hard to leave, files in formats only one company reads, feeds designed around what keeps us scrolling. Software doesn't have to work that way. A small tool that does one job, keeps your files on your own device and lets you walk away with them is convivial in exactly Illich's sense, and the same goes for a large open-source project with the same habits.</p>
+    <p>Cheap AI-assisted building has made this more interesting, because more people can now make a small tool for themselves and their friends. That is how tools were supposed to feel all along, and it's a good reason to keep a directory of the ones worth knowing about.</p>
+    <h2>What conviviality is not</h2>
+    <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
+    <h2>Read the book</h2>
+    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
+  </div>`;
+}
+
+function method() {
+  return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
+  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
+  <div class="prose">
+    <h2>What the totals mean</h2>
+    <p>The total becomes a verdict, stamped on every review. The stamp is a judgement made by people, dated, and open to change.</p>
+  </div>
+  <div class="bands">
+    <div class="band-cell"><b>Convivial</b><span>25 to 30</span></div>
+    <div class="band-cell"><b>Leaning convivial</b><span>18 to 24</span></div>
+    <div class="band-cell"><b>Mixed</b><span>10 to 17</span></div>
+    <div class="band-cell"><b>Manipulative</b><span>0 to 9</span></div>
+  </div>
+  <div class="prose">
+    <h2>Size: who makes it</h2>
+    <dl class="def">${Object.entries(SIZES).map(([k, v]) => `<dt>${k}</dt><dd>${v.def}</dd>`).join("")}</dl>
+    <h2>Scope: how much of your life it holds</h2>
+    <dl class="def">${Object.entries(SCOPES).map(([k, v]) => `<dt>${v.name}</dt><dd>${v.def}</dd>`).join("")}</dl>
+    <p>Scope sets how deep a review goes. A gadget gets a short card. A system that holds your passwords or photos gets the long treatment.</p>
+    <h2>Why no leaderboard</h2>
+    <p>Scores help you compare tools that do the same job. A sitewide ranking would turn the directory into a race, and a race toward bigger and better is exactly what Illich warned against. So we compare within categories, against the giant each tool replaces.</p>
+    <h2>Our own tools</h2>
+    <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
+    <h2>Credit where it's due</h2>
+    <p>The idea of a convivial tool comes from Ivan Illich's 1973 book <i>Tools for Conviviality</i>, and the six questions follow the structure of its third chapter. The rubric itself is our own interpretation. Andrea Vetter's Matrix for Convivial Technology (2018) took on a similar task for engineers and is well worth reading.</p>
+  </div>`;
+}
+
+function about() {
+  return `<p class="crumbs"><a href="#home">Home</a> / About</p>
+  <div class="page-head" style="margin-top:14px"><h1>About this directory</h1><p>A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.</p></div>
+  <div class="prose">
+    <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, so there is something to measure against.</p>
+    <h2>About the book</h2>
+    <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. The book is still under copyright. We paraphrase its ideas, quote it rarely and briefly with a source, and never host or link to copies of the text.</p>
+    <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
+    <h2>About the reviews</h2>
+    <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
+    <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
+    <h2>Corrections</h2>
+    <p>If you make a tool we have reviewed and we got something wrong, tell us through the <a href="#submit">suggestion form</a> and we will fix it.</p>
+    <h2>Pictures</h2>
+    <p>Logos and screenshots on this site belong to the people who make the tools. We show them so you can recognise what you are reading about, and each screenshot says where it came from and when it was taken. A script fetches them from each tool's own public page, identifies itself as ToolsForConvivialityBot, and skips any site whose robots.txt says no. If you make a tool listed here and would rather we use a different image, or none, write to <span class="addr">hello@toolsforconviviality.com</span> and we will change it.</p>
+  </div>`;
+}
+
+function submit() {
+  const opts = o => Object.entries(o).map(([k, v]) => `<option value="${k}">${k.length < 3 ? k + " · " : ""}${v.name}</option>`).join("");
+  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool</p>
+  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else.</p></div>
+  <form id="suggest" novalidate>
+    <div class="row2">
+      <div class="field"><label for="f-name">Tool name</label><input id="f-name" required></div>
+      <div class="field"><label for="f-url">Link</label><input id="f-url" type="url" placeholder="https://"></div>
+    </div>
+    <div class="field"><label for="f-what">What does it do, in a sentence or two?</label><textarea id="f-what"></textarea></div>
+    <div class="row2">
+      <div class="field"><label for="f-size">Who makes it</label><select id="f-size">${opts(SIZES)}</select></div>
+      <div class="field"><label for="f-scope">Scope</label><select id="f-scope">${opts(SCOPES)}</select></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="f-cat">Category</label><select id="f-cat">${CATS.map(c => `<option>${esc(c.name)}</option>`).join("")}<option>Something else</option></select></div>
+      <div class="field"><label for="f-price">Price</label><input id="f-price" placeholder="Free, pay once, subscription…"></div>
+    </div>
+    <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
+    <div class="field"><label for="f-img">A logo or screenshot we may use, if you have one</label><input id="f-img" type="url" placeholder="https://… link to an image or press kit"></div>
+    <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
+    <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
+    <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
+  </form>
+  <div class="submit-out" id="out" hidden>
+    <p>Here is your suggestion. Copy it and email it to <span class="addr">hello@toolsforconviviality.com</span>.</p>
+    <pre id="out-text"></pre>
+    <div class="copyline"><button class="btn" type="button" id="copy">Copy suggestion</button><span id="copied" class="label" aria-live="polite"></span></div>
+  </div>`;
+}
+
+function impressum() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Legal notice</p>
+  <div class="page-head" style="margin-top:14px"><h1>Legal notice</h1><p>Impressum. Information pursuant to § 5 DDG (German Digital Services Act).</p></div>
+  <div class="prose">
+    <p>Jeffrey Humble<br>Peschkestr. 5<br>12161 Berlin<br>Germany</p>
+    <p>Email: <span class="addr">hello@toolsforconviviality.com</span></p>
+    <p>Responsible for content under § 18 (2) MStV: Jeffrey Humble, address as above.</p>
+    <p>VAT identification number under § 27a UStG: DE334424725</p>
+    <p>Consumer dispute resolution: we are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+  </div>`;
+}
+
+function privacy() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Privacy policy</p>
+  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say.</p></div>
+  <div class="prose">
+    <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
+    <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
+    <p>The suggestion form doesn't send anything by itself. It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
+    <p>You have the right to access, correct or delete data we hold about you, and to complain to a data protection authority. Contact: <span class="addr">hello@toolsforconviviality.com</span>.</p>
+  </div>`;
+}
+
+function notFound() {
+  return `<div class="page-head"><h1>Nothing here</h1><p>That page doesn't exist. <a href="#home">Go back to the start</a> or <a href="#directory">browse the directory</a>.</p></div>`;
+}
+
+const SITE = "https://toolsforconviviality.com";
+const ROUTES = { home: "/", directory: "/directory/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
+function currentId() {
+  let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
+  for (const [id, path] of Object.entries(ROUTES)) if (path === p) return id;
+  const m = p.match(/^\/(category|tools|size)\/([A-Za-z0-9-]+)\/$/);
+  if (m) return ({ category: "cat-", tools: "tool-", size: "size-" })[m[1]] + m[2];
+  return "__404";
+}
+const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
+const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication" };
+function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
+function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
+function seo(id) {
+  const out = (title, desc, extra) => Object.assign({ title: title + " | Tools for Conviviality", desc: clip(desc, 158), image: SITE + "/assets/og-default.png", noindex: false, type: "website", ld: [] }, extra || {});
+  if (id === "home") return out("", "Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big Tech apps.", { title: "Tools for Conviviality: a directory of small, independent software", ld: [{ "@type": "WebSite", name: "Tools for Conviviality", url: SITE + "/", description: "An independent directory of small, convivial software." }] });
+  if (id === "directory") return out("Directory of convivial software and alternatives", `All ${TOOLS.length} reviewed tools, from offline maps to password managers, each scored out of 30 against Illich's six tests. Filter by maker, scope and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS)] });
+  if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const list = toolsIn(c.id); return out(`${c.name}: alternatives to ${c.instead}`, `${c.verb}, instead of ${c.instead}. ${list.map(x => x.name).join(", ")}: each reviewed and scored for how convivial it is.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+  if (id.startsWith("tool-")) { const t = TOOLS.find(x => x.slug === id.slice(5)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const n = total(t), c = catOf(t.cat), im = IMG[t.slug], soc = im && im.social && im.social[1200];
+    return out(`${t.name} review: ${band(n)} (${n}/30)`, `${t.one} Instead of ${t.replaces}. Scored ${n}/30 (${band(n)}) on Illich's six tests of a convivial tool.`, {
+      image: soc ? SITE + A(soc) : SITE + "/assets/og-default.png", type: "article",
+      ld: [{ "@type": "Review", name: `${t.name} review`, datePublished: "2026-10-23", author: { "@type": "Organization", name: "Tools for Conviviality", url: SITE + "/" },
+        reviewBody: t.body.join(" "), reviewRating: { "@type": "Rating", ratingValue: n, bestRating: 30, worstRating: 0, name: band(n) },
+        itemReviewed: { "@type": "SoftwareApplication", name: t.name, url: t.url, description: t.one, applicationCategory: APPCAT[t.cat] || "UtilitiesApplication", operatingSystem: t.platforms } },
+        crumbs([["Home", "/"], [c.name, "/category/" + c.id + "/"], [t.name, idToPath(id)]])] }); }
+  if (id === "what") return out("What is conviviality? Illich's idea applied to software", "Ivan Illich called tools convivial when people can use them freely and bend them to their own purposes. What that means for the software you use every day.", { ld: [crumbs([["Home", "/"], ["What is conviviality?", "/what-is-conviviality/"]])] });
+  if (id === "method") return out("How we score tools: six questions from Ivan Illich", "Every tool is scored 0 to 5 on six questions about footprint, lock-in, self-direction, power, longevity and delivery, for a total out of 30.", { ld: [crumbs([["Home", "/"], ["How we score", "/how-we-score/"]])] });
+  if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
+  if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
+  if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
+  if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
+  return out("Page not found", "That page doesn't exist.", { noindex: true });
+}
+function applySeo(id) {
+  const s = seo(id), path = id === "__404" ? location.pathname : idToPath(id), $ = x => document.getElementById(x);
+  document.title = s.title;
+  $("m-desc").setAttribute("content", s.desc);
+  $("m-robots").setAttribute("content", s.noindex ? "noindex,follow" : "index,follow,max-image-preview:large");
+  $("m-canon").setAttribute("href", SITE + path);
+  $("og-type").setAttribute("content", s.type); $("og-title").setAttribute("content", s.title); $("og-desc").setAttribute("content", s.desc);
+  $("og-url").setAttribute("content", SITE + path); $("og-image").setAttribute("content", s.image);
+  $("ld").textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": s.ld });
+}
+const fixLinks = root => root.querySelectorAll('a[href^="#"]').forEach(a => a.setAttribute("href", idToPath(a.getAttribute("href").slice(1))));
+function setView(html) { view.innerHTML = html; fixLinks(view); }
+
+function render() {
+  if (location.hash && location.pathname === "/") {   // old #tool-x style links keep working
+    const hid = location.hash.slice(1), target = idToPath(hid);
+    if (hid === "home" || target !== "/") history.replaceState({}, "", target);
+  }
+  const h = currentId();
+  let html, nav = "";
+  if (h === "home") html = home();
+  else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
+  else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
+  else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
+  else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "what") { html = what(); nav = "what"; }
+  else if (h === "method") { html = method(); nav = "method"; }
+  else if (h === "about") html = about();
+  else if (h === "submit") { html = submit(); nav = "submit"; }
+  else if (h === "impressum") html = impressum();
+  else if (h === "privacy") html = privacy();
+  else html = notFound();
+  setView(html);
+  applySeo(h);
+  document.querySelectorAll("[data-nav]").forEach(a => { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  bind();
+}
+
+function bind() {
+  const another = document.getElementById("another");
+  if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
+  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
+  const form = document.getElementById("suggest");
+  if (form) form.onsubmit = e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim() || "(not given)";
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    document.getElementById("out-text").textContent = text;
+    const out = document.getElementById("out"); out.hidden = false;
+    document.getElementById("copy").onclick = async () => {
+      const msg = document.getElementById("copied");
+      try { await navigator.clipboard.writeText(text); msg.textContent = "Copied"; }
+      catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("out-text")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = "Selected, press copy"; }
+    };
+    out.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  };
+}
+
+const themeBtn = document.getElementById("theme");
+const isDark = () => { const t = document.documentElement.getAttribute("data-theme"); return t ? t === "dark" : !matchMedia("(prefers-color-scheme: light)").matches; };
+const SUN = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+const MOON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+const paintTheme = () => { themeBtn.innerHTML = isDark() ? SUN : MOON; themeBtn.title = isDark() ? "Switch to light mode" : "Switch to dark mode"; };
+themeBtn.onclick = () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("tfc-theme", next); } catch (e) {}
+  paintTheme();
+};
+matchMedia("(prefers-color-scheme: light)").addEventListener("change", paintTheme);
+paintTheme();
+document.addEventListener("click", e => {
+  if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[href^='/']");
+  if (!a || a.target === "_blank" || a.origin !== location.origin) return;
+  e.preventDefault();
+  if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
+  render(); window.scrollTo(0, 0);
+});
+window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
+fixLinks(document);
+render();
+</script>
+
+
+
+</body></html>
