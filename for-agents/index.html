@@ -92,6 +92,12 @@ main .wrap { padding-block: 48px 64px; }
 .feature ul { list-style: none; padding: 16px 0 0; margin: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; font-size: 15px; }
 .btn { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--accent); padding: 12px 16px; text-decoration: none; color: var(--fg); background: transparent; font: inherit; font-size: 15px; cursor: pointer; width: 100%; text-align: left; }
 .btn:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.pdf-card { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; border: 1px solid var(--accent); padding: 18px; margin: 28px 0; max-width: 760px; }
+.pdf-card img { width: 120px; height: auto; display: block; border: 1px solid var(--rule, var(--accent)); }
+.pdf-card h3 { color: var(--accent); font-size: 20px; margin-bottom: 6px; }
+.pdf-card p { margin: 0 0 12px; }
+.pdf-card .btn { width: auto; display: inline-flex; }
+@media (max-width: 560px) { .pdf-card { grid-template-columns: 1fr; } .pdf-card img { width: 90px; } }
 .btn-row { display: grid; gap: 10px; margin-top: 22px; }
 .ghost { border-color: var(--line); color: var(--muted); }
 .side-links { margin-top: 18px; display: grid; gap: 8px; font-size: 15px; }
@@ -281,6 +287,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / For AI agents</p>
   <div class="page-head" style="margin-top:14px"><h1>For AI agents: build a more convivial tool</h1><p>A prompt you can paste into a coding agent to audit a project against our six questions, improve it, and submit it to the directory.</p></div>
   <div class="prose">
+    <p class="note">Prefer to do it yourself? Read the <a href="/improve-my-conviviality-score/">field guide for human makers</a>, a free PDF with the same audit.</p>
     <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, make the safe improvements and flag the bigger decisions for you, then prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
     <p>It does not buy a good score. Every submission is reviewed and scored independently, we take no payment, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
     <h2>How to use it</h2>
@@ -337,6 +344,7 @@ Tell the human what you changed, the scores before and after with evidence, whic
     <div class="foot-links">
       <a href="/how-we-score/">How tools are selected</a>
       <a href="/benchmarks/">Benchmarks</a>
+      <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
       <a href="/legal-notice/">Legal notice (Impressum)</a>
@@ -781,7 +789,8 @@ function what() {
     <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
     <h2>Read the book</h2>
     <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
-  </div>`;
+  </div>
+  ${pdfCard()}`;
 }
 
 function leaderboard() {
@@ -845,6 +854,7 @@ function forAgents() {
   return `<p class="crumbs"><a href="#home">Home</a> / For AI agents</p>
   <div class="page-head" style="margin-top:14px"><h1>For AI agents: build a more convivial tool</h1><p>A prompt you can paste into a coding agent to audit a project against our six questions, improve it, and submit it to the directory.</p></div>
   <div class="prose">
+    <p class="note">Prefer to do it yourself? Read the <a href="#improve">field guide for human makers</a>, a free PDF with the same audit.</p>
     <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, make the safe improvements and flag the bigger decisions for you, then prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
     <p>It does not buy a good score. Every submission is reviewed and scored independently, we take no payment, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
     <h2>How to use it</h2>
@@ -877,6 +887,45 @@ function benchmarks() {
   </div>`;
 }
 
+const PDF_URL = "/assets/improve-your-conviviality-score.pdf";
+function pdfCard(lead) {
+  return `<div class="pdf-card"><img src="/assets/improve-cover.webp" width="120" height="170" alt="Cover of the field guide Improve your conviviality score"><div><h3>${lead || "Improve your conviviality score"}</h3><p>A free 12-page PDF for people who make software: twelve changes that move the score, what reviewers look at for each question, a plain answer on money, and a worksheet.</p><a class="btn" href="${PDF_URL}" download>Download the PDF <span>PDF, 12 pages</span></a> <a href="#improve" style="margin-left:12px">Read the summary</a></div></div>`;
+}
+
+function improve() {
+  const quick = [
+    ["Add a full export in an open format (JSON, CSV or Markdown).", "Lock-in"],
+    ["Remove analytics and third-party trackers, or make them opt-in.", "Power"],
+    ["Remove streaks, nag screens and fake urgency.", "Self-direction"],
+    ["Write in plain words what happens to people's data.", "Power"],
+    ["Add a Limitations section to the README, and keep marketing copy true.", "Delivery"],
+    ["Drop dependencies and background work the job doesn't need.", "Footprint"],
+    ["Let people use it without an account unless the job really needs one.", "Lock-in"],
+    ["Store data on the person's own device wherever no server is needed.", "Longevity"],
+    ["Make the core job work offline.", "Footprint"],
+    ["Document how to run it yourself, or say plainly why you can't.", "Longevity"],
+    ["Publish the source under an open licence and link to it.", "Power"],
+    ["Keep export and read access working after someone stops paying.", "Lock-in"]
+  ];
+  return `<p class="crumbs"><a href="#home">Home</a> / Improve my conviviality score</p>
+  <div class="page-head" style="margin-top:14px"><h1>Improve my conviviality score</h1><p>A field guide for people who make software. It shows what each of the six questions looks at and which changes move a score most.</p></div>
+  ${pdfCard("Download the field guide")}
+  <div class="prose">
+    <h2>Start with the quick list</h2>
+    <p>These twelve changes are roughly in order of effort against payoff. The first five usually take an afternoon each, and the last few need a decision from you.</p>
+    <ol>${quick.map(q => `<li>${q[0]} <i>(${q[1]})</i></li>`).join("")}</ol>
+    <h2>Then work through the six questions</h2>
+    <p>The PDF gives each question a page with what a reviewer looks at, what a 1, a 3 and a 5 look like, what to change this week and this month, and the evidence worth showing. The questions are the same ones used on <a href="#method">How we score</a>.</p>
+    <ul>${CRITERIA.map(k => `<li><b>${k.name}.</b> ${k.q}</li>`).join("")}</ul>
+    <h2>What about money?</h2>
+    <p>Conviviality scores how a tool earns, and it doesn't score whether the tool charges. Cryptomator charges about 30 euros for mobile editing and scores 27, and Bitwarden has paid plans and scores 25. One-time purchases, subscriptions for hosting or sync, paid support, and donations don't cost a tool any points. Advertising, selling data, charging to export and trial traps do. We have no evidence that a higher score earns more, and the PDF says so, along with a way to count what you would give up. The short version: charge for the service, not for the exit.</p>
+    <h2>Using an AI coding agent?</h2>
+    <p>The same audit exists as a prompt you can paste into Claude Code, Codex or Cursor. See <a href="#agents">For AI agents</a>.</p>
+    <h2>When you're ready</h2>
+    <p>Use the <a href="#submit">suggestion form</a> to submit or re-submit your tool. It prepares a message for you to check and send. We review independently, date the result, and a score can change as the tool does.</p>
+  </div>`;
+}
+
 function method() {
   return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
   <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
@@ -905,7 +954,8 @@ function method() {
     <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
     <h2>Credit where it's due</h2>
     <p>The idea of a convivial tool comes from Ivan Illich's 1973 book <i>Tools for Conviviality</i>, and the six questions follow the structure of its third chapter. The rubric itself is our own interpretation. Andrea Vetter's Matrix for Convivial Technology (2018) took on a similar task for engineers and is well worth reading.</p>
-  </div>`;
+  </div>
+  ${pdfCard()}`;
 }
 
 function about() {
@@ -987,7 +1037,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", agents: "/for-agents/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -1007,6 +1057,7 @@ function seo(id) {
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
   if (id === "leaderboard") { const ranked = TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)); return out("Leaderboard of the most convivial software", `The ${TOOLS.length} tools in the directory, ranked by how convivial they are, scored out of 30 on six questions from Ivan Illich.`, { ld: [crumbs([["Home", "/"], ["Leaderboard", "/leaderboard/"]]), listLd(ranked)] }); }
+  if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
   if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
   if (id.startsWith("bench-")) { const t = BENCH.find(x => x.slug === id.slice(6)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
@@ -1055,6 +1106,7 @@ function render() {
   else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
   else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
   else if (h.startsWith("bench-")) { html = tool(h.slice(6), true); nav = "benchmarks"; }
+  else if (h === "improve") { html = improve(); nav = ""; }
   else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
   else if (h === "leaderboard") { html = leaderboard(); nav = "leaderboard"; }
@@ -1121,7 +1173,7 @@ paintTheme();
 document.addEventListener("click", e => {
   if (e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   const a = e.target.closest("a[href^='/']");
-  if (!a || a.target === "_blank" || a.origin !== location.origin) return;
+  if (!a || a.target === "_blank" || a.hasAttribute("download") || /\.[a-z0-9]+$/i.test(a.pathname) || a.origin !== location.origin) return;
   e.preventDefault();
   if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
   render(); window.scrollTo(0, 0);

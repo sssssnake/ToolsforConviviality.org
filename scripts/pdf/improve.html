@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Improve your conviviality score</title>
+<style>
+@page { size: A4; margin: 0; }
+:root { --cobalt: #193bc5; --paper: #f1f2ed; --ink: #19242d; --rule: #b9c3df; --soft: #e3e6f2; }
+* { box-sizing: border-box; margin: 0; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { background: var(--paper); color: var(--ink); font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", sans-serif; font-size: 10.5pt; line-height: 1.5; }
+.page { width: 210mm; height: 297mm; padding: 26mm 20mm 22mm; position: relative; page-break-after: always; overflow: hidden; background: var(--paper); }
+.page:last-child { page-break-after: auto; }
+.top { position: absolute; left: 20mm; right: 20mm; top: 11mm; display: flex; justify-content: space-between; font-size: 8pt; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--cobalt); padding-bottom: 3mm; border-bottom: 0.5pt solid var(--cobalt); }
+.top span:last-child { font-weight: 400; }
+.foot { position: absolute; left: 20mm; right: 20mm; bottom: 10mm; display: flex; justify-content: space-between; font-size: 8pt; color: var(--cobalt); }
+h1 { font-size: 30pt; line-height: 1.08; font-weight: 700; letter-spacing: -.015em; color: var(--cobalt); }
+h2 { font-size: 15pt; line-height: 1.2; font-weight: 700; color: var(--cobalt); margin: 7mm 0 2.5mm; letter-spacing: -.01em; }
+h3 { font-size: 9pt; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--cobalt); margin: 6mm 0 2mm; }
+p { margin: 0 0 3mm; }
+.lede { font-size: 12.5pt; line-height: 1.45; color: var(--ink); max-width: 150mm; margin-top: 5mm; }
+.small { font-size: 8.5pt; color: #46535e; }
+ul { margin: 0 0 3mm; padding-left: 5mm; } li { margin-bottom: 1.4mm; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8mm; }
+.rule { border-top: 0.5pt solid var(--rule); margin: 5mm 0; }
+/* cover */
+.cover { background: var(--cobalt); color: var(--paper); padding: 0; }
+.cover .big-c { position: absolute; right: -52mm; top: -30mm; width: 190mm; opacity: 1; }
+.cover .inner { position: absolute; left: 20mm; right: 20mm; bottom: 34mm; }
+.cover h1 { color: var(--paper); font-size: 44pt; max-width: 150mm; }
+.cover .sub { font-size: 14pt; margin-top: 6mm; max-width: 125mm; line-height: 1.4; }
+.cover .logo { position: absolute; left: 20mm; top: 18mm; width: 64mm; filter: brightness(0) invert(1) sepia(.06); }
+.cover .meta { position: absolute; left: 20mm; right: 20mm; bottom: 14mm; display: flex; justify-content: space-between; font-size: 8.5pt; letter-spacing: .04em; text-transform: uppercase; border-top: .5pt solid rgba(241,242,237,.6); padding-top: 3mm; }
+/* six boxes */
+.six { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; margin-top: 6mm; }
+.six div { border: .6pt solid var(--rule); background: #f7f8f4; padding: 4mm 4.5mm; }
+.six b { display: block; color: var(--cobalt); font-size: 11pt; margin-bottom: 1mm; }
+.six span { font-size: 9pt; color: #33414c; line-height: 1.4; display: block; }
+.six .n { font-size: 8pt; letter-spacing: .06em; font-weight: 700; color: var(--cobalt); margin-bottom: 1.5mm; }
+.bands { display: grid; grid-template-columns: repeat(4, 1fr); border: .6pt solid var(--cobalt); margin-top: 5mm; }
+.bands div { padding: 3mm 3.5mm; border-right: .6pt solid var(--cobalt); } .bands div:last-child { border-right: 0; }
+.bands b { display: block; color: var(--cobalt); font-size: 9.5pt; } .bands span { font-size: 8.5pt; }
+/* checklist table */
+table { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin-top: 4mm; }
+th { text-align: left; font-size: 7.5pt; letter-spacing: .06em; text-transform: uppercase; color: var(--cobalt); padding: 1.5mm 2mm; border-bottom: .8pt solid var(--cobalt); }
+td { padding: 2.4mm 2mm; border-bottom: .5pt solid var(--rule); vertical-align: top; }
+td.box { width: 7mm; } .cb { display: inline-block; width: 4mm; height: 4mm; border: .8pt solid var(--cobalt); }
+td.q { white-space: nowrap; color: var(--cobalt); font-weight: 700; font-size: 8.5pt; } td.e { white-space: nowrap; color: #46535e; font-size: 8.5pt; }
+/* question pages */
+.qhead { display: flex; gap: 8mm; align-items: flex-end; }
+.numeral { font-size: 78pt; line-height: .8; font-weight: 700; color: var(--cobalt); letter-spacing: -.04em; }
+.from { font-size: 8.5pt; letter-spacing: .06em; text-transform: uppercase; color: var(--cobalt); margin-bottom: 1.5mm; }
+.qtext { font-size: 12pt; margin-top: 4mm; max-width: 155mm; line-height: 1.4; }
+.ladder { margin-top: 3mm; border-top: .6pt solid var(--cobalt); }
+.ladder div { display: grid; grid-template-columns: 36mm 1fr; padding: 2.4mm 0; border-bottom: .5pt solid var(--rule); }
+.ladder b { color: var(--cobalt); font-size: 9pt; } .ladder span { font-size: 9.5pt; }
+.meter { display: inline-flex; gap: 1mm; vertical-align: middle; margin-right: 2mm; } .meter i { width: 4mm; height: 2.2mm; background: var(--rule); } .meter i.on { background: var(--cobalt); }
+.callout { background: var(--cobalt); color: var(--paper); padding: 6mm 7mm; margin: 6mm 0; }
+.callout b { font-size: 15pt; line-height: 1.25; display: block; letter-spacing: -.01em; }
+.note { border-left: 1.2mm solid var(--cobalt); background: var(--soft); padding: 3.5mm 5mm; margin: 4mm 0; font-size: 9.5pt; }
+.step { display: grid; grid-template-columns: 11mm 1fr; margin-bottom: 4mm; } .step .s { font-size: 18pt; font-weight: 700; color: var(--cobalt); line-height: 1; }
+.work { width: 100%; border-collapse: collapse; margin-top: 3mm; } .work td { height: 9mm; } .work th { padding-top: 0; }
+.url { color: var(--cobalt); font-weight: 700; }
+.back { background: var(--cobalt); color: var(--paper); text-align: center; }
+.back img { width: 70mm; position: absolute; left: 70mm; top: 90mm; filter: brightness(0) invert(1) sepia(.06); }
+.back p { position: absolute; left: 30mm; right: 30mm; top: 170mm; font-size: 12pt; }
+.money td { padding: 1.5mm 2mm; } .money .callout { margin: 4mm 0; padding: 4.5mm 6mm; } .money h2 { margin-top: 5mm; }
+</style></head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <img class="big-c" src="img/contour-c-icon-reverse.svg" alt="">
+  <img class="logo" src="img/contour-c-primary-cobalt.svg" alt="Tools for Conviviality">
+  <div class="inner">
+    <h1>Improve your conviviality score</h1>
+    <p class="sub">A field guide for people who make software, with the changes that matter most, the evidence reviewers look for, and a plain answer on money.</p>
+  </div>
+  <div class="meta"><span>toolsforconviviality.com</span><span>Field guide / October 2026</span></div>
+</section>
+
+<!-- 2 START HERE -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Start here</span></div>
+  <h1>How a tool earns its score.</h1>
+  <p class="lede">Every tool in the directory is scored from 0 to 5 on six questions that come from Ivan Illich's book <i>Tools for Conviviality</i>, for a total out of 30. This guide shows what each question looks at and what you can change, in roughly the order it is worth doing.</p>
+  <div class="six">
+    <div><span class="n">01 / FOOTPRINT</span><b>Does it run light?</b><span>Works offline and on old hardware, with nothing running that the job doesn't need.</span></div>
+    <div><span class="n">02 / LOCK-IN</span><b>Can people leave with their stuff?</b><span>Open formats, full export, no account you don't need.</span></div>
+    <div><span class="n">03 / SELF-DIRECTION</span><b>Can a person bend it to their purposes?</b><span>Learnable by using it, with no dark patterns training their habits.</span></div>
+    <div><span class="n">04 / POWER</span><b>Who holds the controls?</b><span>Source, governance, fair pricing, and whether your data is the product.</span></div>
+    <div><span class="n">05 / LONGEVITY</span><b>Does it outlive its maker?</b><span>Keeps working if the company folds or the person stops paying.</span></div>
+    <div><span class="n">06 / DELIVERY</span><b>Does it do what it promises?</b><span>No ads, no engagement bait, no promise the product can't keep.</span></div>
+  </div>
+  <div class="bands">
+    <div><b>Convivial</b><span>25 to 30</span></div><div><b>Leaning convivial</b><span>18 to 24</span></div><div><b>Mixed</b><span>10 to 17</span></div><div><b>Manipulative</b><span>0 to 9</span></div>
+  </div>
+  <h2>How to use this guide</h2>
+  <p>Read the list on the next page, pick the changes that suit your project, and make them in small steps. Each question then has a page of its own with what a reviewer looks at, what a low, middling and high score looks like, and the evidence worth putting where reviewers can find it. A page on money follows, because it is the first thing most makers worry about, and the guide ends with how to submit.</p>
+  <div class="note"><b>A score is a judgement.</b> A reviewer scores your tool independently, dated and open to change, and nothing in this guide guarantees a number. It also costs nothing: the directory takes no payment for listings or reviews.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>2</span></div>
+</section>
+
+<!-- 3 QUICK LIST -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>The quick list</span></div>
+  <h1>Twelve changes that move the score most.</h1>
+  <p class="lede">Roughly in order of effort against payoff. The first five are usually an afternoon each. The last few need a decision from you.</p>
+  <table>
+    <tr><th></th><th>Change</th><th>Moves</th><th>Effort</th></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Add a full export in an open format (JSON, CSV or Markdown).</td><td class="q">Lock-in</td><td class="e">An afternoon</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Remove analytics and third-party trackers, or make them opt-in.</td><td class="q">Power</td><td class="e">An hour</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Remove streaks, nag screens and fake urgency.</td><td class="q">Self-direction</td><td class="e">An afternoon</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Write in plain words what happens to people's data.</td><td class="q">Power</td><td class="e">An hour</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Add a Limitations section to the README, and keep marketing copy true.</td><td class="q">Delivery</td><td class="e">An hour</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Drop dependencies and background work the job doesn't need.</td><td class="q">Footprint</td><td class="e">A day</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Let people use it without an account unless the job really needs one.</td><td class="q">Lock-in</td><td class="e">A day or more</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Store data on the person's own device wherever no server is needed.</td><td class="q">Longevity</td><td class="e">Days</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Make the core job work offline.</td><td class="q">Footprint</td><td class="e">Days</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Document how to run it yourself, or say plainly why you can't.</td><td class="q">Longevity</td><td class="e">An afternoon</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Publish the source under an open licence and link to it.</td><td class="q">Power</td><td class="e">A decision</td></tr>
+    <tr><td class="box"><i class="cb"></i></td><td>Keep export and read access working after someone stops paying.</td><td class="q">Lock-in</td><td class="e">A decision</td></tr>
+  </table>
+  <div class="note" style="margin-top:7mm"><b>Using an AI coding agent?</b> The same audit is available as a prompt you can paste into Claude Code, Codex or Cursor. It scores the project, makes the safe changes, asks you before anything about licence or pricing, and prepares a prefilled submission. Find it at <span class="url">toolsforconviviality.com/for-agents/</span>.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>3</span></div>
+</section>
+
+<!-- Q1 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 1 of 6</span></div>
+  <div class="qhead"><div class="numeral">01</div><div><div class="from">From “Biological degradation”</div><h1>Footprint</h1></div></div>
+  <p class="qtext">Does it run light, work offline, and keep going on an old laptop, or does it need new hardware and a data centre?</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>Whether the core job works with no connection.</li><li>How heavy it is: install size or page weight, number of dependencies, background processes.</li><li>The oldest device or browser it supports.</li><li>Telemetry and trackers that run for the maker's benefit.</li><li>AI features that could be optional or local but are required and remote.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Needs a constant connection and a recent device, with heavy work running in the background.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Runs on common hardware, needs the network for most tasks, carries a few dependencies it doesn't need.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Runs light on old hardware, the core tasks work offline, and nothing runs that the job doesn't need.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Remove unused dependencies and any tracking scripts.</li><li>Lazy-load heavy features, and make AI features optional.</li><li>Test on the oldest device you can find and write down what happened.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Cache what people read so it opens with no connection.</li><li>Keep data in local storage and sync only on request.</li><li>Replace background polling with something that waits to be asked.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>A line in the README with the minimum requirements and the oldest device you tested, the size of the install or page, and a list of which features need the network.</p>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>4</span></div>
+</section>
+
+<!-- Q2 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 2 of 6</span></div>
+  <div class="qhead"><div class="numeral">02</div><div><div class="from">From “Radical monopoly”</div><h1>Lock-in</h1></div></div>
+  <p class="qtext">Can you leave with your stuff in an open format, or does it make you depend on a whole category of product to take part?</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>Export and import, and whether the export holds everything or only a slice.</li><li>Whether files are open formats that other tools read.</li><li>Whether an account is needed to see your own data.</li><li>A documented API or data schema.</li><li>Whether anything stops working for people who leave.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Data lives only inside the app, with no export, and an account is needed to see it.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Export exists but is lossy, buried or limited to one format.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Full export and import in open formats, local use without an account, a documented API.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Add one export button that saves everything, not a subset, as JSON, CSV or Markdown.</li><li>Publish the data schema in the README.</li><li>Write down how someone moves to another tool.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Let people use it with no account when no server is needed.</li><li>Import from the formats your competitors use.</li><li>Keep export working after a subscription ends.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>A link to the export documentation, a sample exported file in the repository, and a screenshot of the export menu.</p>
+  <div class="note">A good test: can someone leave in ten minutes, taking everything, without asking you for anything? That is the standard a five describes.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>5</span></div>
+</section>
+
+<!-- Q3 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 3 of 6</span></div>
+  <div class="qhead"><div class="numeral">03</div><div><div class="from">From “Overprogramming”</div><h1>Self-direction</h1></div></div>
+  <p class="qtext">Can a normal person learn it by using it and point it at their own purposes, without dark patterns training their habits?</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>How quickly a new person gets a result, without a tour or a sign-up wall.</li><li>Sensible defaults, undo, and settings that change what the tool does.</li><li>Room to adapt it: templates, shortcuts, plugins, scripting.</li><li>Accessibility.</li><li>Patterns that exist to bring people back rather than to help them: streaks, badges, confetti, nag modals, fake urgency, hidden cancel buttons.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Pushes people along a fixed path with nags and streaks, and makes leaving or cancelling hard.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Clear and decent, with good defaults, but little room to bend it.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Learnable in minutes, with undo, settings and shortcuts, no manipulation, and room for people to make it theirs.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Delete streaks, badges and confetti that exist to bring people back.</li><li>Remove nag modals and fake countdowns.</li><li>Make cancelling as easy as signing up.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Add undo wherever something can be lost.</li><li>Add keyboard shortcuts and a way to change defaults.</li><li>Open one door to adaptation, such as templates or plugins.</li><li>Run a basic accessibility pass.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>A short note on your design principles, a list of the settings people can change, and screenshots of the first run and the cancel flow.</p>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>6</span></div>
+</section>
+
+<!-- Q4 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 4 of 6</span></div>
+  <div class="qhead"><div class="numeral">04</div><div><div class="from">From “Polarization”</div><h1>Power</h1></div></div>
+  <p class="qtext">Who holds the controls? Team size, governance, open source, whether the price shuts people out, and whether your data is the product.</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>The licence and whether the source is public.</li><li>Who decides, and how a person can reach them.</li><li>How the tool is paid for, and whether that depends on people's data or attention.</li><li>Pricing, and whether it shuts people out of what they need.</li><li>Telemetry, data sharing and self-hosting.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Closed, paid for by ads or data, one company decides everything and changes the terms at will.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Closed or company-controlled, with a fair price and limited data collection.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Open source under a recognised licence, collects only what it needs, funding is public, and decisions sit with a foundation, co-op or community.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Add a LICENSE file, if you own the rights and agree.</li><li>Remove third-party trackers.</li><li>Write who runs the project and how it is paid for.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Write a plain pricing page with a free or low-cost way in.</li><li>Offer self-hosting.</li><li>Add a way for users to take part in decisions: an open tracker, a forum or a roadmap.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>The LICENSE, a funding statement, a privacy note, and a pricing page that a stranger can follow.</p>
+  <div class="note">Power is where money questions meet the score. The next page deals with them directly.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>7</span></div>
+</section>
+
+<!-- Q5 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 5 of 6</span></div>
+  <div class="qhead"><div class="numeral">05</div><div><div class="from">From “Obsolescence”</div><h1>Longevity</h1></div></div>
+  <p class="qtext">Does it keep working if the company folds or you stop paying, and does it respect the hardware you already own?</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>Whether it works if the maker's server disappears.</li><li>Standard formats, and a file format that is documented.</li><li>A self-hosting guide, or a local mode.</li><li>A licence that lets others fork it.</li><li>Dependencies, forced upgrades and support for older devices.</li><li>What happens to a person's data when they stop paying.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Stops working if the server goes away or a subscription lapses, uses a private format, forces updates.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Data is portable and the tool is maintained, but core work needs the maker's server.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Works with no server or has a documented way to host it, uses open formats, old versions keep working, and a plan exists for what happens if the maker stops.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Write an “If we stop” section in the README: what happens to the service and to people's data.</li><li>Pin dependencies and note the oldest supported device.</li><li>Document the file format.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Ship a local-only mode, or a self-hosting guide.</li><li>Keep old file versions readable.</li><li>Give lapsed subscribers read-only access to their own data.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>The “If we stop” section, the self-hosting guide, a format description, and the date of your last release.</p>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>8</span></div>
+</section>
+
+<!-- Q6 -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Question 6 of 6</span></div>
+  <div class="qhead"><div class="numeral">06</div><div><div class="from">From “Frustration”</div><h1>Delivery</h1></div></div>
+  <p class="qtext">Does it actually do the job, without ads, engagement bait, or a promise the product can't keep?</p>
+  <h3>What a reviewer looks at</h3>
+  <ul><li>Whether the core task works end to end.</li><li>Whether the README and website describe what the tool really does.</li><li>Whether limits are stated and errors say what to do next.</li><li>Ads, upsell prompts and engagement tricks that sit in the way of the job.</li></ul>
+  <h3>What the scores look like</h3>
+  <div class="ladder">
+    <div><b><span class="meter"><i class="on"></i><i></i><i></i><i></i><i></i></span>1</b><span>Fails at its main task or promises much more than it delivers, with ads or upsells in the way.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span>3</b><span>Does the job with rough edges and some upsell.</span></div>
+    <div><b><span class="meter"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>5</b><span>Does the core job reliably, says what it can't do, shows no ads, and has errors that help.</span></div>
+  </div>
+  <div class="cols"><div>
+    <h3>This week</h3>
+    <ul><li>Write a Limitations section in the README.</li><li>Rewrite marketing copy so every claim is true today.</li><li>Fix the three most common failures in the main task.</li></ul></div><div>
+    <h3>This month</h3>
+    <ul><li>Rewrite error messages to say what happened and what to do.</li><li>Remove ads and upsells from the core path.</li><li>Add tests for the main task and a changelog people can read.</li></ul></div></div>
+  <h3>Evidence worth showing</h3>
+  <p>A Limitations list, a changelog, a short demo or walkthrough, and claims that match the product.</p>
+  <div class="note">Delivery is the question the big companies tend to win. A small tool can match them here by doing one job reliably and being honest about the rest.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>9</span></div>
+</section>
+
+<!-- MONEY -->
+<section class="page money">
+  <div class="top"><span>Tools for Conviviality</span><span>Money</span></div>
+  <h1>What conviviality does to your income.</h1>
+  <p class="lede">Less than you might fear, in either direction. The score measures how a tool treats the people who use it, and it does not measure how the tool earns a living, so a tool can charge money and still score high.</p>
+  <p>Some examples from the directory. Cryptomator charges about 30 euros to edit files on a phone and scores 27. Bitwarden has paid plans and scores 25. Obsidian sells sync and publishing and scores 24, Ente sells storage and scores 24, and Kagi is a paid search engine with no ads that scores 21. What the score looks at is how you earn: whether you charge for the service you provide, or for the way out of it.</p>
+  <h2>What each source of income does to the score</h2>
+  <table>
+    <tr><th>Where the money comes from</th><th>Effect</th></tr>
+    <tr><td>A one-time purchase</td><td class="e">No cost to the score. It often helps Longevity.</td></tr>
+    <tr><td>A subscription for hosting, sync or storage</td><td class="e">No cost, if the tool still works without it and export stays open.</td></tr>
+    <tr><td>Paid support, training or custom work</td><td class="e">No cost.</td></tr>
+    <tr><td>Donations, sponsors and grants</td><td class="e">No cost. Saying openly who funds you helps Power.</td></tr>
+    <tr><td>Advertising</td><td class="e">Costs Power and Delivery.</td></tr>
+    <tr><td>Selling or sharing user data</td><td class="e">Costs Power, and badly.</td></tr>
+    <tr><td>Charging to export, or holding data after someone cancels</td><td class="e">Costs Lock-in and Longevity.</td></tr>
+    <tr><td>Trial traps and hard-to-cancel plans</td><td class="e">Costs Self-direction.</td></tr>
+  </table>
+  <div class="callout"><b>Charge for the service, not for the exit.</b></div>
+  <h2>The honest limits</h2>
+  <p>We have no evidence that a higher score earns more, and we don't promise it. Making a tool more convivial can remove income that came from lock-in or from selling data, and you should count that loss against the gain. It can also lower your costs, with fewer servers and less support, and earn trust that is hard to buy. Work it out with your own numbers: list each way you earn money, mark the ones that depend on keeping people in, and decide what you are willing to change.</p>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>10</span></div>
+</section>
+
+<!-- SUBMIT -->
+<section class="page">
+  <div class="top"><span>Tools for Conviviality</span><span>Submit</span></div>
+  <h1>Collect your evidence, then send it in.</h1>
+  <p class="lede">Once the changes are made, tell us about the tool. If it is already listed, say so and tell us what changed since the last review.</p>
+  <div style="margin-top:7mm">
+    <div class="step"><div class="s">1</div><div><b>Score yourself honestly.</b> Use the worksheet below. A five means exemplary, and a score with no evidence behind it is a guess.</div></div>
+    <div class="step"><div class="s">2</div><div><b>Gather your links.</b> The README, LICENSE, export docs, privacy note, pricing page and, if you have one, a logo or screenshot we may use.</div></div>
+    <div class="step"><div class="s">3</div><div><b>Fill in the form</b> at <span class="url">toolsforconviviality.com/suggest/</span>. It prepares a message for you to check and send to hello@toolsforconviviality.com. It sends nothing by itself.</div></div>
+    <div class="step"><div class="s">4</div><div><b>We review it independently.</b> We may ask questions. The result is published with the review date and can change when the tool does. You can re-submit after making changes.</div></div>
+  </div>
+  <h2>Worksheet</h2>
+  <table class="work">
+    <tr><th>Question</th><th style="width:20mm">Before</th><th style="width:20mm">After</th><th>Evidence link</th></tr>
+    <tr><td class="q">Footprint</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Lock-in</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Self-direction</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Power</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Longevity</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Delivery</td><td></td><td></td><td></td></tr>
+    <tr><td class="q">Total / 30</td><td></td><td></td><td></td></tr>
+  </table>
+  <div class="note" style="margin-top:6mm">Skipping a step doesn't cost you the listing. A tool that scores 14 today still belongs in the directory, and the guide is here so the next review can say more.</div>
+  <div class="foot"><span>toolsforconviviality.com / Improve your conviviality score</span><span>11</span></div>
+</section>
+
+<!-- BACK -->
+<section class="page back">
+  <img src="img/contour-c-stacked-cobalt.svg" alt="Tools for Conviviality">
+  <p>Illich's idea in one line: a good tool leaves people free to use it for their own purposes, and free to leave. Software can be like that. The directory is here to find the software that is.<br><br>toolsforconviviality.com</p>
+</section>
+</body></html>
