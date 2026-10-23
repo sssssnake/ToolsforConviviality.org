@@ -2030,7 +2030,832 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://en.wikipedia.org/wiki/Tools_for_Conviviality\",{\"shot\":false},null]"
+    },
+    "nextcloud": {
+      "slug": "nextcloud",
+      "name": "Nextcloud",
+      "source": "https://nextcloud.com",
+      "capturedAt": "2026-10-23T19:24:42.272Z",
+      "alt": "Screenshot of the Nextcloud website",
+      "pageTitle": "Nextcloud - Open source content collaboration platform",
+      "pageDescription": "The most popular open source content collaboration platform for tens of millions of users at thousands of organizations across the globe",
+      "shot": {
+        "480": "assets/tools/nextcloud/shot-480.webp",
+        "960": "assets/tools/nextcloud/shot-960.webp",
+        "1600": "assets/tools/nextcloud/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/nextcloud/mobile-390.webp",
+        "780": "assets/tools/nextcloud/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/nextcloud/icon-128.webp",
+        "256": "assets/tools/nextcloud/icon-256.webp",
+        "from": "https://nextcloud.com/c/uploads/2022/03/favicon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/nextcloud/social-600.webp",
+        "1200": "assets/tools/nextcloud/social-1200.webp",
+        "from": "https://nextcloud.com/c/uploads/2026/03/Homepage-featured-image.png"
+      },
+      "color": "#0082c9",
+      "colorFrom": "theme-color",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")"
+      ],
+      "cfg": "[\"https://nextcloud.com\",null,null]"
+    },
+    "pairdrop": {
+      "slug": "pairdrop",
+      "name": "PairDrop",
+      "source": "https://pairdrop.net",
+      "capturedAt": "2026-10-23T19:24:53.735Z",
+      "alt": "Screenshot of the PairDrop website",
+      "pageTitle": "PairDrop | Transfer Files Cross-Platform. No Setup, No Signup.",
+      "pageDescription": "Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.",
+      "shot": {
+        "480": "assets/tools/pairdrop/shot-480.webp",
+        "960": "assets/tools/pairdrop/shot-960.webp",
+        "1600": "assets/tools/pairdrop/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/pairdrop/mobile-390.webp",
+        "780": "assets/tools/pairdrop/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/pairdrop/icon-128.webp",
+        "256": "assets/tools/pairdrop/icon-256.webp",
+        "from": "https://pairdrop.net/images/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#3367d6",
+      "colorFrom": "theme-color",
+      "notes": [
+        "dismissed banner with button:has-text(\"Decline\")",
+        "social image failed: Input buffer has corrupt header: glib: XML parse error: Error domain 1 code 26 on line 276 column 56 of data: Entity 'nbsp' not defined"
+      ],
+      "cfg": "[\"https://pairdrop.net\",null,null]"
+    },
+    "searxng": {
+      "slug": "searxng",
+      "name": "SearXNG",
+      "source": "https://docs.searxng.org",
+      "capturedAt": "2026-10-23T19:25:06.704Z",
+      "alt": "Screenshot of the SearXNG website",
+      "pageTitle": "SearXNG Documentation (2026.10.23+629368e40)",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/searxng/shot-480.webp",
+        "960": "assets/tools/searxng/shot-960.webp",
+        "1600": "assets/tools/searxng/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/searxng/mobile-390.webp",
+        "780": "assets/tools/searxng/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://docs.searxng.org\",null,null]"
+    },
+    "organic-maps": {
+      "slug": "organic-maps",
+      "name": "Organic Maps",
+      "source": "https://organicmaps.app",
+      "capturedAt": "2026-10-23T19:25:12.465Z",
+      "alt": "Screenshot of the Organic Maps website",
+      "pageTitle": "Organic Maps: Offline Hike, Bike, Trails and Navigation",
+      "pageDescription": "Free, open-source, fast, privacy-focused, detailed offline maps for travelers, tourists, drivers, hikers and cyclists created by MapsWithMe/Maps.Me app founders",
+      "shot": {
+        "480": "assets/tools/organic-maps/shot-480.webp",
+        "960": "assets/tools/organic-maps/shot-960.webp",
+        "1600": "assets/tools/organic-maps/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/organic-maps/mobile-390.webp",
+        "780": "assets/tools/organic-maps/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/organic-maps/social-600.webp",
+        "1200": "assets/tools/organic-maps/social-1200.webp",
+        "from": "https://organicmaps.app/images/screenshots/prague.jpg"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://organicmaps.app\",null,null]"
+    },
+    "transportr": {
+      "slug": "transportr",
+      "name": "Transportr",
+      "source": "https://transportr.app",
+      "capturedAt": "2026-10-23T19:25:19.742Z",
+      "alt": "Screenshot of the Transportr website",
+      "pageTitle": "Transportr - Open Source Public Transit",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/transportr/shot-480.webp",
+        "960": "assets/tools/transportr/shot-960.webp",
+        "1600": "assets/tools/transportr/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/transportr/mobile-390.webp",
+        "780": "assets/tools/transportr/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://transportr.app\",null,null]"
+    },
+    "logseq": {
+      "slug": "logseq",
+      "name": "Logseq",
+      "source": "https://logseq.com",
+      "capturedAt": "2026-10-23T19:25:28.523Z",
+      "alt": "Screenshot of the Logseq website",
+      "pageTitle": "Logseq: A privacy-first, open-source knowledge base",
+      "pageDescription": "A privacy-first, open-source platform for knowledge management and collaboration.",
+      "shot": {
+        "480": "assets/tools/logseq/shot-480.webp",
+        "960": "assets/tools/logseq/shot-960.webp",
+        "1600": "assets/tools/logseq/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/logseq/mobile-390.webp",
+        "780": "assets/tools/logseq/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/logseq/icon-128.webp",
+        "256": "assets/tools/logseq/icon-256.webp",
+        "from": "https://asset.logseq.com/static/img/logo.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/logseq/social-600.webp",
+        "1200": "assets/tools/logseq/social-1200.webp",
+        "from": "https://asset.logseq.com/static/img/social-banner-230118.png"
+      },
+      "color": "#88c8c8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://logseq.com\",null,null]"
+    },
+    "notesnook": {
+      "slug": "notesnook",
+      "name": "Notesnook",
+      "source": "https://notesnook.com",
+      "capturedAt": "2026-10-23T19:25:36.034Z",
+      "alt": "Screenshot of the Notesnook website",
+      "pageTitle": "Notesnook | Open source & zero knowledge private note taking app",
+      "pageDescription": "Express yourself with freedom — no spying, no tracking, only private notes. Unlike Evernote and other note apps, your data is yours alone.",
+      "shot": {
+        "480": "assets/tools/notesnook/shot-480.webp",
+        "960": "assets/tools/notesnook/shot-960.webp",
+        "1600": "assets/tools/notesnook/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/notesnook/mobile-390.webp",
+        "780": "assets/tools/notesnook/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/notesnook/social-600.webp",
+        "1200": "assets/tools/notesnook/social-1200.webp",
+        "from": "https://notesnook.com/social-2.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://notesnook.com\",null,null]"
+    },
+    "photoprism": {
+      "slug": "photoprism",
+      "name": "PhotoPrism",
+      "source": "https://photoprism.app",
+      "capturedAt": "2026-10-23T19:25:44.986Z",
+      "alt": "Screenshot of the PhotoPrism website",
+      "pageTitle": "Browse Your Life in Pictures – PhotoPrism",
+      "pageDescription": "AI-powered, privacy-first, self-hosted app for browsing, organizing, and sharing photos and videos",
+      "shot": {
+        "480": "assets/tools/photoprism/shot-480.webp",
+        "960": "assets/tools/photoprism/shot-960.webp",
+        "1600": "assets/tools/photoprism/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/photoprism/mobile-390.webp",
+        "780": "assets/tools/photoprism/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/photoprism/icon-128.webp",
+        "256": "assets/tools/photoprism/icon-256.webp",
+        "from": "https://www.photoprism.app/static/icons/logo/1024.png",
+        "sourceWidth": 1024,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/photoprism/social-600.webp",
+        "1200": "assets/tools/photoprism/social-1200.webp",
+        "from": "https://i.photoprism.app/prism?cover=64&style=centered+dark"
+      },
+      "color": "#ffffff80",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://photoprism.app\",null,null]"
+    },
+    "piwigo": {
+      "slug": "piwigo",
+      "name": "Piwigo",
+      "source": "https://piwigo.org",
+      "capturedAt": "2026-10-23T19:25:52.752Z",
+      "alt": "Screenshot of the Piwigo website",
+      "pageTitle": "Piwigo | Open Source Photo Library and DAM Software",
+      "pageDescription": "Organize and share your media with Piwigo, an open source photo library and DAM software. Available as a hosted service in France or self-hosted.",
+      "shot": {
+        "480": "assets/tools/piwigo/shot-480.webp",
+        "960": "assets/tools/piwigo/shot-960.webp",
+        "1600": "assets/tools/piwigo/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/piwigo/mobile-390.webp",
+        "780": "assets/tools/piwigo/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://piwigo.org\",null,null]"
+    },
+    "digikam": {
+      "slug": "digikam",
+      "name": "digiKam",
+      "source": "https://www.digikam.org",
+      "capturedAt": "2026-10-23T19:26:02.600Z",
+      "alt": "Screenshot of the digiKam website",
+      "pageTitle": "digiKam - digiKam",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/digikam/shot-480.webp",
+        "960": "assets/tools/digikam/shot-960.webp",
+        "1600": "assets/tools/digikam/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/digikam/mobile-390.webp",
+        "780": "assets/tools/digikam/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/digikam/icon-128.webp",
+        "256": "assets/tools/digikam/icon-256.webp",
+        "from": "https://www.digikam.org/favicon-32x32.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.digikam.org\",null,null]"
+    },
+    "gmic": {
+      "slug": "gmic",
+      "name": "G'MIC",
+      "source": "https://gmic.eu",
+      "capturedAt": "2026-10-23T19:26:11.795Z",
+      "alt": "Screenshot of the G'MIC website",
+      "pageTitle": "G'MIC - GREYC's Magic for Image Computing: A Full-Featured Open-Source Framework for Image Processing - Home",
+      "pageDescription": "A full-featured open-source framework for processing generic images (2D, 3D, 3D+t) with multiple interfaces: command-line (cli), GIMP plug-in, web service, Qt plug-in, C++ library",
+      "shot": {
+        "480": "assets/tools/gmic/shot-480.webp",
+        "960": "assets/tools/gmic/shot-960.webp",
+        "1600": "assets/tools/gmic/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/gmic/mobile-390.webp",
+        "780": "assets/tools/gmic/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/gmic/icon-128.webp",
+        "256": "assets/tools/gmic/icon-256.webp",
+        "from": "https://gmic.eu/favicon.png",
+        "sourceWidth": 16,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://gmic.eu\",null,null]"
+    },
+    "rawtherapee": {
+      "slug": "rawtherapee",
+      "name": "RawTherapee",
+      "source": "https://rawtherapee.com",
+      "capturedAt": "2026-10-23T19:26:21.803Z",
+      "alt": "Screenshot of the RawTherapee website",
+      "pageTitle": "Home | RawTherapee",
+      "pageDescription": "About RawTherapee is a powerful, cross-platform raw photo processing system, released as Free Software (GPLv3). It is designed for developing raw files from a broad range of digital cameras and targeted at users ranging from enthusiast newcomers who wish to broaden their understanding of how digital imaging works to professional photographers. RawTherapee provides a powerful suite of tools for you to produce amazing photos and showcase your creativity.",
+      "shot": {
+        "480": "assets/tools/rawtherapee/shot-480.webp",
+        "960": "assets/tools/rawtherapee/shot-960.webp",
+        "1600": "assets/tools/rawtherapee/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/rawtherapee/mobile-390.webp",
+        "780": "assets/tools/rawtherapee/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "manifest unreadable: HTTP 404 for https://rawtherapee.com/site.webmanifest",
+        "icon failed: HTTP 404 for https://rawtherapee.com/icon.png"
+      ],
+      "cfg": "[\"https://rawtherapee.com\",null,null]"
+    },
+    "shotcut": {
+      "slug": "shotcut",
+      "name": "Shotcut",
+      "source": "https://shotcut.org",
+      "capturedAt": "2026-10-23T19:26:31.280Z",
+      "alt": "Screenshot of the Shotcut website",
+      "pageTitle": "Shotcut - Home",
+      "pageDescription": "Shotcut is a free, open source, cross-platform video editor for Windows, Mac and Linux",
+      "shot": {
+        "480": "assets/tools/shotcut/shot-480.webp",
+        "960": "assets/tools/shotcut/shot-960.webp",
+        "1600": "assets/tools/shotcut/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/shotcut/mobile-390.webp",
+        "780": "assets/tools/shotcut/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/shotcut/icon-128.webp",
+        "256": "assets/tools/shotcut/icon-256.webp",
+        "svg": "assets/tools/shotcut/icon.svg",
+        "from": "https://shotcut.org/assets/img/favicon.svg",
+        "scalable": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://shotcut.org\",null,null]"
+    },
+    "obs-studio": {
+      "slug": "obs-studio",
+      "name": "OBS Studio",
+      "source": "https://obsproject.com",
+      "capturedAt": "2026-10-23T19:26:43.175Z",
+      "alt": "Screenshot of the OBS Studio website",
+      "pageTitle": "Open Broadcaster Software | OBS",
+      "pageDescription": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.",
+      "shot": {
+        "480": "assets/tools/obs-studio/shot-480.webp",
+        "960": "assets/tools/obs-studio/shot-960.webp",
+        "1600": "assets/tools/obs-studio/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/obs-studio/mobile-390.webp",
+        "780": "assets/tools/obs-studio/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/obs-studio/icon-128.webp",
+        "256": "assets/tools/obs-studio/icon-256.webp",
+        "from": "https://obsproject.com/favicon-96x96.png",
+        "sourceWidth": 96,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://obsproject.com\",null,null]"
+    },
+    "keepassdx": {
+      "slug": "keepassdx",
+      "name": "KeePassDX",
+      "source": "https://www.keepassdx.com",
+      "capturedAt": "2026-10-23T19:26:50.704Z",
+      "alt": "Screenshot of the KeePassDX website",
+      "pageTitle": "KeePassDX",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/keepassdx/shot-480.webp",
+        "960": "assets/tools/keepassdx/shot-960.webp",
+        "1600": "assets/tools/keepassdx/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/keepassdx/mobile-390.webp",
+        "780": "assets/tools/keepassdx/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.keepassdx.com\",null,null]"
+    },
+    "pass": {
+      "slug": "pass",
+      "name": "pass",
+      "source": "https://www.passwordstore.org",
+      "capturedAt": "2026-10-23T19:26:57.551Z",
+      "alt": "Screenshot of the pass website",
+      "pageTitle": "Pass: The Standard Unix Password Manager",
+      "pageDescription": "Pass is the standard unix password manager, a lightweight password manager that uses GPG and Git for Linux, BSD, and Mac OS X.",
+      "shot": {
+        "480": "assets/tools/pass/shot-480.webp",
+        "960": "assets/tools/pass/shot-960.webp",
+        "1600": "assets/tools/pass/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/pass/mobile-390.webp",
+        "780": "assets/tools/pass/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.passwordstore.org\",null,null]"
+    },
+    "linkwarden": {
+      "slug": "linkwarden",
+      "name": "Linkwarden",
+      "source": "https://linkwarden.app",
+      "capturedAt": "2026-10-23T19:27:04.605Z",
+      "alt": "Screenshot of the Linkwarden website",
+      "pageTitle": "Linkwarden — Bookmarks, Evolved",
+      "pageDescription": "Collect, read, annotate, and fully preserve what matters. Open-source, self-hostable bookmark manager with full-page archival.",
+      "shot": {
+        "480": "assets/tools/linkwarden/shot-480.webp",
+        "960": "assets/tools/linkwarden/shot-960.webp",
+        "1600": "assets/tools/linkwarden/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/linkwarden/mobile-390.webp",
+        "780": "assets/tools/linkwarden/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/linkwarden/icon-128.webp",
+        "256": "assets/tools/linkwarden/icon-256.webp",
+        "from": "https://linkwarden.app/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/linkwarden/social-600.webp",
+        "1200": "assets/tools/linkwarden/social-1200.webp",
+        "from": "https://linkwarden.app/og-image.jpg"
+      },
+      "color": "#081828",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://linkwarden.app\",null,null]"
+    },
+    "wallabag": {
+      "slug": "wallabag",
+      "name": "wallabag",
+      "source": "https://wallabag.org",
+      "capturedAt": "2026-10-23T19:27:12.665Z",
+      "alt": "Screenshot of the wallabag website",
+      "pageTitle": "Save the web, freely | wallabag: a self hostable application for saving web pages",
+      "pageDescription": "With wallabag, archive the web freely. wallabag is a self hostable application for saving web pages.",
+      "shot": {
+        "480": "assets/tools/wallabag/shot-480.webp",
+        "960": "assets/tools/wallabag/shot-960.webp",
+        "1600": "assets/tools/wallabag/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/wallabag/mobile-390.webp",
+        "780": "assets/tools/wallabag/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/wallabag/social-600.webp",
+        "1200": "assets/tools/wallabag/social-1200.webp",
+        "from": "https://wallabag.org/img/wallabag_preview.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://wallabag.org\",null,null]"
+    },
+    "simplex": {
+      "slug": "simplex",
+      "name": "SimpleX Chat",
+      "source": "https://simplex.chat",
+      "capturedAt": "2026-10-23T19:27:22.232Z",
+      "alt": "Screenshot of the SimpleX Chat website",
+      "pageTitle": "SimpleX Chat: private and secure messenger without any user IDs (not even random)",
+      "pageDescription": "SimpleX Chat - a private and encrypted messenger without any user IDs (not even random ones)! Make a private connection via link / QR code to send messages and make calls.",
+      "shot": {
+        "480": "assets/tools/simplex/shot-480.webp",
+        "960": "assets/tools/simplex/shot-960.webp",
+        "1600": "assets/tools/simplex/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/simplex/mobile-390.webp",
+        "780": "assets/tools/simplex/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/simplex/social-600.webp",
+        "1200": "assets/tools/simplex/social-1200.webp",
+        "from": "https://simplex.chat/img/share_simplex.jpg"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://simplex.chat\",null,null]"
+    },
+    "briar": {
+      "slug": "briar",
+      "name": "Briar",
+      "source": "https://briarproject.org",
+      "capturedAt": "2026-10-23T19:27:31.691Z",
+      "alt": "Screenshot of the Briar website",
+      "pageTitle": "Secure messaging, anywhere - Briar",
+      "pageDescription": "Secure messaging, anywhere",
+      "shot": {
+        "480": "assets/tools/briar/shot-480.webp",
+        "960": "assets/tools/briar/shot-960.webp",
+        "1600": "assets/tools/briar/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/briar/mobile-390.webp",
+        "780": "assets/tools/briar/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/briar/icon-128.webp",
+        "256": "assets/tools/briar/icon-256.webp",
+        "from": "https://briarproject.org/img/briar_logo_circle.png",
+        "sourceWidth": 200,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://briarproject.org\",null,null]"
+    },
+    "bluesky": {
+      "slug": "bluesky",
+      "name": "Bluesky",
+      "source": "https://bsky.app",
+      "capturedAt": "2026-10-23T19:27:39.690Z",
+      "alt": "Screenshot of the Bluesky website",
+      "pageTitle": "Discover — Bluesky",
+      "pageDescription": "Social media as it should be. Find your community among millions of users, unleash your creativity, and have some fun again.",
+      "shot": {
+        "480": "assets/tools/bluesky/shot-480.webp",
+        "960": "assets/tools/bluesky/shot-960.webp",
+        "1600": "assets/tools/bluesky/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/bluesky/mobile-390.webp",
+        "780": "assets/tools/bluesky/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/bluesky/icon-128.webp",
+        "256": "assets/tools/bluesky/icon-256.webp",
+        "from": "https://web-cdn.bsky.app/static/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/bluesky/social-600.webp",
+        "1200": "assets/tools/bluesky/social-1200.webp",
+        "from": "https://bsky.app/static/social-card-default-gradient.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://bsky.app\",null,null]"
+    },
+    "posteo": {
+      "slug": "posteo",
+      "name": "Posteo",
+      "source": "https://posteo.de",
+      "capturedAt": "2026-10-23T19:27:52.039Z",
+      "alt": "Screenshot of the Posteo website",
+      "pageTitle": "Email green, secure, simple and ad-free - posteo.de -",
+      "pageDescription": "Posteo is an innovative email provider that is concerned with sustainability and privacy and is completely ad-free. Our email accounts, calendars and address books can be synchronised - we use comprehensive encryption.",
+      "shot": {
+        "480": "assets/tools/posteo/shot-480.webp",
+        "960": "assets/tools/posteo/shot-960.webp",
+        "1600": "assets/tools/posteo/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/posteo/mobile-390.webp",
+        "780": "assets/tools/posteo/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/posteo/icon-128.webp",
+        "256": "assets/tools/posteo/icon-256.webp",
+        "from": "https://posteo.de/images/app-icons/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#a8d858",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://posteo.de\",null,null]"
+    },
+    "snapchat": {
+      "slug": "snapchat",
+      "name": "Snapchat",
+      "source": "https://www.snapchat.com",
+      "capturedAt": "2026-10-23T19:28:01.818Z",
+      "alt": "Screenshot of the Snapchat website",
+      "pageTitle": "Snapchat - Say It In A Snap",
+      "pageDescription": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with friends on Snapchat, wherever you are.",
+      "icon": {
+        "128": "assets/tools/snapchat/icon-128.webp",
+        "256": "assets/tools/snapchat/icon-256.webp",
+        "from": "https://static.snapchat.com/images/apple-touch-icon/apple-touch-icon-yellow-192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/snapchat/social-600.webp",
+        "1200": "assets/tools/snapchat/social-1200.webp",
+        "from": "https://www.snapchat.com/images/default-preview/facebook.png"
+      },
+      "color": "#f8f808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.snapchat.com\",{\"shot\":false},null]"
+    },
+    "mojeek": {
+      "slug": "mojeek",
+      "name": "Mojeek",
+      "source": "https://www.mojeek.com",
+      "capturedAt": "2026-10-23T19:28:06.891Z",
+      "alt": "Screenshot of the Mojeek website",
+      "pageTitle": "Mojeek",
+      "pageDescription": "Mojeek is a web search engine that provides unbiased, fast, and relevant search results combined with a no tracking privacy policy.",
+      "shot": {
+        "480": "assets/tools/mojeek/shot-480.webp",
+        "960": "assets/tools/mojeek/shot-960.webp",
+        "1600": "assets/tools/mojeek/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/mojeek/mobile-390.webp",
+        "780": "assets/tools/mojeek/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.mojeek.com\",null,null]"
+    },
+    "marginalia": {
+      "slug": "marginalia",
+      "name": "Marginalia Search",
+      "source": "https://marginalia-search.com",
+      "capturedAt": "2026-10-23T19:28:14.238Z",
+      "alt": "Screenshot of the Marginalia Search website",
+      "pageTitle": "Marginalia Search",
+      "pageDescription": "Marginalia Search is a small independent do-it-yourself search engine for surprising but content-rich websites that never ask you to accept cookies or subscribe to newsletters. The goal is to bring you the sort of grass fed, free range HTML your grandma used to write. ",
+      "shot": {
+        "480": "assets/tools/marginalia/shot-480.webp",
+        "960": "assets/tools/marginalia/shot-960.webp",
+        "1600": "assets/tools/marginalia/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/marginalia/mobile-390.webp",
+        "780": "assets/tools/marginalia/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://marginalia-search.com\",null,null]"
+    },
+    "miniflux": {
+      "slug": "miniflux",
+      "name": "Miniflux",
+      "source": "https://miniflux.app",
+      "capturedAt": "2026-10-23T19:28:22.139Z",
+      "alt": "Screenshot of the Miniflux website",
+      "pageTitle": "Miniflux - Minimalist and Opinionated Feed Reader",
+      "pageDescription": "Miniflux is a minimalist and opinionated feed reader",
+      "shot": {
+        "480": "assets/tools/miniflux/shot-480.webp",
+        "960": "assets/tools/miniflux/shot-960.webp",
+        "1600": "assets/tools/miniflux/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/miniflux/mobile-390.webp",
+        "780": "assets/tools/miniflux/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://miniflux.app\",null,null]"
+    },
+    "feedbin": {
+      "slug": "feedbin",
+      "name": "Feedbin",
+      "source": "https://feedbin.com",
+      "capturedAt": "2026-10-23T19:28:27.970Z",
+      "alt": "Screenshot of the Feedbin website",
+      "pageTitle": "Feedbin",
+      "pageDescription": "A fast, simple RSS feed reader that delivers a great reading experience.",
+      "shot": {
+        "480": "assets/tools/feedbin/shot-480.webp",
+        "960": "assets/tools/feedbin/shot-960.webp",
+        "1600": "assets/tools/feedbin/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/feedbin/mobile-390.webp",
+        "780": "assets/tools/feedbin/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/feedbin/icon-128.webp",
+        "256": "assets/tools/feedbin/icon-256.webp",
+        "from": "https://assets.feedbin.com/assets-site/images/icon-manifest.png?cd712c6b2e2ce3d353ba522c47258918",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#282828",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://feedbin.com\",null,null]"
+    },
+    "newsboat": {
+      "slug": "newsboat",
+      "name": "Newsboat",
+      "source": "https://newsboat.org",
+      "capturedAt": "2026-10-23T19:28:35.213Z",
+      "alt": "Screenshot of the Newsboat website",
+      "pageTitle": "Newsboat, an RSS reader",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/newsboat/shot-480.webp",
+        "960": "assets/tools/newsboat/shot-960.webp",
+        "1600": "assets/tools/newsboat/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/newsboat/mobile-390.webp",
+        "780": "assets/tools/newsboat/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/newsboat/icon-128.webp",
+        "256": "assets/tools/newsboat/icon-256.webp",
+        "from": "https://newsboat.org/favicon-196x196.png",
+        "sourceWidth": 196,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://newsboat.org\",null,null]"
+    },
+    "google-news": {
+      "slug": "google-news",
+      "name": "Google News",
+      "source": "https://news.google.com",
+      "capturedAt": "2026-10-23T19:28:44.902Z",
+      "alt": "Screenshot of the Google News website",
+      "pageTitle": "Google News",
+      "pageDescription": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+      "icon": {
+        "128": "assets/tools/google-news/icon-128.webp",
+        "256": "assets/tools/google-news/icon-256.webp",
+        "from": "https://www.gstatic.com/gnews/logo/google_news_1024.png",
+        "sourceWidth": 1024,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/google-news/social-600.webp",
+        "1200": "assets/tools/google-news/social-1200.webp",
+        "from": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+      },
+      "color": "#4888f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://news.google.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T15:42:37.545Z"
+  "updatedAt": "2026-10-23T19:28:50.458Z"
 }

@@ -1,0 +1,34 @@
+{
+  "slug": "bluesky",
+  "name": "Bluesky",
+  "source": "https://bsky.app",
+  "capturedAt": "2026-10-23T19:27:39.690Z",
+  "alt": "Screenshot of the Bluesky website",
+  "pageTitle": "Discover — Bluesky",
+  "pageDescription": "Social media as it should be. Find your community among millions of users, unleash your creativity, and have some fun again.",
+  "shot": {
+    "480": "assets/tools/bluesky/shot-480.webp",
+    "960": "assets/tools/bluesky/shot-960.webp",
+    "1600": "assets/tools/bluesky/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/bluesky/mobile-390.webp",
+    "780": "assets/tools/bluesky/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/bluesky/icon-128.webp",
+    "256": "assets/tools/bluesky/icon-256.webp",
+    "from": "https://web-cdn.bsky.app/static/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/bluesky/social-600.webp",
+    "1200": "assets/tools/bluesky/social-1200.webp",
+    "from": "https://bsky.app/static/social-card-default-gradient.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "feedbin",
+  "name": "Feedbin",
+  "source": "https://feedbin.com",
+  "capturedAt": "2026-10-23T19:28:27.970Z",
+  "alt": "Screenshot of the Feedbin website",
+  "pageTitle": "Feedbin",
+  "pageDescription": "A fast, simple RSS feed reader that delivers a great reading experience.",
+  "shot": {
+    "480": "assets/tools/feedbin/shot-480.webp",
+    "960": "assets/tools/feedbin/shot-960.webp",
+    "1600": "assets/tools/feedbin/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/feedbin/mobile-390.webp",
+    "780": "assets/tools/feedbin/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/feedbin/icon-128.webp",
+    "256": "assets/tools/feedbin/icon-256.webp",
+    "from": "https://assets.feedbin.com/assets-site/images/icon-manifest.png?cd712c6b2e2ce3d353ba522c47258918",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#282828",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "pairdrop",
+  "name": "PairDrop",
+  "source": "https://pairdrop.net",
+  "capturedAt": "2026-10-23T19:24:53.735Z",
+  "alt": "Screenshot of the PairDrop website",
+  "pageTitle": "PairDrop | Transfer Files Cross-Platform. No Setup, No Signup.",
+  "pageDescription": "Instantly share images, videos, PDFs, and links with people nearby. Peer2Peer and Open Source. No Setup, No Signup.",
+  "shot": {
+    "480": "assets/tools/pairdrop/shot-480.webp",
+    "960": "assets/tools/pairdrop/shot-960.webp",
+    "1600": "assets/tools/pairdrop/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/pairdrop/mobile-390.webp",
+    "780": "assets/tools/pairdrop/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/pairdrop/icon-128.webp",
+    "256": "assets/tools/pairdrop/icon-256.webp",
+    "from": "https://pairdrop.net/images/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#3367d6",
+  "colorFrom": "theme-color",
+  "notes": [
+    "dismissed banner with button:has-text(\"Decline\")",
+    "social image failed: Input buffer has corrupt header: glib: XML parse error: Error domain 1 code 26 on line 276 column 56 of data: Entity 'nbsp' not defined"
+  ]
+}

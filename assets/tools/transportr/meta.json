@@ -1,0 +1,22 @@
+{
+  "slug": "transportr",
+  "name": "Transportr",
+  "source": "https://transportr.app",
+  "capturedAt": "2026-10-23T19:25:19.742Z",
+  "alt": "Screenshot of the Transportr website",
+  "pageTitle": "Transportr - Open Source Public Transit",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/transportr/shot-480.webp",
+    "960": "assets/tools/transportr/shot-960.webp",
+    "1600": "assets/tools/transportr/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/transportr/mobile-390.webp",
+    "780": "assets/tools/transportr/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

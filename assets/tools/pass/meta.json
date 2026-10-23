@@ -1,0 +1,22 @@
+{
+  "slug": "pass",
+  "name": "pass",
+  "source": "https://www.passwordstore.org",
+  "capturedAt": "2026-10-23T19:26:57.551Z",
+  "alt": "Screenshot of the pass website",
+  "pageTitle": "Pass: The Standard Unix Password Manager",
+  "pageDescription": "Pass is the standard unix password manager, a lightweight password manager that uses GPG and Git for Linux, BSD, and Mac OS X.",
+  "shot": {
+    "480": "assets/tools/pass/shot-480.webp",
+    "960": "assets/tools/pass/shot-960.webp",
+    "1600": "assets/tools/pass/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/pass/mobile-390.webp",
+    "780": "assets/tools/pass/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

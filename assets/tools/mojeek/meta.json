@@ -1,0 +1,22 @@
+{
+  "slug": "mojeek",
+  "name": "Mojeek",
+  "source": "https://www.mojeek.com",
+  "capturedAt": "2026-10-23T19:28:06.891Z",
+  "alt": "Screenshot of the Mojeek website",
+  "pageTitle": "Mojeek",
+  "pageDescription": "Mojeek is a web search engine that provides unbiased, fast, and relevant search results combined with a no tracking privacy policy.",
+  "shot": {
+    "480": "assets/tools/mojeek/shot-480.webp",
+    "960": "assets/tools/mojeek/shot-960.webp",
+    "1600": "assets/tools/mojeek/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/mojeek/mobile-390.webp",
+    "780": "assets/tools/mojeek/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

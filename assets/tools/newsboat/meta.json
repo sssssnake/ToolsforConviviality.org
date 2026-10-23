@@ -1,0 +1,29 @@
+{
+  "slug": "newsboat",
+  "name": "Newsboat",
+  "source": "https://newsboat.org",
+  "capturedAt": "2026-10-23T19:28:35.213Z",
+  "alt": "Screenshot of the Newsboat website",
+  "pageTitle": "Newsboat, an RSS reader",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/newsboat/shot-480.webp",
+    "960": "assets/tools/newsboat/shot-960.webp",
+    "1600": "assets/tools/newsboat/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/newsboat/mobile-390.webp",
+    "780": "assets/tools/newsboat/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/newsboat/icon-128.webp",
+    "256": "assets/tools/newsboat/icon-256.webp",
+    "from": "https://newsboat.org/favicon-196x196.png",
+    "sourceWidth": 196,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

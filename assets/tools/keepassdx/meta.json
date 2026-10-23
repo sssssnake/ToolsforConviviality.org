@@ -1,0 +1,22 @@
+{
+  "slug": "keepassdx",
+  "name": "KeePassDX",
+  "source": "https://www.keepassdx.com",
+  "capturedAt": "2026-10-23T19:26:50.704Z",
+  "alt": "Screenshot of the KeePassDX website",
+  "pageTitle": "KeePassDX",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/keepassdx/shot-480.webp",
+    "960": "assets/tools/keepassdx/shot-960.webp",
+    "1600": "assets/tools/keepassdx/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/keepassdx/mobile-390.webp",
+    "780": "assets/tools/keepassdx/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "organic-maps",
+  "name": "Organic Maps",
+  "source": "https://organicmaps.app",
+  "capturedAt": "2026-10-23T19:25:12.465Z",
+  "alt": "Screenshot of the Organic Maps website",
+  "pageTitle": "Organic Maps: Offline Hike, Bike, Trails and Navigation",
+  "pageDescription": "Free, open-source, fast, privacy-focused, detailed offline maps for travelers, tourists, drivers, hikers and cyclists created by MapsWithMe/Maps.Me app founders",
+  "shot": {
+    "480": "assets/tools/organic-maps/shot-480.webp",
+    "960": "assets/tools/organic-maps/shot-960.webp",
+    "1600": "assets/tools/organic-maps/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/organic-maps/mobile-390.webp",
+    "780": "assets/tools/organic-maps/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/organic-maps/social-600.webp",
+    "1200": "assets/tools/organic-maps/social-1200.webp",
+    "from": "https://organicmaps.app/images/screenshots/prague.jpg"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

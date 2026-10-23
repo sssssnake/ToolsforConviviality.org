@@ -1,0 +1,34 @@
+{
+  "slug": "linkwarden",
+  "name": "Linkwarden",
+  "source": "https://linkwarden.app",
+  "capturedAt": "2026-10-23T19:27:04.605Z",
+  "alt": "Screenshot of the Linkwarden website",
+  "pageTitle": "Linkwarden — Bookmarks, Evolved",
+  "pageDescription": "Collect, read, annotate, and fully preserve what matters. Open-source, self-hostable bookmark manager with full-page archival.",
+  "shot": {
+    "480": "assets/tools/linkwarden/shot-480.webp",
+    "960": "assets/tools/linkwarden/shot-960.webp",
+    "1600": "assets/tools/linkwarden/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/linkwarden/mobile-390.webp",
+    "780": "assets/tools/linkwarden/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/linkwarden/icon-128.webp",
+    "256": "assets/tools/linkwarden/icon-256.webp",
+    "from": "https://linkwarden.app/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/linkwarden/social-600.webp",
+    "1200": "assets/tools/linkwarden/social-1200.webp",
+    "from": "https://linkwarden.app/og-image.jpg"
+  },
+  "color": "#081828",
+  "colorFrom": "icon",
+  "notes": []
+}

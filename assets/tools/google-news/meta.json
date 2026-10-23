@@ -1,0 +1,27 @@
+{
+  "slug": "google-news",
+  "name": "Google News",
+  "source": "https://news.google.com",
+  "capturedAt": "2026-10-23T19:28:44.902Z",
+  "alt": "Screenshot of the Google News website",
+  "pageTitle": "Google News",
+  "pageDescription": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.",
+  "icon": {
+    "128": "assets/tools/google-news/icon-128.webp",
+    "256": "assets/tools/google-news/icon-256.webp",
+    "from": "https://www.gstatic.com/gnews/logo/google_news_1024.png",
+    "sourceWidth": 1024,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/google-news/social-600.webp",
+    "1200": "assets/tools/google-news/social-1200.webp",
+    "from": "https://lh3.googleusercontent.com/J6_coFbogxhRI9iM864NL_liGXvsQp2AupsKei7z0cNNfDvGUmWUy20nuUhkREQyrpY4bEeIBuc=s0-w300"
+  },
+  "color": "#4888f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

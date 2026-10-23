@@ -1,0 +1,29 @@
+{
+  "slug": "obs-studio",
+  "name": "OBS Studio",
+  "source": "https://obsproject.com",
+  "capturedAt": "2026-10-23T19:26:43.175Z",
+  "alt": "Screenshot of the OBS Studio website",
+  "pageTitle": "Open Broadcaster Software | OBS",
+  "pageDescription": "OBS (Open Broadcaster Software) is free and open source software for video recording and live streaming. Stream to Twitch, YouTube and many other providers or record your own videos with high quality H264 / AAC encoding.",
+  "shot": {
+    "480": "assets/tools/obs-studio/shot-480.webp",
+    "960": "assets/tools/obs-studio/shot-960.webp",
+    "1600": "assets/tools/obs-studio/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/obs-studio/mobile-390.webp",
+    "780": "assets/tools/obs-studio/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/obs-studio/icon-128.webp",
+    "256": "assets/tools/obs-studio/icon-256.webp",
+    "from": "https://obsproject.com/favicon-96x96.png",
+    "sourceWidth": 96,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

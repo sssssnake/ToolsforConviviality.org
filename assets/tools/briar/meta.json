@@ -1,0 +1,29 @@
+{
+  "slug": "briar",
+  "name": "Briar",
+  "source": "https://briarproject.org",
+  "capturedAt": "2026-10-23T19:27:31.691Z",
+  "alt": "Screenshot of the Briar website",
+  "pageTitle": "Secure messaging, anywhere - Briar",
+  "pageDescription": "Secure messaging, anywhere",
+  "shot": {
+    "480": "assets/tools/briar/shot-480.webp",
+    "960": "assets/tools/briar/shot-960.webp",
+    "1600": "assets/tools/briar/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/briar/mobile-390.webp",
+    "780": "assets/tools/briar/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/briar/icon-128.webp",
+    "256": "assets/tools/briar/icon-256.webp",
+    "from": "https://briarproject.org/img/briar_logo_circle.png",
+    "sourceWidth": 200,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "logseq",
+  "name": "Logseq",
+  "source": "https://logseq.com",
+  "capturedAt": "2026-10-23T19:25:28.523Z",
+  "alt": "Screenshot of the Logseq website",
+  "pageTitle": "Logseq: A privacy-first, open-source knowledge base",
+  "pageDescription": "A privacy-first, open-source platform for knowledge management and collaboration.",
+  "shot": {
+    "480": "assets/tools/logseq/shot-480.webp",
+    "960": "assets/tools/logseq/shot-960.webp",
+    "1600": "assets/tools/logseq/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/logseq/mobile-390.webp",
+    "780": "assets/tools/logseq/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/logseq/icon-128.webp",
+    "256": "assets/tools/logseq/icon-256.webp",
+    "from": "https://asset.logseq.com/static/img/logo.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/logseq/social-600.webp",
+    "1200": "assets/tools/logseq/social-1200.webp",
+    "from": "https://asset.logseq.com/static/img/social-banner-230118.png"
+  },
+  "color": "#88c8c8",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "shotcut",
+  "name": "Shotcut",
+  "source": "https://shotcut.org",
+  "capturedAt": "2026-10-23T19:26:31.280Z",
+  "alt": "Screenshot of the Shotcut website",
+  "pageTitle": "Shotcut - Home",
+  "pageDescription": "Shotcut is a free, open source, cross-platform video editor for Windows, Mac and Linux",
+  "shot": {
+    "480": "assets/tools/shotcut/shot-480.webp",
+    "960": "assets/tools/shotcut/shot-960.webp",
+    "1600": "assets/tools/shotcut/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/shotcut/mobile-390.webp",
+    "780": "assets/tools/shotcut/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/shotcut/icon-128.webp",
+    "256": "assets/tools/shotcut/icon-256.webp",
+    "svg": "assets/tools/shotcut/icon.svg",
+    "from": "https://shotcut.org/assets/img/favicon.svg",
+    "scalable": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

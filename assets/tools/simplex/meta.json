@@ -1,0 +1,27 @@
+{
+  "slug": "simplex",
+  "name": "SimpleX Chat",
+  "source": "https://simplex.chat",
+  "capturedAt": "2026-10-23T19:27:22.232Z",
+  "alt": "Screenshot of the SimpleX Chat website",
+  "pageTitle": "SimpleX Chat: private and secure messenger without any user IDs (not even random)",
+  "pageDescription": "SimpleX Chat - a private and encrypted messenger without any user IDs (not even random ones)! Make a private connection via link / QR code to send messages and make calls.",
+  "shot": {
+    "480": "assets/tools/simplex/shot-480.webp",
+    "960": "assets/tools/simplex/shot-960.webp",
+    "1600": "assets/tools/simplex/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/simplex/mobile-390.webp",
+    "780": "assets/tools/simplex/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/simplex/social-600.webp",
+    "1200": "assets/tools/simplex/social-1200.webp",
+    "from": "https://simplex.chat/img/share_simplex.jpg"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "gmic",
+  "name": "G'MIC",
+  "source": "https://gmic.eu",
+  "capturedAt": "2026-10-23T19:26:11.795Z",
+  "alt": "Screenshot of the G'MIC website",
+  "pageTitle": "G'MIC - GREYC's Magic for Image Computing: A Full-Featured Open-Source Framework for Image Processing - Home",
+  "pageDescription": "A full-featured open-source framework for processing generic images (2D, 3D, 3D+t) with multiple interfaces: command-line (cli), GIMP plug-in, web service, Qt plug-in, C++ library",
+  "shot": {
+    "480": "assets/tools/gmic/shot-480.webp",
+    "960": "assets/tools/gmic/shot-960.webp",
+    "1600": "assets/tools/gmic/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/gmic/mobile-390.webp",
+    "780": "assets/tools/gmic/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/gmic/icon-128.webp",
+    "256": "assets/tools/gmic/icon-256.webp",
+    "from": "https://gmic.eu/favicon.png",
+    "sourceWidth": 16,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

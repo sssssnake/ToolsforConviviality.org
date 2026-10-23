@@ -1,0 +1,27 @@
+{
+  "slug": "snapchat",
+  "name": "Snapchat",
+  "source": "https://www.snapchat.com",
+  "capturedAt": "2026-10-23T19:28:01.818Z",
+  "alt": "Screenshot of the Snapchat website",
+  "pageTitle": "Snapchat - Say It In A Snap",
+  "pageDescription": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with friends on Snapchat, wherever you are.",
+  "icon": {
+    "128": "assets/tools/snapchat/icon-128.webp",
+    "256": "assets/tools/snapchat/icon-256.webp",
+    "from": "https://static.snapchat.com/images/apple-touch-icon/apple-touch-icon-yellow-192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/snapchat/social-600.webp",
+    "1200": "assets/tools/snapchat/social-1200.webp",
+    "from": "https://www.snapchat.com/images/default-preview/facebook.png"
+  },
+  "color": "#f8f808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

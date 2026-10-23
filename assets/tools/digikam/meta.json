@@ -1,0 +1,29 @@
+{
+  "slug": "digikam",
+  "name": "digiKam",
+  "source": "https://www.digikam.org",
+  "capturedAt": "2026-10-23T19:26:02.600Z",
+  "alt": "Screenshot of the digiKam website",
+  "pageTitle": "digiKam - digiKam",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/digikam/shot-480.webp",
+    "960": "assets/tools/digikam/shot-960.webp",
+    "1600": "assets/tools/digikam/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/digikam/mobile-390.webp",
+    "780": "assets/tools/digikam/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/digikam/icon-128.webp",
+    "256": "assets/tools/digikam/icon-256.webp",
+    "from": "https://www.digikam.org/favicon-32x32.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

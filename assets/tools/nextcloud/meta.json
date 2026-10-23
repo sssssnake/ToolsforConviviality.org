@@ -1,0 +1,36 @@
+{
+  "slug": "nextcloud",
+  "name": "Nextcloud",
+  "source": "https://nextcloud.com",
+  "capturedAt": "2026-10-23T19:24:42.272Z",
+  "alt": "Screenshot of the Nextcloud website",
+  "pageTitle": "Nextcloud - Open source content collaboration platform",
+  "pageDescription": "The most popular open source content collaboration platform for tens of millions of users at thousands of organizations across the globe",
+  "shot": {
+    "480": "assets/tools/nextcloud/shot-480.webp",
+    "960": "assets/tools/nextcloud/shot-960.webp",
+    "1600": "assets/tools/nextcloud/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/nextcloud/mobile-390.webp",
+    "780": "assets/tools/nextcloud/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/nextcloud/icon-128.webp",
+    "256": "assets/tools/nextcloud/icon-256.webp",
+    "from": "https://nextcloud.com/c/uploads/2022/03/favicon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/nextcloud/social-600.webp",
+    "1200": "assets/tools/nextcloud/social-1200.webp",
+    "from": "https://nextcloud.com/c/uploads/2026/03/Homepage-featured-image.png"
+  },
+  "color": "#0082c9",
+  "colorFrom": "theme-color",
+  "notes": [
+    "dismissed banner with button:has-text(\"Reject all\")"
+  ]
+}
