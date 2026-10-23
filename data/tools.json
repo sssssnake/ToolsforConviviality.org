@@ -65,12 +65,16 @@
     "name": "Are.na",
     "url": "https://www.are.na",
     "capture": {
-      "wait": 5000
+      "wait": 5000,
+      "scroll": 520
     }
   },
   {
     "slug": "airtime",
     "name": "Airtime",
-    "url": "https://www.airtime.com"
+    "url": "https://www.airtime.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]

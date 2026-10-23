@@ -165,6 +165,7 @@ async function captureTool(browser, tool, previous) {
 
     // Screenshots
     if (cfg.shot !== false) {
+      if (cfg.scroll) { await page.evaluate((y) => window.scrollTo(0, y), cfg.scroll); await sleep(600); }
       const desktop = await page.screenshot({ type: "png", fullPage: false });
       entry.shot = await saveVariants(desktop, dir, "shot", SHOT_WIDTHS);
     } else {
