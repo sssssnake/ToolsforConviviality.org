@@ -1,0 +1,34 @@
+{
+  "slug": "bitwarden",
+  "name": "Bitwarden",
+  "source": "https://bitwarden.com",
+  "capturedAt": "2026-10-23T10:02:53.202Z",
+  "alt": "Screenshot of the Bitwarden website",
+  "pageTitle": "Best Password Manager for Business, Enterprise & Personal | Bitwarden | Bitwarden",
+  "pageDescription": "Bitwarden is the trusted, open source password manager for individuals, teams, and enterprises. Securely store, share, and manage passwords, passkeys, and secrets. Free to start.",
+  "shot": {
+    "480": "assets/tools/bitwarden/shot-480.webp",
+    "960": "assets/tools/bitwarden/shot-960.webp",
+    "1600": "assets/tools/bitwarden/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/bitwarden/mobile-390.webp",
+    "780": "assets/tools/bitwarden/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/bitwarden/icon-128.webp",
+    "256": "assets/tools/bitwarden/icon-256.webp",
+    "from": "https://bitwarden.com/icons/icon-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/bitwarden/social-600.webp",
+    "1200": "assets/tools/bitwarden/social-1200.webp",
+    "from": "https://bitwarden.com/assets/7fzQJmr0qt5ggGZp3t66Y/7bf59a6a2379d49fc580ff49e8510efb/bitwarden.com_og_image.png"
+  },
+  "color": "#175ddc",
+  "colorFrom": "theme-color",
+  "notes": []
+}

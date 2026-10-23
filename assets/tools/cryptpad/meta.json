@@ -1,0 +1,34 @@
+{
+  "slug": "cryptpad",
+  "name": "CryptPad",
+  "source": "https://cryptpad.org",
+  "capturedAt": "2026-10-23T10:02:21.282Z",
+  "alt": "Screenshot of the CryptPad website",
+  "pageTitle": "CryptPad.org",
+  "pageDescription": "End-to-end encrypted collaborative office suite",
+  "shot": {
+    "480": "assets/tools/cryptpad/shot-480.webp",
+    "960": "assets/tools/cryptpad/shot-960.webp",
+    "1600": "assets/tools/cryptpad/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/cryptpad/mobile-390.webp",
+    "780": "assets/tools/cryptpad/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/cryptpad/icon-128.webp",
+    "256": "assets/tools/cryptpad/icon-256.webp",
+    "from": "https://cryptpad.org/images/main-favicon.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/cryptpad/social-600.webp",
+    "1200": "assets/tools/cryptpad/social-1200.webp",
+    "from": "http://cryptpad.org/images/opengraph_preview.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

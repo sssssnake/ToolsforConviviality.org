@@ -1,0 +1,33 @@
+{
+  "slug": "obsidian",
+  "name": "Obsidian",
+  "source": "https://obsidian.md",
+  "capturedAt": "2026-10-23T10:02:04.148Z",
+  "alt": "Screenshot of the Obsidian website",
+  "pageTitle": "Obsidian - Sharpen your thinking",
+  "pageDescription": "The free and flexible app for your private thoughts.",
+  "shot": {
+    "480": "assets/tools/obsidian/shot-480.webp",
+    "960": "assets/tools/obsidian/shot-960.webp",
+    "1600": "assets/tools/obsidian/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/obsidian/mobile-390.webp",
+    "780": "assets/tools/obsidian/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/obsidian/icon-128.webp",
+    "256": "assets/tools/obsidian/icon-256.webp",
+    "svg": "assets/tools/obsidian/icon.svg",
+    "from": "https://obsidian.md/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/obsidian/social-600.webp",
+    "1200": "assets/tools/obsidian/social-1200.webp",
+    "from": "https://obsidian.md/images/banner.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

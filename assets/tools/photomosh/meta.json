@@ -1,0 +1,33 @@
+{
+  "slug": "photomosh",
+  "name": "PhotoMosh",
+  "source": "https://photomosh.com",
+  "capturedAt": "2026-10-23T10:03:04.454Z",
+  "alt": "Screenshot of the PhotoMosh website",
+  "pageTitle": "Mosh-Pro — Glitch & Video Effects App",
+  "pageDescription": "Mosh-Pro is a real-time visual effects mixer for image, video & GIF — 60+ effects, 4K export, audio-reactive, MIDI. Or try the free online glitch tool at Mosh-Lite.",
+  "shot": {
+    "480": "assets/tools/photomosh/shot-480.webp",
+    "960": "assets/tools/photomosh/shot-960.webp",
+    "1600": "assets/tools/photomosh/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/photomosh/mobile-390.webp",
+    "780": "assets/tools/photomosh/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/photomosh/icon-128.webp",
+    "256": "assets/tools/photomosh/icon-256.webp",
+    "svg": "assets/tools/photomosh/icon.svg",
+    "from": "https://moshpro.app/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/photomosh/social-600.webp",
+    "1200": "assets/tools/photomosh/social-1200.webp",
+    "from": "https://moshpro.app/res/img/share.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

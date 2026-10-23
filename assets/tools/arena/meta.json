@@ -1,0 +1,33 @@
+{
+  "slug": "arena",
+  "name": "Are.na",
+  "source": "https://www.are.na",
+  "capturedAt": "2026-10-23T10:03:21.487Z",
+  "alt": "Screenshot of the Are.na website",
+  "pageTitle": "Are.na",
+  "pageDescription": "Are.na is a platform for connecting ideas and building knowledge.",
+  "shot": {
+    "480": "assets/tools/arena/shot-480.webp",
+    "960": "assets/tools/arena/shot-960.webp",
+    "1600": "assets/tools/arena/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/arena/mobile-390.webp",
+    "780": "assets/tools/arena/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/arena/icon-128.webp",
+    "256": "assets/tools/arena/icon-256.webp",
+    "svg": "assets/tools/arena/icon.svg",
+    "from": "https://www.are.na/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/arena/social-600.webp",
+    "1200": "assets/tools/arena/social-1200.webp",
+    "from": "https://www.are.na/og-image.png"
+  },
+  "color": "#fff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

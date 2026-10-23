@@ -1,0 +1,34 @@
+{
+  "slug": "ente",
+  "name": "Ente Photos",
+  "source": "https://ente.io",
+  "capturedAt": "2026-10-23T10:02:13.037Z",
+  "alt": "Screenshot of the Ente Photos website",
+  "pageTitle": "Ente Photos: Store and share your photos with absolute privacy",
+  "pageDescription": "Ente Photos is the private, secure photo storage app with end-to-end encryption. Cross-platform, open source, and self-hostable. Start with 10GB free.",
+  "shot": {
+    "480": "assets/tools/ente/shot-480.webp",
+    "960": "assets/tools/ente/shot-960.webp",
+    "1600": "assets/tools/ente/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ente/mobile-390.webp",
+    "780": "assets/tools/ente/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/ente/icon-128.webp",
+    "256": "assets/tools/ente/icon-256.webp",
+    "from": "https://ente.com/assets/icon.Dv-LNK-m.png",
+    "sourceWidth": 1024,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/ente/social-600.webp",
+    "1200": "assets/tools/ente/social-1200.webp",
+    "from": "https://ente.com/assets/preview.99NhZcqA.png"
+  },
+  "color": "#08b828",
+  "colorFrom": "icon",
+  "notes": []
+}

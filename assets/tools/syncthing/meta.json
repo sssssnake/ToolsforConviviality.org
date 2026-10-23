@@ -1,0 +1,29 @@
+{
+  "slug": "syncthing",
+  "name": "Syncthing",
+  "source": "https://syncthing.net",
+  "capturedAt": "2026-10-23T10:01:55.209Z",
+  "alt": "Screenshot of the Syncthing website",
+  "pageTitle": "Syncthing",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/syncthing/shot-480.webp",
+    "960": "assets/tools/syncthing/shot-960.webp",
+    "1600": "assets/tools/syncthing/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/syncthing/mobile-390.webp",
+    "780": "assets/tools/syncthing/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/syncthing/icon-128.webp",
+    "256": "assets/tools/syncthing/icon-256.webp",
+    "from": "https://syncthing.net/img/favicons/apple-touch-icon-152x152.png",
+    "sourceWidth": 152,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

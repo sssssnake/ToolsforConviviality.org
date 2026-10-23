@@ -1,0 +1,29 @@
+{
+  "slug": "localsend",
+  "name": "LocalSend",
+  "source": "https://localsend.org",
+  "capturedAt": "2026-10-23T10:01:29.490Z",
+  "alt": "Screenshot of the LocalSend website",
+  "pageTitle": "LocalSend: Share files to nearby devices",
+  "pageDescription": "LocalSend is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby devices.",
+  "shot": {
+    "480": "assets/tools/localsend/shot-480.webp",
+    "960": "assets/tools/localsend/shot-960.webp",
+    "1600": "assets/tools/localsend/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/localsend/mobile-390.webp",
+    "780": "assets/tools/localsend/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/localsend/icon-128.webp",
+    "256": "assets/tools/localsend/icon-256.webp",
+    "from": "https://localsend.org/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

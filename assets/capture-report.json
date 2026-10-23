@@ -1,0 +1,62 @@
+{
+  "startedAt": "2026-10-23T10:01:28.996Z",
+  "captured": [
+    {
+      "slug": "localsend",
+      "notes": []
+    },
+    {
+      "slug": "netnewswire",
+      "notes": []
+    },
+    {
+      "slug": "comaps",
+      "notes": []
+    },
+    {
+      "slug": "syncthing",
+      "notes": []
+    },
+    {
+      "slug": "obsidian",
+      "notes": []
+    },
+    {
+      "slug": "ente",
+      "notes": []
+    },
+    {
+      "slug": "cryptpad",
+      "notes": []
+    },
+    {
+      "slug": "kagi",
+      "notes": []
+    },
+    {
+      "slug": "bitwarden",
+      "notes": []
+    },
+    {
+      "slug": "photomosh",
+      "notes": []
+    },
+    {
+      "slug": "ferdium",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "arena",
+      "notes": []
+    },
+    {
+      "slug": "airtime",
+      "notes": []
+    }
+  ],
+  "skipped": [],
+  "failed": [],
+  "finishedAt": "2026-10-23T10:03:47.276Z"
+}

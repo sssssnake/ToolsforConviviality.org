@@ -1,0 +1,34 @@
+{
+  "slug": "comaps",
+  "name": "CoMaps",
+  "source": "https://comaps.app",
+  "capturedAt": "2026-10-23T10:01:44.631Z",
+  "alt": "Screenshot of the CoMaps website",
+  "pageTitle": "Hike, Bike, Drive Offline – Navigate with Privacy | CoMaps",
+  "pageDescription": "Discover more of your journey - Powered by the community",
+  "shot": {
+    "480": "assets/tools/comaps/shot-480.webp",
+    "960": "assets/tools/comaps/shot-960.webp",
+    "1600": "assets/tools/comaps/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/comaps/mobile-390.webp",
+    "780": "assets/tools/comaps/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/comaps/icon-128.webp",
+    "256": "assets/tools/comaps/icon-256.webp",
+    "from": "https://www.comaps.app/images/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/comaps/social-600.webp",
+    "1200": "assets/tools/comaps/social-1200.webp",
+    "from": "https://www.comaps.app/images/sections/map-s-3.webp"
+  },
+  "color": "#687858",
+  "colorFrom": "icon",
+  "notes": []
+}
