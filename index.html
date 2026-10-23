@@ -422,7 +422,6 @@ function home() {
   const counts = k => TOOLS.filter(x => x.size === k).length;
   return `<div class="home">
     <section class="hero">
-      <p class="label">Open access / No account needed</p>
       <h1>What would you like to do?</h1>
       <p class="lede">Useful software, made at a human scale. Start with a purpose, then find a tool you can make your own.</p>
       <div class="purposes">${CATS.map(c => {
@@ -432,7 +431,7 @@ function home() {
     </section>
     <aside>
       <div class="card feature" aria-live="polite">
-        <p class="label">A tool in the collection</p>
+        <p class="label">A random tool in the collection</p>
         <h2>${esc(t.name)}</h2>
         <p class="desc">${esc(t.one)}</p>
         <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li>${total(t)}/30 · ${band(total(t))}</li></ul>
