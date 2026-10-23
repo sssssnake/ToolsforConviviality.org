@@ -93,6 +93,13 @@ main .wrap { padding-block: 48px 64px; }
 .feature ul { list-style: none; padding: 16px 0 0; margin: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; font-size: 15px; }
 .btn { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--accent); padding: 12px 16px; text-decoration: none; color: var(--fg); background: transparent; font: inherit; font-size: 15px; cursor: pointer; width: 100%; text-align: left; }
 .btn:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.badge-box { border: 1px solid var(--line); background: var(--panel); padding: 18px; margin: 28px 0; max-width: 760px; display: grid; gap: 12px; }
+.badge-box h2 { font-size: 20px; color: var(--accent); }
+.badge-box .badge-img { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+.badge-box .badge-img span { padding: 10px; background: #f1f2ed; } .badge-box .badge-img span.dk { background: #19242d; }
+.badge-box textarea { width: 100%; font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--fg); border: 1px solid var(--line); padding: 10px; resize: vertical; min-height: 92px; }
+.badge-box p { margin: 0; font-size: 14px; color: var(--muted); }
 .pdf-card { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; border: 1px solid var(--accent); padding: 18px; margin: 28px 0; max-width: 760px; }
 .pdf-card img { width: 120px; height: auto; display: block; border: 1px solid var(--rule, var(--accent)); }
 .pdf-card h3 { color: var(--accent); font-size: 20px; margin-bottom: 6px; }
@@ -123,7 +130,7 @@ main .wrap { padding-block: 48px 64px; }
 .logo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
 .logo.sm { width: 44px; height: 44px; font-size: 22px; }
 .logo.lg { width: 72px; height: 72px; font-size: 34px; }
-.tool-row .lead { display: flex; gap: 14px; align-items: flex-start; }
+.tool-row .lead { display: flex; gap: 14px; align-items: center; }
 .tool-row .lead > div { min-width: 0; }
 .review-head { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
 .review-head .page-head { margin: 0; }
@@ -295,6 +302,11 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p class="shot-credit">Screenshot from cryptpad.org, taken 2026-10-23. The images belong to their makers and are shown to help you recognise the tool. <a href="/about/">Ask us to remove one</a>.</p>
       <p>CryptPad comes from XWiki, a Paris company that has made open-source software for nearly twenty years, and it has been funded largely by French and European research grants on the principle that public money should pay for public code. Everything is encrypted in your browser, so even the people running the server can't read your documents.</p><p>It scores perfectly on Power. It is rougher to use than Google Docs, though, and moving documents in and out of Microsoft formats is workable rather than smooth.</p>
       <div class="visit"><a class="btn" href="https://cryptpad.org" target="_blank" rel="noopener">Visit CryptPad <span aria-hidden="true">↗</span></a></div>
+      <section class="badge-box" aria-label="Review badge"><h2>Show this score</h2>
+    <div class="badge-img"><span><img src="/badges/cryptpad-light.svg" alt="Badge: 22 out of 30, Leaning convivial" width="255" height="72"></span><span class="dk"><img src="/badges/cryptpad-dark.svg" alt="Dark-background badge: 22 out of 30, Leaning convivial" width="255" height="72"></span></div>
+    <p>If you make CryptPad, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
+    <label class="visually-hidden" for="bs-cryptpad">Badge code for light backgrounds</label><textarea id="bs-cryptpad" readonly="" onfocus="this.select()">&lt;a href="https://toolsforconviviality.com/tools/cryptpad/"&gt;&lt;img src="https://toolsforconviviality.com/badges/cryptpad-light.svg" alt="Tools for Conviviality review: 22/30, Leaning convivial" width="255" height="72"&gt;&lt;/a&gt;</textarea>
+    <p>For dark backgrounds, use <code>cryptpad-dark.svg</code> in place of <code>cryptpad-light.svg</code>.</p></section>
       <p class="bench-note">For comparison, we also reviewed <a href="/benchmarks/microsoft-word/">Microsoft Word</a> (15/30) as a benchmark.</p><section class="related"><h2>Other tools for “keep my own notes and documents”</h2><ul><li><a href="/tools/joplin/"><b>Joplin</b><span>Open-source notes with sync through whichever service you choose.</span></a></li><li><a href="/tools/obsidian/"><b>Obsidian</b><span>A notes app that works on a plain folder of Markdown files.</span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
@@ -744,6 +756,16 @@ function directory(preset) {
   <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
 
+function badgeBox(t) {
+  const n = total(t), u = "https://toolsforconviviality.com";
+  const snip = mode => `<a href="${u}/tools/${t.slug}/"><img src="${u}/badges/${t.slug}-${mode}.svg" alt="Tools for Conviviality review: ${n}/30, ${band(n)}" width="255" height="72"></a>`;
+  return `<section class="badge-box" aria-label="Review badge"><h2>Show this score</h2>
+    <div class="badge-img"><span><img src="/badges/${t.slug}-light.svg" alt="Badge: ${n} out of 30, ${band(n)}" width="255" height="72"></span><span class="dk"><img src="/badges/${t.slug}-dark.svg" alt="Dark-background badge: ${n} out of 30, ${band(n)}" width="255" height="72"></span></div>
+    <p>If you make ${esc(t.name)}, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
+    <label class="visually-hidden" for="bs-${t.slug}">Badge code for light backgrounds</label><textarea id="bs-${t.slug}" readonly onfocus="this.select()">${esc(snip("light"))}</textarea>
+    <p>For dark backgrounds, use <code>${t.slug}-dark.svg</code> in place of <code>${t.slug}-light.svg</code>.</p></section>`;
+}
+
 function tool(slug, isBench) {
   const t = (isBench ? BENCH : TOOLS).find(x => x.slug === slug); if (!t) return notFound();
   const n = total(t), c = catOf(t.cat);
@@ -756,6 +778,7 @@ function tool(slug, isBench) {
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
+      ${isBench ? "" : badgeBox(t)}
       ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""); })()}
     </article>
     <aside class="info" aria-label="Tool information">
@@ -939,6 +962,8 @@ function method() {
     <p>Every tool in the directory is ranked by its total in the <a href="#directory">directory</a>, so you can see at a glance which ones come out most convivial. A total hides detail, though, so open a review to see how a tool did on each of the six questions, and compare within a category when you are choosing, because a password manager and a painting program do different jobs.</p>
     <h2>Benchmarks</h2>
     <p>Now and then we score one of the giants, so you can see what everything else is measured against. These <a href="#benchmarks">benchmark reviews</a> use the same questions and the same scale, and they stay outside the directory.</p>
+    <h2>Badges</h2>
+    <p>Every tool in the directory has a badge on its review page that shows its score and verdict. A badge reports a dated review and is not a certification, we charge nothing for it, and it comes in versions for light and dark pages. It always shows the tool's current score, so it changes if the review does, and the maker is asked to link it to the review.</p>
     <h2>Our own tools</h2>
     <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
     <h2>Credit where it's due</h2>

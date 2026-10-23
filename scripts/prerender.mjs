@@ -54,6 +54,24 @@ await page.goto(base + "/page-not-found/");
 await page.waitForFunction(() => window.__ready === true);
 await fs.writeFile(path.join(ROOT, "404.html"), "<!doctype html>\n" + await page.evaluate(() => document.documentElement.outerHTML));
 
+// Review badges: one light and one dark SVG per tool, made from the editable templates in scripts/badges.
+// Each badge reports the tool's current score and verdict and links nowhere by itself; makers wrap it in a link to the review.
+const BADGE_TPL = { convivial: "06-convivial", leaning: "07-leaning-convivial", mixed: "08-mixed", manipulative: "09-manipulative" };
+const badgeData = await page.evaluate(() => TOOLS.map(t => ({ slug: t.slug, n: total(t), verdict: band(total(t)) })));
+await fs.mkdir(path.join(ROOT, "badges"), { recursive: true });
+for (const b of badgeData) {
+  const key = b.n >= 25 ? "convivial" : b.n >= 18 ? "leaning" : b.n >= 10 ? "mixed" : "manipulative";
+  for (const mode of ["light", "dark"]) {
+    let svg = await fs.readFile(path.join(ROOT, `scripts/badges/${BADGE_TPL[key]}-${mode}.svg`), "utf8");
+    svg = svg.replace(/(id="score"[^>]*>)[^<]*/, `$1${b.n}/30`)
+      .replace(/(id="verdict" x=")[^"]*(")/, `$163.3$2`).replace(/(id="verdict"[^>]*>)[^<]*/, `$1${b.verdict}`)
+      .replace(/<title id="title">[^<]*/, `<title id="title">Tools for Conviviality: ${b.n}/30, ${b.verdict}`)
+      .replace(/font-family="Helvetica"/g, 'font-family="Helvetica, Arial, sans-serif"');
+    await fs.writeFile(path.join(ROOT, "badges", `${b.slug}-${mode}.svg`), svg);
+  }
+}
+console.log(`Wrote ${badgeData.length * 2} badges.`);
+
 const today = new Date().toISOString().slice(0, 10);
 const prio = r => (r === "/" ? "1.0" : r.startsWith("/tools/") ? "0.8" : r.startsWith("/category/") || r === "/directory/" || r === "/leaderboard/" ? "0.7" : r.startsWith("/benchmarks/") ? "0.6" : "0.5");
 await fs.writeFile(path.join(ROOT, "sitemap.xml"),
