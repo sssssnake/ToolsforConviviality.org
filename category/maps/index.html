@@ -197,10 +197,12 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
 .score-mini b { font-family: var(--display); font-weight: 500; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
-.verdict-mini.v1, .verdict-mini.v2, .verdict-mini.v3 { color: var(--accent); } .verdict-mini.v4 { color: #b3441f; }
+.verdict-mini.v1, .verdict-mini.v2, .verdict-mini.v3 { color: var(--accent); } .verdict-mini.v4 { color: var(--stamp); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
-.tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
+.tool-row.offender { background: transparent; }
+.tool-row.offender .rank-n { color: var(--muted); }
+.tool-row:not(.offender) + .tool-row.offender { border-top: 2px dashed var(--line); }
 .dict { margin: 28px 0 8px; max-width: 760px; border: 1.5px solid var(--fg); background: var(--panel); padding: 26px 28px 22px; }
 .dict-tag { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
 .dict .hw { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(40px, 7vw, 64px); line-height: 1.05; margin: 0; letter-spacing: -.01em; }
@@ -391,7 +393,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/google-maps/"><span class="rank-n" aria-label="Rank 4">4</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/google-maps/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Google Maps</h3><p class="one">The map most of us use, and one that also learns where we go.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
     <div class="score-mini"><b>17<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
-  <p class="empty">The highlighted row is the giant these tools are measured against. <a href="/benchmarks/google-maps/">Read the full Google Maps review</a>. It sits outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
+  <p class="empty">The row marked benchmark review is the giant these tools are measured against. <a href="/benchmarks/google-maps/">Read the full Google Maps review</a>. It sits outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
   <div class="prose"><h2>How to choose</h2><p>Ask three things. Does it work with no signal, because a good offline map is also a more reliable one on a hike or in a tunnel. Does it need an account, and does it say what it collects. And can you tell who pays for it. The honest trade-off with every alternative to Google Maps today is live traffic and business listings, where the giant still leads.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a Google Maps alternative that works offline?</h3><p>Yes. <a href="/tools/comaps/">CoMaps</a> and <a href="/tools/osmand/">OsmAnd</a> let you download a region once and then search and navigate with no connection, and <a href="/tools/comaps/">CoMaps</a> needs no account.</p></div><div class="qa"><h3>Do I give up traffic information?</h3><p>Mostly, yes. Offline maps can't match Google on live traffic or on opening hours for busy places, and some days that matters.</p></div><div class="qa"><h3>Where does the map data come from?</h3><p>From OpenStreetMap, a map edited by volunteers around the world. It has gaps in some places, and you can fix them yourself.</p></div></section></div></main>
 
 <footer>
@@ -1136,7 +1138,7 @@ function category(id) {
   ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
   <h2 class="list-h">The tools</h2>
   ${(() => { const b = BENCH.filter(x => x.cat === id), all = [...list, ...b].sort((x, y) => total(y) - total(x) || (x.bench ? 1 : 0) - (y.bench ? 1 : 0) || x.name.localeCompare(y.name)); let last = null, r = 0; const rk = new Map(all.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; })); return `<div class="tool-list">${all.map(t => row(t, rk.get(t.slug))).join("")}</div>`; })()}
-  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">The ${b.length > 1 ? "highlighted rows are the giants" : "highlighted row is the giant"} these tools are measured against. ${b.map(x => `<a href="#bench-${x.slug}">Read the full ${esc(x.name)} review</a>`).join(" or ")}. ${b.length > 1 ? "They sit" : "It sits"} outside the directory, and you can see more on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
+  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">${b.length > 1 ? "The rows marked benchmark review are the giants" : "The row marked benchmark review is the giant"} these tools are measured against. ${b.map(x => `<a href="#bench-${x.slug}">Read the full ${esc(x.name)} review</a>`).join(" or ")}. ${b.length > 1 ? "They sit" : "It sits"} outside the directory, and you can see more on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
 }
 
