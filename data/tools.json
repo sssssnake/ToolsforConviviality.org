@@ -2,7 +2,8 @@
   {
     "slug": "localsend",
     "name": "LocalSend",
-    "url": "https://localsend.org"
+    "url": "https://localsend.org",
+    "repo": "localsend/localsend"
   },
   {
     "slug": "netnewswire",
@@ -17,7 +18,8 @@
   {
     "slug": "syncthing",
     "name": "Syncthing",
-    "url": "https://syncthing.net"
+    "url": "https://syncthing.net",
+    "repo": "syncthing/syncthing"
   },
   {
     "slug": "obsidian",
@@ -27,12 +29,14 @@
   {
     "slug": "ente",
     "name": "Ente Photos",
-    "url": "https://ente.io"
+    "url": "https://ente.io",
+    "repo": "ente-io/ente"
   },
   {
     "slug": "cryptpad",
     "name": "CryptPad",
-    "url": "https://cryptpad.org"
+    "url": "https://cryptpad.org",
+    "repo": "cryptpad/cryptpad"
   },
   {
     "slug": "kagi",
@@ -45,7 +49,8 @@
   {
     "slug": "bitwarden",
     "name": "Bitwarden",
-    "url": "https://bitwarden.com"
+    "url": "https://bitwarden.com",
+    "repo": "bitwarden/clients"
   },
   {
     "slug": "photomosh",
@@ -73,22 +78,26 @@
   {
     "slug": "zotero",
     "name": "Zotero",
-    "url": "https://www.zotero.org"
+    "url": "https://www.zotero.org",
+    "repo": "zotero/zotero"
   },
   {
     "slug": "kiwix",
     "name": "Kiwix",
-    "url": "https://kiwix.org"
+    "url": "https://kiwix.org",
+    "repo": "kiwix/libkiwix"
   },
   {
     "slug": "keepassxc",
     "name": "KeePassXC",
-    "url": "https://keepassxc.org"
+    "url": "https://keepassxc.org",
+    "repo": "keepassxreboot/keepassxc"
   },
   {
     "slug": "joplin",
     "name": "Joplin",
-    "url": "https://joplinapp.org"
+    "url": "https://joplinapp.org",
+    "repo": "laurent22/joplin"
   },
   {
     "slug": "krita",
@@ -108,7 +117,8 @@
   {
     "slug": "penpot",
     "name": "Penpot",
-    "url": "https://penpot.app"
+    "url": "https://penpot.app",
+    "repo": "penpot/penpot"
   },
   {
     "slug": "blender",
@@ -146,7 +156,8 @@
   {
     "slug": "excalidraw",
     "name": "Excalidraw",
-    "url": "https://excalidraw.com"
+    "url": "https://excalidraw.com",
+    "repo": "excalidraw/excalidraw"
   },
   {
     "slug": "cryptomator",
@@ -156,7 +167,8 @@
   {
     "slug": "freshrss",
     "name": "FreshRSS",
-    "url": "https://freshrss.org"
+    "url": "https://freshrss.org",
+    "repo": "FreshRSS/FreshRSS"
   },
   {
     "slug": "calibre",
@@ -165,7 +177,8 @@
     "brand": {
       "icon": "https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png",
       "v": 1
-    }
+    },
+    "repo": "kovidgoyal/calibre"
   },
   {
     "slug": "standard-ebooks",
@@ -180,17 +193,20 @@
   {
     "slug": "koreader",
     "name": "KOReader",
-    "url": "https://koreader.rocks"
+    "url": "https://koreader.rocks",
+    "repo": "koreader/koreader"
   },
   {
     "slug": "audiobookshelf",
     "name": "Audiobookshelf",
-    "url": "https://www.audiobookshelf.org"
+    "url": "https://www.audiobookshelf.org",
+    "repo": "advplyr/audiobookshelf"
   },
   {
     "slug": "deltachat",
     "name": "Delta Chat",
-    "url": "https://delta.chat"
+    "url": "https://delta.chat",
+    "repo": "deltachat/deltachat-core-rust"
   },
   {
     "slug": "openclaw",
@@ -229,12 +245,14 @@
   {
     "slug": "signal",
     "name": "Signal",
-    "url": "https://signal.org"
+    "url": "https://signal.org",
+    "repo": "signalapp/Signal-Android"
   },
   {
     "slug": "element",
     "name": "Element",
-    "url": "https://element.io"
+    "url": "https://element.io",
+    "repo": "element-hq/element-web"
   },
   {
     "slug": "thunderbird",
@@ -254,12 +272,14 @@
   {
     "slug": "ollama",
     "name": "Ollama",
-    "url": "https://ollama.com"
+    "url": "https://ollama.com",
+    "repo": "ollama/ollama"
   },
   {
     "slug": "jan",
     "name": "Jan",
-    "url": "https://jan.ai"
+    "url": "https://jan.ai",
+    "repo": "janhq/jan"
   },
   {
     "slug": "goose",
@@ -354,12 +374,14 @@
   {
     "slug": "osmand",
     "name": "OsmAnd",
-    "url": "https://osmand.net"
+    "url": "https://osmand.net",
+    "repo": "osmandapp/OsmAnd"
   },
   {
     "slug": "immich",
     "name": "Immich",
-    "url": "https://immich.app"
+    "url": "https://immich.app",
+    "repo": "immich-app/immich"
   },
   {
     "slug": "proton-pass",
@@ -369,7 +391,8 @@
   {
     "slug": "mastodon",
     "name": "Mastodon",
-    "url": "https://joinmastodon.org"
+    "url": "https://joinmastodon.org",
+    "repo": "mastodon/mastodon"
   },
   {
     "slug": "pixelfed",
@@ -429,47 +452,56 @@
   {
     "slug": "nextcloud",
     "name": "Nextcloud",
-    "url": "https://nextcloud.com"
+    "url": "https://nextcloud.com",
+    "repo": "nextcloud/server"
   },
   {
     "slug": "pairdrop",
     "name": "PairDrop",
-    "url": "https://pairdrop.net"
+    "url": "https://pairdrop.net",
+    "repo": "schlagmichdoch/PairDrop"
   },
   {
     "slug": "searxng",
     "name": "SearXNG",
-    "url": "https://docs.searxng.org"
+    "url": "https://docs.searxng.org",
+    "repo": "searxng/searxng"
   },
   {
     "slug": "organic-maps",
     "name": "Organic Maps",
-    "url": "https://organicmaps.app"
+    "url": "https://organicmaps.app",
+    "repo": "organicmaps/organicmaps"
   },
   {
     "slug": "transportr",
     "name": "Transportr",
-    "url": "https://transportr.app"
+    "url": "https://transportr.app",
+    "repo": "grote/Transportr"
   },
   {
     "slug": "logseq",
     "name": "Logseq",
-    "url": "https://logseq.com"
+    "url": "https://logseq.com",
+    "repo": "logseq/logseq"
   },
   {
     "slug": "notesnook",
     "name": "Notesnook",
-    "url": "https://notesnook.com"
+    "url": "https://notesnook.com",
+    "repo": "streetwriters/notesnook"
   },
   {
     "slug": "photoprism",
     "name": "PhotoPrism",
-    "url": "https://photoprism.app"
+    "url": "https://photoprism.app",
+    "repo": "photoprism/photoprism"
   },
   {
     "slug": "piwigo",
     "name": "Piwigo",
-    "url": "https://piwigo.org"
+    "url": "https://piwigo.org",
+    "repo": "Piwigo/Piwigo"
   },
   {
     "slug": "digikam",
@@ -479,27 +511,32 @@
   {
     "slug": "gmic",
     "name": "G'MIC",
-    "url": "https://gmic.eu"
+    "url": "https://gmic.eu",
+    "repo": "GreycLab/gmic"
   },
   {
     "slug": "rawtherapee",
     "name": "RawTherapee",
-    "url": "https://rawtherapee.com"
+    "url": "https://rawtherapee.com",
+    "repo": "Beep6581/RawTherapee"
   },
   {
     "slug": "shotcut",
     "name": "Shotcut",
-    "url": "https://shotcut.org"
+    "url": "https://shotcut.org",
+    "repo": "mltframework/shotcut"
   },
   {
     "slug": "obs-studio",
     "name": "OBS Studio",
-    "url": "https://obsproject.com"
+    "url": "https://obsproject.com",
+    "repo": "obsproject/obs-studio"
   },
   {
     "slug": "keepassdx",
     "name": "KeePassDX",
-    "url": "https://www.keepassdx.com"
+    "url": "https://www.keepassdx.com",
+    "repo": "Kunzisoft/KeePassDX"
   },
   {
     "slug": "pass",
@@ -509,17 +546,20 @@
   {
     "slug": "linkwarden",
     "name": "Linkwarden",
-    "url": "https://linkwarden.app"
+    "url": "https://linkwarden.app",
+    "repo": "linkwarden/linkwarden"
   },
   {
     "slug": "wallabag",
     "name": "wallabag",
-    "url": "https://wallabag.org"
+    "url": "https://wallabag.org",
+    "repo": "wallabag/wallabag"
   },
   {
     "slug": "simplex",
     "name": "SimpleX Chat",
-    "url": "https://simplex.chat"
+    "url": "https://simplex.chat",
+    "repo": "simplex-chat/simplex-chat"
   },
   {
     "slug": "briar",
@@ -557,7 +597,8 @@
   {
     "slug": "miniflux",
     "name": "Miniflux",
-    "url": "https://miniflux.app"
+    "url": "https://miniflux.app",
+    "repo": "miniflux/v2"
   },
   {
     "slug": "feedbin",
@@ -567,7 +608,8 @@
   {
     "slug": "newsboat",
     "name": "Newsboat",
-    "url": "https://newsboat.org"
+    "url": "https://newsboat.org",
+    "repo": "newsboat/newsboat"
   },
   {
     "slug": "google-news",
@@ -595,12 +637,14 @@
   {
     "slug": "mullvad-browser",
     "name": "Mullvad Browser",
-    "url": "https://mullvad.net/en/browser"
+    "url": "https://mullvad.net/en/browser",
+    "repo": "mullvad/mullvad-browser"
   },
   {
     "slug": "ladybird",
     "name": "Ladybird",
-    "url": "https://ladybird.org"
+    "url": "https://ladybird.org",
+    "repo": "LadybirdBrowser/ladybird"
   },
   {
     "slug": "f-droid",
@@ -610,7 +654,8 @@
   {
     "slug": "obtainium",
     "name": "Obtainium",
-    "url": "https://obtainium.imranr.dev"
+    "url": "https://obtainium.imranr.dev",
+    "repo": "ImranR98/Obtainium"
   },
   {
     "slug": "aurora-store",
@@ -635,17 +680,20 @@
   {
     "slug": "jellyfin",
     "name": "Jellyfin",
-    "url": "https://jellyfin.org"
+    "url": "https://jellyfin.org",
+    "repo": "jellyfin/jellyfin"
   },
   {
     "slug": "navidrome",
     "name": "Navidrome",
-    "url": "https://www.navidrome.org"
+    "url": "https://www.navidrome.org",
+    "repo": "navidrome/navidrome"
   },
   {
     "slug": "mpv",
     "name": "mpv",
-    "url": "https://mpv.io"
+    "url": "https://mpv.io",
+    "repo": "mpv-player/mpv"
   },
   {
     "slug": "funkwhale",
@@ -655,32 +703,38 @@
   {
     "slug": "home-assistant",
     "name": "Home Assistant",
-    "url": "https://www.home-assistant.io"
+    "url": "https://www.home-assistant.io",
+    "repo": "home-assistant/core"
   },
   {
     "slug": "esphome",
     "name": "ESPHome",
-    "url": "https://esphome.io"
+    "url": "https://esphome.io",
+    "repo": "esphome/esphome"
   },
   {
     "slug": "zigbee2mqtt",
     "name": "Zigbee2MQTT",
-    "url": "https://www.zigbee2mqtt.io"
+    "url": "https://www.zigbee2mqtt.io",
+    "repo": "Koenkk/zigbee2mqtt"
   },
   {
     "slug": "pi-hole",
     "name": "Pi-hole",
-    "url": "https://pi-hole.net"
+    "url": "https://pi-hole.net",
+    "repo": "pi-hole/pi-hole"
   },
   {
     "slug": "openhab",
     "name": "openHAB",
-    "url": "https://www.openhab.org"
+    "url": "https://www.openhab.org",
+    "repo": "openhab/openhab-core"
   },
   {
     "slug": "libreoffice",
     "name": "LibreOffice",
-    "url": "https://www.libreoffice.org"
+    "url": "https://www.libreoffice.org",
+    "repo": "LibreOffice/core"
   },
   {
     "slug": "onlyoffice",
@@ -695,7 +749,8 @@
   {
     "slug": "etherpad",
     "name": "Etherpad",
-    "url": "https://etherpad.org"
+    "url": "https://etherpad.org",
+    "repo": "ether/etherpad-lite"
   },
   {
     "slug": "gnumeric",
@@ -705,17 +760,20 @@
   {
     "slug": "tiddlywiki",
     "name": "TiddlyWiki",
-    "url": "https://tiddlywiki.com"
+    "url": "https://tiddlywiki.com",
+    "repo": "TiddlyWiki/TiddlyWiki5"
   },
   {
     "slug": "anki",
     "name": "Anki",
-    "url": "https://apps.ankiweb.net"
+    "url": "https://apps.ankiweb.net",
+    "repo": "ankitects/anki"
   },
   {
     "slug": "datasette",
     "name": "Datasette",
-    "url": "https://datasette.io"
+    "url": "https://datasette.io",
+    "repo": "simonw/datasette"
   },
   {
     "slug": "chrome",

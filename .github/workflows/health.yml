@@ -1,0 +1,40 @@
+name: Link and health check
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Run the check
+        run: node scripts/health.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Open, update or close the issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create health-check --color 193bc5 --description "Weekly link and health check" 2>/dev/null || true
+          existing=$(gh issue list --label health-check --state open --json number --jq '.[0].number')
+          count=$(cat health-problems.txt)
+          if [ "$count" -gt 0 ]; then
+            if [ -n "$existing" ]; then
+              gh issue edit "$existing" --body-file health-report.md
+            else
+              gh issue create --title "Weekly health check: some tools need a look" --label health-check --body-file health-report.md
+            fi
+          elif [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "All clear on this week's check."
+          fi
+      - uses: actions/upload-artifact@v4
+        with: { name: health-report, path: health-report.md }
