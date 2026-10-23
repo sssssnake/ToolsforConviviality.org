@@ -199,6 +199,7 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
+.tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
 .jump { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; margin-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .jump .label { margin: 0; color: var(--muted); }
 .jump a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
@@ -333,14 +334,16 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   <div class="page-head" style="margin-top:14px"><h1>Alternatives to Gmail and Outlook</h1><p>Email you can take with you, from providers that are not selling your attention.</p></div>
   <div class="prose"><p>Email is the one messaging system nobody owns, and Gmail has quietly turned it into a Google account. <a href="/tools/thunderbird/">Thunderbird</a> is a free app that works with the mail you already have and keeps a copy on your computer, so you can leave a provider without losing your archive. {proton-mail} and <a href="/tools/tuta/">Tuta</a> are encrypted mail services from European companies that say they are paid for by subscribers, not advertising.</p><p>The first fixes how you read mail and the other two fix where it lives, and you can use both.</p></div>
   <h2 class="list-h">The tools</h2>
-  <div class="tool-list"><a class="tool-row" href="/tools/thunderbird/">
+  <div class="tool-list"><a class="tool-row ranked" href="/tools/thunderbird/"><span class="rank-n" aria-label="Rank 1">1</span>
     <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">T</span><div><h3>Thunderbird</h3><p class="one">A free email, calendar and contacts app that works with any mail provider.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Any provider</span></div></div></div>
-    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row" href="/tools/proton-mail/">
+    <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row ranked" href="/tools/proton-mail/"><span class="rank-n" aria-label="Rank 2">2</span>
     <div class="lead"><span class="logo sm" style="background:#0b7285;color:#fff" aria-hidden="true">P</span><div><h3>Proton Mail</h3><p class="one">Encrypted email from a Swiss company, with a free plan and paid upgrades.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Encrypted</span><span class="chip">Free tier</span><span class="chip">Subscription</span></div></div></div>
-    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row" href="/tools/tuta/">
+    <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/tuta/"><span class="rank-n" aria-label="Rank 3">3</span>
     <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">T</span><div><h3>Tuta</h3><p class="one">Encrypted email, calendar and contacts from a German company.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Encrypted</span><span class="chip">Free tier</span><span class="chip">No ads</span></div></div></div>
-    <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a></div>
-  <p class="empty">For comparison, we also reviewed <a href="/benchmarks/gmail/">Gmail</a> (16/30, Mixed), the giant these tools are measured against. They sit outside the directory, on the <a href="/benchmarks/">benchmarks page</a>.</p>
+    <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/gmail/"><span class="rank-n" aria-label="Rank 4">4</span>
+    <div class="lead"><span class="logo sm"><img src="/assets/tools/gmail/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Gmail</h3><p class="one">Excellent email that anchors your whole Google life.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
+    <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a></div>
+  <p class="empty">The highlighted row is the giant these tools are measured against. <a href="/benchmarks/gmail/">Read the full Gmail review</a>. It sits outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
   <div class="prose"><h2>How to choose</h2><p>Start with whether you can leave: a service that speaks standard mail protocols lets you move your archive, and one that does not locks you in a little. Then look at who pays for the service, and whether you want your own domain, so your address survives any change of provider.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is a private alternative to Gmail?</h3><p>{proton-mail} and <a href="/tools/tuta/">Tuta</a> are encrypted email services with free plans, and both say they do not use ads.</p></div><div class="qa"><h3>Can I leave Gmail and keep my emails?</h3><p>Yes. Use an app like <a href="/tools/thunderbird/">Thunderbird</a> to download your mail over IMAP, then move it to a new provider. A domain of your own makes the next move easy.</p></div><div class="qa"><h3>Is there a free email app that isn't Outlook?</h3><p><a href="/tools/thunderbird/">Thunderbird</a> is free, open source and handles mail, calendar and contacts for any provider.</p></div></section></div></main>
 
 <footer>
@@ -848,8 +851,8 @@ function chips(t) {
 }
 function row(t, rank) {
   const n = total(t);
-  return `<a class="tool-row${rank ? " ranked" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
-    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div></div>
+  return `<a class="tool-row${rank ? " ranked" : ""}${t.bench ? " offender" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
+    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${t.bench ? '<div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div>' : chips(t)}</div></div>
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
 }
 
@@ -1008,8 +1011,8 @@ function category(id) {
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
   <h2 class="list-h">The tools</h2>
-  <div class="tool-list">${list.map(t => row(t)).join("")}</div>
-  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">For comparison, we also reviewed ${b.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30, ${band(total(x))})`).join(" and ")}, the giant${b.length > 1 ? "s" : ""} these tools are measured against. They sit outside the directory, on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
+  ${(() => { const b = BENCH.filter(x => x.cat === id), all = [...list, ...b].sort((x, y) => total(y) - total(x) || (x.bench ? 1 : 0) - (y.bench ? 1 : 0) || x.name.localeCompare(y.name)); let last = null, r = 0; const rk = new Map(all.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; })); return `<div class="tool-list">${all.map(t => row(t, rk.get(t.slug))).join("")}</div>`; })()}
+  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">The ${b.length > 1 ? "highlighted rows are the giants" : "highlighted row is the giant"} these tools are measured against. ${b.map(x => `<a href="#bench-${x.slug}">Read the full ${esc(x.name)} review</a>`).join(" or ")}. ${b.length > 1 ? "They sit" : "It sits"} outside the directory, and you can see more on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
 }
 

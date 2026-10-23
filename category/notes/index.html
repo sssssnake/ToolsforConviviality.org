@@ -199,6 +199,7 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
+.tool-row.offender { background: var(--panel-2); box-shadow: inset 3px 0 0 var(--stamp); }
 .jump { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; margin-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .jump .label { margin: 0; color: var(--muted); }
 .jump a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
@@ -333,14 +334,16 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   <div class="page-head" style="margin-top:14px"><h1>Alternatives to Microsoft Word, OneNote and Google Docs</h1><p>Notes and documents you own, in files you can still open in ten years.</p></div>
   <div class="prose"><p>A good test of a notes or writing tool is what happens if the company stops. <a href="/tools/obsidian/">Obsidian</a> and <a href="/tools/joplin/">Joplin</a> keep your notes as ordinary files on your own device, so they keep working and keep opening. <a href="/tools/cryptpad/">CryptPad</a> takes the other route: a shared office suite in the browser where everything is encrypted, so even the people running the server can't read it.</p><p>Between them they cover private notes, a personal knowledge base and writing together with other people.</p></div>
   <h2 class="list-h">The tools</h2>
-  <div class="tool-list"><a class="tool-row" href="/tools/joplin/">
+  <div class="tool-list"><a class="tool-row ranked" href="/tools/joplin/"><span class="rank-n" aria-label="Rank 1">1</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/joplin/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Joplin</h3><p class="one">Open-source notes with sync through whichever service you choose.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Self-hostable</span></div></div></div>
-    <div class="score-mini"><b>26<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row" href="/tools/obsidian/">
+    <div class="score-mini"><b>26<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row ranked" href="/tools/obsidian/"><span class="rank-n" aria-label="Rank 2">2</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/obsidian/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Obsidian</h3><p class="one">A notes app that works on a plain folder of Markdown files.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Free</span><span class="chip">Works offline</span><span class="chip">Plain files</span></div></div></div>
-    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row" href="/tools/cryptpad/">
+    <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/cryptpad/"><span class="rank-n" aria-label="Rank 3">3</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/cryptpad/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>CryptPad</h3><p class="one">An encrypted office suite for writing, spreadsheets and slides together.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Encrypted</span><span class="chip">Self-hostable</span></div></div></div>
-    <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a></div>
-  <p class="empty">For comparison, we also reviewed <a href="/benchmarks/microsoft-word/">Microsoft Word</a> (15/30, Mixed), the giant these tools are measured against. They sit outside the directory, on the <a href="/benchmarks/">benchmarks page</a>.</p>
+    <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row ranked offender" href="/benchmarks/microsoft-word/"><span class="rank-n" aria-label="Rank 4">4</span>
+    <div class="lead"><span class="logo sm" style="background:#d9480f;color:#fff" aria-hidden="true">M</span><div><h3>Microsoft Word</h3><p class="one">The word processor that set the standard, and still sets the terms.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini">Mixed</span></div></a></div>
+  <p class="empty">The highlighted row is the giant these tools are measured against. <a href="/benchmarks/microsoft-word/">Read the full Microsoft Word review</a>. It sits outside the directory, and you can see more on the <a href="/benchmarks/">benchmarks page</a>.</p>
   <div class="prose"><h2>How to choose</h2><p>Look at where your words live and whether you can walk away with them. Plain files such as Markdown are the safest, because any text editor can open them. Then think about collaboration: if several people must edit the same document, an encrypted shared editor suits better than files on one machine. Sync is the last question, since you can use free methods or pay the maker for an easy one.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a free alternative to Google Docs that is private?</h3><p><a href="/tools/cryptpad/">CryptPad</a> offers documents, spreadsheets and slides in the browser, encrypted so the server can't read them. The main instance has a free tier and sells extra storage.</p></div><div class="qa"><h3>What is an alternative to OneNote that keeps notes as files?</h3><p><a href="/tools/obsidian/">Obsidian</a> and <a href="/tools/joplin/">Joplin</a> both store notes in open formats on your own device. Joplin is fully open source, while Obsidian is free to use but closed source.</p></div><div class="qa"><h3>Do I have to pay to sync notes between devices?</h3><p>No. Joplin syncs through Nextcloud, Dropbox or any WebDAV server, and Obsidian sells a sync service but also works with free alternatives.</p></div></section></div></main>
 
 <footer>
@@ -848,8 +851,8 @@ function chips(t) {
 }
 function row(t, rank) {
   const n = total(t);
-  return `<a class="tool-row${rank ? " ranked" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
-    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div></div>
+  return `<a class="tool-row${rank ? " ranked" : ""}${t.bench ? " offender" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
+    <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${t.bench ? '<div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div>' : chips(t)}</div></div>
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
 }
 
@@ -1008,8 +1011,8 @@ function category(id) {
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
   <h2 class="list-h">The tools</h2>
-  <div class="tool-list">${list.map(t => row(t)).join("")}</div>
-  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">For comparison, we also reviewed ${b.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30, ${band(total(x))})`).join(" and ")}, the giant${b.length > 1 ? "s" : ""} these tools are measured against. They sit outside the directory, on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
+  ${(() => { const b = BENCH.filter(x => x.cat === id), all = [...list, ...b].sort((x, y) => total(y) - total(x) || (x.bench ? 1 : 0) - (y.bench ? 1 : 0) || x.name.localeCompare(y.name)); let last = null, r = 0; const rk = new Map(all.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; })); return `<div class="tool-list">${all.map(t => row(t, rk.get(t.slug))).join("")}</div>`; })()}
+  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">The ${b.length > 1 ? "highlighted rows are the giants" : "highlighted row is the giant"} these tools are measured against. ${b.map(x => `<a href="#bench-${x.slug}">Read the full ${esc(x.name)} review</a>`).join(" or ")}. ${b.length > 1 ? "They sit" : "It sits"} outside the directory, and you can see more on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
 }
 
