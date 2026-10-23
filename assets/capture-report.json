@@ -1,62 +1,60 @@
 {
-  "startedAt": "2026-10-23T10:01:28.996Z",
-  "captured": [
+  "startedAt": "2026-10-23T10:07:05.671Z",
+  "captured": [],
+  "skipped": [
     {
       "slug": "localsend",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "netnewswire",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "comaps",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "syncthing",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "obsidian",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "ente",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "cryptpad",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "kagi",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "bitwarden",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "photomosh",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "ferdium",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
+      "reason": "recent"
     },
     {
       "slug": "arena",
-      "notes": []
+      "reason": "recent"
     },
     {
       "slug": "airtime",
-      "notes": []
+      "reason": "recent"
     }
   ],
-  "skipped": [],
   "failed": [],
-  "finishedAt": "2026-10-23T10:03:47.276Z"
+  "finishedAt": "2026-10-23T10:07:06.564Z"
 }
