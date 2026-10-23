@@ -1,159 +1,6 @@
 {
-  "startedAt": "2026-10-23T21:41:16.260Z",
-  "captured": [
-    {
-      "slug": "firefox",
-      "notes": []
-    },
-    {
-      "slug": "tor-browser",
-      "notes": []
-    },
-    {
-      "slug": "librewolf",
-      "notes": []
-    },
-    {
-      "slug": "mullvad-browser",
-      "notes": []
-    },
-    {
-      "slug": "ladybird",
-      "notes": []
-    },
-    {
-      "slug": "f-droid",
-      "notes": []
-    },
-    {
-      "slug": "obtainium",
-      "notes": []
-    },
-    {
-      "slug": "aurora-store",
-      "notes": []
-    },
-    {
-      "slug": "izzyondroid",
-      "notes": []
-    },
-    {
-      "slug": "flathub",
-      "notes": []
-    },
-    {
-      "slug": "jellyfin",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "navidrome",
-      "notes": []
-    },
-    {
-      "slug": "mpv",
-      "notes": []
-    },
-    {
-      "slug": "funkwhale",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "home-assistant",
-      "notes": []
-    },
-    {
-      "slug": "esphome",
-      "notes": []
-    },
-    {
-      "slug": "zigbee2mqtt",
-      "notes": []
-    },
-    {
-      "slug": "pi-hole",
-      "notes": []
-    },
-    {
-      "slug": "openhab",
-      "notes": []
-    },
-    {
-      "slug": "libreoffice",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "onlyoffice",
-      "notes": []
-    },
-    {
-      "slug": "collabora-online",
-      "notes": []
-    },
-    {
-      "slug": "etherpad",
-      "notes": [
-        "dismissed banner with button:has-text(\"Decline\")",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "gnumeric",
-      "notes": []
-    },
-    {
-      "slug": "tiddlywiki",
-      "notes": []
-    },
-    {
-      "slug": "anki",
-      "notes": []
-    },
-    {
-      "slug": "datasette",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "chrome",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "google-play",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "spotify",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "amazon-alexa",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "microsoft-365",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    }
-  ],
+  "startedAt": "2026-10-23T22:10:21.652Z",
+  "captured": [],
   "skipped": [
     {
       "slug": "localsend",
@@ -554,6 +401,134 @@
     {
       "slug": "google-news",
       "reason": "recent"
+    },
+    {
+      "slug": "firefox",
+      "reason": "recent"
+    },
+    {
+      "slug": "tor-browser",
+      "reason": "recent"
+    },
+    {
+      "slug": "librewolf",
+      "reason": "recent"
+    },
+    {
+      "slug": "mullvad-browser",
+      "reason": "recent"
+    },
+    {
+      "slug": "ladybird",
+      "reason": "recent"
+    },
+    {
+      "slug": "f-droid",
+      "reason": "recent"
+    },
+    {
+      "slug": "obtainium",
+      "reason": "recent"
+    },
+    {
+      "slug": "aurora-store",
+      "reason": "recent"
+    },
+    {
+      "slug": "izzyondroid",
+      "reason": "recent"
+    },
+    {
+      "slug": "flathub",
+      "reason": "recent"
+    },
+    {
+      "slug": "jellyfin",
+      "reason": "recent"
+    },
+    {
+      "slug": "navidrome",
+      "reason": "recent"
+    },
+    {
+      "slug": "mpv",
+      "reason": "recent"
+    },
+    {
+      "slug": "funkwhale",
+      "reason": "recent"
+    },
+    {
+      "slug": "home-assistant",
+      "reason": "recent"
+    },
+    {
+      "slug": "esphome",
+      "reason": "recent"
+    },
+    {
+      "slug": "zigbee2mqtt",
+      "reason": "recent"
+    },
+    {
+      "slug": "pi-hole",
+      "reason": "recent"
+    },
+    {
+      "slug": "openhab",
+      "reason": "recent"
+    },
+    {
+      "slug": "libreoffice",
+      "reason": "recent"
+    },
+    {
+      "slug": "onlyoffice",
+      "reason": "recent"
+    },
+    {
+      "slug": "collabora-online",
+      "reason": "recent"
+    },
+    {
+      "slug": "etherpad",
+      "reason": "recent"
+    },
+    {
+      "slug": "gnumeric",
+      "reason": "recent"
+    },
+    {
+      "slug": "tiddlywiki",
+      "reason": "recent"
+    },
+    {
+      "slug": "anki",
+      "reason": "recent"
+    },
+    {
+      "slug": "datasette",
+      "reason": "recent"
+    },
+    {
+      "slug": "chrome",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-play",
+      "reason": "recent"
+    },
+    {
+      "slug": "spotify",
+      "reason": "recent"
+    },
+    {
+      "slug": "amazon-alexa",
+      "reason": "recent"
+    },
+    {
+      "slug": "microsoft-365",
+      "reason": "recent"
     }
   ],
   "failed": [
@@ -562,5 +537,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-23T21:45:52.855Z"
+  "finishedAt": "2026-10-23T22:10:25.271Z"
 }
