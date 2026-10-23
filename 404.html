@@ -129,6 +129,10 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row.ranked { grid-template-columns: 56px minmax(0, 1fr) auto; }
 .rank-n { font-family: var(--display); font-size: 34px; font-weight: 500; color: var(--accent); text-align: center; line-height: 1; }
 .bench-note { border: 1px solid var(--line); background: var(--panel-2); padding: 12px 16px; margin: 14px 0 6px; font-size: 15px; }
+.prompt-box { border: 1px solid var(--line); margin: 22px 0; background: var(--panel); }
+.prompt-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; background: var(--band); color: var(--band-fg); font-family: var(--mono); font-size: 12px; }
+.prompt-bar .btn { background: var(--panel); color: var(--fg); border-color: var(--band-fg); }
+.prompt-box pre { margin: 0; padding: 16px; max-height: 520px; overflow: auto; white-space: pre-wrap; word-break: break-word; font-family: var(--mono); font-size: 13px; line-height: 1.55; }
 .related { margin-top: 40px; }
 .related h2 { font-size: 20px; margin-bottom: 8px; }
 .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -281,6 +285,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="foot-links">
       <a href="/how-we-score/">How tools are selected</a>
       <a href="/benchmarks/">Benchmarks</a>
+      <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
       <a href="/legal-notice/">Legal notice (Impressum)</a>
       <a href="/privacy/">Privacy policy</a>
@@ -739,6 +744,74 @@ function leaderboard() {
   <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
 
+const AGENT_PROMPT = [
+"You are improving this software project so it is more convivial, in the sense Ivan Illich gave the word in Tools for Conviviality (1973): people can use it freely, bend it to their own purposes, and leave it with their stuff. The directory at https://toolsforconviviality.com scores tools from 0 to 5 on six questions. Your job is to audit this project against those questions, make the changes that are in scope, report honestly, and prepare a submission to the directory.",
+"",
+"RULES",
+"- Work in this repository. Only claim what you can verify in the code, and cite the file for each claim.",
+"- Do not add features nobody needs. Prefer deleting things to adding things.",
+"- Ask the human before changing anything about licensing, pricing, data migration or the privacy policy.",
+"- Make each change a small separate commit, and say which of the six questions it moves.",
+"- Be conservative with scores. A 5 means exemplary. If you cannot find evidence, score it lower and say so.",
+"",
+"STEP 1. UNDERSTAND",
+"Read the README, package files, routes, data model, network calls and dependencies. Write five lines: what the tool does, who it is for, where people's data lives, what it costs, and who runs it.",
+"",
+"STEP 2. AUDIT: score each question 0 to 5 with evidence",
+"1. Footprint. Does it run light, work offline and keep going on an old device? Check bundle size, number of dependencies, background processes, whether a network is needed to function, telemetry, and any AI calls that could be optional or local.",
+"2. Lock-in. Can a person leave with their stuff in an open format? Check export and import in standard formats (JSON, CSV, Markdown), whether an account is really required, whether data sits in plain files or a documented schema, and whether an API is documented.",
+"3. Self-direction. Can a normal person learn it by using it and point it at their own purposes? Check first-run clarity, sensible defaults, undo, settings, accessibility, and dark patterns such as streaks, nag modals, fake urgency and engagement bait.",
+"4. Power. Who holds the controls? Check for an OSI-approved licence and a source link, how decisions get made, a way to reach the maker, pricing that does not shut people out, no selling or sharing of user data, telemetry that is off or opt-in, and a self-hosting path.",
+"5. Longevity. Does it keep working if the maker disappears or the person stops paying? Check offline use, standard formats, pinned and minimal dependencies, a documented self-hosting path if a server is needed, a licence that allows forks, support for older devices and browsers, and whether data is held hostage after cancelling.",
+"6. Delivery. Does it do the job without ads, engagement bait or promises it cannot keep? Check that the core task works end to end, that the README and site copy are honest, that limitations are listed, and that errors are helpful.",
+"",
+"STEP 3. IMPROVE",
+"Do the cheap, safe changes first: add export and import in an open format; remove analytics or make them opt-in; remove dark patterns and upsell nags; add a LICENSE and a source link if the human owns the rights and agrees; explain in plain English what happens to people's data; store data locally where no server is needed; drop dependencies you do not need; add a Limitations section to the README.",
+"Then list the larger changes that need the human's decision (licence, pricing, removing features, migrating data) and ask. Do not do them without an answer.",
+"",
+"STEP 4. RE-SCORE",
+"Score the six questions again with evidence. Give the total out of 30. Where nothing changed, say so. Note anything you could not verify.",
+"",
+"STEP 5. SUBMIT OR RE-SUBMIT",
+"Prepare a suggestion with these fields: name, url, what (one or two sentences), size (S, M or L: who makes it), scope (gadget, tool or system), cat (category: notes, files, maps, reading, passwords, images, talk, agents, collect or books), price, source (link to public code, if any), img (a logo or screenshot link we may use, if any), data (what happens to people's data), rel (your connection: I made it, I help make it, or I just use it), self (your honest scores and evidence from Step 4) and update (yes, with a list of what changed, if the tool is already listed).",
+"Build a prefilled link by URL-encoding those values into https://toolsforconviviality.com/suggest/?name=...&url=...&what=...&size=...&scope=...&cat=...&price=...&source=...&img=...&data=...&rel=...&self=...&update=...",
+"Give the link to the human. They open it, check the text, and send it to hello@toolsforconviviality.com. If you can send email for the human, draft the message and ask for approval before sending. Never send anything without it. There is no payment and no guarantee: the directory scores every tool independently, and your self-assessment is only a starting point.",
+"",
+"STEP 6. REPORT",
+"Tell the human what you changed, the scores before and after with evidence, which decisions are waiting on them, and the prefilled link."
+].join("\n");
+
+function forAgents() {
+  const dec = [
+    "Work offline, keep dependencies few, drop telemetry, make AI features optional.",
+    "Add export and import in open formats, avoid required accounts, document the data.",
+    "Clear first run, sensible defaults, undo, and no streaks, nags or fake urgency.",
+    "Publish the source under an open licence, keep pricing fair, collect no data you don't need.",
+    "Use standard formats and a self-hosting path, so it survives its maker.",
+    "Do the one job well, say what it can't do, and show no ads."
+  ];
+  return `<p class="crumbs"><a href="#home">Home</a> / For AI agents</p>
+  <div class="page-head" style="margin-top:14px"><h1>For AI agents: build a more convivial tool</h1><p>A prompt you can paste into a coding agent to audit a project against our six questions, improve it, and submit it to the directory.</p></div>
+  <div class="prose">
+    <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, make the safe improvements and flag the bigger decisions for you, then prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
+    <p>It does not buy a good score. Every submission is reviewed and scored independently, we take no payment, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
+    <h2>How to use it</h2>
+    <p>Open your project in a coding agent such as Claude Code, Codex or Cursor, paste the prompt, and answer the questions it asks you along the way. Expect it to propose changes in small commits and to stop before anything about licensing, pricing or your data.</p>
+  </div>
+  <div class="prompt-box">
+    <div class="prompt-bar"><span>Prompt for your coding agent</span><button class="btn" type="button" id="copy-prompt" style="width:auto;padding:6px 12px;font-size:13px">Copy prompt</button></div>
+    <pre id="agent-prompt" tabindex="0">${esc(AGENT_PROMPT)}</pre>
+  </div>
+  <div class="prose"><h2>What the prompt changes</h2><p>Each of our six questions turns into a set of build decisions.</p></div>
+  <div class="criteria">${CRITERIA.map((k, i) => `<div class="crit"><span class="from">${k.name}</span><h3>${esc(k.q)}</h3><p>${esc(dec[i])}</p></div>`).join("")}</div>
+  <div class="prose">
+    <h2>Submitting and re-submitting</h2>
+    <p>The last step of the prompt builds a link to the <a href="#submit">suggestion form</a> with everything filled in, including the agent's own scores and evidence. You open it, check it, and send it by email. The form sends nothing by itself, and nobody should submit on your behalf without you seeing it first. To update a tool that is already listed, say so in the form and list what changed, and we will look at it again.</p>
+    <p>You can also read the <a href="#method">full rubric</a> and the <a href="#what">idea behind it</a>, or look at the <a href="#leaderboard">leaderboard</a> to see where tools stand today.</p>
+    <p class="note">Agents: this page is also summarised at <a href="/llms.txt">/llms.txt</a>.</p>
+  </div>`;
+}
+
 function benchmarks() {
   return `<p class="crumbs"><a href="#home">Home</a> / Benchmarks</p>
   <div class="page-head" style="margin-top:14px"><h1>Benchmarks: how the giants score</h1><p>A few extra large tools, scored with the same six questions, so you can see what everything else is measured against.</p></div>
@@ -822,6 +895,8 @@ function submit() {
     <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
     <div class="field"><label for="f-img">A logo or screenshot we may use, if you have one</label><input id="f-img" type="url" placeholder="https://… link to an image or press kit"></div>
     <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
+    <div class="field"><label for="f-upd">Is this a new tool, or an update to one already listed?</label><select id="f-upd"><option value="new">New tool</option><option value="update">Update to a listed tool</option></select></div>
+    <div class="field"><label for="f-self">Your own answers to the six questions, with scores out of 5 and evidence (optional)</label><textarea id="f-self" placeholder="Footprint 4: works offline, 3 dependencies. Lock-in 5: exports JSON and Markdown…"></textarea></div>
     <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
     <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
   </form>
@@ -860,7 +935,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", agents: "/for-agents/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -880,6 +955,7 @@ function seo(id) {
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
   if (id === "leaderboard") { const ranked = TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)); return out("Leaderboard of the most convivial software", `The ${TOOLS.length} tools in the directory, ranked by how convivial they are, scored out of 30 on six questions from Ivan Illich.`, { ld: [crumbs([["Home", "/"], ["Leaderboard", "/leaderboard/"]]), listLd(ranked)] }); }
+  if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
   if (id.startsWith("bench-")) { const t = BENCH.find(x => x.slug === id.slice(6)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const n = total(t); return out(`${t.name} benchmark review: ${band(n)} (${n}/30)`, `${t.one} How ${t.name} scores on the six questions we use for every tool: ${n}/30, ${band(n)}.`, { type: "article",
@@ -927,6 +1003,7 @@ function render() {
   else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
   else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
   else if (h.startsWith("bench-")) { html = tool(h.slice(6), true); nav = "benchmarks"; }
+  else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
   else if (h === "leaderboard") { html = leaderboard(); nav = "leaderboard"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
@@ -949,10 +1026,22 @@ function bind() {
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
   document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(b.dataset.f === "lbcat" ? leaderboard() : directory()); bind(); });
   const form = document.getElementById("suggest");
+  if (form && !form.dataset.filled) {   // links built by an AI agent can prefill the form: /suggest/?name=...&url=...
+    form.dataset.filled = "1";
+    const q = new URLSearchParams(location.search);
+    const set = (id, key, pick) => { const el = document.getElementById(id), val = q.get(key); if (!el || !val) return; if (el.tagName === "SELECT") { const o = [...el.options].find(o => pick(o, val.toLowerCase())); if (o) el.value = o.value; } else el.value = val.slice(0, 2000); };
+    set("f-name", "name"); set("f-url", "url"); set("f-what", "what"); set("f-price", "price"); set("f-source", "source"); set("f-img", "img"); set("f-data", "data"); set("f-self", "self");
+    set("f-size", "size", (o, v) => o.value.toLowerCase() === v); set("f-scope", "scope", (o, v) => o.value.toLowerCase() === v);
+    set("f-cat", "cat", (o, v) => { const c = CATS.find(x => x.id === v.split(",")[0].trim() || x.name.toLowerCase() === v); return c ? o.text === c.name : o.text.toLowerCase() === v; });
+    set("f-rel", "rel", (o, v) => o.text.toLowerCase() === v);
+    set("f-upd", "update", (o, v) => o.value === (v === "no" || v === "new" ? "new" : "update"));
+  }
+  const cp = document.getElementById("copy-prompt");
+  if (cp) cp.onclick = async () => { try { await navigator.clipboard.writeText(AGENT_PROMPT); cp.textContent = "Copied"; } catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("agent-prompt")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); cp.textContent = "Selected, press copy"; } };
   if (form) form.onsubmit = e => {
     e.preventDefault();
     const v = id => document.getElementById(id).value.trim() || "(not given)";
-    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nNew or update: ${v("f-upd")}\nSelf-assessment: ${v("f-self")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
     document.getElementById("out-text").textContent = text;
     const out = document.getElementById("out"); out.hidden = false;
     document.getElementById("copy").onclick = async () => {

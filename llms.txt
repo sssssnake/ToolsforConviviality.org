@@ -1,0 +1,15 @@
+# Tools for Conviviality
+
+> An independent directory of small, convivial software, scored from 0 to 30 on six questions drawn from Ivan Illich's Tools for Conviviality: footprint, lock-in, self-direction, power, longevity and delivery.
+
+## For AI agents
+
+- [Build a more convivial tool: a prompt for coding agents](https://toolsforconviviality.com/for-agents/): audits a project against the six questions, improves it, and prepares a submission.
+- [Suggest or re-submit a tool](https://toolsforconviviality.com/suggest/): the form accepts prefilled values as URL parameters (name, url, what, size, scope, cat, price, source, img, data, rel, self, update).
+
+## Key pages
+
+- [How we score](https://toolsforconviviality.com/how-we-score/)
+- [Leaderboard](https://toolsforconviviality.com/leaderboard/)
+- [Directory](https://toolsforconviviality.com/directory/)
+- [Benchmarks](https://toolsforconviviality.com/benchmarks/)

@@ -33,7 +33,7 @@ await page.waitForFunction(() => window.__ready === true);
 const { tools, cats, bench } = await page.evaluate(() => ({ tools: TOOLS.map(t => t.slug), cats: CATS.map(c => c.id), bench: BENCH.map(t => t.slug) }));
 
 const routes = [
-  "/", "/directory/", "/leaderboard/", "/benchmarks/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/legal-notice/", "/privacy/",
+  "/", "/directory/", "/leaderboard/", "/benchmarks/", "/for-agents/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/legal-notice/", "/privacy/",
   ...cats.map(c => `/category/${c}/`), ...tools.map(t => `/tools/${t}/`), ...bench.map(t => `/benchmarks/${t}/`)
 ];
 const indexable = [];
