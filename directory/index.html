@@ -199,6 +199,10 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
+.jump { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; margin-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.jump .label { margin: 0; color: var(--muted); }
+.jump a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
+.jump a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .filters { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; align-items: center; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .filter-group .label { margin-right: 4px; }
@@ -327,13 +331,13 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / Directory</p>
   <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, listed A to Z with its score out of 30. Switch the order to see the most convivial first, where tools with the same score share a rank.</p></div>
+  <nav class="jump" aria-label="Categories"><span class="label">Jump to</span><a href="/category/agents/">AI agents</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/reading/">Search &amp; reading</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/images/">Images &amp; video</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/talk/">Chat</a><a href="/category/email/">Email</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/collect/">Collecting &amp; research</a></nav>
   <div class="filters">
     <div class="filter-group" role="group" aria-label="Order"><span class="label">Order</span><button class="fbtn" type="button" data-f="sort" data-v="az" aria-pressed="true">A to Z</button><button class="fbtn" type="button" data-f="sort" data-v="score" aria-pressed="false">Most convivial first</button></div>
     <div class="filter-group" role="group" aria-label="Maker"><span class="label">Maker</span><button class="fbtn" type="button" data-f="size" data-v="all" aria-pressed="true">All</button><button class="fbtn" type="button" data-f="size" data-v="S" aria-pressed="false">S</button><button class="fbtn" type="button" data-f="size" data-v="M" aria-pressed="false">M</button><button class="fbtn" type="button" data-f="size" data-v="L" aria-pressed="false">L</button><button class="fbtn" type="button" data-f="size" data-v="XL" aria-pressed="false">XL</button></div>
     <div class="filter-group" role="group" aria-label="Scope"><span class="label">Scope</span><button class="fbtn" type="button" data-f="scope" data-v="all" aria-pressed="true">All</button><button class="fbtn" type="button" data-f="scope" data-v="gadget" aria-pressed="false">Gadget</button><button class="fbtn" type="button" data-f="scope" data-v="tool" aria-pressed="false">Tool</button><button class="fbtn" type="button" data-f="scope" data-v="system" aria-pressed="false">System</button></div>
     <div class="filter-group" role="group" aria-label="Verdict"><span class="label">Verdict</span><button class="fbtn" type="button" data-f="verdict" data-v="all" aria-pressed="true">Any</button><button class="fbtn" type="button" data-f="verdict" data-v="leaning" aria-pressed="false">Leaning convivial or better</button><button class="fbtn" type="button" data-f="verdict" data-v="convivial" aria-pressed="false">Convivial</button></div>
   </div>
-  <nav class="filters" aria-label="Categories"><div class="filter-group"><span class="label">Jump to</span><a class="fbtn" href="/category/agents/">AI agents</a><a class="fbtn" href="/category/notes/">Writing &amp; notes</a><a class="fbtn" href="/category/files/">Files &amp; sync</a><a class="fbtn" href="/category/maps/">Maps &amp; places</a><a class="fbtn" href="/category/reading/">Search &amp; reading</a><a class="fbtn" href="/category/passwords/">Passwords &amp; security</a><a class="fbtn" href="/category/images/">Images &amp; video</a><a class="fbtn" href="/category/design/">Design &amp; creative tools</a><a class="fbtn" href="/category/talk/">Chat</a><a class="fbtn" href="/category/email/">Email</a><a class="fbtn" href="/category/books/">Books &amp; libraries</a><a class="fbtn" href="/category/collect/">Collecting &amp; research</a></div></nav>
   <div class="tool-list"><a class="tool-row" href="/tools/affinity/">
     <div class="lead"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">A</span><div><h3>Affinity</h3><p class="one">A professional design, photo and layout app that is free for individuals and owned by Canva.</p><div class="chips"><span class="chip">L · Tool</span><span class="chip">Free</span><span class="chip">Closed source</span><span class="chip">Account needed</span></div></div></div>
     <div class="score-mini"><b>18<span>/30</span></b><span class="verdict-mini">Leaning convivial</span></div></a><a class="tool-row" href="/tools/arena/">
@@ -1108,13 +1112,13 @@ function directory(preset) {
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
   <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, listed A to Z with its score out of 30. Switch the order to see the most convivial first, where tools with the same score share a rank.</p></div>
+  <nav class="jump" aria-label="Categories"><span class="label">Jump to</span>${CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</nav>
   <div class="filters">
     ${grp("sort", "Order", [["az", "A to Z"], ["score", "Most convivial first"]])}
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
-  <nav class="filters" aria-label="Categories"><div class="filter-group"><span class="label">Jump to</span>${CATS.map(c => `<a class="fbtn" href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</div></nav>
   <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "score" ? ranks.get(t.slug) : 0)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
   <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }

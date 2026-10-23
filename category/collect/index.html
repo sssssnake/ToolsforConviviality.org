@@ -199,6 +199,10 @@ main .wrap { padding-block: 48px 64px; }
 .score-mini b span { font-size: 14px; color: var(--muted); }
 .verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
 
+.jump { display: flex; flex-wrap: wrap; gap: 8px 22px; align-items: baseline; margin-top: 26px; padding-bottom: 14px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.jump .label { margin: 0; color: var(--muted); }
+.jump a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
+.jump a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .filters { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; align-items: center; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .filter-group .label { margin-right: 4px; }
@@ -1020,13 +1024,13 @@ function directory(preset) {
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
   <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, listed A to Z with its score out of 30. Switch the order to see the most convivial first, where tools with the same score share a rank.</p></div>
+  <nav class="jump" aria-label="Categories"><span class="label">Jump to</span>${CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</nav>
   <div class="filters">
     ${grp("sort", "Order", [["az", "A to Z"], ["score", "Most convivial first"]])}
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
-  <nav class="filters" aria-label="Categories"><div class="filter-group"><span class="label">Jump to</span>${CATS.map(c => `<a class="fbtn" href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</div></nav>
   <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "score" ? ranks.get(t.slug) : 0)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
   <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
