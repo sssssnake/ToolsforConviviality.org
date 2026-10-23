@@ -369,6 +369,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 .theme-btn { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
 .theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
+.what-core{font-size:clamp(22px,3vw,30px);line-height:1.35;max-width:30em;margin:28px 0 8px;color:var(--ink)}
 </style>
 </head>
 <body>
@@ -1457,21 +1458,7 @@ function refCard(r) {
 function what() {
   return `<p class="crumbs"><a href="#home">Home</a> / What is conviviality?</p>
   <div class="page-head" style="margin-top:14px"><h1>What is conviviality?</h1><p>A word from an old book, and a useful test for the software you use every day.</p></div>
-  <article class="dict" aria-label="Dictionary definition of convivial">
-    <p class="dict-tag">Definition</p>
-    <p class="hw">con·viv·i·al</p>
-    <p class="dict-meta"><span class="pron">/kənˈvɪv.i.əl/</span> <i>adjective</i></p>
-    <ol class="senses">
-      <li><span class="sense-label">Everyday English</span><span>Friendly, lively and cheerful, usually said of a person or a gathering. <em>“A convivial evening with old friends.”</em></span></li>
-      <li class="ours"><span class="sense-label">Illich, 1973 · the one we use</span><span>Of a tool: easy for anyone to pick up, free to use for their own purposes, and leaving people more able to do things for themselves. In Illich's words, <em>“individual freedom realized in personal interdependence.”</em></span></li>
-    </ol>
-    <p class="etym"><b>Origin</b> Latin <i>convivium</i>, a feast, from <i>con-</i> “together” and <i>vivere</i> “to live”.</p>
-  </article>
-  <div class="prose big-prose">
-    <h2>Why not the dictionary meaning?</h2>
-    <p>Ivan Illich was an Austrian-born philosopher and priest who spent his life asking what happens when the things we build to help us start running our lives instead. In <i>Tools for Conviviality</i> he knew that English readers would hear a good party, and he wrote that the English word leans toward a tipsy kind of jollity. So he took his meaning from the French and Spanish versions of the word, which come from the same Latin root and keep the older idea of living well together, and he applied it to tools instead of people to avoid the confusion. In French, Brillat-Savarin had already given the word a technical meaning in the kitchen.</p>
-    <p>The two senses are closer than they look. A good table makes the people around it more alive, and a convivial tool does the same for the person using it.</p>
-  </div>
+  <p class="what-core">A convivial tool leaves you more able to do things for yourself. Ivan Illich used the word in 1973 for tools that anyone can pick up, use for their own purposes, and walk away from.</p>
   <section class="skim">
     <h2>A convivial tool is one that</h2>
     <ul class="big-list">
