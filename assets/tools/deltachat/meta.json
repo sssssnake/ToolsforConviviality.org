@@ -1,0 +1,34 @@
+{
+  "slug": "deltachat",
+  "name": "Delta Chat",
+  "source": "https://delta.chat",
+  "capturedAt": "2026-10-23T10:32:41.101Z",
+  "alt": "Screenshot of the Delta Chat website",
+  "pageTitle": "Delta Chat, decentralized secure messenger - Delta Chat",
+  "pageDescription": "Decentralized &amp; Secure Messaging Get Delta Chat 💬 Reliable instant messaging with multi-profile and multi-device support ⚡️ Sign up to secure and interoperable chatmail relays 🥳 Interactive...",
+  "shot": {
+    "480": "assets/tools/deltachat/shot-480.webp",
+    "960": "assets/tools/deltachat/shot-960.webp",
+    "1600": "assets/tools/deltachat/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/deltachat/mobile-390.webp",
+    "780": "assets/tools/deltachat/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/deltachat/icon-128.webp",
+    "256": "assets/tools/deltachat/icon-256.webp",
+    "from": "https://delta.chat/assets/logos/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/deltachat/social-600.webp",
+    "1200": "assets/tools/deltachat/social-1200.webp",
+    "from": "https://delta.chat/assets/home/intro1.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "kiwix",
+  "name": "Kiwix",
+  "source": "https://kiwix.org",
+  "capturedAt": "2026-10-23T10:31:08.561Z",
+  "alt": "Screenshot of the Kiwix website",
+  "pageTitle": "Kiwix - Home",
+  "pageDescription": "Kiwix is a nonprofit organisation making free knowledge accessible where the Internet is not. We create and support open technologies that bring the world’s knowledge Offline via our own open-source software dedicated to providing offline access to free educational content, and more…",
+  "shot": {
+    "480": "assets/tools/kiwix/shot-480.webp",
+    "960": "assets/tools/kiwix/shot-960.webp",
+    "1600": "assets/tools/kiwix/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/kiwix/mobile-390.webp",
+    "780": "assets/tools/kiwix/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/kiwix/icon-128.webp",
+    "256": "assets/tools/kiwix/icon-256.webp",
+    "svg": "assets/tools/kiwix/icon.svg",
+    "from": "https://kiwix.org/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/kiwix/social-600.webp",
+    "1200": "assets/tools/kiwix/social-1200.webp",
+    "from": "https://kiwix.org/wp-content/uploads/2026/02/open-graph_org-image-scaled.jpg"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

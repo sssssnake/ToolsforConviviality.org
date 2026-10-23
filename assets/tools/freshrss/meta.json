@@ -1,0 +1,27 @@
+{
+  "slug": "freshrss",
+  "name": "FreshRSS",
+  "source": "https://freshrss.org",
+  "capturedAt": "2026-10-23T10:32:00.913Z",
+  "alt": "Screenshot of the FreshRSS website",
+  "pageTitle": "FreshRSS, a free, self-hostable feeds aggregator",
+  "pageDescription": "FreshRSS is lightweight, easy to work with, powerful, and customizable.",
+  "shot": {
+    "480": "assets/tools/freshrss/shot-480.webp",
+    "960": "assets/tools/freshrss/shot-960.webp",
+    "1600": "assets/tools/freshrss/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/freshrss/mobile-390.webp",
+    "780": "assets/tools/freshrss/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/freshrss/social-600.webp",
+    "1200": "assets/tools/freshrss/social-1200.webp",
+    "from": "https://freshrss.org/card.png"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

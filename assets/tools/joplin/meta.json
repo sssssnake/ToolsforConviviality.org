@@ -1,0 +1,29 @@
+{
+  "slug": "joplin",
+  "name": "Joplin",
+  "source": "https://joplinapp.org",
+  "capturedAt": "2026-10-23T10:31:28.700Z",
+  "alt": "Screenshot of the Joplin website",
+  "pageTitle": "Joplin",
+  "pageDescription": "Joplin, the open source note-taking application",
+  "shot": {
+    "480": "assets/tools/joplin/shot-480.webp",
+    "960": "assets/tools/joplin/shot-960.webp",
+    "1600": "assets/tools/joplin/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/joplin/mobile-390.webp",
+    "780": "assets/tools/joplin/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/joplin/icon-128.webp",
+    "256": "assets/tools/joplin/icon-256.webp",
+    "from": "https://joplinapp.org/images/favicon.png",
+    "sourceWidth": 25,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#000000",
+  "colorFrom": "theme-color",
+  "notes": []
+}

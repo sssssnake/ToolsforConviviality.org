@@ -420,7 +420,278 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://www.airtime.com\",{\"shot\":false},null]"
+    },
+    "zotero": {
+      "slug": "zotero",
+      "name": "Zotero",
+      "source": "https://www.zotero.org",
+      "capturedAt": "2026-10-23T10:31:01.837Z",
+      "alt": "Screenshot of the Zotero website",
+      "pageTitle": "Zotero | Your personal research assistant",
+      "pageDescription": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research.",
+      "shot": {
+        "480": "assets/tools/zotero/shot-480.webp",
+        "960": "assets/tools/zotero/shot-960.webp",
+        "1600": "assets/tools/zotero/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/zotero/mobile-390.webp",
+        "780": "assets/tools/zotero/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.zotero.org\",null,null]"
+    },
+    "kiwix": {
+      "slug": "kiwix",
+      "name": "Kiwix",
+      "source": "https://kiwix.org",
+      "capturedAt": "2026-10-23T10:31:08.561Z",
+      "alt": "Screenshot of the Kiwix website",
+      "pageTitle": "Kiwix - Home",
+      "pageDescription": "Kiwix is a nonprofit organisation making free knowledge accessible where the Internet is not. We create and support open technologies that bring the world’s knowledge Offline via our own open-source software dedicated to providing offline access to free educational content, and more…",
+      "shot": {
+        "480": "assets/tools/kiwix/shot-480.webp",
+        "960": "assets/tools/kiwix/shot-960.webp",
+        "1600": "assets/tools/kiwix/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kiwix/mobile-390.webp",
+        "780": "assets/tools/kiwix/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/kiwix/icon-128.webp",
+        "256": "assets/tools/kiwix/icon-256.webp",
+        "svg": "assets/tools/kiwix/icon.svg",
+        "from": "https://kiwix.org/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/kiwix/social-600.webp",
+        "1200": "assets/tools/kiwix/social-1200.webp",
+        "from": "https://kiwix.org/wp-content/uploads/2026/02/open-graph_org-image-scaled.jpg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://kiwix.org\",null,null]"
+    },
+    "keepassxc": {
+      "slug": "keepassxc",
+      "name": "KeePassXC",
+      "source": "https://keepassxc.org",
+      "capturedAt": "2026-10-23T10:31:20.743Z",
+      "alt": "Screenshot of the KeePassXC website",
+      "pageTitle": "KeePassXC Password Manager",
+      "pageDescription": "KeePassXC Password Manager",
+      "shot": {
+        "480": "assets/tools/keepassxc/shot-480.webp",
+        "960": "assets/tools/keepassxc/shot-960.webp",
+        "1600": "assets/tools/keepassxc/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/keepassxc/mobile-390.webp",
+        "780": "assets/tools/keepassxc/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/keepassxc/icon-128.webp",
+        "256": "assets/tools/keepassxc/icon-256.webp",
+        "from": "https://keepassxc.org/assets/img/apple-touch-icon-precomposed.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/keepassxc/social-600.webp",
+        "1200": "assets/tools/keepassxc/social-1200.webp",
+        "from": "https://keepassxc.org/assets/img/social-media-share-image.png"
+      },
+      "color": "#417e29",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://keepassxc.org\",null,null]"
+    },
+    "joplin": {
+      "slug": "joplin",
+      "name": "Joplin",
+      "source": "https://joplinapp.org",
+      "capturedAt": "2026-10-23T10:31:28.700Z",
+      "alt": "Screenshot of the Joplin website",
+      "pageTitle": "Joplin",
+      "pageDescription": "Joplin, the open source note-taking application",
+      "shot": {
+        "480": "assets/tools/joplin/shot-480.webp",
+        "960": "assets/tools/joplin/shot-960.webp",
+        "1600": "assets/tools/joplin/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/joplin/mobile-390.webp",
+        "780": "assets/tools/joplin/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/joplin/icon-128.webp",
+        "256": "assets/tools/joplin/icon-256.webp",
+        "from": "https://joplinapp.org/images/favicon.png",
+        "sourceWidth": 25,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#000000",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://joplinapp.org\",null,null]"
+    },
+    "krita": {
+      "slug": "krita",
+      "name": "Krita",
+      "source": "https://krita.org",
+      "capturedAt": "2026-10-23T10:31:36.010Z",
+      "alt": "Screenshot of the Krita website",
+      "pageTitle": "Krita | Digital Painting. Creative Freedom.",
+      "pageDescription": "Krita is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.",
+      "shot": {
+        "480": "assets/tools/krita/shot-480.webp",
+        "960": "assets/tools/krita/shot-960.webp",
+        "1600": "assets/tools/krita/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/krita/mobile-390.webp",
+        "780": "assets/tools/krita/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://krita.org\",null,null]"
+    },
+    "excalidraw": {
+      "slug": "excalidraw",
+      "name": "Excalidraw",
+      "source": "https://excalidraw.com",
+      "capturedAt": "2026-10-23T10:31:44.839Z",
+      "alt": "Screenshot of the Excalidraw website",
+      "pageTitle": "Excalidraw Whiteboard",
+      "pageDescription": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+      "shot": {
+        "480": "assets/tools/excalidraw/shot-480.webp",
+        "960": "assets/tools/excalidraw/shot-960.webp",
+        "1600": "assets/tools/excalidraw/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/excalidraw/mobile-390.webp",
+        "780": "assets/tools/excalidraw/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/excalidraw/icon-128.webp",
+        "256": "assets/tools/excalidraw/icon-256.webp",
+        "from": "https://excalidraw.com/android-chrome-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/excalidraw/social-600.webp",
+        "1200": "assets/tools/excalidraw/social-1200.webp",
+        "from": "https://excalidraw.com/og-image-3.png"
+      },
+      "color": "#121212",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://excalidraw.com\",null,null]"
+    },
+    "cryptomator": {
+      "slug": "cryptomator",
+      "name": "Cryptomator",
+      "source": "https://cryptomator.org",
+      "capturedAt": "2026-10-23T10:31:51.769Z",
+      "alt": "Screenshot of the Cryptomator website",
+      "pageTitle": "Cryptomator - Free & Open-Source Cloud Storage Encryption",
+      "pageDescription": "Cryptomator is an open-source encryption tool for secure cloud storage. Protect your privacy for free on Dropbox, Google Drive, OneDrive, and more.",
+      "shot": {
+        "480": "assets/tools/cryptomator/shot-480.webp",
+        "960": "assets/tools/cryptomator/shot-960.webp",
+        "1600": "assets/tools/cryptomator/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/cryptomator/mobile-390.webp",
+        "780": "assets/tools/cryptomator/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/cryptomator/social-600.webp",
+        "1200": "assets/tools/cryptomator/social-1200.webp",
+        "from": "https://cryptomator.org/img/og-image.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://cryptomator.org\",null,null]"
+    },
+    "freshrss": {
+      "slug": "freshrss",
+      "name": "FreshRSS",
+      "source": "https://freshrss.org",
+      "capturedAt": "2026-10-23T10:32:00.913Z",
+      "alt": "Screenshot of the FreshRSS website",
+      "pageTitle": "FreshRSS, a free, self-hostable feeds aggregator",
+      "pageDescription": "FreshRSS is lightweight, easy to work with, powerful, and customizable.",
+      "shot": {
+        "480": "assets/tools/freshrss/shot-480.webp",
+        "960": "assets/tools/freshrss/shot-960.webp",
+        "1600": "assets/tools/freshrss/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/freshrss/mobile-390.webp",
+        "780": "assets/tools/freshrss/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/freshrss/social-600.webp",
+        "1200": "assets/tools/freshrss/social-1200.webp",
+        "from": "https://freshrss.org/card.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://freshrss.org\",null,null]"
+    },
+    "deltachat": {
+      "slug": "deltachat",
+      "name": "Delta Chat",
+      "source": "https://delta.chat",
+      "capturedAt": "2026-10-23T10:32:41.101Z",
+      "alt": "Screenshot of the Delta Chat website",
+      "pageTitle": "Delta Chat, decentralized secure messenger - Delta Chat",
+      "pageDescription": "Decentralized &amp; Secure Messaging Get Delta Chat 💬 Reliable instant messaging with multi-profile and multi-device support ⚡️ Sign up to secure and interoperable chatmail relays 🥳 Interactive...",
+      "shot": {
+        "480": "assets/tools/deltachat/shot-480.webp",
+        "960": "assets/tools/deltachat/shot-960.webp",
+        "1600": "assets/tools/deltachat/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/deltachat/mobile-390.webp",
+        "780": "assets/tools/deltachat/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/deltachat/icon-128.webp",
+        "256": "assets/tools/deltachat/icon-256.webp",
+        "from": "https://delta.chat/assets/logos/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/deltachat/social-600.webp",
+        "1200": "assets/tools/deltachat/social-1200.webp",
+        "from": "https://delta.chat/assets/home/intro1.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://delta.chat\",null,null]"
     }
   },
-  "updatedAt": "2026-10-23T10:16:27.430Z"
+  "updatedAt": "2026-10-23T10:32:48.800Z"
 }

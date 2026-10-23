@@ -1,19 +1,49 @@
 {
-  "startedAt": "2026-10-23T10:15:53.864Z",
+  "startedAt": "2026-10-23T10:31:01.297Z",
   "captured": [
     {
-      "slug": "ferdium",
-      "notes": []
-    },
-    {
-      "slug": "arena",
-      "notes": []
-    },
-    {
-      "slug": "airtime",
+      "slug": "zotero",
       "notes": [
-        "screenshot skipped by override"
+        "no usable icon found (an .ico favicon alone can't be converted)"
       ]
+    },
+    {
+      "slug": "kiwix",
+      "notes": []
+    },
+    {
+      "slug": "keepassxc",
+      "notes": []
+    },
+    {
+      "slug": "joplin",
+      "notes": []
+    },
+    {
+      "slug": "krita",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "excalidraw",
+      "notes": []
+    },
+    {
+      "slug": "cryptomator",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "freshrss",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "deltachat",
+      "notes": []
     }
   ],
   "skipped": [
@@ -56,8 +86,25 @@
     {
       "slug": "photomosh",
       "reason": "recent"
+    },
+    {
+      "slug": "ferdium",
+      "reason": "recent"
+    },
+    {
+      "slug": "arena",
+      "reason": "recent"
+    },
+    {
+      "slug": "airtime",
+      "reason": "recent"
     }
   ],
-  "failed": [],
-  "finishedAt": "2026-10-23T10:16:27.431Z"
+  "failed": [
+    {
+      "slug": "calibre",
+      "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
+    }
+  ],
+  "finishedAt": "2026-10-23T10:32:48.801Z"
 }

@@ -1,0 +1,22 @@
+{
+  "slug": "zotero",
+  "name": "Zotero",
+  "source": "https://www.zotero.org",
+  "capturedAt": "2026-10-23T10:31:01.837Z",
+  "alt": "Screenshot of the Zotero website",
+  "pageTitle": "Zotero | Your personal research assistant",
+  "pageDescription": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research.",
+  "shot": {
+    "480": "assets/tools/zotero/shot-480.webp",
+    "960": "assets/tools/zotero/shot-960.webp",
+    "1600": "assets/tools/zotero/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/zotero/mobile-390.webp",
+    "780": "assets/tools/zotero/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

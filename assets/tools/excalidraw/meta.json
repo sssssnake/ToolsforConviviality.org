@@ -1,0 +1,34 @@
+{
+  "slug": "excalidraw",
+  "name": "Excalidraw",
+  "source": "https://excalidraw.com",
+  "capturedAt": "2026-10-23T10:31:44.839Z",
+  "alt": "Screenshot of the Excalidraw website",
+  "pageTitle": "Excalidraw Whiteboard",
+  "pageDescription": "Excalidraw is a virtual collaborative whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+  "shot": {
+    "480": "assets/tools/excalidraw/shot-480.webp",
+    "960": "assets/tools/excalidraw/shot-960.webp",
+    "1600": "assets/tools/excalidraw/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/excalidraw/mobile-390.webp",
+    "780": "assets/tools/excalidraw/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/excalidraw/icon-128.webp",
+    "256": "assets/tools/excalidraw/icon-256.webp",
+    "from": "https://excalidraw.com/android-chrome-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/excalidraw/social-600.webp",
+    "1200": "assets/tools/excalidraw/social-1200.webp",
+    "from": "https://excalidraw.com/og-image-3.png"
+  },
+  "color": "#121212",
+  "colorFrom": "theme-color",
+  "notes": []
+}
