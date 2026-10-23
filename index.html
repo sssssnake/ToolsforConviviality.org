@@ -235,6 +235,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
       <span class="brand-name">Tools for<br>Conviviality</span>
     </a>
     <nav class="nav" aria-label="Main">
+      <a href="#what" data-nav="what">What is conviviality?</a>
       <a href="#directory" data-nav="directory">Directory</a>
       <a href="#method" data-nav="method">How we score</a>
       <a href="#submit" data-nav="submit">Suggest a tool</a>
@@ -435,6 +436,7 @@ function home() {
       </div>
       <div class="side-links">
         <a href="#submit">Suggest a tool for the directory +</a>
+        <a href="#what">What is conviviality? ↗</a>
         <a href="#method">How tools are selected ↗</a>
       </div>
     </aside>
@@ -455,10 +457,11 @@ function category(id) {
   <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`;
 }
 
-const filt = { size: "all", scope: "all", cat: "all" };
+const filt = { size: "all", scope: "all", cat: "all", verdict: "all" };
+const VERDICT_MIN = { all: 0, leaning: 18, convivial: 25 };
 function directory(preset) {
-  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all" }, preset);
-  const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat))
+  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all" }, preset);
+  const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat) && total(t) >= VERDICT_MIN[filt.verdict])
     .sort((a, b) => a.name.localeCompare(b.name));
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
@@ -466,6 +469,7 @@ function directory(preset) {
   <div class="filters">
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
+    ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
   <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
   <div class="tool-list">${list.length ? list.map(row).join("") : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>'}</div>`;
@@ -498,6 +502,24 @@ function tool(slug) {
       <div class="meters">${CRITERIA.map((k, i) => `<div class="meter-row"><span>${k.name}</span><span class="meter" aria-hidden="true">${[0,1,2,3,4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b></div>`).join("")}</div>
       <div class="stamp-holder"><div class="stamp" role="img" aria-label="Verdict: ${band(n)}, ${n} out of 30"><div class="stamp-inner"><span class="verdict">${band(n)}</span><span class="num">${n} / 30</span></div></div></div>
     </aside>
+  </div>`;
+}
+
+function what() {
+  return `<p class="crumbs"><a href="#home">Home</a> / What is conviviality?</p>
+  <div class="page-head" style="margin-top:14px"><h1>What is conviviality?</h1><p>A word from an old book, and a useful test for the software you use every day.</p></div>
+  <div class="prose">
+    <p>Ivan Illich was an Austrian-born philosopher and priest who spent much of his life asking what happens when the things we build to help us start running our lives instead. In 1973 he published <i>Tools for Conviviality</i>, a short book about exactly that. He chose “convivial” for tools that people can pick up, use freely, and bend to their own purposes, and he set it against tools that arrange us around themselves.</p>
+    <h2>The idea in plain terms</h2>
+    <p>A convivial tool leaves you more able to do what you want with your own time, attention and company. A hammer is convivial, and so is a bicycle, because anyone can use them, repair them and put them to uses their makers never imagined. The opposite is a tool that only works inside a system you can't see or leave, that decides what you may do with it, and that gets harder to live without the longer you use it.</p>
+    <p>Illich saw that tools tend to go bad in a few predictable ways. They grow past the point where they help. They turn into the only way to do a job, so nobody can do without them. They make people passive, concentrate power in a few hands, wear out their purpose, and promise more than they deliver. Those six failures became the six questions on <a href="#method">How we score</a>.</p>
+    <h2>Why it fits software</h2>
+    <p>Most of what we use online is built to hold us: accounts that are hard to leave, files in formats only one company reads, feeds designed around what keeps us scrolling. Software doesn't have to work that way. A small tool that does one job, keeps your files on your own device and lets you walk away with them is convivial in exactly Illich's sense, and the same goes for a large open-source project with the same habits.</p>
+    <p>Cheap AI-assisted building has made this more interesting, because more people can now make a small tool for themselves and their friends. That is how tools were supposed to feel all along, and it's a good reason to keep a directory of the ones worth knowing about.</p>
+    <h2>What conviviality is not</h2>
+    <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
+    <h2>Read the book</h2>
+    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a> or buy it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
   </div>`;
 }
 
@@ -615,6 +637,7 @@ function render() {
   else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
   else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "what") { html = what(); nav = "what"; }
   else if (h === "method") { html = method(); nav = "method"; }
   else if (h === "about") html = about();
   else if (h === "submit") { html = submit(); nav = "submit"; }
