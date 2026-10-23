@@ -21,6 +21,7 @@
   --accent: #b3c5ff;
   --band: #b3c5ff;
   --band-fg: #121a20;
+  --on-accent: #121a20;
   --stamp: #f2967a;
   --gold: #cdae62;
   --meter-off: #2c3c48;
@@ -33,13 +34,13 @@
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
     --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
-    --accent: #2f45a6; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+    --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
     color-scheme: light;
   }
 }
 :root[data-theme="light"] {
   --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
-  --accent: #2f45a6; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+  --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
   color-scheme: light;
 }
 
@@ -131,7 +132,7 @@ main .wrap { padding-block: 48px 64px; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .filter-group .label { margin-right: 4px; }
 .fbtn { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 5px 10px; cursor: pointer; }
-.fbtn[aria-pressed="true"] { background: var(--accent); color: var(--band-fg); border-color: var(--accent); }
+.fbtn[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .empty { color: var(--muted); padding-block: 24px; }
 
 /* Review */
@@ -396,7 +397,8 @@ function logo(t, size) {
   const src = ic && (ic.svg || ic[256] || ic[128]);
   if (src) return `<span class="logo ${size}"><img src="${esc(src)}" alt="" loading="lazy" width="72" height="72"></span>`;
   const col = (im && im.color) || FALLBACKS[[...t.slug].reduce((a, c) => a + c.charCodeAt(0), 0) % FALLBACKS.length];
-  return `<span class="logo ${size}" style="background:${col}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
+  const lum = (h => { const n = parseInt(h.replace("#", "").replace(/^(.)(.)(.)$/, "$1$1$2$2$3$3").slice(0, 6), 16); return (0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255; })(col);
+  return `<span class="logo ${size}" style="background:${col};color:${lum > 0.6 ? "#121a20" : "#fff"}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
 }
 function shot(t) {
   const im = IMG[t.slug]; if (!im) return "";
