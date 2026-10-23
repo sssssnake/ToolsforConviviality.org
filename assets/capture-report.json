@@ -1,5 +1,5 @@
 {
-  "startedAt": "2026-10-23T22:10:21.652Z",
+  "startedAt": "2026-10-23T22:19:58.461Z",
   "captured": [],
   "skipped": [
     {
@@ -537,5 +537,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-23T22:10:25.271Z"
+  "finishedAt": "2026-10-23T22:20:02.729Z"
 }
