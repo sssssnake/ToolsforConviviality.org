@@ -1951,7 +1951,86 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://www.tiktok.com\",{\"shot\":false},null]"
+    },
+    "ref-andrewism": {
+      "slug": "ref-andrewism",
+      "name": "We Need Better Tools (Andrewism)",
+      "source": "https://www.youtube.com/watch?v=bP2rObVK1zg",
+      "capturedAt": "2026-10-23T15:42:18.020Z",
+      "alt": "Screenshot of the We Need Better Tools (Andrewism) website",
+      "pageTitle": "Should We Be Luddites? - YouTube",
+      "pageDescription": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+      "icon": {
+        "128": "assets/tools/ref-andrewism/icon-128.webp",
+        "256": "assets/tools/ref-andrewism/icon-256.webp",
+        "from": "https://www.gstatic.com/youtube/img/web/monochrome/logo_512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.youtube.com/watch?v=bP2rObVK1zg\",{\"shot\":false},null]"
+    },
+    "ref-krycho": {
+      "slug": "ref-krycho",
+      "name": "Computing, Convivially (Chris Krycho)",
+      "source": "https://v5.chriskrycho.com/essays/computing-convivially/",
+      "capturedAt": "2026-10-23T15:42:26.611Z",
+      "alt": "Screenshot of the Computing, Convivially (Chris Krycho) website",
+      "pageTitle": "Computing, Convivially — Sympolymathesy, by Chris Krycho",
+      "pageDescription": "Digital technologies can be terribly destructive, but they can also be gloriously empowering. How do we shape them into tools for conviviality rather than means of domination?",
+      "icon": {
+        "128": "assets/tools/ref-krycho/icon-128.webp",
+        "256": "assets/tools/ref-krycho/icon-256.webp",
+        "from": "https://v5.chriskrycho.com/assets/images/favicon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/ref-krycho/social-600.webp",
+        "1200": "assets/tools/ref-krycho/social-1200.webp",
+        "from": "https://opengraph.chriskrycho.com/?page_title=Computing%2C%20Convivially&subtitle=Digital%20technologies%20can%20be%20terribly%20destructive%2C%20but%20they%20can%20also%20be%20gloriously%20empowering.%20How%20do%20we%20shape%20them%20into%20tools%20for%20conviviality%20rather%20than%20means%20of%20domination%3F"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://v5.chriskrycho.com/essays/computing-convivially/\",{\"shot\":false},null]"
+    },
+    "ref-wikipedia": {
+      "slug": "ref-wikipedia",
+      "name": "Tools for Conviviality (Wikipedia)",
+      "source": "https://en.wikipedia.org/wiki/Tools_for_Conviviality",
+      "capturedAt": "2026-10-23T15:42:33.517Z",
+      "alt": "Screenshot of the Tools for Conviviality (Wikipedia) website",
+      "pageTitle": "Tools for Conviviality - Wikipedia",
+      "pageDescription": null,
+      "icon": {
+        "128": "assets/tools/ref-wikipedia/icon-128.webp",
+        "256": "assets/tools/ref-wikipedia/icon-256.webp",
+        "from": "https://en.wikipedia.org/static/apple-touch/wikipedia.png",
+        "sourceWidth": 160,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/ref-wikipedia/social-600.webp",
+        "1200": "assets/tools/ref-wikipedia/social-1200.webp",
+        "from": "https://upload.wikimedia.org/wikipedia/en/6/63/Tools_for_Conviviality.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://en.wikipedia.org/wiki/Tools_for_Conviviality\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T15:38:48.699Z"
+  "updatedAt": "2026-10-23T15:42:37.545Z"
 }

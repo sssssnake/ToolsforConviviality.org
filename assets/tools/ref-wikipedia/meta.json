@@ -1,0 +1,27 @@
+{
+  "slug": "ref-wikipedia",
+  "name": "Tools for Conviviality (Wikipedia)",
+  "source": "https://en.wikipedia.org/wiki/Tools_for_Conviviality",
+  "capturedAt": "2026-10-23T15:42:33.517Z",
+  "alt": "Screenshot of the Tools for Conviviality (Wikipedia) website",
+  "pageTitle": "Tools for Conviviality - Wikipedia",
+  "pageDescription": null,
+  "icon": {
+    "128": "assets/tools/ref-wikipedia/icon-128.webp",
+    "256": "assets/tools/ref-wikipedia/icon-256.webp",
+    "from": "https://en.wikipedia.org/static/apple-touch/wikipedia.png",
+    "sourceWidth": 160,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/ref-wikipedia/social-600.webp",
+    "1200": "assets/tools/ref-wikipedia/social-1200.webp",
+    "from": "https://upload.wikimedia.org/wikipedia/en/6/63/Tools_for_Conviviality.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail_unscaled"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

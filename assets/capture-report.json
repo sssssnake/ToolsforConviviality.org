@@ -1,26 +1,20 @@
 {
-  "startedAt": "2026-10-23T15:38:00.587Z",
+  "startedAt": "2026-10-23T15:42:16.940Z",
   "captured": [
     {
-      "slug": "mastodon",
-      "notes": []
-    },
-    {
-      "slug": "pixelfed",
-      "notes": []
-    },
-    {
-      "slug": "loops",
+      "slug": "ref-andrewism",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "peertube",
-      "notes": []
+      "slug": "ref-krycho",
+      "notes": [
+        "screenshot skipped by override"
+      ]
     },
     {
-      "slug": "tiktok",
+      "slug": "ref-wikipedia",
       "notes": [
         "screenshot skipped by override"
       ]
@@ -276,10 +270,30 @@
       "reason": "recent"
     },
     {
+      "slug": "mastodon",
+      "reason": "recent"
+    },
+    {
+      "slug": "pixelfed",
+      "reason": "recent"
+    },
+    {
+      "slug": "loops",
+      "reason": "recent"
+    },
+    {
+      "slug": "peertube",
+      "reason": "recent"
+    },
+    {
       "slug": "instagram",
       "reason": "robots.txt disallows"
+    },
+    {
+      "slug": "tiktok",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-10-23T15:38:48.700Z"
+  "finishedAt": "2026-10-23T15:42:37.546Z"
 }

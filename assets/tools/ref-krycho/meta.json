@@ -1,0 +1,27 @@
+{
+  "slug": "ref-krycho",
+  "name": "Computing, Convivially (Chris Krycho)",
+  "source": "https://v5.chriskrycho.com/essays/computing-convivially/",
+  "capturedAt": "2026-10-23T15:42:26.611Z",
+  "alt": "Screenshot of the Computing, Convivially (Chris Krycho) website",
+  "pageTitle": "Computing, Convivially — Sympolymathesy, by Chris Krycho",
+  "pageDescription": "Digital technologies can be terribly destructive, but they can also be gloriously empowering. How do we shape them into tools for conviviality rather than means of domination?",
+  "icon": {
+    "128": "assets/tools/ref-krycho/icon-128.webp",
+    "256": "assets/tools/ref-krycho/icon-256.webp",
+    "from": "https://v5.chriskrycho.com/assets/images/favicon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/ref-krycho/social-600.webp",
+    "1200": "assets/tools/ref-krycho/social-1200.webp",
+    "from": "https://opengraph.chriskrycho.com/?page_title=Computing%2C%20Convivially&subtitle=Digital%20technologies%20can%20be%20terribly%20destructive%2C%20but%20they%20can%20also%20be%20gloriously%20empowering.%20How%20do%20we%20shape%20them%20into%20tools%20for%20conviviality%20rather%20than%20means%20of%20domination%3F"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

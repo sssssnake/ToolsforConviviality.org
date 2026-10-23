@@ -1,0 +1,22 @@
+{
+  "slug": "ref-andrewism",
+  "name": "We Need Better Tools (Andrewism)",
+  "source": "https://www.youtube.com/watch?v=bP2rObVK1zg",
+  "capturedAt": "2026-10-23T15:42:18.020Z",
+  "alt": "Screenshot of the We Need Better Tools (Andrewism) website",
+  "pageTitle": "Should We Be Luddites? - YouTube",
+  "pageDescription": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+  "icon": {
+    "128": "assets/tools/ref-andrewism/icon-128.webp",
+    "256": "assets/tools/ref-andrewism/icon-256.webp",
+    "from": "https://www.gstatic.com/youtube/img/web/monochrome/logo_512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}
