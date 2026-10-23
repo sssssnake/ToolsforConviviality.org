@@ -72,7 +72,7 @@
       "source": "https://comaps.app",
       "capturedAt": "2026-10-23T10:12:18.433Z",
       "alt": "Screenshot of the CoMaps website",
-      "pageTitle": "Hike, Bike, Drive Offline – Navigate with Privacy | CoMaps",
+      "pageTitle": "Hike, Bike, Drive Offline \u2013 Navigate with Privacy | CoMaps",
       "pageDescription": "Discover more of your journey - Powered by the community",
       "shot": {
         "480": "assets/tools/comaps/shot-480.webp",
@@ -302,8 +302,8 @@
       "source": "https://photomosh.com",
       "capturedAt": "2026-10-23T10:13:45.665Z",
       "alt": "Screenshot of the PhotoMosh website",
-      "pageTitle": "Mosh-Pro — Glitch & Video Effects App",
-      "pageDescription": "Mosh-Pro is a real-time visual effects mixer for image, video & GIF — 60+ effects, 4K export, audio-reactive, MIDI. Or try the free online glitch tool at Mosh-Lite.",
+      "pageTitle": "Mosh-Pro \u2014 Glitch & Video Effects App",
+      "pageDescription": "Mosh-Pro is a real-time visual effects mixer for image, video & GIF \u2014 60+ effects, 4K export, audio-reactive, MIDI. Or try the free online glitch tool at Mosh-Lite.",
       "shot": {
         "480": "assets/tools/photomosh/shot-480.webp",
         "960": "assets/tools/photomosh/shot-960.webp",
@@ -394,33 +394,6 @@
       "notes": [],
       "cfg": "[\"https://www.are.na\",{\"wait\":5000,\"scroll\":520},null]"
     },
-    "airtime": {
-      "slug": "airtime",
-      "name": "Airtime",
-      "source": "https://www.airtime.com",
-      "capturedAt": "2026-10-23T10:16:20.051Z",
-      "alt": "Screenshot of the Airtime website",
-      "pageTitle": "Airtime | Essential tools for video at work",
-      "pageDescription": "Look your best on video. Present with impact. Virtual backgrounds, screen recorder, present with a friend. Works with Zoom, Meet, Teams, and Webex.",
-      "icon": {
-        "128": "assets/tools/airtime/icon-128.webp",
-        "256": "assets/tools/airtime/icon-256.webp",
-        "svg": "assets/tools/airtime/icon.svg",
-        "from": "https://www.airtime.com/icon.svg?icon.0i7svlnpxbwcm.svg?dpl=dpl_A6XwLgHR4DouqbgPJG1VtLDCxvdz",
-        "scalable": true
-      },
-      "social": {
-        "600": "assets/tools/airtime/social-600.webp",
-        "1200": "assets/tools/airtime/social-1200.webp",
-        "from": "https://cdn.sanity.io/images/nvxtjwht/airtime/142a9f2195b272ac6f6327ff1afac029a0d6eec5-1200x630.png"
-      },
-      "color": "#080808",
-      "colorFrom": "icon",
-      "notes": [
-        "screenshot skipped by override"
-      ],
-      "cfg": "[\"https://www.airtime.com\",{\"shot\":false},null]"
-    },
     "zotero": {
       "slug": "zotero",
       "name": "Zotero",
@@ -451,7 +424,7 @@
       "capturedAt": "2026-10-23T10:31:08.561Z",
       "alt": "Screenshot of the Kiwix website",
       "pageTitle": "Kiwix - Home",
-      "pageDescription": "Kiwix is a nonprofit organisation making free knowledge accessible where the Internet is not. We create and support open technologies that bring the world’s knowledge Offline via our own open-source software dedicated to providing offline access to free educational content, and more…",
+      "pageDescription": "Kiwix is a nonprofit organisation making free knowledge accessible where the Internet is not. We create and support open technologies that bring the world\u2019s knowledge Offline via our own open-source software dedicated to providing offline access to free educational content, and more\u2026",
       "shot": {
         "480": "assets/tools/kiwix/shot-480.webp",
         "960": "assets/tools/kiwix/shot-960.webp",
@@ -664,7 +637,7 @@
       "capturedAt": "2026-10-23T10:32:41.101Z",
       "alt": "Screenshot of the Delta Chat website",
       "pageTitle": "Delta Chat, decentralized secure messenger - Delta Chat",
-      "pageDescription": "Decentralized &amp; Secure Messaging Get Delta Chat 💬 Reliable instant messaging with multi-profile and multi-device support ⚡️ Sign up to secure and interoperable chatmail relays 🥳 Interactive...",
+      "pageDescription": "Decentralized &amp; Secure Messaging Get Delta Chat \ud83d\udcac Reliable instant messaging with multi-profile and multi-device support \u26a1\ufe0f Sign up to secure and interoperable chatmail relays \ud83e\udd73 Interactive...",
       "shot": {
         "480": "assets/tools/deltachat/shot-480.webp",
         "960": "assets/tools/deltachat/shot-960.webp",
@@ -698,7 +671,7 @@
       "source": "https://openclaw.ai",
       "capturedAt": "2026-10-23T10:56:52.867Z",
       "alt": "Screenshot of the OpenClaw website",
-      "pageTitle": "OpenClaw — Open-Source AI Assistant",
+      "pageTitle": "OpenClaw \u2014 Open-Source AI Assistant",
       "pageDescription": "OpenClaw is the open-source AI assistant that runs on your machine and works from WhatsApp, Telegram, or any chat app: inbox, email, calendar, flights.",
       "shot": {
         "480": "assets/tools/openclaw/shot-480.webp",
@@ -732,8 +705,8 @@
       "source": "https://hermes-agent.nousresearch.com",
       "capturedAt": "2026-10-23T10:57:00.674Z",
       "alt": "Screenshot of the Hermes Agent website",
-      "pageTitle": "Hermes Agent — Open-Source AI Agent That Grows With You | Nous Research",
-      "pageDescription": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux — free under the MIT license.",
+      "pageTitle": "Hermes Agent \u2014 Open-Source AI Agent That Grows With You | Nous Research",
+      "pageDescription": "Hermes Agent is the open-source, self-hosted AI agent by Nous Research. Persistent memory, self-created skills, and a messaging gateway for Telegram, Discord, Slack, and more. Download Hermes Desktop for macOS and Windows, or install via terminal on Linux \u2014 free under the MIT license.",
       "shot": {
         "480": "assets/tools/hermes-agent/shot-480.webp",
         "960": "assets/tools/hermes-agent/shot-960.webp",

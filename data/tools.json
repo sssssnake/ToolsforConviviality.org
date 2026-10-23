@@ -71,14 +71,6 @@
     }
   },
   {
-    "slug": "airtime",
-    "name": "Airtime",
-    "url": "https://www.airtime.com",
-    "capture": {
-      "shot": false
-    }
-  },
-  {
     "slug": "zotero",
     "name": "Zotero",
     "url": "https://www.zotero.org"
