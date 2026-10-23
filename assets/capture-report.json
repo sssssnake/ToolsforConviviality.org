@@ -1,31 +1,165 @@
 {
-  "startedAt": "2026-10-23T13:53:57.882Z",
+  "startedAt": "2026-10-23T15:20:23.628Z",
   "captured": [
     {
-      "slug": "calibre",
-      "notes": [
-        "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
-      ]
-    },
-    {
-      "slug": "standard-ebooks",
+      "slug": "inkscape",
       "notes": []
     },
     {
-      "slug": "gutenberg",
+      "slug": "gimp",
+      "notes": []
+    },
+    {
+      "slug": "penpot",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "blender",
+      "notes": []
+    },
+    {
+      "slug": "darktable",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "koreader",
+      "slug": "kdenlive",
       "notes": []
     },
     {
-      "slug": "audiobookshelf",
+      "slug": "comfyui",
+      "notes": []
+    },
+    {
+      "slug": "artcraft",
+      "notes": []
+    },
+    {
+      "slug": "affinity",
+      "notes": [
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "signal",
+      "notes": []
+    },
+    {
+      "slug": "element",
+      "notes": []
+    },
+    {
+      "slug": "thunderbird",
+      "notes": []
+    },
+    {
+      "slug": "proton-mail",
+      "notes": []
+    },
+    {
+      "slug": "tuta",
+      "notes": []
+    },
+    {
+      "slug": "ollama",
+      "notes": [
+        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
+      ]
+    },
+    {
+      "slug": "jan",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
+    },
+    {
+      "slug": "goose",
+      "notes": []
+    },
+    {
+      "slug": "chatgpt",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "claude",
+      "notes": [
+        "screenshot skipped by override",
+        "manifest unreadable: HTTP 403 for https://claude.ai/manifest.json"
+      ]
+    },
+    {
+      "slug": "google-drive",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "google-maps",
+      "notes": [
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "google-search",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "google-photos",
+      "notes": [
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "kindle",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "google-password-manager",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "adobe-creative-cloud",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "openstreetmap",
+      "notes": []
+    },
+    {
+      "slug": "osmand",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "immich",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "proton-pass",
+      "notes": []
     }
   ],
   "skipped": [
@@ -110,6 +244,26 @@
       "reason": "recent"
     },
     {
+      "slug": "calibre",
+      "reason": "recent"
+    },
+    {
+      "slug": "standard-ebooks",
+      "reason": "recent"
+    },
+    {
+      "slug": "gutenberg",
+      "reason": "recent"
+    },
+    {
+      "slug": "koreader",
+      "reason": "recent"
+    },
+    {
+      "slug": "audiobookshelf",
+      "reason": "recent"
+    },
+    {
       "slug": "deltachat",
       "reason": "recent"
     },
@@ -132,8 +286,12 @@
     {
       "slug": "gmail",
       "reason": "recent"
+    },
+    {
+      "slug": "pinterest",
+      "reason": "robots.txt disallows"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-10-23T13:55:05.890Z"
+  "finishedAt": "2026-10-23T15:24:50.706Z"
 }

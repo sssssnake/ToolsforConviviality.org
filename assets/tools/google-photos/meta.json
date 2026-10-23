@@ -1,0 +1,26 @@
+{
+  "slug": "google-photos",
+  "name": "Google Photos",
+  "source": "https://photos.google.com",
+  "capturedAt": "2026-10-23T15:23:51.657Z",
+  "alt": "Screenshot of the Google Photos website",
+  "pageTitle": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+  "pageDescription": "Edit and enhance photos with AI-powered features like Magic Eraser and Unblur on Google Photos. Store, organize & search your memories.",
+  "icon": {
+    "128": "assets/tools/google-photos/icon-128.webp",
+    "256": "assets/tools/google-photos/icon-256.webp",
+    "svg": "assets/tools/google-photos/icon.svg",
+    "from": "https://storage.googleapis.com/gweb-mobius-cdn/photos/uploads/383ce0413fa82bcaf6de49fd7997678b21b9762e.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/google-photos/social-600.webp",
+    "1200": "assets/tools/google-photos/social-1200.webp",
+    "from": "https://lh3.googleusercontent.com/Rh3tuvHk6EEPFvpsOPfFQ8P9s-1srhWR8mOpDPC72WvxvoA7CKJo3Cy_NV1YK26nUD1dkc3ok9Gj8qV0kB6jSLNbue21h6lBAezY=e365-pa-nu-w1200-rj"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

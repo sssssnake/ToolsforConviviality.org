@@ -1,0 +1,34 @@
+{
+  "slug": "proton-mail",
+  "name": "Proton Mail",
+  "source": "https://proton.me/mail",
+  "capturedAt": "2026-10-23T15:22:30.512Z",
+  "alt": "Screenshot of the Proton Mail website",
+  "pageTitle": "Proton Mail: Get a free email account with privacy and encryption | Proton",
+  "pageDescription": "Proton Mail is the world’s largest secure email service with over 100 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
+  "shot": {
+    "480": "assets/tools/proton-mail/shot-480.webp",
+    "960": "assets/tools/proton-mail/shot-960.webp",
+    "1600": "assets/tools/proton-mail/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/proton-mail/mobile-390.webp",
+    "780": "assets/tools/proton-mail/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/proton-mail/icon-128.webp",
+    "256": "assets/tools/proton-mail/icon-256.webp",
+    "from": "https://proton.me/favicons/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/proton-mail/social-600.webp",
+    "1200": "assets/tools/proton-mail/social-1200.webp",
+    "from": "https://proton.me/images/social/proton-mail-og.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

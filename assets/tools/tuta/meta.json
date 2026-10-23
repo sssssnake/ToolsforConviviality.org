@@ -1,0 +1,33 @@
+{
+  "slug": "tuta",
+  "name": "Tuta",
+  "source": "https://tuta.com",
+  "capturedAt": "2026-10-23T15:22:43.145Z",
+  "alt": "Screenshot of the Tuta website",
+  "pageTitle": "Tuta: Turn ON privacy for free with secure emails, calendars & contacts | Tuta",
+  "pageDescription": "Tuta guarantees your data stays private for free & without ads. Quantum-resistant encryption makes Tuta the best secure technology solution to protect your privacy.",
+  "shot": {
+    "480": "assets/tools/tuta/shot-480.webp",
+    "960": "assets/tools/tuta/shot-960.webp",
+    "1600": "assets/tools/tuta/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/tuta/mobile-390.webp",
+    "780": "assets/tools/tuta/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/tuta/icon-128.webp",
+    "256": "assets/tools/tuta/icon-256.webp",
+    "svg": "assets/tools/tuta/icon.svg",
+    "from": "https://tuta.com/favicon/logo-favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/tuta/social-600.webp",
+    "1200": "assets/tools/tuta/social-1200.webp",
+    "from": "https://tuta.com/share-tuta-thumbnail.png"
+  },
+  "color": "#880828",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "kindle",
+  "name": "Amazon Kindle",
+  "source": "https://www.amazon.com/kindle",
+  "capturedAt": "2026-10-23T15:23:58.387Z",
+  "alt": "Screenshot of the Amazon Kindle website",
+  "pageTitle": "Kindle E-Readers - Read, Write & Create on a Glare-Free Display | Amazon.com",
+  "pageDescription": "Discover the Kindle lineup—purpose-built for reading, writing, and deep focus. Glare-free displays, weeks of battery life, and AI-powered tools. Buy your Kindle today!",
+  "color": null,
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "ollama",
+  "name": "Ollama",
+  "source": "https://ollama.com",
+  "capturedAt": "2026-10-23T15:22:52.307Z",
+  "alt": "Screenshot of the Ollama website",
+  "pageTitle": "Ollama · Run AI models locally and in the cloud",
+  "pageDescription": "Ollama is the easiest way to run and build with open AI models locally or in the cloud on macOS, Windows, and Linux.",
+  "shot": {
+    "480": "assets/tools/ollama/shot-480.webp",
+    "960": "assets/tools/ollama/shot-960.webp",
+    "1600": "assets/tools/ollama/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ollama/mobile-390.webp",
+    "780": "assets/tools/ollama/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/ollama/social-600.webp",
+    "1200": "assets/tools/ollama/social-1200.webp",
+    "from": "https://ollama.com/public/og.png"
+  },
+  "color": null,
+  "notes": [
+    "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
+  ]
+}

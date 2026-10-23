@@ -951,7 +951,851 @@
         "no usable icon found (an .ico favicon alone can't be converted)"
       ],
       "cfg": "[\"https://www.audiobookshelf.org\",null,null]"
+    },
+    "inkscape": {
+      "slug": "inkscape",
+      "name": "Inkscape",
+      "source": "https://inkscape.org",
+      "capturedAt": "2026-10-23T15:20:24.409Z",
+      "alt": "Screenshot of the Inkscape website",
+      "pageTitle": "Inkscape - Draw Freely. | Inkscape",
+      "pageDescription": "Inkscape is professional vector graphics software which runs on Linux, macOS and Windows desktop computers.",
+      "shot": {
+        "480": "assets/tools/inkscape/shot-480.webp",
+        "960": "assets/tools/inkscape/shot-960.webp",
+        "1600": "assets/tools/inkscape/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/inkscape/mobile-390.webp",
+        "780": "assets/tools/inkscape/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/inkscape/icon-128.webp",
+        "256": "assets/tools/inkscape/icon-256.webp",
+        "from": "https://media.inkscape.org/static/images/inkscape-favicon.png",
+        "sourceWidth": 134,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/inkscape/social-600.webp",
+        "1200": "assets/tools/inkscape/social-1200.webp",
+        "from": "https://media.inkscape.org/static/images/inkscape-og-front.svg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://inkscape.org\",null,null]"
+    },
+    "gimp": {
+      "slug": "gimp",
+      "name": "GIMP",
+      "source": "https://www.gimp.org",
+      "capturedAt": "2026-10-23T15:20:31.755Z",
+      "alt": "Screenshot of the GIMP website",
+      "pageTitle": "GIMP - GNU Image Manipulation Program",
+      "pageDescription": "GIMP - The GNU Image Manipulation Program: The Free and Open Source Image Editor",
+      "shot": {
+        "480": "assets/tools/gimp/shot-480.webp",
+        "960": "assets/tools/gimp/shot-960.webp",
+        "1600": "assets/tools/gimp/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/gimp/mobile-390.webp",
+        "780": "assets/tools/gimp/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/gimp/icon-128.webp",
+        "256": "assets/tools/gimp/icon-256.webp",
+        "from": "https://www.gimp.org/images/wilber32.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/gimp/social-600.webp",
+        "1200": "assets/tools/gimp/social-1200.webp",
+        "from": "https://www.gimp.org/images/frontpage/wilber-big.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.gimp.org\",null,null]"
+    },
+    "penpot": {
+      "slug": "penpot",
+      "name": "Penpot",
+      "source": "https://penpot.app",
+      "capturedAt": "2026-10-23T15:20:38.745Z",
+      "alt": "Screenshot of the Penpot website",
+      "pageTitle": "Penpot: The open-source design platform for teams.",
+      "pageDescription": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
+      "shot": {
+        "480": "assets/tools/penpot/shot-480.webp",
+        "960": "assets/tools/penpot/shot-960.webp",
+        "1600": "assets/tools/penpot/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/penpot/mobile-390.webp",
+        "780": "assets/tools/penpot/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://penpot.app\",null,null]"
+    },
+    "blender": {
+      "slug": "blender",
+      "name": "Blender",
+      "source": "https://www.blender.org",
+      "capturedAt": "2026-10-23T15:21:01.584Z",
+      "alt": "Screenshot of the Blender website",
+      "pageTitle": "Blender - The Free and Open Source 3D Creation Software — blender.org",
+      "pageDescription": "The Freedom to Create",
+      "shot": {
+        "480": "assets/tools/blender/shot-480.webp",
+        "960": "assets/tools/blender/shot-960.webp",
+        "1600": "assets/tools/blender/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/blender/mobile-390.webp",
+        "780": "assets/tools/blender/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/blender/icon-128.webp",
+        "256": "assets/tools/blender/icon-256.webp",
+        "svg": "assets/tools/blender/icon.svg",
+        "from": "https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/blender/social-600.webp",
+        "1200": "assets/tools/blender/social-1200.webp",
+        "from": "https://www.blender.org/wp-content/uploads/2026/07/splash-overgrown-480x270.webp"
+      },
+      "color": "#ed8f31",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.blender.org\",null,null]"
+    },
+    "darktable": {
+      "slug": "darktable",
+      "name": "darktable",
+      "source": "https://www.darktable.org",
+      "capturedAt": "2026-10-23T15:21:10.422Z",
+      "alt": "Screenshot of the darktable website",
+      "pageTitle": "darktable",
+      "pageDescription": "darktable is an open source photography workflow application and raw developer",
+      "shot": {
+        "480": "assets/tools/darktable/shot-480.webp",
+        "960": "assets/tools/darktable/shot-960.webp",
+        "1600": "assets/tools/darktable/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/darktable/mobile-390.webp",
+        "780": "assets/tools/darktable/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/darktable/social-600.webp",
+        "1200": "assets/tools/darktable/social-1200.webp",
+        "from": "https://www.darktable.org/images/darktable-logo-only-512w.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.darktable.org\",null,null]"
+    },
+    "kdenlive": {
+      "slug": "kdenlive",
+      "name": "Kdenlive",
+      "source": "https://kdenlive.org",
+      "capturedAt": "2026-10-23T15:21:20.661Z",
+      "alt": "Screenshot of the Kdenlive website",
+      "pageTitle": "Kdenlive - Free and Open Source Video Editor",
+      "pageDescription": "Kdenlive is the acronym for KDE Non-Linear Video Editor. It works on Linux, Windows, macOS, and BSD.",
+      "shot": {
+        "480": "assets/tools/kdenlive/shot-480.webp",
+        "960": "assets/tools/kdenlive/shot-960.webp",
+        "1600": "assets/tools/kdenlive/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kdenlive/mobile-390.webp",
+        "780": "assets/tools/kdenlive/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/kdenlive/icon-128.webp",
+        "256": "assets/tools/kdenlive/icon-256.webp",
+        "from": "https://kdenlive.org/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#1f99f3",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://kdenlive.org\",null,null]"
+    },
+    "comfyui": {
+      "slug": "comfyui",
+      "name": "ComfyUI",
+      "source": "https://www.comfy.org",
+      "capturedAt": "2026-10-23T15:21:30.811Z",
+      "alt": "Screenshot of the ComfyUI website",
+      "pageTitle": "Comfy - Professional Control of Visual AI",
+      "pageDescription": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output.",
+      "shot": {
+        "480": "assets/tools/comfyui/shot-480.webp",
+        "960": "assets/tools/comfyui/shot-960.webp",
+        "1600": "assets/tools/comfyui/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/comfyui/mobile-390.webp",
+        "780": "assets/tools/comfyui/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/comfyui/icon-128.webp",
+        "256": "assets/tools/comfyui/icon-256.webp",
+        "svg": "assets/tools/comfyui/icon.svg",
+        "from": "https://comfy.org/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/comfyui/social-600.webp",
+        "1200": "assets/tools/comfyui/social-1200.webp",
+        "from": "https://media.comfy.org/website/comfy.webp"
+      },
+      "color": "#211927",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.comfy.org\",null,null]"
+    },
+    "artcraft": {
+      "slug": "artcraft",
+      "name": "ArtCraft",
+      "source": "https://getartcraft.com",
+      "capturedAt": "2026-10-23T15:21:46.381Z",
+      "alt": "Screenshot of the ArtCraft website",
+      "pageTitle": "ArtCraft — Controllable AI for Artists",
+      "pageDescription": "ArtCraft is the open-source desktop app for generating AI video and images — built for artists who want real control.",
+      "shot": {
+        "480": "assets/tools/artcraft/shot-480.webp",
+        "960": "assets/tools/artcraft/shot-960.webp",
+        "1600": "assets/tools/artcraft/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/artcraft/mobile-390.webp",
+        "780": "assets/tools/artcraft/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/artcraft/icon-128.webp",
+        "256": "assets/tools/artcraft/icon-256.webp",
+        "svg": "assets/tools/artcraft/icon.svg",
+        "from": "https://getartcraft.com/artcraft-icon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/artcraft/social-600.webp",
+        "1200": "assets/tools/artcraft/social-1200.webp",
+        "from": "https://getartcraft.com/images/og-image.png"
+      },
+      "color": "#f2f1ee",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://getartcraft.com\",null,null]"
+    },
+    "affinity": {
+      "slug": "affinity",
+      "name": "Affinity",
+      "source": "https://www.affinity.studio",
+      "capturedAt": "2026-10-23T15:22:00.138Z",
+      "alt": "Screenshot of the Affinity website",
+      "pageTitle": "Professional Creative Software | Craft In Affinity, Scale In Canva",
+      "pageDescription": "Powerful, precise, and free forever. Discover Affinity — the next generation of professional photo, design, and layout software built for creative freedom.",
+      "icon": {
+        "128": "assets/tools/affinity/icon-128.webp",
+        "256": "assets/tools/affinity/icon-256.webp",
+        "from": "https://static.canva.com/domain-assets/affinity/static/images/android-192x192-2.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/affinity/social-600.webp",
+        "1200": "assets/tools/affinity/social-1200.webp",
+        "from": "https://content-management-files.canva.com/0b0dac0e-084a-4096-9627-f5d5b9391e02/Affinity-OG-image.png"
+      },
+      "color": "#a8f878",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.affinity.studio\",{\"shot\":false},null]"
+    },
+    "signal": {
+      "slug": "signal",
+      "name": "Signal",
+      "source": "https://signal.org",
+      "capturedAt": "2026-10-23T15:22:05.811Z",
+      "alt": "Screenshot of the Signal website",
+      "pageTitle": "Signal >> Home",
+      "pageDescription": "Say \"hello\" to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.",
+      "shot": {
+        "480": "assets/tools/signal/shot-480.webp",
+        "960": "assets/tools/signal/shot-960.webp",
+        "1600": "assets/tools/signal/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/signal/mobile-390.webp",
+        "780": "assets/tools/signal/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/signal/icon-128.webp",
+        "256": "assets/tools/signal/icon-256.webp",
+        "svg": "assets/tools/signal/icon.svg",
+        "from": "https://signal.org/assets/images/favicon/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/signal/social-600.webp",
+        "1200": "assets/tools/signal/social-1200.webp",
+        "from": "https://signal.org/assets/images/og/og-image.png"
+      },
+      "color": "#e3e8fe",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://signal.org\",null,null]"
+    },
+    "element": {
+      "slug": "element",
+      "name": "Element",
+      "source": "https://element.io",
+      "capturedAt": "2026-10-23T15:22:12.456Z",
+      "alt": "Screenshot of the Element website",
+      "pageTitle": "Element | Secure collaboration and messaging",
+      "pageDescription": "Element is a Matrix-based end-to-end encrypted messenger and secure collaboration app. It’s decentralised for digital sovereign self-hosting, or through a hosting service such as Element Matrix Services. Element operates on the open Matrix network to provide interoperability and easy connections.",
+      "shot": {
+        "480": "assets/tools/element/shot-480.webp",
+        "960": "assets/tools/element/shot-960.webp",
+        "1600": "assets/tools/element/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/element/mobile-390.webp",
+        "780": "assets/tools/element/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/element/icon-128.webp",
+        "256": "assets/tools/element/icon-256.webp",
+        "from": "https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f0e1775cd41ebe29c04cac1_webclip.png",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/element/social-600.webp",
+        "1200": "assets/tools/element/social-1200.webp",
+        "from": "https://static.element.io/images/open-graph-large.png"
+      },
+      "color": "#08b888",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://element.io\",null,null]"
+    },
+    "thunderbird": {
+      "slug": "thunderbird",
+      "name": "Thunderbird",
+      "source": "https://www.thunderbird.net",
+      "capturedAt": "2026-10-23T15:22:22.119Z",
+      "alt": "Screenshot of the Thunderbird website",
+      "pageTitle": "Thunderbird — Free Your Inbox. — Thunderbird",
+      "pageDescription": "Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!",
+      "shot": {
+        "480": "assets/tools/thunderbird/shot-480.webp",
+        "960": "assets/tools/thunderbird/shot-960.webp",
+        "1600": "assets/tools/thunderbird/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/thunderbird/mobile-390.webp",
+        "780": "assets/tools/thunderbird/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/thunderbird/icon-128.webp",
+        "256": "assets/tools/thunderbird/icon-256.webp",
+        "from": "https://www.thunderbird.net/media/img/thunderbird/favicon-196.png",
+        "sourceWidth": 196,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/thunderbird/social-600.webp",
+        "1200": "assets/tools/thunderbird/social-1200.webp",
+        "from": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png"
+      },
+      "color": "#1878d8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.thunderbird.net\",null,null]"
+    },
+    "proton-mail": {
+      "slug": "proton-mail",
+      "name": "Proton Mail",
+      "source": "https://proton.me/mail",
+      "capturedAt": "2026-10-23T15:22:30.512Z",
+      "alt": "Screenshot of the Proton Mail website",
+      "pageTitle": "Proton Mail: Get a free email account with privacy and encryption | Proton",
+      "pageDescription": "Proton Mail is the world’s largest secure email service with over 100 million users. Available on Web, iOS, Android, and desktop. Protected by Swiss privacy law.",
+      "shot": {
+        "480": "assets/tools/proton-mail/shot-480.webp",
+        "960": "assets/tools/proton-mail/shot-960.webp",
+        "1600": "assets/tools/proton-mail/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/proton-mail/mobile-390.webp",
+        "780": "assets/tools/proton-mail/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/proton-mail/icon-128.webp",
+        "256": "assets/tools/proton-mail/icon-256.webp",
+        "from": "https://proton.me/favicons/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/proton-mail/social-600.webp",
+        "1200": "assets/tools/proton-mail/social-1200.webp",
+        "from": "https://proton.me/images/social/proton-mail-og.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://proton.me/mail\",null,null]"
+    },
+    "tuta": {
+      "slug": "tuta",
+      "name": "Tuta",
+      "source": "https://tuta.com",
+      "capturedAt": "2026-10-23T15:22:43.145Z",
+      "alt": "Screenshot of the Tuta website",
+      "pageTitle": "Tuta: Turn ON privacy for free with secure emails, calendars & contacts | Tuta",
+      "pageDescription": "Tuta guarantees your data stays private for free & without ads. Quantum-resistant encryption makes Tuta the best secure technology solution to protect your privacy.",
+      "shot": {
+        "480": "assets/tools/tuta/shot-480.webp",
+        "960": "assets/tools/tuta/shot-960.webp",
+        "1600": "assets/tools/tuta/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/tuta/mobile-390.webp",
+        "780": "assets/tools/tuta/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/tuta/icon-128.webp",
+        "256": "assets/tools/tuta/icon-256.webp",
+        "svg": "assets/tools/tuta/icon.svg",
+        "from": "https://tuta.com/favicon/logo-favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/tuta/social-600.webp",
+        "1200": "assets/tools/tuta/social-1200.webp",
+        "from": "https://tuta.com/share-tuta-thumbnail.png"
+      },
+      "color": "#880828",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://tuta.com\",null,null]"
+    },
+    "ollama": {
+      "slug": "ollama",
+      "name": "Ollama",
+      "source": "https://ollama.com",
+      "capturedAt": "2026-10-23T15:22:52.307Z",
+      "alt": "Screenshot of the Ollama website",
+      "pageTitle": "Ollama · Run AI models locally and in the cloud",
+      "pageDescription": "Ollama is the easiest way to run and build with open AI models locally or in the cloud on macOS, Windows, and Linux.",
+      "shot": {
+        "480": "assets/tools/ollama/shot-480.webp",
+        "960": "assets/tools/ollama/shot-960.webp",
+        "1600": "assets/tools/ollama/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ollama/mobile-390.webp",
+        "780": "assets/tools/ollama/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/ollama/social-600.webp",
+        "1200": "assets/tools/ollama/social-1200.webp",
+        "from": "https://ollama.com/public/og.png"
+      },
+      "color": null,
+      "notes": [
+        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
+      ],
+      "cfg": "[\"https://ollama.com\",null,null]"
+    },
+    "jan": {
+      "slug": "jan",
+      "name": "Jan",
+      "source": "https://jan.ai",
+      "capturedAt": "2026-10-23T15:22:58.106Z",
+      "alt": "Screenshot of the Jan website",
+      "pageTitle": "Jan - Open-Source ChatGPT Replacement",
+      "pageDescription": "Jan is an open-source alternative to ChatGPT. Run open-source AI models locally or connect to cloud models like GPT, Claude and others.",
+      "shot": {
+        "480": "assets/tools/jan/shot-480.webp",
+        "960": "assets/tools/jan/shot-960.webp",
+        "1600": "assets/tools/jan/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/jan/mobile-390.webp",
+        "780": "assets/tools/jan/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/jan/social-600.webp",
+        "1200": "assets/tools/jan/social-1200.webp",
+        "from": "https://jan.ai/assets/images/general/og-image.png"
+      },
+      "color": "#fff",
+      "colorFrom": "theme-color",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://jan.ai\",null,null]"
+    },
+    "goose": {
+      "slug": "goose",
+      "name": "goose",
+      "source": "https://github.com/block/goose",
+      "capturedAt": "2026-10-23T15:23:06.031Z",
+      "alt": "Screenshot of the goose website",
+      "pageTitle": "GitHub - aaif-goose/goose: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM · GitHub",
+      "pageDescription": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM - aaif-goose/goose",
+      "shot": {
+        "480": "assets/tools/goose/shot-480.webp",
+        "960": "assets/tools/goose/shot-960.webp",
+        "1600": "assets/tools/goose/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/goose/mobile-390.webp",
+        "780": "assets/tools/goose/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/goose/icon-128.webp",
+        "256": "assets/tools/goose/icon-256.webp",
+        "svg": "assets/tools/goose/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/goose/social-600.webp",
+        "1200": "assets/tools/goose/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/ee26d7b123ee444b1849674c1dbc12f8b2ec69d3f41b0158e6537419f7f2436a/aaif-goose/goose"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/block/goose\",null,null]"
+    },
+    "chatgpt": {
+      "slug": "chatgpt",
+      "name": "ChatGPT",
+      "source": "https://chatgpt.com",
+      "capturedAt": "2026-10-23T15:23:14.673Z",
+      "alt": "Screenshot of the ChatGPT website",
+      "pageTitle": "Just a moment...",
+      "pageDescription": null,
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://chatgpt.com\",{\"shot\":false},null]"
+    },
+    "claude": {
+      "slug": "claude",
+      "name": "Claude",
+      "source": "https://claude.ai",
+      "capturedAt": "2026-10-23T15:23:25.807Z",
+      "alt": "Screenshot of the Claude website",
+      "pageTitle": "Sign in - Claude",
+      "pageDescription": "Sign in to Claude, Anthropic's AI assistant for problem solvers.",
+      "icon": {
+        "128": "assets/tools/claude/icon-128.webp",
+        "256": "assets/tools/claude/icon-256.webp",
+        "svg": "assets/tools/claude/icon.svg",
+        "from": "https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cd02a42d9-Vq_H3mgS.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/claude/social-600.webp",
+        "1200": "assets/tools/claude/social-1200.webp",
+        "from": "https://claude.ai/images/claude_ogimage.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "manifest unreadable: HTTP 403 for https://claude.ai/manifest.json"
+      ],
+      "cfg": "[\"https://claude.ai\",{\"shot\":false},null]"
+    },
+    "google-drive": {
+      "slug": "google-drive",
+      "name": "Google Drive",
+      "source": "https://drive.google.com",
+      "capturedAt": "2026-10-23T15:23:32.194Z",
+      "alt": "Screenshot of the Google Drive website",
+      "pageTitle": "Google Drive: Sign-in",
+      "pageDescription": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use).",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://drive.google.com\",{\"shot\":false},null]"
+    },
+    "google-maps": {
+      "slug": "google-maps",
+      "name": "Google Maps",
+      "source": "https://maps.google.com",
+      "capturedAt": "2026-10-23T15:23:35.898Z",
+      "alt": "Screenshot of the Google Maps website",
+      "pageTitle": "Google Maps",
+      "pageDescription": "Find local businesses, view maps and get driving directions in Google Maps.",
+      "icon": {
+        "128": "assets/tools/google-maps/icon-128.webp",
+        "256": "assets/tools/google-maps/icon-256.webp",
+        "from": "https://www.gstatic.com/images/branding/productlogos/maps_2025_round/v1/web-512dp/logo_maps_2025_round_color_1x_web_512dp.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/google-maps/social-600.webp",
+        "1200": "assets/tools/google-maps/social-1200.webp",
+        "from": "https://maps.google.com/maps/api/staticmap?center=38.69313855%2C-78.1367655&zoom=8&size=900x900&language=en&sensor=false&key=AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&signature=KtLZXk-awLuBmNBpYA7fvPok9uQ"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://maps.google.com\",{\"shot\":false},null]"
+    },
+    "google-search": {
+      "slug": "google-search",
+      "name": "Google Search",
+      "source": "https://www.google.com",
+      "capturedAt": "2026-10-23T15:23:48.018Z",
+      "alt": "Screenshot of the Google Search website",
+      "pageTitle": "Google",
+      "pageDescription": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.google.com\",{\"shot\":false},null]"
+    },
+    "google-photos": {
+      "slug": "google-photos",
+      "name": "Google Photos",
+      "source": "https://photos.google.com",
+      "capturedAt": "2026-10-23T15:23:51.657Z",
+      "alt": "Screenshot of the Google Photos website",
+      "pageTitle": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+      "pageDescription": "Edit and enhance photos with AI-powered features like Magic Eraser and Unblur on Google Photos. Store, organize & search your memories.",
+      "icon": {
+        "128": "assets/tools/google-photos/icon-128.webp",
+        "256": "assets/tools/google-photos/icon-256.webp",
+        "svg": "assets/tools/google-photos/icon.svg",
+        "from": "https://storage.googleapis.com/gweb-mobius-cdn/photos/uploads/383ce0413fa82bcaf6de49fd7997678b21b9762e.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/google-photos/social-600.webp",
+        "1200": "assets/tools/google-photos/social-1200.webp",
+        "from": "https://lh3.googleusercontent.com/Rh3tuvHk6EEPFvpsOPfFQ8P9s-1srhWR8mOpDPC72WvxvoA7CKJo3Cy_NV1YK26nUD1dkc3ok9Gj8qV0kB6jSLNbue21h6lBAezY=e365-pa-nu-w1200-rj"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://photos.google.com\",{\"shot\":false},null]"
+    },
+    "kindle": {
+      "slug": "kindle",
+      "name": "Amazon Kindle",
+      "source": "https://www.amazon.com/kindle",
+      "capturedAt": "2026-10-23T15:23:58.387Z",
+      "alt": "Screenshot of the Amazon Kindle website",
+      "pageTitle": "Kindle E-Readers - Read, Write & Create on a Glare-Free Display | Amazon.com",
+      "pageDescription": "Discover the Kindle lineup—purpose-built for reading, writing, and deep focus. Glare-free displays, weeks of battery life, and AI-powered tools. Buy your Kindle today!",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.amazon.com/kindle\",{\"shot\":false},null]"
+    },
+    "google-password-manager": {
+      "slug": "google-password-manager",
+      "name": "Google Password Manager",
+      "source": "https://passwords.google.com",
+      "capturedAt": "2026-10-23T15:24:03.217Z",
+      "alt": "Screenshot of the Google Password Manager website",
+      "pageTitle": "Sign in - Google Accounts",
+      "pageDescription": null,
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://passwords.google.com\",{\"shot\":false},null]"
+    },
+    "adobe-creative-cloud": {
+      "slug": "adobe-creative-cloud",
+      "name": "Adobe Creative Cloud",
+      "source": "https://www.adobe.com/creativecloud.html",
+      "capturedAt": "2026-10-23T15:24:07.073Z",
+      "alt": "Screenshot of the Adobe Creative Cloud website",
+      "pageTitle": "Access Denied",
+      "pageDescription": null,
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.adobe.com/creativecloud.html\",{\"shot\":false},null]"
+    },
+    "openstreetmap": {
+      "slug": "openstreetmap",
+      "name": "OpenStreetMap",
+      "source": "https://www.openstreetmap.org",
+      "capturedAt": "2026-10-23T15:24:10.768Z",
+      "alt": "Screenshot of the OpenStreetMap website",
+      "pageTitle": "OpenStreetMap",
+      "pageDescription": "OpenStreetMap is a map of the world, created by people like you and free to use under an open license.",
+      "shot": {
+        "480": "assets/tools/openstreetmap/shot-480.webp",
+        "960": "assets/tools/openstreetmap/shot-960.webp",
+        "1600": "assets/tools/openstreetmap/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/openstreetmap/mobile-390.webp",
+        "780": "assets/tools/openstreetmap/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/openstreetmap/icon-128.webp",
+        "256": "assets/tools/openstreetmap/icon-256.webp",
+        "svg": "assets/tools/openstreetmap/icon.svg",
+        "from": "https://www.openstreetmap.org/assets/osm_logo-cc7d94392992162133be3baa21a37eb84f19f9b91178f704005378fbeecabb4e.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/openstreetmap/social-600.webp",
+        "1200": "assets/tools/openstreetmap/social-1200.webp",
+        "from": "https://www.openstreetmap.org/assets/osm_logo_256-ed028f90468224a272961c380ecee0cfb73b8048b34f4b4b204b7f0d1097875d.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.openstreetmap.org\",null,null]"
+    },
+    "osmand": {
+      "slug": "osmand",
+      "name": "OsmAnd",
+      "source": "https://osmand.net",
+      "capturedAt": "2026-10-23T15:24:18.815Z",
+      "alt": "Screenshot of the OsmAnd website",
+      "pageTitle": "OsmAnd",
+      "pageDescription": "Offline Mobile Maps & Navigation",
+      "shot": {
+        "480": "assets/tools/osmand/shot-480.webp",
+        "960": "assets/tools/osmand/shot-960.webp",
+        "1600": "assets/tools/osmand/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/osmand/mobile-390.webp",
+        "780": "assets/tools/osmand/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/osmand/social-600.webp",
+        "1200": "assets/tools/osmand/social-1200.webp",
+        "from": "https://osmand.net/img/social-card.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://osmand.net\",null,null]"
+    },
+    "immich": {
+      "slug": "immich",
+      "name": "Immich",
+      "source": "https://immich.app",
+      "capturedAt": "2026-10-23T15:24:31.906Z",
+      "alt": "Screenshot of the Immich website",
+      "pageTitle": "Immich",
+      "pageDescription": "Self-hosted photo and video management solution. Easily back up, organize, and manage your photos on your own server. Immich helps you browse, search and organize your photos and videos with ease, without sacrificing your privacy.",
+      "shot": {
+        "480": "assets/tools/immich/shot-480.webp",
+        "960": "assets/tools/immich/shot-960.webp",
+        "1600": "assets/tools/immich/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/immich/mobile-390.webp",
+        "780": "assets/tools/immich/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/immich/social-600.webp",
+        "1200": "assets/tools/immich/social-1200.webp",
+        "from": "https://immich.app/img/social-preview.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://immich.app\",null,null]"
+    },
+    "proton-pass": {
+      "slug": "proton-pass",
+      "name": "Proton Pass",
+      "source": "https://proton.me/pass",
+      "capturedAt": "2026-10-23T15:24:39.591Z",
+      "alt": "Screenshot of the Proton Pass website",
+      "pageTitle": "Proton Pass: Free password manager with identity protection | Proton",
+      "pageDescription": "Store, share and sync passwords, passkeys, email aliases, and more, on any device, with our open-source, free password manager. No trials, just free forever.",
+      "shot": {
+        "480": "assets/tools/proton-pass/shot-480.webp",
+        "960": "assets/tools/proton-pass/shot-960.webp",
+        "1600": "assets/tools/proton-pass/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/proton-pass/mobile-390.webp",
+        "780": "assets/tools/proton-pass/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/proton-pass/icon-128.webp",
+        "256": "assets/tools/proton-pass/icon-256.webp",
+        "from": "https://proton.me/favicons/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/proton-pass/social-600.webp",
+        "1200": "assets/tools/proton-pass/social-1200.webp",
+        "from": "https://pmecdn.protonweb.com/image-transformation/?s=a&image=Zx_Ij_I4_F3_Nbk_B_Xt_CR_Proton_Pass_0b5caf9c97.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://proton.me/pass\",null,null]"
     }
   },
-  "updatedAt": "2026-10-23T13:55:05.890Z"
+  "updatedAt": "2026-10-23T15:24:50.705Z"
 }

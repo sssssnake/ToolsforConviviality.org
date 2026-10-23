@@ -1,0 +1,23 @@
+{
+  "slug": "penpot",
+  "name": "Penpot",
+  "source": "https://penpot.app",
+  "capturedAt": "2026-10-23T15:20:38.745Z",
+  "alt": "Screenshot of the Penpot website",
+  "pageTitle": "Penpot: The open-source design platform for teams.",
+  "pageDescription": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
+  "shot": {
+    "480": "assets/tools/penpot/shot-480.webp",
+    "960": "assets/tools/penpot/shot-960.webp",
+    "1600": "assets/tools/penpot/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/penpot/mobile-390.webp",
+    "780": "assets/tools/penpot/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "dismissed banner with button:has-text(\"Reject all\")",
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

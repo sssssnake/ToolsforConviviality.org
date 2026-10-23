@@ -1,0 +1,34 @@
+{
+  "slug": "proton-pass",
+  "name": "Proton Pass",
+  "source": "https://proton.me/pass",
+  "capturedAt": "2026-10-23T15:24:39.591Z",
+  "alt": "Screenshot of the Proton Pass website",
+  "pageTitle": "Proton Pass: Free password manager with identity protection | Proton",
+  "pageDescription": "Store, share and sync passwords, passkeys, email aliases, and more, on any device, with our open-source, free password manager. No trials, just free forever.",
+  "shot": {
+    "480": "assets/tools/proton-pass/shot-480.webp",
+    "960": "assets/tools/proton-pass/shot-960.webp",
+    "1600": "assets/tools/proton-pass/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/proton-pass/mobile-390.webp",
+    "780": "assets/tools/proton-pass/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/proton-pass/icon-128.webp",
+    "256": "assets/tools/proton-pass/icon-256.webp",
+    "from": "https://proton.me/favicons/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/proton-pass/social-600.webp",
+    "1200": "assets/tools/proton-pass/social-1200.webp",
+    "from": "https://pmecdn.protonweb.com/image-transformation/?s=a&image=Zx_Ij_I4_F3_Nbk_B_Xt_CR_Proton_Pass_0b5caf9c97.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

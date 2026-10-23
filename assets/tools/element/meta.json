@@ -1,0 +1,34 @@
+{
+  "slug": "element",
+  "name": "Element",
+  "source": "https://element.io",
+  "capturedAt": "2026-10-23T15:22:12.456Z",
+  "alt": "Screenshot of the Element website",
+  "pageTitle": "Element | Secure collaboration and messaging",
+  "pageDescription": "Element is a Matrix-based end-to-end encrypted messenger and secure collaboration app. It’s decentralised for digital sovereign self-hosting, or through a hosting service such as Element Matrix Services. Element operates on the open Matrix network to provide interoperability and easy connections.",
+  "shot": {
+    "480": "assets/tools/element/shot-480.webp",
+    "960": "assets/tools/element/shot-960.webp",
+    "1600": "assets/tools/element/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/element/mobile-390.webp",
+    "780": "assets/tools/element/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/element/icon-128.webp",
+    "256": "assets/tools/element/icon-256.webp",
+    "from": "https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f0e1775cd41ebe29c04cac1_webclip.png",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/element/social-600.webp",
+    "1200": "assets/tools/element/social-1200.webp",
+    "from": "https://static.element.io/images/open-graph-large.png"
+  },
+  "color": "#08b888",
+  "colorFrom": "icon",
+  "notes": []
+}

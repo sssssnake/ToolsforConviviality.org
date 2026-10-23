@@ -1,0 +1,34 @@
+{
+  "slug": "gimp",
+  "name": "GIMP",
+  "source": "https://www.gimp.org",
+  "capturedAt": "2026-10-23T15:20:31.755Z",
+  "alt": "Screenshot of the GIMP website",
+  "pageTitle": "GIMP - GNU Image Manipulation Program",
+  "pageDescription": "GIMP - The GNU Image Manipulation Program: The Free and Open Source Image Editor",
+  "shot": {
+    "480": "assets/tools/gimp/shot-480.webp",
+    "960": "assets/tools/gimp/shot-960.webp",
+    "1600": "assets/tools/gimp/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/gimp/mobile-390.webp",
+    "780": "assets/tools/gimp/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/gimp/icon-128.webp",
+    "256": "assets/tools/gimp/icon-256.webp",
+    "from": "https://www.gimp.org/images/wilber32.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/gimp/social-600.webp",
+    "1200": "assets/tools/gimp/social-1200.webp",
+    "from": "https://www.gimp.org/images/frontpage/wilber-big.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

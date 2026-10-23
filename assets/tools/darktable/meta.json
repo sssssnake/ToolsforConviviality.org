@@ -1,0 +1,27 @@
+{
+  "slug": "darktable",
+  "name": "darktable",
+  "source": "https://www.darktable.org",
+  "capturedAt": "2026-10-23T15:21:10.422Z",
+  "alt": "Screenshot of the darktable website",
+  "pageTitle": "darktable",
+  "pageDescription": "darktable is an open source photography workflow application and raw developer",
+  "shot": {
+    "480": "assets/tools/darktable/shot-480.webp",
+    "960": "assets/tools/darktable/shot-960.webp",
+    "1600": "assets/tools/darktable/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/darktable/mobile-390.webp",
+    "780": "assets/tools/darktable/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/darktable/social-600.webp",
+    "1200": "assets/tools/darktable/social-1200.webp",
+    "from": "https://www.darktable.org/images/darktable-logo-only-512w.png"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

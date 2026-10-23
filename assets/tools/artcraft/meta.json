@@ -1,0 +1,33 @@
+{
+  "slug": "artcraft",
+  "name": "ArtCraft",
+  "source": "https://getartcraft.com",
+  "capturedAt": "2026-10-23T15:21:46.381Z",
+  "alt": "Screenshot of the ArtCraft website",
+  "pageTitle": "ArtCraft — Controllable AI for Artists",
+  "pageDescription": "ArtCraft is the open-source desktop app for generating AI video and images — built for artists who want real control.",
+  "shot": {
+    "480": "assets/tools/artcraft/shot-480.webp",
+    "960": "assets/tools/artcraft/shot-960.webp",
+    "1600": "assets/tools/artcraft/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/artcraft/mobile-390.webp",
+    "780": "assets/tools/artcraft/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/artcraft/icon-128.webp",
+    "256": "assets/tools/artcraft/icon-256.webp",
+    "svg": "assets/tools/artcraft/icon.svg",
+    "from": "https://getartcraft.com/artcraft-icon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/artcraft/social-600.webp",
+    "1200": "assets/tools/artcraft/social-1200.webp",
+    "from": "https://getartcraft.com/images/og-image.png"
+  },
+  "color": "#f2f1ee",
+  "colorFrom": "theme-color",
+  "notes": []
+}

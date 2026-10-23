@@ -1,0 +1,33 @@
+{
+  "slug": "blender",
+  "name": "Blender",
+  "source": "https://www.blender.org",
+  "capturedAt": "2026-10-23T15:21:01.584Z",
+  "alt": "Screenshot of the Blender website",
+  "pageTitle": "Blender - The Free and Open Source 3D Creation Software — blender.org",
+  "pageDescription": "The Freedom to Create",
+  "shot": {
+    "480": "assets/tools/blender/shot-480.webp",
+    "960": "assets/tools/blender/shot-960.webp",
+    "1600": "assets/tools/blender/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/blender/mobile-390.webp",
+    "780": "assets/tools/blender/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/blender/icon-128.webp",
+    "256": "assets/tools/blender/icon-256.webp",
+    "svg": "assets/tools/blender/icon.svg",
+    "from": "https://www.blender.org/wp-content/themes/bthree/assets/icons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/blender/social-600.webp",
+    "1200": "assets/tools/blender/social-1200.webp",
+    "from": "https://www.blender.org/wp-content/uploads/2026/07/splash-overgrown-480x270.webp"
+  },
+  "color": "#ed8f31",
+  "colorFrom": "theme-color",
+  "notes": []
+}

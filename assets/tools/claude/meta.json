@@ -1,0 +1,27 @@
+{
+  "slug": "claude",
+  "name": "Claude",
+  "source": "https://claude.ai",
+  "capturedAt": "2026-10-23T15:23:25.807Z",
+  "alt": "Screenshot of the Claude website",
+  "pageTitle": "Sign in - Claude",
+  "pageDescription": "Sign in to Claude, Anthropic's AI assistant for problem solvers.",
+  "icon": {
+    "128": "assets/tools/claude/icon-128.webp",
+    "256": "assets/tools/claude/icon-256.webp",
+    "svg": "assets/tools/claude/icon.svg",
+    "from": "https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cd02a42d9-Vq_H3mgS.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/claude/social-600.webp",
+    "1200": "assets/tools/claude/social-1200.webp",
+    "from": "https://claude.ai/images/claude_ogimage.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "manifest unreadable: HTTP 403 for https://claude.ai/manifest.json"
+  ]
+}

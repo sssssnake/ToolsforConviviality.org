@@ -1,0 +1,34 @@
+{
+  "slug": "thunderbird",
+  "name": "Thunderbird",
+  "source": "https://www.thunderbird.net",
+  "capturedAt": "2026-10-23T15:22:22.119Z",
+  "alt": "Screenshot of the Thunderbird website",
+  "pageTitle": "Thunderbird — Free Your Inbox. — Thunderbird",
+  "pageDescription": "Thunderbird is a free email application that’s easy to set up and customize - and it’s loaded with great features!",
+  "shot": {
+    "480": "assets/tools/thunderbird/shot-480.webp",
+    "960": "assets/tools/thunderbird/shot-960.webp",
+    "1600": "assets/tools/thunderbird/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/thunderbird/mobile-390.webp",
+    "780": "assets/tools/thunderbird/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/thunderbird/icon-128.webp",
+    "256": "assets/tools/thunderbird/icon-256.webp",
+    "from": "https://www.thunderbird.net/media/img/thunderbird/favicon-196.png",
+    "sourceWidth": 196,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/thunderbird/social-600.webp",
+    "1200": "assets/tools/thunderbird/social-1200.webp",
+    "from": "https://www.thunderbird.net/media/img/thunderbird/thunderbird-256.png"
+  },
+  "color": "#1878d8",
+  "colorFrom": "icon",
+  "notes": []
+}

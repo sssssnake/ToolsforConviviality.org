@@ -1,0 +1,34 @@
+{
+  "slug": "inkscape",
+  "name": "Inkscape",
+  "source": "https://inkscape.org",
+  "capturedAt": "2026-10-23T15:20:24.409Z",
+  "alt": "Screenshot of the Inkscape website",
+  "pageTitle": "Inkscape - Draw Freely. | Inkscape",
+  "pageDescription": "Inkscape is professional vector graphics software which runs on Linux, macOS and Windows desktop computers.",
+  "shot": {
+    "480": "assets/tools/inkscape/shot-480.webp",
+    "960": "assets/tools/inkscape/shot-960.webp",
+    "1600": "assets/tools/inkscape/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/inkscape/mobile-390.webp",
+    "780": "assets/tools/inkscape/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/inkscape/icon-128.webp",
+    "256": "assets/tools/inkscape/icon-256.webp",
+    "from": "https://media.inkscape.org/static/images/inkscape-favicon.png",
+    "sourceWidth": 134,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/inkscape/social-600.webp",
+    "1200": "assets/tools/inkscape/social-1200.webp",
+    "from": "https://media.inkscape.org/static/images/inkscape-og-front.svg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

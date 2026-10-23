@@ -1,0 +1,33 @@
+{
+  "slug": "signal",
+  "name": "Signal",
+  "source": "https://signal.org",
+  "capturedAt": "2026-10-23T15:22:05.811Z",
+  "alt": "Screenshot of the Signal website",
+  "pageTitle": "Signal >> Home",
+  "pageDescription": "Say \"hello\" to a different messaging experience. An unexpected focus on privacy, combined with all of the features you expect.",
+  "shot": {
+    "480": "assets/tools/signal/shot-480.webp",
+    "960": "assets/tools/signal/shot-960.webp",
+    "1600": "assets/tools/signal/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/signal/mobile-390.webp",
+    "780": "assets/tools/signal/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/signal/icon-128.webp",
+    "256": "assets/tools/signal/icon-256.webp",
+    "svg": "assets/tools/signal/icon.svg",
+    "from": "https://signal.org/assets/images/favicon/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/signal/social-600.webp",
+    "1200": "assets/tools/signal/social-1200.webp",
+    "from": "https://signal.org/assets/images/og/og-image.png"
+  },
+  "color": "#e3e8fe",
+  "colorFrom": "theme-color",
+  "notes": []
+}

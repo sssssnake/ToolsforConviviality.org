@@ -1,0 +1,33 @@
+{
+  "slug": "comfyui",
+  "name": "ComfyUI",
+  "source": "https://www.comfy.org",
+  "capturedAt": "2026-10-23T15:21:30.811Z",
+  "alt": "Screenshot of the ComfyUI website",
+  "pageTitle": "Comfy - Professional Control of Visual AI",
+  "pageDescription": "Comfy is the AI creation engine for visual professionals who demand control over every model, every parameter, and every output.",
+  "shot": {
+    "480": "assets/tools/comfyui/shot-480.webp",
+    "960": "assets/tools/comfyui/shot-960.webp",
+    "1600": "assets/tools/comfyui/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/comfyui/mobile-390.webp",
+    "780": "assets/tools/comfyui/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/comfyui/icon-128.webp",
+    "256": "assets/tools/comfyui/icon-256.webp",
+    "svg": "assets/tools/comfyui/icon.svg",
+    "from": "https://comfy.org/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/comfyui/social-600.webp",
+    "1200": "assets/tools/comfyui/social-1200.webp",
+    "from": "https://media.comfy.org/website/comfy.webp"
+  },
+  "color": "#211927",
+  "colorFrom": "theme-color",
+  "notes": []
+}

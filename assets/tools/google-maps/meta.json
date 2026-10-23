@@ -1,0 +1,27 @@
+{
+  "slug": "google-maps",
+  "name": "Google Maps",
+  "source": "https://maps.google.com",
+  "capturedAt": "2026-10-23T15:23:35.898Z",
+  "alt": "Screenshot of the Google Maps website",
+  "pageTitle": "Google Maps",
+  "pageDescription": "Find local businesses, view maps and get driving directions in Google Maps.",
+  "icon": {
+    "128": "assets/tools/google-maps/icon-128.webp",
+    "256": "assets/tools/google-maps/icon-256.webp",
+    "from": "https://www.gstatic.com/images/branding/productlogos/maps_2025_round/v1/web-512dp/logo_maps_2025_round_color_1x_web_512dp.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/google-maps/social-600.webp",
+    "1200": "assets/tools/google-maps/social-1200.webp",
+    "from": "https://maps.google.com/maps/api/staticmap?center=38.69313855%2C-78.1367655&zoom=8&size=900x900&language=en&sensor=false&key=AIzaSyBoYjeRtfVI0Jd8Q_9mnflo9i4sOYpShB0&signature=KtLZXk-awLuBmNBpYA7fvPok9uQ"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "affinity",
+  "name": "Affinity",
+  "source": "https://www.affinity.studio",
+  "capturedAt": "2026-10-23T15:22:00.138Z",
+  "alt": "Screenshot of the Affinity website",
+  "pageTitle": "Professional Creative Software | Craft In Affinity, Scale In Canva",
+  "pageDescription": "Powerful, precise, and free forever. Discover Affinity — the next generation of professional photo, design, and layout software built for creative freedom.",
+  "icon": {
+    "128": "assets/tools/affinity/icon-128.webp",
+    "256": "assets/tools/affinity/icon-256.webp",
+    "from": "https://static.canva.com/domain-assets/affinity/static/images/android-192x192-2.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/affinity/social-600.webp",
+    "1200": "assets/tools/affinity/social-1200.webp",
+    "from": "https://content-management-files.canva.com/0b0dac0e-084a-4096-9627-f5d5b9391e02/Affinity-OG-image.png"
+  },
+  "color": "#a8f878",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

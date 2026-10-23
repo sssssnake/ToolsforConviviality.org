@@ -1,0 +1,33 @@
+{
+  "slug": "goose",
+  "name": "goose",
+  "source": "https://github.com/block/goose",
+  "capturedAt": "2026-10-23T15:23:06.031Z",
+  "alt": "Screenshot of the goose website",
+  "pageTitle": "GitHub - aaif-goose/goose: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM · GitHub",
+  "pageDescription": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM - aaif-goose/goose",
+  "shot": {
+    "480": "assets/tools/goose/shot-480.webp",
+    "960": "assets/tools/goose/shot-960.webp",
+    "1600": "assets/tools/goose/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/goose/mobile-390.webp",
+    "780": "assets/tools/goose/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/goose/icon-128.webp",
+    "256": "assets/tools/goose/icon-256.webp",
+    "svg": "assets/tools/goose/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/goose/social-600.webp",
+    "1200": "assets/tools/goose/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/ee26d7b123ee444b1849674c1dbc12f8b2ec69d3f41b0158e6537419f7f2436a/aaif-goose/goose"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

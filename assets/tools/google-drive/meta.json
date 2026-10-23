@@ -1,0 +1,14 @@
+{
+  "slug": "google-drive",
+  "name": "Google Drive",
+  "source": "https://drive.google.com",
+  "capturedAt": "2026-10-23T15:23:32.194Z",
+  "alt": "Screenshot of the Google Drive website",
+  "pageTitle": "Google Drive: Sign-in",
+  "pageDescription": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use).",
+  "color": null,
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}
