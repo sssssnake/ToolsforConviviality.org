@@ -425,5 +425,156 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "nextcloud",
+    "name": "Nextcloud",
+    "url": "https://nextcloud.com"
+  },
+  {
+    "slug": "pairdrop",
+    "name": "PairDrop",
+    "url": "https://pairdrop.net"
+  },
+  {
+    "slug": "searxng",
+    "name": "SearXNG",
+    "url": "https://docs.searxng.org"
+  },
+  {
+    "slug": "organic-maps",
+    "name": "Organic Maps",
+    "url": "https://organicmaps.app"
+  },
+  {
+    "slug": "transportr",
+    "name": "Transportr",
+    "url": "https://transportr.app"
+  },
+  {
+    "slug": "logseq",
+    "name": "Logseq",
+    "url": "https://logseq.com"
+  },
+  {
+    "slug": "notesnook",
+    "name": "Notesnook",
+    "url": "https://notesnook.com"
+  },
+  {
+    "slug": "photoprism",
+    "name": "PhotoPrism",
+    "url": "https://photoprism.app"
+  },
+  {
+    "slug": "piwigo",
+    "name": "Piwigo",
+    "url": "https://piwigo.org"
+  },
+  {
+    "slug": "digikam",
+    "name": "digiKam",
+    "url": "https://www.digikam.org"
+  },
+  {
+    "slug": "gmic",
+    "name": "G'MIC",
+    "url": "https://gmic.eu"
+  },
+  {
+    "slug": "rawtherapee",
+    "name": "RawTherapee",
+    "url": "https://rawtherapee.com"
+  },
+  {
+    "slug": "shotcut",
+    "name": "Shotcut",
+    "url": "https://shotcut.org"
+  },
+  {
+    "slug": "obs-studio",
+    "name": "OBS Studio",
+    "url": "https://obsproject.com"
+  },
+  {
+    "slug": "keepassdx",
+    "name": "KeePassDX",
+    "url": "https://www.keepassdx.com"
+  },
+  {
+    "slug": "pass",
+    "name": "pass",
+    "url": "https://www.passwordstore.org"
+  },
+  {
+    "slug": "linkwarden",
+    "name": "Linkwarden",
+    "url": "https://linkwarden.app"
+  },
+  {
+    "slug": "wallabag",
+    "name": "wallabag",
+    "url": "https://wallabag.org"
+  },
+  {
+    "slug": "simplex",
+    "name": "SimpleX Chat",
+    "url": "https://simplex.chat"
+  },
+  {
+    "slug": "briar",
+    "name": "Briar",
+    "url": "https://briarproject.org"
+  },
+  {
+    "slug": "bluesky",
+    "name": "Bluesky",
+    "url": "https://bsky.app"
+  },
+  {
+    "slug": "posteo",
+    "name": "Posteo",
+    "url": "https://posteo.de"
+  },
+  {
+    "slug": "snapchat",
+    "name": "Snapchat",
+    "url": "https://www.snapchat.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "mojeek",
+    "name": "Mojeek",
+    "url": "https://www.mojeek.com"
+  },
+  {
+    "slug": "marginalia",
+    "name": "Marginalia Search",
+    "url": "https://marginalia-search.com"
+  },
+  {
+    "slug": "miniflux",
+    "name": "Miniflux",
+    "url": "https://miniflux.app"
+  },
+  {
+    "slug": "feedbin",
+    "name": "Feedbin",
+    "url": "https://feedbin.com"
+  },
+  {
+    "slug": "newsboat",
+    "name": "Newsboat",
+    "url": "https://newsboat.org"
+  },
+  {
+    "slug": "google-news",
+    "name": "Google News",
+    "url": "https://news.google.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
