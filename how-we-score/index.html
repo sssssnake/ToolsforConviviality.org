@@ -331,7 +331,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 </header>
 
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / How we score</p>
-  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we score</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
   <div class="criteria"><div class="crit"><span class="from">From “Biological degradation”</span><h3>Footprint</h3><p>Does it run light, work offline, and keep going on an old laptop, or does it need new hardware and a data centre?</p></div><div class="crit"><span class="from">From “Radical monopoly”</span><h3>Lock-in</h3><p>Can you leave with your stuff in an open format, or does it make you depend on a whole category of product to take part?</p></div><div class="crit"><span class="from">From “Overprogramming”</span><h3>Self-direction</h3><p>Can a normal person learn it by using it and point it at their own purposes, without dark patterns training their habits?</p></div><div class="crit"><span class="from">From “Polarization”</span><h3>Power</h3><p>Who holds the controls? Team size, governance, open source, whether the price shuts people out, and whether your data is the product.</p></div><div class="crit"><span class="from">From “Obsolescence”</span><h3>Longevity</h3><p>Does it keep working if the company folds or you stop paying, and does it respect the hardware you already own?</p></div><div class="crit"><span class="from">From “Frustration”</span><h3>Delivery</h3><p>Does it actually do the job, without ads, engagement bait, or a promise the product can't keep?</p></div></div>
   <div class="prose">
     <h2>What the totals mean</h2>
@@ -367,7 +367,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <footer>
   <div class="wrap">
     <div class="foot-links">
-      <a href="/how-we-score/">How tools are selected</a>
+      <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
@@ -903,7 +903,7 @@ function home() {
         <a href="#improve">I make software: improve my score ↗</a>
         <a href="#submit">Suggest a tool for the directory +</a>
         <a href="#what">What is conviviality? ↗</a>
-        <a href="#method">How tools are selected ↗</a>
+        <a href="#method">How we score ↗</a>
       </div>
     </aside>
   </div>
@@ -1249,7 +1249,7 @@ function improve() {
 
 function method() {
   return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
-  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we score</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>

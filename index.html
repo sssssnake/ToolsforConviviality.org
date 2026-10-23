@@ -342,11 +342,11 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <aside>
       <div class="card feature" aria-live="polite">
         <p class="label">A random tool in the collection</p>
-        <h2>Ente Photos</h2>
-        <p class="desc">End-to-end encrypted photo backup and sharing.</p>
-        <ul><li>Instead of Google Photos, iCloud Photos</li><li>Medium maker · System</li><li>24/30 · Leaning convivial</li></ul>
+        <h2>Penpot</h2>
+        <p class="desc">An open-source design and prototyping tool for interfaces, built on web standards.</p>
+        <ul><li>Instead of Figma and Adobe XD</li><li>Medium maker · System</li><li>25/30 · Convivial</li></ul>
         <div class="btn-row">
-          <a class="btn" href="/tools/ente/">Read the review <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="/tools/penpot/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
         </div>
       </div>
@@ -354,7 +354,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
         <a href="/improve-my-conviviality-score/">I make software: improve my score ↗</a>
         <a href="/suggest/">Suggest a tool for the directory +</a>
         <a href="/what-is-conviviality/">What is conviviality? ↗</a>
-        <a href="/how-we-score/">How tools are selected ↗</a>
+        <a href="/how-we-score/">How we score ↗</a>
       </div>
     </aside>
   </div>
@@ -377,7 +377,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <footer>
   <div class="wrap">
     <div class="foot-links">
-      <a href="/how-we-score/">How tools are selected</a>
+      <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
@@ -913,7 +913,7 @@ function home() {
         <a href="#improve">I make software: improve my score ↗</a>
         <a href="#submit">Suggest a tool for the directory +</a>
         <a href="#what">What is conviviality? ↗</a>
-        <a href="#method">How tools are selected ↗</a>
+        <a href="#method">How we score ↗</a>
       </div>
     </aside>
   </div>
@@ -1259,7 +1259,7 @@ function improve() {
 
 function method() {
   return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
-  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we score</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>

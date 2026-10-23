@@ -342,7 +342,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <footer>
   <div class="wrap">
     <div class="foot-links">
-      <a href="/how-we-score/">How tools are selected</a>
+      <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
@@ -878,7 +878,7 @@ function home() {
         <a href="#improve">I make software: improve my score ↗</a>
         <a href="#submit">Suggest a tool for the directory +</a>
         <a href="#what">What is conviviality? ↗</a>
-        <a href="#method">How tools are selected ↗</a>
+        <a href="#method">How we score ↗</a>
       </div>
     </aside>
   </div>
@@ -1224,7 +1224,7 @@ function improve() {
 
 function method() {
   return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
-  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we score</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
   <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>What the totals mean</h2>
