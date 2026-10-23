@@ -79,7 +79,7 @@ main .wrap { padding-block: 48px 64px; }
 /* Home */
 .home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
 .hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
-.hero .lede { margin-top: 22px; color: var(--fg); max-width: 34ch; font-size: 17px; }
+.hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
 .purposes { margin-top: 32px; border-top: 1px solid var(--line); }
 .purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
 .purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); }
@@ -100,6 +100,10 @@ main .wrap { padding-block: 48px 64px; }
 .badge-box .badge-img span { padding: 10px; background: #f1f2ed; } .badge-box .badge-img span.dk { background: #19242d; }
 .badge-box textarea { width: 100%; font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--fg); border: 1px solid var(--line); padding: 10px; resize: vertical; min-height: 92px; }
 .badge-box p { margin: 0; font-size: 14px; color: var(--muted); }
+.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; margin: 22px 0 8px; }
+.hero-cta .btn { width: auto; }
+.hero-cta .btn.primary { background: var(--accent); color: var(--on-accent); }
+.hero .start { font-size: 15px; font-weight: 500; color: var(--muted); margin: 34px 0 6px; font-family: var(--mono); letter-spacing: .06em; text-transform: uppercase; }
 .pdf-card { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: center; border: 1px solid var(--accent); padding: 18px; margin: 28px 0; max-width: 760px; }
 .pdf-card img { width: 120px; height: auto; display: block; border: 1px solid var(--rule, var(--accent)); }
 .pdf-card h3 { color: var(--accent); font-size: 20px; margin-bottom: 6px; }
@@ -307,7 +311,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p>If you make Calibre, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
     <label class="visually-hidden" for="bs-calibre">Badge code for light backgrounds</label><textarea id="bs-calibre" readonly="" onfocus="this.select()">&lt;a href="https://toolsforconviviality.com/tools/calibre/"&gt;&lt;img src="https://toolsforconviviality.com/badges/calibre-light.svg" alt="Tools for Conviviality review: 26/30, Convivial" width="255" height="72"&gt;&lt;/a&gt;</textarea>
     <p>For dark backgrounds, use <code>calibre-dark.svg</code> in place of <code>calibre-light.svg</code>.</p></section>
-      <section class="related"><h2>Other tools for “own my books, not rent them”</h2><ul><li><a href="/tools/standard-ebooks/"><b>Standard Ebooks</b><span>Free, carefully made editions of public-domain books, with no account and no catch.</span></a></li><li><a href="/tools/gutenberg/"><b>Project Gutenberg</b><span>More than 75,000 free ebooks from a volunteer library that started in 1971.</span></a></li><li><a href="/tools/koreader/"><b>KOReader</b><span>An open-source reading app for e-ink readers, phones and computers that opens almost any file.</span></a></li><li><a href="/tools/audiobookshelf/"><b>Audiobookshelf</b><span>A server you run yourself for your audiobooks, podcasts and ebooks, with apps to listen on your phone.</span></a></li></ul></section>
+      <section class="related"><h2>Other tools for “own my books”</h2><ul><li><a href="/tools/standard-ebooks/"><b>Standard Ebooks</b><span>Free, carefully made editions of public-domain books, with no account and no catch.</span></a></li><li><a href="/tools/gutenberg/"><b>Project Gutenberg</b><span>More than 75,000 free ebooks from a volunteer library that started in 1971.</span></a></li><li><a href="/tools/koreader/"><b>KOReader</b><span>An open-source reading app for e-ink readers, phones and computers that opens almost any file.</span></a></li><li><a href="/tools/audiobookshelf/"><b>Audiobookshelf</b><span>A server you run yourself for your audiobooks, podcasts and ebooks, with apps to listen on your phone.</span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Calibre Info</span><i aria-hidden="true"></i></div>
@@ -373,7 +377,7 @@ const CATS = [
   { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
   { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
   { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
-  { id: "books", name: "Books & libraries", verb: "Own my books, not rent them", instead: "Kindle, Audible, Apple Books, Google Play Books" },
+  { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
@@ -614,8 +618,11 @@ function home() {
   const counts = k => k === "XL" ? BENCH.length : TOOLS.filter(x => x.size === k).length;
   return `<div class="home">
     <section class="hero">
-      <h1>What would you like to do?</h1>
-      <p class="lede">Useful software, made at a human scale. Start with a purpose, then find a tool you can make your own.</p>
+      <p class="label">A directory of convivial software</p>
+      <h1>Software that lets you leave.</h1>
+      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. Use them freely, make them your own, and take your things with you when you go.</p>
+      <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
+      <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
         const list = toolsIn(c.id);
         return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.map(x => x.name).join(", ")} ↗</span></a>`;
@@ -633,12 +640,23 @@ function home() {
         </div>
       </div>
       <div class="side-links">
+        <a href="#improve">I make software: improve my score ↗</a>
         <a href="#submit">Suggest a tool for the directory +</a>
         <a href="#what">What is conviviality? ↗</a>
         <a href="#method">How tools are selected ↗</a>
       </div>
     </aside>
   </div>
+  <section class="sizes how">
+    <p class="label">How it works</p>
+    <h2>Six questions, one score, no payment.</h2>
+    <div class="size-grid">
+      <a class="size-cell" href="#method"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, taken from the six ways Illich said tools go wrong.</small></a>
+      <a class="size-cell" href="#method"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Manipulative. Scores are dated and open to change.</small></a>
+      <a class="size-cell" href="#about"><span class="size-letter">0</span><span>Paid for by nobody</span><small>We take no payment for listings, reviews or badges, so a score means what it says.</small></a>
+      <a class="size-cell" href="#improve"><span class="size-letter">+</span><span>Make software?</span><small>A free field guide shows which changes raise a score, and what they do to your income.</small></a>
+    </div>
+  </section>
   <section class="sizes">
     <p class="label">Browse by who makes it</p>
     <h2>Small makers first. Giants for comparison.</h2>
