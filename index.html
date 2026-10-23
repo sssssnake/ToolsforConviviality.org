@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>Tools for Conviviality</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="An independent public directory of small, convivial software, scored against Ivan Illich's ideas about tools.">
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+/* Layout: a public notice board. Periwinkle band on top, purposes on the left,
+   one tool on the right; reviews read like a catalogue card with a Get Info panel and a verdict stamp. */
+:root {
+  --bg: #172027;
+  --panel: #213039;
+  --panel-2: #1c2830;
+  --line: #36495a;
+  --fg: #dde6f3;
+  --muted: #9aaabd;
+  --accent: #b3c5ff;
+  --band: #b3c5ff;
+  --band-fg: #121a20;
+  --stamp: #f2967a;
+  --gold: #cdae62;
+  --meter-off: #2c3c48;
+  --display: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --stampface: "Oswald", "Arial Narrow", Impact, sans-serif;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
+    --accent: #2f45a6; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+    color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
+  --accent: #2f45a6; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); text-underline-offset: 3px; }
+a:hover { text-decoration-color: currentColor; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; text-wrap: balance; margin: 0; letter-spacing: -0.015em; }
+p { margin: 0; }
+
+/* Band */
+.band { background: var(--band); color: var(--band-fg); }
+.band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
+.mark { width: 52px; height: 40px; border: 1.5px solid var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }
+.brand-name { font-weight: 600; font-size: 15px; line-height: 1.25; }
+.nav { display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.nav a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; }
+.nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--band-fg); }
+
+main .wrap { padding-block: 48px 64px; }
+
+/* Home */
+.home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
+.hero .lede { margin-top: 22px; color: var(--fg); max-width: 34ch; font-size: 17px; }
+.purposes { margin-top: 32px; border-top: 1px solid var(--line); }
+.purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); }
+.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.purpose:hover .p-verb { color: var(--accent); }
+.purpose:hover .p-meta { color: var(--fg); }
+
+.card { background: var(--panel); padding: 24px; }
+.feature h2 { font-size: 30px; color: var(--accent); margin-top: 18px; }
+.feature .desc { margin-top: 10px; }
+.feature ul { list-style: none; padding: 16px 0 0; margin: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; font-size: 15px; }
+.btn { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--accent); padding: 12px 16px; text-decoration: none; color: var(--fg); background: transparent; font: inherit; font-size: 15px; cursor: pointer; width: 100%; text-align: left; }
+.btn:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.btn-row { display: grid; gap: 10px; margin-top: 22px; }
+.ghost { border-color: var(--line); color: var(--muted); }
+.side-links { margin-top: 18px; display: grid; gap: 8px; font-size: 15px; }
+
+.sizes { margin-top: 64px; }
+.sizes h2 { font-size: 24px; margin-top: 8px; }
+.size-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 20px; }
+.size-cell { background: var(--bg); padding: 18px; text-decoration: none; display: grid; gap: 6px; align-content: start; }
+.size-cell:hover { background: var(--panel-2); }
+.size-letter { font-family: var(--display); font-size: 40px; line-height: 1; color: var(--accent); }
+.size-cell small { color: var(--muted); font-size: 14px; }
+
+/* Lists of tools */
+.page-head { display: grid; gap: 10px; max-width: 760px; }
+.page-head h1 { font-size: clamp(36px, 5vw, 54px); line-height: 1.02; color: var(--accent); }
+.page-head p { color: var(--fg); font-size: 17px; }
+.crumbs { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .06em; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--fg); }
+.tool-list { margin-top: 32px; border-top: 1px solid var(--line); }
+.tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
+.tool-row:hover h3 { color: var(--accent); }
+.tool-row h3 { font-size: 22px; }
+.tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
+.chip.made { border-color: var(--gold); color: var(--gold); }
+.score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
+.score-mini b { font-family: var(--display); font-weight: 500; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1; }
+.score-mini b span { font-size: 14px; color: var(--muted); }
+.verdict-mini { font-family: var(--stampface); font-weight: 500; text-transform: uppercase; letter-spacing: .06em; font-size: 12px; color: var(--stamp); }
+
+.filters { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; align-items: center; }
+.filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.filter-group .label { margin-right: 4px; }
+.fbtn { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 5px 10px; cursor: pointer; }
+.fbtn[aria-pressed="true"] { background: var(--accent); color: var(--band-fg); border-color: var(--accent); }
+.empty { color: var(--muted); padding-block: 24px; }
+
+/* Review */
+.review { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 48px; margin-top: 28px; align-items: start; }
+.review-body { display: grid; gap: 18px; max-width: 64ch; }
+.review-body p { font-size: 17px; }
+.review h2 { font-size: 22px; margin-top: 18px; }
+.instead { font-size: 15px; color: var(--muted); }
+.instead b { color: var(--fg); font-weight: 500; }
+.visit { margin-top: 6px; }
+.visit .btn { width: auto; display: inline-flex; }
+
+.info { background: var(--panel); border: 1px solid var(--line); }
+.info-bar { display: flex; justify-content: space-between; align-items: center; padding: 7px 12px; background: var(--band); color: var(--band-fg); font-family: var(--mono); font-size: 12px; }
+.info-bar i { width: 10px; height: 10px; border: 1.5px solid var(--band-fg); display: block; }
+.info dl { margin: 0; padding: 14px 16px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 7px 16px; font-size: 14px; }
+.info dt { font-family: var(--mono); font-size: 12px; color: var(--muted); text-align: right; padding-top: 2px; }
+.info dd { margin: 0; overflow-wrap: anywhere; }
+.info .meters { border-top: 1px solid var(--line); padding: 14px 16px 18px; display: grid; gap: 10px; }
+.meter-row { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 10px; align-items: center; font-size: 14px; }
+.meter { display: flex; gap: 3px; }
+.meter i { width: 14px; height: 10px; background: var(--meter-off); display: block; }
+.meter i.on { background: var(--accent); }
+.meter-row b { font-family: var(--mono); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums; width: 1.2ch; text-align: right; }
+.stamp-holder { display: flex; justify-content: center; padding: 22px 16px 26px; border-top: 1px solid var(--line); }
+.stamp { width: 168px; height: 168px; border-radius: 50%; border: 2.5px solid var(--stamp); color: var(--stamp); display: grid; place-items: center; text-align: center; transform: rotate(-7deg); position: relative; }
+.stamp::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; border: 1px solid var(--stamp); opacity: .7; }
+.stamp-inner { display: grid; gap: 2px; }
+.stamp .verdict { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 22px; line-height: 1; letter-spacing: .02em; max-width: 120px; }
+.stamp .num { font-family: var(--stampface); font-weight: 500; font-size: 15px; letter-spacing: .1em; }
+@media (prefers-reduced-motion: no-preference) {
+  .stamp { animation: press .5s cubic-bezier(.2,.9,.3,1.3) both; }
+  @keyframes press { from { transform: rotate(-7deg) scale(1.35); opacity: 0; } to { transform: rotate(-7deg) scale(1); opacity: 1; } }
+}
+
+/* Method, about */
+.prose { display: grid; gap: 16px; max-width: 66ch; margin-top: 32px; }
+.prose p, .prose li { font-size: 17px; }
+.prose h2 { font-size: 26px; margin-top: 20px; }
+.prose ul { margin: 0; padding-left: 20px; display: grid; gap: 8px; }
+.criteria { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 28px; }
+.crit { background: var(--bg); padding: 20px; display: grid; gap: 8px; align-content: start; }
+.crit h3 { font-size: 21px; color: var(--accent); }
+.crit .from { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.bands { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.band-cell { border: 1.5px solid var(--stamp); color: var(--stamp); padding: 12px; display: grid; gap: 2px; }
+.band-cell b { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 18px; letter-spacing: .02em; line-height: 1.1; }
+.band-cell span { font-family: var(--mono); font-size: 12px; }
+.def { display: grid; grid-template-columns: 80px minmax(0, 1fr); gap: 10px 18px; margin-top: 8px; }
+.def dt { font-family: var(--display); font-size: 22px; color: var(--accent); line-height: 1.2; }
+.def dd { margin: 0; font-size: 16px; }
+.note { border-left: 2px solid var(--gold); padding: 4px 0 4px 16px; color: var(--fg); }
+.placeholder { background: color-mix(in srgb, var(--gold) 18%, transparent); padding: 0 4px; }
+
+/* Form */
+form { display: grid; gap: 16px; max-width: 640px; margin-top: 28px; }
+.field { display: grid; gap: 6px; }
+.field label { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+input, select, textarea { font: inherit; font-size: 16px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); padding: 10px 12px; width: 100%; }
+textarea { min-height: 96px; resize: vertical; }
+.row2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.submit-out { margin-top: 24px; max-width: 640px; display: grid; gap: 12px; }
+.submit-out pre { background: var(--panel); border: 1px solid var(--line); padding: 14px; font-family: var(--mono); font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; }
+.copyline { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.copyline .btn { width: auto; }
+.addr { font-family: var(--mono); user-select: all; }
+
+/* Footer */
+footer { border-top: 1px solid var(--line); }
+footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
+.foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
+.foot-links a { text-decoration: none; color: var(--muted); }
+.foot-links a:hover { color: var(--fg); }
+.foot-right { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.button88 { width: 88px; height: 31px; border: 1px solid var(--accent); display: grid; grid-template-columns: 30px 1fr; text-decoration: none; font-family: var(--mono); font-size: 9px; line-height: 1.1; letter-spacing: .04em; }
+.button88 .m { background: var(--band); color: var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 13px; font-weight: 600; }
+.button88 .t { display: grid; place-items: center; text-transform: uppercase; color: var(--accent); }
+
+@media (max-width: 860px) {
+  .home, .review { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .size-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .criteria { grid-template-columns: minmax(0, 1fr); }
+  .bands { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  main .wrap { padding-block: 32px 48px; }
+  .row2 { grid-template-columns: minmax(0, 1fr); }
+  .purpose { flex-direction: column; gap: 2px; }
+  .tool-row { grid-template-columns: minmax(0, 1fr); }
+  .score-mini { justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 10px; }
+}
+</style>
+</head>
+<body>
+
+
+<header class="band">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Tools for Conviviality, home">
+      <span class="mark">T/C</span>
+      <span class="brand-name">Tools for<br>Conviviality</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#directory" data-nav="directory">Directory</a>
+      <a href="#method" data-nav="method">How we score</a>
+      <a href="#submit" data-nav="submit">Suggest a tool</a>
+    </nav>
+  </div>
+</header>
+
+<main id="app"><div class="wrap" id="view"></div></main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="#method">How tools are selected</a>
+      <a href="#about">About &amp; disclaimers</a>
+      <a href="#impressum">Impressum</a>
+      <a href="#privacy">Datenschutz</a>
+    </div>
+    <div class="foot-right">
+      <span>Useful to people. Accountable to people.</span>
+      <a class="button88" href="#submit" title="Listed on Tools for Conviviality"><span class="m">T/C</span><span class="t">Listed<br>here</span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+const REVIEWED = "October 2026";
+const CRITERIA = [
+  { key: "foot", name: "Footprint", from: "Biological degradation", q: "Does it run light, work offline, and keep going on an old laptop, or does it need new hardware and a data centre?" },
+  { key: "lock", name: "Lock-in", from: "Radical monopoly", q: "Can you leave with your stuff in an open format, or does it make you depend on a whole category of product to take part?" },
+  { key: "self", name: "Self-direction", from: "Overprogramming", q: "Can a normal person learn it by using it and point it at their own purposes, without dark patterns training their habits?" },
+  { key: "power", name: "Power", from: "Polarization", q: "Who holds the controls? Team size, governance, open source, whether the price shuts people out, and whether your data is the product." },
+  { key: "long", name: "Longevity", from: "Obsolescence", q: "Does it keep working if the company folds or you stop paying, and does it respect the hardware you already own?" },
+  { key: "deliv", name: "Delivery", from: "Frustration", q: "Does it actually do the job, without ads, engagement bait, or a promise the product can't keep?" }
+];
+const SIZES = {
+  S: { name: "Small", def: "One person or a few friends, usually self-funded. Most vibe-coded apps live here." },
+  M: { name: "Medium", def: "A small team or a community project with little or no outside money." },
+  L: { name: "Large", def: "An established company with serious investors behind it." },
+  XL: { name: "Extra large", def: "The behemoths. Reviewed rarely, as the baseline a category is measured against." }
+};
+const SCOPES = {
+  gadget: { name: "Gadget", def: "Does one thing, usually needs no account. You could lose it without losing anything." },
+  tool: { name: "Tool", def: "An app you use regularly as part of how you work or live." },
+  system: { name: "System", def: "Something your data lives in and your life runs on. Gets the most scrutiny." }
+};
+const CATS = [
+  { id: "notes", name: "Writing & notes", verb: "Keep my own notes and documents", instead: "Microsoft Word, OneNote, Google Docs" },
+  { id: "files", name: "Files & sync", verb: "Move files between my devices", instead: "Google Drive, OneDrive, AirDrop" },
+  { id: "maps", name: "Maps & places", verb: "Find my way without being tracked", instead: "Google Maps" },
+  { id: "reading", name: "Search & reading", verb: "Read the web on my own terms", instead: "Google Search, Google News" },
+  { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
+  { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
+  { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
+  { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
+];
+const TOOLS = [
+  { slug: "localsend", name: "LocalSend", cat: "files", size: "M", scope: "gadget", url: "https://localsend.org",
+    one: "Send files between any two devices on the same Wi-Fi.", replaces: "AirDrop, Google Quick Share",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Open source", "Free", "No account"], s: [5,5,5,5,5,4],
+    body: ["LocalSend does one job: getting a file from your phone to your laptop, or from your laptop to a friend's, whatever mix of operating systems happens to be in the room. Transfers go device to device over your own network with encryption, so nothing passes through a company server and there is nothing to sign up for.",
+      "It is about as close to a hand tool as software gets. The only thing keeping it from a perfect score is that both devices have to share a network, which is a small price for a tool that asks nothing else of you."] },
+  { slug: "netnewswire", name: "NetNewsWire", cat: "reading", size: "S", scope: "tool", url: "https://netnewswire.com",
+    one: "A fast, free RSS reader that brings the sites you choose to you.", replaces: "Google News, algorithmic feeds",
+    price: "Free", source: "Open source", platforms: "Mac, iPhone, iPad",
+    tags: ["Open source", "Free", "No account", "Apple only"], s: [5,4,5,4,5,4],
+    body: ["Brent Simmons first released NetNewsWire in 2002, and after retiring he has spent his time making this one free app as good as it can be, away from any commercial pressure. It reads RSS feeds, the old open plumbing of the web, so you decide what shows up and in what order. No algorithm, no feed ranking, no ads.",
+      "Your subscriptions import and export as standard OPML files, so leaving is trivial. It loses points only because it runs on Apple hardware alone, which ties a convivial tool to an expensive platform."] },
+  { slug: "comaps", name: "CoMaps", cat: "maps", size: "M", scope: "tool", url: "https://comaps.app",
+    one: "Offline maps and navigation built on OpenStreetMap, run by its community.", replaces: "Google Maps",
+    price: "Free", source: "Open source", platforms: "Android, iOS, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [5,5,4,5,5,3],
+    body: ["CoMaps exists because its contributors forked Organic Maps in 2025 over concerns about governance, transparency and shareholder profit. Since then they have removed the Kayak affiliate links and Google Firebase code, rewritten the map server so it collects nothing, and made it possible to host the map files yourself. A fork as self-defence is about as Illich as open source gets.",
+      "You download a region once and navigate on your phone with no account and no tracking. It drops points on Delivery because offline maps still can't match Google on live traffic or business listings, and some days that matters."] },
+  { slug: "syncthing", name: "Syncthing", cat: "files", size: "M", scope: "system", url: "https://syncthing.net",
+    one: "Keeps folders in sync directly between your own devices.", replaces: "Google Drive, OneDrive sync",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux; Android via community fork",
+    tags: ["Open source", "Free", "No account"], s: [5,5,2,5,4,4],
+    body: ["Syncthing copies changes between your own computers with no cloud in the middle, which makes it the purest answer on this list to rented storage. On the desktop it is excellent and has been for years.",
+      "It scores low on Self-direction because setup asks you to understand device IDs and folder sharing, which is more than most people want. On phones, the official Android app was discontinued at the end of 2024, and the recommended community fork went through a messy change of maintainer, so Longevity takes a hit too."] },
+  { slug: "obsidian", name: "Obsidian", cat: "notes", size: "M", scope: "tool", url: "https://obsidian.md",
+    one: "A notes app that works on a plain folder of Markdown files.", replaces: "OneNote, Google Keep, Notion",
+    price: "Free; paid sync and publishing", source: "Closed source", platforms: "Windows, Mac, Linux, Android, iOS",
+    tags: ["Free", "Works offline", "Plain files"], s: [4,5,3,3,5,4],
+    body: ["Obsidian's best decision is that your notes are just Markdown files in a folder on your own computer. If the company disappeared tomorrow, every note would still open in any text editor, which is why it scores full marks on Lock-in and Longevity.",
+      "The app itself is closed source, so Power suffers, and the plugin ecosystem can turn note-taking into a hobby of configuring note-taking. Sync and publishing are paid add-ons, though free alternatives work fine."] },
+  { slug: "ente", name: "Ente Photos", cat: "images", size: "M", scope: "system", url: "https://ente.io",
+    one: "End-to-end encrypted photo backup and sharing.", replaces: "Google Photos, iCloud Photos",
+    price: "Paid storage plans", source: "Open source", platforms: "Android, iOS, web, desktop",
+    tags: ["Open source", "Encrypted", "Self-hostable"], s: [3,4,5,4,4,4],
+    body: ["Ente does what Google Photos does, backing up and sharing your pictures across devices, except the photos are encrypted before they leave your phone so only you can see them. The apps are open source on every platform and you can run the server yourself.",
+      "It reads simply, and sharing an album with someone who has no account works. Photos in the cloud carry a real physical footprint, and most people will pay for storage, so it lands just short of the top band."] },
+  { slug: "cryptpad", name: "CryptPad", cat: "notes", size: "M", scope: "system", url: "https://cryptpad.org",
+    one: "An encrypted office suite for writing, spreadsheets and slides together.", replaces: "Google Docs, Microsoft 365",
+    price: "Free; paid storage on the main instance", source: "Open source (AGPL)", platforms: "Web",
+    tags: ["Open source", "Encrypted", "Self-hostable"], s: [3,3,4,5,4,3],
+    body: ["CryptPad comes from XWiki, a Paris company that has made open-source software for nearly twenty years, and it has been funded largely by French and European research grants on the principle that public money should pay for public code. Everything is encrypted in your browser, so even the people running the server can't read your documents.",
+      "It scores perfectly on Power. It is rougher to use than Google Docs, though, and moving documents in and out of Microsoft formats is workable rather than smooth."] },
+  { slug: "kagi", name: "Kagi", cat: "reading", size: "L", scope: "tool", url: "https://kagi.com",
+    one: "A paid search engine with no ads and no tracking.", replaces: "Google Search",
+    price: "From $5 a month", source: "Closed source", platforms: "Web, browser extensions",
+    tags: ["Subscription", "No ads"], s: [3,4,5,2,2,5],
+    body: ["Kagi gives the best search experience on this list. Because users pay for it, there are no ads to sell and the results are built for the person searching. You can block sites you hate and boost the ones you trust.",
+      "It sits lowest of the convivial picks on purpose. It is closed, the cheapest plan starts at $5 a month, which shuts some people out, and nothing stays with you if you stop paying. A good product, and an honest example of where convenience and conviviality pull apart."] },
+  { slug: "bitwarden", name: "Bitwarden", cat: "passwords", size: "L", scope: "system", url: "https://bitwarden.com",
+    one: "A password manager with an open-source core and a generous free tier.", replaces: "Google Password Manager, Microsoft Authenticator",
+    price: "Free; premium about $10 a year", source: "Open core", platforms: "Every major platform and browser",
+    tags: ["Open source core", "Free tier", "Self-hostable"], s: [4,5,4,3,4,5],
+    body: ["Bitwarden stores passwords well, works everywhere, and lets you export your whole vault or host it yourself, so leaving is easy. The core apps are GPL and the server is AGPL.",
+      "Power gets a 3 because the company has been steadily moving toward an open-core model. In October 2026 it announced that the versions in the app stores will be its commercially licensed builds, while the GPL code stays on GitHub. That follows a 2024 scare over a restrictive build licence that the company fixed after pushback. Still a strong pick; we will re-score if anything else changes."] },
+  { slug: "photomosh", name: "PhotoMosh", cat: "images", size: "S", scope: "gadget", url: "https://photomosh.com",
+    one: "Glitch your photos, videos and webcam in the browser.", replaces: "Photoshop filters, Instagram effects",
+    price: "Free; paid Pro desktop version", source: "Closed source", platforms: "Web browser",
+    tags: ["Free", "No account"], s: [3,5,5,3,3,5],
+    body: ["PhotoMosh is the work of one developer, Felix Turner of Airtight Interactive. You load an image or turn on your webcam, press Mosh, and get something strange. It is a toy in the best sense, and the opposite of a filter app designed to keep you scrolling.",
+      "Your images are never stored online and anything you make is yours to use anywhere. It loses points because the code is closed, it needs a fairly recent device, and the free version lives only as long as the website does."] },
+  { slug: "ferdium", name: "Ferdium", cat: "talk", size: "M", scope: "tool", url: "https://ferdium.org",
+    one: "Puts all your messaging services in one desktop app.", replaces: "A dozen chat tabs",
+    price: "Free", source: "Open source (Apache)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Self-hostable"], s: [2,4,4,5,4,4],
+    body: ["Ferdium gathers WhatsApp, Slack, Telegram and the rest into one window with workspaces, so the messengers stop owning your browser. It is community-run free software, and you can host your own Ferdium server to keep your settings off anyone else's machine.",
+      "Be clear about what it is, though. It helps you live with the messaging monopolies rather than escape them, and wrapping a dozen web apps in one Electron app is heavy on your computer."] },
+  { slug: "arena", name: "Are.na", cat: "collect", size: "M", scope: "tool", url: "https://www.are.na",
+    one: "A quiet place to collect things and connect ideas over time.", replaces: "Pinterest, Google Keep boards",
+    price: "Free; paid membership", source: "Closed source, public API", platforms: "Web, iOS, Android",
+    tags: ["No ads", "No algorithmic feed"], s: [4,3,5,4,3,4],
+    body: ["Are.na is where designers, artists and researchers keep the things they find and arrange them into channels. There are no ads, no likes to chase and no feed tuned to keep you there, and people have built their own tools on its public API.",
+      "Its scores come from the product. We haven't yet verified current details on the company's size and funding, and we will update this review when we have."] },
+  { slug: "airtime", name: "Airtime", cat: "images", size: "L", scope: "tool", url: "https://www.airtime.com",
+    one: "Camera and presentation tools for video calls, formerly mmhmm.", replaces: "Teams and Meet backgrounds, slide sharing",
+    price: "$10 a month (annual); Camera available as a one-time purchase", source: "Closed source", platforms: "Mac, Windows, web",
+    tags: ["Subscription", "One-time option"], s: [2,2,4,1,2,5],
+    body: ["Airtime is a delight to use. It puts you next to your slides, makes video calls feel like presenting rather than enduring, and it does exactly what it promises, which is why Delivery gets full marks.",
+      "On almost everything else it is a venture-backed company, with more than $100 million raised from Sequoia, SoftBank and others, a monthly subscription for the full toolkit, and presentations that live in its own format. The convivial bright spot is that Airtime Camera can be bought outright with a single payment, and we'd love to see more of that."] }
+];
+
+const total = t => t.s.reduce((a, b) => a + b, 0);
+const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Manipulative";
+const catOf = id => CATS.find(c => c.id === id);
+const toolsIn = id => TOOLS.filter(t => t.cat === id).sort((a, b) => total(b) - total(a));
+const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const view = document.getElementById("view");
+let featureIndex = Math.floor(Math.random() * TOOLS.length);
+
+function chips(t) {
+  return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
+}
+function row(t) {
+  const n = total(t);
+  return `<a class="tool-row" href="#tool-${t.slug}">
+    <div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div>
+    <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
+}
+
+function home() {
+  const t = TOOLS[featureIndex % TOOLS.length];
+  const counts = k => TOOLS.filter(x => x.size === k).length;
+  return `<div class="home">
+    <section class="hero">
+      <p class="label">Open access / No account needed</p>
+      <h1>What would you like to do?</h1>
+      <p class="lede">Useful software, made at a human scale. Start with a purpose, then find a tool you can make your own.</p>
+      <div class="purposes">${CATS.map(c => {
+        const list = toolsIn(c.id);
+        return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.map(x => x.name).join(", ")} ↗</span></a>`;
+      }).join("")}</div>
+    </section>
+    <aside>
+      <div class="card feature" aria-live="polite">
+        <p class="label">A tool in the collection</p>
+        <h2>${esc(t.name)}</h2>
+        <p class="desc">${esc(t.one)}</p>
+        <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li>${total(t)}/30 · ${band(total(t))}</li></ul>
+        <div class="btn-row">
+          <a class="btn" href="#tool-${t.slug}">Read the review <span aria-hidden="true">↗</span></a>
+          <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
+        </div>
+      </div>
+      <div class="side-links">
+        <a href="#submit">Suggest a tool for the directory +</a>
+        <a href="#method">How tools are selected ↗</a>
+      </div>
+    </aside>
+  </div>
+  <section class="sizes">
+    <p class="label">Browse by who makes it</p>
+    <h2>Small makers first. Giants for comparison.</h2>
+    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<a class="size-cell" href="#size-${k}"><span class="size-letter">${k}</span><span>${v.name} (${counts(k)})</span><small>${v.def}</small></a>`).join("")}</div>
+  </section>`;
+}
+
+function category(id) {
+  const c = catOf(id); if (!c) return notFound();
+  const list = toolsIn(id);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
+  <div class="page-head" style="margin-top:14px"><h1>${esc(c.name)}</h1><p>Instead of ${esc(c.instead)}.</p></div>
+  <div class="tool-list">${list.map(row).join("")}</div>
+  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`;
+}
+
+const filt = { size: "all", scope: "all", cat: "all" };
+function directory(preset) {
+  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all" }, preset);
+  const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat))
+    .sort((a, b) => a.name.localeCompare(b.name));
+  const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
+  return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
+  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, A to Z. Scores sit beside each one, but there is no sitewide top ten. Compare tools within a category, against the giant they replace.</p></div>
+  <div class="filters">
+    ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
+    ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
+  </div>
+  <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
+  <div class="tool-list">${list.length ? list.map(row).join("") : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>'}</div>`;
+}
+
+function tool(slug) {
+  const t = TOOLS.find(x => x.slug === slug); if (!t) return notFound();
+  const n = total(t), c = catOf(t.cat);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#cat-${c.id}">${esc(c.name)}</a> / ${esc(t.name)}</p>
+  <div class="review">
+    <article class="review-body">
+      <div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div>
+      <p class="instead">Instead of <b>${esc(t.replaces)}</b></p>
+      ${chips(t)}
+      ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
+      <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
+    </article>
+    <aside class="info" aria-label="Tool information">
+      <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
+      <dl>
+        <dt>Kind</dt><dd>${SCOPES[t.scope].name}</dd>
+        <dt>Size</dt><dd>${t.size} · ${SIZES[t.size].name} maker</dd>
+        <dt>Where</dt><dd>${esc(c.name)}</dd>
+        <dt>Runs on</dt><dd>${esc(t.platforms)}</dd>
+        <dt>Price</dt><dd>${esc(t.price)}</dd>
+        <dt>Source</dt><dd>${esc(t.source)}</dd>
+        <dt>Reviewed</dt><dd>${REVIEWED}</dd>
+      </dl>
+      <div class="meters">${CRITERIA.map((k, i) => `<div class="meter-row"><span>${k.name}</span><span class="meter" aria-hidden="true">${[0,1,2,3,4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b></div>`).join("")}</div>
+      <div class="stamp-holder"><div class="stamp" role="img" aria-label="Verdict: ${band(n)}, ${n} out of 30"><div class="stamp-inner"><span class="verdict">${band(n)}</span><span class="num">${n} / 30</span></div></div></div>
+    </aside>
+  </div>`;
+}
+
+function method() {
+  return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
+  <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
+  <div class="criteria">${CRITERIA.map(k => `<div class="crit"><span class="from">From “${k.from}”</span><h3>${k.name}</h3><p>${k.q}</p></div>`).join("")}</div>
+  <div class="prose">
+    <h2>What the totals mean</h2>
+    <p>The total becomes a verdict, stamped on every review. The stamp is a judgement made by people, dated, and open to change.</p>
+  </div>
+  <div class="bands">
+    <div class="band-cell"><b>Convivial</b><span>25 to 30</span></div>
+    <div class="band-cell"><b>Leaning convivial</b><span>18 to 24</span></div>
+    <div class="band-cell"><b>Mixed</b><span>10 to 17</span></div>
+    <div class="band-cell"><b>Manipulative</b><span>0 to 9</span></div>
+  </div>
+  <div class="prose">
+    <h2>Size: who makes it</h2>
+    <dl class="def">${Object.entries(SIZES).map(([k, v]) => `<dt>${k}</dt><dd>${v.def}</dd>`).join("")}</dl>
+    <h2>Scope: how much of your life it holds</h2>
+    <dl class="def">${Object.entries(SCOPES).map(([k, v]) => `<dt>${v.name}</dt><dd>${v.def}</dd>`).join("")}</dl>
+    <p>Scope sets how deep a review goes. A gadget gets a short card. A system that holds your passwords or photos gets the long treatment.</p>
+    <h2>Why no leaderboard</h2>
+    <p>Scores help you compare tools that do the same job. A sitewide ranking would turn the directory into a race, and a race toward bigger and better is exactly what Illich warned against. So we compare within categories, against the giant each tool replaces.</p>
+    <h2>Our own tools</h2>
+    <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
+    <h2>Credit where it's due</h2>
+    <p>The idea of a convivial tool comes from Ivan Illich's 1973 book <i>Tools for Conviviality</i>, and the six questions follow the structure of its third chapter. The rubric itself is our own interpretation. Andrea Vetter's Matrix for Convivial Technology (2018) took on a similar task for engineers and is well worth reading.</p>
+  </div>`;
+}
+
+function about() {
+  return `<p class="crumbs"><a href="#home">Home</a> / About</p>
+  <div class="page-head" style="margin-top:14px"><h1>About this directory</h1><p>A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.</p></div>
+  <div class="prose">
+    <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, so there is something to measure against.</p>
+    <h2>About the book</h2>
+    <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. The book is still under copyright. We paraphrase its ideas, quote it rarely and briefly with a source, and never host or link to copies of the text.</p>
+    <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a> or buy it from your local bookshop.</p>
+    <h2>About the reviews</h2>
+    <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
+    <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
+    <h2>Corrections</h2>
+    <p>If you make a tool we have reviewed and we got something wrong, tell us through the <a href="#submit">suggestion form</a> and we will fix it.</p>
+  </div>`;
+}
+
+function submit() {
+  const opts = o => Object.entries(o).map(([k, v]) => `<option value="${k}">${k.length < 3 ? k + " · " : ""}${v.name}</option>`).join("");
+  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool</p>
+  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else.</p></div>
+  <form id="suggest" novalidate>
+    <div class="row2">
+      <div class="field"><label for="f-name">Tool name</label><input id="f-name" required></div>
+      <div class="field"><label for="f-url">Link</label><input id="f-url" type="url" placeholder="https://"></div>
+    </div>
+    <div class="field"><label for="f-what">What does it do, in a sentence or two?</label><textarea id="f-what"></textarea></div>
+    <div class="row2">
+      <div class="field"><label for="f-size">Who makes it</label><select id="f-size">${opts(SIZES)}</select></div>
+      <div class="field"><label for="f-scope">Scope</label><select id="f-scope">${opts(SCOPES)}</select></div>
+    </div>
+    <div class="row2">
+      <div class="field"><label for="f-cat">Category</label><select id="f-cat">${CATS.map(c => `<option>${esc(c.name)}</option>`).join("")}<option>Something else</option></select></div>
+      <div class="field"><label for="f-price">Price</label><input id="f-price" placeholder="Free, pay once, subscription…"></div>
+    </div>
+    <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
+    <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
+    <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
+    <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
+  </form>
+  <div class="submit-out" id="out" hidden>
+    <p>Here is your suggestion. Copy it and email it to <span class="addr">hello@toolsforconviviality.com</span>.</p>
+    <pre id="out-text"></pre>
+    <div class="copyline"><button class="btn" type="button" id="copy">Copy suggestion</button><span id="copied" class="label" aria-live="polite"></span></div>
+  </div>`;
+}
+
+function impressum() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Impressum</p>
+  <div class="page-head" style="margin-top:14px"><h1>Impressum</h1><p>Angaben gemäß § 5 DDG</p></div>
+  <div class="prose">
+    <p>Jeff Humble<br>The Fountain Institute<br><span class="placeholder">[Straße und Hausnummer]</span><br><span class="placeholder">[PLZ] Berlin</span><br>Deutschland</p>
+    <p>E-Mail: <span class="addr">hello@toolsforconviviality.com</span></p>
+    <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Jeff Humble, Anschrift wie oben.</p>
+  </div>`;
+}
+
+function privacy() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Datenschutz</p>
+  <div class="page-head" style="margin-top:14px"><h1>Datenschutz</h1><p>Privacy, kept short because there is little to say.</p></div>
+  <div class="prose">
+    <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
+    <p>Our hosting provider processes technical data such as your IP address in server logs so the site can be delivered. <span class="placeholder">[Name and address of hosting provider, and how long logs are kept]</span></p>
+    <p>The suggestion form doesn't send anything by itself. It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
+    <p>You have the right to access, correct or delete data we hold about you, and to complain to a data protection authority. Contact: <span class="addr">hello@toolsforconviviality.com</span>.</p>
+  </div>`;
+}
+
+function notFound() {
+  return `<div class="page-head"><h1>Nothing here</h1><p>That page doesn't exist. <a href="#home">Go back to the start</a>.</p></div>`;
+}
+
+function render() {
+  const h = (location.hash || "#home").slice(1);
+  let html, nav = "";
+  if (h === "home" || h === "") html = home();
+  else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
+  else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
+  else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
+  else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "method") { html = method(); nav = "method"; }
+  else if (h === "about") html = about();
+  else if (h === "submit") { html = submit(); nav = "submit"; }
+  else if (h === "impressum") html = impressum();
+  else if (h === "privacy") html = privacy();
+  else html = notFound();
+  view.innerHTML = html;
+  document.querySelectorAll("[data-nav]").forEach(a => { if (a.dataset.nav === nav) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+  bind();
+}
+
+function bind() {
+  const another = document.getElementById("another");
+  if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
+  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; view.innerHTML = directory(); bind(); });
+  const form = document.getElementById("suggest");
+  if (form) form.onsubmit = e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim() || "(not given)";
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    document.getElementById("out-text").textContent = text;
+    const out = document.getElementById("out"); out.hidden = false;
+    document.getElementById("copy").onclick = async () => {
+      const msg = document.getElementById("copied");
+      try { await navigator.clipboard.writeText(text); msg.textContent = "Copied"; }
+      catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("out-text")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = "Selected, press copy"; }
+    };
+    out.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  };
+}
+
+window.addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
+render();
+</script>
+
+</body>
+</html>
