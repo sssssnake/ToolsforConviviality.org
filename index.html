@@ -391,11 +391,13 @@ function logo(t, size) {
   return `<span class="logo ${size}" style="background:${col}" aria-hidden="true">${esc(t.name[0].toUpperCase())}</span>`;
 }
 function shot(t) {
-  const im = IMG[t.slug]; if (!im || !im.shot) return "";
-  const w = im.shot, host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
+  const im = IMG[t.slug]; if (!im) return "";
+  const w = im.shot || (im.social && { 480: im.social[600], 960: im.social[600], 1600: im.social[1200] }); if (!w) return "";
+  const kind = im.shot ? "Screenshot" : "Image";
+  const host = t.url.replace(/^https?:\/\//, "").replace(/\/$/, ""), day = (im.capturedAt || "").slice(0, 10);
   return `<figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>${esc(host)}</span></div>
-    <img src="${esc(w[960])}" srcset="${esc(w[480])} 480w, ${esc(w[960])} 960w, ${esc(w[1600])} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.alt || "Screenshot of " + t.name)}" loading="lazy" width="960" height="600"></figure>
-    <p class="shot-credit">Screenshot of ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
+    <img src="${esc(w[960])}" srcset="${esc(w[480])} 480w, ${esc(w[960])} 960w, ${esc(w[1600])} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
+    <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}. The images belong to their makers and are shown to help you recognise the tool. <a href="#about">Ask us to remove one</a>.</p>`;
 }
 function chips(t) {
   return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;

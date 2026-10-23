@@ -37,7 +37,10 @@
   {
     "slug": "kagi",
     "name": "Kagi",
-    "url": "https://kagi.com"
+    "url": "https://kagi.com",
+    "capture": {
+      "shot": false
+    }
   },
   {
     "slug": "bitwarden",
@@ -52,12 +55,18 @@
   {
     "slug": "ferdium",
     "name": "Ferdium",
-    "url": "https://ferdium.org"
+    "url": "https://ferdium.org",
+    "brand": {
+      "icon": "https://ferdium.org/_next/static/media/logo.9fc5c374.png"
+    }
   },
   {
     "slug": "arena",
     "name": "Are.na",
-    "url": "https://www.are.na"
+    "url": "https://www.are.na",
+    "capture": {
+      "wait": 5000
+    }
   },
   {
     "slug": "airtime",

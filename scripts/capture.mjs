@@ -164,9 +164,14 @@ async function captureTool(browser, tool, previous) {
     entry.pageDescription = meta.description;
 
     // Screenshots
-    const desktop = await page.screenshot({ type: "png", fullPage: false });
-    entry.shot = await saveVariants(desktop, dir, "shot", SHOT_WIDTHS);
-    if (cfg.mobile !== false) {
+    if (cfg.shot !== false) {
+      const desktop = await page.screenshot({ type: "png", fullPage: false });
+      entry.shot = await saveVariants(desktop, dir, "shot", SHOT_WIDTHS);
+    } else {
+      notes.push("screenshot skipped by override");
+      for (const f of await fs.readdir(dir)) if (/^(shot|mobile)-/.test(f)) await fs.rm(path.join(dir, f));
+    }
+    if (cfg.mobile !== false && cfg.shot !== false) {
       const mpage = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, userAgent: UA, isMobile: true, hasTouch: true, locale: "en-US" });
       const mp = await mpage.newPage();
       try {
@@ -261,7 +266,8 @@ async function main() {
         log(`- ${tool.slug}: skipped (opt-out), existing images removed`);
         continue;
       }
-      const fresh = prev && Date.now() - Date.parse(prev.capturedAt) < MAX_AGE_DAYS * 864e5;
+      const cfgKey = JSON.stringify([tool.url, tool.capture || null, tool.brand || null]);
+      const fresh = prev && prev.cfg === cfgKey && Date.now() - Date.parse(prev.capturedAt) < MAX_AGE_DAYS * 864e5;
       if (fresh && !FORCE && !ONLY) { report.skipped.push({ slug: tool.slug, reason: "recent" }); log(`- ${tool.slug}: recent, skipped`); continue; }
       if (!(await allowedByRobots(tool.url))) {
         report.skipped.push({ slug: tool.slug, reason: "robots.txt disallows" });
@@ -271,6 +277,7 @@ async function main() {
       try {
         log(`- ${tool.slug}: capturing ${tool.url}`);
         const entry = await captureTool(browser, tool, prev);
+        entry.cfg = cfgKey;
         manifest.tools[tool.slug] = entry;
         report.captured.push({ slug: tool.slug, notes: entry.notes });
         for (const n of entry.notes) log(`    note: ${n}`);
