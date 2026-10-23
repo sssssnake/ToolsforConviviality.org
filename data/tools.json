@@ -77,5 +77,55 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "zotero",
+    "name": "Zotero",
+    "url": "https://www.zotero.org"
+  },
+  {
+    "slug": "kiwix",
+    "name": "Kiwix",
+    "url": "https://kiwix.org"
+  },
+  {
+    "slug": "keepassxc",
+    "name": "KeePassXC",
+    "url": "https://keepassxc.org"
+  },
+  {
+    "slug": "joplin",
+    "name": "Joplin",
+    "url": "https://joplinapp.org"
+  },
+  {
+    "slug": "krita",
+    "name": "Krita",
+    "url": "https://krita.org"
+  },
+  {
+    "slug": "excalidraw",
+    "name": "Excalidraw",
+    "url": "https://excalidraw.com"
+  },
+  {
+    "slug": "cryptomator",
+    "name": "Cryptomator",
+    "url": "https://cryptomator.org"
+  },
+  {
+    "slug": "freshrss",
+    "name": "FreshRSS",
+    "url": "https://freshrss.org"
+  },
+  {
+    "slug": "calibre",
+    "name": "Calibre",
+    "url": "https://calibre-ebook.com"
+  },
+  {
+    "slug": "deltachat",
+    "name": "Delta Chat",
+    "url": "https://delta.chat"
   }
 ]
