@@ -1,0 +1,33 @@
+{
+  "slug": "home-assistant",
+  "name": "Home Assistant",
+  "source": "https://www.home-assistant.io",
+  "capturedAt": "2026-10-23T21:43:19.379Z",
+  "alt": "Screenshot of the Home Assistant website",
+  "pageTitle": "Home Assistant",
+  "pageDescription": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a...",
+  "shot": {
+    "480": "assets/tools/home-assistant/shot-480.webp",
+    "960": "assets/tools/home-assistant/shot-960.webp",
+    "1600": "assets/tools/home-assistant/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/home-assistant/mobile-390.webp",
+    "780": "assets/tools/home-assistant/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/home-assistant/icon-128.webp",
+    "256": "assets/tools/home-assistant/icon-256.webp",
+    "svg": "assets/tools/home-assistant/icon.svg",
+    "from": "https://www.home-assistant.io/images/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/home-assistant/social-600.webp",
+    "1200": "assets/tools/home-assistant/social-1200.webp",
+    "from": "https://www.home-assistant.io/images/default-social.png"
+  },
+  "color": "#18bcf2",
+  "colorFrom": "theme-color",
+  "notes": []
+}

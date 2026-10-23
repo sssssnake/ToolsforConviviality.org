@@ -1,0 +1,29 @@
+{
+  "slug": "obtainium",
+  "name": "Obtainium",
+  "source": "https://obtainium.imranr.dev",
+  "capturedAt": "2026-10-23T21:42:05.523Z",
+  "alt": "Screenshot of the Obtainium website",
+  "pageTitle": "Obtainium",
+  "pageDescription": "Obtainium allows you to install and update apps directly from their release pages, and receive notifications when new releases are made available.",
+  "shot": {
+    "480": "assets/tools/obtainium/shot-480.webp",
+    "960": "assets/tools/obtainium/shot-960.webp",
+    "1600": "assets/tools/obtainium/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/obtainium/mobile-390.webp",
+    "780": "assets/tools/obtainium/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/obtainium/icon-128.webp",
+    "256": "assets/tools/obtainium/icon-256.webp",
+    "from": "https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png",
+    "sourceWidth": 72,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

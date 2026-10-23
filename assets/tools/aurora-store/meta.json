@@ -1,0 +1,33 @@
+{
+  "slug": "aurora-store",
+  "name": "Aurora Store",
+  "source": "https://auroraoss.com",
+  "capturedAt": "2026-10-23T21:42:12.287Z",
+  "alt": "Screenshot of the Aurora Store website",
+  "pageTitle": "Aurora",
+  "pageDescription": "Aurora OSS - Abode of opensource android apps",
+  "shot": {
+    "480": "assets/tools/aurora-store/shot-480.webp",
+    "960": "assets/tools/aurora-store/shot-960.webp",
+    "1600": "assets/tools/aurora-store/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/aurora-store/mobile-390.webp",
+    "780": "assets/tools/aurora-store/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/aurora-store/icon-128.webp",
+    "256": "assets/tools/aurora-store/icon-256.webp",
+    "svg": "assets/tools/aurora-store/icon.svg",
+    "from": "https://auroraoss.com/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/aurora-store/social-600.webp",
+    "1200": "assets/tools/aurora-store/social-1200.webp",
+    "from": "https://auroraoss.com/images/store_banner.webp"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

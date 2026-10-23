@@ -1,0 +1,34 @@
+{
+  "slug": "izzyondroid",
+  "name": "IzzyOnDroid",
+  "source": "https://apt.izzysoft.de/fdroid/",
+  "capturedAt": "2026-10-23T21:42:21.918Z",
+  "alt": "Screenshot of the IzzyOnDroid website",
+  "pageTitle": "IzzyOnDroid F-Droid Repository",
+  "pageDescription": "Applications in this repository are official binaries built by the original application developers, taken from their resp. repositories (mostly Github, GitLab, Codeberg), with additional screening applied. Updates for the apps are usually fetched daily, and you can expect daily index updates.",
+  "shot": {
+    "480": "assets/tools/izzyondroid/shot-480.webp",
+    "960": "assets/tools/izzyondroid/shot-960.webp",
+    "1600": "assets/tools/izzyondroid/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/izzyondroid/mobile-390.webp",
+    "780": "assets/tools/izzyondroid/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/izzyondroid/icon-128.webp",
+    "256": "assets/tools/izzyondroid/icon-256.webp",
+    "from": "https://apt.izzysoft.de/fdroid/izzy-on-droid.png",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/izzyondroid/social-600.webp",
+    "1200": "assets/tools/izzyondroid/social-1200.webp",
+    "from": "https://apt.izzysoft.de/shared/images/fdroid_repo_qr.png"
+  },
+  "color": "#08d8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

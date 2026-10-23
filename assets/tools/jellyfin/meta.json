@@ -1,0 +1,27 @@
+{
+  "slug": "jellyfin",
+  "name": "Jellyfin",
+  "source": "https://jellyfin.org",
+  "capturedAt": "2026-10-23T21:42:41.838Z",
+  "alt": "Screenshot of the Jellyfin website",
+  "pageTitle": "The Free Software Media System | Jellyfin",
+  "pageDescription": "The volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.",
+  "shot": {
+    "480": "assets/tools/jellyfin/shot-480.webp",
+    "960": "assets/tools/jellyfin/shot-960.webp",
+    "1600": "assets/tools/jellyfin/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/jellyfin/mobile-390.webp",
+    "780": "assets/tools/jellyfin/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/jellyfin/social-600.webp",
+    "1200": "assets/tools/jellyfin/social-1200.webp",
+    "from": "https://jellyfin.org/images/social.png?v2"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

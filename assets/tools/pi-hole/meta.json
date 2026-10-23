@@ -1,0 +1,29 @@
+{
+  "slug": "pi-hole",
+  "name": "Pi-hole",
+  "source": "https://pi-hole.net",
+  "capturedAt": "2026-10-23T21:43:40.094Z",
+  "alt": "Screenshot of the Pi-hole website",
+  "pageTitle": "Pi-hole – Network-wide Ad Blocking",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/pi-hole/shot-480.webp",
+    "960": "assets/tools/pi-hole/shot-960.webp",
+    "1600": "assets/tools/pi-hole/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/pi-hole/mobile-390.webp",
+    "780": "assets/tools/pi-hole/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/pi-hole/icon-128.webp",
+    "256": "assets/tools/pi-hole/icon-256.webp",
+    "from": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/cropped-Vortex-R-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

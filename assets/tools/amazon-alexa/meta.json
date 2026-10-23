@@ -1,0 +1,14 @@
+{
+  "slug": "amazon-alexa",
+  "name": "Amazon Alexa",
+  "source": "https://alexa.amazon.com",
+  "capturedAt": "2026-10-23T21:45:29.597Z",
+  "alt": "Screenshot of the Amazon Alexa website",
+  "pageTitle": "Sign in",
+  "pageDescription": null,
+  "color": null,
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

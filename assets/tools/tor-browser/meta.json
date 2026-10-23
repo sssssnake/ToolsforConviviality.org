@@ -1,0 +1,28 @@
+{
+  "slug": "tor-browser",
+  "name": "Tor Browser",
+  "source": "https://www.torproject.org/download/",
+  "capturedAt": "2026-10-23T21:41:25.648Z",
+  "alt": "Screenshot of the Tor Browser website",
+  "pageTitle": "Download — Tor",
+  "pageDescription": "Defend yourself against tracking and surveillance. Circumvent censorship.",
+  "shot": {
+    "480": "assets/tools/tor-browser/shot-480.webp",
+    "960": "assets/tools/tor-browser/shot-960.webp",
+    "1600": "assets/tools/tor-browser/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/tor-browser/mobile-390.webp",
+    "780": "assets/tools/tor-browser/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/tor-browser/icon-128.webp",
+    "256": "assets/tools/tor-browser/icon-256.webp",
+    "svg": "assets/tools/tor-browser/icon.svg",
+    "from": "https://download.torproject.org/images/favicon/favicon.svg?h=f6f51bf7",
+    "scalable": true
+  },
+  "color": "#9338c1",
+  "colorFrom": "theme-color",
+  "notes": []
+}

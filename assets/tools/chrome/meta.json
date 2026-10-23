@@ -1,0 +1,27 @@
+{
+  "slug": "chrome",
+  "name": "Google Chrome",
+  "source": "https://www.google.com/chrome/",
+  "capturedAt": "2026-10-23T21:45:12.811Z",
+  "alt": "Screenshot of the Google Chrome website",
+  "pageTitle": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+  "pageDescription": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours.",
+  "icon": {
+    "128": "assets/tools/chrome/icon-128.webp",
+    "256": "assets/tools/chrome/icon-256.webp",
+    "from": "https://www.google.com/chrome/static/images/favicons/android-icon-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/chrome/social-600.webp",
+    "1200": "assets/tools/chrome/social-1200.webp",
+    "from": "https://www.google.com/chrome/static/images/homepage/homepage-v2.png"
+  },
+  "color": "#486848",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

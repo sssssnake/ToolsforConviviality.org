@@ -1,0 +1,14 @@
+{
+  "slug": "google-play",
+  "name": "Google Play",
+  "source": "https://play.google.com",
+  "capturedAt": "2026-10-23T21:45:17.641Z",
+  "alt": "Screenshot of the Google Play website",
+  "pageTitle": "Android Apps on Google Play",
+  "pageDescription": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your devices.",
+  "color": null,
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

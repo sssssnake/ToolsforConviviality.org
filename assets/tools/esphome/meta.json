@@ -1,0 +1,33 @@
+{
+  "slug": "esphome",
+  "name": "ESPHome",
+  "source": "https://esphome.io",
+  "capturedAt": "2026-10-23T21:43:25.982Z",
+  "alt": "Screenshot of the ESPHome website",
+  "pageTitle": "ESPHome - Smart Home Made Simple",
+  "pageDescription": "Smart Home Made Simple. ESPHome turns ESP32, ESP8266, and RP2040 microcontrollers into fully-featured smart home devices.",
+  "shot": {
+    "480": "assets/tools/esphome/shot-480.webp",
+    "960": "assets/tools/esphome/shot-960.webp",
+    "1600": "assets/tools/esphome/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/esphome/mobile-390.webp",
+    "780": "assets/tools/esphome/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/esphome/icon-128.webp",
+    "256": "assets/tools/esphome/icon-256.webp",
+    "svg": "assets/tools/esphome/icon.svg",
+    "from": "https://esphome.io/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/esphome/social-600.webp",
+    "1200": "assets/tools/esphome/social-1200.webp",
+    "from": "https://esphome.io/images/og.webp"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

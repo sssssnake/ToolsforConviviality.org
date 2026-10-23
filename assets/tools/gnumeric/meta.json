@@ -1,0 +1,29 @@
+{
+  "slug": "gnumeric",
+  "name": "Gnumeric",
+  "source": "http://www.gnumeric.org",
+  "capturedAt": "2026-10-23T21:44:48.095Z",
+  "alt": "Screenshot of the Gnumeric website",
+  "pageTitle": "Gnumeric",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/gnumeric/shot-480.webp",
+    "960": "assets/tools/gnumeric/shot-960.webp",
+    "1600": "assets/tools/gnumeric/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/gnumeric/mobile-390.webp",
+    "780": "assets/tools/gnumeric/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/gnumeric/icon-128.webp",
+    "256": "assets/tools/gnumeric/icon-256.webp",
+    "from": "https://gnome.pages.gitlab.gnome.org/gnumeric-web//logo.png",
+    "sourceWidth": 16,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

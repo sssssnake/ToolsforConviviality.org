@@ -1,0 +1,34 @@
+{
+  "slug": "ladybird",
+  "name": "Ladybird",
+  "source": "https://ladybird.org",
+  "capturedAt": "2026-10-23T21:41:50.028Z",
+  "alt": "Screenshot of the Ladybird website",
+  "pageTitle": "Ladybird",
+  "pageDescription": "Ladybird is a truly independent web browser, backed by a non-profit.",
+  "shot": {
+    "480": "assets/tools/ladybird/shot-480.webp",
+    "960": "assets/tools/ladybird/shot-960.webp",
+    "1600": "assets/tools/ladybird/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ladybird/mobile-390.webp",
+    "780": "assets/tools/ladybird/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/ladybird/icon-128.webp",
+    "256": "assets/tools/ladybird/icon-256.webp",
+    "from": "https://ladybird.org/assets/img/ladybird_favicon.png",
+    "sourceWidth": 50,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/ladybird/social-600.webp",
+    "1200": "assets/tools/ladybird/social-1200.webp",
+    "from": "https://ladybird.org/assets/img/ladybird-purple-on-black.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

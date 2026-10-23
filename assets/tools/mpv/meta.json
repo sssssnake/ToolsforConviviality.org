@@ -1,0 +1,29 @@
+{
+  "slug": "mpv",
+  "name": "mpv",
+  "source": "https://mpv.io",
+  "capturedAt": "2026-10-23T21:42:56.546Z",
+  "alt": "Screenshot of the mpv website",
+  "pageTitle": "mpv.io",
+  "pageDescription": "a free, open source, and cross-platform media player",
+  "shot": {
+    "480": "assets/tools/mpv/shot-480.webp",
+    "960": "assets/tools/mpv/shot-960.webp",
+    "1600": "assets/tools/mpv/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/mpv/mobile-390.webp",
+    "780": "assets/tools/mpv/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/mpv/icon-128.webp",
+    "256": "assets/tools/mpv/icon-256.webp",
+    "from": "https://mpv.io/images/favicon-5d3b2a52.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "firefox",
+  "name": "Firefox",
+  "source": "https://www.firefox.com",
+  "capturedAt": "2026-10-23T21:41:18.648Z",
+  "alt": "Screenshot of the Firefox website",
+  "pageTitle": "Firefox: The fast, private browser that keeps you safe — Firefox.com",
+  "pageDescription": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data.",
+  "shot": {
+    "480": "assets/tools/firefox/shot-480.webp",
+    "960": "assets/tools/firefox/shot-960.webp",
+    "1600": "assets/tools/firefox/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/firefox/mobile-390.webp",
+    "780": "assets/tools/firefox/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/firefox/icon-128.webp",
+    "256": "assets/tools/firefox/icon-256.webp",
+    "from": "https://www.firefox.com/media/img/favicons/firefox/browser/favicon-196x196.59e3822720be.png",
+    "sourceWidth": 196,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/firefox/social-600.webp",
+    "1200": "assets/tools/firefox/social-1200.webp",
+    "from": "https://www.firefox.com/media/img/firefox/flare/og.4d50d9b1674b.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

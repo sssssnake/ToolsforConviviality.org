@@ -1,0 +1,34 @@
+{
+  "slug": "f-droid",
+  "name": "F-Droid",
+  "source": "https://f-droid.org",
+  "capturedAt": "2026-10-23T21:41:56.492Z",
+  "alt": "Screenshot of the F-Droid website",
+  "pageTitle": "F-Droid - Free and Open Source Android App Repository",
+  "pageDescription": "F-Droid is the app distribution ecosystem for Android where your user freedom comes first. Discover our app store, explore the world of free and open source (FOSS) apps and [learn](https://f-droid.org/about/) about our app distribution tools.",
+  "shot": {
+    "480": "assets/tools/f-droid/shot-480.webp",
+    "960": "assets/tools/f-droid/shot-960.webp",
+    "1600": "assets/tools/f-droid/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/f-droid/mobile-390.webp",
+    "780": "assets/tools/f-droid/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/f-droid/icon-128.webp",
+    "256": "assets/tools/f-droid/icon-256.webp",
+    "from": "https://f-droid.org/assets/android-chrome-512x512.png?v=8j6PKzW9Mk",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/f-droid/social-600.webp",
+    "1200": "assets/tools/f-droid/social-1200.webp",
+    "from": "https://f-droid.org/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

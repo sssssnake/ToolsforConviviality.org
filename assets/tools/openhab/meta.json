@@ -1,0 +1,34 @@
+{
+  "slug": "openhab",
+  "name": "openHAB",
+  "source": "https://www.openhab.org",
+  "capturedAt": "2026-10-23T21:43:47.294Z",
+  "alt": "Screenshot of the openHAB website",
+  "pageTitle": "openHAB",
+  "pageDescription": "openHAB - a vendor and technology agnostic open source automation software for your home",
+  "shot": {
+    "480": "assets/tools/openhab/shot-480.webp",
+    "960": "assets/tools/openhab/shot-960.webp",
+    "1600": "assets/tools/openhab/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/openhab/mobile-390.webp",
+    "780": "assets/tools/openhab/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/openhab/icon-128.webp",
+    "256": "assets/tools/openhab/icon-256.webp",
+    "from": "https://www.openhab.org/apple-icon.png",
+    "sourceWidth": 283,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/openhab/social-600.webp",
+    "1200": "assets/tools/openhab/social-1200.webp",
+    "from": "https://www.openhab.org/og-image.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

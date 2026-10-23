@@ -1,0 +1,33 @@
+{
+  "slug": "librewolf",
+  "name": "LibreWolf",
+  "source": "https://librewolf.net",
+  "capturedAt": "2026-10-23T21:41:33.491Z",
+  "alt": "Screenshot of the LibreWolf website",
+  "pageTitle": "LibreWolf",
+  "pageDescription": "A custom version of Firefox, focused on privacy, security and freedom.",
+  "shot": {
+    "480": "assets/tools/librewolf/shot-480.webp",
+    "960": "assets/tools/librewolf/shot-960.webp",
+    "1600": "assets/tools/librewolf/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/librewolf/mobile-390.webp",
+    "780": "assets/tools/librewolf/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/librewolf/icon-128.webp",
+    "256": "assets/tools/librewolf/icon-256.webp",
+    "svg": "assets/tools/librewolf/icon.svg",
+    "from": "https://librewolf.net/icon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/librewolf/social-600.webp",
+    "1200": "assets/tools/librewolf/social-1200.webp",
+    "from": "https://librewolf.net/og_image.png"
+  },
+  "color": "#08a8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

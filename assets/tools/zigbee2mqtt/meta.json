@@ -1,0 +1,29 @@
+{
+  "slug": "zigbee2mqtt",
+  "name": "Zigbee2MQTT",
+  "source": "https://www.zigbee2mqtt.io",
+  "capturedAt": "2026-10-23T21:43:33.609Z",
+  "alt": "Screenshot of the Zigbee2MQTT website",
+  "pageTitle": "Home | Zigbee2MQTT",
+  "pageDescription": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
+  "shot": {
+    "480": "assets/tools/zigbee2mqtt/shot-480.webp",
+    "960": "assets/tools/zigbee2mqtt/shot-960.webp",
+    "1600": "assets/tools/zigbee2mqtt/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/zigbee2mqtt/mobile-390.webp",
+    "780": "assets/tools/zigbee2mqtt/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/zigbee2mqtt/icon-128.webp",
+    "256": "assets/tools/zigbee2mqtt/icon-256.webp",
+    "from": "https://www.zigbee2mqtt.io/android-chrome-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#ffc135",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "mullvad-browser",
+  "name": "Mullvad Browser",
+  "source": "https://mullvad.net/en/browser",
+  "capturedAt": "2026-10-23T21:41:39.731Z",
+  "alt": "Screenshot of the Mullvad Browser website",
+  "pageTitle": "Free the internet with Mullvad Browser",
+  "pageDescription": "The Mullvad Browser is a privacy-focused web browser developed by the Tor Project. It’s produced to minimize tracking and fingerprinting.",
+  "shot": {
+    "480": "assets/tools/mullvad-browser/shot-480.webp",
+    "960": "assets/tools/mullvad-browser/shot-960.webp",
+    "1600": "assets/tools/mullvad-browser/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/mullvad-browser/mobile-390.webp",
+    "780": "assets/tools/mullvad-browser/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/mullvad-browser/icon-128.webp",
+    "256": "assets/tools/mullvad-browser/icon-256.webp",
+    "svg": "assets/tools/mullvad-browser/icon.svg",
+    "from": "https://mullvad.net/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/mullvad-browser/social-600.webp",
+    "1200": "assets/tools/mullvad-browser/social-1200.webp",
+    "from": "https://mullvad.net/images/browser-og.jpg"
+  },
+  "color": "#192e45",
+  "colorFrom": "theme-color",
+  "notes": []
+}

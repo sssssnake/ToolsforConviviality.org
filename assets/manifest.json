@@ -2855,7 +2855,961 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://news.google.com\",{\"shot\":false},null]"
+    },
+    "firefox": {
+      "slug": "firefox",
+      "name": "Firefox",
+      "source": "https://www.firefox.com",
+      "capturedAt": "2026-10-23T21:41:18.648Z",
+      "alt": "Screenshot of the Firefox website",
+      "pageTitle": "Firefox: The fast, private browser that keeps you safe — Firefox.com",
+      "pageDescription": "The independent browser that has your back. Firefox blocks trackers, has a free built-in VPN, puts you in control of AI, and never sells your personal data.",
+      "shot": {
+        "480": "assets/tools/firefox/shot-480.webp",
+        "960": "assets/tools/firefox/shot-960.webp",
+        "1600": "assets/tools/firefox/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/firefox/mobile-390.webp",
+        "780": "assets/tools/firefox/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/firefox/icon-128.webp",
+        "256": "assets/tools/firefox/icon-256.webp",
+        "from": "https://www.firefox.com/media/img/favicons/firefox/browser/favicon-196x196.59e3822720be.png",
+        "sourceWidth": 196,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/firefox/social-600.webp",
+        "1200": "assets/tools/firefox/social-1200.webp",
+        "from": "https://www.firefox.com/media/img/firefox/flare/og.4d50d9b1674b.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.firefox.com\",null,null]"
+    },
+    "tor-browser": {
+      "slug": "tor-browser",
+      "name": "Tor Browser",
+      "source": "https://www.torproject.org/download/",
+      "capturedAt": "2026-10-23T21:41:25.648Z",
+      "alt": "Screenshot of the Tor Browser website",
+      "pageTitle": "Download — Tor",
+      "pageDescription": "Defend yourself against tracking and surveillance. Circumvent censorship.",
+      "shot": {
+        "480": "assets/tools/tor-browser/shot-480.webp",
+        "960": "assets/tools/tor-browser/shot-960.webp",
+        "1600": "assets/tools/tor-browser/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/tor-browser/mobile-390.webp",
+        "780": "assets/tools/tor-browser/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/tor-browser/icon-128.webp",
+        "256": "assets/tools/tor-browser/icon-256.webp",
+        "svg": "assets/tools/tor-browser/icon.svg",
+        "from": "https://download.torproject.org/images/favicon/favicon.svg?h=f6f51bf7",
+        "scalable": true
+      },
+      "color": "#9338c1",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.torproject.org/download/\",null,null]"
+    },
+    "librewolf": {
+      "slug": "librewolf",
+      "name": "LibreWolf",
+      "source": "https://librewolf.net",
+      "capturedAt": "2026-10-23T21:41:33.491Z",
+      "alt": "Screenshot of the LibreWolf website",
+      "pageTitle": "LibreWolf",
+      "pageDescription": "A custom version of Firefox, focused on privacy, security and freedom.",
+      "shot": {
+        "480": "assets/tools/librewolf/shot-480.webp",
+        "960": "assets/tools/librewolf/shot-960.webp",
+        "1600": "assets/tools/librewolf/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/librewolf/mobile-390.webp",
+        "780": "assets/tools/librewolf/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/librewolf/icon-128.webp",
+        "256": "assets/tools/librewolf/icon-256.webp",
+        "svg": "assets/tools/librewolf/icon.svg",
+        "from": "https://librewolf.net/icon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/librewolf/social-600.webp",
+        "1200": "assets/tools/librewolf/social-1200.webp",
+        "from": "https://librewolf.net/og_image.png"
+      },
+      "color": "#08a8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://librewolf.net\",null,null]"
+    },
+    "mullvad-browser": {
+      "slug": "mullvad-browser",
+      "name": "Mullvad Browser",
+      "source": "https://mullvad.net/en/browser",
+      "capturedAt": "2026-10-23T21:41:39.731Z",
+      "alt": "Screenshot of the Mullvad Browser website",
+      "pageTitle": "Free the internet with Mullvad Browser",
+      "pageDescription": "The Mullvad Browser is a privacy-focused web browser developed by the Tor Project. It’s produced to minimize tracking and fingerprinting.",
+      "shot": {
+        "480": "assets/tools/mullvad-browser/shot-480.webp",
+        "960": "assets/tools/mullvad-browser/shot-960.webp",
+        "1600": "assets/tools/mullvad-browser/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/mullvad-browser/mobile-390.webp",
+        "780": "assets/tools/mullvad-browser/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/mullvad-browser/icon-128.webp",
+        "256": "assets/tools/mullvad-browser/icon-256.webp",
+        "svg": "assets/tools/mullvad-browser/icon.svg",
+        "from": "https://mullvad.net/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/mullvad-browser/social-600.webp",
+        "1200": "assets/tools/mullvad-browser/social-1200.webp",
+        "from": "https://mullvad.net/images/browser-og.jpg"
+      },
+      "color": "#192e45",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://mullvad.net/en/browser\",null,null]"
+    },
+    "ladybird": {
+      "slug": "ladybird",
+      "name": "Ladybird",
+      "source": "https://ladybird.org",
+      "capturedAt": "2026-10-23T21:41:50.028Z",
+      "alt": "Screenshot of the Ladybird website",
+      "pageTitle": "Ladybird",
+      "pageDescription": "Ladybird is a truly independent web browser, backed by a non-profit.",
+      "shot": {
+        "480": "assets/tools/ladybird/shot-480.webp",
+        "960": "assets/tools/ladybird/shot-960.webp",
+        "1600": "assets/tools/ladybird/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ladybird/mobile-390.webp",
+        "780": "assets/tools/ladybird/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/ladybird/icon-128.webp",
+        "256": "assets/tools/ladybird/icon-256.webp",
+        "from": "https://ladybird.org/assets/img/ladybird_favicon.png",
+        "sourceWidth": 50,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/ladybird/social-600.webp",
+        "1200": "assets/tools/ladybird/social-1200.webp",
+        "from": "https://ladybird.org/assets/img/ladybird-purple-on-black.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://ladybird.org\",null,null]"
+    },
+    "f-droid": {
+      "slug": "f-droid",
+      "name": "F-Droid",
+      "source": "https://f-droid.org",
+      "capturedAt": "2026-10-23T21:41:56.492Z",
+      "alt": "Screenshot of the F-Droid website",
+      "pageTitle": "F-Droid - Free and Open Source Android App Repository",
+      "pageDescription": "F-Droid is the app distribution ecosystem for Android where your user freedom comes first. Discover our app store, explore the world of free and open source (FOSS) apps and [learn](https://f-droid.org/about/) about our app distribution tools.",
+      "shot": {
+        "480": "assets/tools/f-droid/shot-480.webp",
+        "960": "assets/tools/f-droid/shot-960.webp",
+        "1600": "assets/tools/f-droid/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/f-droid/mobile-390.webp",
+        "780": "assets/tools/f-droid/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/f-droid/icon-128.webp",
+        "256": "assets/tools/f-droid/icon-256.webp",
+        "from": "https://f-droid.org/assets/android-chrome-512x512.png?v=8j6PKzW9Mk",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/f-droid/social-600.webp",
+        "1200": "assets/tools/f-droid/social-1200.webp",
+        "from": "https://f-droid.org/assets/fdroid-logo_bfHl7nsLHOUQxzdU8-rGIhn4bAgl6z7k2mA3fWoCyT4=.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://f-droid.org\",null,null]"
+    },
+    "obtainium": {
+      "slug": "obtainium",
+      "name": "Obtainium",
+      "source": "https://obtainium.imranr.dev",
+      "capturedAt": "2026-10-23T21:42:05.523Z",
+      "alt": "Screenshot of the Obtainium website",
+      "pageTitle": "Obtainium",
+      "pageDescription": "Obtainium allows you to install and update apps directly from their release pages, and receive notifications when new releases are made available.",
+      "shot": {
+        "480": "assets/tools/obtainium/shot-480.webp",
+        "960": "assets/tools/obtainium/shot-960.webp",
+        "1600": "assets/tools/obtainium/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/obtainium/mobile-390.webp",
+        "780": "assets/tools/obtainium/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/obtainium/icon-128.webp",
+        "256": "assets/tools/obtainium/icon-256.webp",
+        "from": "https://raw.githubusercontent.com/ImranR98/Obtainium/main/assets/graphics/icon_small.png",
+        "sourceWidth": 72,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://obtainium.imranr.dev\",null,null]"
+    },
+    "aurora-store": {
+      "slug": "aurora-store",
+      "name": "Aurora Store",
+      "source": "https://auroraoss.com",
+      "capturedAt": "2026-10-23T21:42:12.287Z",
+      "alt": "Screenshot of the Aurora Store website",
+      "pageTitle": "Aurora",
+      "pageDescription": "Aurora OSS - Abode of opensource android apps",
+      "shot": {
+        "480": "assets/tools/aurora-store/shot-480.webp",
+        "960": "assets/tools/aurora-store/shot-960.webp",
+        "1600": "assets/tools/aurora-store/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/aurora-store/mobile-390.webp",
+        "780": "assets/tools/aurora-store/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/aurora-store/icon-128.webp",
+        "256": "assets/tools/aurora-store/icon-256.webp",
+        "svg": "assets/tools/aurora-store/icon.svg",
+        "from": "https://auroraoss.com/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/aurora-store/social-600.webp",
+        "1200": "assets/tools/aurora-store/social-1200.webp",
+        "from": "https://auroraoss.com/images/store_banner.webp"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://auroraoss.com\",null,null]"
+    },
+    "izzyondroid": {
+      "slug": "izzyondroid",
+      "name": "IzzyOnDroid",
+      "source": "https://apt.izzysoft.de/fdroid/",
+      "capturedAt": "2026-10-23T21:42:21.918Z",
+      "alt": "Screenshot of the IzzyOnDroid website",
+      "pageTitle": "IzzyOnDroid F-Droid Repository",
+      "pageDescription": "Applications in this repository are official binaries built by the original application developers, taken from their resp. repositories (mostly Github, GitLab, Codeberg), with additional screening applied. Updates for the apps are usually fetched daily, and you can expect daily index updates.",
+      "shot": {
+        "480": "assets/tools/izzyondroid/shot-480.webp",
+        "960": "assets/tools/izzyondroid/shot-960.webp",
+        "1600": "assets/tools/izzyondroid/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/izzyondroid/mobile-390.webp",
+        "780": "assets/tools/izzyondroid/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/izzyondroid/icon-128.webp",
+        "256": "assets/tools/izzyondroid/icon-256.webp",
+        "from": "https://apt.izzysoft.de/fdroid/izzy-on-droid.png",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/izzyondroid/social-600.webp",
+        "1200": "assets/tools/izzyondroid/social-1200.webp",
+        "from": "https://apt.izzysoft.de/shared/images/fdroid_repo_qr.png"
+      },
+      "color": "#08d8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://apt.izzysoft.de/fdroid/\",null,null]"
+    },
+    "flathub": {
+      "slug": "flathub",
+      "name": "Flathub",
+      "source": "https://flathub.org",
+      "capturedAt": "2026-10-23T21:42:30.230Z",
+      "alt": "Screenshot of the Flathub website",
+      "pageTitle": "Flathub - Apps for Linux | Flathub",
+      "pageDescription": "Find and install hundreds of apps and games for Linux. Enjoy Firefox, Telegram, RetroArch, GIMP and many more!",
+      "shot": {
+        "480": "assets/tools/flathub/shot-480.webp",
+        "960": "assets/tools/flathub/shot-960.webp",
+        "1600": "assets/tools/flathub/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/flathub/mobile-390.webp",
+        "780": "assets/tools/flathub/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/flathub/icon-128.webp",
+        "256": "assets/tools/flathub/icon-256.webp",
+        "svg": "assets/tools/flathub/icon.svg",
+        "from": "https://dl.flathub.org/assets/_next/public/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/flathub/social-600.webp",
+        "1200": "assets/tools/flathub/social-1200.webp",
+        "from": "https://dl.flathub.org/assets/_next/static/media/card.1l99ocxtankfy.webp"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://flathub.org\",null,null]"
+    },
+    "jellyfin": {
+      "slug": "jellyfin",
+      "name": "Jellyfin",
+      "source": "https://jellyfin.org",
+      "capturedAt": "2026-10-23T21:42:41.838Z",
+      "alt": "Screenshot of the Jellyfin website",
+      "pageTitle": "The Free Software Media System | Jellyfin",
+      "pageDescription": "The volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.",
+      "shot": {
+        "480": "assets/tools/jellyfin/shot-480.webp",
+        "960": "assets/tools/jellyfin/shot-960.webp",
+        "1600": "assets/tools/jellyfin/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/jellyfin/mobile-390.webp",
+        "780": "assets/tools/jellyfin/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/jellyfin/social-600.webp",
+        "1200": "assets/tools/jellyfin/social-1200.webp",
+        "from": "https://jellyfin.org/images/social.png?v2"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://jellyfin.org\",null,null]"
+    },
+    "navidrome": {
+      "slug": "navidrome",
+      "name": "Navidrome",
+      "source": "https://www.navidrome.org",
+      "capturedAt": "2026-10-23T21:42:48.190Z",
+      "alt": "Screenshot of the Navidrome website",
+      "pageTitle": "Navidrome",
+      "pageDescription": "Welcome to Navidrome! Learn More Download Your Personal Streaming Service\nNavidrome allows you to enjoy your music collection from anywhere, by making it available through a modern Web UI and through a wide range of third-party compatible mobile apps, for both iOS and Android devices.",
+      "shot": {
+        "480": "assets/tools/navidrome/shot-480.webp",
+        "960": "assets/tools/navidrome/shot-960.webp",
+        "1600": "assets/tools/navidrome/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/navidrome/mobile-390.webp",
+        "780": "assets/tools/navidrome/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/navidrome/icon-128.webp",
+        "256": "assets/tools/navidrome/icon-256.webp",
+        "from": "https://www.navidrome.org/favicons/android-icon-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/navidrome/social-600.webp",
+        "1200": "assets/tools/navidrome/social-1200.webp",
+        "from": "https://www.navidrome.org/featured-background.jpg"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.navidrome.org\",null,null]"
+    },
+    "mpv": {
+      "slug": "mpv",
+      "name": "mpv",
+      "source": "https://mpv.io",
+      "capturedAt": "2026-10-23T21:42:56.546Z",
+      "alt": "Screenshot of the mpv website",
+      "pageTitle": "mpv.io",
+      "pageDescription": "a free, open source, and cross-platform media player",
+      "shot": {
+        "480": "assets/tools/mpv/shot-480.webp",
+        "960": "assets/tools/mpv/shot-960.webp",
+        "1600": "assets/tools/mpv/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/mpv/mobile-390.webp",
+        "780": "assets/tools/mpv/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/mpv/icon-128.webp",
+        "256": "assets/tools/mpv/icon-256.webp",
+        "from": "https://mpv.io/images/favicon-5d3b2a52.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://mpv.io\",null,null]"
+    },
+    "funkwhale": {
+      "slug": "funkwhale",
+      "name": "Funkwhale",
+      "source": "https://funkwhale.audio",
+      "capturedAt": "2026-10-23T21:43:04.765Z",
+      "alt": "Screenshot of the Funkwhale website",
+      "pageTitle": "Funkwhale",
+      "pageDescription": "Funkwhale - A platform for all your audio",
+      "shot": {
+        "480": "assets/tools/funkwhale/shot-480.webp",
+        "960": "assets/tools/funkwhale/shot-960.webp",
+        "1600": "assets/tools/funkwhale/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/funkwhale/mobile-390.webp",
+        "780": "assets/tools/funkwhale/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://funkwhale.audio\",null,null]"
+    },
+    "home-assistant": {
+      "slug": "home-assistant",
+      "name": "Home Assistant",
+      "source": "https://www.home-assistant.io",
+      "capturedAt": "2026-10-23T21:43:19.379Z",
+      "alt": "Screenshot of the Home Assistant website",
+      "pageTitle": "Home Assistant",
+      "pageDescription": "Open source home automation that puts local control and privacy first. Powered by a worldwide community of tinkerers and DIY enthusiasts. Perfect to run on a...",
+      "shot": {
+        "480": "assets/tools/home-assistant/shot-480.webp",
+        "960": "assets/tools/home-assistant/shot-960.webp",
+        "1600": "assets/tools/home-assistant/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/home-assistant/mobile-390.webp",
+        "780": "assets/tools/home-assistant/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/home-assistant/icon-128.webp",
+        "256": "assets/tools/home-assistant/icon-256.webp",
+        "svg": "assets/tools/home-assistant/icon.svg",
+        "from": "https://www.home-assistant.io/images/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/home-assistant/social-600.webp",
+        "1200": "assets/tools/home-assistant/social-1200.webp",
+        "from": "https://www.home-assistant.io/images/default-social.png"
+      },
+      "color": "#18bcf2",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.home-assistant.io\",null,null]"
+    },
+    "esphome": {
+      "slug": "esphome",
+      "name": "ESPHome",
+      "source": "https://esphome.io",
+      "capturedAt": "2026-10-23T21:43:25.982Z",
+      "alt": "Screenshot of the ESPHome website",
+      "pageTitle": "ESPHome - Smart Home Made Simple",
+      "pageDescription": "Smart Home Made Simple. ESPHome turns ESP32, ESP8266, and RP2040 microcontrollers into fully-featured smart home devices.",
+      "shot": {
+        "480": "assets/tools/esphome/shot-480.webp",
+        "960": "assets/tools/esphome/shot-960.webp",
+        "1600": "assets/tools/esphome/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/esphome/mobile-390.webp",
+        "780": "assets/tools/esphome/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/esphome/icon-128.webp",
+        "256": "assets/tools/esphome/icon-256.webp",
+        "svg": "assets/tools/esphome/icon.svg",
+        "from": "https://esphome.io/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/esphome/social-600.webp",
+        "1200": "assets/tools/esphome/social-1200.webp",
+        "from": "https://esphome.io/images/og.webp"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://esphome.io\",null,null]"
+    },
+    "zigbee2mqtt": {
+      "slug": "zigbee2mqtt",
+      "name": "Zigbee2MQTT",
+      "source": "https://www.zigbee2mqtt.io",
+      "capturedAt": "2026-10-23T21:43:33.609Z",
+      "alt": "Screenshot of the Zigbee2MQTT website",
+      "pageTitle": "Home | Zigbee2MQTT",
+      "pageDescription": "Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges",
+      "shot": {
+        "480": "assets/tools/zigbee2mqtt/shot-480.webp",
+        "960": "assets/tools/zigbee2mqtt/shot-960.webp",
+        "1600": "assets/tools/zigbee2mqtt/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/zigbee2mqtt/mobile-390.webp",
+        "780": "assets/tools/zigbee2mqtt/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/zigbee2mqtt/icon-128.webp",
+        "256": "assets/tools/zigbee2mqtt/icon-256.webp",
+        "from": "https://www.zigbee2mqtt.io/android-chrome-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#ffc135",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.zigbee2mqtt.io\",null,null]"
+    },
+    "pi-hole": {
+      "slug": "pi-hole",
+      "name": "Pi-hole",
+      "source": "https://pi-hole.net",
+      "capturedAt": "2026-10-23T21:43:40.094Z",
+      "alt": "Screenshot of the Pi-hole website",
+      "pageTitle": "Pi-hole – Network-wide Ad Blocking",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/pi-hole/shot-480.webp",
+        "960": "assets/tools/pi-hole/shot-960.webp",
+        "1600": "assets/tools/pi-hole/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/pi-hole/mobile-390.webp",
+        "780": "assets/tools/pi-hole/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/pi-hole/icon-128.webp",
+        "256": "assets/tools/pi-hole/icon-256.webp",
+        "from": "https://wp-cdn.pi-hole.net/wp-content/uploads/2016/12/cropped-Vortex-R-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://pi-hole.net\",null,null]"
+    },
+    "openhab": {
+      "slug": "openhab",
+      "name": "openHAB",
+      "source": "https://www.openhab.org",
+      "capturedAt": "2026-10-23T21:43:47.294Z",
+      "alt": "Screenshot of the openHAB website",
+      "pageTitle": "openHAB",
+      "pageDescription": "openHAB - a vendor and technology agnostic open source automation software for your home",
+      "shot": {
+        "480": "assets/tools/openhab/shot-480.webp",
+        "960": "assets/tools/openhab/shot-960.webp",
+        "1600": "assets/tools/openhab/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/openhab/mobile-390.webp",
+        "780": "assets/tools/openhab/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/openhab/icon-128.webp",
+        "256": "assets/tools/openhab/icon-256.webp",
+        "from": "https://www.openhab.org/apple-icon.png",
+        "sourceWidth": 283,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/openhab/social-600.webp",
+        "1200": "assets/tools/openhab/social-1200.webp",
+        "from": "https://www.openhab.org/og-image.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.openhab.org\",null,null]"
+    },
+    "libreoffice": {
+      "slug": "libreoffice",
+      "name": "LibreOffice",
+      "source": "https://www.libreoffice.org",
+      "capturedAt": "2026-10-23T21:43:57.489Z",
+      "alt": "Screenshot of the LibreOffice website",
+      "pageTitle": "Free and private office suite, no forced AI — LibreOffice",
+      "pageDescription": "LibreOffice is a free office suite",
+      "shot": {
+        "480": "assets/tools/libreoffice/shot-480.webp",
+        "960": "assets/tools/libreoffice/shot-960.webp",
+        "1600": "assets/tools/libreoffice/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/libreoffice/mobile-390.webp",
+        "780": "assets/tools/libreoffice/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.libreoffice.org\",null,null]"
+    },
+    "onlyoffice": {
+      "slug": "onlyoffice",
+      "name": "ONLYOFFICE",
+      "source": "https://www.onlyoffice.com",
+      "capturedAt": "2026-10-23T21:44:06.018Z",
+      "alt": "Screenshot of the ONLYOFFICE website",
+      "pageTitle": "Private AI-powered office infrastructure | ONLYOFFICE",
+      "pageDescription": "Build a secure AI-powered office infrastructure with ONLYOFFICE. Collaborate on documents, automate workflows, and use intelligent assistants while keeping your data under your control.",
+      "shot": {
+        "480": "assets/tools/onlyoffice/shot-480.webp",
+        "960": "assets/tools/onlyoffice/shot-960.webp",
+        "1600": "assets/tools/onlyoffice/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/onlyoffice/mobile-390.webp",
+        "780": "assets/tools/onlyoffice/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/onlyoffice/icon-128.webp",
+        "256": "assets/tools/onlyoffice/icon-256.webp",
+        "from": "https://static-site.onlyoffice.com/public/images/favicons/favicon325.png",
+        "sourceWidth": 325,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/onlyoffice/social-600.webp",
+        "1200": "assets/tools/onlyoffice/social-1200.webp",
+        "from": "https://download.onlyoffice.com/assets/fb/fb_icon_325x325.jpg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.onlyoffice.com\",null,null]"
+    },
+    "collabora-online": {
+      "slug": "collabora-online",
+      "name": "Collabora Online",
+      "source": "https://www.collaboraonline.com",
+      "capturedAt": "2026-10-23T21:44:15.462Z",
+      "alt": "Screenshot of the Collabora Online website",
+      "pageTitle": "Home - Collabora Online and Collabora Office",
+      "pageDescription": "CollaborativeOpen-SourceDocumentEditing Controlled by You Collabora Online is a powerful online document editing suite. Integrate into your own infrastructure or access via one of our trusted hosting partners. Explore the FREE Demo https://www.collaboraonline.com/wp-content/uploads/2025/04/Writer-Overview-005-720p.mp4 Why choose Collabora Online? Dependable Scalability Easy scalability with Kubernetes via the COOL Controller. Digitally Sovereign Your data under your control. Fast, Smooth […]",
+      "shot": {
+        "480": "assets/tools/collabora-online/shot-480.webp",
+        "960": "assets/tools/collabora-online/shot-960.webp",
+        "1600": "assets/tools/collabora-online/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/collabora-online/mobile-390.webp",
+        "780": "assets/tools/collabora-online/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/collabora-online/icon-128.webp",
+        "256": "assets/tools/collabora-online/icon-256.webp",
+        "from": "https://www.collaboraonline.com/wp-content/uploads/2023/06/collabora-symbols-600.png",
+        "sourceWidth": 313,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/collabora-online/social-600.webp",
+        "1200": "assets/tools/collabora-online/social-1200.webp",
+        "from": "https://www.collaboraonline.com/wp-content/uploads/2025/02/Collab-rabbits.png"
+      },
+      "color": "#582888",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.collaboraonline.com\",null,null]"
+    },
+    "etherpad": {
+      "slug": "etherpad",
+      "name": "Etherpad",
+      "source": "https://etherpad.org",
+      "capturedAt": "2026-10-23T21:44:41.911Z",
+      "alt": "Screenshot of the Etherpad website",
+      "pageTitle": "Etherpad",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/etherpad/shot-480.webp",
+        "960": "assets/tools/etherpad/shot-960.webp",
+        "1600": "assets/tools/etherpad/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/etherpad/mobile-390.webp",
+        "780": "assets/tools/etherpad/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "dismissed banner with button:has-text(\"Decline\")",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://etherpad.org\",null,null]"
+    },
+    "gnumeric": {
+      "slug": "gnumeric",
+      "name": "Gnumeric",
+      "source": "http://www.gnumeric.org",
+      "capturedAt": "2026-10-23T21:44:48.095Z",
+      "alt": "Screenshot of the Gnumeric website",
+      "pageTitle": "Gnumeric",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/gnumeric/shot-480.webp",
+        "960": "assets/tools/gnumeric/shot-960.webp",
+        "1600": "assets/tools/gnumeric/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/gnumeric/mobile-390.webp",
+        "780": "assets/tools/gnumeric/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/gnumeric/icon-128.webp",
+        "256": "assets/tools/gnumeric/icon-256.webp",
+        "from": "https://gnome.pages.gitlab.gnome.org/gnumeric-web//logo.png",
+        "sourceWidth": 16,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"http://www.gnumeric.org\",null,null]"
+    },
+    "tiddlywiki": {
+      "slug": "tiddlywiki",
+      "name": "TiddlyWiki",
+      "source": "https://tiddlywiki.com",
+      "capturedAt": "2026-10-23T21:44:53.871Z",
+      "alt": "Screenshot of the TiddlyWiki website",
+      "pageTitle": "TiddlyWiki v5.4.1 — a non-linear personal web notebook",
+      "pageDescription": "a non-linear personal web notebook",
+      "shot": {
+        "480": "assets/tools/tiddlywiki/shot-480.webp",
+        "960": "assets/tools/tiddlywiki/shot-960.webp",
+        "1600": "assets/tools/tiddlywiki/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/tiddlywiki/mobile-390.webp",
+        "780": "assets/tools/tiddlywiki/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/tiddlywiki/icon-128.webp",
+        "256": "assets/tools/tiddlywiki/icon-256.webp",
+        "from": "data:image/png;base64,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",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/tiddlywiki/social-600.webp",
+        "1200": "assets/tools/tiddlywiki/social-1200.webp",
+        "from": "https://tiddlywiki.com/images/Introduction%2520Video%2520Thumbnail.jpg"
+      },
+      "color": "#5878d8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://tiddlywiki.com\",null,null]"
+    },
+    "anki": {
+      "slug": "anki",
+      "name": "Anki",
+      "source": "https://apps.ankiweb.net",
+      "capturedAt": "2026-10-23T21:45:00.828Z",
+      "alt": "Screenshot of the Anki website",
+      "pageTitle": "Anki - powerful, intelligent flashcards",
+      "pageDescription": "Anki - a program which makes remembering things easy.",
+      "shot": {
+        "480": "assets/tools/anki/shot-480.webp",
+        "960": "assets/tools/anki/shot-960.webp",
+        "1600": "assets/tools/anki/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/anki/mobile-390.webp",
+        "780": "assets/tools/anki/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/anki/icon-128.webp",
+        "256": "assets/tools/anki/icon-256.webp",
+        "svg": "assets/tools/anki/icon.svg",
+        "from": "https://apps.ankiweb.net/logo.svg",
+        "scalable": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://apps.ankiweb.net\",null,null]"
+    },
+    "datasette": {
+      "slug": "datasette",
+      "name": "Datasette",
+      "source": "https://datasette.io",
+      "capturedAt": "2026-10-23T21:45:06.762Z",
+      "alt": "Screenshot of the Datasette website",
+      "pageTitle": "Datasette: An open source multi-tool for exploring and publishing data",
+      "pageDescription": "Datasette is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it, and publish it as an interactive website and accompanying API.",
+      "shot": {
+        "480": "assets/tools/datasette/shot-480.webp",
+        "960": "assets/tools/datasette/shot-960.webp",
+        "1600": "assets/tools/datasette/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/datasette/mobile-390.webp",
+        "780": "assets/tools/datasette/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/datasette/social-600.webp",
+        "1200": "assets/tools/datasette/social-1200.webp",
+        "from": "https://datasette.io/static/datasette-card.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://datasette.io\",null,null]"
+    },
+    "chrome": {
+      "slug": "chrome",
+      "name": "Google Chrome",
+      "source": "https://www.google.com/chrome/",
+      "capturedAt": "2026-10-23T21:45:12.811Z",
+      "alt": "Screenshot of the Google Chrome website",
+      "pageTitle": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "pageDescription": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours.",
+      "icon": {
+        "128": "assets/tools/chrome/icon-128.webp",
+        "256": "assets/tools/chrome/icon-256.webp",
+        "from": "https://www.google.com/chrome/static/images/favicons/android-icon-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/chrome/social-600.webp",
+        "1200": "assets/tools/chrome/social-1200.webp",
+        "from": "https://www.google.com/chrome/static/images/homepage/homepage-v2.png"
+      },
+      "color": "#486848",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.google.com/chrome/\",{\"shot\":false},null]"
+    },
+    "google-play": {
+      "slug": "google-play",
+      "name": "Google Play",
+      "source": "https://play.google.com",
+      "capturedAt": "2026-10-23T21:45:17.641Z",
+      "alt": "Screenshot of the Google Play website",
+      "pageTitle": "Android Apps on Google Play",
+      "pageDescription": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your devices.",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://play.google.com\",{\"shot\":false},null]"
+    },
+    "spotify": {
+      "slug": "spotify",
+      "name": "Spotify",
+      "source": "https://www.spotify.com",
+      "capturedAt": "2026-10-23T21:45:22.739Z",
+      "alt": "Screenshot of the Spotify website",
+      "pageTitle": "Spotify - Web Player: Listen to Music, Podcasts, and Audiobooks Online",
+      "pageDescription": "Spotify is a digital music service that gives you access to millions of songs, podcasts, and audiobooks. Listen to your favorites online now.",
+      "icon": {
+        "128": "assets/tools/spotify/icon-128.webp",
+        "256": "assets/tools/spotify/icon-256.webp",
+        "from": "https://open.spotifycdn.com/cdn/images/icons/Spotify_1024.31b25879.png",
+        "sourceWidth": 1024,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/spotify/social-600.webp",
+        "1200": "assets/tools/spotify/social-1200.webp",
+        "from": "https://open.spotifycdn.com/cdn/images/download-page-image-mac.fec937cc.png"
+      },
+      "color": "#18d858",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.spotify.com\",{\"shot\":false},null]"
+    },
+    "amazon-alexa": {
+      "slug": "amazon-alexa",
+      "name": "Amazon Alexa",
+      "source": "https://alexa.amazon.com",
+      "capturedAt": "2026-10-23T21:45:29.597Z",
+      "alt": "Screenshot of the Amazon Alexa website",
+      "pageTitle": "Sign in",
+      "pageDescription": null,
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://alexa.amazon.com\",{\"shot\":false},null]"
+    },
+    "microsoft-365": {
+      "slug": "microsoft-365",
+      "name": "Microsoft 365",
+      "source": "https://www.microsoft.com/microsoft-365",
+      "capturedAt": "2026-10-23T21:45:38.153Z",
+      "alt": "Screenshot of the Microsoft 365 website",
+      "pageTitle": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "pageDescription": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and powerful AI. Try for free.",
+      "color": null,
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.microsoft.com/microsoft-365\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T19:28:50.458Z"
+  "updatedAt": "2026-10-23T21:45:52.853Z"
 }

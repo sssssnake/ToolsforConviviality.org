@@ -1,156 +1,156 @@
 {
-  "startedAt": "2026-10-23T19:24:41.011Z",
+  "startedAt": "2026-10-23T21:41:16.260Z",
   "captured": [
     {
-      "slug": "nextcloud",
+      "slug": "firefox",
+      "notes": []
+    },
+    {
+      "slug": "tor-browser",
+      "notes": []
+    },
+    {
+      "slug": "librewolf",
+      "notes": []
+    },
+    {
+      "slug": "mullvad-browser",
+      "notes": []
+    },
+    {
+      "slug": "ladybird",
+      "notes": []
+    },
+    {
+      "slug": "f-droid",
+      "notes": []
+    },
+    {
+      "slug": "obtainium",
+      "notes": []
+    },
+    {
+      "slug": "aurora-store",
+      "notes": []
+    },
+    {
+      "slug": "izzyondroid",
+      "notes": []
+    },
+    {
+      "slug": "flathub",
+      "notes": []
+    },
+    {
+      "slug": "jellyfin",
       "notes": [
-        "dismissed banner with button:has-text(\"Reject all\")"
+        "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "pairdrop",
+      "slug": "navidrome",
+      "notes": []
+    },
+    {
+      "slug": "mpv",
+      "notes": []
+    },
+    {
+      "slug": "funkwhale",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "home-assistant",
+      "notes": []
+    },
+    {
+      "slug": "esphome",
+      "notes": []
+    },
+    {
+      "slug": "zigbee2mqtt",
+      "notes": []
+    },
+    {
+      "slug": "pi-hole",
+      "notes": []
+    },
+    {
+      "slug": "openhab",
+      "notes": []
+    },
+    {
+      "slug": "libreoffice",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "onlyoffice",
+      "notes": []
+    },
+    {
+      "slug": "collabora-online",
+      "notes": []
+    },
+    {
+      "slug": "etherpad",
       "notes": [
         "dismissed banner with button:has-text(\"Decline\")",
-        "social image failed: Input buffer has corrupt header: glib: XML parse error: Error domain 1 code 26 on line 276 column 56 of data: Entity 'nbsp' not defined"
+        "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "searxng",
+      "slug": "gnumeric",
+      "notes": []
+    },
+    {
+      "slug": "tiddlywiki",
+      "notes": []
+    },
+    {
+      "slug": "anki",
+      "notes": []
+    },
+    {
+      "slug": "datasette",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "organic-maps",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "transportr",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "logseq",
-      "notes": []
-    },
-    {
-      "slug": "notesnook",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "photoprism",
-      "notes": []
-    },
-    {
-      "slug": "piwigo",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "digikam",
-      "notes": []
-    },
-    {
-      "slug": "gmic",
-      "notes": []
-    },
-    {
-      "slug": "rawtherapee",
-      "notes": [
-        "manifest unreadable: HTTP 404 for https://rawtherapee.com/site.webmanifest",
-        "icon failed: HTTP 404 for https://rawtherapee.com/icon.png"
-      ]
-    },
-    {
-      "slug": "shotcut",
-      "notes": []
-    },
-    {
-      "slug": "obs-studio",
-      "notes": []
-    },
-    {
-      "slug": "keepassdx",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "pass",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "linkwarden",
-      "notes": []
-    },
-    {
-      "slug": "wallabag",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "simplex",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "briar",
-      "notes": []
-    },
-    {
-      "slug": "bluesky",
-      "notes": []
-    },
-    {
-      "slug": "posteo",
-      "notes": []
-    },
-    {
-      "slug": "snapchat",
+      "slug": "chrome",
       "notes": [
         "screenshot skipped by override"
       ]
     },
     {
-      "slug": "mojeek",
+      "slug": "google-play",
       "notes": [
+        "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     },
     {
-      "slug": "marginalia",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "miniflux",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "feedbin",
-      "notes": []
-    },
-    {
-      "slug": "newsboat",
-      "notes": []
-    },
-    {
-      "slug": "google-news",
+      "slug": "spotify",
       "notes": [
         "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "amazon-alexa",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "microsoft-365",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     }
   ],
@@ -438,8 +438,129 @@
     {
       "slug": "ref-wikipedia",
       "reason": "recent"
+    },
+    {
+      "slug": "nextcloud",
+      "reason": "recent"
+    },
+    {
+      "slug": "pairdrop",
+      "reason": "recent"
+    },
+    {
+      "slug": "searxng",
+      "reason": "recent"
+    },
+    {
+      "slug": "organic-maps",
+      "reason": "recent"
+    },
+    {
+      "slug": "transportr",
+      "reason": "recent"
+    },
+    {
+      "slug": "logseq",
+      "reason": "recent"
+    },
+    {
+      "slug": "notesnook",
+      "reason": "recent"
+    },
+    {
+      "slug": "photoprism",
+      "reason": "recent"
+    },
+    {
+      "slug": "piwigo",
+      "reason": "recent"
+    },
+    {
+      "slug": "digikam",
+      "reason": "recent"
+    },
+    {
+      "slug": "gmic",
+      "reason": "recent"
+    },
+    {
+      "slug": "rawtherapee",
+      "reason": "recent"
+    },
+    {
+      "slug": "shotcut",
+      "reason": "recent"
+    },
+    {
+      "slug": "obs-studio",
+      "reason": "recent"
+    },
+    {
+      "slug": "keepassdx",
+      "reason": "recent"
+    },
+    {
+      "slug": "pass",
+      "reason": "recent"
+    },
+    {
+      "slug": "linkwarden",
+      "reason": "recent"
+    },
+    {
+      "slug": "wallabag",
+      "reason": "recent"
+    },
+    {
+      "slug": "simplex",
+      "reason": "recent"
+    },
+    {
+      "slug": "briar",
+      "reason": "recent"
+    },
+    {
+      "slug": "bluesky",
+      "reason": "recent"
+    },
+    {
+      "slug": "posteo",
+      "reason": "recent"
+    },
+    {
+      "slug": "snapchat",
+      "reason": "recent"
+    },
+    {
+      "slug": "mojeek",
+      "reason": "recent"
+    },
+    {
+      "slug": "marginalia",
+      "reason": "recent"
+    },
+    {
+      "slug": "miniflux",
+      "reason": "recent"
+    },
+    {
+      "slug": "feedbin",
+      "reason": "recent"
+    },
+    {
+      "slug": "newsboat",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-news",
+      "reason": "recent"
     }
   ],
-  "failed": [],
-  "finishedAt": "2026-10-23T19:28:50.460Z"
+  "failed": [
+    {
+      "slug": "vlc",
+      "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
+    }
+  ],
+  "finishedAt": "2026-10-23T21:45:52.855Z"
 }

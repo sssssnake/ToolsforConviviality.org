@@ -1,0 +1,34 @@
+{
+  "slug": "navidrome",
+  "name": "Navidrome",
+  "source": "https://www.navidrome.org",
+  "capturedAt": "2026-10-23T21:42:48.190Z",
+  "alt": "Screenshot of the Navidrome website",
+  "pageTitle": "Navidrome",
+  "pageDescription": "Welcome to Navidrome! Learn More Download Your Personal Streaming Service\nNavidrome allows you to enjoy your music collection from anywhere, by making it available through a modern Web UI and through a wide range of third-party compatible mobile apps, for both iOS and Android devices.",
+  "shot": {
+    "480": "assets/tools/navidrome/shot-480.webp",
+    "960": "assets/tools/navidrome/shot-960.webp",
+    "1600": "assets/tools/navidrome/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/navidrome/mobile-390.webp",
+    "780": "assets/tools/navidrome/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/navidrome/icon-128.webp",
+    "256": "assets/tools/navidrome/icon-256.webp",
+    "from": "https://www.navidrome.org/favicons/android-icon-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/navidrome/social-600.webp",
+    "1200": "assets/tools/navidrome/social-1200.webp",
+    "from": "https://www.navidrome.org/featured-background.jpg"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

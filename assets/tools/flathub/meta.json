@@ -1,0 +1,33 @@
+{
+  "slug": "flathub",
+  "name": "Flathub",
+  "source": "https://flathub.org",
+  "capturedAt": "2026-10-23T21:42:30.230Z",
+  "alt": "Screenshot of the Flathub website",
+  "pageTitle": "Flathub - Apps for Linux | Flathub",
+  "pageDescription": "Find and install hundreds of apps and games for Linux. Enjoy Firefox, Telegram, RetroArch, GIMP and many more!",
+  "shot": {
+    "480": "assets/tools/flathub/shot-480.webp",
+    "960": "assets/tools/flathub/shot-960.webp",
+    "1600": "assets/tools/flathub/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/flathub/mobile-390.webp",
+    "780": "assets/tools/flathub/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/flathub/icon-128.webp",
+    "256": "assets/tools/flathub/icon-256.webp",
+    "svg": "assets/tools/flathub/icon.svg",
+    "from": "https://dl.flathub.org/assets/_next/public/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/flathub/social-600.webp",
+    "1200": "assets/tools/flathub/social-1200.webp",
+    "from": "https://dl.flathub.org/assets/_next/static/media/card.1l99ocxtankfy.webp"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

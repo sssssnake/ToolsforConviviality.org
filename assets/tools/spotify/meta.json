@@ -1,0 +1,27 @@
+{
+  "slug": "spotify",
+  "name": "Spotify",
+  "source": "https://www.spotify.com",
+  "capturedAt": "2026-10-23T21:45:22.739Z",
+  "alt": "Screenshot of the Spotify website",
+  "pageTitle": "Spotify - Web Player: Listen to Music, Podcasts, and Audiobooks Online",
+  "pageDescription": "Spotify is a digital music service that gives you access to millions of songs, podcasts, and audiobooks. Listen to your favorites online now.",
+  "icon": {
+    "128": "assets/tools/spotify/icon-128.webp",
+    "256": "assets/tools/spotify/icon-256.webp",
+    "from": "https://open.spotifycdn.com/cdn/images/icons/Spotify_1024.31b25879.png",
+    "sourceWidth": 1024,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/spotify/social-600.webp",
+    "1200": "assets/tools/spotify/social-1200.webp",
+    "from": "https://open.spotifycdn.com/cdn/images/download-page-image-mac.fec937cc.png"
+  },
+  "color": "#18d858",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

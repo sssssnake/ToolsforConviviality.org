@@ -1,0 +1,28 @@
+{
+  "slug": "anki",
+  "name": "Anki",
+  "source": "https://apps.ankiweb.net",
+  "capturedAt": "2026-10-23T21:45:00.828Z",
+  "alt": "Screenshot of the Anki website",
+  "pageTitle": "Anki - powerful, intelligent flashcards",
+  "pageDescription": "Anki - a program which makes remembering things easy.",
+  "shot": {
+    "480": "assets/tools/anki/shot-480.webp",
+    "960": "assets/tools/anki/shot-960.webp",
+    "1600": "assets/tools/anki/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/anki/mobile-390.webp",
+    "780": "assets/tools/anki/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/anki/icon-128.webp",
+    "256": "assets/tools/anki/icon-256.webp",
+    "svg": "assets/tools/anki/icon.svg",
+    "from": "https://apps.ankiweb.net/logo.svg",
+    "scalable": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}
