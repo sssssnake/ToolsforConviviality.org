@@ -223,9 +223,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
   .tool-row { grid-template-columns: minmax(0, 1fr); }
   .score-mini { justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 10px; }
 }
-.theme-btn { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; background: transparent; color: inherit; border: 1px solid var(--band-fg); cursor: pointer; }
+.theme-btn { display: inline-grid; place-items: center; width: 28px; height: 28px; padding: 0; background: transparent; color: var(--muted); border: 1px solid var(--line); cursor: pointer; }
 .theme-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-.theme-btn:hover, .theme-btn:focus-visible { background: var(--band-fg); color: var(--band); }
+.theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
 </style>
 </head>
 <body>
@@ -245,7 +245,6 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="#directory" data-nav="directory">Directory</a>
       <a href="#method" data-nav="method">How we score</a>
       <a href="#submit" data-nav="submit">Suggest a tool</a>
-      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
     </nav>
   </div>
 </header>
@@ -257,8 +256,9 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="foot-links">
       <a href="#method">How tools are selected</a>
       <a href="#about">About &amp; disclaimers</a>
-      <a href="#impressum">Impressum</a>
-      <a href="#privacy">Datenschutz</a>
+      <a href="#impressum">Legal notice (Impressum)</a>
+      <a href="#privacy">Privacy policy</a>
+      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
     </div>
     <div class="foot-right">
       <span>Useful to people. Accountable to people.</span>
@@ -526,7 +526,7 @@ function what() {
     <h2>What conviviality is not</h2>
     <p>It doesn't mean free, open source or small, though those often help. It doesn't mean anti-technology either: Illich argued for tools that serve people, and he was fine with sophisticated ones. A big company can build a fairly convivial tool, and a charming indie app can still lock you in. That's why each review scores the actual tool, with the six questions, and doesn't assume anything from who made it.</p>
     <h2>Read the book</h2>
-    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a> or buy it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
+    <p>This is our own short reading and not a substitute for Illich's. The book is still in copyright, so we paraphrase it and don't host or link to copies. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from a local bookshop. When you're done, <a href="#directory">browse the directory</a> and start with the tools stamped Convivial.</p>
   </div>`;
 }
 
@@ -566,7 +566,7 @@ function about() {
     <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, so there is something to measure against.</p>
     <h2>About the book</h2>
     <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. The book is still under copyright. We paraphrase its ideas, quote it rarely and briefly with a source, and never host or link to copies of the text.</p>
-    <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a> or buy it from your local bookshop.</p>
+    <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
     <h2>About the reviews</h2>
     <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
     <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
@@ -609,21 +609,20 @@ function submit() {
 }
 
 function impressum() {
-  return `<p class="crumbs"><a href="#home">Home</a> / Impressum</p>
-  <div class="page-head" style="margin-top:14px"><h1>Impressum</h1><p>Angaben gemäß § 5 DDG</p></div>
+  return `<p class="crumbs"><a href="#home">Home</a> / Legal notice</p>
+  <div class="page-head" style="margin-top:14px"><h1>Legal notice</h1><p>Impressum. Information pursuant to § 5 DDG (German Digital Services Act).</p></div>
   <div class="prose">
-    <p>Jeffrey Humble<br>Peschkestr. 5<br>12161 Berlin<br>Deutschland</p>
-    <p>Pigrosoft is a trading name of Jeffrey Humble.</p>
-    <p>E-Mail: <span class="addr">hello@toolsforconviviality.com</span></p>
-    <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Jeffrey Humble, Anschrift wie oben.</p>
-    <p>Umsatzsteuer-Identifikationsnummer nach § 27a UStG: DE334424725</p>
-    <p>Verbraucherstreitbeilegung: Wir sind weder verpflichtet noch bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+    <p>Jeffrey Humble<br>Peschkestr. 5<br>12161 Berlin<br>Germany</p>
+    <p>Email: <span class="addr">hello@toolsforconviviality.com</span></p>
+    <p>Responsible for content under § 18 (2) MStV: Jeffrey Humble, address as above.</p>
+    <p>VAT identification number under § 27a UStG: DE334424725</p>
+    <p>Consumer dispute resolution: we are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.</p>
   </div>`;
 }
 
 function privacy() {
-  return `<p class="crumbs"><a href="#home">Home</a> / Datenschutz</p>
-  <div class="page-head" style="margin-top:14px"><h1>Datenschutz</h1><p>Privacy, kept short because there is little to say.</p></div>
+  return `<p class="crumbs"><a href="#home">Home</a> / Privacy policy</p>
+  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say.</p></div>
   <div class="prose">
     <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
     <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
