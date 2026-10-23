@@ -311,7 +311,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p>If you make Ente Photos, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
     <label class="visually-hidden" for="bs-ente">Badge code for light backgrounds</label><textarea id="bs-ente" readonly="" onfocus="this.select()">&lt;a href="https://toolsforconviviality.com/tools/ente/"&gt;&lt;img src="https://toolsforconviviality.com/badges/ente-light.svg" alt="Tools for Conviviality review: 24/30, Leaning convivial" width="255" height="72"&gt;&lt;/a&gt;</textarea>
     <p>For dark backgrounds, use <code>ente-dark.svg</code> in place of <code>ente-light.svg</code>.</p></section>
-      <section class="related"><h2>Other tools for “make pictures and video”</h2><ul><li><a href="/tools/krita/"><b>Krita</b><span>A full painting and illustration studio that costs nothing.</span></a></li><li><a href="/tools/photomosh/"><b>PhotoMosh</b><span>Glitch your photos, videos and webcam in the browser.</span></a></li></ul></section>
+      <section class="related"><h2>Other tools for “make pictures and video”</h2><ul><li><a href="/tools/photomosh/"><b>PhotoMosh</b><span>Glitch your photos, videos and webcam in the browser.</span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Ente Photos Info</span><i aria-hidden="true"></i></div>
@@ -379,6 +379,7 @@ const CATS = [
   { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
   { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
+  { id: "design", name: "Design & creative tools", verb: "Make things without Adobe", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 const TOOLS = [
@@ -478,7 +479,7 @@ const TOOLS = [
     tags: ["Open source", "Free", "Works offline", "Self-hostable"], s: [4,5,3,5,5,4],
     body: ["Joplin was started by Laurent Cozic and keeps your notes as Markdown with attachments. You decide where they sync: Nextcloud, Dropbox, any WebDAV server or the paid Joplin Cloud at a few euros a month. End-to-end encryption is available and, usefully, you can read the whole source.",
       "Nothing is hidden from you, and the cost of that is some setup work. Encryption is off until you turn it on, and the app is plainer and less polished than the commercial ones. If you want a notes app you can still use in ten years, it is a safe bet."] },
-  { slug: "krita", name: "Krita", cat: "images", size: "M", scope: "tool", url: "https://krita.org",
+  { slug: "krita", name: "Krita", cat: "design", size: "M", scope: "tool", url: "https://krita.org",
     one: "A full painting and illustration studio that costs nothing.", replaces: "Adobe Photoshop and Procreate for drawing",
     price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
     tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,4,5,5,4],
@@ -532,6 +533,60 @@ const TOOLS = [
     tags: ["Open source", "Free", "Self-hosted"], s: [3,4,3,5,4,3],
     body: ["Audiobookshelf is a self-hosted server for audiobooks and podcasts that also handles basic ebooks in EPUB, PDF and comic formats. You put your files on a computer or small server you control, add the people who should have access, and listen through a web page or a phone app. It is open source under the GPL.",
       "It is the way out of Audible if you own your audio files, because it plays what you have and keeps your place. It is also the one tool here that asks you to run a server, so it suits people who are comfortable with that. When we looked, the phone apps were still in beta, and one developer owns most of the project."] },
+  { slug: "inkscape", name: "Inkscape", cat: "design", size: "M", scope: "tool", url: "https://inkscape.org",
+    one: "A vector graphics editor for logos, illustrations and diagrams, built on the open SVG format.", replaces: "Adobe Illustrator",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Plain files"], s: [4,5,3,5,5,4],
+    body: ["Inkscape is a free and open-source vector editor with SVG as its native format, so what you draw opens in browsers, code editors and plenty of other tools. It also imports and exports AI, EPS, PDF and PNG files. Many authors develop it, each keeping their own copyright, and it belongs to the Software Freedom Conservancy, a US nonprofit.",
+      "It is a strong answer to Illustrator for logos, icons and illustration, and the file you make is plain text you could read in a decade. The interface rewards patience and feels less polished than Adobe's, so expect a learning curve."] },
+  { slug: "gimp", name: "GIMP", cat: "design", size: "M", scope: "tool", url: "https://www.gimp.org",
+    one: "A long-running image editor for retouching, compositing and creating pictures.", replaces: "Adobe Photoshop",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,3,5,5,4],
+    body: ["GIMP is a free image manipulation program for photo retouching, image composition and image authoring, released under the GNU General Public License. Community authors and contributors develop it, and it takes donations and sponsors.",
+      "It is the best-known free answer to Photoshop, and what you make is yours in standard image formats. The interface has long been a sticking point for people coming from Adobe, and it has no sign-in or upsell to push you around. Expect to spend time learning where things live."] },
+  { slug: "penpot", name: "Penpot", cat: "design", size: "M", scope: "system", url: "https://penpot.app",
+    one: "An open-source design and prototyping tool for interfaces, built on web standards.", replaces: "Figma and Adobe XD",
+    price: "Free to sign up; self-hostable", source: "Open source", platforms: "Web; self-hosted",
+    tags: ["Open source", "Free", "Self-hostable", "Open formats"], s: [3,5,4,4,5,4],
+    body: ["Penpot comes from Kaleidos and calls itself the open-source design platform for teams. It works with CSS, HTML, SVG and JSON and has its own open file format, so designs are not trapped in a private format. You can sign up for free or host it yourself.",
+      "It suits interface and product design, with real-time collaboration, and it is easy to try because it runs in the browser. That also means it needs a server, either Penpot's or yours, so it asks more of you than a desktop app. We could not confirm the paid plans from its home page."] },
+  { slug: "blender", name: "Blender", cat: "design", size: "M", scope: "system", url: "https://www.blender.org",
+    one: "A complete 3D creation suite for modelling, animation, rendering and more.", replaces: "Maya, Cinema 4D and Adobe Substance",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Nonprofit"], s: [3,5,3,5,5,5],
+    body: ["Blender describes itself as free and open-source software forever, released under the GPL for any purpose including commercial work. The Blender Foundation coordinates the community project, development happens at the Blender Institute in Amsterdam, and most of the money comes from donations and Development Fund memberships. Blender Studio sells subscriptions for training and assets, which sit outside the software.",
+      "It does the job of several expensive programs in one, and nobody can take it away or put it behind a subscription. The price is complexity: it is big, it wants decent hardware, and the learning curve is steep."] },
+  { slug: "darktable", name: "darktable", cat: "design", size: "M", scope: "tool", url: "https://www.darktable.org",
+    one: "A non-destructive RAW photo editor and library for photographers.", replaces: "Adobe Lightroom",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [4,5,3,5,5,4],
+    body: ["darktable is an open-source photography workflow application and RAW developer, released under the GNU General Public License version 3 or later. Its editing is fully non-destructive, working on cached buffers for display and only converting the full image on export, so your originals stay as they were.",
+      "It is the closest open-source counterpart to Lightroom, and it keeps your library on your own computer with no account or cloud required. The interface is dense and takes time to learn, and the project does not publish much about how it is funded."] },
+  { slug: "kdenlive", name: "Kdenlive", cat: "design", size: "M", scope: "tool", url: "https://kdenlive.org",
+    one: "A free multi-track video editor from the KDE community.", replaces: "Adobe Premiere Pro",
+    price: "Free", source: "Open source (GPL)", platforms: "Windows, Mac, Linux, FreeBSD",
+    tags: ["Open source", "Free", "No account", "Works offline"], s: [3,4,3,5,5,4],
+    body: ["Kdenlive is free and open-source video editing software under the GNU GPL, developed by the KDE community, a nonprofit, with Jason Wood having started it in 2002. It has been funded through community drives and, in 2025, an NLnet grant for a new dopesheet feature.",
+      "It handles serious editing work with multiple tracks and no watermark or subscription, and exports to standard video formats. Video is heavy on hardware, and the interface is busier than Premiere's. It is a good fit for people who want to own their editing tools."] },
+  { slug: "comfyui", name: "ComfyUI", cat: "design", size: "M", scope: "system", url: "https://www.comfy.org",
+    one: "A node-based tool for building image, video and 3D generation workflows that run on your own machine.", replaces: "Hosted AI image tools and Adobe Firefly",
+    price: "Free to run locally; paid cloud and API nodes", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Works offline", "Self-hosted"], s: [3,5,4,4,5,3],
+    body: ["ComfyUI is a GPL-3.0 project from Comfy Org that lets you build image, video, audio and 3D generation workflows as a visual graph of nodes. Its core runs fully offline and downloads nothing unless you ask, and optional paid partner API nodes can be switched off. Comfy also sells a paid cloud version for people without suitable hardware.",
+      "It is the opposite of a locked AI studio: you choose the models, see every step and keep the workflow as a file. It needs a capable computer, setup takes effort, and each model you load comes with its own licence and its own questions about training data, which the score does not cover."] },
+  { slug: "artcraft", name: "ArtCraft", cat: "design", size: "S", scope: "tool", url: "https://getartcraft.com",
+    one: "An open-source studio for composing AI images and video, with 2D and 3D controls.", replaces: "Adobe Firefly and hosted AI studios",
+    price: "Free to start; no subscription required", source: "Open source (MIT or Apache-2.0)", platforms: "Windows, Mac, web",
+    tags: ["Open source", "Free", "No subscription"], s: [2,4,4,4,3,3],
+    body: ["ArtCraft describes itself as an IDE for artists. It gives you 2D and 3D compositing, character posing, background removal and image-to-3D tools around AI image and video generation, and the whole studio is on GitHub under an MIT or Apache-2.0 licence. It runs on Windows and Mac, in the browser, or from source on Linux, and says no subscription is required.",
+      "Much of the generation appears to use hosted models from other providers, so what leaves your computer depends on the model you pick, and its page doesn't say which parts run locally. It is a young project from a small team, and we could not confirm whether an account is needed. It earns its place for giving artists real control over composition, which most AI tools do not."] },
+  { slug: "affinity", name: "Affinity", cat: "design", size: "L", scope: "tool", url: "https://www.affinity.studio",
+    one: "A professional design, photo and layout app that is free for individuals and owned by Canva.", replaces: "Adobe Photoshop, Illustrator and InDesign",
+    price: "Free for individuals; some AI tools need a Canva premium plan", source: "Closed source", platforms: "Windows, Mac",
+    tags: ["Free", "Closed source", "Account needed"], s: [4,3,3,2,2,4],
+    body: ["Serif made Affinity, and Canva bought Serif in March 2024. In October 2025 it released version 3, one app that combines the earlier Designer, Photo and Publisher apps and is available at no charge, and it withdrew the old paid apps from sale. The Canva AI features inside it, such as generative fill, need a Canva Pro subscription.",
+      "It is a polished and capable Adobe alternative, and the free price is a real draw. It is also closed software owned by a company whose main business is a subscription platform, and version 2 stopped being actively maintained within a year, though existing licences still work. The ownership is the reason it scores below the open tools. The download buttons on its site go through a Canva sign-in, so expect to need a Canva account."] },
   { slug: "deltachat", name: "Delta Chat", cat: "talk", size: "M", scope: "tool", url: "https://delta.chat",
     one: "A chat app that runs on ordinary email, with no phone number needed.", replaces: "WhatsApp, Telegram",
     price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
@@ -701,12 +756,24 @@ const CATCOPY = {
       ["Do I need an account for KeePassXC?", "No. It works on a local file, with no account or company involved."],
       ["Which is easier for a beginner?", "{bitwarden}, because it syncs for you. {keepassxc} suits people who are comfortable looking after a file."]] },
   images: { h1: "Alternatives to Google Photos and Instagram filters", lede: "Keep your pictures private and make new ones with tools that stay out of your way.",
-    intro: ["Pictures cover a lot: backing up a lifetime of photos, painting from scratch, playing with effects. {ente} keeps your photo library encrypted so only you can see it, and {krita} is a full painting studio that costs nothing. {photomosh} is a creative tool for glitching images, video and webcam streams in the browser.",
+    intro: ["Pictures cover a lot: backing up a lifetime of photos, painting from scratch, playing with effects. {ente} keeps your photo library encrypted so only you can see it, and {photomosh} is a creative tool for glitching images, video and webcam streams in the browser.",
       "The scores differ a lot here, which is the point of scoring them."],
     choose: "For backup, look at who can read your photos and what happens if you stop paying. For making things, free and open tools mean you keep your files and your skills, and a polished commercial tool may suit a deadline better. For effects and calls, check whether you need an account and where your video goes.",
     faq: [["What is a private alternative to Google Photos?", "{ente} backs up and shares photos with end-to-end encryption, and its apps are open source. Storage plans are paid."],
-      ["Is there a free alternative to Photoshop for drawing and painting?", "{krita} is free, open source and built for painting and illustration. It is not a photo-retouching tool."],
+      ["Is there a free alternative to Photoshop for drawing and painting?", "{krita} is free, open source and built for painting and illustration, and {gimp} covers photo editing. Both are in the Design & creative tools category."],
       ["What is a fun alternative to Instagram filters?", "{photomosh} applies glitch effects to photos, video and your webcam in the browser."]] },
+  design: { h1: "Alternatives to Adobe Creative Cloud", lede: "Draw, lay out, edit and render without a subscription, in tools that keep your files open.",
+    intro: ["Creative Cloud is rented software. Stop paying and your files still exist, but the programs that open them are gone, and the formats are built around Adobe's apps. Designers feel this most, because a project can outlive the licence it started under.",
+      "The open field is stronger than it used to be. {inkscape} covers vector work, {gimp} and {krita} cover photos and painting, {darktable} handles RAW, {blender} covers 3D, {kdenlive} covers video, and {penpot} is an interface design tool that works in the browser. A newer group uses AI: {comfyui} runs image models on your own machine, and {artcraft} is an open-source studio for composing AI images and video. {affinity} is the one commercial option here, free to use but owned by Canva.",
+      "Think of the six questions as a heuristic evaluation of the tool itself. Lock-in asks whether the file is a door you can walk through or a wall, and Self-direction asks whether the interface teaches you or nags you."],
+    choose: "Start with the file format, since that decides whether your work survives the tool. Then ask who pays for it and what happens if they stop. The free tools have steeper learning curves than Adobe's, so budget time to learn them. For AI tools, check which models run on your own machine and which send your work to a service.",
+    faq: [["Is there a free alternative to Adobe Creative Cloud?", "Yes, several. {inkscape}, {gimp}, {krita}, {darktable}, {blender} and {kdenlive} are free and open source and cover most of what Creative Cloud does, and {affinity} is free but closed."],
+      ["What is a free alternative to Photoshop?", "{gimp} for photo editing and compositing and {krita} for painting and illustration. {affinity} is free too, though it is owned by Canva."],
+      ["What is a free alternative to Illustrator?", "{inkscape} is a free, open-source vector editor built on SVG."],
+      ["What is a free alternative to Lightroom?", "{darktable} is a non-destructive RAW editor and photo library that keeps your files on your own computer."],
+      ["What is a free alternative to Premiere Pro?", "{kdenlive} is a free, open-source multi-track video editor."],
+      ["What is an open-source alternative to Figma or Adobe XD?", "{penpot} is an open-source design and prototyping tool built on web standards, and you can host it yourself."],
+      ["Are there open-source AI image tools?", "{comfyui} runs generation workflows on your own machine, and {artcraft} is an open-source studio for composing AI images and video. Check where each one sends your work and which models you load."]] },
   talk: { h1: "Alternatives to WhatsApp, Slack and Teams", lede: "Tame the chat apps that live in your browser tabs.",
     intro: ["Most of us keep several chat apps open at once because each of our friends and teams chose a different one. {ferdium} puts them all in one desktop window, which doesn't replace them but makes them easier to live with. {deltachat} takes a different route and builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down.",
       "Neither is a perfect answer, and both are honest about it."],
@@ -980,6 +1047,8 @@ function method() {
     <p>Every tool in the directory is ranked by its total in the <a href="#directory">directory</a>, so you can see at a glance which ones come out most convivial. A total hides detail, though, so open a review to see how a tool did on each of the six questions, and compare within a category when you are choosing, because a password manager and a painting program do different jobs.</p>
     <h2>Benchmarks</h2>
     <p>Now and then we score one of the giants, so you can see what everything else is measured against. These <a href="#benchmarks">benchmark reviews</a> use the same questions and the same scale, and they stay outside the directory.</p>
+    <h2>A designer's way to read the questions</h2>
+    <p>If you work in design, think of the six questions as a heuristic evaluation of the tool's relationship with its people. Footprint is efficiency, and Lock-in asks whether a file is a door you can walk through or a wall. Self-direction covers learnability, user control and the absence of dark patterns such as streaks, nag screens and fake urgency. Power looks at who the product answers to, Longevity at whether your work outlasts the vendor, and Delivery at whether the interface keeps the promises its marketing makes.</p>
     <h2>Badges</h2>
     <p>Every tool in the directory has a badge on its review page that shows its score and verdict. A badge reports a dated review and is not a certification, we charge nothing for it, and it comes in versions for light and dark pages. It always shows the tool's current score, so it changes if the review does, and the maker is asked to link it to the review.</p>
     <h2>Our own tools</h2>
@@ -1079,7 +1148,7 @@ function currentId() {
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication" };
+const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {

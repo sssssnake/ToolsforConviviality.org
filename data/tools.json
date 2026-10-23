@@ -96,6 +96,54 @@
     "url": "https://krita.org"
   },
   {
+    "slug": "inkscape",
+    "name": "Inkscape",
+    "url": "https://inkscape.org"
+  },
+  {
+    "slug": "gimp",
+    "name": "GIMP",
+    "url": "https://www.gimp.org"
+  },
+  {
+    "slug": "penpot",
+    "name": "Penpot",
+    "url": "https://penpot.app"
+  },
+  {
+    "slug": "blender",
+    "name": "Blender",
+    "url": "https://www.blender.org"
+  },
+  {
+    "slug": "darktable",
+    "name": "darktable",
+    "url": "https://www.darktable.org"
+  },
+  {
+    "slug": "kdenlive",
+    "name": "Kdenlive",
+    "url": "https://kdenlive.org"
+  },
+  {
+    "slug": "comfyui",
+    "name": "ComfyUI",
+    "url": "https://www.comfy.org"
+  },
+  {
+    "slug": "artcraft",
+    "name": "ArtCraft",
+    "url": "https://getartcraft.com"
+  },
+  {
+    "slug": "affinity",
+    "name": "Affinity",
+    "url": "https://www.affinity.studio",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
     "slug": "excalidraw",
     "name": "Excalidraw",
     "url": "https://excalidraw.com"
