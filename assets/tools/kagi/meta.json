@@ -2,19 +2,10 @@
   "slug": "kagi",
   "name": "Kagi",
   "source": "https://kagi.com",
-  "capturedAt": "2026-10-23T10:02:31.363Z",
+  "capturedAt": "2026-10-23T10:13:03.950Z",
   "alt": "Screenshot of the Kagi website",
   "pageTitle": "Kagi - Reclaim the Web & Restore Your Privacy",
   "pageDescription": "Reclaim the web from clutter. Get ad-free search, private browsing, and powerful tools that respect your data.",
-  "shot": {
-    "480": "assets/tools/kagi/shot-480.webp",
-    "960": "assets/tools/kagi/shot-960.webp",
-    "1600": "assets/tools/kagi/shot-1600.webp"
-  },
-  "mobile": {
-    "390": "assets/tools/kagi/mobile-390.webp",
-    "780": "assets/tools/kagi/mobile-780.webp"
-  },
   "icon": {
     "128": "assets/tools/kagi/icon-128.webp",
     "256": "assets/tools/kagi/icon-256.webp",
@@ -30,5 +21,7 @@
   },
   "color": "#f8f8f8",
   "colorFrom": "icon",
-  "notes": []
+  "notes": [
+    "screenshot skipped by override"
+  ]
 }

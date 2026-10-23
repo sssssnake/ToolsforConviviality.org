@@ -2,7 +2,7 @@
   "slug": "ferdium",
   "name": "Ferdium",
   "source": "https://ferdium.org",
-  "capturedAt": "2026-10-23T10:03:13.920Z",
+  "capturedAt": "2026-10-23T10:13:57.711Z",
   "alt": "Screenshot of the Ferdium website",
   "pageTitle": "Ferdium | The home for all your services",
   "pageDescription": "Introducing a great productivity tool to keep all messaging, productivity, and online services in one place",
@@ -15,8 +15,15 @@
     "390": "assets/tools/ferdium/mobile-390.webp",
     "780": "assets/tools/ferdium/mobile-780.webp"
   },
-  "color": null,
-  "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
-  ]
+  "icon": {
+    "128": "assets/tools/ferdium/icon-128.webp",
+    "256": "assets/tools/ferdium/icon-256.webp",
+    "from": "https://ferdium.org/_next/static/media/logo.9fc5c374.png",
+    "sourceWidth": 1000,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
 }

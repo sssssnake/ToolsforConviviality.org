@@ -2,7 +2,7 @@
   "slug": "bitwarden",
   "name": "Bitwarden",
   "source": "https://bitwarden.com",
-  "capturedAt": "2026-10-23T10:02:53.202Z",
+  "capturedAt": "2026-10-23T10:13:07.991Z",
   "alt": "Screenshot of the Bitwarden website",
   "pageTitle": "Best Password Manager for Business, Enterprise & Personal | Bitwarden | Bitwarden",
   "pageDescription": "Bitwarden is the trusted, open source password manager for individuals, teams, and enterprises. Securely store, share, and manage passwords, passkeys, and secrets. Free to start.",
@@ -10,10 +10,6 @@
     "480": "assets/tools/bitwarden/shot-480.webp",
     "960": "assets/tools/bitwarden/shot-960.webp",
     "1600": "assets/tools/bitwarden/shot-1600.webp"
-  },
-  "mobile": {
-    "390": "assets/tools/bitwarden/mobile-390.webp",
-    "780": "assets/tools/bitwarden/mobile-780.webp"
   },
   "icon": {
     "128": "assets/tools/bitwarden/icon-128.webp",
@@ -30,5 +26,7 @@
   },
   "color": "#175ddc",
   "colorFrom": "theme-color",
-  "notes": []
+  "notes": [
+    "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://bitwarden.com/\", waiting until \"load\"\n"
+  ]
 }

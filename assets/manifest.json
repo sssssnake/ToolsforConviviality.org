@@ -5,7 +5,7 @@
       "slug": "localsend",
       "name": "LocalSend",
       "source": "https://localsend.org",
-      "capturedAt": "2026-10-23T10:01:29.490Z",
+      "capturedAt": "2026-10-23T10:12:00.661Z",
       "alt": "Screenshot of the LocalSend website",
       "pageTitle": "LocalSend: Share files to nearby devices",
       "pageDescription": "LocalSend is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby devices.",
@@ -28,13 +28,14 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://localsend.org\",null,null]"
     },
     "netnewswire": {
       "slug": "netnewswire",
       "name": "NetNewsWire",
       "source": "https://netnewswire.com",
-      "capturedAt": "2026-10-23T10:01:37.047Z",
+      "capturedAt": "2026-10-23T10:12:08.844Z",
       "alt": "Screenshot of the NetNewsWire website",
       "pageTitle": "NetNewsWire: Free and Open Source RSS Reader for Mac, iPhone, and iPad",
       "pageDescription": null,
@@ -62,13 +63,14 @@
       },
       "color": "#181818",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://netnewswire.com\",null,null]"
     },
     "comaps": {
       "slug": "comaps",
       "name": "CoMaps",
       "source": "https://comaps.app",
-      "capturedAt": "2026-10-23T10:01:44.631Z",
+      "capturedAt": "2026-10-23T10:12:18.433Z",
       "alt": "Screenshot of the CoMaps website",
       "pageTitle": "Hike, Bike, Drive Offline – Navigate with Privacy | CoMaps",
       "pageDescription": "Discover more of your journey - Powered by the community",
@@ -96,13 +98,14 @@
       },
       "color": "#687858",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://comaps.app\",null,null]"
     },
     "syncthing": {
       "slug": "syncthing",
       "name": "Syncthing",
       "source": "https://syncthing.net",
-      "capturedAt": "2026-10-23T10:01:55.209Z",
+      "capturedAt": "2026-10-23T10:12:28.532Z",
       "alt": "Screenshot of the Syncthing website",
       "pageTitle": "Syncthing",
       "pageDescription": null,
@@ -125,13 +128,14 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://syncthing.net\",null,null]"
     },
     "obsidian": {
       "slug": "obsidian",
       "name": "Obsidian",
       "source": "https://obsidian.md",
-      "capturedAt": "2026-10-23T10:02:04.148Z",
+      "capturedAt": "2026-10-23T10:12:36.367Z",
       "alt": "Screenshot of the Obsidian website",
       "pageTitle": "Obsidian - Sharpen your thinking",
       "pageDescription": "The free and flexible app for your private thoughts.",
@@ -158,13 +162,14 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://obsidian.md\",null,null]"
     },
     "ente": {
       "slug": "ente",
       "name": "Ente Photos",
       "source": "https://ente.io",
-      "capturedAt": "2026-10-23T10:02:13.037Z",
+      "capturedAt": "2026-10-23T10:12:45.694Z",
       "alt": "Screenshot of the Ente Photos website",
       "pageTitle": "Ente Photos: Store and share your photos with absolute privacy",
       "pageDescription": "Ente Photos is the private, secure photo storage app with end-to-end encryption. Cross-platform, open source, and self-hostable. Start with 10GB free.",
@@ -192,13 +197,14 @@
       },
       "color": "#08b828",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://ente.io\",null,null]"
     },
     "cryptpad": {
       "slug": "cryptpad",
       "name": "CryptPad",
       "source": "https://cryptpad.org",
-      "capturedAt": "2026-10-23T10:02:21.282Z",
+      "capturedAt": "2026-10-23T10:12:54.188Z",
       "alt": "Screenshot of the CryptPad website",
       "pageTitle": "CryptPad.org",
       "pageDescription": "End-to-end encrypted collaborative office suite",
@@ -226,25 +232,17 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://cryptpad.org\",null,null]"
     },
     "kagi": {
       "slug": "kagi",
       "name": "Kagi",
       "source": "https://kagi.com",
-      "capturedAt": "2026-10-23T10:02:31.363Z",
+      "capturedAt": "2026-10-23T10:13:03.950Z",
       "alt": "Screenshot of the Kagi website",
       "pageTitle": "Kagi - Reclaim the Web & Restore Your Privacy",
       "pageDescription": "Reclaim the web from clutter. Get ad-free search, private browsing, and powerful tools that respect your data.",
-      "shot": {
-        "480": "assets/tools/kagi/shot-480.webp",
-        "960": "assets/tools/kagi/shot-960.webp",
-        "1600": "assets/tools/kagi/shot-1600.webp"
-      },
-      "mobile": {
-        "390": "assets/tools/kagi/mobile-390.webp",
-        "780": "assets/tools/kagi/mobile-780.webp"
-      },
       "icon": {
         "128": "assets/tools/kagi/icon-128.webp",
         "256": "assets/tools/kagi/icon-256.webp",
@@ -260,13 +258,16 @@
       },
       "color": "#f8f8f8",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://kagi.com\",{\"shot\":false},null]"
     },
     "bitwarden": {
       "slug": "bitwarden",
       "name": "Bitwarden",
       "source": "https://bitwarden.com",
-      "capturedAt": "2026-10-23T10:02:53.202Z",
+      "capturedAt": "2026-10-23T10:13:07.991Z",
       "alt": "Screenshot of the Bitwarden website",
       "pageTitle": "Best Password Manager for Business, Enterprise & Personal | Bitwarden | Bitwarden",
       "pageDescription": "Bitwarden is the trusted, open source password manager for individuals, teams, and enterprises. Securely store, share, and manage passwords, passkeys, and secrets. Free to start.",
@@ -274,10 +275,6 @@
         "480": "assets/tools/bitwarden/shot-480.webp",
         "960": "assets/tools/bitwarden/shot-960.webp",
         "1600": "assets/tools/bitwarden/shot-1600.webp"
-      },
-      "mobile": {
-        "390": "assets/tools/bitwarden/mobile-390.webp",
-        "780": "assets/tools/bitwarden/mobile-780.webp"
       },
       "icon": {
         "128": "assets/tools/bitwarden/icon-128.webp",
@@ -294,13 +291,16 @@
       },
       "color": "#175ddc",
       "colorFrom": "theme-color",
-      "notes": []
+      "notes": [
+        "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://bitwarden.com/\", waiting until \"load\"\n"
+      ],
+      "cfg": "[\"https://bitwarden.com\",null,null]"
     },
     "photomosh": {
       "slug": "photomosh",
       "name": "PhotoMosh",
       "source": "https://photomosh.com",
-      "capturedAt": "2026-10-23T10:03:04.454Z",
+      "capturedAt": "2026-10-23T10:13:45.665Z",
       "alt": "Screenshot of the PhotoMosh website",
       "pageTitle": "Mosh-Pro — Glitch & Video Effects App",
       "pageDescription": "Mosh-Pro is a real-time visual effects mixer for image, video & GIF — 60+ effects, 4K export, audio-reactive, MIDI. Or try the free online glitch tool at Mosh-Lite.",
@@ -327,13 +327,14 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://photomosh.com\",null,null]"
     },
     "ferdium": {
       "slug": "ferdium",
       "name": "Ferdium",
       "source": "https://ferdium.org",
-      "capturedAt": "2026-10-23T10:03:13.920Z",
+      "capturedAt": "2026-10-23T10:13:57.711Z",
       "alt": "Screenshot of the Ferdium website",
       "pageTitle": "Ferdium | The home for all your services",
       "pageDescription": "Introducing a great productivity tool to keep all messaging, productivity, and online services in one place",
@@ -346,16 +347,24 @@
         "390": "assets/tools/ferdium/mobile-390.webp",
         "780": "assets/tools/ferdium/mobile-780.webp"
       },
-      "color": null,
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
+      "icon": {
+        "128": "assets/tools/ferdium/icon-128.webp",
+        "256": "assets/tools/ferdium/icon-256.webp",
+        "from": "https://ferdium.org/_next/static/media/logo.9fc5c374.png",
+        "sourceWidth": 1000,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://ferdium.org\",null,{\"icon\":\"https://ferdium.org/_next/static/media/logo.9fc5c374.png\"}]"
     },
     "arena": {
       "slug": "arena",
       "name": "Are.na",
       "source": "https://www.are.na",
-      "capturedAt": "2026-10-23T10:03:21.487Z",
+      "capturedAt": "2026-10-23T10:14:04.885Z",
       "alt": "Screenshot of the Are.na website",
       "pageTitle": "Are.na",
       "pageDescription": "Are.na is a platform for connecting ideas and building knowledge.",
@@ -382,13 +391,14 @@
       },
       "color": "#fff",
       "colorFrom": "theme-color",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://www.are.na\",{\"wait\":5000},null]"
     },
     "airtime": {
       "slug": "airtime",
       "name": "Airtime",
       "source": "https://www.airtime.com",
-      "capturedAt": "2026-10-23T10:03:31.610Z",
+      "capturedAt": "2026-10-23T10:14:22.061Z",
       "alt": "Screenshot of the Airtime website",
       "pageTitle": "Airtime | Essential tools for video at work",
       "pageDescription": "Look your best on video. Present with impact. Virtual backgrounds, screen recorder, present with a friend. Works with Zoom, Meet, Teams, and Webex.",
@@ -415,8 +425,9 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": []
+      "notes": [],
+      "cfg": "[\"https://www.airtime.com\",null,null]"
     }
   },
-  "updatedAt": "2026-10-23T10:07:06.563Z"
+  "updatedAt": "2026-10-23T10:14:41.834Z"
 }
