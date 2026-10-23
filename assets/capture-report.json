@@ -1,34 +1,6 @@
 {
-  "startedAt": "2026-10-23T10:56:20.006Z",
-  "captured": [
-    {
-      "slug": "openclaw",
-      "notes": []
-    },
-    {
-      "slug": "hermes-agent",
-      "notes": []
-    },
-    {
-      "slug": "microsoft-word",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
-      ]
-    },
-    {
-      "slug": "whatsapp",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "gmail",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    }
-  ],
+  "startedAt": "2026-10-23T13:50:58.992Z",
+  "captured": [],
   "skipped": [
     {
       "slug": "localsend",
@@ -113,6 +85,26 @@
     {
       "slug": "deltachat",
       "reason": "recent"
+    },
+    {
+      "slug": "openclaw",
+      "reason": "recent"
+    },
+    {
+      "slug": "hermes-agent",
+      "reason": "recent"
+    },
+    {
+      "slug": "microsoft-word",
+      "reason": "recent"
+    },
+    {
+      "slug": "whatsapp",
+      "reason": "recent"
+    },
+    {
+      "slug": "gmail",
+      "reason": "recent"
     }
   ],
   "failed": [
@@ -121,5 +113,5 @@
       "error": "page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-23T10:57:40.902Z"
+  "finishedAt": "2026-10-23T13:51:31.757Z"
 }
