@@ -1,0 +1,27 @@
+{
+  "slug": "audiobookshelf",
+  "name": "Audiobookshelf",
+  "source": "https://www.audiobookshelf.org",
+  "capturedAt": "2026-10-23T13:54:58.700Z",
+  "alt": "Screenshot of the Audiobookshelf website",
+  "pageTitle": "Audiobookshelf",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/audiobookshelf/shot-480.webp",
+    "960": "assets/tools/audiobookshelf/shot-960.webp",
+    "1600": "assets/tools/audiobookshelf/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/audiobookshelf/mobile-390.webp",
+    "780": "assets/tools/audiobookshelf/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/audiobookshelf/social-600.webp",
+    "1200": "assets/tools/audiobookshelf/social-1200.webp",
+    "from": "https://audiobookshelf.org/img/Logo.png"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

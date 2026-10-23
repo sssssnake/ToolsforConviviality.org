@@ -803,7 +803,155 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://workspace.google.com/products/gmail/\",{\"shot\":false},null]"
+    },
+    "calibre": {
+      "slug": "calibre",
+      "name": "Calibre",
+      "source": "https://calibre-ebook.com",
+      "capturedAt": "2026-10-23T13:53:58.159Z",
+      "alt": "Screenshot of the Calibre website",
+      "pageTitle": "calibre - E-book management",
+      "pageDescription": "calibre: The one stop solution for all your e-book needs. Comprehensive e-book software.",
+      "shot": {
+        "480": "assets/tools/calibre/shot-480.webp",
+        "960": "assets/tools/calibre/shot-960.webp",
+        "1600": "assets/tools/calibre/shot-1600.webp"
+      },
+      "icon": {
+        "128": "assets/tools/calibre/icon-128.webp",
+        "256": "assets/tools/calibre/icon-256.webp",
+        "from": "https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
+      ],
+      "cfg": "[\"https://calibre-ebook.com\",null,{\"icon\":\"https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png\",\"v\":1}]"
+    },
+    "standard-ebooks": {
+      "slug": "standard-ebooks",
+      "name": "Standard Ebooks",
+      "source": "https://standardebooks.org",
+      "capturedAt": "2026-10-23T13:54:37.927Z",
+      "alt": "Screenshot of the Standard Ebooks website",
+      "pageTitle": "Standard Ebooks: Free and liberated ebooks, carefully produced for the true book lover",
+      "pageDescription": "Free and liberated ebooks, carefully produced for the true book lover. Download free ebooks with professional-quality formatting and typography, in formats compatible with your ereader.",
+      "shot": {
+        "480": "assets/tools/standard-ebooks/shot-480.webp",
+        "960": "assets/tools/standard-ebooks/shot-960.webp",
+        "1600": "assets/tools/standard-ebooks/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/standard-ebooks/mobile-390.webp",
+        "780": "assets/tools/standard-ebooks/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/standard-ebooks/icon-128.webp",
+        "256": "assets/tools/standard-ebooks/icon-256.webp",
+        "svg": "assets/tools/standard-ebooks/icon.svg",
+        "from": "https://standardebooks.org/images/favicons/favicon-16x16.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/standard-ebooks/social-600.webp",
+        "1200": "assets/tools/standard-ebooks/social-1200.webp",
+        "from": "https://standardebooks.org/images/logo.png"
+      },
+      "color": "#394451",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://standardebooks.org\",null,null]"
+    },
+    "gutenberg": {
+      "slug": "gutenberg",
+      "name": "Project Gutenberg",
+      "source": "https://www.gutenberg.org",
+      "capturedAt": "2026-10-23T13:54:45.451Z",
+      "alt": "Screenshot of the Project Gutenberg website",
+      "pageTitle": "Free eBooks | Project Gutenberg",
+      "pageDescription": "Project Gutenberg is a library of over 75,000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads.",
+      "shot": {
+        "480": "assets/tools/gutenberg/shot-480.webp",
+        "960": "assets/tools/gutenberg/shot-960.webp",
+        "1600": "assets/tools/gutenberg/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/gutenberg/mobile-390.webp",
+        "780": "assets/tools/gutenberg/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/gutenberg/social-600.webp",
+        "1200": "assets/tools/gutenberg/social-1200.webp",
+        "from": "https://www.gutenberg.org/gutenberg/pg-logo-144x144.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.gutenberg.org\",null,null]"
+    },
+    "koreader": {
+      "slug": "koreader",
+      "name": "KOReader",
+      "source": "https://koreader.rocks",
+      "capturedAt": "2026-10-23T13:54:51.678Z",
+      "alt": "Screenshot of the KOReader website",
+      "pageTitle": "KOReader",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/koreader/shot-480.webp",
+        "960": "assets/tools/koreader/shot-960.webp",
+        "1600": "assets/tools/koreader/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/koreader/mobile-390.webp",
+        "780": "assets/tools/koreader/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/koreader/icon-128.webp",
+        "256": "assets/tools/koreader/icon-256.webp",
+        "from": "https://koreader.rocks/koreader.png",
+        "sourceWidth": 244,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#08a898",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://koreader.rocks\",null,null]"
+    },
+    "audiobookshelf": {
+      "slug": "audiobookshelf",
+      "name": "Audiobookshelf",
+      "source": "https://www.audiobookshelf.org",
+      "capturedAt": "2026-10-23T13:54:58.700Z",
+      "alt": "Screenshot of the Audiobookshelf website",
+      "pageTitle": "Audiobookshelf",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/audiobookshelf/shot-480.webp",
+        "960": "assets/tools/audiobookshelf/shot-960.webp",
+        "1600": "assets/tools/audiobookshelf/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/audiobookshelf/mobile-390.webp",
+        "780": "assets/tools/audiobookshelf/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/audiobookshelf/social-600.webp",
+        "1200": "assets/tools/audiobookshelf/social-1200.webp",
+        "from": "https://audiobookshelf.org/img/Logo.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.audiobookshelf.org\",null,null]"
     }
   },
-  "updatedAt": "2026-10-23T13:51:31.756Z"
+  "updatedAt": "2026-10-23T13:55:05.890Z"
 }

@@ -1,0 +1,33 @@
+{
+  "slug": "standard-ebooks",
+  "name": "Standard Ebooks",
+  "source": "https://standardebooks.org",
+  "capturedAt": "2026-10-23T13:54:37.927Z",
+  "alt": "Screenshot of the Standard Ebooks website",
+  "pageTitle": "Standard Ebooks: Free and liberated ebooks, carefully produced for the true book lover",
+  "pageDescription": "Free and liberated ebooks, carefully produced for the true book lover. Download free ebooks with professional-quality formatting and typography, in formats compatible with your ereader.",
+  "shot": {
+    "480": "assets/tools/standard-ebooks/shot-480.webp",
+    "960": "assets/tools/standard-ebooks/shot-960.webp",
+    "1600": "assets/tools/standard-ebooks/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/standard-ebooks/mobile-390.webp",
+    "780": "assets/tools/standard-ebooks/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/standard-ebooks/icon-128.webp",
+    "256": "assets/tools/standard-ebooks/icon-256.webp",
+    "svg": "assets/tools/standard-ebooks/icon.svg",
+    "from": "https://standardebooks.org/images/favicons/favicon-16x16.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/standard-ebooks/social-600.webp",
+    "1200": "assets/tools/standard-ebooks/social-1200.webp",
+    "from": "https://standardebooks.org/images/logo.png"
+  },
+  "color": "#394451",
+  "colorFrom": "theme-color",
+  "notes": []
+}

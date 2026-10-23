@@ -1,0 +1,27 @@
+{
+  "slug": "gutenberg",
+  "name": "Project Gutenberg",
+  "source": "https://www.gutenberg.org",
+  "capturedAt": "2026-10-23T13:54:45.451Z",
+  "alt": "Screenshot of the Project Gutenberg website",
+  "pageTitle": "Free eBooks | Project Gutenberg",
+  "pageDescription": "Project Gutenberg is a library of over 75,000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads.",
+  "shot": {
+    "480": "assets/tools/gutenberg/shot-480.webp",
+    "960": "assets/tools/gutenberg/shot-960.webp",
+    "1600": "assets/tools/gutenberg/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/gutenberg/mobile-390.webp",
+    "780": "assets/tools/gutenberg/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/gutenberg/social-600.webp",
+    "1200": "assets/tools/gutenberg/social-1200.webp",
+    "from": "https://www.gutenberg.org/gutenberg/pg-logo-144x144.png"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

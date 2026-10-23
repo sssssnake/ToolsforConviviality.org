@@ -1,0 +1,27 @@
+{
+  "slug": "calibre",
+  "name": "Calibre",
+  "source": "https://calibre-ebook.com",
+  "capturedAt": "2026-10-23T13:53:58.159Z",
+  "alt": "Screenshot of the Calibre website",
+  "pageTitle": "calibre - E-book management",
+  "pageDescription": "calibre: The one stop solution for all your e-book needs. Comprehensive e-book software.",
+  "shot": {
+    "480": "assets/tools/calibre/shot-480.webp",
+    "960": "assets/tools/calibre/shot-960.webp",
+    "1600": "assets/tools/calibre/shot-1600.webp"
+  },
+  "icon": {
+    "128": "assets/tools/calibre/icon-128.webp",
+    "256": "assets/tools/calibre/icon-256.webp",
+    "from": "https://raw.githubusercontent.com/kovidgoyal/calibre/master/icons/calibre.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://calibre-ebook.com/\", waiting until \"load\"\n"
+  ]
+}

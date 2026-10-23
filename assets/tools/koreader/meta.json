@@ -1,0 +1,29 @@
+{
+  "slug": "koreader",
+  "name": "KOReader",
+  "source": "https://koreader.rocks",
+  "capturedAt": "2026-10-23T13:54:51.678Z",
+  "alt": "Screenshot of the KOReader website",
+  "pageTitle": "KOReader",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/koreader/shot-480.webp",
+    "960": "assets/tools/koreader/shot-960.webp",
+    "1600": "assets/tools/koreader/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/koreader/mobile-390.webp",
+    "780": "assets/tools/koreader/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/koreader/icon-128.webp",
+    "256": "assets/tools/koreader/icon-256.webp",
+    "from": "https://koreader.rocks/koreader.png",
+    "sourceWidth": 244,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#08a898",
+  "colorFrom": "icon",
+  "notes": []
+}
