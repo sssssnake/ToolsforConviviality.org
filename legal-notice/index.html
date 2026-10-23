@@ -3,6 +3,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Legal notice (Impressum) | Tools for Conviviality</title>
 <meta id="m-desc" name="description" content="Legal notice for Tools for Conviviality.">
 <meta id="m-robots" name="robots" content="noindex,follow">
@@ -21,15 +22,15 @@
 /* Layout: a public notice board. Periwinkle band on top, purposes on the left,
    one tool on the right; reviews read like a catalogue card with a Get Info panel and a verdict stamp. */
 :root {
-  --bg: #172027;
+  --bg: #19242d;
   --panel: #213039;
   --panel-2: #1c2830;
   --line: #36495a;
   --fg: #dde6f3;
   --muted: #9aaabd;
   --accent: #b3c5ff;
-  --band: #b3c5ff;
-  --band-fg: #121a20;
+  --band: #193bc5;
+  --band-fg: #f1f2ed;
   --on-accent: #121a20;
   --stamp: #f2967a;
   --gold: #cdae62;
@@ -42,14 +43,14 @@
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme="dark"]) {
-    --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
-    --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+    --bg: #f1f2ed; --panel: #fafaf7; --panel-2: #f6f7f2; --line: #b9c3df; --fg: #19242d; --muted: #536274;
+    --accent: #193bc5; --on-accent: #f1f2ed; --band: #193bc5; --band-fg: #f1f2ed; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
     color-scheme: light;
   }
 }
 :root[data-theme="light"] {
-  --bg: #edf0f5; --panel: #ffffff; --panel-2: #f6f8fb; --line: #c6cfdb; --fg: #17212a; --muted: #536274;
-  --accent: #2f45a6; --on-accent: #ffffff; --band: #b3c5ff; --band-fg: #121a20; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
+  --bg: #f1f2ed; --panel: #fafaf7; --panel-2: #f6f7f2; --line: #b9c3df; --fg: #19242d; --muted: #536274;
+  --accent: #193bc5; --on-accent: #f1f2ed; --band: #193bc5; --band-fg: #f1f2ed; --stamp: #c2512d; --gold: #8a6a19; --meter-off: #dbe1ea;
   color-scheme: light;
 }
 
@@ -67,8 +68,8 @@ p { margin: 0; }
 .band { background: var(--band); color: var(--band-fg); }
 .band .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; }
-.mark { width: 52px; height: 40px; border: 1.5px solid var(--band-fg); display: grid; place-items: center; font-family: var(--display); font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }
-.brand-name { font-weight: 600; font-size: 15px; line-height: 1.25; }
+.mark { width: 44px; height: 44px; background: var(--band-fg); -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; display: block; }
+.brand-name { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; letter-spacing: -.015em; font-size: 17px; line-height: 1.25; }
 .nav { display: flex; gap: 22px; flex-wrap: wrap; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
 .nav a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--band-fg); }
@@ -271,7 +272,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <header class="band">
   <div class="wrap">
     <a class="brand" href="/" aria-label="Tools for Conviviality, home">
-      <span class="mark">T/C</span>
+      <span class="mark" aria-hidden="true"></span>
       <span class="brand-name">Tools for<br>Conviviality</span>
     </a>
     <nav class="nav" aria-label="Main">
