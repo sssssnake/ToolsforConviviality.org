@@ -298,8 +298,8 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <main id="app"><div class="wrap" id="view"><div class="home">
     <section class="hero">
       <p class="label">A directory of convivial software</p>
-      <h1>Software that lets you leave.</h1>
-      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. Use them freely, make them your own, and take your things with you when you go.</p>
+      <h1>A guide to software that serves its users.</h1>
+      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
       <div class="hero-cta"><a class="btn primary" href="/directory/">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="/what-is-conviviality/">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes"><a class="purpose" href="/category/notes/"><span class="p-verb">Keep my own notes and documents</span><span class="p-meta">Joplin, Obsidian, CryptPad ↗</span></a><a class="purpose" href="/category/files/"><span class="p-verb">Move files between my devices</span><span class="p-meta">LocalSend, Cryptomator, Syncthing ↗</span></a><a class="purpose" href="/category/maps/"><span class="p-verb">Find my way without being tracked</span><span class="p-meta">CoMaps ↗</span></a><a class="purpose" href="/category/reading/"><span class="p-verb">Read the web on my own terms</span><span class="p-meta">NetNewsWire, Kiwix, FreshRSS, Kagi ↗</span></a><a class="purpose" href="/category/passwords/"><span class="p-verb">Keep my passwords safe</span><span class="p-meta">KeePassXC, Bitwarden ↗</span></a><a class="purpose" href="/category/images/"><span class="p-verb">Make pictures and video</span><span class="p-meta">Krita, Ente Photos, PhotoMosh ↗</span></a><a class="purpose" href="/category/talk/"><span class="p-verb">Tame my chat apps</span><span class="p-meta">Delta Chat, Ferdium ↗</span></a><a class="purpose" href="/category/books/"><span class="p-verb">Own my books</span><span class="p-meta">Standard Ebooks, Calibre, Project Gutenberg, KOReader, Audiobookshelf ↗</span></a><a class="purpose" href="/category/agents/"><span class="p-verb">Get an AI helper I control</span><span class="p-meta">OpenClaw, Hermes Agent ↗</span></a><a class="purpose" href="/category/collect/"><span class="p-verb">Collect and connect ideas</span><span class="p-meta">Zotero, Excalidraw, Are.na ↗</span></a></div>
@@ -307,11 +307,11 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <aside>
       <div class="card feature" aria-live="polite">
         <p class="label">A random tool in the collection</p>
-        <h2>LocalSend</h2>
-        <p class="desc">Send files between any two devices on the same Wi-Fi.</p>
-        <ul><li>Instead of AirDrop, Google Quick Share</li><li>Medium maker · Gadget</li><li>29/30 · Convivial</li></ul>
+        <h2>CoMaps</h2>
+        <p class="desc">Offline maps and navigation built on OpenStreetMap, run by its community.</p>
+        <ul><li>Instead of Google Maps</li><li>Medium maker · Tool</li><li>27/30 · Convivial</li></ul>
         <div class="btn-row">
-          <a class="btn" href="/tools/localsend/">Read the review <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="/tools/comaps/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
         </div>
       </div>
@@ -327,7 +327,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p class="label">How it works</p>
     <h2>Six questions, one score, no payment.</h2>
     <div class="size-grid">
-      <a class="size-cell" href="/how-we-score/"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, taken from the six ways Illich said tools go wrong.</small></a>
+      <a class="size-cell" href="/how-we-score/"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, like a heuristic evaluation of how software treats its people.</small></a>
       <a class="size-cell" href="/how-we-score/"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Manipulative. Scores are dated and open to change.</small></a>
       <a class="size-cell" href="/about/"><span class="size-letter">0</span><span>Paid for by nobody</span><small>We take no payment for listings, reviews or badges, so a score means what it says.</small></a>
       <a class="size-cell" href="/improve-my-conviviality-score/"><span class="size-letter">+</span><span>Make software?</span><small>A free field guide shows which changes raise a score, and what they do to your income.</small></a>
@@ -629,8 +629,8 @@ function home() {
   return `<div class="home">
     <section class="hero">
       <p class="label">A directory of convivial software</p>
-      <h1>Software that lets you leave.</h1>
-      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. Use them freely, make them your own, and take your things with you when you go.</p>
+      <h1>A guide to software that serves its users.</h1>
+      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
       <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
@@ -661,7 +661,7 @@ function home() {
     <p class="label">How it works</p>
     <h2>Six questions, one score, no payment.</h2>
     <div class="size-grid">
-      <a class="size-cell" href="#method"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, taken from the six ways Illich said tools go wrong.</small></a>
+      <a class="size-cell" href="#method"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, like a heuristic evaluation of how software treats its people.</small></a>
       <a class="size-cell" href="#method"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Manipulative. Scores are dated and open to change.</small></a>
       <a class="size-cell" href="#about"><span class="size-letter">0</span><span>Paid for by nobody</span><small>We take no payment for listings, reviews or badges, so a score means what it says.</small></a>
       <a class="size-cell" href="#improve"><span class="size-letter">+</span><span>Make software?</span><small>A free field guide shows which changes raise a score, and what they do to your income.</small></a>
