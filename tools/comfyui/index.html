@@ -134,7 +134,7 @@ main .wrap { padding-block: 48px 64px; }
 .logo img { width: 100%; height: 100%; object-fit: contain; display: block; background: #fff; }
 .logo.sm { width: 44px; height: 44px; font-size: 22px; }
 .logo.lg { width: 72px; height: 72px; font-size: 34px; }
-.tool-row .lead { display: flex; gap: 24px; align-items: flex-start; }
+.tool-row .lead { display: flex; gap: 24px; align-items: center; }
 .tool-row .lead > div { min-width: 0; }
 .review-head { display: flex; gap: 18px; align-items: center; margin-bottom: 8px; }
 .review-head .page-head { margin: 0; }
@@ -159,7 +159,7 @@ main .wrap { padding-block: 48px 64px; }
 .related li a:hover b { color: var(--accent); }
 .related li span { color: var(--muted); font-size: 14px; }
 .shot-credit { font-family: "IBM Plex Mono", monospace; font-size: 12px; line-height: 1.5; color: var(--muted); margin: 6px 0 18px; }
-.tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: start; }
+.tool-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px 24px; padding-block: 18px; border-bottom: 1px solid var(--line); text-decoration: none; align-items: center; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
@@ -175,6 +175,7 @@ main .wrap { padding-block: 48px 64px; }
 .filter-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .filter-group .label { margin-right: 4px; }
 .fbtn { font-family: var(--mono); font-size: 12px; letter-spacing: .05em; border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 5px 10px; cursor: pointer; }
+a.fbtn { text-decoration: none; display: inline-block; }
 .fbtn[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .empty { color: var(--muted); padding-block: 24px; }
 
@@ -309,7 +310,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p>If you make ComfyUI, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
     <label class="visually-hidden" for="bs-comfyui">Badge code for light backgrounds</label><textarea id="bs-comfyui" readonly="" onfocus="this.select()">&lt;a href="https://toolsforconviviality.com/tools/comfyui/"&gt;&lt;img src="https://toolsforconviviality.com/badges/comfyui-light.svg" alt="Tools for Conviviality review: 24/30, Leaning convivial" width="255" height="72"&gt;&lt;/a&gt;</textarea>
     <p>For dark backgrounds, use <code>comfyui-dark.svg</code> in place of <code>comfyui-light.svg</code>.</p></section>
-      <section class="related"><h2>Other tools for “make things without adobe”</h2><ul><li><a href="/tools/krita/"><b>Krita</b><span>A full painting and illustration studio that costs nothing.</span></a></li><li><a href="/tools/inkscape/"><b>Inkscape</b><span>A vector graphics editor for logos, illustrations and diagrams, built on the open SVG format.</span></a></li><li><a href="/tools/gimp/"><b>GIMP</b><span>A long-running image editor for retouching, compositing and creating pictures.</span></a></li><li><a href="/tools/blender/"><b>Blender</b><span>A complete 3D creation suite for modelling, animation, rendering and more.</span></a></li></ul></section>
+      <p class="bench-note">For comparison, we also reviewed <a href="/benchmarks/adobe-creative-cloud/">Adobe Creative Cloud</a> (12/30) as a benchmark.</p><section class="related"><h2>Other tools for “draw, design and edit”</h2><ul><li><a href="/tools/krita/"><b>Krita</b><span>A full painting and illustration studio that costs nothing.</span></a></li><li><a href="/tools/inkscape/"><b>Inkscape</b><span>A vector graphics editor for logos, illustrations and diagrams, built on the open SVG format.</span></a></li><li><a href="/tools/gimp/"><b>GIMP</b><span>A long-running image editor for retouching, compositing and creating pictures.</span></a></li><li><a href="/tools/blender/"><b>Blender</b><span>A complete 3D creation suite for modelling, animation, rendering and more.</span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>ComfyUI Info</span><i aria-hidden="true"></i></div>
@@ -377,7 +378,7 @@ const CATS = [
   { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
   { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
-  { id: "design", name: "Design & creative tools", verb: "Make things without Adobe", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
+  { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 const TOOLS = [
@@ -618,6 +619,12 @@ const BENCH = [
     tags: ["Benchmark", "Closed source", "Needs a phone number"], s: [2,1,2,2,2,5],
     body: ["WhatsApp is how about three billion people keep in touch, and that scale is both its strength and its trap. Messages are end-to-end encrypted with the Signal protocol, which is a real protection, but you need a phone number to join, the app is run by Meta, and what Meta can see about who talks to whom is a long-running worry. Backups are encrypted only if you switch that on, and Meta's AI assistant now sits inside the app.",
       "Leaving costs you your whole circle, because taking your conversations with you is hard and the company has pursued unofficial clients in the past. In the EU the Digital Markets Act requires it to let other services connect, which could loosen the grip. For nearly everyone it simply works, so Delivery is its one top score."] },
+  { slug: "adobe-creative-cloud", name: "Adobe Creative Cloud", cat: "design", size: "XL", scope: "system", url: "https://www.adobe.com/creativecloud.html",
+    one: "The creative suite that set the standard, rented by the month.", replaces: "The tools the design, photo and video apps are measured against",
+    price: "Subscription", source: "Closed source", platforms: "Windows, Mac, iPad, web",
+    tags: ["Benchmark", "Closed source", "Subscription"], s: [2,2,2,1,1,4],
+    body: ["Creative Cloud is the standard toolbox for designers, photographers and video editors, with Photoshop, Illustrator, Premiere Pro and many other apps under one subscription. The apps are excellent and the industry trades in their formats, which earns the suite a 4 on Delivery. It also shows how a tool can be superb and still leave you with little say.",
+      "The software is rented, so your access ends when the payments do. Adobe's own terms say that on an annual plan paid monthly, cancelling after the first 14 days costs 50% of the remaining balance, and after you cancel the account drops to a free membership with 5 GB of cloud storage. In June 2024 the US Federal Trade Commission sued Adobe over how it disclosed cancellation fees and how hard it was to cancel, and Adobe said it would contest the claims. We could not confirm how that case ended. Compare it with the design tools in the directory."] },
   { slug: "gmail", name: "Gmail", cat: "talk", size: "XL", scope: "system", url: "https://workspace.google.com/products/gmail/",
     one: "Excellent email that anchors your whole Google life.", replaces: "The tool the email and chat apps are measured against",
     price: "Free; paid storage", source: "Closed source", platforms: "Web, Android, iOS",
@@ -817,25 +824,25 @@ function category(id) {
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p><h2>Questions people ask</h2>${k.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${linkify(a)}</p>`).join("")}</div>` : ""}`;
 }
 
-const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "score" };
+const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "az" };
 const VERDICT_MIN = { all: 0, leaning: 18, convivial: 25 };
 function directory(preset) {
-  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all", sort: "score" }, preset);
+  if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all", sort: "az" }, preset);
   const list = TOOLS.filter(t => (filt.size === "all" || t.size === filt.size) && (filt.scope === "all" || t.scope === filt.scope) && (filt.cat === "all" || t.cat === filt.cat) && total(t) >= VERDICT_MIN[filt.verdict])
-    .sort((a, b) => filt.sort === "az" ? a.name.localeCompare(b.name) : total(b) - total(a) || a.name.localeCompare(b.name));
+    .sort((a, b) => filt.sort === "score" ? total(b) - total(a) || a.name.localeCompare(b.name) : a.name.localeCompare(b.name));
   let last = null, rank = 0;
   const ranks = new Map(list.map((t, i) => { if (total(t) !== last) { rank = i + 1; last = total(t); } return [t.slug, rank]; }));
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
-  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, ranked from most to least convivial by its score out of 30. Tools with the same score share a rank. Switch to A to Z if you are looking for a name.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, listed A to Z with its score out of 30. Switch the order to see the most convivial first, where tools with the same score share a rank.</p></div>
   <div class="filters">
-    ${grp("sort", "Order", [["score", "Most convivial first"], ["az", "A to Z"]])}
+    ${grp("sort", "Order", [["az", "A to Z"], ["score", "Most convivial first"]])}
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
-  <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
-  <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "az" ? 0 : ranks.get(t.slug))).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
+  <nav class="filters" aria-label="Categories"><div class="filter-group"><span class="label">Jump to</span>${CATS.map(c => `<a class="fbtn" href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</div></nav>
+  <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "score" ? ranks.get(t.slug) : 0)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
   <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
 }
 
@@ -1152,7 +1159,7 @@ function listLd(list) { return { "@type": "ItemList", itemListElement: list.map(
 function seo(id) {
   const out = (title, desc, extra) => Object.assign({ title: title + " | Tools for Conviviality", desc: clip(desc, 158), image: SITE + "/assets/og-default.png", noindex: false, type: "website", ld: [] }, extra || {});
   if (id === "home") return out("", "Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big Tech apps.", { title: "Tools for Conviviality: a directory of small, independent software", ld: [{ "@type": "WebSite", name: "Tools for Conviviality", url: SITE + "/", description: "An independent directory of small, convivial software." }] });
-  if (id === "directory") return out("Directory and leaderboard of the most convivial software", `All ${TOOLS.length} reviewed tools, ranked from most to least convivial and scored out of 30 against Illich's six tests. Filter by maker, scope, category and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)))] });
+  if (id === "directory") return out("Directory and leaderboard of convivial software", `All ${TOOLS.length} reviewed tools, scored out of 30 against Illich's six tests, with the most convivial tools one click away. Filter by maker, scope and verdict, or jump to a category.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)))] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
   if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
