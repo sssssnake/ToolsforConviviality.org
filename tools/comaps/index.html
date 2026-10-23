@@ -1022,19 +1022,21 @@ function what() {
 }
 
 const AGENT_PROMPT = [
-"You are improving this software project so it is more convivial, in the sense Ivan Illich gave the word in Tools for Conviviality (1973): people can use it freely, bend it to their own purposes, and leave it with their stuff. The directory at https://toolsforconviviality.com scores tools from 0 to 5 on six questions. Your job is to audit this project against those questions, make the changes that are in scope, report honestly, and prepare a submission to the directory.",
+"You are helping a human make this software project more convivial, in the sense Ivan Illich gave the word in Tools for Conviviality (1973): people can use it freely, bend it to their own purposes, and leave it with their stuff. The directory at https://toolsforconviviality.com scores tools from 0 to 5 on six questions. Your job is to audit this project against those questions, propose improvements, and make only the ones the human approves.",
 "",
-"RULES",
+"THE MOST IMPORTANT RULE: ASK BEFORE YOU CHANGE ANYTHING",
+"Until the human has approved a specific change, you are read-only. Do not edit, create, delete, rename or move any file. Do not install packages, run migrations or touch data. Do not commit, push, merge, tag, release, deploy, publish, open a pull request or send email. This applies to small changes too, because removing analytics or a nag screen changes how the product behaves, and that is the human's call. If you are not sure whether something needs approval, it does, so ask. A vague 'go ahead' covers only the list you showed, and it never covers pushing, deploying, publishing or sending, which each need their own explicit yes.",
+"",
+"OTHER RULES",
 "- Work in this repository. Only claim what you can verify in the code, and cite the file for each claim.",
-"- Do not add features nobody needs. Prefer deleting things to adding things.",
-"- Ask the human before changing anything about licensing, pricing, data migration or the privacy policy.",
-"- Make each change a small separate commit, and say which of the six questions it moves.",
+"- Do not add features nobody needs. Prefer deleting things to adding things, but never delete without approval.",
+"- Never change anything about licensing, pricing, data migration or the privacy policy, even with a general approval. Those need a separate, specific yes.",
 "- Be conservative with scores. A 5 means exemplary. If you cannot find evidence, score it lower and say so.",
 "",
-"STEP 1. UNDERSTAND",
-"Read the README, package files, routes, data model, network calls and dependencies. Write five lines: what the tool does, who it is for, where people's data lives, what it costs, and who runs it.",
+"STEP 1. UNDERSTAND (read-only)",
+"Read the README, package files, routes, data model, network calls and dependencies. Write five lines: what the tool does, who it is for, where people's data lives, what it costs, and who runs it. Ask the human if any of these is unclear.",
 "",
-"STEP 2. AUDIT: score each question 0 to 5 with evidence",
+"STEP 2. AUDIT (read-only): score each question 0 to 5 with evidence",
 "1. Footprint. Does it run light, work offline and keep going on an old device? Check bundle size, number of dependencies, background processes, whether a network is needed to function, telemetry, and any AI calls that could be optional or local.",
 "2. Lock-in. Can a person leave with their stuff in an open format? Check export and import in standard formats (JSON, CSV, Markdown), whether an account is really required, whether data sits in plain files or a documented schema, and whether an API is documented.",
 "3. Self-direction. Can a normal person learn it by using it and point it at their own purposes? Check first-run clarity, sensible defaults, undo, settings, accessibility, and dark patterns such as streaks, nag modals, fake urgency and engagement bait.",
@@ -1042,20 +1044,23 @@ const AGENT_PROMPT = [
 "5. Longevity. Does it keep working if the maker disappears or the person stops paying? Check offline use, standard formats, pinned and minimal dependencies, a documented self-hosting path if a server is needed, a licence that allows forks, support for older devices and browsers, and whether data is held hostage after cancelling.",
 "6. Delivery. Does it do the job without ads, engagement bait or promises it cannot keep? Check that the core task works end to end, that the README and site copy are honest, that limitations are listed, and that errors are helpful.",
 "",
-"STEP 3. IMPROVE",
-"Do the cheap, safe changes first: add export and import in an open format; remove analytics or make them opt-in; remove dark patterns and upsell nags; add a LICENSE and a source link if the human owns the rights and agrees; explain in plain English what happens to people's data; store data locally where no server is needed; drop dependencies you do not need; add a Limitations section to the README.",
-"Then list the larger changes that need the human's decision (licence, pricing, removing features, migrating data) and ask. Do not do them without an answer.",
+"STEP 3. PROPOSE, THEN STOP AND WAIT",
+"Show the human the scores and a numbered list of proposed changes. For each one give: what you would change and in which files, which of the six questions it moves and roughly by how much, how risky or reversible it is, and how much effort it takes. Group them as 'small and safe', 'changes behaviour' and 'needs your decision' (licence, pricing, removing features, migrating data, privacy policy). Common candidates: add export and import in an open format; remove analytics or make them opt-in; remove dark patterns and upsell nags; add a LICENSE and a source link if the human owns the rights and agrees; explain in plain English what happens to people's data; store data locally where no server is needed; drop dependencies you do not need; add a Limitations section to the README.",
+"Then ask: 'Which of these should I do? You can approve all, pick some by number, or none.' Do not continue until the human answers. If they approve nothing, skip to Step 5 with the audit alone.",
 "",
-"STEP 4. RE-SCORE",
+"STEP 4. IMPLEMENT ONLY WHAT WAS APPROVED",
+"Create a new git branch for the work and never commit to the main or production branch. Make each approved change a small separate commit with a message that says which of the six questions it moves. If you find something else worth changing while you work, add it to a list for later and do not do it. Never push, deploy, publish or open a pull request. When you finish, show the human the list of commits and tell them how to review, merge or discard the branch. Pushing and deploying is the human's job, unless they explicitly ask you to do it.",
+"",
+"STEP 5. RE-SCORE",
 "Score the six questions again with evidence. Give the total out of 30. Where nothing changed, say so. Note anything you could not verify.",
 "",
-"STEP 5. SUBMIT OR RE-SUBMIT",
-"Prepare a suggestion with these fields: name, url, what (one or two sentences), size (S, M or L: who makes it), scope (gadget, tool or system), cat (category: notes, files, maps, reading, passwords, images, talk, agents, collect or books), price, source (link to public code, if any), img (a logo or screenshot link we may use, if any), data (what happens to people's data), rel (your connection: I made it, I help make it, or I just use it), self (your honest scores and evidence from Step 4) and update (yes, with a list of what changed, if the tool is already listed).",
+"STEP 6. PREPARE A SUBMISSION (optional, and only if the human wants one)",
+"Ask: 'Would you like me to prepare a submission to the directory?' If they say no, stop here. If yes, prepare a suggestion with these fields: name, url, what (one or two sentences), size (S, M or L: who makes it), scope (gadget, tool or system), cat (category: agents, notes, files, maps, reading, passwords, images, design, talk, email, books or collect), price, source (link to public code, if any), img (a logo or screenshot link we may use, if any), data (what happens to people's data), rel (your connection: I made it, I help make it, or I just use it), self (your honest scores and evidence from Step 5) and update (yes, with a list of what changed, if the tool is already listed).",
 "Build a prefilled link by URL-encoding those values into https://toolsforconviviality.com/suggest/?name=...&url=...&what=...&size=...&scope=...&cat=...&price=...&source=...&img=...&data=...&rel=...&self=...&update=...",
-"Give the link to the human. They open it, check the text, and send it to hello@toolsforconviviality.com. If you can send email for the human, draft the message and ask for approval before sending. Never send anything without it. There is no payment and no guarantee: the directory scores every tool independently, and your self-assessment is only a starting point.",
+"Give the link to the human. They open it, check the text, and send it to hello@toolsforconviviality.com themselves. Never send email, post a form or contact the directory on the human's behalf. There is no payment and no guarantee: the directory scores every tool independently, and your self-assessment is only a starting point.",
 "",
-"STEP 6. REPORT",
-"Tell the human what you changed, the scores before and after with evidence, which decisions are waiting on them, and the prefilled link."
+"STEP 7. REPORT",
+"Tell the human what you proposed, what they approved, what you changed and on which branch, the scores before and after with evidence, which decisions are still waiting on them, and the prefilled link if they asked for one."
 ].join("\n");
 
 function forAgents() {
@@ -1071,10 +1076,10 @@ function forAgents() {
   <div class="page-head" style="margin-top:14px"><h1>For AI agents: build a more convivial tool</h1><p>A prompt you can paste into a coding agent to audit a project against our six questions, improve it, and submit it to the directory.</p></div>
   <div class="prose">
     <p class="note">Prefer to do it yourself? Read the <a href="#improve">field guide for human makers</a>, a free PDF with the same audit.</p>
-    <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, make the safe improvements and flag the bigger decisions for you, then prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
+    <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, propose improvements and wait for your approval before it changes anything, then offer to prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
     <p>It does not buy a good score. Every submission is reviewed and scored independently, we take no payment, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
     <h2>How to use it</h2>
-    <p>Open your project in a coding agent such as Claude Code, Codex or Cursor, paste the prompt, and answer the questions it asks you along the way. Expect it to propose changes in small commits and to stop before anything about licensing, pricing or your data.</p>
+    <p>Open your project in a coding agent such as Claude Code, Codex or Cursor, paste the prompt, and answer the questions it asks you along the way. The prompt is built to stop and ask. It reads your project and shows you its audit and a numbered list of proposed changes first, changes nothing until you approve specific items, works on a new branch in small commits, and never pushes, deploys, publishes or sends anything on its own. Licensing, pricing, data and privacy changes always need a separate yes.</p>
   </div>
   <div class="prompt-box">
     <div class="prompt-bar"><span>Prompt for your coding agent</span><button class="btn" type="button" id="copy-prompt" style="width:auto;padding:6px 12px;font-size:13px">Copy prompt</button></div>
@@ -1084,7 +1089,7 @@ function forAgents() {
   <div class="criteria">${CRITERIA.map((k, i) => `<div class="crit"><span class="from">${k.name}</span><h3>${esc(k.q)}</h3><p>${esc(dec[i])}</p></div>`).join("")}</div>
   <div class="prose">
     <h2>Submitting and re-submitting</h2>
-    <p>The last step of the prompt builds a link to the <a href="#submit">suggestion form</a> with everything filled in, including the agent's own scores and evidence. You open it, check it, and send it by email. The form sends nothing by itself, and nobody should submit on your behalf without you seeing it first. To update a tool that is already listed, say so in the form and list what changed, and we will look at it again.</p>
+    <p>The last step of the prompt, which only runs if you want it, builds a link to the <a href="#submit">suggestion form</a> with everything filled in, including the agent's own scores and evidence. You open it, check it, and send it by email. The form sends nothing by itself, and nobody should submit on your behalf without you seeing it first. To update a tool that is already listed, say so in the form and list what changed, and we will look at it again.</p>
     <p>You can also read the <a href="#method">full rubric</a> and the <a href="#what">idea behind it</a>, or look at the <a href="#directory">directory</a>, ranked from most to least convivial, to see where tools stand today.</p>
     <p class="note">Agents: this page is also summarised at <a href="/llms.txt">/llms.txt</a>.</p>
   </div>`;

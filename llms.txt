@@ -4,7 +4,7 @@
 
 ## For AI agents
 
-- [Build a more convivial tool: a prompt for coding agents](https://toolsforconviviality.com/for-agents/): audits a project against the six questions, improves it, and prepares a submission.
+- [Build a more convivial tool: a prompt for coding agents](https://toolsforconviviality.com/for-agents/): audits a project against the six questions, proposes improvements, and changes nothing until the human approves.
 - [Suggest or re-submit a tool](https://toolsforconviviality.com/suggest/): the form accepts prefilled values as URL parameters (name, url, what, size, scope, cat, price, source, img, data, rel, self, update).
 
 ## Key pages
