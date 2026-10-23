@@ -2,7 +2,7 @@
   "slug": "ferdium",
   "name": "Ferdium",
   "source": "https://ferdium.org",
-  "capturedAt": "2026-10-23T10:13:57.711Z",
+  "capturedAt": "2026-10-23T10:15:54.302Z",
   "alt": "Screenshot of the Ferdium website",
   "pageTitle": "Ferdium | The home for all your services",
   "pageDescription": "Introducing a great productivity tool to keep all messaging, productivity, and online services in one place",
@@ -23,7 +23,7 @@
     "scalable": false,
     "lowRes": false
   },
-  "color": "#080808",
+  "color": "#7858d8",
   "colorFrom": "icon",
   "notes": []
 }

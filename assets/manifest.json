@@ -334,7 +334,7 @@
       "slug": "ferdium",
       "name": "Ferdium",
       "source": "https://ferdium.org",
-      "capturedAt": "2026-10-23T10:13:57.711Z",
+      "capturedAt": "2026-10-23T10:15:54.302Z",
       "alt": "Screenshot of the Ferdium website",
       "pageTitle": "Ferdium | The home for all your services",
       "pageDescription": "Introducing a great productivity tool to keep all messaging, productivity, and online services in one place",
@@ -355,16 +355,16 @@
         "scalable": false,
         "lowRes": false
       },
-      "color": "#080808",
+      "color": "#7858d8",
       "colorFrom": "icon",
       "notes": [],
-      "cfg": "[\"https://ferdium.org\",null,{\"icon\":\"https://ferdium.org/_next/static/media/logo.9fc5c374.png\"}]"
+      "cfg": "[\"https://ferdium.org\",null,{\"icon\":\"https://ferdium.org/_next/static/media/logo.9fc5c374.png\",\"v\":2}]"
     },
     "arena": {
       "slug": "arena",
       "name": "Are.na",
       "source": "https://www.are.na",
-      "capturedAt": "2026-10-23T10:14:04.885Z",
+      "capturedAt": "2026-10-23T10:16:02.097Z",
       "alt": "Screenshot of the Are.na website",
       "pageTitle": "Are.na",
       "pageDescription": "Are.na is a platform for connecting ideas and building knowledge.",
@@ -392,25 +392,16 @@
       "color": "#fff",
       "colorFrom": "theme-color",
       "notes": [],
-      "cfg": "[\"https://www.are.na\",{\"wait\":5000},null]"
+      "cfg": "[\"https://www.are.na\",{\"wait\":5000,\"scroll\":520},null]"
     },
     "airtime": {
       "slug": "airtime",
       "name": "Airtime",
       "source": "https://www.airtime.com",
-      "capturedAt": "2026-10-23T10:14:22.061Z",
+      "capturedAt": "2026-10-23T10:16:20.051Z",
       "alt": "Screenshot of the Airtime website",
       "pageTitle": "Airtime | Essential tools for video at work",
       "pageDescription": "Look your best on video. Present with impact. Virtual backgrounds, screen recorder, present with a friend. Works with Zoom, Meet, Teams, and Webex.",
-      "shot": {
-        "480": "assets/tools/airtime/shot-480.webp",
-        "960": "assets/tools/airtime/shot-960.webp",
-        "1600": "assets/tools/airtime/shot-1600.webp"
-      },
-      "mobile": {
-        "390": "assets/tools/airtime/mobile-390.webp",
-        "780": "assets/tools/airtime/mobile-780.webp"
-      },
       "icon": {
         "128": "assets/tools/airtime/icon-128.webp",
         "256": "assets/tools/airtime/icon-256.webp",
@@ -425,9 +416,11 @@
       },
       "color": "#080808",
       "colorFrom": "icon",
-      "notes": [],
-      "cfg": "[\"https://www.airtime.com\",null,null]"
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.airtime.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T10:14:41.834Z"
+  "updatedAt": "2026-10-23T10:16:27.430Z"
 }

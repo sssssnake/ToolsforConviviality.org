@@ -2,19 +2,10 @@
   "slug": "airtime",
   "name": "Airtime",
   "source": "https://www.airtime.com",
-  "capturedAt": "2026-10-23T10:14:22.061Z",
+  "capturedAt": "2026-10-23T10:16:20.051Z",
   "alt": "Screenshot of the Airtime website",
   "pageTitle": "Airtime | Essential tools for video at work",
   "pageDescription": "Look your best on video. Present with impact. Virtual backgrounds, screen recorder, present with a friend. Works with Zoom, Meet, Teams, and Webex.",
-  "shot": {
-    "480": "assets/tools/airtime/shot-480.webp",
-    "960": "assets/tools/airtime/shot-960.webp",
-    "1600": "assets/tools/airtime/shot-1600.webp"
-  },
-  "mobile": {
-    "390": "assets/tools/airtime/mobile-390.webp",
-    "780": "assets/tools/airtime/mobile-780.webp"
-  },
   "icon": {
     "128": "assets/tools/airtime/icon-128.webp",
     "256": "assets/tools/airtime/icon-256.webp",
@@ -29,5 +20,7 @@
   },
   "color": "#080808",
   "colorFrom": "icon",
-  "notes": []
+  "notes": [
+    "screenshot skipped by override"
+  ]
 }

@@ -1,50 +1,6 @@
 {
-  "startedAt": "2026-10-23T10:12:00.112Z",
+  "startedAt": "2026-10-23T10:15:53.864Z",
   "captured": [
-    {
-      "slug": "localsend",
-      "notes": []
-    },
-    {
-      "slug": "netnewswire",
-      "notes": []
-    },
-    {
-      "slug": "comaps",
-      "notes": []
-    },
-    {
-      "slug": "syncthing",
-      "notes": []
-    },
-    {
-      "slug": "obsidian",
-      "notes": []
-    },
-    {
-      "slug": "ente",
-      "notes": []
-    },
-    {
-      "slug": "cryptpad",
-      "notes": []
-    },
-    {
-      "slug": "kagi",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "bitwarden",
-      "notes": [
-        "mobile screenshot failed: page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://bitwarden.com/\", waiting until \"load\"\n"
-      ]
-    },
-    {
-      "slug": "photomosh",
-      "notes": []
-    },
     {
       "slug": "ferdium",
       "notes": []
@@ -55,10 +11,53 @@
     },
     {
       "slug": "airtime",
-      "notes": []
+      "notes": [
+        "screenshot skipped by override"
+      ]
     }
   ],
-  "skipped": [],
+  "skipped": [
+    {
+      "slug": "localsend",
+      "reason": "recent"
+    },
+    {
+      "slug": "netnewswire",
+      "reason": "recent"
+    },
+    {
+      "slug": "comaps",
+      "reason": "recent"
+    },
+    {
+      "slug": "syncthing",
+      "reason": "recent"
+    },
+    {
+      "slug": "obsidian",
+      "reason": "recent"
+    },
+    {
+      "slug": "ente",
+      "reason": "recent"
+    },
+    {
+      "slug": "cryptpad",
+      "reason": "recent"
+    },
+    {
+      "slug": "kagi",
+      "reason": "recent"
+    },
+    {
+      "slug": "bitwarden",
+      "reason": "recent"
+    },
+    {
+      "slug": "photomosh",
+      "reason": "recent"
+    }
+  ],
   "failed": [],
-  "finishedAt": "2026-10-23T10:14:41.834Z"
+  "finishedAt": "2026-10-23T10:16:27.431Z"
 }
