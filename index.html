@@ -339,9 +339,9 @@ textarea { min-height: 96px; resize: vertical; }
 /* Footer */
 footer { border-top: 1px solid var(--line); }
 footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
-.foot-cats { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
-.foot-cats .label { margin: 0; color: var(--muted); }
-.foot-cats a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; color: var(--fg); }
+.foot-cats { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; }
+.foot-cats .label { margin: 0; color: var(--muted); font-family: inherit; text-transform: none; letter-spacing: 0; font-size: 15px; }
+.foot-cats a { text-decoration: none; padding-block: 3px; border-bottom: 1.5px solid transparent; color: var(--fg); }
 .foot-cats a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .foot-links { display: flex; gap: 18px; flex-wrap: wrap; }
 .foot-links a { text-decoration: none; color: var(--muted); }
@@ -404,11 +404,11 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <aside>
       <div class="card feature" aria-live="polite">
         <p class="label">A random tool in the collection</p>
-        <h2>Affinity</h2>
-        <p class="desc">A professional design, photo and layout app that is free for individuals and owned by Canva.</p>
-        <ul><li>Instead of Adobe Photoshop, Illustrator and InDesign</li><li>Large maker · Tool</li><li>18/30 · Leaning convivial</li></ul>
+        <h2>Proton Pass</h2>
+        <p class="desc">An end-to-end encrypted password manager with a free plan, from the makers of Proton Mail.</p>
+        <ul><li>Instead of Google Password Manager</li><li>Medium maker · System</li><li>21/30 · Leaning convivial</li></ul>
         <div class="btn-row">
-          <a class="btn" href="/tools/affinity/">Read the review <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="/tools/proton-pass/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
         </div>
       </div>
@@ -1175,12 +1175,12 @@ function category(id) {
   const list = toolsIn(id), k = CATCOPY[id], bench = BENCH.filter(x => x.cat === id);
   let last = null, r = 0; const rk = new Map(list.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; }));
   const vcls = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
-  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
+  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   <p class="list-note">Ranked by score out of 30, most convivial first.</p>
   <div class="tool-list">${list.map(t => row(t, rk.get(t.slug))).join("")}</div>
   ${bench.length ? `<section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid">${bench.map(x => `<a class="cmp" href="#bench-${x.slug}">${logo(x, "sm")}<span class="cmp-t"><b>${esc(x.name)}</b><small>Benchmark review</small></span><span class="cmp-s"><b>${total(x)}<span>/30</span></b><small class="verdict-mini v${vcls(total(x))}">${band(total(x))}</small></span></a>`).join("")}</div></section>` : ""}
-  ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}`;
+  ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}</div>`;
 }
 
 const filt = { size: "all", scope: "all", cat: "all", verdict: "all", sort: "az" };
