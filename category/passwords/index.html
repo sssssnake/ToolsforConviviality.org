@@ -3,15 +3,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<title>Passwords &amp; security: alternatives to Google Password Manager, Microsoft Authenticator | Tools for Conviviality</title>
-<meta id="m-desc" name="description" content="Keep my passwords safe, instead of Google Password Manager, Microsoft Authenticator. KeePassXC, Bitwarden: each reviewed and scored for how convivial it is.">
+<title>Open-source alternatives to Google Password Manager | Tools for Conviviality</title>
+<meta id="m-desc" name="description" content="Password managers you can inspect, and leave. KeePassXC, Bitwarden, each reviewed and scored for how convivial it is.">
 <meta id="m-robots" name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#b3c5ff">
 <link id="m-canon" rel="canonical" href="https://toolsforconviviality.com/category/passwords/">
 <meta property="og:site_name" content="Tools for Conviviality">
 <meta id="og-type" property="og:type" content="website">
-<meta id="og-title" property="og:title" content="Passwords &amp; security: alternatives to Google Password Manager, Microsoft Authenticator | Tools for Conviviality">
-<meta id="og-desc" property="og:description" content="Keep my passwords safe, instead of Google Password Manager, Microsoft Authenticator. KeePassXC, Bitwarden: each reviewed and scored for how convivial it is.">
+<meta id="og-title" property="og:title" content="Open-source alternatives to Google Password Manager | Tools for Conviviality">
+<meta id="og-desc" property="og:description" content="Password managers you can inspect, and leave. KeePassXC, Bitwarden, each reviewed and scored for how convivial it is.">
 <meta id="og-url" property="og:url" content="https://toolsforconviviality.com/category/passwords/">
 <meta id="og-image" property="og:image" content="https://toolsforconviviality.com/assets/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
@@ -124,6 +124,8 @@ main .wrap { padding-block: 48px 64px; }
 .window .bar { display: flex; gap: 6px; align-items: center; padding: 6px 10px; border-bottom: 1px solid var(--line); font: 12px "IBM Plex Mono", monospace; color: var(--muted); }
 .window .bar i { width: 9px; height: 9px; border: 1px solid var(--muted); border-radius: 50%; }
 .window img { display: block; width: 100%; height: auto; }
+.list-h { font-size: 22px; margin: 34px 0 0; }
+.prose h3 { font-size: 18px; margin: 22px 0 4px; }
 .related { margin-top: 40px; }
 .related h2 { font-size: 20px; margin-bottom: 8px; }
 .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -267,13 +269,16 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 </header>
 
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/directory/">Directory</a> / Passwords &amp; security</p>
-  <div class="page-head" style="margin-top:14px"><h1>Passwords &amp; security</h1><p>Instead of Google Password Manager, Microsoft Authenticator.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>Open-source alternatives to Google Password Manager</h1><p>Password managers you can inspect, and leave.</p></div>
+  <div class="prose"><p>A password manager holds the keys to everything else, so this is the place to be strict about whom you trust. Both tools here publish their source code. <a href="/tools/bitwarden/">Bitwarden</a> is a company with an open-source core and a generous free tier, and it syncs across your devices for you. <a href="/tools/keepassxc/">KeePassXC</a> keeps a single file on your own computer, with no company in the picture and the syncing left to you.</p><p>Either one is better than reusing a password, which is the thing that actually gets people hacked.</p></div>
+  <h2 class="list-h">The tools</h2>
   <div class="tool-list"><a class="tool-row" href="/tools/keepassxc/">
     <div class="lead"><span class="logo sm"><img src="/assets/tools/keepassxc/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>KeePassXC</h3><p class="one">A password manager that keeps one encrypted file on your own computer.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">No account</span><span class="chip">Plain files</span></div></div></div>
     <div class="score-mini"><b>27<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a><a class="tool-row" href="/tools/bitwarden/">
     <div class="lead"><span class="logo sm"><img src="/assets/tools/bitwarden/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Bitwarden</h3><p class="one">A password manager with an open-source core and a generous free tier.</p><div class="chips"><span class="chip">L · System</span><span class="chip">Open source core</span><span class="chip">Free tier</span><span class="chip">Self-hostable</span></div></div></div>
     <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini">Convivial</span></div></a></div>
-  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p></div></main>
+  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>
+  <div class="prose"><h2>How to choose</h2><p>The choice is between convenience and control. Bitwarden syncs between phone, laptop and browser without fuss and can be self-hosted if you want that. KeePassXC asks you to handle sync yourself and has no official phone app, and in return nothing leaves your machine unless you send it.</p><h2>Questions people ask</h2><h3>Is there an open-source alternative to Google Password Manager?</h3><p>Yes. <a href="/tools/bitwarden/">Bitwarden</a> and <a href="/tools/keepassxc/">KeePassXC</a> both publish their source code.</p><h3>Do I need an account for KeePassXC?</h3><p>No. It works on a local file, with no account or company involved.</p><h3>Which is easier for a beginner?</h3><p><a href="/tools/bitwarden/">Bitwarden</a>, because it syncs for you. <a href="/tools/keepassxc/">KeePassXC</a> suits people who are comfortable looking after a file.</p></div></div></main>
 
 <footer>
   <div class="wrap">
@@ -541,13 +546,80 @@ function home() {
   </section>`;
 }
 
+const CATCOPY = {
+  maps: { h1: "Alternatives to Google Maps", lede: "Offline, private maps and navigation that don't follow you around.",
+    intro: ["Google Maps is an excellent map run by an advertising company, and those two facts are connected. Maps that run on your phone from downloaded regions, built on OpenStreetMap data that volunteers edit and anyone may use, cut the connection. {comaps} gets you from A to B with no account and no trail.",
+      "This category is short for now because the field is young. We'd rather list one tool we can stand behind than ten we haven't tried, and more reviews will follow."],
+    choose: "Ask three things. Does it work with no signal, because a good offline map is also a more reliable one on a hike or in a tunnel. Does it need an account, and does it say what it collects. And can you tell who pays for it. The honest trade-off with every alternative to Google Maps today is live traffic and business listings, where the giant still leads.",
+    faq: [["Is there a Google Maps alternative that works offline?", "Yes. {comaps} lets you download a region once and then search and navigate with no connection, and it needs no account."],
+      ["Do I give up traffic information?", "Mostly, yes. Offline maps can't match Google on live traffic or on opening hours for busy places, and some days that matters."],
+      ["Where does the map data come from?", "From OpenStreetMap, a map edited by volunteers around the world. It has gaps in some places, and you can fix them yourself."]] },
+  files: { h1: "Alternatives to Google Drive, OneDrive and AirDrop", lede: "Ways to move and keep your files without renting space from a giant.",
+    intro: ["People use cloud storage for two different jobs: getting a file from here to there, and keeping a copy somewhere safe and in sync. Different tools fit each job better than one giant service does. {localsend} moves files directly between devices on the same network, {syncthing} keeps folders in step between your own computers, and {cryptomator} locks files before they reach whatever cloud folder you already use.",
+      "None of these needs you to hand your files to a company that earns money from knowing about them."],
+    choose: "Decide first whether you need a transfer, a sync or a vault. For a one-off handover, a direct transfer needs nothing stored anywhere. For files you work on across machines, syncing directly between your own devices means no third party holds them. If you already pay for cloud storage and can't leave, encrypting before upload keeps the provider from reading anything.",
+    faq: [["What is an alternative to AirDrop for Windows and Android?", "{localsend} works across Windows, Mac, Linux, Android and iOS over the same Wi-Fi, with no account."],
+      ["Can I sync files without a cloud service?", "Yes. {syncthing} copies changes straight between your own devices. It takes some setup, and on phones the Android options are less settled than on the desktop."],
+      ["How do I keep using Google Drive or OneDrive but keep my files private?", "{cryptomator} encrypts your files into a vault inside the folder first, so the provider only ever sees scrambled data."]] },
+  notes: { h1: "Alternatives to Microsoft Word, OneNote and Google Docs", lede: "Notes and documents you own, in files you can still open in ten years.",
+    intro: ["A good test of a notes or writing tool is what happens if the company stops. {obsidian} and {joplin} keep your notes as ordinary files on your own device, so they keep working and keep opening. {cryptpad} takes the other route: a shared office suite in the browser where everything is encrypted, so even the people running the server can't read it.",
+      "Between them they cover private notes, a personal knowledge base and writing together with other people."],
+    choose: "Look at where your words live and whether you can walk away with them. Plain files such as Markdown are the safest, because any text editor can open them. Then think about collaboration: if several people must edit the same document, an encrypted shared editor suits better than files on one machine. Sync is the last question, since you can use free methods or pay the maker for an easy one.",
+    faq: [["Is there a free alternative to Google Docs that is private?", "{cryptpad} offers documents, spreadsheets and slides in the browser, encrypted so the server can't read them. The main instance has a free tier and sells extra storage."],
+      ["What is an alternative to OneNote that keeps notes as files?", "{obsidian} and {joplin} both store notes in open formats on your own device. Joplin is fully open source, while Obsidian is free to use but closed source."],
+      ["Do I have to pay to sync notes between devices?", "No. Joplin syncs through Nextcloud, Dropbox or any WebDAV server, and Obsidian sells a sync service but also works with free alternatives."]] },
+  reading: { h1: "Alternatives to Google Search and Google News", lede: "Read the web on your own terms, with no feed deciding for you.",
+    intro: ["Search and news are where one company's choices shape most of what we read. The alternatives here work in different ways. RSS readers such as {netnewswire} and {freshrss} bring you the sites you picked, in the order they published, with no ranking. {kagi} is a search engine you pay for, which is how it avoids ads. {kiwix} puts Wikipedia and other libraries on your device so you can read them with no connection.",
+      "Together they replace the habit of asking one company what is worth reading."],
+    choose: "Decide whether you want to search, follow or look things up. To follow sites you trust, RSS is the old open method and still the best. To search without ads or tracking, expect to pay or to accept a smaller index. For reference questions, an offline copy of Wikipedia is quicker than you'd expect and works anywhere.",
+    faq: [["What is an alternative to Google News?", "An RSS reader. {netnewswire} on Apple devices and {freshrss} on a server you run show the sites you subscribe to, with no algorithm choosing for you."],
+      ["Is there a search engine with no ads?", "{kagi} sells search by subscription, so it carries no ads. The trade-off is paying for it."],
+      ["Can I read Wikipedia offline?", "Yes. {kiwix} downloads Wikipedia and other collections to read with no connection."]] },
+  passwords: { h1: "Open-source alternatives to Google Password Manager", lede: "Password managers you can inspect, and leave.",
+    intro: ["A password manager holds the keys to everything else, so this is the place to be strict about whom you trust. Both tools here publish their source code. {bitwarden} is a company with an open-source core and a generous free tier, and it syncs across your devices for you. {keepassxc} keeps a single file on your own computer, with no company in the picture and the syncing left to you.",
+      "Either one is better than reusing a password, which is the thing that actually gets people hacked."],
+    choose: "The choice is between convenience and control. Bitwarden syncs between phone, laptop and browser without fuss and can be self-hosted if you want that. KeePassXC asks you to handle sync yourself and has no official phone app, and in return nothing leaves your machine unless you send it.",
+    faq: [["Is there an open-source alternative to Google Password Manager?", "Yes. {bitwarden} and {keepassxc} both publish their source code."],
+      ["Do I need an account for KeePassXC?", "No. It works on a local file, with no account or company involved."],
+      ["Which is easier for a beginner?", "{bitwarden}, because it syncs for you. {keepassxc} suits people who are comfortable looking after a file."]] },
+  images: { h1: "Alternatives to Google Photos and Instagram filters", lede: "Keep your pictures private and make new ones with tools that stay out of your way.",
+    intro: ["Pictures cover a lot: backing up a lifetime of photos, painting from scratch, playing with effects. {ente} keeps your photo library encrypted so only you can see it, and {krita} is a full painting studio that costs nothing. {photomosh} and {airtime} are creative tools for glitching images and video and for dressing up a video call.",
+      "The scores differ a lot here, which is the point of scoring them."],
+    choose: "For backup, look at who can read your photos and what happens if you stop paying. For making things, free and open tools mean you keep your files and your skills, and a polished commercial tool may suit a deadline better. For effects and calls, check whether you need an account and where your video goes.",
+    faq: [["What is a private alternative to Google Photos?", "{ente} backs up and shares photos with end-to-end encryption, and its apps are open source. Storage plans are paid."],
+      ["Is there a free alternative to Photoshop for drawing and painting?", "{krita} is free, open source and built for painting and illustration. It is not a photo-retouching tool."],
+      ["What is a fun alternative to Instagram filters?", "{photomosh} applies glitch effects to photos, video and your webcam in the browser."]] },
+  talk: { h1: "Alternatives to WhatsApp, Slack and Teams", lede: "Tame the chat apps that live in your browser tabs.",
+    intro: ["Most of us keep several chat apps open at once because each of our friends and teams chose a different one. {ferdium} puts them all in one desktop window, which doesn't replace them but makes them easier to live with. {deltachat} takes a different route and builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down.",
+      "Neither is a perfect answer, and both are honest about it."],
+    choose: "The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control.",
+    faq: [["Can I use WhatsApp and Slack without keeping them all open?", "{ferdium} gathers your messaging services in one desktop app, so you manage them in one place."],
+      ["Is there a messaging app that doesn't need a phone number?", "{deltachat} runs on email, so you sign up with an address or a chat relay and give out no phone number."]] },
+  collect: { h1: "Alternatives to Pinterest and Google Keep", lede: "Collect, sketch and cite without feeding an engagement machine.",
+    intro: ["Collecting things is a quiet, useful habit that most big platforms have turned into a feed. {arena} is a calm place to gather images, links and ideas over time. {zotero} collects and cites research sources and keeps them yours, and {excalidraw} is a browser whiteboard for quick diagrams with a hand-drawn look.",
+      "All three have a simple job and stay out of your way while you do it."],
+    choose: "Ask how easily you can take your collection with you. Zotero exports to standard formats and Excalidraw saves open files. If you are building a body of work over years, pick the tool whose export you would trust on the day you leave it.",
+    faq: [["What is an alternative to Pinterest?", "{arena} is a place to collect images, links and ideas with no algorithmic feed and no ads."],
+      ["What is an open-source alternative to EndNote or Mendeley?", "{zotero} is open source, built by a non-profit, and exports your library to standard formats."],
+      ["Is there a free alternative to Miro for quick diagrams?", "{excalidraw} is a free browser whiteboard that needs no account for basic use."]] },
+  books: { h1: "Alternatives to Kindle and Apple Books", lede: "Keep your own ebook library, in files you control.",
+    intro: ["Buying books from a store that can change or end the deal at any time makes your shelf a rental. {calibre} keeps your library on your own computer, converts between formats and sends books to your reader.",
+      "It is a shelf you own, with no store attached."],
+    choose: "Look at where your books are stored and whether you could read them if the store disappeared. A folder of open files is the safe answer. Then check that your reader can read what you keep, since some devices only take certain formats.",
+    faq: [["Can I manage ebooks without Amazon or Apple?", "Yes. {calibre} is a free library manager for Windows, Mac and Linux."]] }
+};
+const linkify = s => esc(s).replace(/\{([a-z0-9]+)\}/g, (m, slug) => { const t = TOOLS.find(x => x.slug === slug); return t ? `<a href="#tool-${slug}">${esc(t.name)}</a>` : m; });
+
 function category(id) {
   const c = catOf(id); if (!c) return notFound();
-  const list = toolsIn(id);
+  const list = toolsIn(id), k = CATCOPY[id];
   return `<p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
-  <div class="page-head" style="margin-top:14px"><h1>${esc(c.name)}</h1><p>Instead of ${esc(c.instead)}.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
+  ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
+  <h2 class="list-h">The tools</h2>
   <div class="tool-list">${list.map(row).join("")}</div>
-  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`;
+  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>
+  ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p><h2>Questions people ask</h2>${k.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${linkify(a)}</p>`).join("")}</div>` : ""}`;
 }
 
 const filt = { size: "all", scope: "all", cat: "all", verdict: "all" };
@@ -741,7 +813,7 @@ function seo(id) {
   if (id === "home") return out("", "Find small, independent software scored against Ivan Illich's ideas about tools: open-source, privacy-respecting alternatives to Google, Microsoft and Big Tech apps.", { title: "Tools for Conviviality: a directory of small, independent software", ld: [{ "@type": "WebSite", name: "Tools for Conviviality", url: SITE + "/", description: "An independent directory of small, convivial software." }] });
   if (id === "directory") return out("Directory of convivial software and alternatives", `All ${TOOLS.length} reviewed tools, from offline maps to password managers, each scored out of 30 against Illich's six tests. Filter by maker, scope and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS)] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
-    const list = toolsIn(c.id); return out(`${c.name}: alternatives to ${c.instead}`, `${c.verb}, instead of ${c.instead}. ${list.map(x => x.name).join(", ")}: each reviewed and scored for how convivial it is.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+    const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
   if (id.startsWith("tool-")) { const t = TOOLS.find(x => x.slug === id.slice(5)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const n = total(t), c = catOf(t.cat), im = IMG[t.slug], soc = im && im.social && im.social[1200];
     return out(`${t.name} review: ${band(n)} (${n}/30)`, `${t.one} Instead of ${t.replaces}. Scored ${n}/30 (${band(n)}) on Illich's six tests of a convivial tool.`, {
