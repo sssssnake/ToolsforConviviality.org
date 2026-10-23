@@ -126,6 +126,9 @@ main .wrap { padding-block: 48px 64px; }
 .window img { display: block; width: 100%; height: auto; }
 .list-h { font-size: 22px; margin: 34px 0 0; }
 .prose h3 { font-size: 18px; margin: 22px 0 4px; }
+.tool-row.ranked { grid-template-columns: 56px minmax(0, 1fr) auto; }
+.rank-n { font-family: var(--display); font-size: 34px; font-weight: 500; color: var(--accent); text-align: center; line-height: 1; }
+.bench-note { border: 1px solid var(--line); background: var(--panel-2); padding: 12px 16px; margin: 14px 0 6px; font-size: 15px; }
 .related { margin-top: 40px; }
 .related h2 { font-size: 20px; margin-bottom: 8px; }
 .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -236,6 +239,8 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
   .bands { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 @media (max-width: 520px) {
+  .tool-row.ranked { grid-template-columns: 40px minmax(0, 1fr); }
+  .tool-row.ranked .score-mini { grid-column: 2; }
   main .wrap { padding-block: 32px 48px; }
   .row2 { grid-template-columns: minmax(0, 1fr); }
   .purpose { flex-direction: column; gap: 2px; }
@@ -262,6 +267,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <nav class="nav" aria-label="Main">
       <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
       <a href="/directory/" data-nav="directory" aria-current="page">Directory</a>
+      <a href="/leaderboard/" data-nav="leaderboard">Leaderboard</a>
       <a href="/how-we-score/" data-nav="method">How we score</a>
       <a href="/suggest/" data-nav="submit">Suggest a tool</a>
     </nav>
@@ -288,6 +294,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   <div class="wrap">
     <div class="foot-links">
       <a href="/how-we-score/">How tools are selected</a>
+      <a href="/benchmarks/">Benchmarks</a>
       <a href="/about/">About &amp; disclaimers</a>
       <a href="/legal-notice/">Legal notice (Impressum)</a>
       <a href="/privacy/">Privacy policy</a>
@@ -314,7 +321,7 @@ const SIZES = {
   S: { name: "Small", def: "One person or a few friends, usually self-funded. Most vibe-coded apps live here." },
   M: { name: "Medium", def: "A small team or a community project with little or no outside money." },
   L: { name: "Large", def: "An established company with serious investors behind it." },
-  XL: { name: "Extra large", def: "The behemoths. Reviewed rarely, as the baseline a category is measured against." }
+  XL: { name: "Extra large", def: "The behemoths. Reviewed rarely, as benchmarks outside the directory, to show what everything else is measured against." }
 };
 const SCOPES = {
   gadget: { name: "Gadget", def: "Does one thing, usually needs no account. You could lose it without losing anything." },
@@ -330,6 +337,7 @@ const CATS = [
   { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
   { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
   { id: "books", name: "Books & libraries", verb: "Keep and read my own books", instead: "Kindle, Apple Books, Google Play Books" },
+  { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 const TOOLS = [
@@ -470,8 +478,41 @@ const TOOLS = [
     price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
     tags: ["Open source", "Free", "Encrypted", "No phone number"], s: [4,4,4,5,4,3],
     body: ["Delta Chat borrows the oldest messaging network there is, email. It works with any email account, or with a simple chat relay, so there is no central company to close it down or sell your contact list, and messages are end-to-end encrypted. The developers are based in Germany and the apps are free and open source.",
-      "The catch is the one every chat app has: it only works if your friends are on it too, which is what keeps Delivery at 3. Privacy also depends on the mail server carrying the messages, so a modern relay is better than an old inbox."] }
+      "The catch is the one every chat app has: it only works if your friends are on it too, which is what keeps Delivery at 3. Privacy also depends on the mail server carrying the messages, so a modern relay is better than an old inbox."] },
+  { slug: "openclaw", name: "OpenClaw", cat: "agents", size: "M", scope: "system", url: "https://openclaw.ai",
+    one: "An open-source AI assistant that runs on your own computer and works through your chat apps.", replaces: "Hosted AI assistants such as ChatGPT agents and Copilot",
+    price: "Free; you pay your model provider", source: "Open source (MIT)", platforms: "macOS, Linux, Windows, Android, iOS",
+    tags: ["Open source", "Free", "Self-hostable", "Needs care"], s: [3,4,3,4,4,3],
+    body: ["OpenClaw is an AI assistant that runs on your own computer and talks to you through the chat apps you already use, such as Telegram, Signal, Slack or WhatsApp. It can take actions for you, like replying to emails, using whichever AI models you choose, and its memory and credentials stay on your own hardware. The code is MIT licensed and the project belongs to the OpenClaw Foundation, a non-profit, with OpenAI listed as a donor and not an owner. There is no paid tier, hosted service or token.",
+      "The catch is how much it can do on your behalf. To be useful it needs your logins, and the warnings are loud: Gartner called it an unacceptable cybersecurity risk for businesses, and one report counted more than 135,000 copies exposed to the internet. Its creator joined OpenAI in February 2026, which makes the foundation's independence worth watching. It scores well on Power and Lock-in and lower on being something an ordinary person can safely point at their whole life."] },
+  { slug: "hermes-agent", name: "Hermes Agent", cat: "agents", size: "L", scope: "system", url: "https://hermes-agent.nousresearch.com",
+    one: "An open-source AI agent that learns skills from the tasks it does and remembers you.", replaces: "Hosted AI assistants such as ChatGPT agents and Copilot",
+    price: "Free; optional paid model plans", source: "Open source (MIT)", platforms: "Linux, Mac, Windows, Android via Termux",
+    tags: ["Open source", "Free", "Self-hostable", "Needs care"], s: [3,4,3,3,4,3],
+    body: ["Hermes Agent comes from Nous Research, a start-up founded in 2023 that also releases open AI models. The agent runs in a terminal or through messaging apps such as Telegram, Signal and Slack, writes reusable skills from the tasks it completes and remembers what it learns about you across sessions. The code is MIT licensed, it works with Nous's own models, OpenRouter, OpenAI or any endpoint you choose, and it can run on a laptop, a cheap server or in a container.",
+      "Nous is also a venture-backed company, reported this autumn to be raising $90 million at a $1.5 billion valuation, and it sells optional model plans from $20 to $200 a month. The licence means the community could keep the software going whatever the company does, which helps Longevity, but the growth plans pull on Power, and that is why it sits in the Large band. Like any agent with your logins and a shell, it asks for care, and its documentation lists approvals, pairing and container isolation as safeguards."] }
 ];
+
+const BENCH = [
+  { slug: "microsoft-word", name: "Microsoft Word", cat: "notes", size: "XL", scope: "tool", url: "https://www.microsoft.com/en-us/microsoft-365/word",
+    one: "The word processor that set the standard, and still sets the terms.", replaces: "The tool the notes and writing apps are measured against",
+    price: "Subscription, or one-time Office purchase", source: "Closed source", platforms: "Windows, Mac, iOS, Android, web",
+    tags: ["Benchmark", "Closed source", "Subscription"], s: [2,2,3,1,3,4],
+    body: ["Word is the reason most of us call every document a “Word file”. It sets the standard for word processing, and by the mid-1990s it already held most of the market. The .docx format is an open international standard that other programs read, but formatting often shifts when a document leaves Word, and the software itself is proprietary.",
+      "Microsoft sells it mostly through a Microsoft 365 subscription that includes its Copilot AI features. A one-time Office purchase still exists, but those perpetual versions miss features added to the subscription. Word does its job superbly, which earns it a 4 on Delivery, and it shows how a tool can be excellent and still leave you with little say. Compare it with the writing tools in the directory."] },
+  { slug: "whatsapp", name: "WhatsApp", cat: "talk", size: "XL", scope: "system", url: "https://www.whatsapp.com",
+    one: "The chat app three billion people can't easily leave.", replaces: "The tool the chat apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Android, iOS, Windows, Mac, web",
+    tags: ["Benchmark", "Closed source", "Needs a phone number"], s: [2,1,2,2,2,5],
+    body: ["WhatsApp is how about three billion people keep in touch, and that scale is both its strength and its trap. Messages are end-to-end encrypted with the Signal protocol, which is a real protection, but you need a phone number to join, the app is run by Meta, and what Meta can see about who talks to whom is a long-running worry. Backups are encrypted only if you switch that on, and Meta's AI assistant now sits inside the app.",
+      "Leaving costs you your whole circle, because taking your conversations with you is hard and the company has pursued unofficial clients in the past. In the EU the Digital Markets Act requires it to let other services connect, which could loosen the grip. For nearly everyone it simply works, so Delivery is its one top score."] },
+  { slug: "gmail", name: "Gmail", cat: "talk", size: "XL", scope: "system", url: "https://workspace.google.com/products/gmail/",
+    one: "Excellent email that anchors your whole Google life.", replaces: "The tool the email and chat apps are measured against",
+    price: "Free; paid storage", source: "Closed source", platforms: "Web, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Free"], s: [2,3,2,1,3,5],
+    body: ["Gmail is excellent mail: it filters spam well, stays up and works everywhere. It also anchors your whole Google life, with 15 GB of free storage shared with Drive and Photos, and an address that only Google can host unless you pay for Workspace and your own domain. Until 2017 Google scanned message text to target ads, and its terms still let it analyse mail to power its own features.",
+      "You can leave in principle, because Gmail supports IMAP and POP and Google lets you export your data, but your address, your contacts and years of logins stay behind with the old account. Google also has a record of retiring services, such as Inbox in 2019 and the basic HTML view in 2024. Gmail is a good example of a tool that is hard to fault on delivery and hard to trust on power."] }
+].map(t => Object.assign(t, { bench: true }));
 
 const total = t => t.s.reduce((a, b) => a + b, 0);
 const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Manipulative";
@@ -506,16 +547,16 @@ function shot(t) {
 function chips(t) {
   return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
 }
-function row(t) {
+function row(t, rank) {
   const n = total(t);
-  return `<a class="tool-row" href="#tool-${t.slug}">
+  return `<a class="tool-row${rank ? " ranked" : ""}" href="#${t.bench ? "bench" : "tool"}-${t.slug}">${rank ? `<span class="rank-n" aria-label="Rank ${rank}">${rank}</span>` : ""}
     <div class="lead">${logo(t, "sm")}<div><h3>${esc(t.name)}</h3><p class="one">${esc(t.one)}</p>${chips(t)}</div></div>
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini">${band(n)}</span></div></a>`;
 }
 
 function home() {
   const t = TOOLS[featureIndex % TOOLS.length];
-  const counts = k => TOOLS.filter(x => x.size === k).length;
+  const counts = k => k === "XL" ? BENCH.length : TOOLS.filter(x => x.size === k).length;
   return `<div class="home">
     <section class="hero">
       <h1>What would you like to do?</h1>
@@ -546,7 +587,7 @@ function home() {
   <section class="sizes">
     <p class="label">Browse by who makes it</p>
     <h2>Small makers first. Giants for comparison.</h2>
-    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<a class="size-cell" href="#size-${k}"><span class="size-letter">${k}</span><span>${v.name} (${counts(k)})</span><small>${v.def}</small></a>`).join("")}</div>
+    <div class="size-grid">${Object.entries(SIZES).map(([k, v]) => `<a class="size-cell" href="#${k === "XL" ? "benchmarks" : "size-" + k}"><span class="size-letter">${k}</span><span>${v.name} (${counts(k)})</span><small>${v.def}</small></a>`).join("")}</div>
   </section>`;
 }
 
@@ -606,6 +647,13 @@ const CATCOPY = {
     faq: [["What is an alternative to Pinterest?", "{arena} is a place to collect images, links and ideas with no algorithmic feed and no ads."],
       ["What is an open-source alternative to EndNote or Mendeley?", "{zotero} is open source, built by a non-profit, and exports your library to standard formats."],
       ["Is there a free alternative to Miro for quick diagrams?", "{excalidraw} is a free browser whiteboard that needs no account for basic use."]] },
+  agents: { h1: "Open-source alternatives to hosted AI assistants", lede: "AI agents you run yourself, on models you choose.",
+    intro: ["An AI agent doesn't just answer questions. It acts for you, which means it needs your logins, your files and your trust. Hosted assistants keep all of that on someone else's servers. {openclaw} and {hermes-agent} are open-source agents you run on your own machine, working through the chat apps you already use and connecting to whichever AI models you pick.",
+      "Both are powerful and both are young, so we score them on how much control they give you and mark how much care they ask for."],
+    choose: "Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use the MIT licence.",
+    faq: [["Is there an open-source alternative to ChatGPT agents?", "Yes. {openclaw} and {hermes-agent} are both MIT licensed and run on your own computer or server."],
+      ["Are AI agents safe to run?", "They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so."],
+      ["Do I still need an AI model provider?", "Usually yes. The agents are free, but they send your prompts to a model you choose, either a hosted one you pay for or one you run yourself."]] },
   books: { h1: "Alternatives to Kindle and Apple Books", lede: "Keep your own ebook library, in files you control.",
     intro: ["Buying books from a store that can change or end the deal at any time makes your shelf a rental. {calibre} keeps your library on your own computer, converts between formats and sends books to your reader.",
       "It is a shelf you own, with no store attached."],
@@ -621,12 +669,12 @@ function category(id) {
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   ${k ? `<div class="prose">${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}</div>` : ""}
   <h2 class="list-h">The tools</h2>
-  <div class="tool-list">${list.map(row).join("")}</div>
-  <p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>
+  <div class="tool-list">${list.map(t => row(t)).join("")}</div>
+  ${(() => { const b = BENCH.filter(x => x.cat === id); return b.length ? `<p class="empty">For comparison, we also reviewed ${b.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30, ${band(total(x))})`).join(" and ")}, the giant${b.length > 1 ? "s" : ""} these tools are measured against. They sit outside the directory, on the <a href="#benchmarks">benchmarks page</a>.</p>` : `<p class="empty">A benchmark review of the biggest tool in this category is on its way, so you can see what these are measured against.</p>`; })()}
   ${k ? `<div class="prose"><h2>How to choose</h2><p>${linkify(k.choose)}</p><h2>Questions people ask</h2>${k.faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${linkify(a)}</p>`).join("")}</div>` : ""}`;
 }
 
-const filt = { size: "all", scope: "all", cat: "all", verdict: "all" };
+const filt = { size: "all", scope: "all", cat: "all", verdict: "all", lbcat: "all" };
 const VERDICT_MIN = { all: 0, leaning: 18, convivial: 25 };
 function directory(preset) {
   if (preset) Object.assign(filt, { size: "all", scope: "all", cat: "all", verdict: "all" }, preset);
@@ -634,29 +682,29 @@ function directory(preset) {
     .sort((a, b) => a.name.localeCompare(b.name));
   const grp = (key, label, opts) => `<div class="filter-group" role="group" aria-label="${label}"><span class="label">${label}</span>${opts.map(([v, l]) => `<button class="fbtn" type="button" data-f="${key}" data-v="${v}" aria-pressed="${filt[key] === v}">${l}</button>`).join("")}</div>`;
   return `<p class="crumbs"><a href="#home">Home</a> / Directory</p>
-  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, A to Z. Scores sit beside each one, but there is no sitewide top ten. Compare tools within a category, against the giant they replace.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>The directory</h1><p>Every tool we have reviewed, A to Z, with its score. Want the best of the lot? See the <a href="#leaderboard">leaderboard</a>.</p></div>
   <div class="filters">
     ${grp("size", "Maker", [["all", "All"], ["S", "S"], ["M", "M"], ["L", "L"], ["XL", "XL"]])}
     ${grp("scope", "Scope", [["all", "All"], ["gadget", "Gadget"], ["tool", "Tool"], ["system", "System"]])}
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
   <div class="filters">${grp("cat", "Category", [["all", "All"]].concat(CATS.map(c => [c.id, c.name])))}</div>
-  <div class="tool-list">${list.length ? list.map(row).join("") : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>'}</div>`;
+  <div class="tool-list">${list.length ? list.map(t => row(t)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>`;
 }
 
-function tool(slug) {
-  const t = TOOLS.find(x => x.slug === slug); if (!t) return notFound();
+function tool(slug, isBench) {
+  const t = (isBench ? BENCH : TOOLS).find(x => x.slug === slug); if (!t) return notFound();
   const n = total(t), c = catOf(t.cat);
-  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#cat-${c.id}">${esc(c.name)}</a> / ${esc(t.name)}</p>
+  return `<p class="crumbs"><a href="#home">Home</a> / ${isBench ? '<a href="#benchmarks">Benchmarks</a>' : `<a href="#cat-${c.id}">${esc(c.name)}</a>`} / ${esc(t.name)}</p>
   <div class="review">
     <article class="review-body">
       <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
-      <p class="instead">Instead of <b>${esc(t.replaces)}</b></p>
+      ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory or the leaderboard, and it is an example, not a recommendation.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
       ${chips(t)}
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
-      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); return rel.length ? `<section class="related"><h2>Other tools for “${esc(c.verb.toLowerCase())}”</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""; })()}
+      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 4); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></a></li>`).join("")}</ul></section>` : ""); })()}
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
@@ -693,6 +741,31 @@ function what() {
   </div>`;
 }
 
+function leaderboard() {
+  const list = TOOLS.filter(t => filt.lbcat === "all" || t.cat === filt.lbcat).sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name));
+  let last = null, rank = 0;
+  const rows = list.map((t, i) => { if (total(t) !== last) { rank = i + 1; last = total(t); } return row(t, rank); }).join("");
+  const grp = `<div class="filter-group" role="group" aria-label="Category"><span class="label">Category</span>${[["all", "All"]].concat(CATS.map(c => [c.id, c.name])).map(([v, l]) => `<button class="fbtn" type="button" data-f="lbcat" data-v="${v}" aria-pressed="${filt.lbcat === v}">${l}</button>`).join("")}</div>`;
+  return `<p class="crumbs"><a href="#home">Home</a> / Leaderboard</p>
+  <div class="page-head" style="margin-top:14px"><h1>The leaderboard</h1><p>Every tool in the directory, ranked by its score out of 30. Tools with the same score share a rank.</p></div>
+  <div class="filters">${grp}</div>
+  <div class="tool-list">${rows}</div>
+  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
+}
+
+function benchmarks() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Benchmarks</p>
+  <div class="page-head" style="margin-top:14px"><h1>Benchmarks: how the giants score</h1><p>A few extra large tools, scored with the same six questions, so you can see what everything else is measured against.</p></div>
+  <div class="prose">
+    <p>The directory is for small and medium tools. Now and then we review a giant too, so a score of 25 has something to be compared with. These reviews are examples, not recommendations, and they are not listed in the directory or the leaderboard.</p>
+  </div>
+  <div class="tool-list">${BENCH.map(t => row(t)).join("")}</div>
+  <div class="prose">
+    <h2>What they show</h2>
+    <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. Open the <a href="#directory">directory</a> to see the alternatives, or read <a href="#method">how we score</a> to see how the questions work.</p>
+  </div>`;
+}
+
 function method() {
   return `<p class="crumbs"><a href="#home">Home</a> / How we score</p>
   <div class="page-head" style="margin-top:14px"><h1>How tools are selected</h1><p>Every tool is scored on six questions, 0 to 5 each, for a total out of 30. The questions come from the six ways Ivan Illich said tools tip out of balance, translated for software.</p></div>
@@ -713,8 +786,10 @@ function method() {
     <h2>Scope: how much of your life it holds</h2>
     <dl class="def">${Object.entries(SCOPES).map(([k, v]) => `<dt>${v.name}</dt><dd>${v.def}</dd>`).join("")}</dl>
     <p>Scope sets how deep a review goes. A gadget gets a short card. A system that holds your passwords or photos gets the long treatment.</p>
-    <h2>Why no leaderboard</h2>
-    <p>Scores help you compare tools that do the same job. A sitewide ranking would turn the directory into a race, and a race toward bigger and better is exactly what Illich warned against. So we compare within categories, against the giant each tool replaces.</p>
+    <h2>The leaderboard</h2>
+    <p>Every tool in the directory is ranked by its total on the <a href="#leaderboard">leaderboard</a>, so you can see at a glance which ones come out most convivial. A total hides detail, though, so open a review to see how a tool did on each of the six questions, and compare within a category when you are choosing, because a password manager and a painting program do different jobs.</p>
+    <h2>Benchmarks</h2>
+    <p>Now and then we score one of the giants, so you can see what everything else is measured against. These <a href="#benchmarks">benchmark reviews</a> use the same questions and the same scale, and they stay outside the directory and the leaderboard.</p>
     <h2>Our own tools</h2>
     <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
     <h2>Credit where it's due</h2>
@@ -726,7 +801,7 @@ function about() {
   return `<p class="crumbs"><a href="#home">Home</a> / About</p>
   <div class="page-head" style="margin-top:14px"><h1>About this directory</h1><p>A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.</p></div>
   <div class="prose">
-    <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, so there is something to measure against.</p>
+    <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, as <a href="#benchmarks">benchmarks</a>, so there is something to measure against.</p>
     <h2>About the book</h2>
     <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. The book is still under copyright. We paraphrase its ideas, quote it rarely and briefly with a source, and never host or link to copies of the text.</p>
     <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
@@ -799,17 +874,17 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
-const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
+const ROUTES = { home: "/", directory: "/directory/", leaderboard: "/leaderboard/", benchmarks: "/benchmarks/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
   for (const [id, path] of Object.entries(ROUTES)) if (path === p) return id;
-  const m = p.match(/^\/(category|tools|size)\/([A-Za-z0-9-]+)\/$/);
-  if (m) return ({ category: "cat-", tools: "tool-", size: "size-" })[m[1]] + m[2];
+  const m = p.match(/^\/(category|tools|size|benchmarks)\/([A-Za-z0-9-]+)\/$/);
+  if (m) return ({ category: "cat-", tools: "tool-", size: "size-", benchmarks: "bench-" })[m[1]] + m[2];
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication" };
+const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {
@@ -818,6 +893,13 @@ function seo(id) {
   if (id === "directory") return out("Directory of convivial software and alternatives", `All ${TOOLS.length} reviewed tools, from offline maps to password managers, each scored out of 30 against Illich's six tests. Filter by maker, scope and verdict.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS)] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+  if (id === "leaderboard") { const ranked = TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)); return out("Leaderboard of the most convivial software", `The ${TOOLS.length} tools in the directory, ranked by how convivial they are, scored out of 30 on six questions from Ivan Illich.`, { ld: [crumbs([["Home", "/"], ["Leaderboard", "/leaderboard/"]]), listLd(ranked)] }); }
+  if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
+  if (id.startsWith("bench-")) { const t = BENCH.find(x => x.slug === id.slice(6)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const n = total(t); return out(`${t.name} benchmark review: ${band(n)} (${n}/30)`, `${t.one} How ${t.name} scores on the six questions we use for every tool: ${n}/30, ${band(n)}.`, { type: "article",
+      ld: [{ "@type": "Review", name: `${t.name} benchmark review`, datePublished: "2026-10-23", author: { "@type": "Organization", name: "Tools for Conviviality", url: SITE + "/" }, reviewBody: t.body.join(" "),
+        reviewRating: { "@type": "Rating", ratingValue: n, bestRating: 30, worstRating: 0, name: band(n) }, itemReviewed: { "@type": "SoftwareApplication", name: t.name, url: t.url, description: t.one, applicationCategory: APPCAT[t.cat] || "UtilitiesApplication", operatingSystem: t.platforms } },
+        crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"], [t.name, idToPath(id)]])] }); }
   if (id.startsWith("tool-")) { const t = TOOLS.find(x => x.slug === id.slice(5)); if (!t) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const n = total(t), c = catOf(t.cat), im = IMG[t.slug], soc = im && im.social && im.social[1200];
     return out(`${t.name} review: ${band(n)} (${n}/30)`, `${t.one} Instead of ${t.replaces}. Scored ${n}/30 (${band(n)}) on Illich's six tests of a convivial tool.`, {
@@ -858,6 +940,9 @@ function render() {
   if (h === "home") html = home();
   else if (h.startsWith("cat-")) { html = category(h.slice(4)); nav = "directory"; }
   else if (h.startsWith("tool-")) { html = tool(h.slice(5)); nav = "directory"; }
+  else if (h.startsWith("bench-")) { html = tool(h.slice(6), true); nav = "benchmarks"; }
+  else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
+  else if (h === "leaderboard") { html = leaderboard(); nav = "leaderboard"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
   else if (h === "directory") { html = directory(); nav = "directory"; }
   else if (h === "what") { html = what(); nav = "what"; }
@@ -876,7 +961,7 @@ function render() {
 function bind() {
   const another = document.getElementById("another");
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
-  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
+  document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(b.dataset.f === "lbcat" ? leaderboard() : directory()); bind(); });
   const form = document.getElementById("suggest");
   if (form) form.onsubmit = e => {
     e.preventDefault();

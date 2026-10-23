@@ -127,5 +127,39 @@
     "slug": "deltachat",
     "name": "Delta Chat",
     "url": "https://delta.chat"
+  },
+  {
+    "slug": "openclaw",
+    "name": "OpenClaw",
+    "url": "https://openclaw.ai"
+  },
+  {
+    "slug": "hermes-agent",
+    "name": "Hermes Agent",
+    "url": "https://hermes-agent.nousresearch.com"
+  },
+  {
+    "slug": "microsoft-word",
+    "name": "Microsoft Word",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/word",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "whatsapp",
+    "name": "WhatsApp",
+    "url": "https://www.whatsapp.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "gmail",
+    "name": "Gmail",
+    "url": "https://workspace.google.com/products/gmail/",
+    "capture": {
+      "shot": false
+    }
   }
 ]

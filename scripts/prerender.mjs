@@ -30,11 +30,11 @@ page.on("pageerror", e => console.error("page error:", e.message));
 
 await page.goto(base + "/");
 await page.waitForFunction(() => window.__ready === true);
-const { tools, cats } = await page.evaluate(() => ({ tools: TOOLS.map(t => t.slug), cats: CATS.map(c => c.id) }));
+const { tools, cats, bench } = await page.evaluate(() => ({ tools: TOOLS.map(t => t.slug), cats: CATS.map(c => c.id), bench: BENCH.map(t => t.slug) }));
 
 const routes = [
-  "/", "/directory/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/legal-notice/", "/privacy/",
-  ...cats.map(c => `/category/${c}/`), ...tools.map(t => `/tools/${t}/`)
+  "/", "/directory/", "/leaderboard/", "/benchmarks/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/legal-notice/", "/privacy/",
+  ...cats.map(c => `/category/${c}/`), ...tools.map(t => `/tools/${t}/`), ...bench.map(t => `/benchmarks/${t}/`)
 ];
 const indexable = [];
 for (const route of routes) {
@@ -55,7 +55,7 @@ await page.waitForFunction(() => window.__ready === true);
 await fs.writeFile(path.join(ROOT, "404.html"), "<!doctype html>\n" + await page.evaluate(() => document.documentElement.outerHTML));
 
 const today = new Date().toISOString().slice(0, 10);
-const prio = r => (r === "/" ? "1.0" : r.startsWith("/tools/") ? "0.8" : r.startsWith("/category/") || r === "/directory/" ? "0.7" : "0.5");
+const prio = r => (r === "/" ? "1.0" : r.startsWith("/tools/") ? "0.8" : r.startsWith("/category/") || r === "/directory/" || r === "/leaderboard/" ? "0.7" : r.startsWith("/benchmarks/") ? "0.6" : "0.5");
 await fs.writeFile(path.join(ROOT, "sitemap.xml"),
   `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
   indexable.map(r => `  <url><loc>${SITE}${r}</loc><lastmod>${today}</lastmod><priority>${prio(r)}</priority></url>`).join("\n") + `\n</urlset>\n`);
