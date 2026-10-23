@@ -82,8 +82,8 @@ main .wrap { padding-block: 48px 64px; }
 .hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
 .purposes { margin-top: 32px; border-top: 1px solid var(--line); }
 .purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
-.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); }
-.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; }
+.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); flex: 1 1 auto; min-width: 0; }
+.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; flex: none; }
 .purpose:hover .p-verb { color: var(--accent); }
 .purpose:hover .p-meta { color: var(--fg); }
 
@@ -312,7 +312,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p>If you make Ente Photos, you can put this badge on your site. It reports a dated review, it is not a certification, and it costs nothing. Link it to this page so visitors can see the review, and don't edit the numbers: the image always shows the current score.</p>
     <label class="visually-hidden" for="bs-ente">Badge code for light backgrounds</label><textarea id="bs-ente" readonly="" onfocus="this.select()">&lt;a href="https://toolsforconviviality.com/tools/ente/"&gt;&lt;img src="https://toolsforconviviality.com/badges/ente-light.svg" alt="Tools for Conviviality review: 24/30, Leaning convivial" width="255" height="72"&gt;&lt;/a&gt;</textarea>
     <p>For dark backgrounds, use <code>ente-dark.svg</code> in place of <code>ente-light.svg</code>.</p></section>
-      <section class="related"><h2>Other tools for “make pictures and video”</h2><ul><li><a href="/tools/photomosh/"><b>PhotoMosh</b><span>Glitch your photos, videos and webcam in the browser.</span></a></li></ul></section>
+      <p class="bench-note">For comparison, we also reviewed <a href="/benchmarks/google-photos/">Google Photos</a> (16/30) as a benchmark.</p><section class="related"><h2>Other tools for “make pictures and video”</h2><ul><li><a href="/tools/photomosh/"><b>PhotoMosh</b><span>Glitch your photos, videos and webcam in the browser.</span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Ente Photos Info</span><i aria-hidden="true"></i></div>
@@ -371,16 +371,17 @@ const SCOPES = {
   system: { name: "System", def: "Something your data lives in and your life runs on. Gets the most scrutiny." }
 };
 const CATS = [
+  { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT and Claude" },
   { id: "notes", name: "Writing & notes", verb: "Keep my own notes and documents", instead: "Microsoft Word, OneNote, Google Docs" },
   { id: "files", name: "Files & sync", verb: "Move files between my devices", instead: "Google Drive, OneDrive, AirDrop" },
   { id: "maps", name: "Maps & places", verb: "Find my way without being tracked", instead: "Google Maps" },
   { id: "reading", name: "Search & reading", verb: "Read the web on my own terms", instead: "Google Search, Google News" },
   { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
   { id: "images", name: "Images & video", verb: "Make pictures and video", instead: "Google Photos, Instagram filters, Teams backgrounds" },
-  { id: "talk", name: "Talking to people", verb: "Tame my chat apps", instead: "A browser full of Slack, WhatsApp and Teams tabs" },
-  { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
-  { id: "agents", name: "AI agents", verb: "Get an AI helper I control", instead: "ChatGPT agents, Gemini and Copilot" },
   { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
+  { id: "talk", name: "Chat", verb: "Chat with people", instead: "WhatsApp, Slack and Teams" },
+  { id: "email", name: "Email", verb: "Send and read email", instead: "Gmail and Outlook" },
+  { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 const TOOLS = [
@@ -588,6 +589,54 @@ const TOOLS = [
     tags: ["Free", "Closed source", "Account needed"], s: [4,3,3,2,2,4],
     body: ["Serif made Affinity, and Canva bought Serif in March 2024. In October 2025 it released version 3, one app that combines the earlier Designer, Photo and Publisher apps and is available at no charge, and it withdrew the old paid apps from sale. The Canva AI features inside it, such as generative fill, need a Canva Pro subscription.",
       "It is a polished and capable Adobe alternative, and the free price is a real draw. It is also closed software owned by a company whose main business is a subscription platform, and version 2 stopped being actively maintained within a year, though existing licences still work. The ownership is the reason it scores below the open tools. The download buttons on its site go through a Canva sign-in, so expect to need a Canva account."] },
+  { slug: "signal", name: "Signal", cat: "talk", size: "M", scope: "system", url: "https://signal.org",
+    one: "A private messenger run by a nonprofit, with end-to-end encryption by default.", replaces: "WhatsApp",
+    price: "Free", source: "Open source", platforms: "Android, iOS, Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Encrypted", "Nonprofit"], s: [3,3,4,4,3,5],
+    body: ["Signal is run by an independent nonprofit that lives on grants and donations, not advertising. Messages and calls are end-to-end encrypted with the open-source Signal Protocol, and the organisation says it cannot read or listen to them. It works on phones and on Windows, Mac and Linux desktops, and it is simple enough for people who are not technical.",
+      "It is a centralised service, so everything runs through Signal's own servers and you cannot move to another provider and keep your contacts. Signal has traditionally asked for a phone number to sign up, so check its current rules, and taking your chat history with you is hard. It is the easy answer for people who want what WhatsApp does without Meta in the middle."] },
+  { slug: "element", name: "Element", cat: "talk", size: "M", scope: "system", url: "https://element.io",
+    one: "A messenger built on the open Matrix standard, which you can host yourself.", replaces: "Slack, Teams and WhatsApp",
+    price: "Free for personal use; paid plans for organisations", source: "Open source", platforms: "Web, desktop, iOS, Android",
+    tags: ["Open source", "Encrypted", "Self-hostable", "Open protocol"], s: [3,4,3,4,5,3],
+    body: ["Element is a messaging and collaboration app built on Matrix, an open and decentralised standard that its makers compare to email for real-time chat, because different providers can talk to each other. The Matrix.org Foundation governs the standard and Element Creations Ltd owns the Element name, so there is both a community and a company behind it. Messages and calls are end-to-end encrypted, and organisations can host it themselves.",
+      "Because the standard is open, you can move to another provider without losing your place, and the system keeps working if one company goes away. The price is a rougher first experience than WhatsApp for newcomers, and self-hosting asks for real technical skill. We could not confirm its licence or the limits of its free tier from its site."] },
+  { slug: "thunderbird", name: "Thunderbird", cat: "email", size: "M", scope: "tool", url: "https://www.thunderbird.net",
+    one: "A free email, calendar and contacts app that works with any mail provider.", replaces: "Gmail's web app and Outlook",
+    price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android",
+    tags: ["Open source", "Free", "Works offline", "Any provider"], s: [3,5,4,4,5,4],
+    body: ["Thunderbird is part of the Mozilla family, says it is free forever and is funded by user donations. It combines mail, calendar and contacts, with a unified inbox, tags, filters and extensions, on Windows, Mac, Linux and Android. It works with the mail accounts you already have, so it lets you leave Gmail's interface without leaving your address.",
+      "Because it keeps mail on your own computer and speaks standard protocols, you can switch providers without losing your archive, which is why it does well on Lock-in and Longevity. It is a mail app and not a mail service, so it does not replace your provider, and its look is older than the web apps. We could not confirm its licence from its site."] },
+  { slug: "proton-mail", name: "Proton Mail", cat: "email", size: "M", scope: "system", url: "https://proton.me/mail",
+    one: "Encrypted email from a Swiss company, with a free plan and paid upgrades.", replaces: "Gmail",
+    price: "Free (1 GB); paid plans from $3.99 a month", source: "Open source apps", platforms: "Web and mobile apps",
+    tags: ["Encrypted", "Free tier", "Subscription"], s: [3,3,3,4,3,4],
+    body: ["Proton Mail comes from Proton AG in Geneva. It says it is the largest end-to-end encrypted email service, uses zero-access encryption so it cannot read your inbox, and keeps a free plan with 1 GB of space. Paid plans add storage and custom domains, and Proton says subscribers pay for it, not advertisers or your data. It also says all its services are open source and independently audited.",
+      "That makes it a reasonable swap for Gmail if you want privacy without running anything yourself. The limits are that it is one company's service, so your address lives there, the free plan is small, and using ordinary mail apps needs a separate bridge program that we could not describe from its site. Check the price when you sign up."] },
+  { slug: "tuta", name: "Tuta", cat: "email", size: "S", scope: "system", url: "https://tuta.com",
+    one: "Encrypted email, calendar and contacts from a German company.", replaces: "Gmail",
+    price: "Free; paid plans for more", source: "Open source clients", platforms: "Web, Android, iOS",
+    tags: ["Encrypted", "Free tier", "No ads"], s: [3,2,3,4,3,4],
+    body: ["Tuta, formerly Tutanota, is an encrypted email, calendar and contacts service from Germany, started in 2011 by Arne Möhle and Matthias Pfau. It says it encrypts your data end to end, including with post-quantum cryptography, and that its mail will be free forever and ad-free. All its clients are open source and can be audited, and paid plans add things like custom domains and aliases.",
+      "It is a good private home for mail, with the calendar included. As far as we know it does not support IMAP, so ordinary mail apps cannot connect to it, and moving in or out takes some effort. We could not confirm how the company is funded."] },
+  { slug: "ollama", name: "Ollama", cat: "agents", size: "M", scope: "system", url: "https://ollama.com",
+    one: "Runs open AI models on your own computer and gives other apps a local server to use them.", replaces: "Hosted chatbots such as ChatGPT",
+    price: "Free; optional cloud models", source: "Open source (MIT)", platforms: "Mac, Windows, Linux, Docker",
+    tags: ["Open source", "Free", "Works offline", "Runs locally"], s: [3,5,4,4,5,4],
+    body: ["Ollama is an MIT-licensed tool that runs open AI models on your own machine and exposes them through a local server, so other apps can use them. Installers exist for Mac, Windows and Linux, with an official Docker image, and its page says you can also run models in the cloud, which sends your prompts off your computer. We could not confirm its pricing or whether the cloud options need an account.",
+      "It is the piece that makes a private, local assistant possible: your prompts stay on your computer when you use local models, and you can swap models whenever you like. The better models need a capable computer, and the company behind it decides how its cloud options develop."] },
+  { slug: "jan", name: "Jan", cat: "agents", size: "S", scope: "tool", url: "https://jan.ai",
+    one: "An open-source chat app that runs AI models fully offline on your computer.", replaces: "ChatGPT",
+    price: "Free", source: "Open source (Apache 2.0)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Works offline", "Runs locally"], s: [3,5,4,4,5,3],
+    body: ["Jan describes itself as an open-source ChatGPT alternative that runs 100% offline. It is Apache 2.0 licensed, downloads models such as Llama, Gemma and Qwen from Hugging Face, runs them on your machine and offers a local server compatible with OpenAI's. It can also connect to cloud models from OpenAI, Anthropic, Mistral and others if you choose.",
+      "That makes it an easy first step for someone who wants a ChatGPT-style window without sending text to a company. Its page says little about who runs the project, local models are smaller than the largest hosted ones so expect some difference in quality, and the better models need a good computer."] },
+  { slug: "goose", name: "goose", cat: "agents", size: "M", scope: "system", url: "https://github.com/block/goose",
+    one: "An open-source AI agent that runs on your machine and works with the model you choose.", replaces: "Hosted AI agents",
+    price: "Free; you pay your model provider", source: "Open source (Apache-2.0)", platforms: "Mac, Linux, Windows",
+    tags: ["Open source", "Free", "Runs locally", "Needs care"], s: [3,5,4,5,4,3],
+    body: ["goose is a general-purpose AI agent, not only a coding tool, that runs on your own machine as a desktop app, a command-line tool or an API you can embed. It is Apache-2.0 licensed and sits within the Agentic AI Foundation at the Linux Foundation. It works with more than 15 model providers, including local ones through Ollama, and connects to many extensions through the Model Context Protocol.",
+      "You choose the model and can keep everything local, so no single company controls what the agent does or sees. Like any agent it acts with your files and logins, so keep its access narrow. What you pay depends on the models you connect, and we could not describe its governance beyond what its repository links to."] },
   { slug: "deltachat", name: "Delta Chat", cat: "talk", size: "M", scope: "tool", url: "https://delta.chat",
     one: "A chat app that runs on ordinary email, with no phone number needed.", replaces: "WhatsApp, Telegram",
     price: "Free", source: "Open source", platforms: "Windows, Mac, Linux, Android, iOS",
@@ -627,8 +676,62 @@ const BENCH = [
     tags: ["Benchmark", "Closed source", "Subscription"], s: [2,2,2,1,1,4],
     body: ["Creative Cloud is the standard toolbox for designers, photographers and video editors, with Photoshop, Illustrator, Premiere Pro and many other apps under one subscription. The apps are excellent and the industry trades in their formats, which earns the suite a 4 on Delivery. It also shows how a tool can be superb and still leave you with little say.",
       "The software is rented, so your access ends when the payments do. Adobe's own terms say that on an annual plan paid monthly, cancelling after the first 14 days costs 50% of the remaining balance, and after you cancel the account drops to a free membership with 5 GB of cloud storage. In June 2024 the US Federal Trade Commission sued Adobe over how it disclosed cancellation fees and how hard it was to cancel, and Adobe said it would contest the claims. We could not confirm how that case ended. Compare it with the design tools in the directory."] },
-  { slug: "gmail", name: "Gmail", cat: "talk", size: "XL", scope: "system", url: "https://workspace.google.com/products/gmail/",
-    one: "Excellent email that anchors your whole Google life.", replaces: "The tool the email and chat apps are measured against",
+  { slug: "chatgpt", name: "ChatGPT", cat: "agents", size: "XL", scope: "system", url: "https://chatgpt.com",
+    one: "The assistant that made generative AI mainstream, and a closed service all the way down.", replaces: "The tool the AI assistants are measured against",
+    price: "Free; paid plans", source: "Closed source", platforms: "Web, Windows, Mac, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Hosted"], s: [2,2,3,1,2,4],
+    body: ["ChatGPT does an enormous range of things well, from drafting to coding to answering questions, which earns it a 4 on Delivery. It is also a hosted service that runs entirely on OpenAI's servers, so you need an account, a connection and OpenAI's continued goodwill, and you cannot run it yourself.",
+      "OpenAI's help pages say that for Free, Plus and Pro users it may use your content to train its models, with an opt-out in the settings. Thumbs up and thumbs down feedback can send the whole conversation into training even after you opt out, and temporary chats are exempt while they stay temporary. The agent features it sells act through your accounts, so using them means trusting one company with a great deal. Compare it with the assistants you can run yourself."] },
+  { slug: "claude", name: "Claude", cat: "agents", size: "XL", scope: "system", url: "https://claude.ai",
+    one: "Anthropic's assistant, a capable hosted service you cannot run yourself.", replaces: "The tool the AI assistants are measured against",
+    price: "Free; paid plans", source: "Closed source", platforms: "Web, Windows, Mac, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Hosted"], s: [2,2,3,2,2,4],
+    body: ["Claude is a capable assistant that does writing, analysis and coding well, so it scores a 4 on Delivery. Like ChatGPT it is a closed service that runs on its maker's servers, needs an account and cannot be run on your own machine.",
+      "It scores a point higher than ChatGPT on Power mostly because of how it handles your data. Anthropic's consumer terms ask Free, Pro and Max users to choose whether their chats may be used to improve Claude, with five years of retention if you say yes and 30 days if you say no, and commercial and API use sit outside that choice. This site was built with help from Claude, so weigh this review with that in mind. Either way it is a hosted product from one company, which is the gap the open tools in this category fill."] },
+  { slug: "google-drive", name: "Google Drive", cat: "files", size: "XL", scope: "system", url: "https://drive.google.com",
+    one: "Free cloud storage that ties your files to one Google account.", replaces: "The tool the file and sync apps are measured against",
+    price: "Free to 15 GB, then paid", source: "Closed source", platforms: "Web, Windows, Mac, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Free tier"], s: [2,3,2,1,2,5],
+    body: ["Drive is easy and everywhere, which is why it gets a 5 on Delivery: files show up on every device and sharing just works. It also puts your files in one company's hands. The 15 GB of free storage is shared with Gmail and Google Photos, Google holds the encryption keys and so can access your content, and client-side encryption is limited to certain Workspace business plans. Docs, Sheets and Slides use Google's own formats unless you export them.",
+      "Leaving is possible but takes effort, and Drive has had rough patches. A 2023 bug in Drive for desktop made some files disappear, a 2023 class action alleges Google deleted files from paying users without enough notice, and free storage has not grown since 2013. Compare it with the sync tools in the directory, which keep your files on devices you own."] },
+  { slug: "google-maps", name: "Google Maps", cat: "maps", size: "XL", scope: "system", url: "https://maps.google.com",
+    one: "The map most of us use, and one that also learns where we go.", replaces: "The tool the map apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Web, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Free"], s: [3,2,3,1,3,5],
+    body: ["Google Maps is used by over a billion people a month and is hard to beat for routes, businesses, reviews and live traffic, so Delivery is a 5. You can download maps for offline use, and Google has been moving Timeline data onto your device: Timeline is off by default, stored on the device, with an optional encrypted backup. Its traffic data is built from crowdsourced locations, which Google says are anonymous.",
+      "The map itself is built on data you cannot take with you, and Google raised prices sharply for developers in 2018 with six weeks' notice, so anyone building on it has felt the lack of control. Compare it with the offline, community-run maps in the directory."] },
+  { slug: "google-search", name: "Google Search", cat: "reading", size: "XL", scope: "system", url: "https://www.google.com",
+    one: "The search engine that sets the default for the web, and sells attention to pay for it.", replaces: "The tool the search and news apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Web, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Ad-funded"], s: [4,3,2,1,3,3],
+    body: ["Google handled about 90% of global searches in 2025, and it finds what most people want quickly. In August 2024 a US federal judge ruled that Google held an illegal monopoly over search and search advertising, and found it kept its lead by paying phone makers and browser developers to make it the default. Its revenue comes from ads, and reporters citing internal documents from that case described the product as bloated and overmonetised.",
+      "AI Overviews, which reached US users in May 2024, put a generated answer above the results and drew criticism for errors that Google called isolated examples. Google has also been criticised for long-lived cookies that can track searches. It is free and fast, and a good example of a tool that is dominant for good reasons and still leaves you few alternatives."] },
+  { slug: "google-photos", name: "Google Photos", cat: "images", size: "XL", scope: "system", url: "https://photos.google.com",
+    one: "Effortless photo backup, with your library living in a Google account.", replaces: "The tool the photo apps are measured against",
+    price: "Free to 15 GB, then paid", source: "Closed source", platforms: "Web, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Free tier"], s: [2,3,3,1,2,5],
+    body: ["Google Photos makes backup and search effortless, with excellent automatic organisation, so Delivery is a 5. The cost is dependence. Free storage is 15 GB shared across your Google account, backups in original quality count toward it, and Google warns that if you are inactive in Photos for two years or more your content may be deleted.",
+      "Google offers an export tool, but your library, albums and face groupings live with Google, and the service is paid for by a company whose business is advertising. Compare it with the encrypted photo tools in the directory."] },
+  { slug: "kindle", name: "Amazon Kindle", cat: "books", size: "XL", scope: "system", url: "https://www.amazon.com/kindle",
+    one: "The easiest way to buy and read a book, on terms that keep the book Amazon's.", replaces: "The tool the ebook apps are measured against",
+    price: "Books and devices sold separately", source: "Closed source", platforms: "Kindle devices, iOS, Android, web",
+    tags: ["Benchmark", "Closed source", "Copy protection"], s: [3,1,2,1,1,5],
+    body: ["Kindle makes buying and reading a book as easy as it can be, with a huge store, syncing across devices and a good reading experience, so Delivery is a 5. But coverage of Amazon's terms says you buy a licence to read Kindle books, not the books themselves, in formats and with copy protection built around Amazon's own apps and devices.",
+      "In February 2025 Amazon removed the option to download Kindle books to a computer and transfer them by USB, which had been the route many readers used to keep their own copies. Your shelf lasts as long as Amazon allows it to. Compare it with the ways of keeping your own books in the directory."] },
+  { slug: "pinterest", name: "Pinterest", cat: "collect", size: "XL", scope: "system", url: "https://www.pinterest.com",
+    one: "A lovely place to collect ideas, run as an advertising business.", replaces: "The tool the collecting apps are measured against",
+    price: "Free", source: "Closed source", platforms: "Web, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Ad-funded"], s: [3,2,2,1,2,3],
+    body: ["Pinterest is a pleasant way to collect visual ideas, and many people love it for that. It also requires registration to use, shows promoted pins from advertisers, and its terms give it a broad, sublicensable licence over what you post, though you keep ownership. Copies of content shared with others can remain after you delete your account.",
+      "Its business is advertising, with revenue of about US$3.65 billion in 2024, and it has leaned on AI tools to steer discovery. Its terms do not describe how to export a collection, so we could not confirm that you can take yours with you. Compare it with the collecting tools in the directory."] },
+  { slug: "google-password-manager", name: "Google Password Manager", cat: "passwords", size: "XL", scope: "tool", url: "https://passwords.google.com",
+    one: "Passwords built into Chrome and Android, tied to your Google account.", replaces: "The tool the password managers are measured against",
+    price: "Free", source: "Closed source", platforms: "Chrome, Android, iOS",
+    tags: ["Benchmark", "Closed source", "Free"], s: [3,3,3,1,2,4],
+    body: ["Google Password Manager is built into Chrome and Android and needs no setup, which is why so many people use it. When you are signed in to Chrome your passwords are saved to your Google Account, sync across devices and appear at passwords.google.com, and when you are not signed in they stay on your device. You can export your passwords from its settings.",
+      "The trade-off is that it puts the keys to all your accounts inside one Google account, owned by a company whose business is advertising, and it works best inside Google's own browser. Compare it with the password managers in the directory."] },
+  { slug: "gmail", name: "Gmail", cat: "email", size: "XL", scope: "system", url: "https://workspace.google.com/products/gmail/",
+    one: "Excellent email that anchors your whole Google life.", replaces: "The tool the email apps are measured against",
     price: "Free; paid storage", source: "Closed source", platforms: "Web, Android, iOS",
     tags: ["Benchmark", "Closed source", "Free"], s: [2,3,2,1,3,5],
     body: ["Gmail is excellent mail: it filters spam well, stays up and works everywhere. It also anchors your whole Google life, with 15 GB of free storage shared with Drive and Photos, and an address that only Google can host unless you pay for Workspace and your own domain. Until 2017 Google scanned message text to target ads, and its terms still let it analyse mail to power its own features.",
@@ -687,7 +790,7 @@ function home() {
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
         const list = toolsIn(c.id);
-        return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.map(x => x.name).join(", ")} ↗</span></a>`;
+        return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""} ↗</span></a>`;
       }).join("")}</div>
     </section>
     <aside>
@@ -781,12 +884,20 @@ const CATCOPY = {
       ["What is a free alternative to Premiere Pro?", "{kdenlive} is a free, open-source multi-track video editor."],
       ["What is an open-source alternative to Figma or Adobe XD?", "{penpot} is an open-source design and prototyping tool built on web standards, and you can host it yourself."],
       ["Are there open-source AI image tools?", "{comfyui} runs generation workflows on your own machine, and {artcraft} is an open-source studio for composing AI images and video. Check where each one sends your work and which models you load."]] },
-  talk: { h1: "Alternatives to WhatsApp, Slack and Teams", lede: "Tame the chat apps that live in your browser tabs.",
-    intro: ["Most of us keep several chat apps open at once because each of our friends and teams chose a different one. {ferdium} puts them all in one desktop window, which doesn't replace them but makes them easier to live with. {deltachat} takes a different route and builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down.",
-      "Neither is a perfect answer, and both are honest about it."],
-    choose: "The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control.",
-    faq: [["Can I use WhatsApp and Slack without keeping them all open?", "{ferdium} gathers your messaging services in one desktop app, so you manage them in one place."],
+  talk: { h1: "Alternatives to WhatsApp, Slack and Teams", lede: "Chat with people without a giant in the middle.",
+    intro: ["Most of us keep several chat apps open at once because each of our friends and teams chose a different one. {signal} is the easy private option, run by a nonprofit with encryption on by default. {element} runs on the open Matrix standard, so different providers can talk to each other and you can host it yourself. {deltachat} builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down.",
+      "{ferdium} takes a different route and puts all your chat apps in one desktop window, which does not replace them but makes them easier to live with."],
+    choose: "The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control. Look at who runs the network and whether you could take your contacts with you.",
+    faq: [["What is a private alternative to WhatsApp?", "{signal} offers end-to-end encryption by default and is run by a nonprofit. {element} and {deltachat} are open alternatives that are harder to start with and harder for anyone to shut down."],
+      ["Can I use WhatsApp and Slack without keeping them all open?", "{ferdium} gathers your messaging services in one desktop app, so you manage them in one place."],
       ["Is there a messaging app that doesn't need a phone number?", "{deltachat} runs on email, so you sign up with an address or a chat relay and give out no phone number."]] },
+  email: { h1: "Alternatives to Gmail and Outlook", lede: "Email you can take with you, from providers that are not selling your attention.",
+    intro: ["Email is the one messaging system nobody owns, and Gmail has quietly turned it into a Google account. {thunderbird} is a free app that works with the mail you already have and keeps a copy on your computer, so you can leave a provider without losing your archive. {proton-mail} and {tuta} are encrypted mail services from European companies that say they are paid for by subscribers, not advertising.",
+      "The first fixes how you read mail and the other two fix where it lives, and you can use both."],
+    choose: "Start with whether you can leave: a service that speaks standard mail protocols lets you move your archive, and one that does not locks you in a little. Then look at who pays for the service, and whether you want your own domain, so your address survives any change of provider.",
+    faq: [["What is a private alternative to Gmail?", "{proton-mail} and {tuta} are encrypted email services with free plans, and both say they do not use ads."],
+      ["Can I leave Gmail and keep my emails?", "Yes. Use an app like {thunderbird} to download your mail over IMAP, then move it to a new provider. A domain of your own makes the next move easy."],
+      ["Is there a free email app that isn't Outlook?", "{thunderbird} is free, open source and handles mail, calendar and contacts for any provider."]] },
   collect: { h1: "Alternatives to Pinterest and Google Keep", lede: "Collect, sketch and cite without feeding an engagement machine.",
     intro: ["Collecting things is a quiet, useful habit that most big platforms have turned into a feed. {arena} is a calm place to gather images, links and ideas over time. {zotero} collects and cites research sources and keeps them yours, and {excalidraw} is a browser whiteboard for quick diagrams with a hand-drawn look.",
       "All three have a simple job and stay out of your way while you do it."],
@@ -794,13 +905,14 @@ const CATCOPY = {
     faq: [["What is an alternative to Pinterest?", "{arena} is a place to collect images, links and ideas with no algorithmic feed and no ads."],
       ["What is an open-source alternative to EndNote or Mendeley?", "{zotero} is open source, built by a non-profit, and exports your library to standard formats."],
       ["Is there a free alternative to Miro for quick diagrams?", "{excalidraw} is a free browser whiteboard that needs no account for basic use."]] },
-  agents: { h1: "Open-source alternatives to hosted AI assistants", lede: "AI agents you run yourself, on models you choose.",
-    intro: ["An AI agent doesn't just answer questions. It acts for you, which means it needs your logins, your files and your trust. Hosted assistants keep all of that on someone else's servers. {openclaw} and {hermes-agent} are open-source agents you run on your own machine, working through the chat apps you already use and connecting to whichever AI models you pick.",
-      "Both are powerful and both are young, so we score them on how much control they give you and mark how much care they ask for."],
-    choose: "Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use the MIT licence.",
-    faq: [["Is there an open-source alternative to ChatGPT agents?", "Yes. {openclaw} and {hermes-agent} are both MIT licensed and run on your own computer or server."],
+  agents: { h1: "Alternatives to ChatGPT and Claude", lede: "AI assistants and agents you run yourself, on models you choose.",
+    intro: ["ChatGPT and Claude are hosted services: your prompts, files and logins live on their makers' servers, and you use them on those companies' terms. An AI agent goes further, because it acts for you and needs your logins, your files and your trust. {ollama} and {jan} run open models on your own computer, so your prompts can stay there, and {openclaw}, {hermes-agent} and {goose} are open-source agents that work through the apps you already use and connect to whichever models you pick.",
+      "All of them are young, so we score them on how much control they give you and mark how much care they ask for."],
+    choose: "Start with what you are willing to hand over. An agent that can send email as you can also make mistakes as you, so give it as little as the job needs, and read the project's security guide before you connect anything important. Then look at who steers the project: a non-profit foundation and a venture-backed company are different kinds of keeper, even when both use an open licence. Local models are smaller than the biggest hosted ones, so expect a quality trade-off in return for privacy.",
+    faq: [["Is there an open-source alternative to ChatGPT?", "{jan} and {ollama} run open models on your own computer, with no account for local use. They are less powerful than the largest hosted models."],
+      ["Is there an open-source alternative to ChatGPT agents?", "Yes. {openclaw}, {hermes-agent} and {goose} are open-source agents you run on your own computer or server."],
       ["Are AI agents safe to run?", "They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. OpenClaw's own guide says so."],
-      ["Do I still need an AI model provider?", "Usually yes. The agents are free, but they send your prompts to a model you choose, either a hosted one you pay for or one you run yourself."]] },
+      ["Do I still need an AI model provider?", "Not necessarily. Local tools like {ollama} and {jan} run models on your machine, while agents such as {goose} can use either local models or a hosted provider you choose."]] },
   books: { h1: "Alternatives to the Kindle store", lede: "Leave the Kindle ecosystem for books you keep, in files you control.",
     intro: ["Buying a book from the Kindle store means buying a licence to read it inside Amazon's system, on Amazon's terms. The book sits in a format only Amazon's apps and devices are built around, and it can be changed or taken back without your say. That is the opposite of a convivial tool, because the shelf only works as long as the store is willing.",
       "You can leave without giving up reading. {standard-ebooks} and {gutenberg} give you tens of thousands of free books as plain files. {calibre} keeps your library in a folder on your own computer and converts between formats. {koreader} replaces the reading app on your device, and {audiobookshelf} does the same job for audiobooks if you want out of Audible.",
@@ -1155,7 +1267,7 @@ function currentId() {
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication" };
+const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", reading: "ReferenceApplication", passwords: "SecurityApplication", images: "MultimediaApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {

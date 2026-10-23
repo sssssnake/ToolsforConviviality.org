@@ -225,5 +225,125 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "signal",
+    "name": "Signal",
+    "url": "https://signal.org"
+  },
+  {
+    "slug": "element",
+    "name": "Element",
+    "url": "https://element.io"
+  },
+  {
+    "slug": "thunderbird",
+    "name": "Thunderbird",
+    "url": "https://www.thunderbird.net"
+  },
+  {
+    "slug": "proton-mail",
+    "name": "Proton Mail",
+    "url": "https://proton.me/mail"
+  },
+  {
+    "slug": "tuta",
+    "name": "Tuta",
+    "url": "https://tuta.com"
+  },
+  {
+    "slug": "ollama",
+    "name": "Ollama",
+    "url": "https://ollama.com"
+  },
+  {
+    "slug": "jan",
+    "name": "Jan",
+    "url": "https://jan.ai"
+  },
+  {
+    "slug": "goose",
+    "name": "goose",
+    "url": "https://github.com/block/goose"
+  },
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "url": "https://chatgpt.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "claude",
+    "name": "Claude",
+    "url": "https://claude.ai",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-drive",
+    "name": "Google Drive",
+    "url": "https://drive.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-maps",
+    "name": "Google Maps",
+    "url": "https://maps.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-search",
+    "name": "Google Search",
+    "url": "https://www.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-photos",
+    "name": "Google Photos",
+    "url": "https://photos.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "kindle",
+    "name": "Amazon Kindle",
+    "url": "https://www.amazon.com/kindle",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "pinterest",
+    "name": "Pinterest",
+    "url": "https://www.pinterest.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "google-password-manager",
+    "name": "Google Password Manager",
+    "url": "https://passwords.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "adobe-creative-cloud",
+    "name": "Adobe Creative Cloud",
+    "url": "https://www.adobe.com/creativecloud.html",
+    "capture": {
+      "shot": false
+    }
   }
 ]
