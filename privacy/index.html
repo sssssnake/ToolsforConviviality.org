@@ -110,6 +110,17 @@ main .wrap { padding-block: 48px 64px; }
 .pdf-card p { margin: 0 0 12px; }
 .pdf-card .btn { width: auto; display: inline-flex; }
 @media (max-width: 560px) { .pdf-card { grid-template-columns: 1fr; } .pdf-card img { width: 90px; } }
+.nf { text-align: center; padding: 48px 0 24px; max-width: 640px; margin: 0 auto; }
+.nf-num { display: flex; justify-content: center; align-items: center; gap: clamp(6px, 2vw, 18px); font-family: var(--stampface); font-weight: 500; font-size: clamp(96px, 24vw, 190px); line-height: 1; color: var(--accent); }
+.nf-c { width: .82em; height: .82em; background: var(--accent); -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; display: block; animation: nf-roll 9s linear infinite; }
+@keyframes nf-roll { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .nf-c { animation: none; } }
+.nf h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 18px 0 0; color: var(--fg); }
+.nf-lede { font-size: 18px; color: var(--muted); margin: 14px auto 0; max-width: 30em; }
+.nf-stamp { display: inline-block; margin: 22px 0 0; font-family: var(--stampface); text-transform: uppercase; letter-spacing: .1em; font-size: 15px; color: var(--stamp); border: 2px solid var(--stamp); padding: 4px 14px; transform: rotate(-4deg); }
+.nf-links { display: grid; gap: 10px; margin: 30px auto 0; max-width: 360px; text-align: left; }
+.nf-or { margin: 34px 0 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.nf-jump { justify-content: center; border-bottom: 0; margin-top: 8px; }
 .btn-row { display: grid; gap: 10px; margin-top: 22px; }
 .ghost { border-color: var(--line); color: var(--muted); }
 .side-links { margin-top: 18px; display: grid; gap: 8px; font-size: 15px; }
@@ -2011,7 +2022,15 @@ function privacy() {
 }
 
 function notFound() {
-  return `<div class="page-head"><h1>Nothing here</h1><p>That page doesn't exist. <a href="#home">Go back to the start</a> or <a href="#directory">browse the directory</a>.</p></div>`;
+  return `<section class="nf">
+    <div class="nf-num" aria-hidden="true"><span>4</span><i class="nf-c"></i><span>4</span></div>
+    <h1>Nothing here, and nothing to export</h1>
+    <p class="nf-lede">That page left and took its stuff with it. We can't score it, but it would not have done well on Lock-in.</p>
+    <p class="nf-stamp" aria-hidden="true">0/30 · not found</p>
+    <div class="nf-links"><a class="btn" href="#home">Back to the start <span>→</span></a><a class="btn" href="#directory">Browse the directory <span>→</span></a></div>
+    <p class="nf-or">Or try a category</p>
+    <div class="jump nf-jump">${CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</div>
+  </section>`;
 }
 
 const SITE = "https://toolsforconviviality.com";
