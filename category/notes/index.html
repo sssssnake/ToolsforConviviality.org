@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 /* Layout: a public notice board. Periwinkle band on top, purposes on the left,
-   one tool on the right; reviews read like a catalogue card with a Get Info panel and a verdict stamp. */
+   one tool on the right; reviews read like a catalogue card with a Get Info panel. */
 :root {
   --bg: #19242d;
   --panel: #213039;
@@ -117,7 +117,6 @@ main .wrap { padding-block: 48px 64px; }
 @media (prefers-reduced-motion: reduce) { .nf-c { animation: none; } }
 .nf h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 18px 0 0; color: var(--fg); }
 .nf-lede { font-size: 18px; color: var(--muted); margin: 14px auto 0; max-width: 30em; }
-.nf-stamp { display: inline-block; margin: 22px 0 0; font-family: var(--stampface); text-transform: uppercase; letter-spacing: .1em; font-size: 15px; color: var(--stamp); border: 2px solid var(--stamp); padding: 4px 14px; transform: rotate(-4deg); }
 .nf-links { display: grid; gap: 10px; margin: 30px auto 0; max-width: 360px; text-align: left; }
 .nf-or { margin: 34px 0 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .nf-jump { justify-content: center; border-bottom: 0; margin-top: 8px; }
@@ -300,16 +299,6 @@ a.fbtn { text-decoration: none; display: inline-block; }
 .meter i { width: 14px; height: 10px; background: var(--meter-off); display: block; }
 .meter i.on { background: var(--accent); }
 .meter-row b { font-family: var(--mono); font-weight: 500; font-size: 13px; font-variant-numeric: tabular-nums; width: 1.2ch; text-align: right; }
-.stamp-holder { display: flex; justify-content: center; padding: 22px 16px 26px; border-top: 1px solid var(--line); }
-.stamp { width: 168px; height: 168px; border-radius: 50%; border: 2.5px solid var(--stamp); color: var(--stamp); display: grid; place-items: center; text-align: center; transform: rotate(-7deg); position: relative; }
-.stamp::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; border: 1px solid var(--stamp); opacity: .7; }
-.stamp-inner { display: grid; gap: 2px; }
-.stamp .verdict { font-family: var(--stampface); font-weight: 600; text-transform: uppercase; font-size: 22px; line-height: 1; letter-spacing: .02em; max-width: 120px; }
-.stamp .num { font-family: var(--stampface); font-weight: 500; font-size: 15px; letter-spacing: .1em; }
-@media (prefers-reduced-motion: no-preference) {
-  .stamp { animation: press .5s cubic-bezier(.2,.9,.3,1.3) both; }
-  @keyframes press { from { transform: rotate(-7deg) scale(1.35); opacity: 0; } to { transform: rotate(-7deg) scale(1); opacity: 1; } }
-}
 
 /* Method, about */
 .prose { display: grid; gap: 16px; max-width: 66ch; margin-top: 32px; }
@@ -2036,7 +2025,6 @@ function notFound() {
     <div class="nf-num" aria-hidden="true"><span>4</span><i class="nf-c"></i><span>4</span></div>
     <h1>Nothing here, and nothing to export</h1>
     <p class="nf-lede">That page left and took its stuff with it. We can't score it, but it would not have done well on Lock-in.</p>
-    <p class="nf-stamp" aria-hidden="true">0/30 · not found</p>
     <div class="nf-links"><a class="btn" href="#home">Back to the start <span>→</span></a><a class="btn" href="#directory">Browse the directory <span>→</span></a></div>
     <p class="nf-or">Or try a category</p>
     <div class="jump nf-jump">${CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("")}</div>
