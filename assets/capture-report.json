@@ -1,6 +1,45 @@
 {
-  "startedAt": "2026-10-23T22:19:58.461Z",
-  "captured": [],
+  "startedAt": "2026-10-29T00:36:06.449Z",
+  "captured": [
+    {
+      "slug": "kodi",
+      "notes": [
+        "manifest unreadable: HTTP 403 for https://kodi.tv/manifest.webmanifest"
+      ]
+    },
+    {
+      "slug": "newpipe",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "freetube",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "strawberry",
+      "notes": []
+    },
+    {
+      "slug": "mopidy",
+      "notes": []
+    },
+    {
+      "slug": "ampache",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "youtube",
+      "notes": [
+        "screenshot skipped by override"
+      ]
+    }
+  ],
   "skipped": [
     {
       "slug": "localsend",
@@ -537,5 +576,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-23T22:20:02.729Z"
+  "finishedAt": "2026-10-29T00:37:12.494Z"
 }

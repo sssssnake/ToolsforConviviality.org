@@ -1,0 +1,35 @@
+{
+  "slug": "kodi",
+  "name": "Kodi",
+  "source": "https://kodi.tv",
+  "capturedAt": "2026-10-29T00:36:10.642Z",
+  "alt": "Screenshot of the Kodi website",
+  "pageTitle": "Open Source Home Theater Software | Kodi",
+  "pageDescription": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen.",
+  "shot": {
+    "480": "assets/tools/kodi/shot-480.webp",
+    "960": "assets/tools/kodi/shot-960.webp",
+    "1600": "assets/tools/kodi/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/kodi/mobile-390.webp",
+    "780": "assets/tools/kodi/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/kodi/icon-128.webp",
+    "256": "assets/tools/kodi/icon-256.webp",
+    "svg": "assets/tools/kodi/icon.svg",
+    "from": "https://kodi.tv/images/kodi-logo.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/kodi/social-600.webp",
+    "1200": "assets/tools/kodi/social-1200.webp",
+    "from": "https://kodi.tv/images/kodi_og_default.webp"
+  },
+  "color": "#0f2d3a",
+  "colorFrom": "theme-color",
+  "notes": [
+    "manifest unreadable: HTTP 403 for https://kodi.tv/manifest.webmanifest"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "slug": "ampache",
+  "name": "Ampache",
+  "source": "https://ampache.org",
+  "capturedAt": "2026-10-29T00:36:59.165Z",
+  "alt": "Screenshot of the Ampache website",
+  "pageTitle": "Ampache",
+  "pageDescription": "Ampache.org",
+  "shot": {
+    "480": "assets/tools/ampache/shot-480.webp",
+    "960": "assets/tools/ampache/shot-960.webp",
+    "1600": "assets/tools/ampache/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ampache/mobile-390.webp",
+    "780": "assets/tools/ampache/mobile-780.webp"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

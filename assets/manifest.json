@@ -3809,7 +3809,210 @@
         "no usable icon found (an .ico favicon alone can't be converted)"
       ],
       "cfg": "[\"https://www.microsoft.com/microsoft-365\",{\"shot\":false},null]"
+    },
+    "kodi": {
+      "slug": "kodi",
+      "name": "Kodi",
+      "source": "https://kodi.tv",
+      "capturedAt": "2026-10-29T00:36:10.642Z",
+      "alt": "Screenshot of the Kodi website",
+      "pageTitle": "Open Source Home Theater Software | Kodi",
+      "pageDescription": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen.",
+      "shot": {
+        "480": "assets/tools/kodi/shot-480.webp",
+        "960": "assets/tools/kodi/shot-960.webp",
+        "1600": "assets/tools/kodi/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kodi/mobile-390.webp",
+        "780": "assets/tools/kodi/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/kodi/icon-128.webp",
+        "256": "assets/tools/kodi/icon-256.webp",
+        "svg": "assets/tools/kodi/icon.svg",
+        "from": "https://kodi.tv/images/kodi-logo.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/kodi/social-600.webp",
+        "1200": "assets/tools/kodi/social-1200.webp",
+        "from": "https://kodi.tv/images/kodi_og_default.webp"
+      },
+      "color": "#0f2d3a",
+      "colorFrom": "theme-color",
+      "notes": [
+        "manifest unreadable: HTTP 403 for https://kodi.tv/manifest.webmanifest"
+      ],
+      "cfg": "[\"https://kodi.tv\",null,null]"
+    },
+    "newpipe": {
+      "slug": "newpipe",
+      "name": "NewPipe",
+      "source": "https://newpipe.net",
+      "capturedAt": "2026-10-29T00:36:19.795Z",
+      "alt": "Screenshot of the NewPipe website",
+      "pageTitle": "NewPipe - a free YouTube client",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/newpipe/shot-480.webp",
+        "960": "assets/tools/newpipe/shot-960.webp",
+        "1600": "assets/tools/newpipe/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/newpipe/mobile-390.webp",
+        "780": "assets/tools/newpipe/mobile-780.webp"
+      },
+      "social": {
+        "600": "assets/tools/newpipe/social-600.webp",
+        "1200": "assets/tools/newpipe/social-1200.webp",
+        "from": "https://newpipe.net/img/logo_400.png"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://newpipe.net\",null,null]"
+    },
+    "freetube": {
+      "slug": "freetube",
+      "name": "FreeTube",
+      "source": "https://freetubeapp.io",
+      "capturedAt": "2026-10-29T00:36:30.829Z",
+      "alt": "Screenshot of the FreeTube website",
+      "pageTitle": "FreeTube - The Private YouTube Client",
+      "pageDescription": "FreeTube is a feature-rich and user-friendly YouTube client with a focus on privacy.",
+      "shot": {
+        "480": "assets/tools/freetube/shot-480.webp",
+        "960": "assets/tools/freetube/shot-960.webp",
+        "1600": "assets/tools/freetube/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/freetube/mobile-390.webp",
+        "780": "assets/tools/freetube/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://freetubeapp.io\",null,null]"
+    },
+    "strawberry": {
+      "slug": "strawberry",
+      "name": "Strawberry",
+      "source": "https://www.strawberrymusicplayer.org",
+      "capturedAt": "2026-10-29T00:36:40.224Z",
+      "alt": "Screenshot of the Strawberry website",
+      "pageTitle": "Strawberry Music Player",
+      "pageDescription": "Strawberry is a music player and music collection organizer for Linux, macOS and Windows. It is aimed at music collectors and audiophiles. With Strawberry you can play and manage your digital music collection, or stream your favorite radios.",
+      "shot": {
+        "480": "assets/tools/strawberry/shot-480.webp",
+        "960": "assets/tools/strawberry/shot-960.webp",
+        "1600": "assets/tools/strawberry/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/strawberry/mobile-390.webp",
+        "780": "assets/tools/strawberry/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/strawberry/icon-128.webp",
+        "256": "assets/tools/strawberry/icon-256.webp",
+        "from": "https://www.strawberrymusicplayer.org/favicon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.strawberrymusicplayer.org\",null,null]"
+    },
+    "mopidy": {
+      "slug": "mopidy",
+      "name": "Mopidy",
+      "source": "https://mopidy.com",
+      "capturedAt": "2026-10-29T00:36:51.969Z",
+      "alt": "Screenshot of the Mopidy website",
+      "pageTitle": "Mopidy",
+      "pageDescription": "The extensible music server",
+      "shot": {
+        "480": "assets/tools/mopidy/shot-480.webp",
+        "960": "assets/tools/mopidy/shot-960.webp",
+        "1600": "assets/tools/mopidy/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/mopidy/mobile-390.webp",
+        "780": "assets/tools/mopidy/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/mopidy/icon-128.webp",
+        "256": "assets/tools/mopidy/icon-256.webp",
+        "from": "https://mopidy.com/media/favicon/favicon-32x32.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/mopidy/social-600.webp",
+        "1200": "assets/tools/mopidy/social-1200.webp",
+        "from": "https://mopidy.com/media/images/hannah-troupe-wL_w5t_OKtI-unsplash-1900x1200.jpg"
+      },
+      "color": "#585858",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://mopidy.com\",null,null]"
+    },
+    "ampache": {
+      "slug": "ampache",
+      "name": "Ampache",
+      "source": "https://ampache.org",
+      "capturedAt": "2026-10-29T00:36:59.165Z",
+      "alt": "Screenshot of the Ampache website",
+      "pageTitle": "Ampache",
+      "pageDescription": "Ampache.org",
+      "shot": {
+        "480": "assets/tools/ampache/shot-480.webp",
+        "960": "assets/tools/ampache/shot-960.webp",
+        "1600": "assets/tools/ampache/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ampache/mobile-390.webp",
+        "780": "assets/tools/ampache/mobile-780.webp"
+      },
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://ampache.org\",null,null]"
+    },
+    "youtube": {
+      "slug": "youtube",
+      "name": "YouTube",
+      "source": "https://www.youtube.com",
+      "capturedAt": "2026-10-29T00:37:06.399Z",
+      "alt": "Screenshot of the YouTube website",
+      "pageTitle": "YouTube",
+      "pageDescription": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+      "icon": {
+        "128": "assets/tools/youtube/icon-128.webp",
+        "256": "assets/tools/youtube/icon-256.webp",
+        "from": "https://www.gstatic.com/youtube/img/web/monochrome/logo_512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/youtube/social-600.webp",
+        "1200": "assets/tools/youtube/social-1200.webp",
+        "from": "https://www.youtube.com/img/desktop/yt_1200.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.youtube.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-23T22:20:02.727Z"
+  "updatedAt": "2026-10-29T00:37:12.491Z"
 }

@@ -1,0 +1,27 @@
+{
+  "slug": "youtube",
+  "name": "YouTube",
+  "source": "https://www.youtube.com",
+  "capturedAt": "2026-10-29T00:37:06.399Z",
+  "alt": "Screenshot of the YouTube website",
+  "pageTitle": "YouTube",
+  "pageDescription": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+  "icon": {
+    "128": "assets/tools/youtube/icon-128.webp",
+    "256": "assets/tools/youtube/icon-256.webp",
+    "from": "https://www.gstatic.com/youtube/img/web/monochrome/logo_512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/youtube/social-600.webp",
+    "1200": "assets/tools/youtube/social-1200.webp",
+    "from": "https://www.youtube.com/img/desktop/yt_1200.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

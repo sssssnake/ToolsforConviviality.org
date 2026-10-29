@@ -1,0 +1,27 @@
+{
+  "slug": "newpipe",
+  "name": "NewPipe",
+  "source": "https://newpipe.net",
+  "capturedAt": "2026-10-29T00:36:19.795Z",
+  "alt": "Screenshot of the NewPipe website",
+  "pageTitle": "NewPipe - a free YouTube client",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/newpipe/shot-480.webp",
+    "960": "assets/tools/newpipe/shot-960.webp",
+    "1600": "assets/tools/newpipe/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/newpipe/mobile-390.webp",
+    "780": "assets/tools/newpipe/mobile-780.webp"
+  },
+  "social": {
+    "600": "assets/tools/newpipe/social-600.webp",
+    "1200": "assets/tools/newpipe/social-1200.webp",
+    "from": "https://newpipe.net/img/logo_400.png"
+  },
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "strawberry",
+  "name": "Strawberry",
+  "source": "https://www.strawberrymusicplayer.org",
+  "capturedAt": "2026-10-29T00:36:40.224Z",
+  "alt": "Screenshot of the Strawberry website",
+  "pageTitle": "Strawberry Music Player",
+  "pageDescription": "Strawberry is a music player and music collection organizer for Linux, macOS and Windows. It is aimed at music collectors and audiophiles. With Strawberry you can play and manage your digital music collection, or stream your favorite radios.",
+  "shot": {
+    "480": "assets/tools/strawberry/shot-480.webp",
+    "960": "assets/tools/strawberry/shot-960.webp",
+    "1600": "assets/tools/strawberry/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/strawberry/mobile-390.webp",
+    "780": "assets/tools/strawberry/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/strawberry/icon-128.webp",
+    "256": "assets/tools/strawberry/icon-256.webp",
+    "from": "https://www.strawberrymusicplayer.org/favicon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}
