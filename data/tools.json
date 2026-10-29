@@ -814,5 +814,49 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "kodi",
+    "name": "Kodi",
+    "url": "https://kodi.tv",
+    "repo": "xbmc/xbmc"
+  },
+  {
+    "slug": "newpipe",
+    "name": "NewPipe",
+    "url": "https://newpipe.net",
+    "repo": "TeamNewPipe/NewPipe"
+  },
+  {
+    "slug": "freetube",
+    "name": "FreeTube",
+    "url": "https://freetubeapp.io",
+    "repo": "FreeTubeApp/FreeTube"
+  },
+  {
+    "slug": "strawberry",
+    "name": "Strawberry",
+    "url": "https://www.strawberrymusicplayer.org",
+    "repo": "strawberrymusicplayer/strawberry"
+  },
+  {
+    "slug": "mopidy",
+    "name": "Mopidy",
+    "url": "https://mopidy.com",
+    "repo": "mopidy/mopidy"
+  },
+  {
+    "slug": "ampache",
+    "name": "Ampache",
+    "url": "https://ampache.org",
+    "repo": "ampache/ampache"
+  },
+  {
+    "slug": "youtube",
+    "name": "YouTube",
+    "url": "https://www.youtube.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
