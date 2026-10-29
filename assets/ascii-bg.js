@@ -4,6 +4,7 @@
    is hidden, a single still frame for people who prefer reduced motion, and nothing at all when printing. */
 (function () {
   if (navigator.webdriver || document.getElementById("ascii-bg")) return;   // the prerender snapshot stays clean
+  if (location.pathname.replace(/index\.html$/, "") !== "/") return;        // home page only
   var doc = document.documentElement;
   var RAMP = " .:-=+*#%@";
   var FONT_PX = 13, LEVELS = 6, FPS = 20;
@@ -11,7 +12,8 @@
   var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   var style = document.createElement("style");
-  style.textContent = "#ascii-bg{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}@media print{#ascii-bg{display:none}}";
+  // Absolute, not fixed: it covers the first screen only and scrolls away with the page, fading out toward the fold.
+  style.textContent = "#ascii-bg{position:absolute;top:0;left:0;width:100%;z-index:-1;pointer-events:none;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}@media print{#ascii-bg{display:none}}";
   document.head.appendChild(style);
   var cv = document.createElement("canvas");
   cv.id = "ascii-bg"; cv.setAttribute("aria-hidden", "true");
@@ -36,7 +38,7 @@
   function resize() {
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = window.innerWidth, h = window.innerHeight;
-    cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+    cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); cv.style.height = h + "px";
     c.setTransform(dpr, 0, 0, dpr, 0, 0);
     c.font = FONT_PX + 'px "IBM Plex Mono", ui-monospace, Menlo, monospace';
     cw = Math.max(6, c.measureText("M").width); ch = Math.round(FONT_PX * 1.25);
@@ -93,7 +95,8 @@
     if (now - last >= 1000 / FPS) { last = now; frame(now); }
     requestAnimationFrame(loop);
   }
-  function start() { if (reduce || running || document.hidden) return; running = true; requestAnimationFrame(loop); }
+  var onScreen = true;
+  function start() { if (reduce || running || document.hidden || !onScreen) return; running = true; requestAnimationFrame(loop); }
   function stop() { running = false; }
 
   function init() {
@@ -103,6 +106,7 @@
   var fontsReady = document.fonts && document.fonts.load ? document.fonts.load('13px "IBM Plex Mono"').catch(function () {}) : Promise.resolve();
   fontsReady.then(init);
 
+  if (window.IntersectionObserver) new IntersectionObserver(function (e) { onScreen = e[0].isIntersecting; if (onScreen) start(); else stop(); }).observe(cv);   // no drawing once scrolled past
   new MutationObserver(function () { readTheme(); if (!running) frame(2000); }).observe(doc, { attributes: true, attributeFilter: ["data-theme"] });
   var mq = matchMedia("(prefers-color-scheme: light)"), onScheme = function () { readTheme(); if (!running) frame(2000); };
   if (mq.addEventListener) mq.addEventListener("change", onScheme);
