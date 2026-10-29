@@ -39,9 +39,9 @@
         k = y * cols + x;
         // drifting cloud: a few sines, denser toward the bottom edge, thresholded against a Bayer matrix
         v = 0.5 + 0.2 * Math.sin(x * 0.045 + t * 0.35) + 0.16 * Math.sin(y * 0.16 - t * 0.28 + x * 0.02) + 0.12 * Math.sin((x + y) * 0.03 + t * 0.2);
-        v += (y / rows - 0.35) * 0.55 - 0.14;
+        v += (y / rows - 0.35) * 0.55 - 0.42;
         th = (BAYER[(x & 3) + ((y & 3) << 2)] + 0.5) / 16;
-        a = v > th ? 0.08 + 0.12 * hash(x, y + Math.floor(t * 1.5)) : 0;   // a little shimmer
+        a = v > th ? 0.05 + 0.06 * hash(x, y + Math.floor(t * 1.5)) : 0;   // a little shimmer
         hi = 0;
         if (!reduce) {
           dx = x * CELL + CELL / 2 - pointer.x; dy = y * CELL + CELL / 2 - pointer.y; d = dx * dx + dy * dy;
@@ -53,12 +53,12 @@
             if (d < 14) hi = Math.max(hi, (1 - d / 14) * (1 - ripples[i].r / 700));
           }
         }
-        if (hi > 0.05) { a = Math.max(a, 0.14) + hi * 0.42; top.push(x * CELL, y * CELL, a > 0.6 ? 0.6 : a); }
-        else if (a > 0) (a > 0.16 ? mid : lo).push(x * CELL, y * CELL);
+        if (hi > 0.05) { a = Math.max(a, 0.08) + hi * 0.22; top.push(x * CELL, y * CELL, a > 0.3 ? 0.3 : a); }
+        else if (a > 0) (a > 0.09 ? mid : lo).push(x * CELL, y * CELL);
       }
     }
-    c.fillStyle = "rgba(" + BASE + ",0.10)"; for (i = 0; i < lo.length; i += 2) c.fillRect(lo[i], lo[i + 1], CELL - 1, CELL - 1);
-    c.fillStyle = "rgba(" + BASE + ",0.2)"; for (i = 0; i < mid.length; i += 2) c.fillRect(mid[i], mid[i + 1], CELL - 1, CELL - 1);
+    c.fillStyle = "rgba(" + BASE + ",0.05)"; for (i = 0; i < lo.length; i += 2) c.fillRect(lo[i], lo[i + 1], CELL - 1, CELL - 1);
+    c.fillStyle = "rgba(" + BASE + ",0.09)"; for (i = 0; i < mid.length; i += 2) c.fillRect(mid[i], mid[i + 1], CELL - 1, CELL - 1);
     for (i = 0; i < top.length; i += 3) { c.fillStyle = "rgba(" + HI + "," + top[i + 2].toFixed(2) + ")"; c.fillRect(top[i], top[i + 1], CELL - 1, CELL - 1); }
   }
 
