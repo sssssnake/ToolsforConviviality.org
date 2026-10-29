@@ -1,23 +1,22 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>Thank you | Tools for Conviviality</title>
-<meta id="m-desc" name="description" content="An independent public directory of small, convivial software, scored against Ivan Illich's ideas about tools.">
+<meta id="m-desc" name="description" content="Thank you for supporting Tools for Conviviality.">
 <meta id="m-robots" name="robots" content="noindex,follow">
 <meta name="theme-color" content="#b3c5ff">
 <link id="m-canon" rel="canonical" href="https://toolsforconviviality.com/thanks/">
 <meta property="og:site_name" content="Tools for Conviviality">
 <meta id="og-type" property="og:type" content="website">
-<meta id="og-title" property="og:title" content="Tools for Conviviality">
-<meta id="og-desc" property="og:description" content="">
-<meta id="og-url" property="og:url" content="https://toolsforconviviality.com/">
+<meta id="og-title" property="og:title" content="Thank you | Tools for Conviviality">
+<meta id="og-desc" property="og:description" content="Thank you for supporting Tools for Conviviality.">
+<meta id="og-url" property="og:url" content="https://toolsforconviviality.com/thanks/">
 <meta id="og-image" property="og:image" content="https://toolsforconviviality.com/assets/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
-<script id="ld" type="application/ld+json"></script>
+<script id="ld" type="application/ld+json">{"@context":"https://schema.org","@graph":[]}</script>
 <link rel="stylesheet" href="/fonts/fonts.css">
 <style>
 /* Layout: a public notice board. Periwinkle band on top, purposes on the left,
@@ -204,6 +203,18 @@ main .wrap { padding-block: 48px 64px; }
 .prompt-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; background: var(--band); color: var(--band-fg); font-family: var(--mono); font-size: 12px; }
 .prompt-bar .btn { background: var(--panel); color: var(--fg); border-color: var(--band-fg); }
 .prompt-box pre { margin: 0; padding: 16px; max-height: 520px; overflow: auto; white-space: pre-wrap; word-break: break-word; font-family: var(--mono); font-size: 13px; line-height: 1.55; }
+.cmp { margin: 22px 0 8px; border-top: 1px solid var(--line); }
+.cmp-row { display: grid; grid-template-columns: minmax(70px, .6fr) 1fr 1fr; gap: 0 14px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cmp-label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.cmp-cell { font-size: 14px; min-width: 0; overflow-wrap: anywhere; }
+.cmp-cell.win { font-weight: 600; color: var(--accent); }
+.cmp-cell .meter-row { grid-template-columns: auto auto; justify-content: start; gap: 10px; }
+.cmp-head { align-items: start; padding: 18px 0; }
+.cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
+.cmp-side h2 a { text-decoration: none; }
+.cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+@media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
 .related h2 { font-size: 20px; margin-bottom: 8px; }
 .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -414,9 +425,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 .theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
 .what-core{font-size:clamp(22px,3vw,30px);line-height:1.35;max-width:30em;margin:28px 0 8px;color:var(--ink)}
 </style>
-<script src="/assets/ascii-bg.js" defer></script>
+<script src="/assets/ascii-bg.js" defer=""></script>
 <link rel="stylesheet" href="/assets/footer.css">
-<script src="/assets/footer-pixels.js" defer></script>
+<script src="/assets/footer-pixels.js" defer=""></script>
 </head>
 <body>
 
@@ -426,35 +437,49 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 </script>
 <header class="band">
   <div class="wrap">
-    <a class="brand" href="#home" aria-label="Tools for Conviviality, home">
+    <a class="brand" href="/" aria-label="Tools for Conviviality, home">
       <span class="mark" aria-hidden="true"></span>
       <span class="brand-name">Tools for<br>Conviviality</span>
     </a>
     <nav class="nav" aria-label="Main">
-      <a href="#directory" data-nav="directory">Directory</a>
-      <a href="#what" data-nav="what">What is conviviality?</a>
-      <a href="#method" data-nav="method">How we score</a>
-      <a href="#submit" data-nav="submit">Suggest a tool</a>
+      <a href="/directory/" data-nav="directory">Directory</a>
+      <a href="/what-is-conviviality/" data-nav="what">What is conviviality?</a>
+      <a href="/how-we-score/" data-nav="method">How we score</a>
+      <a href="/suggest/" data-nav="submit">Suggest a tool</a>
     <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Buy us a coffee</a>
     </nav>
   </div>
 </header>
 
-<main id="app"><div class="wrap" id="view"></div></main>
+<main id="app"><div class="wrap" id="view"><section class="nf">
+    <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
+    <h1>Thank you for the coffee</h1>
+    <p class="nf-lede">It goes toward the domain, the hosting and the time spent reviewing tools. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
+    <canvas id="coffee-card" class="coffee-card" role="img" aria-label="Share card that reads: I bought Tools for Conviviality a coffee. toolsforconviviality.com" data-ready="1" width="1080" height="1080"></canvas>
+    <div class="nf-links" style="margin-top:22px">
+      <button class="btn primary" type="button" id="share-coffee">Share that you bought us a coffee <span aria-hidden="true">↗</span></button>
+      <button class="btn ghost" type="button" id="save-card">Save the image <span aria-hidden="true">↓</span></button>
+      <button class="btn ghost" type="button" id="copy-share">Copy the message <span aria-hidden="true">⧉</span></button>
+    </div>
+    <p class="label share-status" id="share-status" aria-live="polite"></p>
+    <p class="nf-or">Or keep looking around</p>
+    <div class="nf-links"><a class="btn" href="/directory/">Browse the directory <span>→</span></a><a class="btn" href="/what-is-conviviality/">What is conviviality? <span>→</span></a><a class="btn ghost" href="/suggest/">Suggest a tool <span>→</span></a></div>
+    <p class="nf-lede" style="margin-top:34px;font-size:15px">Something look wrong with your payment? Write to <span class="addr">hello@toolsforconviviality.com</span> and we will sort it out.</p>
+  </section></div></main>
 
 <footer>
   <div class="wrap">
-    <nav class="foot-cats" id="foot-cats" aria-label="Categories"></nav>
+    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/agents/">AI agents</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/search/">Search</a><a href="/category/news/">News &amp; feeds</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/photos/">Photos</a><a href="/category/effects/">Photo &amp; video effects</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/talk/">Chat</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/browsers/">Browsers</a><a href="/category/apps/">App stores</a><a href="/category/video/">Video</a><a href="/category/music/">Music</a><a href="/category/home/">Home &amp; network</a><a href="/category/office/">Office</a><a href="/category/collect/">Collecting &amp; research</a></nav>
     <div class="foot-links">
-      <a href="#method">How we score</a>
-      <a href="#benchmarks">Benchmarks</a>
-      <a href="#improve">Improve your score</a>
-      <a href="#agents">For AI agents</a>
-      <a href="#about">About &amp; disclaimers</a>
-      <a href="#impressum">Legal notice (Impressum)</a>
-      <a href="#privacy">Privacy policy</a>
+      <a href="/how-we-score/">How we score</a>
+      <a href="/benchmarks/">Benchmarks</a>
+      <a href="/improve-my-conviviality-score/">Improve your score</a>
+      <a href="/for-agents/">For AI agents</a>
+      <a href="/about/">About &amp; disclaimers</a>
+      <a href="/legal-notice/">Legal notice (Impressum)</a>
+      <a href="/privacy/">Privacy policy</a>
       <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Support this site</a>
-      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
+      <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
     </div>
     <div class="foot-right">
       <span class="foot-brand"><span class="foot-c" aria-hidden="true"></span><span>Digital tools that serve the humans using them.</span></span>
@@ -1536,7 +1561,7 @@ function home() {
       <span class="hero-mark" aria-hidden="true"></span>
       <p class="label">A directory of convivial software</p>
       <h1>${heroTitle()}</h1>
-      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
+      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
       <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
@@ -1802,7 +1827,7 @@ function tool(slug, isBench) {
       ${t.points && t.points.length ? `<ul class="points" aria-label="What makes ${esc(t.name)} unusual"><h2>What stands out</h2>${t.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
       ${isBench ? "" : badgeBox(t)}
-      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 6); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}">${logo(x, "sm")}<span class="rt"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></span></a></li>`).join("")}</ul></section>` : ""); })()}
+      ${compareLinks(t)}${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 6); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}">${logo(x, "sm")}<span class="rt"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></span></a></li>`).join("")}</ul></section>` : ""); })()}
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
@@ -1819,6 +1844,84 @@ function tool(slug, isBench) {
       ${scoreBadge(t)}
     </aside>
   </div>`;
+}
+
+/* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
+const PAIRS = [
+  { g: "whatsapp", t: "deltachat", cost: "Delta Chat sends messages over ordinary email, so it reaches anyone with an address, but your friends need to install it for the full chat experience, and the circle you can reach is small next to three billion.", move: "Install it, add a friend by scanning their QR code, and keep WhatsApp running until your closest group follows." },
+  { g: "whatsapp", t: "signal", cost: "Signal still asks for a phone number to sign up, although a username can now hide it, and it lives on donations, so it depends on that staying true. Its circle of users is smaller than WhatsApp's.", move: "Chat history does not come across easily from WhatsApp, so keep the old app until your groups have moved." },
+  { g: "adobe-creative-cloud", t: "krita", cost: "Krita is a painting and illustration program. It does not replace Photoshop's photo retouching, Illustrator's vector work or Premiere's video editing, so a studio that lives in the whole suite will need a few tools instead of one.", move: "Open a PSD file in Krita to see how much carries over, then add Inkscape for vector work and GIMP for photos." },
+  { g: "chatgpt", t: "ollama", cost: "The models run on your own computer, so answers depend on your hardware and on the open models you pick. They are good, and usually behind the biggest hosted models on hard tasks. In return nothing you type leaves the machine.", move: "Install Ollama, pull a small model first, and step up to a larger one if your memory allows." },
+  { g: "google-drive", t: "syncthing", cost: "Syncthing keeps copies of your folders on your own devices. It has no web page for sharing a link and no live co-editing, and at least one device has to be on for a file to travel.", move: "Download your Drive with Google Takeout, point Syncthing at the folder, and add your other devices." },
+  { g: "google-maps", t: "comaps", cost: "CoMaps uses OpenStreetMap data and works offline, but it has no live traffic and thinner business details such as opening hours and reviews.", move: "Download the maps for the places you travel before you leave, and keep Google Maps for the odd restaurant lookup." },
+  { g: "google-search", t: "searxng", cost: "SearXNG asks other search engines for results and strips the tracking, so you get familiar answers without being followed. It relies on those engines, and a public instance can be slow or blocked now and then. Running your own removes that risk.", move: "Pick a public instance, or run your own, and set it as your browser's default search engine." },
+  { g: "google-photos", t: "ente", cost: "Ente encrypts your photos so only you can read them, and the code is open. Search and face grouping happen on your device, so they are plainer than Google's, and storage costs money past a point unless you host it yourself.", move: "Export with Google Takeout and import the archive into Ente, then turn off Google's backup." },
+  { g: "kindle", t: "calibre", cost: "Calibre manages books you already own in open formats. It cannot buy from the Kindle store, and books with Amazon's copy protection may not open there, so check what you own before you commit.", move: "Fill your library from DRM-free sources such as Standard Ebooks and Project Gutenberg, and read on any e-reader that takes EPUB." },
+  { g: "google-password-manager", t: "keepassxc", cost: "KeePassXC keeps your passwords in one encrypted file on your computer. Getting that file to your phone is up to you, and phone autofill needs a separate compatible app.", move: "Export your passwords from Chrome, import the file into KeePassXC, delete the export, and sync the database with Syncthing or a cloud folder." },
+  { g: "gmail", t: "thunderbird", cost: "Thunderbird is a mail program, not a mail service, so you still need an inbox somewhere, and leaving Gmail for good means choosing a provider too. It works with Gmail today, which makes it a gentle first step.", move: "Add your Gmail account to Thunderbird first, then move to a provider you prefer when you are ready and forward the old address." },
+  { g: "instagram", t: "pixelfed", cost: "Pixelfed shows photos in the order they were posted, with no ranking, and your followers can be on other servers. The audience is far smaller than Instagram's, and there are no shopping or ad tools.", move: "Pick a server, post a few photos, and tell your followers where to find you. Keep Instagram for a while as a signpost." },
+  { g: "tiktok", t: "loops", cost: "Loops is a young short-video app built on the same open network as Mastodon. It has the swipe-through feel, but the catalogue and the audience are tiny next to TikTok's, and it is early.", move: "Make an account on Loops, cross-post your best clips, and see who follows." },
+  { g: "youtube", t: "peertube", cost: "PeerTube is a network of servers run by different people, so finding videos and earning from them is harder than on YouTube, and playback depends on the server a video lives on.", move: "Start by following a few channels you already like, many of which also post to PeerTube, and upload new work to an instance that suits you." },
+  { g: "google-news", t: "netnewswire", cost: "A feed reader shows what you subscribe to and nothing else, so there is no personalised front page and you build the list of sources yourself. NetNewsWire runs on Apple devices only.", move: "Export your favourite sites' feeds, or paste their addresses into the app. FreshRSS is the pick if you want a reader that runs in any browser." },
+  { g: "chrome", t: "firefox", cost: "Firefox is built by a nonprofit and has no Google account hooks, so a few web apps still run best in Chrome. It also earns much of its income from a search deal with Google.", move: "Import your bookmarks and passwords during setup, and keep Chrome installed for the one or two sites that need it." },
+  { g: "google-play", t: "f-droid", cost: "F-Droid lists only open-source apps, so most banking, ride-hailing and streaming apps are not there. Updates come from the F-Droid app instead of Play.", move: "Install F-Droid alongside Play and move apps over one by one as you find open replacements." },
+  { g: "spotify", t: "navidrome", cost: "Navidrome streams music you already own from your own server. There is no catalogue to browse and you have to run the server, so it suits people with a library, not people who rent one.", move: "Point Navidrome at your music folder and use any Subsonic-compatible app on your phone." },
+  { g: "amazon-alexa", t: "home-assistant", cost: "Home Assistant runs in your house, so lights and sensors keep working without a cloud, but setup takes an afternoon and voice control is less polished than Alexa's.", move: "Start with the devices you already own that speak local protocols, and add voice later once the basics work." },
+  { g: "microsoft-365", t: "libreoffice", cost: "LibreOffice opens and saves Word, Excel and PowerPoint files, though complicated layouts can shift. It has no built-in shared editing like 365, so teams that write together in real time need something else, such as ONLYOFFICE.", move: "Open your most complicated documents first to see how they hold up, then switch the rest." }
+];
+const pairSlug = p => `${p.t}-vs-${p.g}`;
+const pairOf = slug => PAIRS.find(p => pairSlug(p) === slug);
+const pairTools = p => [TOOLS.find(x => x.slug === p.t), BENCH.find(x => x.slug === p.g)];
+const chipClass = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
+const joinNames = a => a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
+
+function compareSummary(p) {
+  const [a, b] = pairTools(p), na = total(a), nb = total(b);
+  const aw = CRITERIA.filter((k, i) => a.s[i] > b.s[i]).map(k => k.name.toLowerCase());
+  const bw = CRITERIA.filter((k, i) => b.s[i] > a.s[i]).map(k => k.name.toLowerCase());
+  let s = `${a.name} scores ${na} out of 30 and ${b.name} scores ${nb}.`;
+  if (aw.length) s += ` ${a.name} is ahead on ${joinNames(aw)}.`;
+  if (bw.length) s += ` ${b.name} is ahead on ${joinNames(bw)}.`;
+  if (!aw.length && !bw.length) s += " They score the same on every question.";
+  return s;
+}
+function compare(slug) {
+  const p = pairOf(slug); if (!p) return notFound();
+  const [a, b] = pairTools(p);
+  const side = (t, tag) => `<div class="cmp-side">${logo(t, "lg")}<h2><a href="#${t.bench ? "bench" : "tool"}-${t.slug}">${esc(t.name)}</a></h2><p class="cmp-tag">${tag}</p><span class="score-chip s${chipClass(total(t))}"><b>${total(t)}/30</b> · ${band(total(t))}</span><p class="one">${esc(t.one)}</p></div>`;
+  const row = (label, x, y, win) => `<div class="cmp-row"><div class="cmp-label">${label}</div><div class="cmp-cell${win === 1 ? " win" : ""}">${x}</div><div class="cmp-cell${win === 2 ? " win" : ""}">${y}</div></div>`;
+  const meter = (t, i) => `<span class="meter" aria-hidden="true">${[0, 1, 2, 3, 4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b>`;
+  const crit = CRITERIA.map((k, i) => row(esc(k.name), `<div class="meter-row">${meter(a, i)}</div>`, `<div class="meter-row">${meter(b, i)}</div>`, a.s[i] > b.s[i] ? 1 : b.s[i] > a.s[i] ? 2 : 0)).join("");
+  const facts = [["Price", "price"], ["Source", "source"], ["Runs on", "platforms"]].map(([l, f]) => row(l, esc(a[f]), esc(b[f]), 0)).join("")
+    + row("Maker", `${a.size} · ${SIZES[a.size].name}`, `${b.size} · ${SIZES[b.size].name}`, 0);
+  const others = PAIRS.filter(x => x.g === p.g && x !== p);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#compare">Compare</a> / ${esc(a.name)} vs ${esc(b.name)}</p>
+  <div class="page-head" style="margin-top:14px"><h1>${esc(a.name)} vs ${esc(b.name)}</h1><p>${esc(compareSummary(p))}</p></div>
+  <div class="cmp">
+    <div class="cmp-row cmp-head"><div class="cmp-label"></div>${side(a, "The small tool")}${side(b, "The giant")}</div>
+    ${crit}${facts}
+  </div>
+  <div class="prose">
+    <h2>What you give up by switching</h2>
+    <p>${esc(p.cost)}</p>
+    <h2>How to move</h2>
+    <p>${esc(p.move)}</p>
+    <p>Scores are our opinion on six questions from Ivan Illich, based on public sources and dated ${REVIEWED}. Read the full reviews of <a href="#tool-${a.slug}">${esc(a.name)}</a> and <a href="#bench-${b.slug}">${esc(b.name)}</a>, or see <a href="#method">how we score</a>.</p>
+    ${others.length ? `<p>Also instead of ${esc(b.name)}: ${others.map(o => { const [x] = pairTools(o); return `<a href="#cmp-${pairSlug(o)}">${esc(x.name)}</a>`; }).join(", ")}.</p>` : ""}
+  </div>
+  <div class="visit"><a class="btn primary" href="${a.url}" target="_blank" rel="noopener">Visit ${esc(a.name)} <span aria-hidden="true">↗</span></a> <a class="btn" href="#cat-${a.cat}">More tools for “${esc(catOf(a.cat).verb.toLowerCase())}” <span aria-hidden="true">↗</span></a></div>`;
+}
+function compareIndex() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Compare</p>
+  <div class="page-head" style="margin-top:14px"><h1>Compare: the giants and what can replace them</h1><p>Each page sets a big, familiar product next to the best small tool that does the same job, scored on the same six questions.</p></div>
+  <div class="tool-list">${PAIRS.map(p => { const [a, b] = pairTools(p), na = total(a), nb = total(b);
+    return `<a class="tool-row" href="#cmp-${pairSlug(p)}"><div class="lead">${logo(a, "sm")}<div><h3>${esc(a.name)} vs ${esc(b.name)}</h3><p class="one">${esc(b.one)}</p></div></div><div class="score-mini"><b>${na}<span>/30</span></b><span class="verdict-mini v${chipClass(na)}">vs ${nb}</span></div></a>`; }).join("")}</div>
+  <div class="prose"><p>These are judgment calls, not a verdict that one tool fits everyone. Where several tools could replace a giant, we picked the one that fits the same job most closely, and the full <a href="#directory">directory</a> has the rest.</p></div>`;
+}
+function compareLinks(t) {
+  const list = PAIRS.filter(p => t.bench ? p.g === t.slug : p.t === t.slug);
+  if (!list.length) return "";
+  return `<p class="bench-note"><b>Side by side.</b> ${list.map(p => { const [a, b] = pairTools(p); return `<a href="#cmp-${pairSlug(p)}">${esc(a.name)} vs ${esc(b.name)}</a>`; }).join(" · ")}</p>`;
 }
 
 const REFS = [
@@ -1972,7 +2075,7 @@ function benchmarks() {
   <div class="tool-list">${BENCH.map(t => row(t)).join("")}</div>
   <div class="prose">
     <h2>What they show</h2>
-    <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. Open the <a href="#directory">directory</a> to see the alternatives, or read <a href="#method">how we score</a> to see how the questions work.</p>
+    <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. See each giant <a href="#compare">next to its best replacement</a>, open the <a href="#directory">directory</a> to see the alternatives, or read <a href="#method">how we score</a> to see how the questions work.</p>
   </div>`;
 }
 
@@ -2213,13 +2316,13 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/" };
-const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/" };
+const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
   for (const [id, path] of Object.entries(ROUTES)) if (path === p) return id;
-  const m = p.match(/^\/(category|tools|size|benchmarks)\/([A-Za-z0-9-]+)\/$/);
-  if (m) return ({ category: "cat-", tools: "tool-", size: "size-", benchmarks: "bench-" })[m[1]] + m[2];
+  const m = p.match(/^\/(category|tools|size|benchmarks|compare)\/([A-Za-z0-9-]+)\/$/);
+  if (m) return ({ category: "cat-", tools: "tool-", size: "size-", benchmarks: "bench-", compare: "cmp-" })[m[1]] + m[2];
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
@@ -2232,6 +2335,10 @@ function seo(id) {
   if (id === "directory") return out("Directory and leaderboard of convivial software", `All ${TOOLS.length} reviewed tools, scored out of 30 against Illich's six tests, with the most convivial tools one click away. Filter by maker, scope and verdict, or jump to a category.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)))] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+  if (id === "compare") return out("Compare the giants with the tools that replace them", "Side-by-side scores for big products such as WhatsApp, Gmail and Chrome and the best small tool that can replace each, on Illich's six tests.", { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"]])] });
+  if (id.startsWith("cmp-")) { const p = pairOf(id.slice(4)); if (!p) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const [a, b] = pairTools(p);
+    return out(`${a.name} vs ${b.name}: scores side by side (${total(a)} vs ${total(b)})`, `${compareSummary(p)} What you give up by switching, and how to move.`, { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"], [`${a.name} vs ${b.name}`, idToPath(id)]]), listLd([a, b])] }); }
   if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
   if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
@@ -2309,6 +2416,8 @@ function render() {
   else if (h === "submit") { html = submit(); nav = "submit"; }
   else if (h === "impressum") html = impressum();
   else if (h === "privacy") html = privacy();
+  else if (h === "compare") { html = compareIndex(); nav = ""; }
+  else if (h.startsWith("cmp-")) { html = compare(h.slice(4)); nav = ""; }
   else if (h === "thanks") html = thanks();
   else html = notFound();
   setView(html);
@@ -2377,5 +2486,6 @@ fixLinks(document);
 render();
 </script>
 
-</body>
-</html>
+
+
+</body></html>

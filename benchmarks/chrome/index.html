@@ -78,7 +78,38 @@ main .wrap { padding-block: 48px 64px; }
 
 /* Home */
 .home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.hero { position: relative; }
+.hero > * { position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
+.hero h1 .w { display: inline-block; animation: hero-rise .7s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.hero h1 .hl { background: linear-gradient(color-mix(in srgb, var(--accent) 30%, transparent), color-mix(in srgb, var(--accent) 30%, transparent)) 0 86% / 0 .3em no-repeat; animation: hero-sweep .9s cubic-bezier(.3, .7, .2, 1) 1s forwards; }
+@keyframes hero-rise { from { opacity: 0; transform: translateY(.45em); } to { opacity: 1; transform: none; } }
+@keyframes hero-sweep { to { background-size: 100% .3em; } }
+.hero .label, .hero .lede, .hero .hero-cta { animation: hero-rise .8s cubic-bezier(.2, .7, .2, 1) both; }
+.hero .lede { animation-delay: .55s; } .hero .hero-cta { animation-delay: .7s; }
+.hero-mark { position: absolute !important; z-index: 0 !important; right: -70px; top: -60px; width: clamp(220px, 34vw, 400px); aspect-ratio: 1; background: var(--accent); opacity: .09; -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; animation: hero-spin 80s linear infinite; pointer-events: none; }
+@keyframes hero-spin { to { transform: rotate(360deg); } }
+.ticker { overflow: hidden; margin: -8px 0 40px; border-block: 1px solid var(--line); background: var(--panel); -webkit-mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.ticker-track { display: flex; width: max-content; animation: ticker 120s linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+.tk { display: inline-flex; align-items: baseline; gap: 10px; padding: 13px 26px; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.tk b { font-weight: 500; }
+.tk span { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tk::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); align-self: center; }
+.tk.v2::before { background: var(--gold); } .tk.v3::before { background: var(--stamp); }
+.tk:hover b { color: var(--accent); }
+.feature .meters { display: grid; gap: 7px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
+.feature .meter-row { font-size: 13px; }
+.feature .meter i.on { animation: meter-fill .45s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--d) * 55ms + 250ms); }
+@keyframes meter-fill { from { background: var(--meter-off); transform: scaleY(.3); } to { transform: none; } }
+.feature .meter { transform-origin: bottom; }
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 .w, .hero h1 .hl, .hero .label, .hero .lede, .hero .hero-cta, .hero-mark, .ticker-track, .feature .meter i.on { animation: none !important; }
+  .hero h1 .hl { background-size: 100% .3em; }
+  .ticker { overflow-x: auto; } .ticker-track { width: auto; flex-wrap: wrap; }
+  .ticker-track [data-dup] { display: none; }
+}
 .hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
 .purposes { margin-top: 32px; border-top: 1px solid var(--line); }
 .purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
@@ -91,6 +122,13 @@ main .wrap { padding-block: 48px 64px; }
 .feature h2 { font-size: 30px; color: var(--accent); margin-top: 18px; }
 .feature .desc { margin-top: 10px; }
 .feature ul { list-style: none; padding: 16px 0 0; margin: 18px 0 0; border-top: 1px solid var(--line); display: grid; gap: 4px; font-size: 15px; }
+/* Score chip: the same four treatments as the review badges (solid blue, pale blue, white, rust), for a quick read of the verdict */
+.score-chip { display: inline-block; padding: 3px 12px; font-size: 14px; line-height: 1.4; border: 1px solid transparent; font-variant-numeric: tabular-nums; }
+.score-chip b { font-weight: 700; }
+.score-chip.s1 { background: #193bc5; color: #f1f2ed; border-color: color-mix(in srgb, var(--accent) 55%, #193bc5); }
+.score-chip.s2 { background: #c9d5f4; color: #193bc5; border-color: #193bc5; }
+.score-chip.s3 { background: #ffffff; color: #193bc5; border-color: #193bc5; }
+.score-chip.s4 { background: #b3441f; color: #f1f2ed; border-color: #b3441f; }
 .btn { display: flex; justify-content: space-between; align-items: center; gap: 12px; border: 1px solid var(--accent); padding: 12px 16px; text-decoration: none; color: var(--fg); background: transparent; font: inherit; font-size: 15px; cursor: pointer; width: 100%; text-align: left; }
 .btn:hover { background: color-mix(in srgb, var(--accent) 14%, transparent); }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -118,6 +156,10 @@ main .wrap { padding-block: 48px 64px; }
 .nf h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 18px 0 0; color: var(--fg); }
 .nf-lede { font-size: 18px; color: var(--muted); margin: 14px auto 0; max-width: 30em; }
 .nf-links { display: grid; gap: 10px; margin: 30px auto 0; max-width: 360px; text-align: left; }
+.nf .btn.primary { background: var(--accent); color: var(--on-accent); }
+.nf .btn.primary:hover { background: color-mix(in srgb, var(--accent) 86%, var(--fg)); }
+.coffee-card { display: block; width: 100%; max-width: 340px; height: auto; aspect-ratio: 1; margin: 28px auto 0; border: 1px solid var(--line); }
+.share-status { min-height: 20px; margin-top: 12px; }
 .nf-or { margin: 34px 0 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .nf-jump { justify-content: center; border-bottom: 0; margin-top: 8px; }
 .btn-row { display: grid; gap: 10px; margin-top: 22px; }
@@ -161,6 +203,18 @@ main .wrap { padding-block: 48px 64px; }
 .prompt-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 8px 12px; background: var(--band); color: var(--band-fg); font-family: var(--mono); font-size: 12px; }
 .prompt-bar .btn { background: var(--panel); color: var(--fg); border-color: var(--band-fg); }
 .prompt-box pre { margin: 0; padding: 16px; max-height: 520px; overflow: auto; white-space: pre-wrap; word-break: break-word; font-family: var(--mono); font-size: 13px; line-height: 1.55; }
+.cmp { margin: 22px 0 8px; border-top: 1px solid var(--line); }
+.cmp-row { display: grid; grid-template-columns: minmax(70px, .6fr) 1fr 1fr; gap: 0 14px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.cmp-label { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.cmp-cell { font-size: 14px; min-width: 0; overflow-wrap: anywhere; }
+.cmp-cell.win { font-weight: 600; color: var(--accent); }
+.cmp-cell .meter-row { grid-template-columns: auto auto; justify-content: start; gap: 10px; }
+.cmp-head { align-items: start; padding: 18px 0; }
+.cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
+.cmp-side h2 a { text-decoration: none; }
+.cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+@media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
 .related h2 { font-size: 20px; margin-bottom: 8px; }
 .related ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
@@ -371,8 +425,9 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 .theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
 .what-core{font-size:clamp(22px,3vw,30px);line-height:1.35;max-width:30em;margin:28px 0 8px;color:var(--ink)}
 </style>
+<script src="/assets/ascii-bg.js" defer=""></script>
 <link rel="stylesheet" href="/assets/footer.css">
-<script src="/assets/footer-pixels.js" defer></script>
+<script src="/assets/footer-pixels.js" defer=""></script>
 </head>
 <body>
 
@@ -409,7 +464,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <ul class="points" aria-label="What makes Google Chrome unusual"><h2>What stands out</h2><li>The most used browser, made by an ad company</li><li>Built on open source Chromium, but Chrome itself is closed</li><li>Syncs to a Google account</li></ul>
       <div class="visit"><a class="btn" href="https://www.google.com/chrome/" target="_blank" rel="noopener">Visit Google Chrome <span aria-hidden="true">↗</span></a></div>
       
-      <section class="related"><h2>Compare with tools in Browsers</h2><ul><li><a href="/tools/firefox/"><span class="logo sm"><img src="/assets/tools/firefox/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Firefox</b><span>A full browser from a nonprofit foundation, on its own engine.</span></span></a></li><li><a href="/tools/librewolf/"><span class="logo sm"><img src="/assets/tools/librewolf/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>LibreWolf</b><span>Firefox with the tracking and telemetry removed and strict privacy on by default.</span></span></a></li><li><a href="/tools/tor-browser/"><span class="logo sm"><img src="/assets/tools/tor-browser/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Tor Browser</b><span>A browser that hides where you are by sending traffic through several relays.</span></span></a></li><li><a href="/tools/mullvad-browser/"><span class="logo sm"><img src="/assets/tools/mullvad-browser/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Mullvad Browser</b><span>A privacy browser made with the Tor Project, without the Tor network.</span></span></a></li><li><a href="/tools/ladybird/"><span class="logo sm"><img src="/assets/tools/ladybird/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Ladybird</b><span>A new browser built from scratch, on an engine that nobody else controls.</span></span></a></li></ul></section>
+      <p class="bench-note"><b>Side by side.</b> <a href="/compare/firefox-vs-chrome/">Firefox vs Google Chrome</a></p><section class="related"><h2>Compare with tools in Browsers</h2><ul><li><a href="/tools/firefox/"><span class="logo sm"><img src="/assets/tools/firefox/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Firefox</b><span>A full browser from a nonprofit foundation, on its own engine.</span></span></a></li><li><a href="/tools/librewolf/"><span class="logo sm"><img src="/assets/tools/librewolf/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>LibreWolf</b><span>Firefox with the tracking and telemetry removed and strict privacy on by default.</span></span></a></li><li><a href="/tools/tor-browser/"><span class="logo sm"><img src="/assets/tools/tor-browser/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Tor Browser</b><span>A browser that hides where you are by sending traffic through several relays.</span></span></a></li><li><a href="/tools/mullvad-browser/"><span class="logo sm"><img src="/assets/tools/mullvad-browser/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Mullvad Browser</b><span>A privacy browser made with the Tor Project, without the Tor network.</span></span></a></li><li><a href="/tools/ladybird/"><span class="logo sm"><img src="/assets/tools/ladybird/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Ladybird</b><span>A new browser built from scratch, on an engine that nobody else controls.</span></span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Google Chrome Info</span><i aria-hidden="true"></i></div>
@@ -1498,13 +1553,30 @@ function row(t, rank) {
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini v${n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4}">${band(n)}</span></div></a>`;
 }
 
+function heroTitle() {
+  const words = "A guide to software that serves its users.".split(" ");
+  const w = (x, i) => `<span class="w" style="--i:${i}">${x}</span>`;
+  return words.slice(0, 5).map(w).join(" ") + ` <span class="hl">` + words.slice(5).map((x, i) => w(x, i + 5)).join(" ") + `</span>`;
+}
+function tickerHtml() {
+  const pick = (arr, n, hash) => arr.filter((_, i) => i % n === hash);
+  const ok = arr => arr.filter(t => total(t) >= 18);   // leaning convivial or better only
+  const items = pick(ok(TOOLS), 6, 0).concat(pick(ok(BENCH), 4, 1)).sort((a, b) => a.slug < b.slug ? -1 : 1);
+  const cell = (t, dup) => { const n = total(t); const v = n >= 18 ? "v1" : n >= 10 ? "v2" : "v3"; return `<a class="tk ${v}" href="#${t.bench ? "bench" : "tool"}-${t.slug}" tabindex="-1"${dup ? " data-dup" : ""}><b>${esc(t.name)}</b><span>${n}/30</span></a>`; };
+  const half = items.map(t => cell(t, false)).join("");
+  return `<div class="ticker" aria-hidden="true"><div class="ticker-track">${half}${items.map(t => cell(t, true)).join("")}</div></div>`;
+}
+function featureMeters(t) {
+  return `<div class="meters">${CRITERIA.map((c, k) => `<div class="meter-row"><span>${esc(c.name)}</span><span class="meter">${[0, 1, 2, 3, 4].map(j => `<i${j < t.s[k] ? ` class="on" style="--d:${k * 2 + j}"` : ""}></i>`).join("")}</span><b>${t.s[k]}</b></div>`).join("")}</div>`;
+}
 function home() {
   const t = TOOLS[featureIndex % TOOLS.length];
-  return `<div class="home">
+  return `${tickerHtml()}<div class="home">
     <section class="hero">
+      <span class="hero-mark" aria-hidden="true"></span>
       <p class="label">A directory of convivial software</p>
-      <h1>A guide to software that serves its users.</h1>
-      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
+      <h1>${heroTitle()}</h1>
+      <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
       <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
@@ -1517,7 +1589,8 @@ function home() {
         <p class="label">A random tool in the collection</p>
         <h2>${esc(t.name)}</h2>
         <p class="desc">${esc(t.one)}</p>
-        <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li>${total(t)}/30 · ${band(total(t))}</li></ul>
+        <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li><span class="score-chip s${total(t) >= 25 ? 1 : total(t) >= 18 ? 2 : total(t) >= 10 ? 3 : 4}"><b>${total(t)}/30</b> · ${band(total(t))}</span></li></ul>
+        ${featureMeters(t)}
         <div class="btn-row">
           <a class="btn" href="#tool-${t.slug}">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
@@ -1769,7 +1842,7 @@ function tool(slug, isBench) {
       ${t.points && t.points.length ? `<ul class="points" aria-label="What makes ${esc(t.name)} unusual"><h2>What stands out</h2>${t.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
       <div class="visit"><a class="btn" href="${t.url}" target="_blank" rel="noopener">Visit ${esc(t.name)} <span aria-hidden="true">↗</span></a></div>
       ${isBench ? "" : badgeBox(t)}
-      ${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 6); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}">${logo(x, "sm")}<span class="rt"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></span></a></li>`).join("")}</ul></section>` : ""); })()}
+      ${compareLinks(t)}${(() => { const rel = toolsIn(t.cat).filter(x => x.slug !== t.slug).slice(0, 6); const gi = isBench ? [] : BENCH.filter(x => x.cat === t.cat); return (gi.length ? `<p class="bench-note">For comparison, we also reviewed ${gi.map(x => `<a href="#bench-${x.slug}">${esc(x.name)}</a> (${total(x)}/30)`).join(" and ")} as a benchmark.</p>` : "") + (rel.length ? `<section class="related"><h2>${isBench ? "Compare with tools in " + esc(c.name) : "Other tools for “" + esc(c.verb.toLowerCase()) + "”"}</h2><ul>${rel.map(x => `<li><a href="#tool-${x.slug}">${logo(x, "sm")}<span class="rt"><b>${esc(x.name)}</b><span>${esc(x.one)}</span></span></a></li>`).join("")}</ul></section>` : ""); })()}
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>${esc(t.name)} Info</span><i aria-hidden="true"></i></div>
@@ -1786,6 +1859,84 @@ function tool(slug, isBench) {
       ${scoreBadge(t)}
     </aside>
   </div>`;
+}
+
+/* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
+const PAIRS = [
+  { g: "whatsapp", t: "deltachat", cost: "Delta Chat sends messages over ordinary email, so it reaches anyone with an address, but your friends need to install it for the full chat experience, and the circle you can reach is small next to three billion.", move: "Install it, add a friend by scanning their QR code, and keep WhatsApp running until your closest group follows." },
+  { g: "whatsapp", t: "signal", cost: "Signal still asks for a phone number to sign up, although a username can now hide it, and it lives on donations, so it depends on that staying true. Its circle of users is smaller than WhatsApp's.", move: "Chat history does not come across easily from WhatsApp, so keep the old app until your groups have moved." },
+  { g: "adobe-creative-cloud", t: "krita", cost: "Krita is a painting and illustration program. It does not replace Photoshop's photo retouching, Illustrator's vector work or Premiere's video editing, so a studio that lives in the whole suite will need a few tools instead of one.", move: "Open a PSD file in Krita to see how much carries over, then add Inkscape for vector work and GIMP for photos." },
+  { g: "chatgpt", t: "ollama", cost: "The models run on your own computer, so answers depend on your hardware and on the open models you pick. They are good, and usually behind the biggest hosted models on hard tasks. In return nothing you type leaves the machine.", move: "Install Ollama, pull a small model first, and step up to a larger one if your memory allows." },
+  { g: "google-drive", t: "syncthing", cost: "Syncthing keeps copies of your folders on your own devices. It has no web page for sharing a link and no live co-editing, and at least one device has to be on for a file to travel.", move: "Download your Drive with Google Takeout, point Syncthing at the folder, and add your other devices." },
+  { g: "google-maps", t: "comaps", cost: "CoMaps uses OpenStreetMap data and works offline, but it has no live traffic and thinner business details such as opening hours and reviews.", move: "Download the maps for the places you travel before you leave, and keep Google Maps for the odd restaurant lookup." },
+  { g: "google-search", t: "searxng", cost: "SearXNG asks other search engines for results and strips the tracking, so you get familiar answers without being followed. It relies on those engines, and a public instance can be slow or blocked now and then. Running your own removes that risk.", move: "Pick a public instance, or run your own, and set it as your browser's default search engine." },
+  { g: "google-photos", t: "ente", cost: "Ente encrypts your photos so only you can read them, and the code is open. Search and face grouping happen on your device, so they are plainer than Google's, and storage costs money past a point unless you host it yourself.", move: "Export with Google Takeout and import the archive into Ente, then turn off Google's backup." },
+  { g: "kindle", t: "calibre", cost: "Calibre manages books you already own in open formats. It cannot buy from the Kindle store, and books with Amazon's copy protection may not open there, so check what you own before you commit.", move: "Fill your library from DRM-free sources such as Standard Ebooks and Project Gutenberg, and read on any e-reader that takes EPUB." },
+  { g: "google-password-manager", t: "keepassxc", cost: "KeePassXC keeps your passwords in one encrypted file on your computer. Getting that file to your phone is up to you, and phone autofill needs a separate compatible app.", move: "Export your passwords from Chrome, import the file into KeePassXC, delete the export, and sync the database with Syncthing or a cloud folder." },
+  { g: "gmail", t: "thunderbird", cost: "Thunderbird is a mail program, not a mail service, so you still need an inbox somewhere, and leaving Gmail for good means choosing a provider too. It works with Gmail today, which makes it a gentle first step.", move: "Add your Gmail account to Thunderbird first, then move to a provider you prefer when you are ready and forward the old address." },
+  { g: "instagram", t: "pixelfed", cost: "Pixelfed shows photos in the order they were posted, with no ranking, and your followers can be on other servers. The audience is far smaller than Instagram's, and there are no shopping or ad tools.", move: "Pick a server, post a few photos, and tell your followers where to find you. Keep Instagram for a while as a signpost." },
+  { g: "tiktok", t: "loops", cost: "Loops is a young short-video app built on the same open network as Mastodon. It has the swipe-through feel, but the catalogue and the audience are tiny next to TikTok's, and it is early.", move: "Make an account on Loops, cross-post your best clips, and see who follows." },
+  { g: "youtube", t: "peertube", cost: "PeerTube is a network of servers run by different people, so finding videos and earning from them is harder than on YouTube, and playback depends on the server a video lives on.", move: "Start by following a few channels you already like, many of which also post to PeerTube, and upload new work to an instance that suits you." },
+  { g: "google-news", t: "netnewswire", cost: "A feed reader shows what you subscribe to and nothing else, so there is no personalised front page and you build the list of sources yourself. NetNewsWire runs on Apple devices only.", move: "Export your favourite sites' feeds, or paste their addresses into the app. FreshRSS is the pick if you want a reader that runs in any browser." },
+  { g: "chrome", t: "firefox", cost: "Firefox is built by a nonprofit and has no Google account hooks, so a few web apps still run best in Chrome. It also earns much of its income from a search deal with Google.", move: "Import your bookmarks and passwords during setup, and keep Chrome installed for the one or two sites that need it." },
+  { g: "google-play", t: "f-droid", cost: "F-Droid lists only open-source apps, so most banking, ride-hailing and streaming apps are not there. Updates come from the F-Droid app instead of Play.", move: "Install F-Droid alongside Play and move apps over one by one as you find open replacements." },
+  { g: "spotify", t: "navidrome", cost: "Navidrome streams music you already own from your own server. There is no catalogue to browse and you have to run the server, so it suits people with a library, not people who rent one.", move: "Point Navidrome at your music folder and use any Subsonic-compatible app on your phone." },
+  { g: "amazon-alexa", t: "home-assistant", cost: "Home Assistant runs in your house, so lights and sensors keep working without a cloud, but setup takes an afternoon and voice control is less polished than Alexa's.", move: "Start with the devices you already own that speak local protocols, and add voice later once the basics work." },
+  { g: "microsoft-365", t: "libreoffice", cost: "LibreOffice opens and saves Word, Excel and PowerPoint files, though complicated layouts can shift. It has no built-in shared editing like 365, so teams that write together in real time need something else, such as ONLYOFFICE.", move: "Open your most complicated documents first to see how they hold up, then switch the rest." }
+];
+const pairSlug = p => `${p.t}-vs-${p.g}`;
+const pairOf = slug => PAIRS.find(p => pairSlug(p) === slug);
+const pairTools = p => [TOOLS.find(x => x.slug === p.t), BENCH.find(x => x.slug === p.g)];
+const chipClass = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
+const joinNames = a => a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
+
+function compareSummary(p) {
+  const [a, b] = pairTools(p), na = total(a), nb = total(b);
+  const aw = CRITERIA.filter((k, i) => a.s[i] > b.s[i]).map(k => k.name.toLowerCase());
+  const bw = CRITERIA.filter((k, i) => b.s[i] > a.s[i]).map(k => k.name.toLowerCase());
+  let s = `${a.name} scores ${na} out of 30 and ${b.name} scores ${nb}.`;
+  if (aw.length) s += ` ${a.name} is ahead on ${joinNames(aw)}.`;
+  if (bw.length) s += ` ${b.name} is ahead on ${joinNames(bw)}.`;
+  if (!aw.length && !bw.length) s += " They score the same on every question.";
+  return s;
+}
+function compare(slug) {
+  const p = pairOf(slug); if (!p) return notFound();
+  const [a, b] = pairTools(p);
+  const side = (t, tag) => `<div class="cmp-side">${logo(t, "lg")}<h2><a href="#${t.bench ? "bench" : "tool"}-${t.slug}">${esc(t.name)}</a></h2><p class="cmp-tag">${tag}</p><span class="score-chip s${chipClass(total(t))}"><b>${total(t)}/30</b> · ${band(total(t))}</span><p class="one">${esc(t.one)}</p></div>`;
+  const row = (label, x, y, win) => `<div class="cmp-row"><div class="cmp-label">${label}</div><div class="cmp-cell${win === 1 ? " win" : ""}">${x}</div><div class="cmp-cell${win === 2 ? " win" : ""}">${y}</div></div>`;
+  const meter = (t, i) => `<span class="meter" aria-hidden="true">${[0, 1, 2, 3, 4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b>`;
+  const crit = CRITERIA.map((k, i) => row(esc(k.name), `<div class="meter-row">${meter(a, i)}</div>`, `<div class="meter-row">${meter(b, i)}</div>`, a.s[i] > b.s[i] ? 1 : b.s[i] > a.s[i] ? 2 : 0)).join("");
+  const facts = [["Price", "price"], ["Source", "source"], ["Runs on", "platforms"]].map(([l, f]) => row(l, esc(a[f]), esc(b[f]), 0)).join("")
+    + row("Maker", `${a.size} · ${SIZES[a.size].name}`, `${b.size} · ${SIZES[b.size].name}`, 0);
+  const others = PAIRS.filter(x => x.g === p.g && x !== p);
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#compare">Compare</a> / ${esc(a.name)} vs ${esc(b.name)}</p>
+  <div class="page-head" style="margin-top:14px"><h1>${esc(a.name)} vs ${esc(b.name)}</h1><p>${esc(compareSummary(p))}</p></div>
+  <div class="cmp">
+    <div class="cmp-row cmp-head"><div class="cmp-label"></div>${side(a, "The small tool")}${side(b, "The giant")}</div>
+    ${crit}${facts}
+  </div>
+  <div class="prose">
+    <h2>What you give up by switching</h2>
+    <p>${esc(p.cost)}</p>
+    <h2>How to move</h2>
+    <p>${esc(p.move)}</p>
+    <p>Scores are our opinion on six questions from Ivan Illich, based on public sources and dated ${REVIEWED}. Read the full reviews of <a href="#tool-${a.slug}">${esc(a.name)}</a> and <a href="#bench-${b.slug}">${esc(b.name)}</a>, or see <a href="#method">how we score</a>.</p>
+    ${others.length ? `<p>Also instead of ${esc(b.name)}: ${others.map(o => { const [x] = pairTools(o); return `<a href="#cmp-${pairSlug(o)}">${esc(x.name)}</a>`; }).join(", ")}.</p>` : ""}
+  </div>
+  <div class="visit"><a class="btn primary" href="${a.url}" target="_blank" rel="noopener">Visit ${esc(a.name)} <span aria-hidden="true">↗</span></a> <a class="btn" href="#cat-${a.cat}">More tools for “${esc(catOf(a.cat).verb.toLowerCase())}” <span aria-hidden="true">↗</span></a></div>`;
+}
+function compareIndex() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Compare</p>
+  <div class="page-head" style="margin-top:14px"><h1>Compare: the giants and what can replace them</h1><p>Each page sets a big, familiar product next to the best small tool that does the same job, scored on the same six questions.</p></div>
+  <div class="tool-list">${PAIRS.map(p => { const [a, b] = pairTools(p), na = total(a), nb = total(b);
+    return `<a class="tool-row" href="#cmp-${pairSlug(p)}"><div class="lead">${logo(a, "sm")}<div><h3>${esc(a.name)} vs ${esc(b.name)}</h3><p class="one">${esc(b.one)}</p></div></div><div class="score-mini"><b>${na}<span>/30</span></b><span class="verdict-mini v${chipClass(na)}">vs ${nb}</span></div></a>`; }).join("")}</div>
+  <div class="prose"><p>These are judgment calls, not a verdict that one tool fits everyone. Where several tools could replace a giant, we picked the one that fits the same job most closely, and the full <a href="#directory">directory</a> has the rest.</p></div>`;
+}
+function compareLinks(t) {
+  const list = PAIRS.filter(p => t.bench ? p.g === t.slug : p.t === t.slug);
+  if (!list.length) return "";
+  return `<p class="bench-note"><b>Side by side.</b> ${list.map(p => { const [a, b] = pairTools(p); return `<a href="#cmp-${pairSlug(p)}">${esc(a.name)} vs ${esc(b.name)}</a>`; }).join(" · ")}</p>`;
 }
 
 const REFS = [
@@ -1939,7 +2090,7 @@ function benchmarks() {
   <div class="tool-list">${BENCH.map(t => row(t)).join("")}</div>
   <div class="prose">
     <h2>What they show</h2>
-    <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. Open the <a href="#directory">directory</a> to see the alternatives, or read <a href="#method">how we score</a> to see how the questions work.</p>
+    <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. See each giant <a href="#compare">next to its best replacement</a>, open the <a href="#directory">directory</a> to see the alternatives, or read <a href="#method">how we score</a> to see how the questions work.</p>
   </div>`;
 }
 
@@ -2097,6 +2248,77 @@ function privacy() {
   </div>`;
 }
 
+function thanks() {
+  return `<section class="nf">
+    <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
+    <h1>Thank you for the coffee</h1>
+    <p class="nf-lede">It goes toward the domain, the hosting and the time spent reviewing tools. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
+    <canvas id="coffee-card" class="coffee-card" role="img" aria-label="Share card that reads: I bought Tools for Conviviality a coffee. toolsforconviviality.com"></canvas>
+    <div class="nf-links" style="margin-top:22px">
+      <button class="btn primary" type="button" id="share-coffee">Share that you bought us a coffee <span aria-hidden="true">↗</span></button>
+      <button class="btn ghost" type="button" id="save-card">Save the image <span aria-hidden="true">↓</span></button>
+      <button class="btn ghost" type="button" id="copy-share">Copy the message <span aria-hidden="true">⧉</span></button>
+    </div>
+    <p class="label share-status" id="share-status" aria-live="polite"></p>
+    <p class="nf-or">Or keep looking around</p>
+    <div class="nf-links"><a class="btn" href="#directory">Browse the directory <span>→</span></a><a class="btn" href="#what">What is conviviality? <span>→</span></a><a class="btn ghost" href="#submit">Suggest a tool <span>→</span></a></div>
+    <p class="nf-lede" style="margin-top:34px;font-size:15px">Something look wrong with your payment? Write to <span class="addr">hello@toolsforconviviality.com</span> and we will sort it out.</p>
+  </section>`;
+}
+
+const SHARE_URL = "https://toolsforconviviality.com";
+const SHARE_TEXT = "I just bought Tools for Conviviality a coffee. It is a free guide to software that serves its users: " + SHARE_URL;
+const SHARE_FILE = "i-bought-tools-for-conviviality-a-coffee.png";
+function drawCoffeeCard(cv, mark) {
+  const c = cv.getContext && cv.getContext("2d"); if (!c) return;
+  const W = 1080, H = 1080, BLUE = "#193bc5", CREAM = "#f1f2ed", INK = "#19242d", MUTED = "#536274";
+  const SANS = '"Instrument Sans", "Helvetica Neue", Arial, sans-serif';
+  cv.width = W; cv.height = H;
+  const wrap = (text, max) => { const out = []; let line = ""; for (const w of text.split(" ")) { const t = line ? line + " " + w : w; if (line && c.measureText(t).width > max) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; };
+  c.fillStyle = CREAM; c.fillRect(0, 0, W, H);
+  c.fillStyle = BLUE; c.fillRect(0, 0, W, 168);
+  if (mark) { const o = document.createElement("canvas"); o.width = o.height = 96; const x = o.getContext("2d"); x.drawImage(mark, 0, 0, 96, 96); x.globalCompositeOperation = "source-in"; x.fillStyle = CREAM; x.fillRect(0, 0, 96, 96); c.drawImage(o, 72, 36); }
+  c.fillStyle = CREAM; c.textBaseline = "middle"; c.font = "600 44px " + SANS; c.fillText("Tools for Conviviality", mark ? 186 : 72, 84);
+  c.fillStyle = INK; c.textBaseline = "alphabetic"; c.font = "500 92px " + SANS;
+  const head = wrap("I bought Tools for Conviviality a coffee.", W - 144), lh = 100, y1 = 330;
+  head.forEach((l, i) => c.fillText(l, 72, y1 + i * lh));
+  const k = 1.3, areaTop = y1 + (head.length - 1) * lh + 40, areaBottom = H - 168 - 40;
+  const y0 = areaTop + (areaBottom - areaTop - 237 * k) / 2 + 87 * k, x0 = 72;   // y0: top of the cup body
+  c.save(); c.translate(x0, y0); c.scale(k, k);
+  c.fillStyle = BLUE; c.beginPath(); c.moveTo(0, 0); c.lineTo(140, 0); c.lineTo(124, 140); c.quadraticCurveTo(122, 150, 112, 150); c.lineTo(28, 150); c.quadraticCurveTo(18, 150, 16, 140); c.closePath(); c.fill();
+  c.strokeStyle = BLUE; c.lineWidth = 14; c.lineCap = "round"; c.beginPath(); c.arc(134, 62, 34, -Math.PI / 2, Math.PI / 2); c.stroke();
+  c.lineWidth = 10; [40, 70, 100].forEach((dx, i) => { const sg = i % 2 ? -1 : 1; c.beginPath(); c.moveTo(dx, -22); c.bezierCurveTo(dx + 16 * sg, -42, dx - 16 * sg, -62, dx, -82); c.stroke(); });
+  c.restore();
+  c.fillStyle = MUTED; c.font = "500 42px " + SANS;
+  const tx = x0 + 190 * k, side = wrap("A free guide to software that serves its users.", W - tx - 72), mid = y0 + 75 * k;
+  side.forEach((l, i) => c.fillText(l, tx, mid - (side.length - 1) * 28 + 14 + i * 56));
+  c.fillStyle = BLUE; c.fillRect(0, H - 168, W, 168);
+  c.fillStyle = CREAM; c.textBaseline = "middle"; c.font = "600 58px " + SANS; c.fillText("toolsforconviviality.com", 72, H - 84);
+}
+function initShare() {
+  const cv = document.getElementById("coffee-card"); if (!cv || cv.dataset.ready) return; cv.dataset.ready = "1";
+  const say = t => { const s = document.getElementById("share-status"); if (s) s.textContent = t; };
+  const img = new Image();
+  const ready = Promise.all([
+    new Promise(r => { img.onload = r; img.onerror = r; img.src = "/mark.svg"; }),
+    document.fonts ? Promise.all(['500 92px "Instrument Sans"', '600 44px "Instrument Sans"'].map(f => document.fonts.load(f))).catch(() => {}) : null
+  ]).then(() => drawCoffeeCard(cv, img.complete && img.naturalWidth ? img : null));
+  const blob = async () => { await ready; return new Promise(r => cv.toBlob(r, "image/png")); };
+  const save = async () => { const b = await blob(); if (!b) return false; const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = SHARE_FILE; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); return true; };
+  const copy = async () => { try { await navigator.clipboard.writeText(SHARE_TEXT); return true; } catch { return false; } };
+  document.getElementById("save-card").onclick = async () => say((await save()) ? "Image saved." : "Could not save the image.");
+  document.getElementById("copy-share").onclick = async () => say((await copy()) ? "Message copied." : "Could not copy. Select the text yourself: " + SHARE_TEXT);
+  document.getElementById("share-coffee").onclick = async () => {
+    const b = await blob(), file = b && new File([b], SHARE_FILE, { type: "image/png" });
+    try {
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text: SHARE_TEXT }); say("Shared. Thank you."); return; }
+      if (navigator.share) { await navigator.share({ text: SHARE_TEXT }); say("Shared. Use Save the image to add the card to your post."); return; }
+    } catch (e) { if (e && e.name === "AbortError") return; }
+    const a = await save(), b2 = await copy();
+    say(a && b2 ? "Image saved and message copied. Paste both into your post." : a ? "Image saved. Use Copy the message for the text." : "Sharing is not available here. Use the buttons below the card.");
+  };
+}
+
 function notFound() {
   return `<section class="nf">
     <div class="nf-num" aria-hidden="true"><span>4</span><i class="nf-c"></i><span>4</span></div>
@@ -2109,13 +2331,13 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
-const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/" };
+const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
   for (const [id, path] of Object.entries(ROUTES)) if (path === p) return id;
-  const m = p.match(/^\/(category|tools|size|benchmarks)\/([A-Za-z0-9-]+)\/$/);
-  if (m) return ({ category: "cat-", tools: "tool-", size: "size-", benchmarks: "bench-" })[m[1]] + m[2];
+  const m = p.match(/^\/(category|tools|size|benchmarks|compare)\/([A-Za-z0-9-]+)\/$/);
+  if (m) return ({ category: "cat-", tools: "tool-", size: "size-", benchmarks: "bench-", compare: "cmp-" })[m[1]] + m[2];
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
@@ -2128,6 +2350,10 @@ function seo(id) {
   if (id === "directory") return out("Directory and leaderboard of convivial software", `All ${TOOLS.length} reviewed tools, scored out of 30 against Illich's six tests, with the most convivial tools one click away. Filter by maker, scope and verdict, or jump to a category.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"]]), listLd(TOOLS.slice().sort((a, b) => total(b) - total(a) || a.name.localeCompare(b.name)))] });
   if (id.startsWith("cat-")) { const c = catOf(id.slice(4)); if (!c) return out("Page not found", "That page doesn't exist.", { noindex: true });
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
+  if (id === "compare") return out("Compare the giants with the tools that replace them", "Side-by-side scores for big products such as WhatsApp, Gmail and Chrome and the best small tool that can replace each, on Illich's six tests.", { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"]])] });
+  if (id.startsWith("cmp-")) { const p = pairOf(id.slice(4)); if (!p) return out("Page not found", "That page doesn't exist.", { noindex: true });
+    const [a, b] = pairTools(p);
+    return out(`${a.name} vs ${b.name}: scores side by side (${total(a)} vs ${total(b)})`, `${compareSummary(p)} What you give up by switching, and how to move.`, { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"], [`${a.name} vs ${b.name}`, idToPath(id)]]), listLd([a, b])] }); }
   if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
   if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
@@ -2149,6 +2375,7 @@ function seo(id) {
   if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
   if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
   if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
   return out("Page not found", "That page doesn't exist.", { noindex: true });
@@ -2204,6 +2431,9 @@ function render() {
   else if (h === "submit") { html = submit(); nav = "submit"; }
   else if (h === "impressum") html = impressum();
   else if (h === "privacy") html = privacy();
+  else if (h === "compare") { html = compareIndex(); nav = ""; }
+  else if (h.startsWith("cmp-")) { html = compare(h.slice(4)); nav = ""; }
+  else if (h === "thanks") html = thanks();
   else html = notFound();
   setView(html);
   applySeo(h);
@@ -2212,6 +2442,7 @@ function render() {
 }
 
 function bind() {
+  if (document.getElementById("coffee-card")) initShare();
   const another = document.getElementById("another");
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
   document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
