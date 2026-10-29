@@ -78,7 +78,38 @@ main .wrap { padding-block: 48px 64px; }
 
 /* Home */
 .home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.hero { position: relative; }
+.hero > * { position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
+.hero h1 .w { display: inline-block; animation: hero-rise .7s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--i) * 70ms + 80ms); }
+.hero h1 .hl { background: linear-gradient(color-mix(in srgb, var(--accent) 30%, transparent), color-mix(in srgb, var(--accent) 30%, transparent)) 0 86% / 0 .3em no-repeat; animation: hero-sweep .9s cubic-bezier(.3, .7, .2, 1) 1s forwards; }
+@keyframes hero-rise { from { opacity: 0; transform: translateY(.45em); } to { opacity: 1; transform: none; } }
+@keyframes hero-sweep { to { background-size: 100% .3em; } }
+.hero .label, .hero .lede, .hero .hero-cta { animation: hero-rise .8s cubic-bezier(.2, .7, .2, 1) both; }
+.hero .lede { animation-delay: .55s; } .hero .hero-cta { animation-delay: .7s; }
+.hero-mark { position: absolute !important; z-index: 0 !important; right: -70px; top: -60px; width: clamp(220px, 34vw, 400px); aspect-ratio: 1; background: var(--accent); opacity: .09; -webkit-mask: url(/mark.svg) center / contain no-repeat; mask: url(/mark.svg) center / contain no-repeat; animation: hero-spin 80s linear infinite; pointer-events: none; }
+@keyframes hero-spin { to { transform: rotate(360deg); } }
+.ticker { overflow: hidden; margin: -8px 0 40px; border-block: 1px solid var(--line); background: var(--panel); -webkit-mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.ticker-track { display: flex; width: max-content; animation: ticker 120s linear infinite; }
+.ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+@keyframes ticker { to { transform: translateX(-50%); } }
+.tk { display: inline-flex; align-items: baseline; gap: 10px; padding: 13px 26px; text-decoration: none; white-space: nowrap; font-size: 15px; }
+.tk b { font-weight: 500; }
+.tk span { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tk::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); align-self: center; }
+.tk.v2::before { background: var(--gold); } .tk.v3::before { background: var(--stamp); }
+.tk:hover b { color: var(--accent); }
+.feature .meters { display: grid; gap: 7px; margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
+.feature .meter-row { font-size: 13px; }
+.feature .meter i.on { animation: meter-fill .45s cubic-bezier(.2, .7, .2, 1) both; animation-delay: calc(var(--d) * 55ms + 250ms); }
+@keyframes meter-fill { from { background: var(--meter-off); transform: scaleY(.3); } to { transform: none; } }
+.feature .meter { transform-origin: bottom; }
+@media (prefers-reduced-motion: reduce) {
+  .hero h1 .w, .hero h1 .hl, .hero .label, .hero .lede, .hero .hero-cta, .hero-mark, .ticker-track, .feature .meter i.on { animation: none !important; }
+  .hero h1 .hl { background-size: 100% .3em; }
+  .ticker { overflow-x: auto; } .ticker-track { width: auto; flex-wrap: wrap; }
+  .ticker-track [data-dup] { display: none; }
+}
 .hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
 .purposes { margin-top: 32px; border-top: 1px solid var(--line); }
 .purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
@@ -118,6 +149,10 @@ main .wrap { padding-block: 48px 64px; }
 .nf h1 { font-size: clamp(26px, 4vw, 38px); line-height: 1.1; margin: 18px 0 0; color: var(--fg); }
 .nf-lede { font-size: 18px; color: var(--muted); margin: 14px auto 0; max-width: 30em; }
 .nf-links { display: grid; gap: 10px; margin: 30px auto 0; max-width: 360px; text-align: left; }
+.nf .btn.primary { background: var(--accent); color: var(--on-accent); }
+.nf .btn.primary:hover { background: color-mix(in srgb, var(--accent) 86%, var(--fg)); }
+.coffee-card { display: block; width: 100%; max-width: 340px; height: auto; aspect-ratio: 1; margin: 28px auto 0; border: 1px solid var(--line); }
+.share-status { min-height: 20px; margin-top: 12px; }
 .nf-or { margin: 34px 0 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .nf-jump { justify-content: center; border-bottom: 0; margin-top: 8px; }
 .btn-row { display: grid; gap: 10px; margin-top: 22px; }
@@ -394,10 +429,11 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </header>
 
-<main id="app"><div class="wrap" id="view"><div class="home">
+<main id="app"><div class="wrap" id="view"><div class="ticker" aria-hidden="true"><div class="ticker-track"><a class="tk v1" href="/tools/audiobookshelf/" tabindex="-1"><b>Audiobookshelf</b><span>22/30</span></a><a class="tk v1" href="/tools/briar/" tabindex="-1"><b>Briar</b><span>22/30</span></a><a class="tk v2" href="/benchmarks/chrome/" tabindex="-1"><b>Google Chrome</b><span>17/30</span></a><a class="tk v1" href="/tools/collabora-online/" tabindex="-1"><b>Collabora Online</b><span>22/30</span></a><a class="tk v1" href="/tools/cryptomator/" tabindex="-1"><b>Cryptomator</b><span>27/30</span></a><a class="tk v1" href="/tools/cryptpad/" tabindex="-1"><b>CryptPad</b><span>22/30</span></a><a class="tk v1" href="/tools/deltachat/" tabindex="-1"><b>Delta Chat</b><span>24/30</span></a><a class="tk v1" href="/tools/esphome/" tabindex="-1"><b>ESPHome</b><span>27/30</span></a><a class="tk v1" href="/tools/feedbin/" tabindex="-1"><b>Feedbin</b><span>22/30</span></a><a class="tk v2" href="/benchmarks/google-drive/" tabindex="-1"><b>Google Drive</b><span>15/30</span></a><a class="tk v3" href="/benchmarks/instagram/" tabindex="-1"><b>Instagram</b><span>7/30</span></a><a class="tk v1" href="/tools/kdenlive/" tabindex="-1"><b>Kdenlive</b><span>24/30</span></a><a class="tk v2" href="/benchmarks/kindle/" tabindex="-1"><b>Amazon Kindle</b><span>13/30</span></a><a class="tk v1" href="/tools/kodi/" tabindex="-1"><b>Kodi</b><span>25/30</span></a><a class="tk v1" href="/tools/ladybird/" tabindex="-1"><b>Ladybird</b><span>22/30</span></a><a class="tk v1" href="/tools/localsend/" tabindex="-1"><b>LocalSend</b><span>29/30</span></a><a class="tk v2" href="/benchmarks/microsoft-365/" tabindex="-1"><b>Microsoft 365</b><span>15/30</span></a><a class="tk v1" href="/tools/obs-studio/" tabindex="-1"><b>OBS Studio</b><span>26/30</span></a><a class="tk v1" href="/tools/pairdrop/" tabindex="-1"><b>PairDrop</b><span>26/30</span></a><a class="tk v1" href="/tools/photoprism/" tabindex="-1"><b>PhotoPrism</b><span>22/30</span></a><a class="tk v1" href="/tools/proton-pass/" tabindex="-1"><b>Proton Pass</b><span>21/30</span></a><a class="tk v1" href="/tools/thunderbird/" tabindex="-1"><b>Thunderbird</b><span>25/30</span></a><a class="tk v1" href="/tools/vlc/" tabindex="-1"><b>VLC</b><span>29/30</span></a><a class="tk v2" href="/benchmarks/whatsapp/" tabindex="-1"><b>WhatsApp</b><span>14/30</span></a><a class="tk v1" href="/tools/zotero/" tabindex="-1"><b>Zotero</b><span>28/30</span></a><a class="tk v1" href="/tools/audiobookshelf/" tabindex="-1" data-dup=""><b>Audiobookshelf</b><span>22/30</span></a><a class="tk v1" href="/tools/briar/" tabindex="-1" data-dup=""><b>Briar</b><span>22/30</span></a><a class="tk v2" href="/benchmarks/chrome/" tabindex="-1" data-dup=""><b>Google Chrome</b><span>17/30</span></a><a class="tk v1" href="/tools/collabora-online/" tabindex="-1" data-dup=""><b>Collabora Online</b><span>22/30</span></a><a class="tk v1" href="/tools/cryptomator/" tabindex="-1" data-dup=""><b>Cryptomator</b><span>27/30</span></a><a class="tk v1" href="/tools/cryptpad/" tabindex="-1" data-dup=""><b>CryptPad</b><span>22/30</span></a><a class="tk v1" href="/tools/deltachat/" tabindex="-1" data-dup=""><b>Delta Chat</b><span>24/30</span></a><a class="tk v1" href="/tools/esphome/" tabindex="-1" data-dup=""><b>ESPHome</b><span>27/30</span></a><a class="tk v1" href="/tools/feedbin/" tabindex="-1" data-dup=""><b>Feedbin</b><span>22/30</span></a><a class="tk v2" href="/benchmarks/google-drive/" tabindex="-1" data-dup=""><b>Google Drive</b><span>15/30</span></a><a class="tk v3" href="/benchmarks/instagram/" tabindex="-1" data-dup=""><b>Instagram</b><span>7/30</span></a><a class="tk v1" href="/tools/kdenlive/" tabindex="-1" data-dup=""><b>Kdenlive</b><span>24/30</span></a><a class="tk v2" href="/benchmarks/kindle/" tabindex="-1" data-dup=""><b>Amazon Kindle</b><span>13/30</span></a><a class="tk v1" href="/tools/kodi/" tabindex="-1" data-dup=""><b>Kodi</b><span>25/30</span></a><a class="tk v1" href="/tools/ladybird/" tabindex="-1" data-dup=""><b>Ladybird</b><span>22/30</span></a><a class="tk v1" href="/tools/localsend/" tabindex="-1" data-dup=""><b>LocalSend</b><span>29/30</span></a><a class="tk v2" href="/benchmarks/microsoft-365/" tabindex="-1" data-dup=""><b>Microsoft 365</b><span>15/30</span></a><a class="tk v1" href="/tools/obs-studio/" tabindex="-1" data-dup=""><b>OBS Studio</b><span>26/30</span></a><a class="tk v1" href="/tools/pairdrop/" tabindex="-1" data-dup=""><b>PairDrop</b><span>26/30</span></a><a class="tk v1" href="/tools/photoprism/" tabindex="-1" data-dup=""><b>PhotoPrism</b><span>22/30</span></a><a class="tk v1" href="/tools/proton-pass/" tabindex="-1" data-dup=""><b>Proton Pass</b><span>21/30</span></a><a class="tk v1" href="/tools/thunderbird/" tabindex="-1" data-dup=""><b>Thunderbird</b><span>25/30</span></a><a class="tk v1" href="/tools/vlc/" tabindex="-1" data-dup=""><b>VLC</b><span>29/30</span></a><a class="tk v2" href="/benchmarks/whatsapp/" tabindex="-1" data-dup=""><b>WhatsApp</b><span>14/30</span></a><a class="tk v1" href="/tools/zotero/" tabindex="-1" data-dup=""><b>Zotero</b><span>28/30</span></a></div></div><div class="home">
     <section class="hero">
+      <span class="hero-mark" aria-hidden="true"></span>
       <p class="label">A directory of convivial software</p>
-      <h1>A guide to software that serves its users.</h1>
+      <h1><span class="w" style="--i:0">A</span> <span class="w" style="--i:1">guide</span> <span class="w" style="--i:2">to</span> <span class="w" style="--i:3">software</span> <span class="w" style="--i:4">that</span> <span class="hl"><span class="w" style="--i:5">serves</span> <span class="w" style="--i:6">its</span> <span class="w" style="--i:7">users.</span></span></h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
       <div class="hero-cta"><a class="btn primary" href="/directory/">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="/what-is-conviviality/">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
@@ -409,6 +445,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
         <h2>Zotero</h2>
         <p class="desc">Collects, cites and organises your research sources, and keeps them yours.</p>
         <ul><li>Instead of EndNote, Mendeley, Google Scholar libraries</li><li>Medium maker · Tool</li><li>28/30 · Convivial</li></ul>
+        <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter"><i class="on" style="--d:0"></i><i class="on" style="--d:1"></i><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Lock-in</span><span class="meter"><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i></span><b>5</b></div><div class="meter-row"><span>Self-direction</span><span class="meter"><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Power</span><span class="meter"><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i></span><b>5</b></div><div class="meter-row"><span>Longevity</span><span class="meter"><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i></span><b>5</b></div><div class="meter-row"><span>Delivery</span><span class="meter"><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i><i class="on" style="--d:13"></i><i class="on" style="--d:14"></i></span><b>5</b></div></div>
         <div class="btn-row">
           <a class="btn" href="/tools/zotero/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
@@ -1509,12 +1546,28 @@ function row(t, rank) {
     <div class="score-mini"><b>${n}<span>/30</span></b><span class="verdict-mini v${n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4}">${band(n)}</span></div></a>`;
 }
 
+function heroTitle() {
+  const words = "A guide to software that serves its users.".split(" ");
+  const w = (x, i) => `<span class="w" style="--i:${i}">${x}</span>`;
+  return words.slice(0, 5).map(w).join(" ") + ` <span class="hl">` + words.slice(5).map((x, i) => w(x, i + 5)).join(" ") + `</span>`;
+}
+function tickerHtml() {
+  const pick = (arr, n, hash) => arr.filter((_, i) => i % n === hash);
+  const items = pick(TOOLS, 6, 0).concat(pick(BENCH, 4, 1)).sort((a, b) => a.slug < b.slug ? -1 : 1);
+  const cell = (t, dup) => { const n = total(t); const v = n >= 18 ? "v1" : n >= 10 ? "v2" : "v3"; return `<a class="tk ${v}" href="#${t.bench ? "bench" : "tool"}-${t.slug}" tabindex="-1"${dup ? " data-dup" : ""}><b>${esc(t.name)}</b><span>${n}/30</span></a>`; };
+  const half = items.map(t => cell(t, false)).join("");
+  return `<div class="ticker" aria-hidden="true"><div class="ticker-track">${half}${items.map(t => cell(t, true)).join("")}</div></div>`;
+}
+function featureMeters(t) {
+  return `<div class="meters">${CRITERIA.map((c, k) => `<div class="meter-row"><span>${esc(c.name)}</span><span class="meter">${[0, 1, 2, 3, 4].map(j => `<i${j < t.s[k] ? ` class="on" style="--d:${k * 2 + j}"` : ""}></i>`).join("")}</span><b>${t.s[k]}</b></div>`).join("")}</div>`;
+}
 function home() {
   const t = TOOLS[featureIndex % TOOLS.length];
-  return `<div class="home">
+  return `${tickerHtml()}<div class="home">
     <section class="hero">
+      <span class="hero-mark" aria-hidden="true"></span>
       <p class="label">A directory of convivial software</p>
-      <h1>A guide to software that serves its users.</h1>
+      <h1>${heroTitle()}</h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i> and ranked from most to least convivial. It is a human-centred way to look at software: who it serves, what it asks of you, and whether you can bend it to your own purposes.</p>
       <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
@@ -1529,6 +1582,7 @@ function home() {
         <h2>${esc(t.name)}</h2>
         <p class="desc">${esc(t.one)}</p>
         <ul><li>Instead of ${esc(t.replaces)}</li><li>${SIZES[t.size].name} maker · ${SCOPES[t.scope].name}</li><li>${total(t)}/30 · ${band(total(t))}</li></ul>
+        ${featureMeters(t)}
         <div class="btn-row">
           <a class="btn" href="#tool-${t.slug}">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
@@ -2108,6 +2162,77 @@ function privacy() {
   </div>`;
 }
 
+function thanks() {
+  return `<section class="nf">
+    <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
+    <h1>Thank you for the coffee</h1>
+    <p class="nf-lede">It goes toward the domain, the hosting and the time spent reviewing tools. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
+    <canvas id="coffee-card" class="coffee-card" role="img" aria-label="Share card that reads: I bought Tools for Conviviality a coffee. toolsforconviviality.com"></canvas>
+    <div class="nf-links" style="margin-top:22px">
+      <button class="btn primary" type="button" id="share-coffee">Share that you bought us a coffee <span aria-hidden="true">↗</span></button>
+      <button class="btn ghost" type="button" id="save-card">Save the image <span aria-hidden="true">↓</span></button>
+      <button class="btn ghost" type="button" id="copy-share">Copy the message <span aria-hidden="true">⧉</span></button>
+    </div>
+    <p class="label share-status" id="share-status" aria-live="polite"></p>
+    <p class="nf-or">Or keep looking around</p>
+    <div class="nf-links"><a class="btn" href="#directory">Browse the directory <span>→</span></a><a class="btn" href="#what">What is conviviality? <span>→</span></a><a class="btn ghost" href="#submit">Suggest a tool <span>→</span></a></div>
+    <p class="nf-lede" style="margin-top:34px;font-size:15px">Something look wrong with your payment? Write to <span class="addr">hello@toolsforconviviality.com</span> and we will sort it out.</p>
+  </section>`;
+}
+
+const SHARE_URL = "https://toolsforconviviality.com";
+const SHARE_TEXT = "I just bought Tools for Conviviality a coffee. It is a free guide to software that serves its users: " + SHARE_URL;
+const SHARE_FILE = "i-bought-tools-for-conviviality-a-coffee.png";
+function drawCoffeeCard(cv, mark) {
+  const c = cv.getContext && cv.getContext("2d"); if (!c) return;
+  const W = 1080, H = 1080, BLUE = "#193bc5", CREAM = "#f1f2ed", INK = "#19242d", MUTED = "#536274";
+  const SANS = '"Instrument Sans", "Helvetica Neue", Arial, sans-serif';
+  cv.width = W; cv.height = H;
+  const wrap = (text, max) => { const out = []; let line = ""; for (const w of text.split(" ")) { const t = line ? line + " " + w : w; if (line && c.measureText(t).width > max) { out.push(line); line = w; } else line = t; } if (line) out.push(line); return out; };
+  c.fillStyle = CREAM; c.fillRect(0, 0, W, H);
+  c.fillStyle = BLUE; c.fillRect(0, 0, W, 168);
+  if (mark) { const o = document.createElement("canvas"); o.width = o.height = 96; const x = o.getContext("2d"); x.drawImage(mark, 0, 0, 96, 96); x.globalCompositeOperation = "source-in"; x.fillStyle = CREAM; x.fillRect(0, 0, 96, 96); c.drawImage(o, 72, 36); }
+  c.fillStyle = CREAM; c.textBaseline = "middle"; c.font = "600 44px " + SANS; c.fillText("Tools for Conviviality", mark ? 186 : 72, 84);
+  c.fillStyle = INK; c.textBaseline = "alphabetic"; c.font = "500 92px " + SANS;
+  const head = wrap("I bought Tools for Conviviality a coffee.", W - 144), lh = 100, y1 = 330;
+  head.forEach((l, i) => c.fillText(l, 72, y1 + i * lh));
+  const k = 1.3, areaTop = y1 + (head.length - 1) * lh + 40, areaBottom = H - 168 - 40;
+  const y0 = areaTop + (areaBottom - areaTop - 237 * k) / 2 + 87 * k, x0 = 72;   // y0: top of the cup body
+  c.save(); c.translate(x0, y0); c.scale(k, k);
+  c.fillStyle = BLUE; c.beginPath(); c.moveTo(0, 0); c.lineTo(140, 0); c.lineTo(124, 140); c.quadraticCurveTo(122, 150, 112, 150); c.lineTo(28, 150); c.quadraticCurveTo(18, 150, 16, 140); c.closePath(); c.fill();
+  c.strokeStyle = BLUE; c.lineWidth = 14; c.lineCap = "round"; c.beginPath(); c.arc(134, 62, 34, -Math.PI / 2, Math.PI / 2); c.stroke();
+  c.lineWidth = 10; [40, 70, 100].forEach((dx, i) => { const sg = i % 2 ? -1 : 1; c.beginPath(); c.moveTo(dx, -22); c.bezierCurveTo(dx + 16 * sg, -42, dx - 16 * sg, -62, dx, -82); c.stroke(); });
+  c.restore();
+  c.fillStyle = MUTED; c.font = "500 42px " + SANS;
+  const tx = x0 + 190 * k, side = wrap("A free guide to software that serves its users.", W - tx - 72), mid = y0 + 75 * k;
+  side.forEach((l, i) => c.fillText(l, tx, mid - (side.length - 1) * 28 + 14 + i * 56));
+  c.fillStyle = BLUE; c.fillRect(0, H - 168, W, 168);
+  c.fillStyle = CREAM; c.textBaseline = "middle"; c.font = "600 58px " + SANS; c.fillText("toolsforconviviality.com", 72, H - 84);
+}
+function initShare() {
+  const cv = document.getElementById("coffee-card"); if (!cv || cv.dataset.ready) return; cv.dataset.ready = "1";
+  const say = t => { const s = document.getElementById("share-status"); if (s) s.textContent = t; };
+  const img = new Image();
+  const ready = Promise.all([
+    new Promise(r => { img.onload = r; img.onerror = r; img.src = "/mark.svg"; }),
+    document.fonts ? Promise.all(['500 92px "Instrument Sans"', '600 44px "Instrument Sans"'].map(f => document.fonts.load(f))).catch(() => {}) : null
+  ]).then(() => drawCoffeeCard(cv, img.complete && img.naturalWidth ? img : null));
+  const blob = async () => { await ready; return new Promise(r => cv.toBlob(r, "image/png")); };
+  const save = async () => { const b = await blob(); if (!b) return false; const a = document.createElement("a"); a.href = URL.createObjectURL(b); a.download = SHARE_FILE; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000); return true; };
+  const copy = async () => { try { await navigator.clipboard.writeText(SHARE_TEXT); return true; } catch { return false; } };
+  document.getElementById("save-card").onclick = async () => say((await save()) ? "Image saved." : "Could not save the image.");
+  document.getElementById("copy-share").onclick = async () => say((await copy()) ? "Message copied." : "Could not copy. Select the text yourself: " + SHARE_TEXT);
+  document.getElementById("share-coffee").onclick = async () => {
+    const b = await blob(), file = b && new File([b], SHARE_FILE, { type: "image/png" });
+    try {
+      if (file && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], text: SHARE_TEXT }); say("Shared. Thank you."); return; }
+      if (navigator.share) { await navigator.share({ text: SHARE_TEXT }); say("Shared. Use Save the image to add the card to your post."); return; }
+    } catch (e) { if (e && e.name === "AbortError") return; }
+    const a = await save(), b2 = await copy();
+    say(a && b2 ? "Image saved and message copied. Paste both into your post." : a ? "Image saved. Use Copy the message for the text." : "Sharing is not available here. Use the buttons below the card.");
+  };
+}
+
 function notFound() {
   return `<section class="nf">
     <div class="nf-num" aria-hidden="true"><span>4</span><i class="nf-c"></i><span>4</span></div>
@@ -2120,7 +2245,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2160,6 +2285,7 @@ function seo(id) {
   if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
   if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
   if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
   return out("Page not found", "That page doesn't exist.", { noindex: true });
@@ -2215,6 +2341,7 @@ function render() {
   else if (h === "submit") { html = submit(); nav = "submit"; }
   else if (h === "impressum") html = impressum();
   else if (h === "privacy") html = privacy();
+  else if (h === "thanks") html = thanks();
   else html = notFound();
   setView(html);
   applySeo(h);
@@ -2223,6 +2350,7 @@ function render() {
 }
 
 function bind() {
+  if (document.getElementById("coffee-card")) initShare();
   const another = document.getElementById("another");
   if (another) another.onclick = () => { featureIndex = (featureIndex + 1 + Math.floor(Math.random() * (TOOLS.length - 1))) % TOOLS.length; render(); document.getElementById("another")?.focus(); };
   document.querySelectorAll(".fbtn").forEach(b => b.onclick = () => { filt[b.dataset.f] = b.dataset.v; setView(directory()); bind(); });
