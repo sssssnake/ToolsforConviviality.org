@@ -2066,6 +2066,17 @@ function privacy() {
   </div>`;
 }
 
+function thanks() {
+  return `<section class="nf">
+    <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
+    <h1>Thank you for the coffee</h1>
+    <p class="nf-lede">It goes toward the domain, the hosting and the time spent reviewing tools. The directory stays free, with no accounts and no tracking, and nothing about this page tells anyone you gave.</p>
+    <div class="nf-links"><a class="btn" href="#directory">Browse the directory <span>→</span></a><a class="btn" href="#what">What is conviviality? <span>→</span></a><a class="btn ghost" href="#submit">Suggest a tool <span>→</span></a></div>
+    <p class="nf-or">Something look wrong with your payment?</p>
+    <p class="nf-lede" style="margin-top:8px;font-size:16px">Write to <span class="addr">hello@toolsforconviviality.com</span> and we will sort it out.</p>
+  </section>`;
+}
+
 function notFound() {
   return `<section class="nf">
     <div class="nf-num" aria-hidden="true"><span>4</span><i class="nf-c"></i><span>4</span></div>
@@ -2078,7 +2089,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2118,6 +2129,7 @@ function seo(id) {
   if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
   if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
   if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
   return out("Page not found", "That page doesn't exist.", { noindex: true });
@@ -2173,6 +2185,7 @@ function render() {
   else if (h === "submit") { html = submit(); nav = "submit"; }
   else if (h === "impressum") html = impressum();
   else if (h === "privacy") html = privacy();
+  else if (h === "thanks") html = thanks();
   else html = notFound();
   setView(html);
   applySeo(h);
