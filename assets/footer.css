@@ -1,0 +1,16 @@
+/* Footer: the same blue band as the top nav, so the page has a clear end. The pixel field lives in
+   assets/footer-pixels.js and draws on a canvas behind the links. */
+footer { background: var(--band, #193bc5); color: var(--band-fg, #f1f2ed); border-top: 0; position: relative; overflow: hidden; }
+footer .wrap { position: relative; z-index: 1; padding-block: 40px 44px; }
+footer .foot-cats { border-bottom-color: rgba(241, 242, 237, .28); }
+footer .foot-cats .label { color: rgba(241, 242, 237, .78); }
+footer .foot-cats a { color: var(--band-fg, #f1f2ed); }
+footer .foot-cats a:hover { color: var(--band-fg, #f1f2ed); border-bottom-color: var(--band-fg, #f1f2ed); }
+footer .foot-links a { color: rgba(241, 242, 237, .84); }
+footer .foot-links a:hover { color: var(--band-fg, #f1f2ed); }
+footer .foot-c { background: var(--band-fg, #f1f2ed); }
+footer .theme-btn { color: rgba(241, 242, 237, .84); border-color: rgba(241, 242, 237, .45); }
+footer .theme-btn:hover, footer .theme-btn:focus-visible { color: var(--band-fg, #f1f2ed); border-color: var(--band-fg, #f1f2ed); }
+footer :focus-visible { outline-color: var(--band-fg, #f1f2ed); }
+#foot-pixels { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+@media print { #foot-pixels { display: none; } footer { background: none; color: inherit; } }
