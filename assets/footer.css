@@ -12,5 +12,8 @@ footer .foot-c { background: var(--band-fg, #f1f2ed); }
 footer .theme-btn { color: rgba(241, 242, 237, .84); border-color: rgba(241, 242, 237, .45); }
 footer .theme-btn:hover, footer .theme-btn:focus-visible { color: var(--band-fg, #f1f2ed); border-color: var(--band-fg, #f1f2ed); }
 footer :focus-visible { outline-color: var(--band-fg, #f1f2ed); }
+footer .foot-cta { flex-basis: 100%; margin: 0; padding-bottom: 4px; font-size: 15px; display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; color: rgba(241, 242, 237, .9); }
+footer .foot-cta a { color: var(--band-fg, #f1f2ed); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+footer .foot-cta a:hover { text-decoration-thickness: 2px; }
 #foot-waves { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
 @media print { #foot-waves { display: none; } footer { background: none; color: inherit; } }
