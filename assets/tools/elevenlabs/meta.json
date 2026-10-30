@@ -1,0 +1,26 @@
+{
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "source": "https://elevenlabs.io",
+  "capturedAt": "2026-10-30T21:44:01.952Z",
+  "alt": "Screenshot of the ElevenLabs website",
+  "pageTitle": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+  "pageDescription": "Create lifelike speech with our AI voice generator and voice agents platform. Access 17,500+ voices in 90+ languages with secure APIs and SDKs.",
+  "icon": {
+    "128": "assets/tools/elevenlabs/icon-128.webp",
+    "256": "assets/tools/elevenlabs/icon-256.webp",
+    "svg": "assets/tools/elevenlabs/icon.svg",
+    "from": "https://elevenlabs.io/icon.svg?c23f5371fdd26632",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/elevenlabs/social-600.webp",
+    "1200": "assets/tools/elevenlabs/social-1200.webp",
+    "from": "https://elevenlabs.io/cover.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

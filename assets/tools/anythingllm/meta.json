@@ -1,0 +1,33 @@
+{
+  "slug": "anythingllm",
+  "name": "AnythingLLM",
+  "source": "https://github.com/Mintplex-Labs/anything-llm",
+  "capturedAt": "2026-10-30T21:42:14.535Z",
+  "alt": "Screenshot of the AnythingLLM website",
+  "pageTitle": "GitHub - Mintplex-Labs/anything-llm: Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience · GitHub",
+  "pageDescription": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience  - GitHub - Mintplex-Labs/anything-llm: Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+  "shot": {
+    "480": "assets/tools/anythingllm/shot-480.webp",
+    "960": "assets/tools/anythingllm/shot-960.webp",
+    "1600": "assets/tools/anythingllm/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/anythingllm/mobile-390.webp",
+    "780": "assets/tools/anythingllm/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/anythingllm/icon-128.webp",
+    "256": "assets/tools/anythingllm/icon-256.webp",
+    "svg": "assets/tools/anythingllm/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/anythingllm/social-600.webp",
+    "1200": "assets/tools/anythingllm/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/649170660/9af36aa6-55ff-496a-abb7-0a1300abd591"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

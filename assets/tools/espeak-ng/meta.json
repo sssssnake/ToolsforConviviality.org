@@ -1,0 +1,33 @@
+{
+  "slug": "espeak-ng",
+  "name": "eSpeak NG",
+  "source": "https://github.com/espeak-ng/espeak-ng",
+  "capturedAt": "2026-10-30T21:43:33.566Z",
+  "alt": "Screenshot of the eSpeak NG website",
+  "pageTitle": "GitHub - espeak-ng/espeak-ng: eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents. · GitHub",
+  "pageDescription": "eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents. - espeak-ng/espeak-ng",
+  "shot": {
+    "480": "assets/tools/espeak-ng/shot-480.webp",
+    "960": "assets/tools/espeak-ng/shot-960.webp",
+    "1600": "assets/tools/espeak-ng/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/espeak-ng/mobile-390.webp",
+    "780": "assets/tools/espeak-ng/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/espeak-ng/icon-128.webp",
+    "256": "assets/tools/espeak-ng/icon-256.webp",
+    "svg": "assets/tools/espeak-ng/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/espeak-ng/social-600.webp",
+    "1200": "assets/tools/espeak-ng/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/c700bd18f4a1ec169e15ff6b2c0e45d7197a650dcc055f14cf4dc685a3fc406f/espeak-ng/espeak-ng"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

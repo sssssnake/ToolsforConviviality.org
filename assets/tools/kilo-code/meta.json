@@ -1,0 +1,33 @@
+{
+  "slug": "kilo-code",
+  "name": "Kilo Code",
+  "source": "https://kilo.ai",
+  "capturedAt": "2026-10-30T21:41:23.038Z",
+  "alt": "Screenshot of the Kilo Code website",
+  "pageTitle": "Kilo – Open Source AI Coding Agent in IDE, CLI and Cloud",
+  "pageDescription": "Open source AI coding agent for VS Code, JetBrains, CLI, and Cloud. 500+ models at zero markup, your own keys, or local models for privacy.",
+  "shot": {
+    "480": "assets/tools/kilo-code/shot-480.webp",
+    "960": "assets/tools/kilo-code/shot-960.webp",
+    "1600": "assets/tools/kilo-code/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/kilo-code/mobile-390.webp",
+    "780": "assets/tools/kilo-code/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/kilo-code/icon-128.webp",
+    "256": "assets/tools/kilo-code/icon-256.webp",
+    "svg": "assets/tools/kilo-code/icon.svg",
+    "from": "https://kilo.ai/favicon/favicon.svg?v=3",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/kilo-code/social-600.webp",
+    "1200": "assets/tools/kilo-code/social-1200.webp",
+    "from": "https://kilo.ai/kilocode-social.png"
+  },
+  "color": "#617a91",
+  "colorFrom": "theme-color",
+  "notes": []
+}

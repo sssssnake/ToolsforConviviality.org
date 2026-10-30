@@ -1,0 +1,26 @@
+{
+  "slug": "github-copilot",
+  "name": "GitHub Copilot",
+  "source": "https://github.com/features/copilot",
+  "capturedAt": "2026-10-30T21:42:08.687Z",
+  "alt": "Screenshot of the GitHub Copilot website",
+  "pageTitle": "GitHub Copilot · Your AI coding agent · GitHub · GitHub",
+  "pageDescription": "GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your editor, the terminal, on your desktop, and on GitHub.",
+  "icon": {
+    "128": "assets/tools/github-copilot/icon-128.webp",
+    "256": "assets/tools/github-copilot/icon-256.webp",
+    "svg": "assets/tools/github-copilot/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/github-copilot/social-600.webp",
+    "1200": "assets/tools/github-copilot/social-1200.webp",
+    "from": "https://images.ctfassets.net/8aevphvgewt8/4KxWJH8PVVXdqBLs1V3UJ8/7b7f6e8405daa24565374f993c0fca68/github-copilot-open-graph-img.jpg"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

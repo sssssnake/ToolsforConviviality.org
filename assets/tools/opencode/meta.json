@@ -1,0 +1,34 @@
+{
+  "slug": "opencode",
+  "name": "OpenCode",
+  "source": "https://opencode.ai",
+  "capturedAt": "2026-10-30T21:41:16.175Z",
+  "alt": "Screenshot of the OpenCode website",
+  "pageTitle": "OpenCode | The open source AI coding agent",
+  "pageDescription": "OpenCode - The open source coding agent.",
+  "shot": {
+    "480": "assets/tools/opencode/shot-480.webp",
+    "960": "assets/tools/opencode/shot-960.webp",
+    "1600": "assets/tools/opencode/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/opencode/mobile-390.webp",
+    "780": "assets/tools/opencode/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/opencode/icon-128.webp",
+    "256": "assets/tools/opencode/icon-256.webp",
+    "from": "https://opencode.ai/web-app-manifest-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/opencode/social-600.webp",
+    "1200": "assets/tools/opencode/social-1200.webp",
+    "from": "https://opencode.ai/social-share.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

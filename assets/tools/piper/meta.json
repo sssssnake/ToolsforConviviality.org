@@ -1,0 +1,33 @@
+{
+  "slug": "piper",
+  "name": "Piper",
+  "source": "https://github.com/OHF-Voice/piper1-gpl",
+  "capturedAt": "2026-10-30T21:42:56.946Z",
+  "alt": "Screenshot of the Piper website",
+  "pageTitle": "GitHub - OHF-Voice/piper1-gpl: Fast and local neural text-to-speech engine · GitHub",
+  "pageDescription": "Fast and local neural text-to-speech engine. Contribute to OHF-Voice/piper1-gpl development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/piper/shot-480.webp",
+    "960": "assets/tools/piper/shot-960.webp",
+    "1600": "assets/tools/piper/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/piper/mobile-390.webp",
+    "780": "assets/tools/piper/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/piper/icon-128.webp",
+    "256": "assets/tools/piper/icon-256.webp",
+    "svg": "assets/tools/piper/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/piper/social-600.webp",
+    "1200": "assets/tools/piper/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/1955f273f8f03baf720addc1b96590b12f31328c9e6479068032c52d4be2a20e/OHF-Voice/piper1-gpl"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

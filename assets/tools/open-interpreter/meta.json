@@ -1,0 +1,33 @@
+{
+  "slug": "open-interpreter",
+  "name": "Open Interpreter",
+  "source": "https://github.com/openinterpreter/openinterpreter",
+  "capturedAt": "2026-10-30T21:44:10.415Z",
+  "alt": "Screenshot of the Open Interpreter website",
+  "pageTitle": "GitHub - openinterpreter/openinterpreter: A coding agent for open models like Kimi K3 and GLM 5.3 · GitHub",
+  "pageDescription": "A coding agent for open models like Kimi K3 and GLM 5.3 - openinterpreter/openinterpreter",
+  "shot": {
+    "480": "assets/tools/open-interpreter/shot-480.webp",
+    "960": "assets/tools/open-interpreter/shot-960.webp",
+    "1600": "assets/tools/open-interpreter/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/open-interpreter/mobile-390.webp",
+    "780": "assets/tools/open-interpreter/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/open-interpreter/icon-128.webp",
+    "256": "assets/tools/open-interpreter/icon-256.webp",
+    "svg": "assets/tools/open-interpreter/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/open-interpreter/social-600.webp",
+    "1200": "assets/tools/open-interpreter/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/666299222/30894a76-2a46-4988-a903-ababff8ac2fe"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

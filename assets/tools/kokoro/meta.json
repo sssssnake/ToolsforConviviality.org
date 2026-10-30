@@ -1,0 +1,39 @@
+{
+  "slug": "kokoro",
+  "name": "Kokoro",
+  "source": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "capturedAt": "2026-10-30T21:43:09.106Z",
+  "alt": "Screenshot of the Kokoro website",
+  "pageTitle": "hexgrad/Kokoro-82M · Hugging Face",
+  "pageDescription": "Text-to-Speech model. Download, explore files and run it on Hugging Face.",
+  "shot": {
+    "480": "assets/tools/kokoro/shot-480.webp",
+    "960": "assets/tools/kokoro/shot-960.webp",
+    "1600": "assets/tools/kokoro/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/kokoro/mobile-390.webp",
+    "780": "assets/tools/kokoro/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/kokoro/icon-128.webp",
+    "256": "assets/tools/kokoro/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/kokoro/social-600.webp",
+    "1200": "assets/tools/kokoro/social-1200.webp",
+    "from": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/hexgrad/Kokoro-82M.png"
+  },
+  "color": "#f8d818",
+  "colorFrom": "icon",
+  "notes": [
+    "dismissed banner with button:has-text(\"Dismiss\")",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

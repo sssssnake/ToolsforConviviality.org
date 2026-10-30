@@ -1,0 +1,33 @@
+{
+  "slug": "chatbox",
+  "name": "Chatbox",
+  "source": "https://github.com/chatboxai/chatbox",
+  "capturedAt": "2026-10-30T21:42:40.950Z",
+  "alt": "Screenshot of the Chatbox website",
+  "pageTitle": "GitHub - chatboxai/chatbox: Powerful AI Client · GitHub",
+  "pageDescription": "Powerful AI Client. Contribute to chatboxai/chatbox development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/chatbox/shot-480.webp",
+    "960": "assets/tools/chatbox/shot-960.webp",
+    "1600": "assets/tools/chatbox/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/chatbox/mobile-390.webp",
+    "780": "assets/tools/chatbox/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/chatbox/icon-128.webp",
+    "256": "assets/tools/chatbox/icon-256.webp",
+    "svg": "assets/tools/chatbox/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/chatbox/social-600.webp",
+    "1200": "assets/tools/chatbox/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/a74d5c5ef1da372063cb05482ee8c48784b70b5309cb6b317548b2bd5481b675/chatboxai/chatbox"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

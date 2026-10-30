@@ -5412,7 +5412,807 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://zoom.us\",{\"shot\":false},null]"
+    },
+    "aider": {
+      "slug": "aider",
+      "name": "Aider",
+      "source": "https://github.com/aider-ai/aider",
+      "capturedAt": "2026-10-30T21:40:56.831Z",
+      "alt": "Screenshot of the Aider website",
+      "pageTitle": "GitHub - Aider-AI/aider: aider is AI pair programming in your terminal · GitHub",
+      "pageDescription": "aider is AI pair programming in your terminal. Contribute to Aider-AI/aider development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/aider/shot-480.webp",
+        "960": "assets/tools/aider/shot-960.webp",
+        "1600": "assets/tools/aider/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/aider/mobile-390.webp",
+        "780": "assets/tools/aider/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/aider/icon-128.webp",
+        "256": "assets/tools/aider/icon-256.webp",
+        "svg": "assets/tools/aider/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/aider/social-600.webp",
+        "1200": "assets/tools/aider/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/638629097/1d3d6251-f8be-4d11-bbb1-4e44b7364b74"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/aider-ai/aider\",null,null]"
+    },
+    "cline": {
+      "slug": "cline",
+      "name": "Cline",
+      "source": "https://github.com/cline/cline",
+      "capturedAt": "2026-10-30T21:41:06.513Z",
+      "alt": "Screenshot of the Cline website",
+      "pageTitle": "GitHub - cline/cline: Autonomous coding agent as an SDK, IDE extension, or CLI assistant. · GitHub",
+      "pageDescription": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant. - cline/cline",
+      "shot": {
+        "480": "assets/tools/cline/shot-480.webp",
+        "960": "assets/tools/cline/shot-960.webp",
+        "1600": "assets/tools/cline/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/cline/mobile-390.webp",
+        "780": "assets/tools/cline/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/cline/icon-128.webp",
+        "256": "assets/tools/cline/icon-256.webp",
+        "svg": "assets/tools/cline/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/cline/social-600.webp",
+        "1200": "assets/tools/cline/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/a2c03219a16be990b9d268fe02ac555f190c44971c357ea33fa9627852ba686a/cline/cline"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/cline/cline\",null,null]"
+    },
+    "opencode": {
+      "slug": "opencode",
+      "name": "OpenCode",
+      "source": "https://opencode.ai",
+      "capturedAt": "2026-10-30T21:41:16.175Z",
+      "alt": "Screenshot of the OpenCode website",
+      "pageTitle": "OpenCode | The open source AI coding agent",
+      "pageDescription": "OpenCode - The open source coding agent.",
+      "shot": {
+        "480": "assets/tools/opencode/shot-480.webp",
+        "960": "assets/tools/opencode/shot-960.webp",
+        "1600": "assets/tools/opencode/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/opencode/mobile-390.webp",
+        "780": "assets/tools/opencode/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/opencode/icon-128.webp",
+        "256": "assets/tools/opencode/icon-256.webp",
+        "from": "https://opencode.ai/web-app-manifest-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/opencode/social-600.webp",
+        "1200": "assets/tools/opencode/social-1200.webp",
+        "from": "https://opencode.ai/social-share.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://opencode.ai\",null,null]"
+    },
+    "kilo-code": {
+      "slug": "kilo-code",
+      "name": "Kilo Code",
+      "source": "https://kilo.ai",
+      "capturedAt": "2026-10-30T21:41:23.038Z",
+      "alt": "Screenshot of the Kilo Code website",
+      "pageTitle": "Kilo – Open Source AI Coding Agent in IDE, CLI and Cloud",
+      "pageDescription": "Open source AI coding agent for VS Code, JetBrains, CLI, and Cloud. 500+ models at zero markup, your own keys, or local models for privacy.",
+      "shot": {
+        "480": "assets/tools/kilo-code/shot-480.webp",
+        "960": "assets/tools/kilo-code/shot-960.webp",
+        "1600": "assets/tools/kilo-code/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kilo-code/mobile-390.webp",
+        "780": "assets/tools/kilo-code/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/kilo-code/icon-128.webp",
+        "256": "assets/tools/kilo-code/icon-256.webp",
+        "svg": "assets/tools/kilo-code/icon.svg",
+        "from": "https://kilo.ai/favicon/favicon.svg?v=3",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/kilo-code/social-600.webp",
+        "1200": "assets/tools/kilo-code/social-1200.webp",
+        "from": "https://kilo.ai/kilocode-social.png"
+      },
+      "color": "#617a91",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://kilo.ai\",null,null]"
+    },
+    "zed": {
+      "slug": "zed",
+      "name": "Zed",
+      "source": "https://zed.dev",
+      "capturedAt": "2026-10-30T21:41:35.160Z",
+      "alt": "Screenshot of the Zed website",
+      "pageTitle": "Zed — Your last next editor",
+      "pageDescription": "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+      "shot": {
+        "480": "assets/tools/zed/shot-480.webp",
+        "960": "assets/tools/zed/shot-960.webp",
+        "1600": "assets/tools/zed/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/zed/mobile-390.webp",
+        "780": "assets/tools/zed/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/zed/icon-128.webp",
+        "256": "assets/tools/zed/icon-256.webp",
+        "from": "https://zed.dev/favicon_black_64.png",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/zed/social-600.webp",
+        "1200": "assets/tools/zed/social-1200.webp",
+        "from": "https://zed.dev/img/home/og.webp"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://zed.dev\",null,null]"
+    },
+    "github-copilot": {
+      "slug": "github-copilot",
+      "name": "GitHub Copilot",
+      "source": "https://github.com/features/copilot",
+      "capturedAt": "2026-10-30T21:42:08.687Z",
+      "alt": "Screenshot of the GitHub Copilot website",
+      "pageTitle": "GitHub Copilot · Your AI coding agent · GitHub · GitHub",
+      "pageDescription": "GitHub Copilot works every step of the way, from an open issue to reviewing and merging a pull request. Use it in your editor, the terminal, on your desktop, and on GitHub.",
+      "icon": {
+        "128": "assets/tools/github-copilot/icon-128.webp",
+        "256": "assets/tools/github-copilot/icon-256.webp",
+        "svg": "assets/tools/github-copilot/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/github-copilot/social-600.webp",
+        "1200": "assets/tools/github-copilot/social-1200.webp",
+        "from": "https://images.ctfassets.net/8aevphvgewt8/4KxWJH8PVVXdqBLs1V3UJ8/7b7f6e8405daa24565374f993c0fca68/github-copilot-open-graph-img.jpg"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://github.com/features/copilot\",{\"shot\":false},null]"
+    },
+    "anythingllm": {
+      "slug": "anythingllm",
+      "name": "AnythingLLM",
+      "source": "https://github.com/Mintplex-Labs/anything-llm",
+      "capturedAt": "2026-10-30T21:42:14.535Z",
+      "alt": "Screenshot of the AnythingLLM website",
+      "pageTitle": "GitHub - Mintplex-Labs/anything-llm: Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience · GitHub",
+      "pageDescription": "Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience  - GitHub - Mintplex-Labs/anything-llm: Stop renting your intelligence. Own it with AnythingLLM. Everything you need for a powerful local-first agent experience",
+      "shot": {
+        "480": "assets/tools/anythingllm/shot-480.webp",
+        "960": "assets/tools/anythingllm/shot-960.webp",
+        "1600": "assets/tools/anythingllm/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/anythingllm/mobile-390.webp",
+        "780": "assets/tools/anythingllm/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/anythingllm/icon-128.webp",
+        "256": "assets/tools/anythingllm/icon-256.webp",
+        "svg": "assets/tools/anythingllm/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/anythingllm/social-600.webp",
+        "1200": "assets/tools/anythingllm/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/649170660/9af36aa6-55ff-496a-abb7-0a1300abd591"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/Mintplex-Labs/anything-llm\",null,null]"
+    },
+    "librechat": {
+      "slug": "librechat",
+      "name": "LibreChat",
+      "source": "https://www.librechat.ai",
+      "capturedAt": "2026-10-30T21:42:24.314Z",
+      "alt": "Screenshot of the LibreChat website",
+      "pageTitle": "LibreChat - The Open-Source AI Platform",
+      "pageDescription": "LibreChat brings together all your AI conversations in one unified, customizable interface.",
+      "shot": {
+        "480": "assets/tools/librechat/shot-480.webp",
+        "960": "assets/tools/librechat/shot-960.webp",
+        "1600": "assets/tools/librechat/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/librechat/mobile-390.webp",
+        "780": "assets/tools/librechat/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/librechat/icon-128.webp",
+        "256": "assets/tools/librechat/icon-256.webp",
+        "from": "https://www.librechat.ai/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/librechat/social-600.webp",
+        "1200": "assets/tools/librechat/social-1200.webp",
+        "from": "https://www.librechat.ai/api/og?v=a40e77512dc1"
+      },
+      "color": "#486878",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.librechat.ai\",null,null]"
+    },
+    "open-webui": {
+      "slug": "open-webui",
+      "name": "Open WebUI",
+      "source": "https://openwebui.com",
+      "capturedAt": "2026-10-30T21:42:33.584Z",
+      "alt": "Screenshot of the Open WebUI website",
+      "pageTitle": "Open WebUI: Self-Hosted AI Platform",
+      "pageDescription": "Run AI on your own terms. Connect any model, extend with code, and protect what matters without compromise.",
+      "shot": {
+        "480": "assets/tools/open-webui/shot-480.webp",
+        "960": "assets/tools/open-webui/shot-960.webp",
+        "1600": "assets/tools/open-webui/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/open-webui/mobile-390.webp",
+        "780": "assets/tools/open-webui/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/open-webui/icon-128.webp",
+        "256": "assets/tools/open-webui/icon-256.webp",
+        "from": "https://openwebui.com/favicon.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/open-webui/social-600.webp",
+        "1200": "assets/tools/open-webui/social-1200.webp",
+        "from": "https://openwebui.com/og-image.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://openwebui.com\",null,null]"
+    },
+    "chatbox": {
+      "slug": "chatbox",
+      "name": "Chatbox",
+      "source": "https://github.com/chatboxai/chatbox",
+      "capturedAt": "2026-10-30T21:42:40.950Z",
+      "alt": "Screenshot of the Chatbox website",
+      "pageTitle": "GitHub - chatboxai/chatbox: Powerful AI Client · GitHub",
+      "pageDescription": "Powerful AI Client. Contribute to chatboxai/chatbox development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/chatbox/shot-480.webp",
+        "960": "assets/tools/chatbox/shot-960.webp",
+        "1600": "assets/tools/chatbox/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/chatbox/mobile-390.webp",
+        "780": "assets/tools/chatbox/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/chatbox/icon-128.webp",
+        "256": "assets/tools/chatbox/icon-256.webp",
+        "svg": "assets/tools/chatbox/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/chatbox/social-600.webp",
+        "1200": "assets/tools/chatbox/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/a74d5c5ef1da372063cb05482ee8c48784b70b5309cb6b317548b2bd5481b675/chatboxai/chatbox"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/chatboxai/chatbox\",null,null]"
+    },
+    "khoj": {
+      "slug": "khoj",
+      "name": "Khoj",
+      "source": "https://khoj.dev",
+      "capturedAt": "2026-10-30T21:42:50.686Z",
+      "alt": "Screenshot of the Khoj website",
+      "pageTitle": "Khoj - AI for Humans",
+      "pageDescription": "Khoj is an applied artificial intelligence company building safe, useful AI software for humans.",
+      "shot": {
+        "480": "assets/tools/khoj/shot-480.webp",
+        "960": "assets/tools/khoj/shot-960.webp",
+        "1600": "assets/tools/khoj/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/khoj/mobile-390.webp",
+        "780": "assets/tools/khoj/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/khoj/icon-128.webp",
+        "256": "assets/tools/khoj/icon-256.webp",
+        "from": "https://khoj.dev/favicon.png",
+        "sourceWidth": 203,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/khoj/social-600.webp",
+        "1200": "assets/tools/khoj/social-1200.webp",
+        "from": "https://khoj.dev/social-banner.jpg"
+      },
+      "color": "#486878",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://khoj.dev\",null,null]"
+    },
+    "piper": {
+      "slug": "piper",
+      "name": "Piper",
+      "source": "https://github.com/OHF-Voice/piper1-gpl",
+      "capturedAt": "2026-10-30T21:42:56.946Z",
+      "alt": "Screenshot of the Piper website",
+      "pageTitle": "GitHub - OHF-Voice/piper1-gpl: Fast and local neural text-to-speech engine · GitHub",
+      "pageDescription": "Fast and local neural text-to-speech engine. Contribute to OHF-Voice/piper1-gpl development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/piper/shot-480.webp",
+        "960": "assets/tools/piper/shot-960.webp",
+        "1600": "assets/tools/piper/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/piper/mobile-390.webp",
+        "780": "assets/tools/piper/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/piper/icon-128.webp",
+        "256": "assets/tools/piper/icon-256.webp",
+        "svg": "assets/tools/piper/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/piper/social-600.webp",
+        "1200": "assets/tools/piper/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/1955f273f8f03baf720addc1b96590b12f31328c9e6479068032c52d4be2a20e/OHF-Voice/piper1-gpl"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/OHF-Voice/piper1-gpl\",null,null]"
+    },
+    "kokoro": {
+      "slug": "kokoro",
+      "name": "Kokoro",
+      "source": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "capturedAt": "2026-10-30T21:43:09.106Z",
+      "alt": "Screenshot of the Kokoro website",
+      "pageTitle": "hexgrad/Kokoro-82M · Hugging Face",
+      "pageDescription": "Text-to-Speech model. Download, explore files and run it on Hugging Face.",
+      "shot": {
+        "480": "assets/tools/kokoro/shot-480.webp",
+        "960": "assets/tools/kokoro/shot-960.webp",
+        "1600": "assets/tools/kokoro/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kokoro/mobile-390.webp",
+        "780": "assets/tools/kokoro/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/kokoro/icon-128.webp",
+        "256": "assets/tools/kokoro/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/kokoro/social-600.webp",
+        "1200": "assets/tools/kokoro/social-1200.webp",
+        "from": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/hexgrad/Kokoro-82M.png"
+      },
+      "color": "#f8d818",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Dismiss\")",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://huggingface.co/hexgrad/Kokoro-82M\",null,null]"
+    },
+    "chatterbox": {
+      "slug": "chatterbox",
+      "name": "Chatterbox",
+      "source": "https://github.com/resemble-ai/chatterbox",
+      "capturedAt": "2026-10-30T21:43:18.564Z",
+      "alt": "Screenshot of the Chatterbox website",
+      "pageTitle": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS · GitHub",
+      "pageDescription": "SoTA open-source TTS. Contribute to resemble-ai/chatterbox development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/chatterbox/shot-480.webp",
+        "960": "assets/tools/chatterbox/shot-960.webp",
+        "1600": "assets/tools/chatterbox/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/chatterbox/mobile-390.webp",
+        "780": "assets/tools/chatterbox/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/chatterbox/icon-128.webp",
+        "256": "assets/tools/chatterbox/icon-256.webp",
+        "svg": "assets/tools/chatterbox/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/chatterbox/social-600.webp",
+        "1200": "assets/tools/chatterbox/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/e52a14edaec0fe5dba6cbecf3f84923a963771959fa88665cb5e67b099b9f6c9/resemble-ai/chatterbox"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/resemble-ai/chatterbox\",null,null]"
+    },
+    "espeak-ng": {
+      "slug": "espeak-ng",
+      "name": "eSpeak NG",
+      "source": "https://github.com/espeak-ng/espeak-ng",
+      "capturedAt": "2026-10-30T21:43:33.566Z",
+      "alt": "Screenshot of the eSpeak NG website",
+      "pageTitle": "GitHub - espeak-ng/espeak-ng: eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents. · GitHub",
+      "pageDescription": "eSpeak NG is an open source speech synthesizer that supports more than hundred languages and accents. - espeak-ng/espeak-ng",
+      "shot": {
+        "480": "assets/tools/espeak-ng/shot-480.webp",
+        "960": "assets/tools/espeak-ng/shot-960.webp",
+        "1600": "assets/tools/espeak-ng/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/espeak-ng/mobile-390.webp",
+        "780": "assets/tools/espeak-ng/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/espeak-ng/icon-128.webp",
+        "256": "assets/tools/espeak-ng/icon-256.webp",
+        "svg": "assets/tools/espeak-ng/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/espeak-ng/social-600.webp",
+        "1200": "assets/tools/espeak-ng/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/c700bd18f4a1ec169e15ff6b2c0e45d7197a650dcc055f14cf4dc685a3fc406f/espeak-ng/espeak-ng"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/espeak-ng/espeak-ng\",null,null]"
+    },
+    "sherpatts": {
+      "slug": "sherpatts",
+      "name": "SherpaTTS",
+      "source": "https://f-droid.org/packages/org.woheller69.ttsengine/",
+      "capturedAt": "2026-10-30T21:43:52.065Z",
+      "alt": "Screenshot of the SherpaTTS website",
+      "pageTitle": "SherpaTTS | F-Droid - Free and Open Source Android App Repository",
+      "pageDescription": "Text-to-Speech engine based on Next-gen Kaldi",
+      "shot": {
+        "480": "assets/tools/sherpatts/shot-480.webp",
+        "960": "assets/tools/sherpatts/shot-960.webp",
+        "1600": "assets/tools/sherpatts/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/sherpatts/mobile-390.webp",
+        "780": "assets/tools/sherpatts/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/sherpatts/icon-128.webp",
+        "256": "assets/tools/sherpatts/icon-256.webp",
+        "from": "https://f-droid.org/assets/android-chrome-512x512.png?v=8j6PKzW9Mk",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/sherpatts/social-600.webp",
+        "1200": "assets/tools/sherpatts/social-1200.webp",
+        "from": "https://f-droid.org/repo/org.woheller69.ttsengine/en-US/icon_ji2Av2e3APyHZFOFdkWPStN2NZF1NTj21ElU3Xwx7Lg=.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://f-droid.org/packages/org.woheller69.ttsengine/\",null,null]"
+    },
+    "elevenlabs": {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs",
+      "source": "https://elevenlabs.io",
+      "capturedAt": "2026-10-30T21:44:01.952Z",
+      "alt": "Screenshot of the ElevenLabs website",
+      "pageTitle": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "pageDescription": "Create lifelike speech with our AI voice generator and voice agents platform. Access 17,500+ voices in 90+ languages with secure APIs and SDKs.",
+      "icon": {
+        "128": "assets/tools/elevenlabs/icon-128.webp",
+        "256": "assets/tools/elevenlabs/icon-256.webp",
+        "svg": "assets/tools/elevenlabs/icon.svg",
+        "from": "https://elevenlabs.io/icon.svg?c23f5371fdd26632",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/elevenlabs/social-600.webp",
+        "1200": "assets/tools/elevenlabs/social-1200.webp",
+        "from": "https://elevenlabs.io/cover.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://elevenlabs.io\",{\"shot\":false},null]"
+    },
+    "open-interpreter": {
+      "slug": "open-interpreter",
+      "name": "Open Interpreter",
+      "source": "https://github.com/openinterpreter/openinterpreter",
+      "capturedAt": "2026-10-30T21:44:10.415Z",
+      "alt": "Screenshot of the Open Interpreter website",
+      "pageTitle": "GitHub - openinterpreter/openinterpreter: A coding agent for open models like Kimi K3 and GLM 5.3 · GitHub",
+      "pageDescription": "A coding agent for open models like Kimi K3 and GLM 5.3 - openinterpreter/openinterpreter",
+      "shot": {
+        "480": "assets/tools/open-interpreter/shot-480.webp",
+        "960": "assets/tools/open-interpreter/shot-960.webp",
+        "1600": "assets/tools/open-interpreter/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/open-interpreter/mobile-390.webp",
+        "780": "assets/tools/open-interpreter/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/open-interpreter/icon-128.webp",
+        "256": "assets/tools/open-interpreter/icon-256.webp",
+        "svg": "assets/tools/open-interpreter/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/open-interpreter/social-600.webp",
+        "1200": "assets/tools/open-interpreter/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/666299222/30894a76-2a46-4988-a903-ababff8ac2fe"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/openinterpreter/openinterpreter\",null,null]"
+    },
+    "openai-codex": {
+      "slug": "openai-codex",
+      "name": "OpenAI Codex",
+      "source": "https://github.com/openai/codex",
+      "capturedAt": "2026-10-30T21:44:19.890Z",
+      "alt": "Screenshot of the OpenAI Codex website",
+      "pageTitle": "GitHub - openai/codex: Lightweight coding agent that runs in your terminal · GitHub",
+      "pageDescription": "Lightweight coding agent that runs in your terminal - openai/codex",
+      "icon": {
+        "128": "assets/tools/openai-codex/icon-128.webp",
+        "256": "assets/tools/openai-codex/icon-256.webp",
+        "svg": "assets/tools/openai-codex/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/openai-codex/social-600.webp",
+        "1200": "assets/tools/openai-codex/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/d140652eba3a2427a96603752364569248026b99ff69c8ff9b09f4cc4d623986/openai/codex"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://github.com/openai/codex\",{\"shot\":false},null]"
+    },
+    "claude-code": {
+      "slug": "claude-code",
+      "name": "Claude Code",
+      "source": "https://code.claude.com",
+      "capturedAt": "2026-10-30T21:44:25.243Z",
+      "alt": "Screenshot of the Claude Code website",
+      "pageTitle": "Claude Code by Anthropic | AI coding agent and assistant",
+      "pageDescription": "Claude Code understands your codebase, edits files, runs commands, and helps you ship faster. It’s Anthropic’s agentic coding tool for your terminal and IDE.",
+      "icon": {
+        "128": "assets/tools/claude-code/icon-128.webp",
+        "256": "assets/tools/claude-code/icon-256.webp",
+        "svg": "assets/tools/claude-code/icon.svg",
+        "from": "https://claude.com/icon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/claude-code/social-600.webp",
+        "1200": "assets/tools/claude-code/social-1200.webp",
+        "from": "https://assets.claude.com/f66071070c4701ea2c37fc01b3c0f83623cf29d3.jpg?w=2400&h=1260&fit=crop"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://code.claude.com\",{\"shot\":false},null]"
+    },
+    "nanobot": {
+      "slug": "nanobot",
+      "name": "nanobot",
+      "source": "https://github.com/HKUDS/nanobot",
+      "capturedAt": "2026-10-30T21:44:30.348Z",
+      "alt": "Screenshot of the nanobot website",
+      "pageTitle": "GitHub - HKUDS/nanobot: Your lightweight open-source personal agent. · GitHub",
+      "pageDescription": "Your lightweight open-source personal agent. Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/nanobot/shot-480.webp",
+        "960": "assets/tools/nanobot/shot-960.webp",
+        "1600": "assets/tools/nanobot/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/nanobot/mobile-390.webp",
+        "780": "assets/tools/nanobot/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/nanobot/icon-128.webp",
+        "256": "assets/tools/nanobot/icon-256.webp",
+        "svg": "assets/tools/nanobot/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/nanobot/social-600.webp",
+        "1200": "assets/tools/nanobot/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/8086798189dee753b2a49d2c51a9ec8ec88a0e79344202df2c3f8bab8d342a59/HKUDS/nanobot"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/HKUDS/nanobot\",null,null]"
+    },
+    "nanoclaw": {
+      "slug": "nanoclaw",
+      "name": "NanoClaw",
+      "source": "https://github.com/qwibitai/nanoclaw",
+      "capturedAt": "2026-10-30T21:44:41.225Z",
+      "alt": "Screenshot of the NanoClaw website",
+      "pageTitle": "GitHub - nanocoai/nanoclaw: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK · GitHub",
+      "pageDescription": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK - nanocoai/nanoclaw",
+      "shot": {
+        "480": "assets/tools/nanoclaw/shot-480.webp",
+        "960": "assets/tools/nanoclaw/shot-960.webp",
+        "1600": "assets/tools/nanoclaw/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/nanoclaw/mobile-390.webp",
+        "780": "assets/tools/nanoclaw/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/nanoclaw/icon-128.webp",
+        "256": "assets/tools/nanoclaw/icon-256.webp",
+        "svg": "assets/tools/nanoclaw/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/nanoclaw/social-600.webp",
+        "1200": "assets/tools/nanoclaw/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/1146738089/83c0975f-09b4-4452-8c80-c5fee3521005"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/qwibitai/nanoclaw\",null,null]"
+    },
+    "ironclaw": {
+      "slug": "ironclaw",
+      "name": "IronClaw",
+      "source": "https://github.com/nearai/ironclaw",
+      "capturedAt": "2026-10-30T21:44:50.121Z",
+      "alt": "Screenshot of the IronClaw website",
+      "pageTitle": "GitHub - nearai/ironclaw: IronClaw is an Agent OS focused on privacy, security and extensibility · GitHub",
+      "pageDescription": "IronClaw is an Agent OS focused on privacy, security and extensibility - nearai/ironclaw",
+      "shot": {
+        "480": "assets/tools/ironclaw/shot-480.webp",
+        "960": "assets/tools/ironclaw/shot-960.webp",
+        "1600": "assets/tools/ironclaw/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ironclaw/mobile-390.webp",
+        "780": "assets/tools/ironclaw/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/ironclaw/icon-128.webp",
+        "256": "assets/tools/ironclaw/icon-256.webp",
+        "svg": "assets/tools/ironclaw/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/ironclaw/social-600.webp",
+        "1200": "assets/tools/ironclaw/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/ce904f27a902f8df323d4672996b7cbe1874f4deec686b6047343e81b15175f1/nearai/ironclaw"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/nearai/ironclaw\",null,null]"
+    },
+    "moltis": {
+      "slug": "moltis",
+      "name": "Moltis",
+      "source": "https://github.com/moltis-org/moltis",
+      "capturedAt": "2026-10-30T21:45:05.827Z",
+      "alt": "Screenshot of the Moltis website",
+      "pageTitle": "GitHub - moltis-org/moltis: A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, WhatsApp, Discord, Teams, and MCP tools. Secure by design, runs on your hardware. · GitHub",
+      "pageDescription": "A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, WhatsApp, Discord, Teams, and MCP tools. Secure by design, runs on your hardware. - moltis-org/moltis",
+      "shot": {
+        "480": "assets/tools/moltis/shot-480.webp",
+        "960": "assets/tools/moltis/shot-960.webp",
+        "1600": "assets/tools/moltis/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/moltis/mobile-390.webp",
+        "780": "assets/tools/moltis/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/moltis/icon-128.webp",
+        "256": "assets/tools/moltis/icon-256.webp",
+        "svg": "assets/tools/moltis/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/moltis/social-600.webp",
+        "1200": "assets/tools/moltis/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/1145420469/079b5d14-8d1a-4b02-95da-aba03a8d654e"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/moltis-org/moltis\",null,null]"
     }
   },
-  "updatedAt": "2026-10-30T21:20:02.970Z"
+  "updatedAt": "2026-10-30T21:45:21.310Z"
 }

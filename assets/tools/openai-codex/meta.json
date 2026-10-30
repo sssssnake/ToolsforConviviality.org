@@ -1,0 +1,26 @@
+{
+  "slug": "openai-codex",
+  "name": "OpenAI Codex",
+  "source": "https://github.com/openai/codex",
+  "capturedAt": "2026-10-30T21:44:19.890Z",
+  "alt": "Screenshot of the OpenAI Codex website",
+  "pageTitle": "GitHub - openai/codex: Lightweight coding agent that runs in your terminal · GitHub",
+  "pageDescription": "Lightweight coding agent that runs in your terminal - openai/codex",
+  "icon": {
+    "128": "assets/tools/openai-codex/icon-128.webp",
+    "256": "assets/tools/openai-codex/icon-256.webp",
+    "svg": "assets/tools/openai-codex/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/openai-codex/social-600.webp",
+    "1200": "assets/tools/openai-codex/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/d140652eba3a2427a96603752364569248026b99ff69c8ff9b09f4cc4d623986/openai/codex"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

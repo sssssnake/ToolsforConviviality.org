@@ -1,0 +1,26 @@
+{
+  "slug": "claude-code",
+  "name": "Claude Code",
+  "source": "https://code.claude.com",
+  "capturedAt": "2026-10-30T21:44:25.243Z",
+  "alt": "Screenshot of the Claude Code website",
+  "pageTitle": "Claude Code by Anthropic | AI coding agent and assistant",
+  "pageDescription": "Claude Code understands your codebase, edits files, runs commands, and helps you ship faster. It’s Anthropic’s agentic coding tool for your terminal and IDE.",
+  "icon": {
+    "128": "assets/tools/claude-code/icon-128.webp",
+    "256": "assets/tools/claude-code/icon-256.webp",
+    "svg": "assets/tools/claude-code/icon.svg",
+    "from": "https://claude.com/icon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/claude-code/social-600.webp",
+    "1200": "assets/tools/claude-code/social-1200.webp",
+    "from": "https://assets.claude.com/f66071070c4701ea2c37fc01b3c0f83623cf29d3.jpg?w=2400&h=1260&fit=crop"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

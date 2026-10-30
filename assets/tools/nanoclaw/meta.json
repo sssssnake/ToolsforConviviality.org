@@ -1,0 +1,33 @@
+{
+  "slug": "nanoclaw",
+  "name": "NanoClaw",
+  "source": "https://github.com/qwibitai/nanoclaw",
+  "capturedAt": "2026-10-30T21:44:41.225Z",
+  "alt": "Screenshot of the NanoClaw website",
+  "pageTitle": "GitHub - nanocoai/nanoclaw: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK · GitHub",
+  "pageDescription": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK - nanocoai/nanoclaw",
+  "shot": {
+    "480": "assets/tools/nanoclaw/shot-480.webp",
+    "960": "assets/tools/nanoclaw/shot-960.webp",
+    "1600": "assets/tools/nanoclaw/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/nanoclaw/mobile-390.webp",
+    "780": "assets/tools/nanoclaw/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/nanoclaw/icon-128.webp",
+    "256": "assets/tools/nanoclaw/icon-256.webp",
+    "svg": "assets/tools/nanoclaw/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/nanoclaw/social-600.webp",
+    "1200": "assets/tools/nanoclaw/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/1146738089/83c0975f-09b4-4452-8c80-c5fee3521005"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,34 @@
+{
+  "slug": "sherpatts",
+  "name": "SherpaTTS",
+  "source": "https://f-droid.org/packages/org.woheller69.ttsengine/",
+  "capturedAt": "2026-10-30T21:43:52.065Z",
+  "alt": "Screenshot of the SherpaTTS website",
+  "pageTitle": "SherpaTTS | F-Droid - Free and Open Source Android App Repository",
+  "pageDescription": "Text-to-Speech engine based on Next-gen Kaldi",
+  "shot": {
+    "480": "assets/tools/sherpatts/shot-480.webp",
+    "960": "assets/tools/sherpatts/shot-960.webp",
+    "1600": "assets/tools/sherpatts/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/sherpatts/mobile-390.webp",
+    "780": "assets/tools/sherpatts/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/sherpatts/icon-128.webp",
+    "256": "assets/tools/sherpatts/icon-256.webp",
+    "from": "https://f-droid.org/assets/android-chrome-512x512.png?v=8j6PKzW9Mk",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/sherpatts/social-600.webp",
+    "1200": "assets/tools/sherpatts/social-1200.webp",
+    "from": "https://f-droid.org/repo/org.woheller69.ttsengine/en-US/icon_ji2Av2e3APyHZFOFdkWPStN2NZF1NTj21ElU3Xwx7Lg=.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

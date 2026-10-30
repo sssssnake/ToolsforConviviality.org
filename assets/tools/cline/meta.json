@@ -1,0 +1,33 @@
+{
+  "slug": "cline",
+  "name": "Cline",
+  "source": "https://github.com/cline/cline",
+  "capturedAt": "2026-10-30T21:41:06.513Z",
+  "alt": "Screenshot of the Cline website",
+  "pageTitle": "GitHub - cline/cline: Autonomous coding agent as an SDK, IDE extension, or CLI assistant. · GitHub",
+  "pageDescription": "Autonomous coding agent as an SDK, IDE extension, or CLI assistant. - cline/cline",
+  "shot": {
+    "480": "assets/tools/cline/shot-480.webp",
+    "960": "assets/tools/cline/shot-960.webp",
+    "1600": "assets/tools/cline/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/cline/mobile-390.webp",
+    "780": "assets/tools/cline/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/cline/icon-128.webp",
+    "256": "assets/tools/cline/icon-256.webp",
+    "svg": "assets/tools/cline/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/cline/social-600.webp",
+    "1200": "assets/tools/cline/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/a2c03219a16be990b9d268fe02ac555f190c44971c357ea33fa9627852ba686a/cline/cline"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

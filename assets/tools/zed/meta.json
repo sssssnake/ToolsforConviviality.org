@@ -1,0 +1,34 @@
+{
+  "slug": "zed",
+  "name": "Zed",
+  "source": "https://zed.dev",
+  "capturedAt": "2026-10-30T21:41:35.160Z",
+  "alt": "Screenshot of the Zed website",
+  "pageTitle": "Zed — Your last next editor",
+  "pageDescription": "Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+  "shot": {
+    "480": "assets/tools/zed/shot-480.webp",
+    "960": "assets/tools/zed/shot-960.webp",
+    "1600": "assets/tools/zed/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/zed/mobile-390.webp",
+    "780": "assets/tools/zed/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/zed/icon-128.webp",
+    "256": "assets/tools/zed/icon-256.webp",
+    "from": "https://zed.dev/favicon_black_64.png",
+    "sourceWidth": 64,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/zed/social-600.webp",
+    "1200": "assets/tools/zed/social-1200.webp",
+    "from": "https://zed.dev/img/home/og.webp"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

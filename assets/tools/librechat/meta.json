@@ -1,0 +1,34 @@
+{
+  "slug": "librechat",
+  "name": "LibreChat",
+  "source": "https://www.librechat.ai",
+  "capturedAt": "2026-10-30T21:42:24.314Z",
+  "alt": "Screenshot of the LibreChat website",
+  "pageTitle": "LibreChat - The Open-Source AI Platform",
+  "pageDescription": "LibreChat brings together all your AI conversations in one unified, customizable interface.",
+  "shot": {
+    "480": "assets/tools/librechat/shot-480.webp",
+    "960": "assets/tools/librechat/shot-960.webp",
+    "1600": "assets/tools/librechat/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/librechat/mobile-390.webp",
+    "780": "assets/tools/librechat/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/librechat/icon-128.webp",
+    "256": "assets/tools/librechat/icon-256.webp",
+    "from": "https://www.librechat.ai/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/librechat/social-600.webp",
+    "1200": "assets/tools/librechat/social-1200.webp",
+    "from": "https://www.librechat.ai/api/og?v=a40e77512dc1"
+  },
+  "color": "#486878",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "chatterbox",
+  "name": "Chatterbox",
+  "source": "https://github.com/resemble-ai/chatterbox",
+  "capturedAt": "2026-10-30T21:43:18.564Z",
+  "alt": "Screenshot of the Chatterbox website",
+  "pageTitle": "GitHub - resemble-ai/chatterbox: SoTA open-source TTS · GitHub",
+  "pageDescription": "SoTA open-source TTS. Contribute to resemble-ai/chatterbox development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/chatterbox/shot-480.webp",
+    "960": "assets/tools/chatterbox/shot-960.webp",
+    "1600": "assets/tools/chatterbox/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/chatterbox/mobile-390.webp",
+    "780": "assets/tools/chatterbox/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/chatterbox/icon-128.webp",
+    "256": "assets/tools/chatterbox/icon-256.webp",
+    "svg": "assets/tools/chatterbox/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/chatterbox/social-600.webp",
+    "1200": "assets/tools/chatterbox/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/e52a14edaec0fe5dba6cbecf3f84923a963771959fa88665cb5e67b099b9f6c9/resemble-ai/chatterbox"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

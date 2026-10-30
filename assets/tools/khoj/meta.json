@@ -1,0 +1,34 @@
+{
+  "slug": "khoj",
+  "name": "Khoj",
+  "source": "https://khoj.dev",
+  "capturedAt": "2026-10-30T21:42:50.686Z",
+  "alt": "Screenshot of the Khoj website",
+  "pageTitle": "Khoj - AI for Humans",
+  "pageDescription": "Khoj is an applied artificial intelligence company building safe, useful AI software for humans.",
+  "shot": {
+    "480": "assets/tools/khoj/shot-480.webp",
+    "960": "assets/tools/khoj/shot-960.webp",
+    "1600": "assets/tools/khoj/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/khoj/mobile-390.webp",
+    "780": "assets/tools/khoj/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/khoj/icon-128.webp",
+    "256": "assets/tools/khoj/icon-256.webp",
+    "from": "https://khoj.dev/favicon.png",
+    "sourceWidth": 203,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/khoj/social-600.webp",
+    "1200": "assets/tools/khoj/social-1200.webp",
+    "from": "https://khoj.dev/social-banner.jpg"
+  },
+  "color": "#486878",
+  "colorFrom": "icon",
+  "notes": []
+}

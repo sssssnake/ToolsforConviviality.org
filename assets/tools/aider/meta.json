@@ -1,0 +1,33 @@
+{
+  "slug": "aider",
+  "name": "Aider",
+  "source": "https://github.com/aider-ai/aider",
+  "capturedAt": "2026-10-30T21:40:56.831Z",
+  "alt": "Screenshot of the Aider website",
+  "pageTitle": "GitHub - Aider-AI/aider: aider is AI pair programming in your terminal · GitHub",
+  "pageDescription": "aider is AI pair programming in your terminal. Contribute to Aider-AI/aider development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/aider/shot-480.webp",
+    "960": "assets/tools/aider/shot-960.webp",
+    "1600": "assets/tools/aider/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/aider/mobile-390.webp",
+    "780": "assets/tools/aider/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/aider/icon-128.webp",
+    "256": "assets/tools/aider/icon-256.webp",
+    "svg": "assets/tools/aider/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/aider/social-600.webp",
+    "1200": "assets/tools/aider/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/638629097/1d3d6251-f8be-4d11-bbb1-4e44b7364b74"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

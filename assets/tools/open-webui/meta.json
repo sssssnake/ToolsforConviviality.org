@@ -1,0 +1,34 @@
+{
+  "slug": "open-webui",
+  "name": "Open WebUI",
+  "source": "https://openwebui.com",
+  "capturedAt": "2026-10-30T21:42:33.584Z",
+  "alt": "Screenshot of the Open WebUI website",
+  "pageTitle": "Open WebUI: Self-Hosted AI Platform",
+  "pageDescription": "Run AI on your own terms. Connect any model, extend with code, and protect what matters without compromise.",
+  "shot": {
+    "480": "assets/tools/open-webui/shot-480.webp",
+    "960": "assets/tools/open-webui/shot-960.webp",
+    "1600": "assets/tools/open-webui/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/open-webui/mobile-390.webp",
+    "780": "assets/tools/open-webui/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/open-webui/icon-128.webp",
+    "256": "assets/tools/open-webui/icon-256.webp",
+    "from": "https://openwebui.com/favicon.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/open-webui/social-600.webp",
+    "1200": "assets/tools/open-webui/social-1200.webp",
+    "from": "https://openwebui.com/og-image.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

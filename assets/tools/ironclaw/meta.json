@@ -1,0 +1,33 @@
+{
+  "slug": "ironclaw",
+  "name": "IronClaw",
+  "source": "https://github.com/nearai/ironclaw",
+  "capturedAt": "2026-10-30T21:44:50.121Z",
+  "alt": "Screenshot of the IronClaw website",
+  "pageTitle": "GitHub - nearai/ironclaw: IronClaw is an Agent OS focused on privacy, security and extensibility · GitHub",
+  "pageDescription": "IronClaw is an Agent OS focused on privacy, security and extensibility - nearai/ironclaw",
+  "shot": {
+    "480": "assets/tools/ironclaw/shot-480.webp",
+    "960": "assets/tools/ironclaw/shot-960.webp",
+    "1600": "assets/tools/ironclaw/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ironclaw/mobile-390.webp",
+    "780": "assets/tools/ironclaw/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/ironclaw/icon-128.webp",
+    "256": "assets/tools/ironclaw/icon-256.webp",
+    "svg": "assets/tools/ironclaw/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/ironclaw/social-600.webp",
+    "1200": "assets/tools/ironclaw/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/ce904f27a902f8df323d4672996b7cbe1874f4deec686b6047343e81b15175f1/nearai/ironclaw"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

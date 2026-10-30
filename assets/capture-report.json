@@ -1,137 +1,113 @@
 {
-  "startedAt": "2026-10-30T21:16:14.886Z",
+  "startedAt": "2026-10-30T21:40:52.602Z",
   "captured": [
     {
-      "slug": "handy",
+      "slug": "aider",
       "notes": []
     },
     {
-      "slug": "buzz",
+      "slug": "cline",
       "notes": []
     },
     {
-      "slug": "vibe",
+      "slug": "opencode",
       "notes": []
     },
     {
-      "slug": "speech-note",
+      "slug": "kilo-code",
+      "notes": []
+    },
+    {
+      "slug": "zed",
+      "notes": []
+    },
+    {
+      "slug": "github-copilot",
       "notes": [
-        "social image failed: HTTP 429 for https://opengraph.githubassets.com/abee73436c2842f2d989f28929bab6a63ad0bf0902aaab1a1d9c46fcd8504ba7/mkiol/dsnote"
-      ]
-    },
-    {
-      "slug": "voiceink",
-      "notes": []
-    },
-    {
-      "slug": "otter",
-      "notes": [
-        "dismissed banner with button:has-text(\"Reject all\")",
         "screenshot skipped by override"
       ]
     },
     {
-      "slug": "firefox-translations",
+      "slug": "anythingllm",
+      "notes": []
+    },
+    {
+      "slug": "librechat",
+      "notes": []
+    },
+    {
+      "slug": "open-webui",
+      "notes": []
+    },
+    {
+      "slug": "chatbox",
+      "notes": []
+    },
+    {
+      "slug": "khoj",
+      "notes": []
+    },
+    {
+      "slug": "piper",
+      "notes": []
+    },
+    {
+      "slug": "kokoro",
       "notes": [
+        "dismissed banner with button:has-text(\"Dismiss\")",
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
     },
     {
-      "slug": "libretranslate",
+      "slug": "chatterbox",
+      "notes": []
+    },
+    {
+      "slug": "espeak-ng",
+      "notes": []
+    },
+    {
+      "slug": "sherpatts",
+      "notes": []
+    },
+    {
+      "slug": "elevenlabs",
       "notes": [
-        "dismissed banner with button:has-text(\"Close\")",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "argos-translate",
+      "slug": "open-interpreter",
       "notes": []
     },
     {
-      "slug": "translate-locally",
-      "notes": []
-    },
-    {
-      "slug": "lingva",
+      "slug": "openai-codex",
       "notes": [
-        "social image failed: HTTP 429 for https://opengraph.githubassets.com/40411e72c7420bc6d396a30058b12d06b49c909d68b8431909ffcc15349f003d/thedaviddelta/lingva-translate"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "google-translate",
+      "slug": "claude-code",
       "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "radicale",
+      "slug": "nanobot",
       "notes": []
     },
     {
-      "slug": "baikal",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
-      ]
-    },
-    {
-      "slug": "davx5",
+      "slug": "nanoclaw",
       "notes": []
     },
     {
-      "slug": "fossify-calendar",
+      "slug": "ironclaw",
       "notes": []
     },
     {
-      "slug": "etar",
+      "slug": "moltis",
       "notes": []
-    },
-    {
-      "slug": "proton-calendar",
-      "notes": []
-    },
-    {
-      "slug": "google-calendar",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
-      ]
-    },
-    {
-      "slug": "jitsi-meet",
-      "notes": []
-    },
-    {
-      "slug": "bigbluebutton",
-      "notes": []
-    },
-    {
-      "slug": "element-call",
-      "notes": []
-    },
-    {
-      "slug": "galene",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgalene.org&size=256"
-      ]
-    },
-    {
-      "slug": "jami",
-      "notes": []
-    },
-    {
-      "slug": "zoom",
-      "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
-      ]
     }
   ],
   "skipped": [
@@ -714,6 +690,106 @@
     {
       "slug": "midjourney",
       "reason": "recent"
+    },
+    {
+      "slug": "handy",
+      "reason": "recent"
+    },
+    {
+      "slug": "buzz",
+      "reason": "recent"
+    },
+    {
+      "slug": "vibe",
+      "reason": "recent"
+    },
+    {
+      "slug": "speech-note",
+      "reason": "recent"
+    },
+    {
+      "slug": "voiceink",
+      "reason": "recent"
+    },
+    {
+      "slug": "otter",
+      "reason": "recent"
+    },
+    {
+      "slug": "firefox-translations",
+      "reason": "recent"
+    },
+    {
+      "slug": "libretranslate",
+      "reason": "recent"
+    },
+    {
+      "slug": "argos-translate",
+      "reason": "recent"
+    },
+    {
+      "slug": "translate-locally",
+      "reason": "recent"
+    },
+    {
+      "slug": "lingva",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-translate",
+      "reason": "recent"
+    },
+    {
+      "slug": "radicale",
+      "reason": "recent"
+    },
+    {
+      "slug": "baikal",
+      "reason": "recent"
+    },
+    {
+      "slug": "davx5",
+      "reason": "recent"
+    },
+    {
+      "slug": "fossify-calendar",
+      "reason": "recent"
+    },
+    {
+      "slug": "etar",
+      "reason": "recent"
+    },
+    {
+      "slug": "proton-calendar",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-calendar",
+      "reason": "recent"
+    },
+    {
+      "slug": "jitsi-meet",
+      "reason": "recent"
+    },
+    {
+      "slug": "bigbluebutton",
+      "reason": "recent"
+    },
+    {
+      "slug": "element-call",
+      "reason": "recent"
+    },
+    {
+      "slug": "galene",
+      "reason": "recent"
+    },
+    {
+      "slug": "jami",
+      "reason": "recent"
+    },
+    {
+      "slug": "zoom",
+      "reason": "recent"
     }
   ],
   "failed": [
@@ -722,5 +798,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-30T21:20:02.978Z"
+  "finishedAt": "2026-10-30T21:45:21.313Z"
 }

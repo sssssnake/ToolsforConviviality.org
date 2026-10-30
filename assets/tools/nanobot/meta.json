@@ -1,0 +1,33 @@
+{
+  "slug": "nanobot",
+  "name": "nanobot",
+  "source": "https://github.com/HKUDS/nanobot",
+  "capturedAt": "2026-10-30T21:44:30.348Z",
+  "alt": "Screenshot of the nanobot website",
+  "pageTitle": "GitHub - HKUDS/nanobot: Your lightweight open-source personal agent. · GitHub",
+  "pageDescription": "Your lightweight open-source personal agent. Contribute to HKUDS/nanobot development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/nanobot/shot-480.webp",
+    "960": "assets/tools/nanobot/shot-960.webp",
+    "1600": "assets/tools/nanobot/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/nanobot/mobile-390.webp",
+    "780": "assets/tools/nanobot/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/nanobot/icon-128.webp",
+    "256": "assets/tools/nanobot/icon-256.webp",
+    "svg": "assets/tools/nanobot/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/nanobot/social-600.webp",
+    "1200": "assets/tools/nanobot/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/8086798189dee753b2a49d2c51a9ec8ec88a0e79344202df2c3f8bab8d342a59/HKUDS/nanobot"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "moltis",
+  "name": "Moltis",
+  "source": "https://github.com/moltis-org/moltis",
+  "capturedAt": "2026-10-30T21:45:05.827Z",
+  "alt": "Screenshot of the Moltis website",
+  "pageTitle": "GitHub - moltis-org/moltis: A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, WhatsApp, Discord, Teams, and MCP tools. Secure by design, runs on your hardware. · GitHub",
+  "pageDescription": "A secure persistent personal agent server in Rust. One binary, sandboxed execution, multi-provider LLMs, voice, memory, Telegram, WhatsApp, Discord, Teams, and MCP tools. Secure by design, runs on your hardware. - moltis-org/moltis",
+  "shot": {
+    "480": "assets/tools/moltis/shot-480.webp",
+    "960": "assets/tools/moltis/shot-960.webp",
+    "1600": "assets/tools/moltis/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/moltis/mobile-390.webp",
+    "780": "assets/tools/moltis/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/moltis/icon-128.webp",
+    "256": "assets/tools/moltis/icon-256.webp",
+    "svg": "assets/tools/moltis/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/moltis/social-600.webp",
+    "1200": "assets/tools/moltis/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/1145420469/079b5d14-8d1a-4b02-95da-aba03a8d654e"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}
