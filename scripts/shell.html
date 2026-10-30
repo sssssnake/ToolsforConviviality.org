@@ -1593,7 +1593,7 @@ function home() {
       <p class="label">A directory of convivial software</p>
       <h1>${heroTitle()}</h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
-      <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-cta"><a class="btn primary" href="#ranking">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
         const list = toolsIn(c.id);
@@ -2360,7 +2360,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2453,7 +2453,7 @@ function render() {
   else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
-  else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "directory") { html = directory({ sort: new URLSearchParams(location.search).get("order") === "score" ? "score" : "az" }); nav = "directory"; }
   else if (h === "what") { html = what(); nav = "what"; }
   else if (h === "method") { html = method(); nav = "method"; }
   else if (h === "about") html = about();
@@ -2521,7 +2521,7 @@ document.addEventListener("click", e => {
   const a = e.target.closest("a[href^='/']");
   if (!a || a.target === "_blank" || a.hasAttribute("download") || /\.[a-z0-9]+$/i.test(a.pathname) || a.origin !== location.origin) return;
   e.preventDefault();
-  if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
+  if (a.pathname + a.search !== location.pathname + location.search) history.pushState({}, "", a.pathname + a.search);
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
