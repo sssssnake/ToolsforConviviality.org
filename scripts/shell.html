@@ -428,7 +428,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 </style>
 <script src="/assets/ascii-bg.js" defer></script>
 <link rel="stylesheet" href="/assets/footer.css">
-<script src="/assets/footer-pixels.js" defer></script>
+<script src="/assets/footer-threads.js" defer></script>
 </head>
 <body>
 
@@ -465,7 +465,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="#about">About &amp; disclaimers</a>
       <a href="#impressum">Legal notice (Impressum)</a>
       <a href="#privacy">Privacy policy</a>
-      <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Support this site</a>
+      <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Buy us a coffee</a>
       <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode"></button>
     </div>
     <div class="foot-right">
@@ -2210,12 +2210,16 @@ function impressum() {
 
 function privacy() {
   return `<p class="crumbs"><a href="#home">Home</a> / Privacy policy</p>
-  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say. Last updated 30 October 2026.</p></div>
   <div class="prose">
     <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
     <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
-    <p>The "Support this site" link is an ordinary link to a payment page hosted by Stripe. Nothing from Stripe loads on this page, and it only becomes involved if you click through, at which point <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's privacy policy</a> applies.</p>
-    <p>The suggestion form doesn't send anything by itself.</p> It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
+    <h2>If you buy us a coffee</h2>
+    <p>The "Buy us a coffee" link takes you to a payment page hosted by Stripe, and Stripe's <a href="https://stripe.com/privacy" target="_blank" rel="noopener">privacy policy</a> applies there, including any cookies it sets. Nothing from Stripe loads on this site before you click. Stripe processes your card or wallet details, which we never see, and it may do so in the United States under its own safeguards.</p>
+    <p>Stripe gives us a record of each payment, which can include your name, email address, billing country, the amount and the date. We use it to keep our accounts and meet tax and bookkeeping duties, and to answer you if you write to us or ask for a refund. The legal basis is carrying out the payment (Art. 6(1)(b) GDPR) and our legal duties (Art. 6(1)(c) GDPR). We keep payment records as long as German tax and accounting law requires. We do not add you to a mailing list or send you anything because you paid.</p>
+    <p>The share card on the thank-you page is drawn in your browser and is not uploaded anywhere. If you choose to share it, the image goes to the app you pick, and that app's rules apply.</p>
+    <h2>Suggestions and contact</h2>
+    <p>The suggestion form doesn't send anything by itself. It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
     <p>You have the right to access, correct or delete data we hold about you, and to complain to a data protection authority. Contact: <span class="addr">hello@toolsforconviviality.com</span>.</p>
   </div>`;
 }
