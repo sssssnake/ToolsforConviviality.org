@@ -1053,5 +1053,155 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "aider",
+    "name": "Aider",
+    "url": "https://github.com/aider-ai/aider",
+    "repo": "Aider-AI/aider"
+  },
+  {
+    "slug": "cline",
+    "name": "Cline",
+    "url": "https://github.com/cline/cline",
+    "repo": "cline/cline"
+  },
+  {
+    "slug": "opencode",
+    "name": "OpenCode",
+    "url": "https://opencode.ai",
+    "repo": "anomalyco/opencode"
+  },
+  {
+    "slug": "kilo-code",
+    "name": "Kilo Code",
+    "url": "https://kilo.ai",
+    "repo": "Kilo-Org/kilocode"
+  },
+  {
+    "slug": "zed",
+    "name": "Zed",
+    "url": "https://zed.dev",
+    "repo": "zed-industries/zed"
+  },
+  {
+    "slug": "github-copilot",
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "anythingllm",
+    "name": "AnythingLLM",
+    "url": "https://github.com/Mintplex-Labs/anything-llm",
+    "repo": "Mintplex-Labs/anything-llm"
+  },
+  {
+    "slug": "librechat",
+    "name": "LibreChat",
+    "url": "https://www.librechat.ai",
+    "repo": "LibreChat-AI/LibreChat"
+  },
+  {
+    "slug": "open-webui",
+    "name": "Open WebUI",
+    "url": "https://openwebui.com",
+    "repo": "open-webui/open-webui"
+  },
+  {
+    "slug": "chatbox",
+    "name": "Chatbox",
+    "url": "https://github.com/chatboxai/chatbox",
+    "repo": "chatboxai/chatbox"
+  },
+  {
+    "slug": "khoj",
+    "name": "Khoj",
+    "url": "https://khoj.dev",
+    "repo": "khoj-ai/khoj"
+  },
+  {
+    "slug": "piper",
+    "name": "Piper",
+    "url": "https://github.com/OHF-Voice/piper1-gpl",
+    "repo": "OHF-Voice/piper1-gpl"
+  },
+  {
+    "slug": "kokoro",
+    "name": "Kokoro",
+    "url": "https://huggingface.co/hexgrad/Kokoro-82M"
+  },
+  {
+    "slug": "chatterbox",
+    "name": "Chatterbox",
+    "url": "https://github.com/resemble-ai/chatterbox",
+    "repo": "resemble-ai/chatterbox"
+  },
+  {
+    "slug": "espeak-ng",
+    "name": "eSpeak NG",
+    "url": "https://github.com/espeak-ng/espeak-ng",
+    "repo": "espeak-ng/espeak-ng"
+  },
+  {
+    "slug": "sherpatts",
+    "name": "SherpaTTS",
+    "url": "https://f-droid.org/packages/org.woheller69.ttsengine/"
+  },
+  {
+    "slug": "elevenlabs",
+    "name": "ElevenLabs",
+    "url": "https://elevenlabs.io",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "open-interpreter",
+    "name": "Open Interpreter",
+    "url": "https://github.com/openinterpreter/openinterpreter",
+    "repo": "openinterpreter/openinterpreter"
+  },
+  {
+    "slug": "openai-codex",
+    "name": "OpenAI Codex",
+    "url": "https://github.com/openai/codex",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "claude-code",
+    "name": "Claude Code",
+    "url": "https://code.claude.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "nanobot",
+    "name": "nanobot",
+    "url": "https://github.com/HKUDS/nanobot",
+    "repo": "HKUDS/nanobot"
+  },
+  {
+    "slug": "nanoclaw",
+    "name": "NanoClaw",
+    "url": "https://github.com/qwibitai/nanoclaw",
+    "repo": "qwibitai/nanoclaw"
+  },
+  {
+    "slug": "ironclaw",
+    "name": "IronClaw",
+    "url": "https://github.com/nearai/ironclaw",
+    "repo": "nearai/ironclaw"
+  },
+  {
+    "slug": "moltis",
+    "name": "Moltis",
+    "url": "https://github.com/moltis-org/moltis",
+    "repo": "moltis-org/moltis"
   }
 ]

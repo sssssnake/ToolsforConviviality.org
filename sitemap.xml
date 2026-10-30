@@ -10,8 +10,12 @@
   <url><loc>https://toolsforconviviality.com/about/</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
   <url><loc>https://toolsforconviviality.com/suggest/</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
   <url><loc>https://toolsforconviviality.com/get-involved/</loc><lastmod>2026-10-30</lastmod><priority>0.5</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/code/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/agents/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/local-ai/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/ai-images/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/dictation/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.com/category/tts/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/notes/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/files/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/maps/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
@@ -21,7 +25,6 @@
   <url><loc>https://toolsforconviviality.com/category/passwords/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/photos/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/effects/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
-  <url><loc>https://toolsforconviviality.com/category/ai-images/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/design/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/talk/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/category/meet/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
@@ -175,6 +178,26 @@
   <url><loc>https://toolsforconviviality.com/tools/element-call/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/galene/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/tools/jami/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/aider/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/cline/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/opencode/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/kilo-code/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/zed/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/anythingllm/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/librechat/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/open-webui/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/chatbox/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/khoj/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/piper/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/kokoro/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/chatterbox/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/espeak-ng/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/sherpatts/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/open-interpreter/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/nanobot/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/nanoclaw/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/ironclaw/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.com/tools/moltis/</loc><lastmod>2026-10-30</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/microsoft-word/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/whatsapp/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/adobe-creative-cloud/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
@@ -204,6 +227,10 @@
   <url><loc>https://toolsforconviviality.com/benchmarks/google-translate/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/google-calendar/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/benchmarks/zoom/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/github-copilot/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/elevenlabs/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/openai-codex/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.com/benchmarks/claude-code/</loc><lastmod>2026-10-30</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.com/compare/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/compare/deltachat-vs-whatsapp/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.com/compare/signal-vs-whatsapp/</loc><lastmod>2026-10-30</lastmod><priority>0.7</priority></url>
