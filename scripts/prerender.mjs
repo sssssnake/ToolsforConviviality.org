@@ -33,7 +33,7 @@ await page.waitForFunction(() => window.__ready === true);
 const { tools, cats, bench, pairs } = await page.evaluate(() => ({ tools: TOOLS.map(t => t.slug), cats: CATS.map(c => c.id), bench: BENCH.map(t => t.slug), pairs: PAIRS.map(pairSlug) }));
 
 const routes = [
-  "/", "/directory/", "/benchmarks/", "/for-agents/", "/improve-my-conviviality-score/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/get-involved/", "/transparency/", "/governance/", "/how-we-write/", "/legal-notice/", "/privacy/",
+  "/", "/directory/", "/benchmarks/", "/for-agents/", "/improve-my-conviviality-score/", "/what-is-conviviality/", "/how-we-score/", "/about/", "/suggest/", "/get-involved/", "/governance/", "/legal-notice/", "/privacy/",
   ...cats.map(c => `/category/${c}/`), ...tools.map(t => `/tools/${t}/`), ...bench.map(t => `/benchmarks/${t}/`),
   "/compare/", ...pairs.map(s => `/compare/${s}/`)
 ];
