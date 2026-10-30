@@ -2,13 +2,24 @@
   "slug": "kindle",
   "name": "Amazon Kindle",
   "source": "https://www.amazon.com/kindle",
-  "capturedAt": "2026-10-23T15:23:58.387Z",
+  "capturedAt": "2026-10-30T07:26:33.753Z",
   "alt": "Screenshot of the Amazon Kindle website",
   "pageTitle": "Kindle E-Readers - Read, Write & Create on a Glare-Free Display | Amazon.com",
   "pageDescription": "Discover the Kindle lineup—purpose-built for reading, writing, and deep focus. Glare-free displays, weeks of battery life, and AI-powered tools. Buy your Kindle today!",
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/kindle/icon-128.webp",
+    "256": "assets/tools/kindle/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#f86808",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

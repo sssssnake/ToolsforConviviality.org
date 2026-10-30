@@ -2,7 +2,7 @@
   "slug": "loops",
   "name": "Loops",
   "source": "https://joinloops.org",
-  "capturedAt": "2026-10-23T15:38:17.593Z",
+  "capturedAt": "2026-10-30T07:27:10.387Z",
   "alt": "Screenshot of the Loops website",
   "pageTitle": "Loops - Short videos. Your community. Your rules.",
   "pageDescription": "All the fun of short-form video, none of the corporate control. Loops is federated, open-source, and designed to give power back to creators and communities.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/loops/mobile-390.webp",
     "780": "assets/tools/loops/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/loops/icon-128.webp",
+    "256": "assets/tools/loops/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
   "social": {
     "600": "assets/tools/loops/social-600.webp",
     "1200": "assets/tools/loops/social-1200.webp",
     "from": "https://joinloops.org/__og-image__/image/og.png"
   },
-  "color": null,
+  "color": "#f8e808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

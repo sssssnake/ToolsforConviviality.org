@@ -2,7 +2,7 @@
   "slug": "ampache",
   "name": "Ampache",
   "source": "https://ampache.org",
-  "capturedAt": "2026-10-29T00:36:59.165Z",
+  "capturedAt": "2026-10-30T07:30:59.746Z",
   "alt": "Screenshot of the Ampache website",
   "pageTitle": "Ampache",
   "pageDescription": "Ampache.org",
@@ -15,8 +15,10 @@
     "390": "assets/tools/ampache/mobile-390.webp",
     "780": "assets/tools/ampache/mobile-780.webp"
   },
+  "iconFallback": true,
   "color": null,
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fampache.org&size=256"
   ]
 }

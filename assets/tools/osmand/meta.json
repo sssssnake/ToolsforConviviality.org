@@ -2,7 +2,7 @@
   "slug": "osmand",
   "name": "OsmAnd",
   "source": "https://osmand.net",
-  "capturedAt": "2026-10-23T15:24:18.815Z",
+  "capturedAt": "2026-10-30T07:26:47.609Z",
   "alt": "Screenshot of the OsmAnd website",
   "pageTitle": "OsmAnd",
   "pageDescription": "Offline Mobile Maps & Navigation",
@@ -15,13 +15,24 @@
     "390": "assets/tools/osmand/mobile-390.webp",
     "780": "assets/tools/osmand/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/osmand/icon-128.webp",
+    "256": "assets/tools/osmand/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/osmand/social-600.webp",
     "1200": "assets/tools/osmand/social-1200.webp",
     "from": "https://osmand.net/img/social-card.png"
   },
-  "color": null,
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

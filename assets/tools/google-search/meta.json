@@ -2,13 +2,24 @@
   "slug": "google-search",
   "name": "Google Search",
   "source": "https://www.google.com",
-  "capturedAt": "2026-10-23T15:23:48.018Z",
+  "capturedAt": "2026-10-30T07:26:29.803Z",
   "alt": "Screenshot of the Google Search website",
   "pageTitle": "Google",
   "pageDescription": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/google-search/icon-128.webp",
+    "256": "assets/tools/google-search/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#486848",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

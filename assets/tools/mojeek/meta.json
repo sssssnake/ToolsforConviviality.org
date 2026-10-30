@@ -2,7 +2,7 @@
   "slug": "mojeek",
   "name": "Mojeek",
   "source": "https://www.mojeek.com",
-  "capturedAt": "2026-10-23T19:28:06.891Z",
+  "capturedAt": "2026-10-30T07:28:59.061Z",
   "alt": "Screenshot of the Mojeek website",
   "pageTitle": "Mojeek",
   "pageDescription": "Mojeek is a web search engine that provides unbiased, fast, and relevant search results combined with a no tracking privacy policy.",
@@ -15,8 +15,19 @@
     "390": "assets/tools/mojeek/mobile-390.webp",
     "780": "assets/tools/mojeek/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/mojeek/icon-128.webp",
+    "256": "assets/tools/mojeek/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

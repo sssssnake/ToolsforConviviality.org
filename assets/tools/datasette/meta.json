@@ -2,7 +2,7 @@
   "slug": "datasette",
   "name": "Datasette",
   "source": "https://datasette.io",
-  "capturedAt": "2026-10-23T21:45:06.762Z",
+  "capturedAt": "2026-10-30T07:30:07.869Z",
   "alt": "Screenshot of the Datasette website",
   "pageTitle": "Datasette: An open source multi-tool for exploring and publishing data",
   "pageDescription": "Datasette is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it, and publish it as an interactive website and accompanying API.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/datasette/mobile-390.webp",
     "780": "assets/tools/datasette/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/datasette/icon-128.webp",
+    "256": "assets/tools/datasette/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/datasette/social-600.webp",
     "1200": "assets/tools/datasette/social-1200.webp",
     "from": "https://datasette.io/static/datasette-card.png"
   },
-  "color": null,
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

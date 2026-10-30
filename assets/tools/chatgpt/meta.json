@@ -2,13 +2,24 @@
   "slug": "chatgpt",
   "name": "ChatGPT",
   "source": "https://chatgpt.com",
-  "capturedAt": "2026-10-23T15:23:14.673Z",
+  "capturedAt": "2026-10-30T07:26:14.218Z",
   "alt": "Screenshot of the ChatGPT website",
   "pageTitle": "Just a moment...",
   "pageDescription": null,
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/chatgpt/icon-128.webp",
+    "256": "assets/tools/chatgpt/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

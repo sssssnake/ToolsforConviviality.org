@@ -2,13 +2,24 @@
   "slug": "google-drive",
   "name": "Google Drive",
   "source": "https://drive.google.com",
-  "capturedAt": "2026-10-23T15:23:32.194Z",
+  "capturedAt": "2026-10-30T07:26:25.663Z",
   "alt": "Screenshot of the Google Drive website",
   "pageTitle": "Google Drive: Sign-in",
   "pageDescription": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use).",
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/google-drive/icon-128.webp",
+    "256": "assets/tools/google-drive/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 64,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

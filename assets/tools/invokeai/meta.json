@@ -1,0 +1,33 @@
+{
+  "slug": "invokeai",
+  "name": "InvokeAI",
+  "source": "https://invoke.ai",
+  "capturedAt": "2026-10-30T07:31:27.403Z",
+  "alt": "Screenshot of the InvokeAI website",
+  "pageTitle": "AI Image Generation for Creatives | InvokeAI Documentation",
+  "pageDescription": "A leading creative engine built to empower professionals and enthusiasts alike.",
+  "shot": {
+    "480": "assets/tools/invokeai/shot-480.webp",
+    "960": "assets/tools/invokeai/shot-960.webp",
+    "1600": "assets/tools/invokeai/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/invokeai/mobile-390.webp",
+    "780": "assets/tools/invokeai/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/invokeai/icon-128.webp",
+    "256": "assets/tools/invokeai/icon-256.webp",
+    "svg": "assets/tools/invokeai/icon.svg",
+    "from": "https://invoke.ai/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/invokeai/social-600.webp",
+    "1200": "assets/tools/invokeai/social-1200.webp",
+    "from": "https://invoke.ai/coverimage.png"
+  },
+  "color": "#e8f818",
+  "colorFrom": "icon",
+  "notes": []
+}

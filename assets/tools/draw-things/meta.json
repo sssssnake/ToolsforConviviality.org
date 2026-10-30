@@ -1,0 +1,29 @@
+{
+  "slug": "draw-things",
+  "name": "Draw Things",
+  "source": "https://drawthings.ai",
+  "capturedAt": "2026-10-30T07:31:35.634Z",
+  "alt": "Screenshot of the Draw Things website",
+  "pageTitle": "Draw Things: AI-assisted Image Generation",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/draw-things/shot-480.webp",
+    "960": "assets/tools/draw-things/shot-960.webp",
+    "1600": "assets/tools/draw-things/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/draw-things/mobile-390.webp",
+    "780": "assets/tools/draw-things/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/draw-things/icon-128.webp",
+    "256": "assets/tools/draw-things/icon-256.webp",
+    "from": "https://drawthings.ai/images/webclip.png",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

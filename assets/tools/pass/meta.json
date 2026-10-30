@@ -2,7 +2,7 @@
   "slug": "pass",
   "name": "pass",
   "source": "https://www.passwordstore.org",
-  "capturedAt": "2026-10-23T19:26:57.551Z",
+  "capturedAt": "2026-10-30T07:28:29.167Z",
   "alt": "Screenshot of the pass website",
   "pageTitle": "Pass: The Standard Unix Password Manager",
   "pageDescription": "Pass is the standard unix password manager, a lightweight password manager that uses GPG and Git for Linux, BSD, and Mac OS X.",
@@ -15,8 +15,10 @@
     "390": "assets/tools/pass/mobile-390.webp",
     "780": "assets/tools/pass/mobile-780.webp"
   },
+  "iconFallback": true,
   "color": null,
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.passwordstore.org&size=256"
   ]
 }

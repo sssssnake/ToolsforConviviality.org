@@ -2,7 +2,7 @@
   "slug": "ollama",
   "name": "Ollama",
   "source": "https://ollama.com",
-  "capturedAt": "2026-10-23T15:22:52.307Z",
+  "capturedAt": "2026-10-30T07:25:59.057Z",
   "alt": "Screenshot of the Ollama website",
   "pageTitle": "Ollama · Run AI models locally and in the cloud",
   "pageDescription": "Ollama is the easiest way to run and build with open AI models locally or in the cloud on macOS, Windows, and Linux.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/ollama/mobile-390.webp",
     "780": "assets/tools/ollama/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/ollama/icon-128.webp",
+    "256": "assets/tools/ollama/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
   "social": {
     "600": "assets/tools/ollama/social-600.webp",
     "1200": "assets/tools/ollama/social-1200.webp",
     "from": "https://ollama.com/public/og.png"
   },
-  "color": null,
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
+    "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png",
+    "icon taken from the favicon service"
   ]
 }

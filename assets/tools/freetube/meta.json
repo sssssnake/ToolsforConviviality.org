@@ -2,7 +2,7 @@
   "slug": "freetube",
   "name": "FreeTube",
   "source": "https://freetubeapp.io",
-  "capturedAt": "2026-10-29T00:36:30.829Z",
+  "capturedAt": "2026-10-30T07:30:51.104Z",
   "alt": "Screenshot of the FreeTube website",
   "pageTitle": "FreeTube - The Private YouTube Client",
   "pageDescription": "FreeTube is a feature-rich and user-friendly YouTube client with a focus on privacy.",
@@ -15,8 +15,19 @@
     "390": "assets/tools/freetube/mobile-390.webp",
     "780": "assets/tools/freetube/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/freetube/icon-128.webp",
+    "256": "assets/tools/freetube/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 250,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

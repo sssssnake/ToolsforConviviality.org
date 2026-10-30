@@ -2,7 +2,7 @@
   "slug": "notesnook",
   "name": "Notesnook",
   "source": "https://notesnook.com",
-  "capturedAt": "2026-10-23T19:25:36.034Z",
+  "capturedAt": "2026-10-30T07:27:48.967Z",
   "alt": "Screenshot of the Notesnook website",
   "pageTitle": "Notesnook | Open source & zero knowledge private note taking app",
   "pageDescription": "Express yourself with freedom — no spying, no tracking, only private notes. Unlike Evernote and other note apps, your data is yours alone.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/notesnook/mobile-390.webp",
     "780": "assets/tools/notesnook/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/notesnook/icon-128.webp",
+    "256": "assets/tools/notesnook/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/notesnook/social-600.webp",
     "1200": "assets/tools/notesnook/social-1200.webp",
     "from": "https://notesnook.com/social-2.png"
   },
-  "color": null,
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

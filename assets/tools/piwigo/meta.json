@@ -2,7 +2,7 @@
   "slug": "piwigo",
   "name": "Piwigo",
   "source": "https://piwigo.org",
-  "capturedAt": "2026-10-23T19:25:52.752Z",
+  "capturedAt": "2026-10-30T07:27:58.581Z",
   "alt": "Screenshot of the Piwigo website",
   "pageTitle": "Piwigo | Open Source Photo Library and DAM Software",
   "pageDescription": "Organize and share your media with Piwigo, an open source photo library and DAM software. Available as a hosted service in France or self-hosted.",
@@ -15,6 +15,7 @@
     "390": "assets/tools/piwigo/mobile-390.webp",
     "780": "assets/tools/piwigo/mobile-780.webp"
   },
+  "iconFallback": true,
   "color": null,
   "notes": [
     "no usable icon found (an .ico favicon alone can't be converted)"

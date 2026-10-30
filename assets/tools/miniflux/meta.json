@@ -2,7 +2,7 @@
   "slug": "miniflux",
   "name": "Miniflux",
   "source": "https://miniflux.app",
-  "capturedAt": "2026-10-23T19:28:22.139Z",
+  "capturedAt": "2026-10-30T07:29:15.874Z",
   "alt": "Screenshot of the Miniflux website",
   "pageTitle": "Miniflux - Minimalist and Opinionated Feed Reader",
   "pageDescription": "Miniflux is a minimalist and opinionated feed reader",
@@ -15,8 +15,19 @@
     "390": "assets/tools/miniflux/mobile-390.webp",
     "780": "assets/tools/miniflux/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/miniflux/icon-128.webp",
+    "256": "assets/tools/miniflux/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

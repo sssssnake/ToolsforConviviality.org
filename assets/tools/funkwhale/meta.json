@@ -2,7 +2,7 @@
   "slug": "funkwhale",
   "name": "Funkwhale",
   "source": "https://funkwhale.audio",
-  "capturedAt": "2026-10-23T21:43:04.765Z",
+  "capturedAt": "2026-10-30T07:29:34.196Z",
   "alt": "Screenshot of the Funkwhale website",
   "pageTitle": "Funkwhale",
   "pageDescription": "Funkwhale - A platform for all your audio",
@@ -15,8 +15,19 @@
     "390": "assets/tools/funkwhale/mobile-390.webp",
     "780": "assets/tools/funkwhale/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/funkwhale/icon-128.webp",
+    "256": "assets/tools/funkwhale/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

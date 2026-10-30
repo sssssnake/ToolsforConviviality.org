@@ -2,7 +2,7 @@
   "slug": "rawtherapee",
   "name": "RawTherapee",
   "source": "https://rawtherapee.com",
-  "capturedAt": "2026-10-23T19:26:21.803Z",
+  "capturedAt": "2026-10-30T07:28:11.889Z",
   "alt": "Screenshot of the RawTherapee website",
   "pageTitle": "Home | RawTherapee",
   "pageDescription": "About RawTherapee is a powerful, cross-platform raw photo processing system, released as Free Software (GPLv3). It is designed for developing raw files from a broad range of digital cameras and targeted at users ranging from enthusiast newcomers who wish to broaden their understanding of how digital imaging works to professional photographers. RawTherapee provides a powerful suite of tools for you to produce amazing photos and showcase your creativity.",
@@ -15,6 +15,7 @@
     "390": "assets/tools/rawtherapee/mobile-390.webp",
     "780": "assets/tools/rawtherapee/mobile-780.webp"
   },
+  "iconFallback": true,
   "color": null,
   "notes": [
     "manifest unreadable: HTTP 404 for https://rawtherapee.com/site.webmanifest",

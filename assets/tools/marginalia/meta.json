@@ -2,7 +2,7 @@
   "slug": "marginalia",
   "name": "Marginalia Search",
   "source": "https://marginalia-search.com",
-  "capturedAt": "2026-10-23T19:28:14.238Z",
+  "capturedAt": "2026-10-30T07:29:07.132Z",
   "alt": "Screenshot of the Marginalia Search website",
   "pageTitle": "Marginalia Search",
   "pageDescription": "Marginalia Search is a small independent do-it-yourself search engine for surprising but content-rich websites that never ask you to accept cookies or subscribe to newsletters. The goal is to bring you the sort of grass fed, free range HTML your grandma used to write. ",
@@ -15,8 +15,19 @@
     "390": "assets/tools/marginalia/mobile-390.webp",
     "780": "assets/tools/marginalia/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/marginalia/icon-128.webp",
+    "256": "assets/tools/marginalia/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

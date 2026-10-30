@@ -2,7 +2,7 @@
   "slug": "darktable",
   "name": "darktable",
   "source": "https://www.darktable.org",
-  "capturedAt": "2026-10-23T15:21:10.422Z",
+  "capturedAt": "2026-10-30T07:24:49.681Z",
   "alt": "Screenshot of the darktable website",
   "pageTitle": "darktable",
   "pageDescription": "darktable is an open source photography workflow application and raw developer",
@@ -15,6 +15,7 @@
     "390": "assets/tools/darktable/mobile-390.webp",
     "780": "assets/tools/darktable/mobile-780.webp"
   },
+  "iconFallback": true,
   "social": {
     "600": "assets/tools/darktable/social-600.webp",
     "1200": "assets/tools/darktable/social-1200.webp",

@@ -2,9 +2,9 @@
   "slug": "searxng",
   "name": "SearXNG",
   "source": "https://docs.searxng.org",
-  "capturedAt": "2026-10-23T19:25:06.704Z",
+  "capturedAt": "2026-10-30T07:27:19.144Z",
   "alt": "Screenshot of the SearXNG website",
-  "pageTitle": "SearXNG Documentation (2026.10.23+629368e40)",
+  "pageTitle": "SearXNG Documentation (2026.10.30+1cd13d98d)",
   "pageDescription": null,
   "shot": {
     "480": "assets/tools/searxng/shot-480.webp",
@@ -15,8 +15,10 @@
     "390": "assets/tools/searxng/mobile-390.webp",
     "780": "assets/tools/searxng/mobile-780.webp"
   },
+  "iconFallback": true,
   "color": null,
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdocs.searxng.org&size=256"
   ]
 }

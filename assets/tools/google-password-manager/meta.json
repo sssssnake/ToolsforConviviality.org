@@ -2,10 +2,11 @@
   "slug": "google-password-manager",
   "name": "Google Password Manager",
   "source": "https://passwords.google.com",
-  "capturedAt": "2026-10-23T15:24:03.217Z",
+  "capturedAt": "2026-10-30T07:26:39.130Z",
   "alt": "Screenshot of the Google Password Manager website",
   "pageTitle": "Sign in - Google Accounts",
   "pageDescription": null,
+  "iconFallback": true,
   "color": null,
   "notes": [
     "screenshot skipped by override",

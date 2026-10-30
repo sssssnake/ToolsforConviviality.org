@@ -2,7 +2,7 @@
   "slug": "wallabag",
   "name": "wallabag",
   "source": "https://wallabag.org",
-  "capturedAt": "2026-10-23T19:27:12.665Z",
+  "capturedAt": "2026-10-30T07:28:37.279Z",
   "alt": "Screenshot of the wallabag website",
   "pageTitle": "Save the web, freely | wallabag: a self hostable application for saving web pages",
   "pageDescription": "With wallabag, archive the web freely. wallabag is a self hostable application for saving web pages.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/wallabag/mobile-390.webp",
     "780": "assets/tools/wallabag/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/wallabag/icon-128.webp",
+    "256": "assets/tools/wallabag/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 64,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/wallabag/social-600.webp",
     "1200": "assets/tools/wallabag/social-1200.webp",
     "from": "https://wallabag.org/img/wallabag_preview.png"
   },
-  "color": null,
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

@@ -398,7 +398,7 @@
       "slug": "zotero",
       "name": "Zotero",
       "source": "https://www.zotero.org",
-      "capturedAt": "2026-10-23T10:31:01.837Z",
+      "capturedAt": "2026-10-30T07:24:08.103Z",
       "alt": "Screenshot of the Zotero website",
       "pageTitle": "Zotero | Your personal research assistant",
       "pageDescription": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research.",
@@ -411,9 +411,20 @@
         "390": "assets/tools/zotero/mobile-390.webp",
         "780": "assets/tools/zotero/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/zotero/icon-128.webp",
+        "256": "assets/tools/zotero/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.zotero.org\",null,null]"
     },
@@ -520,7 +531,7 @@
       "slug": "krita",
       "name": "Krita",
       "source": "https://krita.org",
-      "capturedAt": "2026-10-23T10:31:36.010Z",
+      "capturedAt": "2026-10-30T07:24:15.474Z",
       "alt": "Screenshot of the Krita website",
       "pageTitle": "Krita | Digital Painting. Creative Freedom.",
       "pageDescription": "Krita is a professional FREE and open source painting program. It is made by artists that want to see affordable art tools for everyone.",
@@ -533,9 +544,20 @@
         "390": "assets/tools/krita/mobile-390.webp",
         "780": "assets/tools/krita/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/krita/icon-128.webp",
+        "256": "assets/tools/krita/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 114,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://krita.org\",null,null]"
     },
@@ -578,7 +600,7 @@
       "slug": "cryptomator",
       "name": "Cryptomator",
       "source": "https://cryptomator.org",
-      "capturedAt": "2026-10-23T10:31:51.769Z",
+      "capturedAt": "2026-10-30T07:25:01.246Z",
       "alt": "Screenshot of the Cryptomator website",
       "pageTitle": "Cryptomator - Free & Open-Source Cloud Storage Encryption",
       "pageDescription": "Cryptomator is an open-source encryption tool for secure cloud storage. Protect your privacy for free on Dropbox, Google Drive, OneDrive, and more.",
@@ -591,14 +613,25 @@
         "390": "assets/tools/cryptomator/mobile-390.webp",
         "780": "assets/tools/cryptomator/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/cryptomator/icon-128.webp",
+        "256": "assets/tools/cryptomator/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/cryptomator/social-600.webp",
         "1200": "assets/tools/cryptomator/social-1200.webp",
         "from": "https://cryptomator.org/img/og-image.png"
       },
-      "color": null,
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://cryptomator.org\",null,null]"
     },
@@ -606,7 +639,7 @@
       "slug": "freshrss",
       "name": "FreshRSS",
       "source": "https://freshrss.org",
-      "capturedAt": "2026-10-23T10:32:00.913Z",
+      "capturedAt": "2026-10-30T07:25:11.461Z",
       "alt": "Screenshot of the FreshRSS website",
       "pageTitle": "FreshRSS, a free, self-hostable feeds aggregator",
       "pageDescription": "FreshRSS is lightweight, easy to work with, powerful, and customizable.",
@@ -619,14 +652,25 @@
         "390": "assets/tools/freshrss/mobile-390.webp",
         "780": "assets/tools/freshrss/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/freshrss/icon-128.webp",
+        "256": "assets/tools/freshrss/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/freshrss/social-600.webp",
         "1200": "assets/tools/freshrss/social-1200.webp",
         "from": "https://freshrss.org/card.png"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://freshrss.org\",null,null]"
     },
@@ -738,14 +782,25 @@
       "slug": "microsoft-word",
       "name": "Microsoft Word",
       "source": "https://www.microsoft.com/en-us/microsoft-365/word",
-      "capturedAt": "2026-10-23T10:57:09.798Z",
+      "capturedAt": "2026-10-30T07:25:35.663Z",
       "alt": "Screenshot of the Microsoft Word website",
       "pageTitle": "Free Online Document Editing with Microsoft Word | Microsoft 365",
       "pageDescription": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, and collaborate anywhere. ",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/microsoft-word/icon-128.webp",
+        "256": "assets/tools/microsoft-word/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f84828",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.microsoft.com/en-us/microsoft-365/word\",{\"shot\":false},null]"
     },
@@ -870,7 +925,7 @@
       "slug": "gutenberg",
       "name": "Project Gutenberg",
       "source": "https://www.gutenberg.org",
-      "capturedAt": "2026-10-23T13:54:45.451Z",
+      "capturedAt": "2026-10-30T07:25:20.251Z",
       "alt": "Screenshot of the Project Gutenberg website",
       "pageTitle": "Free eBooks | Project Gutenberg",
       "pageDescription": "Project Gutenberg is a library of over 75,000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads.",
@@ -883,6 +938,7 @@
         "390": "assets/tools/gutenberg/mobile-390.webp",
         "780": "assets/tools/gutenberg/mobile-780.webp"
       },
+      "iconFallback": true,
       "social": {
         "600": "assets/tools/gutenberg/social-600.webp",
         "1200": "assets/tools/gutenberg/social-1200.webp",
@@ -928,7 +984,7 @@
       "slug": "audiobookshelf",
       "name": "Audiobookshelf",
       "source": "https://www.audiobookshelf.org",
-      "capturedAt": "2026-10-23T13:54:58.700Z",
+      "capturedAt": "2026-10-30T07:25:27.585Z",
       "alt": "Screenshot of the Audiobookshelf website",
       "pageTitle": "Audiobookshelf",
       "pageDescription": null,
@@ -941,14 +997,25 @@
         "390": "assets/tools/audiobookshelf/mobile-390.webp",
         "780": "assets/tools/audiobookshelf/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/audiobookshelf/icon-128.webp",
+        "256": "assets/tools/audiobookshelf/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/audiobookshelf/social-600.webp",
         "1200": "assets/tools/audiobookshelf/social-1200.webp",
         "from": "https://audiobookshelf.org/img/Logo.png"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.audiobookshelf.org\",null,null]"
     },
@@ -1026,7 +1093,7 @@
       "slug": "penpot",
       "name": "Penpot",
       "source": "https://penpot.app",
-      "capturedAt": "2026-10-23T15:20:38.745Z",
+      "capturedAt": "2026-10-30T07:24:25.819Z",
       "alt": "Screenshot of the Penpot website",
       "pageTitle": "Penpot: The open-source design platform for teams.",
       "pageDescription": "Penpot is the open-source design platform for teams building digital products at scale, enabling deeper collaboration across design, code, and AI workflows.",
@@ -1039,10 +1106,21 @@
         "390": "assets/tools/penpot/mobile-390.webp",
         "780": "assets/tools/penpot/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/penpot/icon-128.webp",
+        "256": "assets/tools/penpot/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 72,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
         "dismissed banner with button:has-text(\"Reject all\")",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://penpot.app\",null,null]"
     },
@@ -1084,7 +1162,7 @@
       "slug": "darktable",
       "name": "darktable",
       "source": "https://www.darktable.org",
-      "capturedAt": "2026-10-23T15:21:10.422Z",
+      "capturedAt": "2026-10-30T07:24:49.681Z",
       "alt": "Screenshot of the darktable website",
       "pageTitle": "darktable",
       "pageDescription": "darktable is an open source photography workflow application and raw developer",
@@ -1097,6 +1175,7 @@
         "390": "assets/tools/darktable/mobile-390.webp",
         "780": "assets/tools/darktable/mobile-780.webp"
       },
+      "iconFallback": true,
       "social": {
         "600": "assets/tools/darktable/social-600.webp",
         "1200": "assets/tools/darktable/social-1200.webp",
@@ -1411,7 +1490,7 @@
       "slug": "ollama",
       "name": "Ollama",
       "source": "https://ollama.com",
-      "capturedAt": "2026-10-23T15:22:52.307Z",
+      "capturedAt": "2026-10-30T07:25:59.057Z",
       "alt": "Screenshot of the Ollama website",
       "pageTitle": "Ollama · Run AI models locally and in the cloud",
       "pageDescription": "Ollama is the easiest way to run and build with open AI models locally or in the cloud on macOS, Windows, and Linux.",
@@ -1424,14 +1503,25 @@
         "390": "assets/tools/ollama/mobile-390.webp",
         "780": "assets/tools/ollama/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/ollama/icon-128.webp",
+        "256": "assets/tools/ollama/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
       "social": {
         "600": "assets/tools/ollama/social-600.webp",
         "1200": "assets/tools/ollama/social-1200.webp",
         "from": "https://ollama.com/public/og.png"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png"
+        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://ollama.com\",null,null]"
     },
@@ -1439,7 +1529,7 @@
       "slug": "jan",
       "name": "Jan",
       "source": "https://jan.ai",
-      "capturedAt": "2026-10-23T15:22:58.106Z",
+      "capturedAt": "2026-10-30T07:26:05.861Z",
       "alt": "Screenshot of the Jan website",
       "pageTitle": "Jan - Open-Source ChatGPT Replacement",
       "pageDescription": "Jan is an open-source alternative to ChatGPT. Run open-source AI models locally or connect to cloud models like GPT, Claude and others.",
@@ -1452,6 +1542,15 @@
         "390": "assets/tools/jan/mobile-390.webp",
         "780": "assets/tools/jan/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/jan/icon-128.webp",
+        "256": "assets/tools/jan/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/jan/social-600.webp",
         "1200": "assets/tools/jan/social-1200.webp",
@@ -1460,7 +1559,8 @@
       "color": "#fff",
       "colorFrom": "theme-color",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://jan.ai\",null,null]"
     },
@@ -1502,14 +1602,25 @@
       "slug": "chatgpt",
       "name": "ChatGPT",
       "source": "https://chatgpt.com",
-      "capturedAt": "2026-10-23T15:23:14.673Z",
+      "capturedAt": "2026-10-30T07:26:14.218Z",
       "alt": "Screenshot of the ChatGPT website",
       "pageTitle": "Just a moment...",
       "pageDescription": null,
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/chatgpt/icon-128.webp",
+        "256": "assets/tools/chatgpt/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://chatgpt.com\",{\"shot\":false},null]"
     },
@@ -1545,14 +1656,25 @@
       "slug": "google-drive",
       "name": "Google Drive",
       "source": "https://drive.google.com",
-      "capturedAt": "2026-10-23T15:23:32.194Z",
+      "capturedAt": "2026-10-30T07:26:25.663Z",
       "alt": "Screenshot of the Google Drive website",
       "pageTitle": "Google Drive: Sign-in",
       "pageDescription": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use).",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/google-drive/icon-128.webp",
+        "256": "assets/tools/google-drive/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://drive.google.com\",{\"shot\":false},null]"
     },
@@ -1588,14 +1710,25 @@
       "slug": "google-search",
       "name": "Google Search",
       "source": "https://www.google.com",
-      "capturedAt": "2026-10-23T15:23:48.018Z",
+      "capturedAt": "2026-10-30T07:26:29.803Z",
       "alt": "Screenshot of the Google Search website",
       "pageTitle": "Google",
       "pageDescription": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/google-search/icon-128.webp",
+        "256": "assets/tools/google-search/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#486848",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.google.com\",{\"shot\":false},null]"
     },
@@ -1630,14 +1763,25 @@
       "slug": "kindle",
       "name": "Amazon Kindle",
       "source": "https://www.amazon.com/kindle",
-      "capturedAt": "2026-10-23T15:23:58.387Z",
+      "capturedAt": "2026-10-30T07:26:33.753Z",
       "alt": "Screenshot of the Amazon Kindle website",
       "pageTitle": "Kindle E-Readers - Read, Write & Create on a Glare-Free Display | Amazon.com",
       "pageDescription": "Discover the Kindle lineup—purpose-built for reading, writing, and deep focus. Glare-free displays, weeks of battery life, and AI-powered tools. Buy your Kindle today!",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/kindle/icon-128.webp",
+        "256": "assets/tools/kindle/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f86808",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.amazon.com/kindle\",{\"shot\":false},null]"
     },
@@ -1645,10 +1789,11 @@
       "slug": "google-password-manager",
       "name": "Google Password Manager",
       "source": "https://passwords.google.com",
-      "capturedAt": "2026-10-23T15:24:03.217Z",
+      "capturedAt": "2026-10-30T07:26:39.130Z",
       "alt": "Screenshot of the Google Password Manager website",
       "pageTitle": "Sign in - Google Accounts",
       "pageDescription": null,
+      "iconFallback": true,
       "color": null,
       "notes": [
         "screenshot skipped by override",
@@ -1660,14 +1805,25 @@
       "slug": "adobe-creative-cloud",
       "name": "Adobe Creative Cloud",
       "source": "https://www.adobe.com/creativecloud.html",
-      "capturedAt": "2026-10-23T15:24:07.073Z",
+      "capturedAt": "2026-10-30T07:26:43.604Z",
       "alt": "Screenshot of the Adobe Creative Cloud website",
       "pageTitle": "Access Denied",
       "pageDescription": null,
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/adobe-creative-cloud/icon-128.webp",
+        "256": "assets/tools/adobe-creative-cloud/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.adobe.com/creativecloud.html\",{\"shot\":false},null]"
     },
@@ -1709,7 +1865,7 @@
       "slug": "osmand",
       "name": "OsmAnd",
       "source": "https://osmand.net",
-      "capturedAt": "2026-10-23T15:24:18.815Z",
+      "capturedAt": "2026-10-30T07:26:47.609Z",
       "alt": "Screenshot of the OsmAnd website",
       "pageTitle": "OsmAnd",
       "pageDescription": "Offline Mobile Maps & Navigation",
@@ -1722,14 +1878,25 @@
         "390": "assets/tools/osmand/mobile-390.webp",
         "780": "assets/tools/osmand/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/osmand/icon-128.webp",
+        "256": "assets/tools/osmand/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/osmand/social-600.webp",
         "1200": "assets/tools/osmand/social-1200.webp",
         "from": "https://osmand.net/img/social-card.png"
       },
-      "color": null,
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://osmand.net\",null,null]"
     },
@@ -1737,7 +1904,7 @@
       "slug": "immich",
       "name": "Immich",
       "source": "https://immich.app",
-      "capturedAt": "2026-10-23T15:24:31.906Z",
+      "capturedAt": "2026-10-30T07:27:02.101Z",
       "alt": "Screenshot of the Immich website",
       "pageTitle": "Immich",
       "pageDescription": "Self-hosted photo and video management solution. Easily back up, organize, and manage your photos on your own server. Immich helps you browse, search and organize your photos and videos with ease, without sacrificing your privacy.",
@@ -1750,14 +1917,25 @@
         "390": "assets/tools/immich/mobile-390.webp",
         "780": "assets/tools/immich/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/immich/icon-128.webp",
+        "256": "assets/tools/immich/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/immich/social-600.webp",
         "1200": "assets/tools/immich/social-1200.webp",
         "from": "https://immich.app/img/social-preview.png"
       },
-      "color": null,
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://immich.app\",null,null]"
     },
@@ -1870,7 +2048,7 @@
       "slug": "loops",
       "name": "Loops",
       "source": "https://joinloops.org",
-      "capturedAt": "2026-10-23T15:38:17.593Z",
+      "capturedAt": "2026-10-30T07:27:10.387Z",
       "alt": "Screenshot of the Loops website",
       "pageTitle": "Loops - Short videos. Your community. Your rules.",
       "pageDescription": "All the fun of short-form video, none of the corporate control. Loops is federated, open-source, and designed to give power back to creators and communities.",
@@ -1883,14 +2061,25 @@
         "390": "assets/tools/loops/mobile-390.webp",
         "780": "assets/tools/loops/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/loops/icon-128.webp",
+        "256": "assets/tools/loops/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
       "social": {
         "600": "assets/tools/loops/social-600.webp",
         "1200": "assets/tools/loops/social-1200.webp",
         "from": "https://joinloops.org/__og-image__/image/og.png"
       },
-      "color": null,
+      "color": "#f8e808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://joinloops.org\",null,null]"
     },
@@ -2105,9 +2294,9 @@
       "slug": "searxng",
       "name": "SearXNG",
       "source": "https://docs.searxng.org",
-      "capturedAt": "2026-10-23T19:25:06.704Z",
+      "capturedAt": "2026-10-30T07:27:19.144Z",
       "alt": "Screenshot of the SearXNG website",
-      "pageTitle": "SearXNG Documentation (2026.10.23+629368e40)",
+      "pageTitle": "SearXNG Documentation (2026.10.30+1cd13d98d)",
       "pageDescription": null,
       "shot": {
         "480": "assets/tools/searxng/shot-480.webp",
@@ -2118,9 +2307,11 @@
         "390": "assets/tools/searxng/mobile-390.webp",
         "780": "assets/tools/searxng/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdocs.searxng.org&size=256"
       ],
       "cfg": "[\"https://docs.searxng.org\",null,null]"
     },
@@ -2128,7 +2319,7 @@
       "slug": "organic-maps",
       "name": "Organic Maps",
       "source": "https://organicmaps.app",
-      "capturedAt": "2026-10-23T19:25:12.465Z",
+      "capturedAt": "2026-10-30T07:27:25.809Z",
       "alt": "Screenshot of the Organic Maps website",
       "pageTitle": "Organic Maps: Offline Hike, Bike, Trails and Navigation",
       "pageDescription": "Free, open-source, fast, privacy-focused, detailed offline maps for travelers, tourists, drivers, hikers and cyclists created by MapsWithMe/Maps.Me app founders",
@@ -2141,14 +2332,25 @@
         "390": "assets/tools/organic-maps/mobile-390.webp",
         "780": "assets/tools/organic-maps/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/organic-maps/icon-128.webp",
+        "256": "assets/tools/organic-maps/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/organic-maps/social-600.webp",
         "1200": "assets/tools/organic-maps/social-1200.webp",
         "from": "https://organicmaps.app/images/screenshots/prague.jpg"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://organicmaps.app\",null,null]"
     },
@@ -2156,7 +2358,7 @@
       "slug": "transportr",
       "name": "Transportr",
       "source": "https://transportr.app",
-      "capturedAt": "2026-10-23T19:25:19.742Z",
+      "capturedAt": "2026-10-30T07:27:33.697Z",
       "alt": "Screenshot of the Transportr website",
       "pageTitle": "Transportr - Open Source Public Transit",
       "pageDescription": null,
@@ -2169,9 +2371,20 @@
         "390": "assets/tools/transportr/mobile-390.webp",
         "780": "assets/tools/transportr/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/transportr/icon-128.webp",
+        "256": "assets/tools/transportr/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f84838",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://transportr.app\",null,null]"
     },
@@ -2214,7 +2427,7 @@
       "slug": "notesnook",
       "name": "Notesnook",
       "source": "https://notesnook.com",
-      "capturedAt": "2026-10-23T19:25:36.034Z",
+      "capturedAt": "2026-10-30T07:27:48.967Z",
       "alt": "Screenshot of the Notesnook website",
       "pageTitle": "Notesnook | Open source & zero knowledge private note taking app",
       "pageDescription": "Express yourself with freedom — no spying, no tracking, only private notes. Unlike Evernote and other note apps, your data is yours alone.",
@@ -2227,14 +2440,25 @@
         "390": "assets/tools/notesnook/mobile-390.webp",
         "780": "assets/tools/notesnook/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/notesnook/icon-128.webp",
+        "256": "assets/tools/notesnook/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/notesnook/social-600.webp",
         "1200": "assets/tools/notesnook/social-1200.webp",
         "from": "https://notesnook.com/social-2.png"
       },
-      "color": null,
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://notesnook.com\",null,null]"
     },
@@ -2277,7 +2501,7 @@
       "slug": "piwigo",
       "name": "Piwigo",
       "source": "https://piwigo.org",
-      "capturedAt": "2026-10-23T19:25:52.752Z",
+      "capturedAt": "2026-10-30T07:27:58.581Z",
       "alt": "Screenshot of the Piwigo website",
       "pageTitle": "Piwigo | Open Source Photo Library and DAM Software",
       "pageDescription": "Organize and share your media with Piwigo, an open source photo library and DAM software. Available as a hosted service in France or self-hosted.",
@@ -2290,6 +2514,7 @@
         "390": "assets/tools/piwigo/mobile-390.webp",
         "780": "assets/tools/piwigo/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
@@ -2360,7 +2585,7 @@
       "slug": "rawtherapee",
       "name": "RawTherapee",
       "source": "https://rawtherapee.com",
-      "capturedAt": "2026-10-23T19:26:21.803Z",
+      "capturedAt": "2026-10-30T07:28:11.889Z",
       "alt": "Screenshot of the RawTherapee website",
       "pageTitle": "Home | RawTherapee",
       "pageDescription": "About RawTherapee is a powerful, cross-platform raw photo processing system, released as Free Software (GPLv3). It is designed for developing raw files from a broad range of digital cameras and targeted at users ranging from enthusiast newcomers who wish to broaden their understanding of how digital imaging works to professional photographers. RawTherapee provides a powerful suite of tools for you to produce amazing photos and showcase your creativity.",
@@ -2373,6 +2598,7 @@
         "390": "assets/tools/rawtherapee/mobile-390.webp",
         "780": "assets/tools/rawtherapee/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
         "manifest unreadable: HTTP 404 for https://rawtherapee.com/site.webmanifest",
@@ -2443,7 +2669,7 @@
       "slug": "keepassdx",
       "name": "KeePassDX",
       "source": "https://www.keepassdx.com",
-      "capturedAt": "2026-10-23T19:26:50.704Z",
+      "capturedAt": "2026-10-30T07:28:21.805Z",
       "alt": "Screenshot of the KeePassDX website",
       "pageTitle": "KeePassDX",
       "pageDescription": null,
@@ -2456,6 +2682,7 @@
         "390": "assets/tools/keepassdx/mobile-390.webp",
         "780": "assets/tools/keepassdx/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)"
@@ -2466,7 +2693,7 @@
       "slug": "pass",
       "name": "pass",
       "source": "https://www.passwordstore.org",
-      "capturedAt": "2026-10-23T19:26:57.551Z",
+      "capturedAt": "2026-10-30T07:28:29.167Z",
       "alt": "Screenshot of the pass website",
       "pageTitle": "Pass: The Standard Unix Password Manager",
       "pageDescription": "Pass is the standard unix password manager, a lightweight password manager that uses GPG and Git for Linux, BSD, and Mac OS X.",
@@ -2479,9 +2706,11 @@
         "390": "assets/tools/pass/mobile-390.webp",
         "780": "assets/tools/pass/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.passwordstore.org&size=256"
       ],
       "cfg": "[\"https://www.passwordstore.org\",null,null]"
     },
@@ -2524,7 +2753,7 @@
       "slug": "wallabag",
       "name": "wallabag",
       "source": "https://wallabag.org",
-      "capturedAt": "2026-10-23T19:27:12.665Z",
+      "capturedAt": "2026-10-30T07:28:37.279Z",
       "alt": "Screenshot of the wallabag website",
       "pageTitle": "Save the web, freely | wallabag: a self hostable application for saving web pages",
       "pageDescription": "With wallabag, archive the web freely. wallabag is a self hostable application for saving web pages.",
@@ -2537,14 +2766,25 @@
         "390": "assets/tools/wallabag/mobile-390.webp",
         "780": "assets/tools/wallabag/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/wallabag/icon-128.webp",
+        "256": "assets/tools/wallabag/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/wallabag/social-600.webp",
         "1200": "assets/tools/wallabag/social-1200.webp",
         "from": "https://wallabag.org/img/wallabag_preview.png"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://wallabag.org\",null,null]"
     },
@@ -2552,7 +2792,7 @@
       "slug": "simplex",
       "name": "SimpleX Chat",
       "source": "https://simplex.chat",
-      "capturedAt": "2026-10-23T19:27:22.232Z",
+      "capturedAt": "2026-10-30T07:28:48.403Z",
       "alt": "Screenshot of the SimpleX Chat website",
       "pageTitle": "SimpleX Chat: private and secure messenger without any user IDs (not even random)",
       "pageDescription": "SimpleX Chat - a private and encrypted messenger without any user IDs (not even random ones)! Make a private connection via link / QR code to send messages and make calls.",
@@ -2565,6 +2805,7 @@
         "390": "assets/tools/simplex/mobile-390.webp",
         "780": "assets/tools/simplex/mobile-780.webp"
       },
+      "iconFallback": true,
       "social": {
         "600": "assets/tools/simplex/social-600.webp",
         "1200": "assets/tools/simplex/social-1200.webp",
@@ -2703,7 +2944,7 @@
       "slug": "mojeek",
       "name": "Mojeek",
       "source": "https://www.mojeek.com",
-      "capturedAt": "2026-10-23T19:28:06.891Z",
+      "capturedAt": "2026-10-30T07:28:59.061Z",
       "alt": "Screenshot of the Mojeek website",
       "pageTitle": "Mojeek",
       "pageDescription": "Mojeek is a web search engine that provides unbiased, fast, and relevant search results combined with a no tracking privacy policy.",
@@ -2716,9 +2957,20 @@
         "390": "assets/tools/mojeek/mobile-390.webp",
         "780": "assets/tools/mojeek/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/mojeek/icon-128.webp",
+        "256": "assets/tools/mojeek/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.mojeek.com\",null,null]"
     },
@@ -2726,7 +2978,7 @@
       "slug": "marginalia",
       "name": "Marginalia Search",
       "source": "https://marginalia-search.com",
-      "capturedAt": "2026-10-23T19:28:14.238Z",
+      "capturedAt": "2026-10-30T07:29:07.132Z",
       "alt": "Screenshot of the Marginalia Search website",
       "pageTitle": "Marginalia Search",
       "pageDescription": "Marginalia Search is a small independent do-it-yourself search engine for surprising but content-rich websites that never ask you to accept cookies or subscribe to newsletters. The goal is to bring you the sort of grass fed, free range HTML your grandma used to write. ",
@@ -2739,9 +2991,20 @@
         "390": "assets/tools/marginalia/mobile-390.webp",
         "780": "assets/tools/marginalia/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/marginalia/icon-128.webp",
+        "256": "assets/tools/marginalia/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://marginalia-search.com\",null,null]"
     },
@@ -2749,7 +3012,7 @@
       "slug": "miniflux",
       "name": "Miniflux",
       "source": "https://miniflux.app",
-      "capturedAt": "2026-10-23T19:28:22.139Z",
+      "capturedAt": "2026-10-30T07:29:15.874Z",
       "alt": "Screenshot of the Miniflux website",
       "pageTitle": "Miniflux - Minimalist and Opinionated Feed Reader",
       "pageDescription": "Miniflux is a minimalist and opinionated feed reader",
@@ -2762,9 +3025,20 @@
         "390": "assets/tools/miniflux/mobile-390.webp",
         "780": "assets/tools/miniflux/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/miniflux/icon-128.webp",
+        "256": "assets/tools/miniflux/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://miniflux.app\",null,null]"
     },
@@ -3195,7 +3469,7 @@
       "slug": "jellyfin",
       "name": "Jellyfin",
       "source": "https://jellyfin.org",
-      "capturedAt": "2026-10-23T21:42:41.838Z",
+      "capturedAt": "2026-10-30T07:29:25.131Z",
       "alt": "Screenshot of the Jellyfin website",
       "pageTitle": "The Free Software Media System | Jellyfin",
       "pageDescription": "The volunteer-built media solution that puts you in control of your media. Stream to any device from your own server, with no strings attached.",
@@ -3208,14 +3482,25 @@
         "390": "assets/tools/jellyfin/mobile-390.webp",
         "780": "assets/tools/jellyfin/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/jellyfin/icon-128.webp",
+        "256": "assets/tools/jellyfin/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/jellyfin/social-600.webp",
         "1200": "assets/tools/jellyfin/social-1200.webp",
         "from": "https://jellyfin.org/images/social.png?v2"
       },
-      "color": null,
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://jellyfin.org\",null,null]"
     },
@@ -3288,7 +3573,7 @@
       "slug": "funkwhale",
       "name": "Funkwhale",
       "source": "https://funkwhale.audio",
-      "capturedAt": "2026-10-23T21:43:04.765Z",
+      "capturedAt": "2026-10-30T07:29:34.196Z",
       "alt": "Screenshot of the Funkwhale website",
       "pageTitle": "Funkwhale",
       "pageDescription": "Funkwhale - A platform for all your audio",
@@ -3301,9 +3586,20 @@
         "390": "assets/tools/funkwhale/mobile-390.webp",
         "780": "assets/tools/funkwhale/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/funkwhale/icon-128.webp",
+        "256": "assets/tools/funkwhale/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://funkwhale.audio\",null,null]"
     },
@@ -3474,7 +3770,7 @@
       "slug": "libreoffice",
       "name": "LibreOffice",
       "source": "https://www.libreoffice.org",
-      "capturedAt": "2026-10-23T21:43:57.489Z",
+      "capturedAt": "2026-10-30T07:29:50.666Z",
       "alt": "Screenshot of the LibreOffice website",
       "pageTitle": "Free and private office suite, no forced AI — LibreOffice",
       "pageDescription": "LibreOffice is a free office suite",
@@ -3487,9 +3783,20 @@
         "390": "assets/tools/libreoffice/mobile-390.webp",
         "780": "assets/tools/libreoffice/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/libreoffice/icon-128.webp",
+        "256": "assets/tools/libreoffice/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.libreoffice.org\",null,null]"
     },
@@ -3567,7 +3874,7 @@
       "slug": "etherpad",
       "name": "Etherpad",
       "source": "https://etherpad.org",
-      "capturedAt": "2026-10-23T21:44:41.911Z",
+      "capturedAt": "2026-10-30T07:30:00.090Z",
       "alt": "Screenshot of the Etherpad website",
       "pageTitle": "Etherpad",
       "pageDescription": null,
@@ -3580,10 +3887,21 @@
         "390": "assets/tools/etherpad/mobile-390.webp",
         "780": "assets/tools/etherpad/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/etherpad/icon-128.webp",
+        "256": "assets/tools/etherpad/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#58c898",
+      "colorFrom": "icon",
       "notes": [
         "dismissed banner with button:has-text(\"Decline\")",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://etherpad.org\",null,null]"
     },
@@ -3685,7 +4003,7 @@
       "slug": "datasette",
       "name": "Datasette",
       "source": "https://datasette.io",
-      "capturedAt": "2026-10-23T21:45:06.762Z",
+      "capturedAt": "2026-10-30T07:30:07.869Z",
       "alt": "Screenshot of the Datasette website",
       "pageTitle": "Datasette: An open source multi-tool for exploring and publishing data",
       "pageDescription": "Datasette is a tool for exploring and publishing data. It helps people take data of any shape, analyze and explore it, and publish it as an interactive website and accompanying API.",
@@ -3698,14 +4016,25 @@
         "390": "assets/tools/datasette/mobile-390.webp",
         "780": "assets/tools/datasette/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/datasette/icon-128.webp",
+        "256": "assets/tools/datasette/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/datasette/social-600.webp",
         "1200": "assets/tools/datasette/social-1200.webp",
         "from": "https://datasette.io/static/datasette-card.png"
       },
-      "color": null,
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://datasette.io\",null,null]"
     },
@@ -3741,14 +4070,25 @@
       "slug": "google-play",
       "name": "Google Play",
       "source": "https://play.google.com",
-      "capturedAt": "2026-10-23T21:45:17.641Z",
+      "capturedAt": "2026-10-30T07:30:14.775Z",
       "alt": "Screenshot of the Google Play website",
       "pageTitle": "Android Apps on Google Play",
       "pageDescription": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your devices.",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/google-play/icon-128.webp",
+        "256": "assets/tools/google-play/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://play.google.com\",{\"shot\":false},null]"
     },
@@ -3784,14 +4124,25 @@
       "slug": "amazon-alexa",
       "name": "Amazon Alexa",
       "source": "https://alexa.amazon.com",
-      "capturedAt": "2026-10-23T21:45:29.597Z",
+      "capturedAt": "2026-10-30T07:30:20.185Z",
       "alt": "Screenshot of the Amazon Alexa website",
       "pageTitle": "Sign in",
       "pageDescription": null,
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/amazon-alexa/icon-128.webp",
+        "256": "assets/tools/amazon-alexa/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 37,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://alexa.amazon.com\",{\"shot\":false},null]"
     },
@@ -3799,14 +4150,25 @@
       "slug": "microsoft-365",
       "name": "Microsoft 365",
       "source": "https://www.microsoft.com/microsoft-365",
-      "capturedAt": "2026-10-23T21:45:38.153Z",
+      "capturedAt": "2026-10-30T07:30:24.698Z",
       "alt": "Screenshot of the Microsoft 365 website",
       "pageTitle": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
       "pageDescription": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and powerful AI. Try for free.",
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/microsoft-365/icon-128.webp",
+        "256": "assets/tools/microsoft-365/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f84828",
+      "colorFrom": "icon",
       "notes": [
         "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.microsoft.com/microsoft-365\",{\"shot\":false},null]"
     },
@@ -3850,7 +4212,7 @@
       "slug": "newpipe",
       "name": "NewPipe",
       "source": "https://newpipe.net",
-      "capturedAt": "2026-10-29T00:36:19.795Z",
+      "capturedAt": "2026-10-30T07:30:40.244Z",
       "alt": "Screenshot of the NewPipe website",
       "pageTitle": "NewPipe - a free YouTube client",
       "pageDescription": null,
@@ -3863,14 +4225,25 @@
         "390": "assets/tools/newpipe/mobile-390.webp",
         "780": "assets/tools/newpipe/mobile-780.webp"
       },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/newpipe/icon-128.webp",
+        "256": "assets/tools/newpipe/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
       "social": {
         "600": "assets/tools/newpipe/social-600.webp",
         "1200": "assets/tools/newpipe/social-1200.webp",
         "from": "https://newpipe.net/img/logo_400.png"
       },
-      "color": null,
+      "color": "#c81818",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://newpipe.net\",null,null]"
     },
@@ -3878,7 +4251,7 @@
       "slug": "freetube",
       "name": "FreeTube",
       "source": "https://freetubeapp.io",
-      "capturedAt": "2026-10-29T00:36:30.829Z",
+      "capturedAt": "2026-10-30T07:30:51.104Z",
       "alt": "Screenshot of the FreeTube website",
       "pageTitle": "FreeTube - The Private YouTube Client",
       "pageDescription": "FreeTube is a feature-rich and user-friendly YouTube client with a focus on privacy.",
@@ -3891,9 +4264,20 @@
         "390": "assets/tools/freetube/mobile-390.webp",
         "780": "assets/tools/freetube/mobile-780.webp"
       },
-      "color": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/freetube/icon-128.webp",
+        "256": "assets/tools/freetube/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 250,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ],
       "cfg": "[\"https://freetubeapp.io\",null,null]"
     },
@@ -3966,7 +4350,7 @@
       "slug": "ampache",
       "name": "Ampache",
       "source": "https://ampache.org",
-      "capturedAt": "2026-10-29T00:36:59.165Z",
+      "capturedAt": "2026-10-30T07:30:59.746Z",
       "alt": "Screenshot of the Ampache website",
       "pageTitle": "Ampache",
       "pageDescription": "Ampache.org",
@@ -3979,9 +4363,11 @@
         "390": "assets/tools/ampache/mobile-390.webp",
         "780": "assets/tools/ampache/mobile-780.webp"
       },
+      "iconFallback": true,
       "color": null,
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fampache.org&size=256"
       ],
       "cfg": "[\"https://ampache.org\",null,null]"
     },
@@ -4012,7 +4398,189 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://www.youtube.com\",{\"shot\":false},null]"
+    },
+    "ai-horde": {
+      "slug": "ai-horde",
+      "name": "AI Horde",
+      "source": "https://aihorde.net",
+      "capturedAt": "2026-10-30T07:31:07.815Z",
+      "alt": "Screenshot of the AI Horde website",
+      "pageTitle": "AI Horde",
+      "pageDescription": "Volunteers share their computers so anyone can make images and text here, for free.",
+      "shot": {
+        "480": "assets/tools/ai-horde/shot-480.webp",
+        "960": "assets/tools/ai-horde/shot-960.webp",
+        "1600": "assets/tools/ai-horde/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ai-horde/mobile-390.webp",
+        "780": "assets/tools/ai-horde/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/ai-horde/icon-128.webp",
+        "256": "assets/tools/ai-horde/icon-256.webp",
+        "from": "https://aihorde.net/app-icon-512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/ai-horde/social-600.webp",
+        "1200": "assets/tools/ai-horde/social-1200.webp",
+        "from": "https://assets.aihorde.net/promo/site.jpg"
+      },
+      "color": "#eceef3",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://aihorde.net\",null,null]"
+    },
+    "fooocus": {
+      "slug": "fooocus",
+      "name": "Fooocus",
+      "source": "https://github.com/lllyasviel/Fooocus",
+      "capturedAt": "2026-10-30T07:31:17.715Z",
+      "alt": "Screenshot of the Fooocus website",
+      "pageTitle": "GitHub - lllyasviel/Fooocus: Focus on prompting and generating · GitHub",
+      "pageDescription": "Focus on prompting and generating. Contribute to lllyasviel/Fooocus development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/fooocus/shot-480.webp",
+        "960": "assets/tools/fooocus/shot-960.webp",
+        "1600": "assets/tools/fooocus/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/fooocus/mobile-390.webp",
+        "780": "assets/tools/fooocus/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/fooocus/icon-128.webp",
+        "256": "assets/tools/fooocus/icon-256.webp",
+        "svg": "assets/tools/fooocus/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/fooocus/social-600.webp",
+        "1200": "assets/tools/fooocus/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/4998ce633763eb7466572ce0e5a2056338f9ca569f786a2b6102200777618824/lllyasviel/Fooocus"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/lllyasviel/Fooocus\",null,null]"
+    },
+    "invokeai": {
+      "slug": "invokeai",
+      "name": "InvokeAI",
+      "source": "https://invoke.ai",
+      "capturedAt": "2026-10-30T07:31:27.403Z",
+      "alt": "Screenshot of the InvokeAI website",
+      "pageTitle": "AI Image Generation for Creatives | InvokeAI Documentation",
+      "pageDescription": "A leading creative engine built to empower professionals and enthusiasts alike.",
+      "shot": {
+        "480": "assets/tools/invokeai/shot-480.webp",
+        "960": "assets/tools/invokeai/shot-960.webp",
+        "1600": "assets/tools/invokeai/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/invokeai/mobile-390.webp",
+        "780": "assets/tools/invokeai/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/invokeai/icon-128.webp",
+        "256": "assets/tools/invokeai/icon-256.webp",
+        "svg": "assets/tools/invokeai/icon.svg",
+        "from": "https://invoke.ai/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/invokeai/social-600.webp",
+        "1200": "assets/tools/invokeai/social-1200.webp",
+        "from": "https://invoke.ai/coverimage.png"
+      },
+      "color": "#e8f818",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://invoke.ai\",null,null]"
+    },
+    "draw-things": {
+      "slug": "draw-things",
+      "name": "Draw Things",
+      "source": "https://drawthings.ai",
+      "capturedAt": "2026-10-30T07:31:35.634Z",
+      "alt": "Screenshot of the Draw Things website",
+      "pageTitle": "Draw Things: AI-assisted Image Generation",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/draw-things/shot-480.webp",
+        "960": "assets/tools/draw-things/shot-960.webp",
+        "1600": "assets/tools/draw-things/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/draw-things/mobile-390.webp",
+        "780": "assets/tools/draw-things/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/draw-things/icon-128.webp",
+        "256": "assets/tools/draw-things/icon-256.webp",
+        "from": "https://drawthings.ai/images/webclip.png",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://drawthings.ai\",null,null]"
+    },
+    "adobe-firefly": {
+      "slug": "adobe-firefly",
+      "name": "Adobe Firefly",
+      "source": "https://firefly.adobe.com",
+      "capturedAt": "2026-10-30T07:31:43.580Z",
+      "alt": "Screenshot of the Adobe Firefly website",
+      "pageTitle": "Adobe Firefly: Your all-in-one AI creative studio",
+      "pageDescription": "Firefly gives you the speed, control, and creative freedom to go from idea to high-quality content. Generate images, video, audio and more with 30+ AI models, all in one place.",
+      "icon": {
+        "128": "assets/tools/adobe-firefly/icon-128.webp",
+        "256": "assets/tools/adobe-firefly/icon-256.webp",
+        "from": "https://firefly.adobe.com/releases/3bf62984d0a7b7fac1e6a0e4ab04ddff5eee714b/assets/fi_android_192-DXlUnW6D.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#e80808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://firefly.adobe.com\",{\"shot\":false},null]"
+    },
+    "midjourney": {
+      "slug": "midjourney",
+      "name": "Midjourney",
+      "source": "https://www.midjourney.com",
+      "capturedAt": "2026-10-30T07:31:55.725Z",
+      "alt": "Screenshot of the Midjourney website",
+      "pageTitle": "Just a moment...",
+      "pageDescription": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/midjourney/icon-128.webp",
+        "256": "assets/tools/midjourney/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.midjourney.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-29T00:37:12.491Z"
+  "updatedAt": "2026-10-30T07:32:07.249Z"
 }

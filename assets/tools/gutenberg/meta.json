@@ -2,7 +2,7 @@
   "slug": "gutenberg",
   "name": "Project Gutenberg",
   "source": "https://www.gutenberg.org",
-  "capturedAt": "2026-10-23T13:54:45.451Z",
+  "capturedAt": "2026-10-30T07:25:20.251Z",
   "alt": "Screenshot of the Project Gutenberg website",
   "pageTitle": "Free eBooks | Project Gutenberg",
   "pageDescription": "Project Gutenberg is a library of over 75,000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads.",
@@ -15,6 +15,7 @@
     "390": "assets/tools/gutenberg/mobile-390.webp",
     "780": "assets/tools/gutenberg/mobile-780.webp"
   },
+  "iconFallback": true,
   "social": {
     "600": "assets/tools/gutenberg/social-600.webp",
     "1200": "assets/tools/gutenberg/social-1200.webp",

@@ -2,13 +2,24 @@
   "slug": "microsoft-365",
   "name": "Microsoft 365",
   "source": "https://www.microsoft.com/microsoft-365",
-  "capturedAt": "2026-10-23T21:45:38.153Z",
+  "capturedAt": "2026-10-30T07:30:24.698Z",
   "alt": "Screenshot of the Microsoft 365 website",
   "pageTitle": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
   "pageDescription": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and powerful AI. Try for free.",
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/microsoft-365/icon-128.webp",
+    "256": "assets/tools/microsoft-365/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f84828",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

@@ -2,13 +2,24 @@
   "slug": "adobe-creative-cloud",
   "name": "Adobe Creative Cloud",
   "source": "https://www.adobe.com/creativecloud.html",
-  "capturedAt": "2026-10-23T15:24:07.073Z",
+  "capturedAt": "2026-10-30T07:26:43.604Z",
   "alt": "Screenshot of the Adobe Creative Cloud website",
   "pageTitle": "Access Denied",
   "pageDescription": null,
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/adobe-creative-cloud/icon-128.webp",
+    "256": "assets/tools/adobe-creative-cloud/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
     "screenshot skipped by override",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

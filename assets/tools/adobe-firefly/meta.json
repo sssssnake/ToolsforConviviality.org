@@ -1,0 +1,22 @@
+{
+  "slug": "adobe-firefly",
+  "name": "Adobe Firefly",
+  "source": "https://firefly.adobe.com",
+  "capturedAt": "2026-10-30T07:31:43.580Z",
+  "alt": "Screenshot of the Adobe Firefly website",
+  "pageTitle": "Adobe Firefly: Your all-in-one AI creative studio",
+  "pageDescription": "Firefly gives you the speed, control, and creative freedom to go from idea to high-quality content. Generate images, video, audio and more with 30+ AI models, all in one place.",
+  "icon": {
+    "128": "assets/tools/adobe-firefly/icon-128.webp",
+    "256": "assets/tools/adobe-firefly/icon-256.webp",
+    "from": "https://firefly.adobe.com/releases/3bf62984d0a7b7fac1e6a0e4ab04ddff5eee714b/assets/fi_android_192-DXlUnW6D.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#e80808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

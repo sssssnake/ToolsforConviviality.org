@@ -1,42 +1,348 @@
 {
-  "startedAt": "2026-10-29T00:36:06.449Z",
+  "startedAt": "2026-10-30T07:24:07.443Z",
   "captured": [
     {
-      "slug": "kodi",
+      "slug": "zotero",
       "notes": [
-        "manifest unreadable: HTTP 403 for https://kodi.tv/manifest.webmanifest"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "krita",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "penpot",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "darktable",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "cryptomator",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "freshrss",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "gutenberg",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "audiobookshelf",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "microsoft-word",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "ollama",
+      "notes": [
+        "icon failed: HTTP 404 for https://ollama.com/public/android-chrome-icon-512x512.png",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "jan",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "chatgpt",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "google-drive",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "google-search",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "kindle",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "google-password-manager",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "adobe-creative-cloud",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "osmand",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "immich",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "loops",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "searxng",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdocs.searxng.org&size=256"
+      ]
+    },
+    {
+      "slug": "organic-maps",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "transportr",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "notesnook",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "piwigo",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "rawtherapee",
+      "notes": [
+        "manifest unreadable: HTTP 404 for https://rawtherapee.com/site.webmanifest",
+        "icon failed: HTTP 404 for https://rawtherapee.com/icon.png"
+      ]
+    },
+    {
+      "slug": "keepassdx",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "pass",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fwww.passwordstore.org&size=256"
+      ]
+    },
+    {
+      "slug": "wallabag",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "simplex",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ]
+    },
+    {
+      "slug": "mojeek",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "marginalia",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "miniflux",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "jellyfin",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "funkwhale",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "libreoffice",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "etherpad",
+      "notes": [
+        "dismissed banner with button:has-text(\"Decline\")",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "datasette",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "google-play",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "amazon-alexa",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "microsoft-365",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
     },
     {
       "slug": "newpipe",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
     },
     {
       "slug": "freetube",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
-    },
-    {
-      "slug": "strawberry",
-      "notes": []
-    },
-    {
-      "slug": "mopidy",
-      "notes": []
     },
     {
       "slug": "ampache",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fampache.org&size=256"
       ]
     },
     {
-      "slug": "youtube",
+      "slug": "ai-horde",
+      "notes": []
+    },
+    {
+      "slug": "fooocus",
+      "notes": []
+    },
+    {
+      "slug": "invokeai",
+      "notes": []
+    },
+    {
+      "slug": "draw-things",
+      "notes": []
+    },
+    {
+      "slug": "adobe-firefly",
       "notes": [
         "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "midjourney",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
     }
   ],
@@ -90,10 +396,6 @@
       "reason": "recent"
     },
     {
-      "slug": "zotero",
-      "reason": "recent"
-    },
-    {
       "slug": "kiwix",
       "reason": "recent"
     },
@@ -106,10 +408,6 @@
       "reason": "recent"
     },
     {
-      "slug": "krita",
-      "reason": "recent"
-    },
-    {
       "slug": "inkscape",
       "reason": "recent"
     },
@@ -118,15 +416,7 @@
       "reason": "recent"
     },
     {
-      "slug": "penpot",
-      "reason": "recent"
-    },
-    {
       "slug": "blender",
-      "reason": "recent"
-    },
-    {
-      "slug": "darktable",
       "reason": "recent"
     },
     {
@@ -150,14 +440,6 @@
       "reason": "recent"
     },
     {
-      "slug": "cryptomator",
-      "reason": "recent"
-    },
-    {
-      "slug": "freshrss",
-      "reason": "recent"
-    },
-    {
       "slug": "calibre",
       "reason": "recent"
     },
@@ -166,15 +448,7 @@
       "reason": "recent"
     },
     {
-      "slug": "gutenberg",
-      "reason": "recent"
-    },
-    {
       "slug": "koreader",
-      "reason": "recent"
-    },
-    {
-      "slug": "audiobookshelf",
       "reason": "recent"
     },
     {
@@ -187,10 +461,6 @@
     },
     {
       "slug": "hermes-agent",
-      "reason": "recent"
-    },
-    {
-      "slug": "microsoft-word",
       "reason": "recent"
     },
     {
@@ -222,19 +492,7 @@
       "reason": "recent"
     },
     {
-      "slug": "ollama",
-      "reason": "recent"
-    },
-    {
-      "slug": "jan",
-      "reason": "recent"
-    },
-    {
       "slug": "goose",
-      "reason": "recent"
-    },
-    {
-      "slug": "chatgpt",
       "reason": "recent"
     },
     {
@@ -242,15 +500,7 @@
       "reason": "recent"
     },
     {
-      "slug": "google-drive",
-      "reason": "recent"
-    },
-    {
       "slug": "google-maps",
-      "reason": "recent"
-    },
-    {
-      "slug": "google-search",
       "reason": "recent"
     },
     {
@@ -258,31 +508,11 @@
       "reason": "recent"
     },
     {
-      "slug": "kindle",
-      "reason": "recent"
-    },
-    {
       "slug": "pinterest",
       "reason": "robots.txt disallows"
     },
     {
-      "slug": "google-password-manager",
-      "reason": "recent"
-    },
-    {
-      "slug": "adobe-creative-cloud",
-      "reason": "recent"
-    },
-    {
       "slug": "openstreetmap",
-      "reason": "recent"
-    },
-    {
-      "slug": "osmand",
-      "reason": "recent"
-    },
-    {
-      "slug": "immich",
       "reason": "recent"
     },
     {
@@ -295,10 +525,6 @@
     },
     {
       "slug": "pixelfed",
-      "reason": "recent"
-    },
-    {
-      "slug": "loops",
       "reason": "recent"
     },
     {
@@ -334,31 +560,11 @@
       "reason": "recent"
     },
     {
-      "slug": "searxng",
-      "reason": "recent"
-    },
-    {
-      "slug": "organic-maps",
-      "reason": "recent"
-    },
-    {
-      "slug": "transportr",
-      "reason": "recent"
-    },
-    {
       "slug": "logseq",
       "reason": "recent"
     },
     {
-      "slug": "notesnook",
-      "reason": "recent"
-    },
-    {
       "slug": "photoprism",
-      "reason": "recent"
-    },
-    {
-      "slug": "piwigo",
       "reason": "recent"
     },
     {
@@ -370,10 +576,6 @@
       "reason": "recent"
     },
     {
-      "slug": "rawtherapee",
-      "reason": "recent"
-    },
-    {
       "slug": "shotcut",
       "reason": "recent"
     },
@@ -382,23 +584,7 @@
       "reason": "recent"
     },
     {
-      "slug": "keepassdx",
-      "reason": "recent"
-    },
-    {
-      "slug": "pass",
-      "reason": "recent"
-    },
-    {
       "slug": "linkwarden",
-      "reason": "recent"
-    },
-    {
-      "slug": "wallabag",
-      "reason": "recent"
-    },
-    {
-      "slug": "simplex",
       "reason": "recent"
     },
     {
@@ -415,18 +601,6 @@
     },
     {
       "slug": "snapchat",
-      "reason": "recent"
-    },
-    {
-      "slug": "mojeek",
-      "reason": "recent"
-    },
-    {
-      "slug": "marginalia",
-      "reason": "recent"
-    },
-    {
-      "slug": "miniflux",
       "reason": "recent"
     },
     {
@@ -482,19 +656,11 @@
       "reason": "recent"
     },
     {
-      "slug": "jellyfin",
-      "reason": "recent"
-    },
-    {
       "slug": "navidrome",
       "reason": "recent"
     },
     {
       "slug": "mpv",
-      "reason": "recent"
-    },
-    {
-      "slug": "funkwhale",
       "reason": "recent"
     },
     {
@@ -518,19 +684,11 @@
       "reason": "recent"
     },
     {
-      "slug": "libreoffice",
-      "reason": "recent"
-    },
-    {
       "slug": "onlyoffice",
       "reason": "recent"
     },
     {
       "slug": "collabora-online",
-      "reason": "recent"
-    },
-    {
-      "slug": "etherpad",
       "reason": "recent"
     },
     {
@@ -546,15 +704,7 @@
       "reason": "recent"
     },
     {
-      "slug": "datasette",
-      "reason": "recent"
-    },
-    {
       "slug": "chrome",
-      "reason": "recent"
-    },
-    {
-      "slug": "google-play",
       "reason": "recent"
     },
     {
@@ -562,11 +712,19 @@
       "reason": "recent"
     },
     {
-      "slug": "amazon-alexa",
+      "slug": "kodi",
       "reason": "recent"
     },
     {
-      "slug": "microsoft-365",
+      "slug": "strawberry",
+      "reason": "recent"
+    },
+    {
+      "slug": "mopidy",
+      "reason": "recent"
+    },
+    {
+      "slug": "youtube",
       "reason": "recent"
     }
   ],
@@ -576,5 +734,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-29T00:37:12.494Z"
+  "finishedAt": "2026-10-30T07:32:07.253Z"
 }

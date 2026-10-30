@@ -454,7 +454,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/benchmarks/">Benchmarks</a> / Adobe Firefly</p>
   <div class="review">
     <article class="review-body">
-      <div class="review-head"><span class="logo lg" style="background:#862e9c;color:#fff" aria-hidden="true">A</span><div class="page-head"><h1>Adobe Firefly</h1><p>Adobe's image generator, built to be safe for commercial use and built into Creative Cloud.</p></div></div>
+      <div class="review-head"><span class="logo lg"><img src="/assets/tools/adobe-firefly/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div class="page-head"><h1>Adobe Firefly</h1><p>Adobe's image generator, built to be safe for commercial use and built into Creative Cloud.</p></div></div>
       <p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated October 2026.</p>
       <div class="chips"><span class="chip">XL · System</span><span class="chip">Benchmark</span><span class="chip">Closed source</span><span class="chip">Hosted</span></div>
       
@@ -462,7 +462,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <ul class="points" aria-label="What makes Adobe Firefly unusual"><h2>What stands out</h2><li>Says its own models are trained on licensed content, including Adobe Stock</li><li>Needs an Adobe ID and a connection, with free daily use and paid plans</li><li>Also offers partner models such as GPT Image, FLUX and Nano Banana</li></ul>
       <div class="visit"><a class="btn" href="https://firefly.adobe.com" target="_blank" rel="noopener">Visit Adobe Firefly <span aria-hidden="true">↗</span></a></div>
       
-      <p class="bench-note"><b>Side by side.</b> <a href="/compare/ai-horde-vs-adobe-firefly/">AI Horde vs Adobe Firefly</a></p><section class="related"><h2>Compare with tools in AI image tools</h2><ul><li><a href="/tools/comfyui/"><span class="logo sm"><img src="/assets/tools/comfyui/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>ComfyUI</b><span>A node-based tool for building image, video and 3D generation workflows that run on your own machine.</span></span></a></li><li><a href="/tools/ai-horde/"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">A</span><span class="rt"><b>AI Horde</b><span>Free image generation in your browser, powered by volunteers who lend their spare graphics cards.</span></span></a></li><li><a href="/tools/fooocus/"><span class="logo sm" style="background:#0b7285;color:#fff" aria-hidden="true">F</span><span class="rt"><b>Fooocus</b><span>Image generation on your own computer that works from a prompt, with very few settings to learn.</span></span></a></li><li><a href="/tools/invokeai/"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">I</span><span class="rt"><b>InvokeAI</b><span>A friendly image studio with a canvas, a gallery and node workflows, running on your own computer.</span></span></a></li><li><a href="/tools/draw-things/"><span class="logo sm" style="background:#3b5bdb;color:#fff" aria-hidden="true">D</span><span class="rt"><b>Draw Things</b><span>Image generation that runs entirely on your iPhone, iPad or Mac, with no connection needed.</span></span></a></li><li><a href="/tools/artcraft/"><span class="logo sm"><img src="/assets/tools/artcraft/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>ArtCraft</b><span>An open-source studio for composing AI images and video, with 2D and 3D controls.</span></span></a></li></ul></section>
+      <p class="bench-note"><b>Side by side.</b> <a href="/compare/ai-horde-vs-adobe-firefly/">AI Horde vs Adobe Firefly</a></p><section class="related"><h2>Compare with tools in AI image tools</h2><ul><li><a href="/tools/comfyui/"><span class="logo sm"><img src="/assets/tools/comfyui/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>ComfyUI</b><span>A node-based tool for building image, video and 3D generation workflows that run on your own machine.</span></span></a></li><li><a href="/tools/ai-horde/"><span class="logo sm"><img src="/assets/tools/ai-horde/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>AI Horde</b><span>Free image generation in your browser, powered by volunteers who lend their spare graphics cards.</span></span></a></li><li><a href="/tools/fooocus/"><span class="logo sm"><img src="/assets/tools/fooocus/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Fooocus</b><span>Image generation on your own computer that works from a prompt, with very few settings to learn.</span></span></a></li><li><a href="/tools/invokeai/"><span class="logo sm"><img src="/assets/tools/invokeai/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>InvokeAI</b><span>A friendly image studio with a canvas, a gallery and node workflows, running on your own computer.</span></span></a></li><li><a href="/tools/draw-things/"><span class="logo sm"><img src="/assets/tools/draw-things/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>Draw Things</b><span>Image generation that runs entirely on your iPhone, iPad or Mac, with no connection needed.</span></span></a></li><li><a href="/tools/artcraft/"><span class="logo sm"><img src="/assets/tools/artcraft/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="rt"><b>ArtCraft</b><span>An open-source studio for composing AI images and video, with 2D and 3D controls.</span></span></a></li></ul></section>
     </article>
     <aside class="info" aria-label="Tool information">
       <div class="info-bar"><span>Adobe Firefly Info</span><i aria-hidden="true"></i></div>
@@ -1619,7 +1619,7 @@ function home() {
       <p class="label">A directory of convivial software</p>
       <h1>${heroTitle()}</h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
-      <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-cta"><a class="btn primary" href="#ranking">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
         const list = toolsIn(c.id);
@@ -2386,7 +2386,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2479,7 +2479,7 @@ function render() {
   else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
-  else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "directory") { html = directory({ sort: new URLSearchParams(location.search).get("order") === "score" ? "score" : "az" }); nav = "directory"; }
   else if (h === "what") { html = what(); nav = "what"; }
   else if (h === "method") { html = method(); nav = "method"; }
   else if (h === "about") html = about();
@@ -2547,7 +2547,7 @@ document.addEventListener("click", e => {
   const a = e.target.closest("a[href^='/']");
   if (!a || a.target === "_blank" || a.hasAttribute("download") || /\.[a-z0-9]+$/i.test(a.pathname) || a.origin !== location.origin) return;
   e.preventDefault();
-  if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
+  if (a.pathname + a.search !== location.pathname + location.search) history.pushState({}, "", a.pathname + a.search);
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });

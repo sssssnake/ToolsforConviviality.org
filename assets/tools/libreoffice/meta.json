@@ -2,7 +2,7 @@
   "slug": "libreoffice",
   "name": "LibreOffice",
   "source": "https://www.libreoffice.org",
-  "capturedAt": "2026-10-23T21:43:57.489Z",
+  "capturedAt": "2026-10-30T07:29:50.666Z",
   "alt": "Screenshot of the LibreOffice website",
   "pageTitle": "Free and private office suite, no forced AI — LibreOffice",
   "pageDescription": "LibreOffice is a free office suite",
@@ -15,8 +15,19 @@
     "390": "assets/tools/libreoffice/mobile-390.webp",
     "780": "assets/tools/libreoffice/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/libreoffice/icon-128.webp",
+    "256": "assets/tools/libreoffice/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

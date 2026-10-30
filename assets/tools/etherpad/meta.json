@@ -2,7 +2,7 @@
   "slug": "etherpad",
   "name": "Etherpad",
   "source": "https://etherpad.org",
-  "capturedAt": "2026-10-23T21:44:41.911Z",
+  "capturedAt": "2026-10-30T07:30:00.090Z",
   "alt": "Screenshot of the Etherpad website",
   "pageTitle": "Etherpad",
   "pageDescription": null,
@@ -15,9 +15,20 @@
     "390": "assets/tools/etherpad/mobile-390.webp",
     "780": "assets/tools/etherpad/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/etherpad/icon-128.webp",
+    "256": "assets/tools/etherpad/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#58c898",
+  "colorFrom": "icon",
   "notes": [
     "dismissed banner with button:has-text(\"Decline\")",
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

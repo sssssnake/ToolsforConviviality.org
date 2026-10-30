@@ -2,7 +2,7 @@
   "slug": "zotero",
   "name": "Zotero",
   "source": "https://www.zotero.org",
-  "capturedAt": "2026-10-23T10:31:01.837Z",
+  "capturedAt": "2026-10-30T07:24:08.103Z",
   "alt": "Screenshot of the Zotero website",
   "pageTitle": "Zotero | Your personal research assistant",
   "pageDescription": "Zotero is a free, easy-to-use tool to help you collect, organize, cite, and share research.",
@@ -15,8 +15,19 @@
     "390": "assets/tools/zotero/mobile-390.webp",
     "780": "assets/tools/zotero/mobile-780.webp"
   },
-  "color": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/zotero/icon-128.webp",
+    "256": "assets/tools/zotero/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

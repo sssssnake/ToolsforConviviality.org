@@ -2,7 +2,7 @@
   "slug": "jan",
   "name": "Jan",
   "source": "https://jan.ai",
-  "capturedAt": "2026-10-23T15:22:58.106Z",
+  "capturedAt": "2026-10-30T07:26:05.861Z",
   "alt": "Screenshot of the Jan website",
   "pageTitle": "Jan - Open-Source ChatGPT Replacement",
   "pageDescription": "Jan is an open-source alternative to ChatGPT. Run open-source AI models locally or connect to cloud models like GPT, Claude and others.",
@@ -15,6 +15,15 @@
     "390": "assets/tools/jan/mobile-390.webp",
     "780": "assets/tools/jan/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/jan/icon-128.webp",
+    "256": "assets/tools/jan/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/jan/social-600.webp",
     "1200": "assets/tools/jan/social-1200.webp",
@@ -23,6 +32,7 @@
   "color": "#fff",
   "colorFrom": "theme-color",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }

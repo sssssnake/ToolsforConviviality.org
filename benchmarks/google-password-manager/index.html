@@ -482,7 +482,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 
 <footer>
   <div class="wrap">
-    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/agents/">AI agents</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/search/">Search</a><a href="/category/news/">News &amp; feeds</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/photos/">Photos</a><a href="/category/effects/">Photo &amp; video effects</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/talk/">Chat</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/browsers/">Browsers</a><a href="/category/apps/">App stores</a><a href="/category/video/">Video</a><a href="/category/music/">Music</a><a href="/category/home/">Home &amp; network</a><a href="/category/office/">Office</a><a href="/category/collect/">Collecting &amp; research</a></nav>
+    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/agents/">AI agents</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/search/">Search</a><a href="/category/news/">News &amp; feeds</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/photos/">Photos</a><a href="/category/effects/">Photo &amp; video effects</a><a href="/category/ai-images/">AI image tools</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/talk/">Chat</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/browsers/">Browsers</a><a href="/category/apps/">App stores</a><a href="/category/video/">Video</a><a href="/category/music/">Music</a><a href="/category/home/">Home &amp; network</a><a href="/category/office/">Office</a><a href="/category/collect/">Collecting &amp; research</a></nav>
     <div class="foot-links">
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
@@ -532,6 +532,7 @@ const CATS = [
   { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
   { id: "photos", name: "Photos", verb: "Keep my photos private", instead: "Google Photos and iCloud Photos" },
   { id: "effects", name: "Photo & video effects", verb: "Edit and play with pictures and video", instead: "Instagram filters, Snapchat lenses, Teams backgrounds" },
+  { id: "ai-images", name: "AI image tools", verb: "Make images with AI on my terms", instead: "Midjourney, DALL-E and Adobe Firefly" },
   { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
   { id: "talk", name: "Chat", verb: "Chat with people", instead: "WhatsApp, Slack and Teams" },
   { id: "social", name: "Social feeds", verb: "Share and follow without being hooked", instead: "Instagram, TikTok and Facebook" },
@@ -732,13 +733,13 @@ const TOOLS = [
     tags: ["Open source", "Free", "No account", "Works offline"], s: [3,4,3,5,5,4],
     body: ["Kdenlive is free and open-source video editing software under the GNU GPL, developed by the KDE community, a nonprofit, with Jason Wood having started it in 2002. It has been funded through community drives and, in 2025, an NLnet grant for a new dopesheet feature.",
       "It handles serious editing work with multiple tracks and no watermark or subscription, and exports to standard video formats. Video is heavy on hardware, and the interface is busier than Premiere's. It is a good fit for people who want to own their editing tools."] },
-  { slug: "comfyui", name: "ComfyUI", cat: "design", size: "M", scope: "system", url: "https://www.comfy.org",
+  { slug: "comfyui", name: "ComfyUI", cat: "ai-images", size: "M", scope: "system", url: "https://www.comfy.org",
     one: "A node-based tool for building image, video and 3D generation workflows that run on your own machine.", replaces: "Hosted AI image tools and Adobe Firefly",
     price: "Free to run locally; paid cloud and API nodes", source: "Open source (GPL)", platforms: "Windows, Mac, Linux",
     tags: ["Open source", "Free", "Works offline", "Self-hosted"], s: [3,5,4,4,5,3],
     body: ["ComfyUI is a GPL-3.0 project from Comfy Org that lets you build image, video, audio and 3D generation workflows as a visual graph of nodes. Its core runs fully offline and downloads nothing unless you ask, and optional paid partner API nodes can be switched off. Comfy also sells a paid cloud version for people without suitable hardware.",
       "It is the opposite of a locked AI studio: you choose the models, see every step and keep the workflow as a file. It needs a capable computer, setup takes effort, and each model you load comes with its own licence and its own questions about training data, which the score does not cover."] },
-  { slug: "artcraft", name: "ArtCraft", cat: "design", size: "S", scope: "tool", url: "https://getartcraft.com",
+  { slug: "artcraft", name: "ArtCraft", cat: "ai-images", size: "S", scope: "tool", url: "https://getartcraft.com",
     one: "An open-source studio for composing AI images and video, with 2D and 3D controls.", replaces: "Adobe Firefly and hosted AI studios",
     price: "Free to start; no subscription required", source: "Open source (MIT or Apache-2.0)", platforms: "Windows, Mac, web",
     tags: ["Open source", "Free", "No subscription"], s: [2,4,4,4,3,3],
@@ -1229,7 +1230,31 @@ const TOOLS = [
     price: "Free", source: "Open source", platforms: "Web, server",
     tags: ["Open source", "Self-hostable"], s: [3, 5, 5, 5, 4, 3],
     body: ["Ampache has served personal music libraries from a web page for more than ten years, and it is licensed AGPL-3.0. Third-party apps connect through a Jellyfin-compatible interface, and the music stays on your server.",
-      "You need a web server, PHP and a database, as well as your own files, so Delivery is a 3."] }
+      "You need a web server, PHP and a database, as well as your own files, so Delivery is a 3."] },
+  { slug: "ai-horde", name: "AI Horde", cat: "ai-images", size: "S", scope: "system", url: "https://aihorde.net",
+    one: "Free image generation in your browser, powered by volunteers who lend their spare graphics cards.", replaces: "Midjourney, DALL-E, Adobe Firefly",
+    price: "Free", source: "Open source (AGPL-3.0)", platforms: "Web",
+    tags: ["Open source", "Free", "No account", "Volunteer-run"], s: [4,4,4,5,3,3],
+    body: ["AI Horde is a crowdsourced cluster for image and text generation. Volunteers run worker programs on their own computers, and anyone can send them a prompt from a web page with nothing to install. You can use it with the shared anonymous key and no sign-up at all, though anonymous requests wait at the back of the queue, or you can make a free account for better priority.",
+      "The money question is unusually clean. The code is AGPL-3.0, a volunteer-run non-profit called Haidra operates the service, and it lives on donations and a grant from NLnet. Fairness is handled with kudos, a points system that the project says can never be bought or sold, so you earn priority by lending your own graphics card. The trade-off is delivery: you wait in line, you get the models the volunteers choose to host, and capacity depends on how many people turn up."] },
+  { slug: "fooocus", name: "Fooocus", cat: "ai-images", size: "S", scope: "tool", url: "https://github.com/lllyasviel/Fooocus",
+    one: "Image generation on your own computer that works from a prompt, with very few settings to learn.", replaces: "Midjourney, DALL-E",
+    price: "Free", source: "Open source (GPL-3.0)", platforms: "Windows, Linux, Mac (Apple silicon)",
+    tags: ["Open source", "Free", "No account", "Works offline", "Needs a GPU"], s: [3,5,5,4,2,4],
+    body: ["Fooocus is built on Stable Diffusion XL and aims to feel like Midjourney without the subscription: you type what you want and it handles the dials for you. It runs on your own machine, and after the first launch downloads its default models you can generate with no connection. The stated minimum is 4 GB of Nvidia graphics memory and 8 GB of system memory, which is far lighter than most of this category.",
+      "It is free, open under GPL-3.0, and does not ask for an account. The catch is its future. The project says it is in limited long-term support, with bug fixes only and no plans to adopt newer model designs, so it is a finished tool, not a growing one. If you share it over a network with the listen or share options, the interface has no password by default, so leave those switched off."] },
+  { slug: "invokeai", name: "InvokeAI", cat: "ai-images", size: "M", scope: "system", url: "https://invoke.ai",
+    one: "A friendly image studio with a canvas, a gallery and node workflows, running on your own computer.", replaces: "Midjourney, Adobe Firefly",
+    price: "Free", source: "Open source (Apache-2.0)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Free", "Works offline", "Needs a GPU"], s: [2,4,4,4,3,4],
+    body: ["InvokeAI is aimed at people who want to work on an image, not wire up a pipeline. It has a unified canvas for inpainting and outpainting, a gallery, and node workflows when you need them, all served from a local web page on your own machine. The code is Apache-2.0, so you can use and build on it for any purpose.",
+      "Its footing has changed. A seed round in 2023 backed a company around it, and by mid-2026 a release note described the corporate backer as having exited, with a large release built by more than thirty unpaid volunteers. The software still works and the licence protects you, but nobody can say how quickly it will keep up with new models. A few supported models, such as GPT Image, are API only and need a network connection, so check which one you are using."] },
+  { slug: "draw-things", name: "Draw Things", cat: "ai-images", size: "S", scope: "tool", url: "https://drawthings.ai",
+    one: "Image generation that runs entirely on your iPhone, iPad or Mac, with no connection needed.", replaces: "Midjourney, DALL-E",
+    price: "Free; optional in-app purchases", source: "Partly open (engine GPL-3.0, app closed)", platforms: "iPhone, iPad, Mac, Vision Pro",
+    tags: ["Free", "No account", "Works offline", "Apple only"], s: [4,3,4,3,3,4],
+    body: ["Draw Things is the one tool here that treats your phone as the studio. The App Store listing says it can run 100 percent offline, with prompts and images staying on the device, and it handles text to image, inpainting, outpainting, ControlNet and on-device LoRA training. You can import community-made models and LoRAs, so you are not tied to a single model.",
+      "It is only partly open. The model code and samplers are public under GPL-3.0, but the app itself is built from a private repository, and it runs on Apple hardware only. The app is free, with optional purchases for a paid tier and for cloud compute boosts, and the listing says it collects purchase history, user content and an identifier for app functionality. Nothing about your images has to leave the device, which is the part that counts."] },
 ];
 
 const BENCH = [
@@ -1367,7 +1392,19 @@ const BENCH = [
     one: "The biggest video site, paid for by advertising and subscriptions.", replaces: "The tool the video apps are measured against",
     price: "Free with ads, or paid", source: "Closed source", platforms: "Web, iOS, Android, TV",
     tags: ["Benchmark", "Closed source", "Ad-funded"], s: [2,3,2,1,3,5],
-    body: ["YouTube has nearly everything, works on nearly every device and is easy to use, which is why Delivery is a 5. Advertising pays for it, and its recommendations and autoplay choose much of what plays next, which is the kind of design our Self-direction question looks at.","Your subscriptions, history and playlists live in a Google account, though Google offers a way to export them, and we have not checked how complete it is, so Lock-in is our estimate. Creators depend on one company's rules and payments, which is why Power is a 1. As of October 2026 this is our opinion, based on public sources, and if you spot an error, write to hello@toolsforconviviality.com and we will check it and correct it. Compare it with the tools in Video."] }
+    body: ["YouTube has nearly everything, works on nearly every device and is easy to use, which is why Delivery is a 5. Advertising pays for it, and its recommendations and autoplay choose much of what plays next, which is the kind of design our Self-direction question looks at.","Your subscriptions, history and playlists live in a Google account, though Google offers a way to export them, and we have not checked how complete it is, so Lock-in is our estimate. Creators depend on one company's rules and payments, which is why Power is a 1. As of October 2026 this is our opinion, based on public sources, and if you spot an error, write to hello@toolsforconviviality.com and we will check it and correct it. Compare it with the tools in Video."] },
+  { slug: "adobe-firefly", name: "Adobe Firefly", cat: "ai-images", size: "XL", scope: "system", url: "https://firefly.adobe.com",
+    one: "Adobe's image generator, built to be safe for commercial use and built into Creative Cloud.", replaces: "The tool the AI image makers are measured against",
+    price: "Free daily generations; paid plans", source: "Closed source", platforms: "Web, Creative Cloud apps",
+    tags: ["Benchmark", "Closed source", "Hosted"], s: [2,2,3,2,2,4],
+    body: ["Firefly makes good pictures and slots into the apps many designers already use, which earns it a 4 on Delivery. Adobe says its own Firefly image models are trained on licensed content, including Adobe Stock, openly licensed material and public domain work, and that the results can be used commercially. That is a clearer answer on training data than most of the category gives, and it is the main thing it has going for it.",
+      "It is also a hosted service behind an Adobe ID, so it only works with a connection and an account. Adobe's page says you can start for free with daily generations and that paid subscriptions add more, and the same page lists partner models inside Firefly, such as GPT Image, FLUX and Google's Nano Banana, which are not Adobe's and carry their own questions. Every generated image carries a small label saying it was made with Firefly. It is an example of what the open tools are measured against, not a recommendation."] },
+  { slug: "midjourney", name: "Midjourney", cat: "ai-images", size: "L", scope: "system", url: "https://www.midjourney.com",
+    one: "The image generator many people picture first, sold by subscription and run entirely on its servers.", replaces: "The tool the AI image makers are measured against",
+    price: "Paid plans from $10 a month; no free trial", source: "Closed source", platforms: "Web, Discord",
+    tags: ["Benchmark","Closed source","Hosted","Subscription"], s: [2,2,3,1,2,4],
+    body: ["Midjourney makes some of the most admired pictures in the category, which earns it a 4 on Delivery. It is also a service you rent. Its own help pages would not load for this review, so the details here come from a third-party pricing guide dated October 2026 and are worth checking: generating requires a paid plan, from about $10 a month, there is no free trial on the website or in Discord, and the private Stealth mode is reserved for the Pro and Mega plans, which means images made on cheaper plans are public.",
+      "The same guide says Midjourney's terms, effective May 2026, give the company a perpetual licence to reproduce and distribute your prompts and the images you make, and that you can keep using what you create after you cancel. The company is also being sued: Disney and Universal filed a copyright case against it in June 2025, and we have not checked how it stands now. It is an example of what the open tools are measured against, not a recommendation."] },
 ].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
@@ -1508,7 +1545,13 @@ const HL = {
 "peertube": ["Video hosting on servers run by many different owners", "Built by Framasoft, a French non-profit funded over 90% by donations", "Says it depends on no advertising and does not track you"],
 "instagram": ["Paid for by advertising, projected at about half of Meta's US ad revenue by eMarketer", "Infinite scroll, autoplay, notifications and recommendations shape the feed", "The legal cases are allegations and are not part of the score"],
 "tiktok": ["An algorithm picks the videos for your For You feed, and advertising pays for it", "US operations moved to an Oracle-led joint venture in January 2026", "The legal cases are allegations and are not part of the score"],
-"gmail": ["Excellent mail that filters spam well and works everywhere", "15 GB free, shared with Drive and Photos", "Supports IMAP and export, so you can leave in principle"]
+"gmail": ["Excellent mail that filters spam well and works everywhere", "15 GB free, shared with Drive and Photos", "Supports IMAP and export, so you can leave in principle"],
+"ai-horde": ["Image generation in a browser, powered by volunteers lending spare graphics cards", "Run by a non-profit on donations and an NLnet grant, with AGPL-3.0 code", "Priority comes from kudos you earn, and the project says they can never be bought or sold"],
+"fooocus": ["Describe what you want and it picks the settings for you", "Runs on a graphics card with as little as 4 GB of memory", "In limited support, with bug fixes only and no newer model designs planned"],
+"invokeai": ["A canvas, a gallery and node workflows in a local web app", "Apache-2.0 code, so you can use and build on it freely", "Its corporate backer has exited and recent releases come from volunteers"],
+"draw-things": ["Runs fully offline on iPhone, iPad and Mac, with on-device LoRA training", "Imports community models, so you are not locked to one", "Engine code is GPL-3.0, but the app itself is built from a private repository"],
+"adobe-firefly": ["Says its own models are trained on licensed content, including Adobe Stock", "Needs an Adobe ID and a connection, with free daily use and paid plans", "Also offers partner models such as GPT Image, FLUX and Nano Banana"],
+"midjourney": ["Generating needs a paid plan, with no free trial on the website or in Discord", "Private Stealth mode only on the Pro and Mega plans, so cheaper plans are public", "Sued by Disney and Universal over copyright in June 2025"],
 };
 [...TOOLS, ...BENCH].forEach(t => { t.points = HL[t.slug] || []; });
 
@@ -1576,7 +1619,7 @@ function home() {
       <p class="label">A directory of convivial software</p>
       <h1>${heroTitle()}</h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
-      <div class="hero-cta"><a class="btn primary" href="#directory">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-cta"><a class="btn primary" href="#ranking">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
       <h2 class="start">Or start with what you want to do</h2>
       <div class="purposes">${CATS.map(c => {
         const list = toolsIn(c.id);
@@ -1621,6 +1664,13 @@ function home() {
 }
 
 const CATCOPY = {
+  "ai-images": { h1: "Alternatives to Midjourney, DALL-E and Adobe Firefly", lede: "Make images with AI on a computer you own, or on a network of volunteers, instead of renting it by the month.",
+    intro: ["The best known image generators are subscriptions to a service you cannot inspect. The open ones trade a bit of polish and some setup for a model you run yourself. {fooocus} is the easiest to start with, {comfyui} is the most flexible, {invokeai} has the friendliest canvas, and {draw-things} puts the whole thing on an iPhone or Mac, and {artcraft} composes images and video with 2D and 3D controls. {ai-horde} needs no install at all, because volunteers lend their spare graphics cards.",
+      "Most of these need a recent graphics card, which is the real cost, and the open models were mostly trained on images collected from the web, which artists have objected to. Our scores measure how the tool treats you, and they do not yet weigh how a model was trained, so read that part of each review for yourself."],
+    choose: "Start with the hardware you have. A recent Nvidia card or an Apple silicon Mac runs the local tools well, and with neither, a browser tool like {ai-horde} is the easy way in. Then ask how much you want to learn: {fooocus} is quick but no longer growing, {invokeai} is gentler, and {comfyui} rewards the time you put in. Check what happens if the company changes course, because the licence on the code is what lets you keep going.",
+    faq: [["Can I generate AI images for free without a subscription?", "Yes. {fooocus}, {comfyui} and {invokeai} are free and run on your own computer, and {ai-horde} generates images in your browser for free, with a wait in the queue."],
+      ["Do I need a powerful computer?", "For the local tools, you want a recent graphics card, though {fooocus} lists a 4 GB minimum. On Apple devices {draw-things} runs on the phone or Mac itself. If you have none of those, {ai-horde} runs on other people's machines."],
+      ["Is AI image generation ethical?", "That depends on the model more than the tool. Most open models were trained on images scraped from the web, and many artists object. Adobe says its own Firefly models are trained on licensed content, but it needs an account and a subscription for the full experience."]] },
   maps: { h1: "Alternatives to Google Maps", lede: "Offline, private maps and navigation that don't follow you around.",
     intro: ["Google Maps is an excellent map run by an advertising company, and those two facts are connected. Maps that run on your phone from downloaded regions, built on OpenStreetMap data that volunteers edit and anyone may use, cut the connection. {comaps} gets you from A to B with no account and no trail, {osmand} packs offline navigation and a setting for nearly everything into one app, and {openstreetmap} is the map itself, which you can browse, download and edit.",
       "The field is young, so we only list what we have looked at closely, and more reviews will follow. {organic-maps} is a polished offline map and {transportr} plans public transport trips."],
@@ -1881,6 +1931,8 @@ const PAIRS = [
   { g: "google-play", t: "f-droid", cost: "F-Droid lists only open-source apps, so most banking, ride-hailing and streaming apps are not there. Updates come from the F-Droid app instead of Play.", move: "Install F-Droid alongside Play and move apps over one by one as you find open replacements." },
   { g: "spotify", t: "navidrome", cost: "Navidrome streams music you already own from your own server. There is no catalogue to browse and you have to run the server, so it suits people with a library, not people who rent one.", move: "Point Navidrome at your music folder and use any Subsonic-compatible app on your phone." },
   { g: "amazon-alexa", t: "home-assistant", cost: "Home Assistant runs in your house, so lights and sensors keep working without a cloud, but setup takes an afternoon and voice control is less polished than Alexa's.", move: "Start with the devices you already own that speak local protocols, and add voice later once the basics work." },
+  { g: "adobe-firefly", t: "ai-horde", cost: "AI Horde runs on volunteers' graphics cards, so you wait in a queue and get the models they choose to host, with none of Firefly's polish or its link into Photoshop and Illustrator. Adobe says its own Firefly models use licensed training data, while the open models mostly do not make that claim.", move: "Open the Generate page with no account to try it, make a free account for better priority, and move to Fooocus or ComfyUI on your own graphics card when you want speed." },
+  { g: "midjourney", t: "ai-horde", cost: "AI Horde is slower and plainer. You wait in a volunteer queue, choose from the models people host, and will not match Midjourney's most polished styles. In return it is free, needs no account, and there is no subscription to cancel.", move: "Try the Generate page with no sign-up, then move to Fooocus or ComfyUI on your own graphics card if you want speed and privacy." },
   { g: "microsoft-365", t: "libreoffice", cost: "LibreOffice opens and saves Word, Excel and PowerPoint files, though complicated layouts can shift. It has no built-in shared editing like 365, so teams that write together in real time need something else, such as ONLYOFFICE.", move: "Open your most complicated documents first to see how they hold up, then switch the rest." }
 ];
 const pairSlug = p => `${p.t}-vs-${p.g}`;
@@ -2176,7 +2228,7 @@ function about() {
     <h2>Who makes this</h2>
     <p>I'm Jeff Humble, a tech and UX guy based in Berlin. I started this site as a way to show off the tools I like: small, honest ones that do their job and leave you free to go. For years I couldn't say what they had in common, until I read Ivan Illich's book and found the word for it.</p>
     <p>It matters more now that AI can help almost anyone build software. There will be far more tools, and we need a new standard for judging which ones deserve our time. I wanted to reward the tools that protect the people using them, so that makers have a reason to build that way.</p>
-    <p>If you find the directory useful and want to help keep it running, you can <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">buy us a coffee</a> with a one-off payment through Stripe. It is entirely optional, it buys no influence over scores, and the site stays free and ad-free either way.</p>
+    <p>If you find the directory useful and want to help keep it running, you can <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">buy us a coffee</a> with a one-off tip through Stripe. The tip is entirely optional, it buys no influence over scores, and the site stays free and ad-free either way.</p>
     <h2>About the book</h2>
     <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. We paraphrase its ideas and quote it rarely and briefly, with a source.</p>
     <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
@@ -2237,12 +2289,16 @@ function impressum() {
 
 function privacy() {
   return `<p class="crumbs"><a href="#home">Home</a> / Privacy policy</p>
-  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say. Last updated 30 October 2026.</p></div>
   <div class="prose">
     <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
     <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
-    <p>The "Support this site" link is an ordinary link to a payment page hosted by Stripe. Nothing from Stripe loads on this page, and it only becomes involved if you click through, at which point <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe's privacy policy</a> applies.</p>
-    <p>The suggestion form doesn't send anything by itself.</p> It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
+    <h2>If you buy us a coffee</h2>
+    <p>The "Buy us a coffee" link takes you to a payment page hosted by Stripe, and Stripe's <a href="https://stripe.com/privacy" target="_blank" rel="noopener">privacy policy</a> applies there, including any cookies it sets. Nothing from Stripe loads on this site before you click. Stripe processes your card or wallet details, which we never see, and it may do so in the United States under its own safeguards.</p>
+    <p>Stripe gives us a record of each payment, which can include your name, email address, billing country, the amount and the date. We use it to keep our accounts and meet tax and bookkeeping duties, and to answer you if you write to us or ask for a refund. The legal basis is carrying out the payment (Art. 6(1)(b) GDPR) and our legal duties (Art. 6(1)(c) GDPR). We keep payment records as long as German tax and accounting law requires. We do not add you to a mailing list or send you anything because you paid.</p>
+    <p>The share card on the thank-you page is drawn in your browser and is not uploaded anywhere. If you choose to share it, the image goes to the app you pick, and that app's rules apply.</p>
+    <h2>Suggestions and contact</h2>
+    <p>The suggestion form doesn't send anything by itself. It prepares a text for you to email us, and we use what you send only to review the tool and reply to you.</p>
     <p>You have the right to access, correct or delete data we hold about you, and to complain to a data protection authority. Contact: <span class="addr">hello@toolsforconviviality.com</span>.</p>
   </div>`;
 }
@@ -2251,7 +2307,7 @@ function thanks() {
   return `<section class="nf">
     <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
     <h1>Thank you for the coffee</h1>
-    <p class="nf-lede">It goes toward the domain, the hosting and the time spent reviewing tools. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
+    <p class="nf-lede">Your tip goes toward the domain, the hosting and the time spent reviewing tools. Nothing is delivered in return, and it buys no influence over scores. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
     <canvas id="coffee-card" class="coffee-card" role="img" aria-label="Share card that reads: I bought Tools for Conviviality a coffee. toolsforconviviality.com"></canvas>
     <div class="nf-links" style="margin-top:22px">
       <button class="btn primary" type="button" id="share-coffee">Share that you bought us a coffee <span aria-hidden="true">↗</span></button>
@@ -2330,7 +2386,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2340,7 +2396,7 @@ function currentId() {
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
+const APPCAT = { "ai-images": "MultimediaApplication", notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {
@@ -2423,7 +2479,7 @@ function render() {
   else if (h === "agents") { html = forAgents(); nav = ""; }
   else if (h === "benchmarks") { html = benchmarks(); nav = "benchmarks"; }
   else if (h.startsWith("size-")) { html = directory({ size: h.slice(5) }); nav = "directory"; }
-  else if (h === "directory") { html = directory(); nav = "directory"; }
+  else if (h === "directory") { html = directory({ sort: new URLSearchParams(location.search).get("order") === "score" ? "score" : "az" }); nav = "directory"; }
   else if (h === "what") { html = what(); nav = "what"; }
   else if (h === "method") { html = method(); nav = "method"; }
   else if (h === "about") html = about();
@@ -2491,7 +2547,7 @@ document.addEventListener("click", e => {
   const a = e.target.closest("a[href^='/']");
   if (!a || a.target === "_blank" || a.hasAttribute("download") || /\.[a-z0-9]+$/i.test(a.pathname) || a.origin !== location.origin) return;
   e.preventDefault();
-  if (a.pathname !== location.pathname) history.pushState({}, "", a.pathname);
+  if (a.pathname + a.search !== location.pathname + location.search) history.pushState({}, "", a.pathname + a.search);
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });

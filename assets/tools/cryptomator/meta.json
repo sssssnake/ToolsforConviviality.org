@@ -2,7 +2,7 @@
   "slug": "cryptomator",
   "name": "Cryptomator",
   "source": "https://cryptomator.org",
-  "capturedAt": "2026-10-23T10:31:51.769Z",
+  "capturedAt": "2026-10-30T07:25:01.246Z",
   "alt": "Screenshot of the Cryptomator website",
   "pageTitle": "Cryptomator - Free & Open-Source Cloud Storage Encryption",
   "pageDescription": "Cryptomator is an open-source encryption tool for secure cloud storage. Protect your privacy for free on Dropbox, Google Drive, OneDrive, and more.",
@@ -15,13 +15,24 @@
     "390": "assets/tools/cryptomator/mobile-390.webp",
     "780": "assets/tools/cryptomator/mobile-780.webp"
   },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/cryptomator/icon-128.webp",
+    "256": "assets/tools/cryptomator/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
   "social": {
     "600": "assets/tools/cryptomator/social-600.webp",
     "1200": "assets/tools/cryptomator/social-1200.webp",
     "from": "https://cryptomator.org/img/og-image.png"
   },
-  "color": null,
+  "color": "#080808",
+  "colorFrom": "icon",
   "notes": [
-    "no usable icon found (an .ico favicon alone can't be converted)"
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
   ]
 }
