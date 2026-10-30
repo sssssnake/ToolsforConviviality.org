@@ -451,7 +451,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 </header>
 
 <main id="app"><div class="wrap" id="view"><p class="crumbs"><a href="/">Home</a> / <a href="/governance/">Governance</a> / How we write</p>
-  <div class="page-head" style="margin-top:14px"><h1>How we write</h1><p>A writing guide for the reviews and pages on this site, drawn from the way Ivan Illich wrote about tools. Last updated 30 October 2026.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we write</h1><p>A writing guide for the reviews and pages on this site, drawn from the way Ivan Illich wrote about tools and the way Robert Pirsig wrote about machines. Last updated 30 October 2026.</p></div>
   <div class="prose">
     <p>Much of this site is drafted with AI, and AI writing has a recognisable smell: smooth, eager, vague and a little too pleased with everything. This guide is a check against that. It borrows from Illich's habits as a writer, not from his sentences, and nobody is asked to imitate him.</p>
     <h2>Start with what the tool does to a person</h2>
@@ -468,10 +468,42 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <p>Talk about people, workshops and neighbours, not users, stakeholders and solutions. Use "you". Say what the tool asks of you, in time, money, attention and hardware.</p>
     <h2>Illich's words, sparingly</h2>
     <p>Words such as convivial, radical monopoly and counterproductivity are useful, and they are also easy to overuse. Use one only when it says something plainer words cannot, and explain it the first time it appears on a page. Quote him briefly and credit him, and prefer to paraphrase.</p>
+    <h2>Sound like someone who builds things</h2>
+    <p>The tone we want sits between a good university lecture and a good garage. It is precise about terms and honest about evidence, and it explains things the way a patient person explains them over a workbench: one step at a time, with an example in hand, and a plain admission when the answer is not known. Robert Pirsig's <i>Zen and the Art of Motorcycle Maintenance</i> is a useful reference for this register, because it makes hard ideas feel like ordinary talk about a machine that will not start.</p>
+    <p>In practice that means reaching for the concrete case before the abstract claim, using an everyday comparison when it makes something clearer, asking the question a reader would ask and then answering it, and letting a long sentence build before a short one lands. It also means being willing to say a tool is tedious, or that we do not know.</p>
+    <h2>Say only what happened</h2>
+    <p>Most of this site is written from public sources, so the reviews must never claim an experience nobody had. No "we installed it and found," no "in our testing," no "I loved," unless a person did that and can say when. Write what the documentation says, what the source shows and what we could not confirm. Warmth comes from plain speech and fair judgment, not from invented anecdotes.</p>
     <h2>An example</h2>
     <p><b>Before:</b> “Fooocus is built on Stable Diffusion XL and aims to feel like Midjourney without the subscription: you type what you want and it handles the dials for you.”</p>
     <p><b>After:</b> “Fooocus asks one thing of you, which is to say what you want. It chooses the settings, runs the model on your own graphics card and carries on working with no connection once the first download is done. Its author now fixes bugs and adds nothing new, so what you install is a finished tool, and a finished tool is a fair thing to own.”</p>
     <p>The second version is not better because it is nicer. It tells you what the tool asks of you, where the work happens and what the future holds.</p>
+    <h2>The checklist against machine prose</h2>
+    <p>Wikipedia's editors keep the most careful public list of the habits that give away machine-written text, in their guide <a href="https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing" target="_blank" rel="noopener">Signs of AI writing</a>. They stress that these are observations and not proof, that density matters more than any single word, and that automatic detectors are unreliable. We use the list the way an editor would, as a set of questions to ask of a draft before it goes up.</p>
+    <h3>Words and phrases to cut</h3>
+    <ul>
+      <li>From Wikipedia's list: align with, crucial, delve, emphasizing, enduring, enhance, fostering, garnered, highlight (used as a verb), interplay, intricate, pivotal, showcase, tapestry, underscore.</li>
+      <li>Puffery: groundbreaking, captivating, nestled, in the heart of, rich, vibrant, boasts, landscape (as in "the privacy landscape").</li>
+      <li>Grand claims about importance: stands as, serves as, is a testament to, plays a vital role, reflects broader, enduring legacy, key turning point, indelible mark.</li>
+      <li>Lecturing the reader: it is important to note, it is worth remembering, may vary.</li>
+      <li>Summaries and tidy endings: in summary, in conclusion, overall, and a "challenges" paragraph that opens "Despite its" and ends on a hopeful note.</li>
+      <li>Vague authority: experts say, observers note, some critics argue. Name the source or leave the claim out.</li>
+      <li>Chatbot talk left in the copy: certainly, I hope this helps, as of my last update, based on the available information.</li>
+    </ul>
+    <h3>Patterns to avoid</h3>
+    <ul>
+      <li>"Not only this but that," "it is not just X, it is Y," and "no X, no Y, just Z."</li>
+      <li>Groups of three adjectives or phrases added to sound thorough.</li>
+      <li>Changing the name of the same thing every sentence to avoid repeating it. Repeat the name.</li>
+      <li>"From this to that" ranges whose ends do not sit on one scale.</li>
+      <li>A trailing "-ing" phrase that adds a vague gloss, such as "highlighting its importance" or "ensuring a seamless experience."</li>
+      <li>Em dashes where a comma, colon or full stop would do. We use none.</li>
+      <li>Headings in Title Case, bold used for emphasis, and bullet lists that open with a bold label and a colon. Headings are in sentence case.</li>
+      <li>Paragraphs that restate what the paragraph before already said.</li>
+    </ul>
+    <h3>Our own additions</h3>
+    <p>These are newer habits we have noticed ourselves, and they are not from Wikipedia's list. Treat them as suspects: quietly, genuinely, honestly, here's the thing, it turns out, at its core, ultimately, the real X, unpack, leverage, navigate, journey, whether you are X or Y, a one-line paragraph for drama, a rhetorical question answered at once in every section, and a paragraph that always ends on a little saying.</p>
+    <h3>The test that matters</h3>
+    <p>A list of banned words will not make writing human, and writing can avoid every item on it and still say nothing. After the checklist, read each sentence and ask what a reader could now do or know that they could not before. If the sentence carries a fact, a source, a limit or a judgment, keep it. If it could appear unchanged in a review of any other product, rewrite it or cut it.</p>
   </div></div></main>
 
 <footer>
@@ -485,6 +517,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
+      <a href="/governance/">Governance</a>
       <a href="/legal-notice/">Legal notice (Impressum)</a>
       <a href="/privacy/">Privacy policy</a>
       <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Buy us a coffee</a>
@@ -2336,7 +2369,7 @@ function governance() {
 
 function voice() {
   return `<p class="crumbs"><a href="#home">Home</a> / <a href="#governance">Governance</a> / How we write</p>
-  <div class="page-head" style="margin-top:14px"><h1>How we write</h1><p>A writing guide for the reviews and pages on this site, drawn from the way Ivan Illich wrote about tools. Last updated 30 October 2026.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>How we write</h1><p>A writing guide for the reviews and pages on this site, drawn from the way Ivan Illich wrote about tools and the way Robert Pirsig wrote about machines. Last updated 30 October 2026.</p></div>
   <div class="prose">
     <p>Much of this site is drafted with AI, and AI writing has a recognisable smell: smooth, eager, vague and a little too pleased with everything. This guide is a check against that. It borrows from Illich's habits as a writer, not from his sentences, and nobody is asked to imitate him.</p>
     <h2>Start with what the tool does to a person</h2>
@@ -2353,10 +2386,42 @@ function voice() {
     <p>Talk about people, workshops and neighbours, not users, stakeholders and solutions. Use "you". Say what the tool asks of you, in time, money, attention and hardware.</p>
     <h2>Illich's words, sparingly</h2>
     <p>Words such as convivial, radical monopoly and counterproductivity are useful, and they are also easy to overuse. Use one only when it says something plainer words cannot, and explain it the first time it appears on a page. Quote him briefly and credit him, and prefer to paraphrase.</p>
+    <h2>Sound like someone who builds things</h2>
+    <p>The tone we want sits between a good university lecture and a good garage. It is precise about terms and honest about evidence, and it explains things the way a patient person explains them over a workbench: one step at a time, with an example in hand, and a plain admission when the answer is not known. Robert Pirsig's <i>Zen and the Art of Motorcycle Maintenance</i> is a useful reference for this register, because it makes hard ideas feel like ordinary talk about a machine that will not start.</p>
+    <p>In practice that means reaching for the concrete case before the abstract claim, using an everyday comparison when it makes something clearer, asking the question a reader would ask and then answering it, and letting a long sentence build before a short one lands. It also means being willing to say a tool is tedious, or that we do not know.</p>
+    <h2>Say only what happened</h2>
+    <p>Most of this site is written from public sources, so the reviews must never claim an experience nobody had. No "we installed it and found," no "in our testing," no "I loved," unless a person did that and can say when. Write what the documentation says, what the source shows and what we could not confirm. Warmth comes from plain speech and fair judgment, not from invented anecdotes.</p>
     <h2>An example</h2>
     <p><b>Before:</b> “Fooocus is built on Stable Diffusion XL and aims to feel like Midjourney without the subscription: you type what you want and it handles the dials for you.”</p>
     <p><b>After:</b> “Fooocus asks one thing of you, which is to say what you want. It chooses the settings, runs the model on your own graphics card and carries on working with no connection once the first download is done. Its author now fixes bugs and adds nothing new, so what you install is a finished tool, and a finished tool is a fair thing to own.”</p>
     <p>The second version is not better because it is nicer. It tells you what the tool asks of you, where the work happens and what the future holds.</p>
+    <h2>The checklist against machine prose</h2>
+    <p>Wikipedia's editors keep the most careful public list of the habits that give away machine-written text, in their guide <a href="https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing" target="_blank" rel="noopener">Signs of AI writing</a>. They stress that these are observations and not proof, that density matters more than any single word, and that automatic detectors are unreliable. We use the list the way an editor would, as a set of questions to ask of a draft before it goes up.</p>
+    <h3>Words and phrases to cut</h3>
+    <ul>
+      <li>From Wikipedia's list: align with, crucial, delve, emphasizing, enduring, enhance, fostering, garnered, highlight (used as a verb), interplay, intricate, pivotal, showcase, tapestry, underscore.</li>
+      <li>Puffery: groundbreaking, captivating, nestled, in the heart of, rich, vibrant, boasts, landscape (as in "the privacy landscape").</li>
+      <li>Grand claims about importance: stands as, serves as, is a testament to, plays a vital role, reflects broader, enduring legacy, key turning point, indelible mark.</li>
+      <li>Lecturing the reader: it is important to note, it is worth remembering, may vary.</li>
+      <li>Summaries and tidy endings: in summary, in conclusion, overall, and a "challenges" paragraph that opens "Despite its" and ends on a hopeful note.</li>
+      <li>Vague authority: experts say, observers note, some critics argue. Name the source or leave the claim out.</li>
+      <li>Chatbot talk left in the copy: certainly, I hope this helps, as of my last update, based on the available information.</li>
+    </ul>
+    <h3>Patterns to avoid</h3>
+    <ul>
+      <li>"Not only this but that," "it is not just X, it is Y," and "no X, no Y, just Z."</li>
+      <li>Groups of three adjectives or phrases added to sound thorough.</li>
+      <li>Changing the name of the same thing every sentence to avoid repeating it. Repeat the name.</li>
+      <li>"From this to that" ranges whose ends do not sit on one scale.</li>
+      <li>A trailing "-ing" phrase that adds a vague gloss, such as "highlighting its importance" or "ensuring a seamless experience."</li>
+      <li>Em dashes where a comma, colon or full stop would do. We use none.</li>
+      <li>Headings in Title Case, bold used for emphasis, and bullet lists that open with a bold label and a colon. Headings are in sentence case.</li>
+      <li>Paragraphs that restate what the paragraph before already said.</li>
+    </ul>
+    <h3>Our own additions</h3>
+    <p>These are newer habits we have noticed ourselves, and they are not from Wikipedia's list. Treat them as suspects: quietly, genuinely, honestly, here's the thing, it turns out, at its core, ultimately, the real X, unpack, leverage, navigate, journey, whether you are X or Y, a one-line paragraph for drama, a rhetorical question answered at once in every section, and a paragraph that always ends on a little saying.</p>
+    <h3>The test that matters</h3>
+    <p>A list of banned words will not make writing human, and writing can avoid every item on it and still say nothing. After the checklist, read each sentence and ask what a reader could now do or know that they could not before. If the sentence carries a fact, a source, a limit or a judgment, keep it. If it could appear unchanged in a review of any other product, rewrite it or cut it.</p>
   </div>`;
 }
 
