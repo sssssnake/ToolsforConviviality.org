@@ -858,5 +858,45 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "ai-horde",
+    "name": "AI Horde",
+    "url": "https://aihorde.net",
+    "repo": "Haidra-Org/AI-Horde"
+  },
+  {
+    "slug": "fooocus",
+    "name": "Fooocus",
+    "url": "https://github.com/lllyasviel/Fooocus",
+    "repo": "lllyasviel/Fooocus"
+  },
+  {
+    "slug": "invokeai",
+    "name": "InvokeAI",
+    "url": "https://invoke.ai",
+    "repo": "invoke-ai/InvokeAI"
+  },
+  {
+    "slug": "draw-things",
+    "name": "Draw Things",
+    "url": "https://drawthings.ai",
+    "repo": "drawthingsai/draw-things-community"
+  },
+  {
+    "slug": "adobe-firefly",
+    "name": "Adobe Firefly",
+    "url": "https://firefly.adobe.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "midjourney",
+    "name": "Midjourney",
+    "url": "https://www.midjourney.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]

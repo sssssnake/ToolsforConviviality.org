@@ -226,6 +226,23 @@ async function captureTool(browser, tool, previous) {
       } catch (e) { notes.push(`icon failed: ${e.message}`); }
     } else notes.push("no usable icon found (an .ico favicon alone can't be converted)");
 
+    // Last resort: the favicon service Chrome uses. It only answers when the site really has an icon, so there is
+    // no placeholder globe. Skipped when the page already gave us one, or when the maker's override is in use.
+    if (!entry.icon && !tool.brand?.icon) {
+      entry.iconFallback = true;
+      try {
+        const host = new URL(tool.url).origin;
+        const { buf } = await download(`https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(host)}&size=256`, 2e6);
+        const info = await sharp(buf).metadata();
+        if ((info.width || 0) >= 32) {
+          iconBuf = await sharp(buf).resize(Math.max(info.width, 256), Math.max(info.width, 256), { fit: "contain", background: { r: 255, g: 255, b: 255, alpha: 0 } }).png().toBuffer();
+          entry.icon = { from: "favicon service", sourceWidth: info.width, scalable: false, lowRes: info.width < 128 };
+          Object.assign(entry.icon, await saveVariants(iconBuf, dir, "icon", ICON_WIDTHS, { quality: 90 }));
+          notes.push("icon taken from the favicon service");
+        }
+      } catch (e) { notes.push(`favicon fallback failed: ${e.message}`); }
+    }
+
     // Social image
     const ogUrl = tool.brand?.ogImage || meta.og;
     if (ogUrl) {
@@ -273,7 +290,8 @@ async function main() {
         continue;
       }
       const cfgKey = JSON.stringify([tool.url, tool.capture || null, tool.brand || null]);
-      const fresh = prev && prev.cfg === cfgKey && Date.now() - Date.parse(prev.capturedAt) < MAX_AGE_DAYS * 864e5;
+      const needsIcon = prev && !prev.icon && !prev.iconFallback;   // captured before the favicon fallback existed
+      const fresh = prev && prev.cfg === cfgKey && !needsIcon && Date.now() - Date.parse(prev.capturedAt) < MAX_AGE_DAYS * 864e5;
       if (fresh && !FORCE && !ONLY) { report.skipped.push({ slug: tool.slug, reason: "recent" }); log(`- ${tool.slug}: recent, skipped`); continue; }
       if (!(await allowedByRobots(tool.url))) {
         report.skipped.push({ slug: tool.slug, reason: "robots.txt disallows" });
