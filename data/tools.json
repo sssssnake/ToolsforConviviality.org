@@ -898,5 +898,160 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "handy",
+    "name": "Handy",
+    "url": "https://github.com/cjpais/handy",
+    "repo": "cjpais/Handy"
+  },
+  {
+    "slug": "buzz",
+    "name": "Buzz",
+    "url": "https://github.com/chidiwilliams/buzz",
+    "repo": "chidiwilliams/buzz"
+  },
+  {
+    "slug": "vibe",
+    "name": "Vibe",
+    "url": "https://github.com/thewh1teagle/vibe",
+    "repo": "thewh1teagle/vibe"
+  },
+  {
+    "slug": "speech-note",
+    "name": "Speech Note",
+    "url": "https://github.com/mkiol/dsnote",
+    "repo": "mkiol/dsnote"
+  },
+  {
+    "slug": "voiceink",
+    "name": "VoiceInk",
+    "url": "https://github.com/beingpax/VoiceInk",
+    "repo": "Beingpax/VoiceInk"
+  },
+  {
+    "slug": "otter",
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "firefox-translations",
+    "name": "Firefox Translations",
+    "url": "https://support.mozilla.org/en-US/kb/website-translation"
+  },
+  {
+    "slug": "libretranslate",
+    "name": "LibreTranslate",
+    "url": "https://libretranslate.com",
+    "repo": "LibreTranslate/LibreTranslate"
+  },
+  {
+    "slug": "argos-translate",
+    "name": "Argos Translate",
+    "url": "https://www.argosopentech.com",
+    "repo": "argosopentech/argos-translate"
+  },
+  {
+    "slug": "translate-locally",
+    "name": "Translate Locally",
+    "url": "https://github.com/XapaJIaMnu/translateLocally",
+    "repo": "XapaJIaMnu/translateLocally"
+  },
+  {
+    "slug": "lingva",
+    "name": "Lingva Translate",
+    "url": "https://github.com/thedaviddelta/lingva-translate",
+    "repo": "thedaviddelta/lingva-translate"
+  },
+  {
+    "slug": "google-translate",
+    "name": "Google Translate",
+    "url": "https://translate.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "radicale",
+    "name": "Radicale",
+    "url": "https://radicale.org",
+    "repo": "Kozea/Radicale"
+  },
+  {
+    "slug": "baikal",
+    "name": "Baïkal",
+    "url": "https://sabre.io/baikal/",
+    "repo": "sabre-io/Baikal"
+  },
+  {
+    "slug": "davx5",
+    "name": "DAVx5",
+    "url": "https://www.davx5.com",
+    "repo": "bitfireAT/davx5-ose"
+  },
+  {
+    "slug": "fossify-calendar",
+    "name": "Fossify Calendar",
+    "url": "https://www.fossify.org/apps/calendar/",
+    "repo": "FossifyOrg/Calendar"
+  },
+  {
+    "slug": "etar",
+    "name": "Etar",
+    "url": "https://f-droid.org/packages/ws.xsoh.etar/",
+    "repo": "Etar-Group/Etar-Calendar"
+  },
+  {
+    "slug": "proton-calendar",
+    "name": "Proton Calendar",
+    "url": "https://proton.me/calendar"
+  },
+  {
+    "slug": "google-calendar",
+    "name": "Google Calendar",
+    "url": "https://calendar.google.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "jitsi-meet",
+    "name": "Jitsi Meet",
+    "url": "https://jitsi.org",
+    "repo": "jitsi/jitsi-meet"
+  },
+  {
+    "slug": "bigbluebutton",
+    "name": "BigBlueButton",
+    "url": "https://bigbluebutton.org",
+    "repo": "bigbluebutton/bigbluebutton"
+  },
+  {
+    "slug": "element-call",
+    "name": "Element Call",
+    "url": "https://github.com/element-hq/element-call",
+    "repo": "element-hq/element-call"
+  },
+  {
+    "slug": "galene",
+    "name": "Galène",
+    "url": "https://galene.org",
+    "repo": "jech/galene"
+  },
+  {
+    "slug": "jami",
+    "name": "Jami",
+    "url": "https://jami.net"
+  },
+  {
+    "slug": "zoom",
+    "name": "Zoom",
+    "url": "https://zoom.us",
+    "capture": {
+      "shot": false
+    }
   }
 ]
