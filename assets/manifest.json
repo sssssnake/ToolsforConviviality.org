@@ -1794,12 +1794,17 @@
       "pageTitle": "Sign in - Google Accounts",
       "pageDescription": null,
       "iconFallback": true,
-      "color": null,
+      "color": "#4285F4",
       "notes": [
         "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)"
       ],
-      "cfg": "[\"https://passwords.google.com\",{\"shot\":false},null]"
+      "cfg": "[\"https://passwords.google.com\",{\"shot\":false},null]",
+      "icon": {
+        "svg": "assets/tools/google-password-manager/icon.svg",
+        "from": "Simple Icons (CC0)",
+        "scalable": true
+      }
     },
     "adobe-creative-cloud": {
       "slug": "adobe-creative-cloud",
@@ -2308,12 +2313,17 @@
         "780": "assets/tools/searxng/mobile-780.webp"
       },
       "iconFallback": true,
-      "color": null,
+      "color": "#3050FF",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)",
         "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fdocs.searxng.org&size=256"
       ],
-      "cfg": "[\"https://docs.searxng.org\",null,null]"
+      "cfg": "[\"https://docs.searxng.org\",null,null]",
+      "icon": {
+        "svg": "assets/tools/searxng/icon.svg",
+        "from": "Simple Icons (CC0)",
+        "scalable": true
+      }
     },
     "organic-maps": {
       "slug": "organic-maps",
@@ -4580,6 +4590,18 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.midjourney.com\",{\"shot\":false},null]"
+    },
+    "instagram": {
+      "slug": "instagram",
+      "name": "Instagram",
+      "source": "https://www.instagram.com",
+      "capturedAt": "2026-10-30T07:33:41.247Z",
+      "icon": {
+        "svg": "assets/tools/instagram/icon.svg",
+        "from": "Simple Icons (CC0)",
+        "scalable": true
+      },
+      "color": "#FF0069"
     }
   },
   "updatedAt": "2026-10-30T07:32:07.249Z"
