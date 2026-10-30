@@ -504,7 +504,9 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/youtube/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>YouTube</h3><p class="one">The biggest video site, paid for by advertising and subscriptions.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
     <div class="score-mini"><b>16<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/adobe-firefly/">
     <div class="lead"><span class="logo sm" style="background:#862e9c;color:#fff" aria-hidden="true">A</span><div><h3>Adobe Firefly</h3><p class="one">Adobe's image generator, built to be safe for commercial use and built into Creative Cloud.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
-    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
+    <div class="score-mini"><b>15<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a><a class="tool-row offender" href="/benchmarks/midjourney/">
+    <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">M</span><div><h3>Midjourney</h3><p class="one">The image generator many people picture first, sold by subscription and run entirely on its servers.</p><div class="chips"><span class="chip">Benchmark review</span><span class="chip">Not in the directory</span></div></div></div>
+    <div class="score-mini"><b>14<span>/30</span></b><span class="verdict-mini v3">Mixed</span></div></a></div>
   <div class="prose">
     <h2>What they show</h2>
     <p>The giants tend to be excellent at the job and hard to leave. They score high on Delivery, because they work for nearly everyone, and low on Power, because one company holds the controls. See each giant <a href="/compare/">next to its best replacement</a>, open the <a href="/directory/">directory</a> to see the alternatives, or read <a href="/how-we-score/">how we score</a> to see how the questions work.</p>
@@ -516,6 +518,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="foot-links">
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
+      <a href="/compare/">Compare</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -1428,6 +1431,12 @@ const BENCH = [
     tags: ["Benchmark", "Closed source", "Hosted"], s: [2,2,3,2,2,4],
     body: ["Firefly makes good pictures and slots into the apps many designers already use, which earns it a 4 on Delivery. Adobe says its own Firefly image models are trained on licensed content, including Adobe Stock, openly licensed material and public domain work, and that the results can be used commercially. That is a clearer answer on training data than most of the category gives, and it is the main thing it has going for it.",
       "It is also a hosted service behind an Adobe ID, so it only works with a connection and an account. Adobe's page says you can start for free with daily generations and that paid subscriptions add more, and the same page lists partner models inside Firefly, such as GPT Image, FLUX and Google's Nano Banana, which are not Adobe's and carry their own questions. Every generated image carries a small label saying it was made with Firefly. It is an example of what the open tools are measured against, not a recommendation."] },
+  { slug: "midjourney", name: "Midjourney", cat: "ai-images", size: "L", scope: "system", url: "https://www.midjourney.com",
+    one: "The image generator many people picture first, sold by subscription and run entirely on its servers.", replaces: "The tool the AI image makers are measured against",
+    price: "Paid plans from $10 a month; no free trial", source: "Closed source", platforms: "Web, Discord",
+    tags: ["Benchmark","Closed source","Hosted","Subscription"], s: [2,2,3,1,2,4],
+    body: ["Midjourney makes some of the most admired pictures in the category, which earns it a 4 on Delivery. It is also a service you rent. Its own help pages would not load for this review, so the details here come from a third-party pricing guide dated October 2026 and are worth checking: generating requires a paid plan, from about $10 a month, there is no free trial on the website or in Discord, and the private Stealth mode is reserved for the Pro and Mega plans, which means images made on cheaper plans are public.",
+      "The same guide says Midjourney's terms, effective May 2026, give the company a perpetual licence to reproduce and distribute your prompts and the images you make, and that you can keep using what you create after you cancel. The company is also being sued: Disney and Universal filed a copyright case against it in June 2025, and we have not checked how it stands now. It is an example of what the open tools are measured against, not a recommendation."] },
 ].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
@@ -1574,6 +1583,7 @@ const HL = {
 "invokeai": ["A canvas, a gallery and node workflows in a local web app", "Apache-2.0 code, so you can use and build on it freely", "Its corporate backer has exited and recent releases come from volunteers"],
 "draw-things": ["Runs fully offline on iPhone, iPad and Mac, with on-device LoRA training", "Imports community models, so you are not locked to one", "Engine code is GPL-3.0, but the app itself is built from a private repository"],
 "adobe-firefly": ["Says its own models are trained on licensed content, including Adobe Stock", "Needs an Adobe ID and a connection, with free daily use and paid plans", "Also offers partner models such as GPT Image, FLUX and Nano Banana"],
+"midjourney": ["Generating needs a paid plan, with no free trial on the website or in Discord", "Private Stealth mode only on the Pro and Mega plans, so cheaper plans are public", "Sued by Disney and Universal over copyright in June 2025"],
 };
 [...TOOLS, ...BENCH].forEach(t => { t.points = HL[t.slug] || []; });
 
@@ -1954,6 +1964,7 @@ const PAIRS = [
   { g: "spotify", t: "navidrome", cost: "Navidrome streams music you already own from your own server. There is no catalogue to browse and you have to run the server, so it suits people with a library, not people who rent one.", move: "Point Navidrome at your music folder and use any Subsonic-compatible app on your phone." },
   { g: "amazon-alexa", t: "home-assistant", cost: "Home Assistant runs in your house, so lights and sensors keep working without a cloud, but setup takes an afternoon and voice control is less polished than Alexa's.", move: "Start with the devices you already own that speak local protocols, and add voice later once the basics work." },
   { g: "adobe-firefly", t: "ai-horde", cost: "AI Horde runs on volunteers' graphics cards, so you wait in a queue and get the models they choose to host, with none of Firefly's polish or its link into Photoshop and Illustrator. Adobe says its own Firefly models use licensed training data, while the open models mostly do not make that claim.", move: "Open the Generate page with no account to try it, make a free account for better priority, and move to Fooocus or ComfyUI on your own graphics card when you want speed." },
+  { g: "midjourney", t: "ai-horde", cost: "AI Horde is slower and plainer. You wait in a volunteer queue, choose from the models people host, and will not match Midjourney's most polished styles. In return it is free, needs no account, and there is no subscription to cancel.", move: "Try the Generate page with no sign-up, then move to Fooocus or ComfyUI on your own graphics card if you want speed and privacy." },
   { g: "microsoft-365", t: "libreoffice", cost: "LibreOffice opens and saves Word, Excel and PowerPoint files, though complicated layouts can shift. It has no built-in shared editing like 365, so teams that write together in real time need something else, such as ONLYOFFICE.", move: "Open your most complicated documents first to see how they hold up, then switch the rest." }
 ];
 const pairSlug = p => `${p.t}-vs-${p.g}`;
