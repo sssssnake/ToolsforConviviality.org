@@ -1,0 +1,33 @@
+{
+  "slug": "element-call",
+  "name": "Element Call",
+  "source": "https://github.com/element-hq/element-call",
+  "capturedAt": "2026-10-30T21:19:27.682Z",
+  "alt": "Screenshot of the Element Call website",
+  "pageTitle": "GitHub - element-hq/element-call: Group calls powered by Matrix · GitHub",
+  "pageDescription": "Group calls powered by Matrix. Contribute to element-hq/element-call development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/element-call/shot-480.webp",
+    "960": "assets/tools/element-call/shot-960.webp",
+    "1600": "assets/tools/element-call/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/element-call/mobile-390.webp",
+    "780": "assets/tools/element-call/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/element-call/icon-128.webp",
+    "256": "assets/tools/element-call/icon-256.webp",
+    "svg": "assets/tools/element-call/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/element-call/social-600.webp",
+    "1200": "assets/tools/element-call/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/1a3a8aab19d0f85bd3f7563adfe5516aff0c00bdd3f2b2f091c43deed3908fd5/element-hq/element-call"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

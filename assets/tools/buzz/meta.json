@@ -1,0 +1,33 @@
+{
+  "slug": "buzz",
+  "name": "Buzz",
+  "source": "https://github.com/chidiwilliams/buzz",
+  "capturedAt": "2026-10-30T21:16:28.279Z",
+  "alt": "Screenshot of the Buzz website",
+  "pageTitle": "GitHub - chidiwilliams/buzz: Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper. · GitHub",
+  "pageDescription": "Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper. - chidiwilliams/buzz",
+  "shot": {
+    "480": "assets/tools/buzz/shot-480.webp",
+    "960": "assets/tools/buzz/shot-960.webp",
+    "1600": "assets/tools/buzz/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/buzz/mobile-390.webp",
+    "780": "assets/tools/buzz/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/buzz/icon-128.webp",
+    "256": "assets/tools/buzz/icon-256.webp",
+    "svg": "assets/tools/buzz/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/buzz/social-600.webp",
+    "1200": "assets/tools/buzz/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/a92bb1e571ae8fb4f7f537185e382a438d49173a513e38daf2d203c3948b6217/chidiwilliams/buzz"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "baikal",
+  "name": "Baïkal",
+  "source": "https://sabre.io/baikal/",
+  "capturedAt": "2026-10-30T21:18:17.072Z",
+  "alt": "Screenshot of the Baïkal website",
+  "pageTitle": "Baïkal - baikal",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/baikal/shot-480.webp",
+    "960": "assets/tools/baikal/shot-960.webp",
+    "1600": "assets/tools/baikal/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/baikal/mobile-390.webp",
+    "780": "assets/tools/baikal/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/baikal/icon-128.webp",
+    "256": "assets/tools/baikal/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#b80808",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

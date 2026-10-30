@@ -1,0 +1,25 @@
+{
+  "slug": "google-calendar",
+  "name": "Google Calendar",
+  "source": "https://calendar.google.com",
+  "capturedAt": "2026-10-30T21:19:03.521Z",
+  "alt": "Screenshot of the Google Calendar website",
+  "pageTitle": "Google Calendar - Sign in to Access & Edit Your Schedule",
+  "pageDescription": "Access Google Calendar with a Google account (for personal use) or Google Workspace account (for business use).",
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/google-calendar/icon-128.webp",
+    "256": "assets/tools/google-calendar/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "radicale",
+  "name": "Radicale",
+  "source": "https://radicale.org",
+  "capturedAt": "2026-10-30T21:18:09.114Z",
+  "alt": "Screenshot of the Radicale website",
+  "pageTitle": "Radicale v3 Documentation",
+  "pageDescription": "Free and Open-Source CalDAV and CardDAV Server",
+  "shot": {
+    "480": "assets/tools/radicale/shot-480.webp",
+    "960": "assets/tools/radicale/shot-960.webp",
+    "1600": "assets/tools/radicale/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/radicale/mobile-390.webp",
+    "780": "assets/tools/radicale/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/radicale/icon-128.webp",
+    "256": "assets/tools/radicale/icon-256.webp",
+    "from": "https://radicale.org/assets/icon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

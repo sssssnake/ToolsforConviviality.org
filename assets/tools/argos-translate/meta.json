@@ -1,0 +1,29 @@
+{
+  "slug": "argos-translate",
+  "name": "Argos Translate",
+  "source": "https://www.argosopentech.com",
+  "capturedAt": "2026-10-30T21:17:37.431Z",
+  "alt": "Screenshot of the Argos Translate website",
+  "pageTitle": "Argos Open Tech",
+  "pageDescription": "Argos Open Tech Main Page",
+  "shot": {
+    "480": "assets/tools/argos-translate/shot-480.webp",
+    "960": "assets/tools/argos-translate/shot-960.webp",
+    "1600": "assets/tools/argos-translate/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/argos-translate/mobile-390.webp",
+    "780": "assets/tools/argos-translate/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/argos-translate/icon-128.webp",
+    "256": "assets/tools/argos-translate/icon-256.webp",
+    "from": "https://www.argosopentech.com/static/main_site/img/favicon.png",
+    "sourceWidth": 200,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "zoom",
+  "name": "Zoom",
+  "source": "https://zoom.us",
+  "capturedAt": "2026-10-30T21:19:55.719Z",
+  "alt": "Screenshot of the Zoom website",
+  "pageTitle": "One platform to connect | Zoom",
+  "pageDescription": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/zoom/icon-128.webp",
+    "256": "assets/tools/zoom/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/zoom/social-600.webp",
+    "1200": "assets/tools/zoom/social-1200.webp",
+    "from": "https://st1.zoom.us/homepage/20261022-1234/primary/dist/assets/images/thumb.png"
+  },
+  "color": "#0858f8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "google-translate",
+  "name": "Google Translate",
+  "source": "https://translate.google.com",
+  "capturedAt": "2026-10-30T21:18:03.355Z",
+  "alt": "Screenshot of the Google Translate website",
+  "pageTitle": "Google Translate",
+  "pageDescription": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.",
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/google-translate/icon-128.webp",
+    "256": "assets/tools/google-translate/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 64,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#4285f4",
+  "colorFrom": "theme-color",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

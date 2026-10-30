@@ -1,0 +1,30 @@
+{
+  "slug": "lingva",
+  "name": "Lingva Translate",
+  "source": "https://github.com/thedaviddelta/lingva-translate",
+  "capturedAt": "2026-10-30T21:17:53.062Z",
+  "alt": "Screenshot of the Lingva Translate website",
+  "pageTitle": "GitHub - thedaviddelta/lingva-translate: Alternative front-end for Google Translate · GitHub",
+  "pageDescription": "Alternative front-end for Google Translate. Contribute to thedaviddelta/lingva-translate development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/lingva/shot-480.webp",
+    "960": "assets/tools/lingva/shot-960.webp",
+    "1600": "assets/tools/lingva/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/lingva/mobile-390.webp",
+    "780": "assets/tools/lingva/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/lingva/icon-128.webp",
+    "256": "assets/tools/lingva/icon-256.webp",
+    "svg": "assets/tools/lingva/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": [
+    "social image failed: HTTP 429 for https://opengraph.githubassets.com/40411e72c7420bc6d396a30058b12d06b49c909d68b8431909ffcc15349f003d/thedaviddelta/lingva-translate"
+  ]
+}

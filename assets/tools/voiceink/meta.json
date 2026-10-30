@@ -1,0 +1,33 @@
+{
+  "slug": "voiceink",
+  "name": "VoiceInk",
+  "source": "https://github.com/beingpax/VoiceInk",
+  "capturedAt": "2026-10-30T21:16:57.796Z",
+  "alt": "Screenshot of the VoiceInk website",
+  "pageTitle": "GitHub - Beingpax/VoiceInk: The best open-source alternative to Superwhisper & Wispr Flow. Voice-to-text app for macOS with no subscription · GitHub",
+  "pageDescription": "The best open-source alternative to Superwhisper & Wispr Flow. Voice-to-text app for macOS with no subscription - Beingpax/VoiceInk",
+  "shot": {
+    "480": "assets/tools/voiceink/shot-480.webp",
+    "960": "assets/tools/voiceink/shot-960.webp",
+    "1600": "assets/tools/voiceink/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/voiceink/mobile-390.webp",
+    "780": "assets/tools/voiceink/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/voiceink/icon-128.webp",
+    "256": "assets/tools/voiceink/icon-256.webp",
+    "svg": "assets/tools/voiceink/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/voiceink/social-600.webp",
+    "1200": "assets/tools/voiceink/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/0c26e451a2939fd94a61bbeda623abe2df6e542830bee31c75a36a74845d002f/Beingpax/VoiceInk"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

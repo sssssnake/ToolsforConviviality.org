@@ -1,0 +1,24 @@
+{
+  "slug": "galene",
+  "name": "Galène",
+  "source": "https://galene.org",
+  "capturedAt": "2026-10-30T21:19:37.865Z",
+  "alt": "Screenshot of the Galène website",
+  "pageTitle": "Galene videoconference server",
+  "pageDescription": "Galene is a free and open source self-hosted WebRTC videoconference system (client and server), a self-hosted alternative to Zoom or BigBlueButton",
+  "shot": {
+    "480": "assets/tools/galene/shot-480.webp",
+    "960": "assets/tools/galene/shot-960.webp",
+    "1600": "assets/tools/galene/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/galene/mobile-390.webp",
+    "780": "assets/tools/galene/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgalene.org&size=256"
+  ]
+}

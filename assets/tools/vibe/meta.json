@@ -1,0 +1,33 @@
+{
+  "slug": "vibe",
+  "name": "Vibe",
+  "source": "https://github.com/thewh1teagle/vibe",
+  "capturedAt": "2026-10-30T21:16:37.217Z",
+  "alt": "Screenshot of the Vibe website",
+  "pageTitle": "GitHub - thewh1teagle/vibe: Transcribe on your own! · GitHub",
+  "pageDescription": "Transcribe on your own! Contribute to thewh1teagle/vibe development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/vibe/shot-480.webp",
+    "960": "assets/tools/vibe/shot-960.webp",
+    "1600": "assets/tools/vibe/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/vibe/mobile-390.webp",
+    "780": "assets/tools/vibe/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/vibe/icon-128.webp",
+    "256": "assets/tools/vibe/icon-256.webp",
+    "svg": "assets/tools/vibe/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/vibe/social-600.webp",
+    "1200": "assets/tools/vibe/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/daf6d3f2c734d566d7ce5c128d9325fd2178403de8bd01651411886067d283ae/thewh1teagle/vibe"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

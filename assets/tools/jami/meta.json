@@ -1,0 +1,34 @@
+{
+  "slug": "jami",
+  "name": "Jami",
+  "source": "https://jami.net",
+  "capturedAt": "2026-10-30T21:19:45.525Z",
+  "alt": "Screenshot of the Jami website",
+  "pageTitle": "Jami",
+  "pageDescription": "Jami - the distributed and open source communication platform",
+  "shot": {
+    "480": "assets/tools/jami/shot-480.webp",
+    "960": "assets/tools/jami/shot-960.webp",
+    "1600": "assets/tools/jami/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/jami/mobile-390.webp",
+    "780": "assets/tools/jami/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/jami/icon-128.webp",
+    "256": "assets/tools/jami/icon-256.webp",
+    "from": "https://jami.net/assets/images/favicon/favicon-196x196.webp?v=ed9bc88102",
+    "sourceWidth": 196,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/jami/social-600.webp",
+    "1200": "assets/tools/jami/social-1200.webp",
+    "from": "https://jami.net/assets/images/logo-jami.webp"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

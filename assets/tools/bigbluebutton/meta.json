@@ -1,0 +1,34 @@
+{
+  "slug": "bigbluebutton",
+  "name": "BigBlueButton",
+  "source": "https://bigbluebutton.org",
+  "capturedAt": "2026-10-30T21:19:14.999Z",
+  "alt": "Screenshot of the BigBlueButton website",
+  "pageTitle": "Virtual Classroom Software | BigBlueButton",
+  "pageDescription": "BigBlueButton is an open source virtual classroom software. This platform was developed for virtual learning and education. Try it today!",
+  "shot": {
+    "480": "assets/tools/bigbluebutton/shot-480.webp",
+    "960": "assets/tools/bigbluebutton/shot-960.webp",
+    "1600": "assets/tools/bigbluebutton/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/bigbluebutton/mobile-390.webp",
+    "780": "assets/tools/bigbluebutton/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/bigbluebutton/icon-128.webp",
+    "256": "assets/tools/bigbluebutton/icon-256.webp",
+    "from": "https://bigbluebutton.org/wp-content/uploads/2021/03/favicon.png",
+    "sourceWidth": 16,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/bigbluebutton/social-600.webp",
+    "1200": "assets/tools/bigbluebutton/social-1200.webp",
+    "from": "https://bigbluebutton.org/wp-content/uploads/2023/05/girl-smiling.webp"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

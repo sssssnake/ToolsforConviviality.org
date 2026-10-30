@@ -1,0 +1,30 @@
+{
+  "slug": "speech-note",
+  "name": "Speech Note",
+  "source": "https://github.com/mkiol/dsnote",
+  "capturedAt": "2026-10-30T21:16:47.842Z",
+  "alt": "Screenshot of the Speech Note website",
+  "pageTitle": "GitHub - mkiol/dsnote: Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. · GitHub",
+  "pageDescription": "Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. - mkiol/dsnote",
+  "shot": {
+    "480": "assets/tools/speech-note/shot-480.webp",
+    "960": "assets/tools/speech-note/shot-960.webp",
+    "1600": "assets/tools/speech-note/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/speech-note/mobile-390.webp",
+    "780": "assets/tools/speech-note/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/speech-note/icon-128.webp",
+    "256": "assets/tools/speech-note/icon-256.webp",
+    "svg": "assets/tools/speech-note/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": [
+    "social image failed: HTTP 429 for https://opengraph.githubassets.com/abee73436c2842f2d989f28929bab6a63ad0bf0902aaab1a1d9c46fcd8504ba7/mkiol/dsnote"
+  ]
+}

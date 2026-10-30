@@ -1,0 +1,28 @@
+{
+  "slug": "otter",
+  "name": "Otter.ai",
+  "source": "https://otter.ai",
+  "capturedAt": "2026-10-30T21:17:09.485Z",
+  "alt": "Screenshot of the Otter.ai website",
+  "pageTitle": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+  "pageDescription": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items.",
+  "icon": {
+    "128": "assets/tools/otter/icon-128.webp",
+    "256": "assets/tools/otter/icon-256.webp",
+    "from": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/618e943a80919a98b5e9bf69_apple-icon.png",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/otter/social-600.webp",
+    "1200": "assets/tools/otter/social-1200.webp",
+    "from": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_fb6d82f0792801a1a0d814599859e23e_og-image-otter-optim.jpg"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": [
+    "dismissed banner with button:has-text(\"Reject all\")",
+    "screenshot skipped by override"
+  ]
+}

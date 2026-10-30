@@ -4602,7 +4602,817 @@
         "scalable": true
       },
       "color": "#FF0069"
+    },
+    "handy": {
+      "slug": "handy",
+      "name": "Handy",
+      "source": "https://github.com/cjpais/handy",
+      "capturedAt": "2026-10-30T21:16:18.963Z",
+      "alt": "Screenshot of the Handy website",
+      "pageTitle": "GitHub - cjpais/Handy: A free, open source, and extensible speech-to-text application that works completely offline. · GitHub",
+      "pageDescription": "A free, open source, and extensible speech-to-text application that works completely offline. - cjpais/Handy",
+      "shot": {
+        "480": "assets/tools/handy/shot-480.webp",
+        "960": "assets/tools/handy/shot-960.webp",
+        "1600": "assets/tools/handy/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/handy/mobile-390.webp",
+        "780": "assets/tools/handy/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/handy/icon-128.webp",
+        "256": "assets/tools/handy/icon-256.webp",
+        "svg": "assets/tools/handy/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/handy/social-600.webp",
+        "1200": "assets/tools/handy/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/931888694/1519efb0-ade3-433a-913a-ee7ddd8519a6"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/cjpais/handy\",null,null]"
+    },
+    "buzz": {
+      "slug": "buzz",
+      "name": "Buzz",
+      "source": "https://github.com/chidiwilliams/buzz",
+      "capturedAt": "2026-10-30T21:16:28.279Z",
+      "alt": "Screenshot of the Buzz website",
+      "pageTitle": "GitHub - chidiwilliams/buzz: Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper. · GitHub",
+      "pageDescription": "Buzz transcribes and translates audio offline on your personal computer. Powered by OpenAI's Whisper. - chidiwilliams/buzz",
+      "shot": {
+        "480": "assets/tools/buzz/shot-480.webp",
+        "960": "assets/tools/buzz/shot-960.webp",
+        "1600": "assets/tools/buzz/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/buzz/mobile-390.webp",
+        "780": "assets/tools/buzz/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/buzz/icon-128.webp",
+        "256": "assets/tools/buzz/icon-256.webp",
+        "svg": "assets/tools/buzz/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/buzz/social-600.webp",
+        "1200": "assets/tools/buzz/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/a92bb1e571ae8fb4f7f537185e382a438d49173a513e38daf2d203c3948b6217/chidiwilliams/buzz"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/chidiwilliams/buzz\",null,null]"
+    },
+    "vibe": {
+      "slug": "vibe",
+      "name": "Vibe",
+      "source": "https://github.com/thewh1teagle/vibe",
+      "capturedAt": "2026-10-30T21:16:37.217Z",
+      "alt": "Screenshot of the Vibe website",
+      "pageTitle": "GitHub - thewh1teagle/vibe: Transcribe on your own! · GitHub",
+      "pageDescription": "Transcribe on your own! Contribute to thewh1teagle/vibe development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/vibe/shot-480.webp",
+        "960": "assets/tools/vibe/shot-960.webp",
+        "1600": "assets/tools/vibe/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/vibe/mobile-390.webp",
+        "780": "assets/tools/vibe/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/vibe/icon-128.webp",
+        "256": "assets/tools/vibe/icon-256.webp",
+        "svg": "assets/tools/vibe/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/vibe/social-600.webp",
+        "1200": "assets/tools/vibe/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/daf6d3f2c734d566d7ce5c128d9325fd2178403de8bd01651411886067d283ae/thewh1teagle/vibe"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/thewh1teagle/vibe\",null,null]"
+    },
+    "speech-note": {
+      "slug": "speech-note",
+      "name": "Speech Note",
+      "source": "https://github.com/mkiol/dsnote",
+      "capturedAt": "2026-10-30T21:16:47.842Z",
+      "alt": "Screenshot of the Speech Note website",
+      "pageTitle": "GitHub - mkiol/dsnote: Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. · GitHub",
+      "pageDescription": "Speech Note Linux app. Note taking, reading and translating with offline Speech to Text, Text to Speech and Machine translation. - mkiol/dsnote",
+      "shot": {
+        "480": "assets/tools/speech-note/shot-480.webp",
+        "960": "assets/tools/speech-note/shot-960.webp",
+        "1600": "assets/tools/speech-note/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/speech-note/mobile-390.webp",
+        "780": "assets/tools/speech-note/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/speech-note/icon-128.webp",
+        "256": "assets/tools/speech-note/icon-256.webp",
+        "svg": "assets/tools/speech-note/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/abee73436c2842f2d989f28929bab6a63ad0bf0902aaab1a1d9c46fcd8504ba7/mkiol/dsnote"
+      ],
+      "cfg": "[\"https://github.com/mkiol/dsnote\",null,null]"
+    },
+    "voiceink": {
+      "slug": "voiceink",
+      "name": "VoiceInk",
+      "source": "https://github.com/beingpax/VoiceInk",
+      "capturedAt": "2026-10-30T21:16:57.796Z",
+      "alt": "Screenshot of the VoiceInk website",
+      "pageTitle": "GitHub - Beingpax/VoiceInk: The best open-source alternative to Superwhisper & Wispr Flow. Voice-to-text app for macOS with no subscription · GitHub",
+      "pageDescription": "The best open-source alternative to Superwhisper & Wispr Flow. Voice-to-text app for macOS with no subscription - Beingpax/VoiceInk",
+      "shot": {
+        "480": "assets/tools/voiceink/shot-480.webp",
+        "960": "assets/tools/voiceink/shot-960.webp",
+        "1600": "assets/tools/voiceink/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/voiceink/mobile-390.webp",
+        "780": "assets/tools/voiceink/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/voiceink/icon-128.webp",
+        "256": "assets/tools/voiceink/icon-256.webp",
+        "svg": "assets/tools/voiceink/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/voiceink/social-600.webp",
+        "1200": "assets/tools/voiceink/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/0c26e451a2939fd94a61bbeda623abe2df6e542830bee31c75a36a74845d002f/Beingpax/VoiceInk"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/beingpax/VoiceInk\",null,null]"
+    },
+    "otter": {
+      "slug": "otter",
+      "name": "Otter.ai",
+      "source": "https://otter.ai",
+      "capturedAt": "2026-10-30T21:17:09.485Z",
+      "alt": "Screenshot of the Otter.ai website",
+      "pageTitle": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "pageDescription": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items.",
+      "icon": {
+        "128": "assets/tools/otter/icon-128.webp",
+        "256": "assets/tools/otter/icon-256.webp",
+        "from": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/618e943a80919a98b5e9bf69_apple-icon.png",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/otter/social-600.webp",
+        "1200": "assets/tools/otter/social-1200.webp",
+        "from": "https://cdn.prod.website-files.com/618e9316785b3582a5178502/67dd5a945aeed07e329d4e10_fb6d82f0792801a1a0d814599859e23e_og-image-otter-optim.jpg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://otter.ai\",{\"shot\":false},null]"
+    },
+    "firefox-translations": {
+      "slug": "firefox-translations",
+      "name": "Firefox Translations",
+      "source": "https://support.mozilla.org/en-US/kb/website-translation",
+      "capturedAt": "2026-10-30T21:17:21.852Z",
+      "alt": "Screenshot of the Firefox Translations website",
+      "pageTitle": "Client Challenge",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/firefox-translations/shot-480.webp",
+        "960": "assets/tools/firefox-translations/shot-960.webp",
+        "1600": "assets/tools/firefox-translations/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/firefox-translations/mobile-390.webp",
+        "780": "assets/tools/firefox-translations/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/firefox-translations/icon-128.webp",
+        "256": "assets/tools/firefox-translations/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://support.mozilla.org/en-US/kb/website-translation\",null,null]"
+    },
+    "libretranslate": {
+      "slug": "libretranslate",
+      "name": "LibreTranslate",
+      "source": "https://libretranslate.com",
+      "capturedAt": "2026-10-30T21:17:29.387Z",
+      "alt": "Screenshot of the LibreTranslate website",
+      "pageTitle": "LibreTranslate - Free and Open Source Machine Translation API 🌐",
+      "pageDescription": "Free and Open Source Machine Translation API. Free to download, offline capable and easy to setup. Run your own API server in just a few minutes.",
+      "shot": {
+        "480": "assets/tools/libretranslate/shot-480.webp",
+        "960": "assets/tools/libretranslate/shot-960.webp",
+        "1600": "assets/tools/libretranslate/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/libretranslate/mobile-390.webp",
+        "780": "assets/tools/libretranslate/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/libretranslate/icon-128.webp",
+        "256": "assets/tools/libretranslate/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 254,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/libretranslate/social-600.webp",
+        "1200": "assets/tools/libretranslate/social-1200.webp",
+        "from": "https://user-images.githubusercontent.com/1951843/102724116-32a6df00-42db-11eb-8cc0-129ab39cdfb5.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Close\")",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://libretranslate.com\",null,null]"
+    },
+    "argos-translate": {
+      "slug": "argos-translate",
+      "name": "Argos Translate",
+      "source": "https://www.argosopentech.com",
+      "capturedAt": "2026-10-30T21:17:37.431Z",
+      "alt": "Screenshot of the Argos Translate website",
+      "pageTitle": "Argos Open Tech",
+      "pageDescription": "Argos Open Tech Main Page",
+      "shot": {
+        "480": "assets/tools/argos-translate/shot-480.webp",
+        "960": "assets/tools/argos-translate/shot-960.webp",
+        "1600": "assets/tools/argos-translate/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/argos-translate/mobile-390.webp",
+        "780": "assets/tools/argos-translate/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/argos-translate/icon-128.webp",
+        "256": "assets/tools/argos-translate/icon-256.webp",
+        "from": "https://www.argosopentech.com/static/main_site/img/favicon.png",
+        "sourceWidth": 200,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.argosopentech.com\",null,null]"
+    },
+    "translate-locally": {
+      "slug": "translate-locally",
+      "name": "Translate Locally",
+      "source": "https://github.com/XapaJIaMnu/translateLocally",
+      "capturedAt": "2026-10-30T21:17:43.816Z",
+      "alt": "Screenshot of the Translate Locally website",
+      "pageTitle": "GitHub - XapaJIaMnu/translateLocally: Fast and secure translation on your local machine, powered by marian and Bergamot. · GitHub",
+      "pageDescription": "Fast and secure translation on your local machine, powered by marian and Bergamot. - XapaJIaMnu/translateLocally",
+      "shot": {
+        "480": "assets/tools/translate-locally/shot-480.webp",
+        "960": "assets/tools/translate-locally/shot-960.webp",
+        "1600": "assets/tools/translate-locally/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/translate-locally/mobile-390.webp",
+        "780": "assets/tools/translate-locally/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/translate-locally/icon-128.webp",
+        "256": "assets/tools/translate-locally/icon-256.webp",
+        "svg": "assets/tools/translate-locally/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/translate-locally/social-600.webp",
+        "1200": "assets/tools/translate-locally/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/357574796/5c998c14-e4da-41da-801b-766ecc35b035"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/XapaJIaMnu/translateLocally\",null,null]"
+    },
+    "lingva": {
+      "slug": "lingva",
+      "name": "Lingva Translate",
+      "source": "https://github.com/thedaviddelta/lingva-translate",
+      "capturedAt": "2026-10-30T21:17:53.062Z",
+      "alt": "Screenshot of the Lingva Translate website",
+      "pageTitle": "GitHub - thedaviddelta/lingva-translate: Alternative front-end for Google Translate · GitHub",
+      "pageDescription": "Alternative front-end for Google Translate. Contribute to thedaviddelta/lingva-translate development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/lingva/shot-480.webp",
+        "960": "assets/tools/lingva/shot-960.webp",
+        "1600": "assets/tools/lingva/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/lingva/mobile-390.webp",
+        "780": "assets/tools/lingva/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/lingva/icon-128.webp",
+        "256": "assets/tools/lingva/icon-256.webp",
+        "svg": "assets/tools/lingva/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/40411e72c7420bc6d396a30058b12d06b49c909d68b8431909ffcc15349f003d/thedaviddelta/lingva-translate"
+      ],
+      "cfg": "[\"https://github.com/thedaviddelta/lingva-translate\",null,null]"
+    },
+    "google-translate": {
+      "slug": "google-translate",
+      "name": "Google Translate",
+      "source": "https://translate.google.com",
+      "capturedAt": "2026-10-30T21:18:03.355Z",
+      "alt": "Screenshot of the Google Translate website",
+      "pageTitle": "Google Translate",
+      "pageDescription": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other languages.",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/google-translate/icon-128.webp",
+        "256": "assets/tools/google-translate/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#4285f4",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://translate.google.com\",{\"shot\":false},null]"
+    },
+    "radicale": {
+      "slug": "radicale",
+      "name": "Radicale",
+      "source": "https://radicale.org",
+      "capturedAt": "2026-10-30T21:18:09.114Z",
+      "alt": "Screenshot of the Radicale website",
+      "pageTitle": "Radicale v3 Documentation",
+      "pageDescription": "Free and Open-Source CalDAV and CardDAV Server",
+      "shot": {
+        "480": "assets/tools/radicale/shot-480.webp",
+        "960": "assets/tools/radicale/shot-960.webp",
+        "1600": "assets/tools/radicale/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/radicale/mobile-390.webp",
+        "780": "assets/tools/radicale/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/radicale/icon-128.webp",
+        "256": "assets/tools/radicale/icon-256.webp",
+        "from": "https://radicale.org/assets/icon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://radicale.org\",null,null]"
+    },
+    "baikal": {
+      "slug": "baikal",
+      "name": "Baïkal",
+      "source": "https://sabre.io/baikal/",
+      "capturedAt": "2026-10-30T21:18:17.072Z",
+      "alt": "Screenshot of the Baïkal website",
+      "pageTitle": "Baïkal - baikal",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/baikal/shot-480.webp",
+        "960": "assets/tools/baikal/shot-960.webp",
+        "1600": "assets/tools/baikal/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/baikal/mobile-390.webp",
+        "780": "assets/tools/baikal/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/baikal/icon-128.webp",
+        "256": "assets/tools/baikal/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#b80808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://sabre.io/baikal/\",null,null]"
+    },
+    "davx5": {
+      "slug": "davx5",
+      "name": "DAVx5",
+      "source": "https://www.davx5.com",
+      "capturedAt": "2026-10-30T21:18:23.768Z",
+      "alt": "Screenshot of the DAVx5 website",
+      "pageTitle": "CalDAV, CardDAV and WebDAV for Android",
+      "pageDescription": "DAVx⁵ is a CalDAV/CardDAV management and sync app for Android. It also provides access to your WebDAV Cloud files.",
+      "shot": {
+        "480": "assets/tools/davx5/shot-480.webp",
+        "960": "assets/tools/davx5/shot-960.webp",
+        "1600": "assets/tools/davx5/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/davx5/mobile-390.webp",
+        "780": "assets/tools/davx5/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/davx5/icon-128.webp",
+        "256": "assets/tools/davx5/icon-256.webp",
+        "from": "https://www.davx5.com/fileadmin/user_upload/logos/favicon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#78b848",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.davx5.com\",null,null]"
+    },
+    "fossify-calendar": {
+      "slug": "fossify-calendar",
+      "name": "Fossify Calendar",
+      "source": "https://www.fossify.org/apps/calendar/",
+      "capturedAt": "2026-10-30T21:18:33.308Z",
+      "alt": "Screenshot of the Fossify Calendar website",
+      "pageTitle": "Fossify Calendar - Fossify",
+      "pageDescription": "Plan events, reminders, widgets, holidays, and recurring schedules with local calendar data.",
+      "shot": {
+        "480": "assets/tools/fossify-calendar/shot-480.webp",
+        "960": "assets/tools/fossify-calendar/shot-960.webp",
+        "1600": "assets/tools/fossify-calendar/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/fossify-calendar/mobile-390.webp",
+        "780": "assets/tools/fossify-calendar/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/fossify-calendar/icon-128.webp",
+        "256": "assets/tools/fossify-calendar/icon-256.webp",
+        "svg": "assets/tools/fossify-calendar/icon.svg",
+        "from": "https://www.fossify.org/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/fossify-calendar/social-600.webp",
+        "1200": "assets/tools/fossify-calendar/social-1200.webp",
+        "from": "https://www.fossify.org/assets/apps/calendar/feature.webp"
+      },
+      "color": "#fbfcf8",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.fossify.org/apps/calendar/\",null,null]"
+    },
+    "etar": {
+      "slug": "etar",
+      "name": "Etar",
+      "source": "https://f-droid.org/packages/ws.xsoh.etar/",
+      "capturedAt": "2026-10-30T21:18:40.081Z",
+      "alt": "Screenshot of the Etar website",
+      "pageTitle": "Etar - OpenSource Calendar | F-Droid - Free and Open Source Android App Repository",
+      "pageDescription": "Etar is a material designed open source calendar, for everyone!",
+      "shot": {
+        "480": "assets/tools/etar/shot-480.webp",
+        "960": "assets/tools/etar/shot-960.webp",
+        "1600": "assets/tools/etar/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/etar/mobile-390.webp",
+        "780": "assets/tools/etar/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/etar/icon-128.webp",
+        "256": "assets/tools/etar/icon-256.webp",
+        "from": "https://f-droid.org/assets/android-chrome-512x512.png?v=8j6PKzW9Mk",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/etar/social-600.webp",
+        "1200": "assets/tools/etar/social-1200.webp",
+        "from": "https://f-droid.org/repo/ws.xsoh.etar/en-US/icon_MV5P0hb85YWVJIfobFH46J3yDwLvde2IRXbFLfH133s=.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://f-droid.org/packages/ws.xsoh.etar/\",null,null]"
+    },
+    "proton-calendar": {
+      "slug": "proton-calendar",
+      "name": "Proton Calendar",
+      "source": "https://proton.me/calendar",
+      "capturedAt": "2026-10-30T21:18:50.764Z",
+      "alt": "Screenshot of the Proton Calendar website",
+      "pageTitle": "Proton Calendar: Your schedule is worth protecting | Proton",
+      "pageDescription": "Keep your schedule private in a secure calendar app, because your life is your business. Get Proton Calendar, the world's largest encrypted calendar service.",
+      "shot": {
+        "480": "assets/tools/proton-calendar/shot-480.webp",
+        "960": "assets/tools/proton-calendar/shot-960.webp",
+        "1600": "assets/tools/proton-calendar/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/proton-calendar/mobile-390.webp",
+        "780": "assets/tools/proton-calendar/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/proton-calendar/icon-128.webp",
+        "256": "assets/tools/proton-calendar/icon-256.webp",
+        "from": "https://proton.me/favicons/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/proton-calendar/social-600.webp",
+        "1200": "assets/tools/proton-calendar/social-1200.webp",
+        "from": "https://pmecdn.protonweb.com/image-transformation/?s=a&image=PC_OG_d2862d6313.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://proton.me/calendar\",null,null]"
+    },
+    "google-calendar": {
+      "slug": "google-calendar",
+      "name": "Google Calendar",
+      "source": "https://calendar.google.com",
+      "capturedAt": "2026-10-30T21:19:03.521Z",
+      "alt": "Screenshot of the Google Calendar website",
+      "pageTitle": "Google Calendar - Sign in to Access & Edit Your Schedule",
+      "pageDescription": "Access Google Calendar with a Google account (for personal use) or Google Workspace account (for business use).",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/google-calendar/icon-128.webp",
+        "256": "assets/tools/google-calendar/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://calendar.google.com\",{\"shot\":false},null]"
+    },
+    "jitsi-meet": {
+      "slug": "jitsi-meet",
+      "name": "Jitsi Meet",
+      "source": "https://jitsi.org",
+      "capturedAt": "2026-10-30T21:19:07.825Z",
+      "alt": "Screenshot of the Jitsi Meet website",
+      "pageTitle": "Free Video Conferencing Software for Web & Mobile | Jitsi",
+      "pageDescription": "Learn more about Jitsi, a free open-source video conferencing software for web & mobile. Make a call, launch on your own servers, integrate into your app, and more.",
+      "shot": {
+        "480": "assets/tools/jitsi-meet/shot-480.webp",
+        "960": "assets/tools/jitsi-meet/shot-960.webp",
+        "1600": "assets/tools/jitsi-meet/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/jitsi-meet/mobile-390.webp",
+        "780": "assets/tools/jitsi-meet/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/jitsi-meet/icon-128.webp",
+        "256": "assets/tools/jitsi-meet/icon-256.webp",
+        "from": "https://jitsi.org/wp-content/uploads/2020/04/Jitsi-favicon-196.png",
+        "sourceWidth": 196,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/jitsi-meet/social-600.webp",
+        "1200": "assets/tools/jitsi-meet/social-1200.webp",
+        "from": "https://jitsi.org/wp-content/uploads/2020/04/Jitsi_opengraph.jpg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://jitsi.org\",null,null]"
+    },
+    "bigbluebutton": {
+      "slug": "bigbluebutton",
+      "name": "BigBlueButton",
+      "source": "https://bigbluebutton.org",
+      "capturedAt": "2026-10-30T21:19:14.999Z",
+      "alt": "Screenshot of the BigBlueButton website",
+      "pageTitle": "Virtual Classroom Software | BigBlueButton",
+      "pageDescription": "BigBlueButton is an open source virtual classroom software. This platform was developed for virtual learning and education. Try it today!",
+      "shot": {
+        "480": "assets/tools/bigbluebutton/shot-480.webp",
+        "960": "assets/tools/bigbluebutton/shot-960.webp",
+        "1600": "assets/tools/bigbluebutton/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/bigbluebutton/mobile-390.webp",
+        "780": "assets/tools/bigbluebutton/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/bigbluebutton/icon-128.webp",
+        "256": "assets/tools/bigbluebutton/icon-256.webp",
+        "from": "https://bigbluebutton.org/wp-content/uploads/2021/03/favicon.png",
+        "sourceWidth": 16,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/bigbluebutton/social-600.webp",
+        "1200": "assets/tools/bigbluebutton/social-1200.webp",
+        "from": "https://bigbluebutton.org/wp-content/uploads/2023/05/girl-smiling.webp"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://bigbluebutton.org\",null,null]"
+    },
+    "element-call": {
+      "slug": "element-call",
+      "name": "Element Call",
+      "source": "https://github.com/element-hq/element-call",
+      "capturedAt": "2026-10-30T21:19:27.682Z",
+      "alt": "Screenshot of the Element Call website",
+      "pageTitle": "GitHub - element-hq/element-call: Group calls powered by Matrix · GitHub",
+      "pageDescription": "Group calls powered by Matrix. Contribute to element-hq/element-call development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/element-call/shot-480.webp",
+        "960": "assets/tools/element-call/shot-960.webp",
+        "1600": "assets/tools/element-call/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/element-call/mobile-390.webp",
+        "780": "assets/tools/element-call/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/element-call/icon-128.webp",
+        "256": "assets/tools/element-call/icon-256.webp",
+        "svg": "assets/tools/element-call/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/element-call/social-600.webp",
+        "1200": "assets/tools/element-call/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/1a3a8aab19d0f85bd3f7563adfe5516aff0c00bdd3f2b2f091c43deed3908fd5/element-hq/element-call"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/element-hq/element-call\",null,null]"
+    },
+    "galene": {
+      "slug": "galene",
+      "name": "Galène",
+      "source": "https://galene.org",
+      "capturedAt": "2026-10-30T21:19:37.865Z",
+      "alt": "Screenshot of the Galène website",
+      "pageTitle": "Galene videoconference server",
+      "pageDescription": "Galene is a free and open source self-hosted WebRTC videoconference system (client and server), a self-hosted alternative to Zoom or BigBlueButton",
+      "shot": {
+        "480": "assets/tools/galene/shot-480.webp",
+        "960": "assets/tools/galene/shot-960.webp",
+        "1600": "assets/tools/galene/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/galene/mobile-390.webp",
+        "780": "assets/tools/galene/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgalene.org&size=256"
+      ],
+      "cfg": "[\"https://galene.org\",null,null]"
+    },
+    "jami": {
+      "slug": "jami",
+      "name": "Jami",
+      "source": "https://jami.net",
+      "capturedAt": "2026-10-30T21:19:45.525Z",
+      "alt": "Screenshot of the Jami website",
+      "pageTitle": "Jami",
+      "pageDescription": "Jami - the distributed and open source communication platform",
+      "shot": {
+        "480": "assets/tools/jami/shot-480.webp",
+        "960": "assets/tools/jami/shot-960.webp",
+        "1600": "assets/tools/jami/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/jami/mobile-390.webp",
+        "780": "assets/tools/jami/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/jami/icon-128.webp",
+        "256": "assets/tools/jami/icon-256.webp",
+        "from": "https://jami.net/assets/images/favicon/favicon-196x196.webp?v=ed9bc88102",
+        "sourceWidth": 196,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/jami/social-600.webp",
+        "1200": "assets/tools/jami/social-1200.webp",
+        "from": "https://jami.net/assets/images/logo-jami.webp"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://jami.net\",null,null]"
+    },
+    "zoom": {
+      "slug": "zoom",
+      "name": "Zoom",
+      "source": "https://zoom.us",
+      "capturedAt": "2026-10-30T21:19:55.719Z",
+      "alt": "Screenshot of the Zoom website",
+      "pageTitle": "One platform to connect | Zoom",
+      "pageDescription": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/zoom/icon-128.webp",
+        "256": "assets/tools/zoom/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/zoom/social-600.webp",
+        "1200": "assets/tools/zoom/social-1200.webp",
+        "from": "https://st1.zoom.us/homepage/20261022-1234/primary/dist/assets/images/thumb.png"
+      },
+      "color": "#0858f8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://zoom.us\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-30T07:34:41.226Z"
+  "updatedAt": "2026-10-30T21:20:02.970Z"
 }

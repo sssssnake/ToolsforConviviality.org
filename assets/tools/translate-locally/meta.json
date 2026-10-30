@@ -1,0 +1,33 @@
+{
+  "slug": "translate-locally",
+  "name": "Translate Locally",
+  "source": "https://github.com/XapaJIaMnu/translateLocally",
+  "capturedAt": "2026-10-30T21:17:43.816Z",
+  "alt": "Screenshot of the Translate Locally website",
+  "pageTitle": "GitHub - XapaJIaMnu/translateLocally: Fast and secure translation on your local machine, powered by marian and Bergamot. · GitHub",
+  "pageDescription": "Fast and secure translation on your local machine, powered by marian and Bergamot. - XapaJIaMnu/translateLocally",
+  "shot": {
+    "480": "assets/tools/translate-locally/shot-480.webp",
+    "960": "assets/tools/translate-locally/shot-960.webp",
+    "1600": "assets/tools/translate-locally/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/translate-locally/mobile-390.webp",
+    "780": "assets/tools/translate-locally/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/translate-locally/icon-128.webp",
+    "256": "assets/tools/translate-locally/icon-256.webp",
+    "svg": "assets/tools/translate-locally/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/translate-locally/social-600.webp",
+    "1200": "assets/tools/translate-locally/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/357574796/5c998c14-e4da-41da-801b-766ecc35b035"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

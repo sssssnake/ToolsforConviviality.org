@@ -1,0 +1,33 @@
+{
+  "slug": "fossify-calendar",
+  "name": "Fossify Calendar",
+  "source": "https://www.fossify.org/apps/calendar/",
+  "capturedAt": "2026-10-30T21:18:33.308Z",
+  "alt": "Screenshot of the Fossify Calendar website",
+  "pageTitle": "Fossify Calendar - Fossify",
+  "pageDescription": "Plan events, reminders, widgets, holidays, and recurring schedules with local calendar data.",
+  "shot": {
+    "480": "assets/tools/fossify-calendar/shot-480.webp",
+    "960": "assets/tools/fossify-calendar/shot-960.webp",
+    "1600": "assets/tools/fossify-calendar/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/fossify-calendar/mobile-390.webp",
+    "780": "assets/tools/fossify-calendar/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/fossify-calendar/icon-128.webp",
+    "256": "assets/tools/fossify-calendar/icon-256.webp",
+    "svg": "assets/tools/fossify-calendar/icon.svg",
+    "from": "https://www.fossify.org/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/fossify-calendar/social-600.webp",
+    "1200": "assets/tools/fossify-calendar/social-1200.webp",
+    "from": "https://www.fossify.org/assets/apps/calendar/feature.webp"
+  },
+  "color": "#fbfcf8",
+  "colorFrom": "theme-color",
+  "notes": []
+}

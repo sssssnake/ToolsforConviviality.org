@@ -1,6 +1,139 @@
 {
-  "startedAt": "2026-10-30T07:34:37.503Z",
-  "captured": [],
+  "startedAt": "2026-10-30T21:16:14.886Z",
+  "captured": [
+    {
+      "slug": "handy",
+      "notes": []
+    },
+    {
+      "slug": "buzz",
+      "notes": []
+    },
+    {
+      "slug": "vibe",
+      "notes": []
+    },
+    {
+      "slug": "speech-note",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/abee73436c2842f2d989f28929bab6a63ad0bf0902aaab1a1d9c46fcd8504ba7/mkiol/dsnote"
+      ]
+    },
+    {
+      "slug": "voiceink",
+      "notes": []
+    },
+    {
+      "slug": "otter",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "firefox-translations",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "libretranslate",
+      "notes": [
+        "dismissed banner with button:has-text(\"Close\")",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "argos-translate",
+      "notes": []
+    },
+    {
+      "slug": "translate-locally",
+      "notes": []
+    },
+    {
+      "slug": "lingva",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/40411e72c7420bc6d396a30058b12d06b49c909d68b8431909ffcc15349f003d/thedaviddelta/lingva-translate"
+      ]
+    },
+    {
+      "slug": "google-translate",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "radicale",
+      "notes": []
+    },
+    {
+      "slug": "baikal",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "davx5",
+      "notes": []
+    },
+    {
+      "slug": "fossify-calendar",
+      "notes": []
+    },
+    {
+      "slug": "etar",
+      "notes": []
+    },
+    {
+      "slug": "proton-calendar",
+      "notes": []
+    },
+    {
+      "slug": "google-calendar",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "jitsi-meet",
+      "notes": []
+    },
+    {
+      "slug": "bigbluebutton",
+      "notes": []
+    },
+    {
+      "slug": "element-call",
+      "notes": []
+    },
+    {
+      "slug": "galene",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "favicon fallback failed: HTTP 404 for https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https%3A%2F%2Fgalene.org&size=256"
+      ]
+    },
+    {
+      "slug": "jami",
+      "notes": []
+    },
+    {
+      "slug": "zoom",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    }
+  ],
   "skipped": [
     {
       "slug": "localsend",
@@ -589,5 +722,5 @@
       "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
     }
   ],
-  "finishedAt": "2026-10-30T07:34:41.228Z"
+  "finishedAt": "2026-10-30T21:20:02.978Z"
 }

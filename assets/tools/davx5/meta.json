@@ -1,0 +1,29 @@
+{
+  "slug": "davx5",
+  "name": "DAVx5",
+  "source": "https://www.davx5.com",
+  "capturedAt": "2026-10-30T21:18:23.768Z",
+  "alt": "Screenshot of the DAVx5 website",
+  "pageTitle": "CalDAV, CardDAV and WebDAV for Android",
+  "pageDescription": "DAVx⁵ is a CalDAV/CardDAV management and sync app for Android. It also provides access to your WebDAV Cloud files.",
+  "shot": {
+    "480": "assets/tools/davx5/shot-480.webp",
+    "960": "assets/tools/davx5/shot-960.webp",
+    "1600": "assets/tools/davx5/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/davx5/mobile-390.webp",
+    "780": "assets/tools/davx5/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/davx5/icon-128.webp",
+    "256": "assets/tools/davx5/icon-256.webp",
+    "from": "https://www.davx5.com/fileadmin/user_upload/logos/favicon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#78b848",
+  "colorFrom": "icon",
+  "notes": []
+}
