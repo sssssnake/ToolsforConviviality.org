@@ -8,7 +8,7 @@ A review is a short journey, four or five paragraphs that read as one thread. Th
 
 ## The four movements
 
-1. **Open with a story, an odd comparison or a picture from somewhere else.** It should show why this kind of tool matters, then arrive at what the tool actually is. Say what it is and what it does in the same paragraph, in plain words.
+1. **Open with a story, an odd comparison, a pop culture reference or a picture of a person from somewhere else.** It should show why this kind of tool matters, then arrive at what the tool actually is. Say what it is and what it does in the same paragraph, in plain words.
 2. **What you gain and what it asks of you.** Explain the scores here: lock-in, footprint, longevity and the rest, in sentences. Name the real trade (hardware, time, learning).
 3. **The untidy part.** The catch, the thing we could not confirm, the company decision that could change things. Say what we could not find out and where the reader should look.
 4. **What it is like to own it.** End on a concrete picture of living with the tool. No slogan, no verdict line, no moral.
@@ -19,13 +19,18 @@ Use only facts that are already in the tool's existing entry or in sources we ca
 
 ## Stories and comparisons
 
-Three kinds are allowed:
+Four kinds are allowed:
 
 - A well-known anecdote, with a hedge when it is disputed ("the story goes", "whether or not it happened this way").
 - A scene that is plainly imagined, introduced with "picture" or "suppose".
 - Something with a source we can name.
+- Pop culture, which is where conviviality lives: a film, show, game, book or piece of internet history, referred to by its plain premise. Only use one you are certain of, never quote lines, lyrics or dialogue, and hedge when a detail is unsure. The reference has to light up a fact about this tool.
 
-Good sources for comparison: history of technology, craft, kitchens, workshops, gardens, roads, libraries. A comparison lights up a fact, it never replaces one. Do not reuse the same story or image across reviews.
+People are welcome in these openings. A relatable everyday scene (the dinner party where the photo is on the wrong phone, the two in the morning bibliography) is fine when it is plainly imagined, introduced with "suppose" or a general observation, and never given a name, a quote or a number it could be mistaken for fact. Do not force a reference where none fits. An ordinary opening beats a strained joke, and not every review needs one.
+
+Good sources for comparison: history of technology, craft, kitchens, workshops, gardens, roads, libraries. A comparison lights up a fact, it never replaces one. Do not reuse the same story, film or image across reviews, and keep "picture" and "suppose" to a few reviews in a batch so the openings do not turn into a template.
+
+A little chaos is welcome: an aside, an opinion held slightly too firmly, a joke that gets reined back to a specific. It works when it is about this tool and true. A joke that could sit in any review is the same problem as any other generic sentence.
 
 ## Sentences
 
@@ -36,6 +41,8 @@ Good sources for comparison: history of technology, craft, kitchens, workshops, 
 - No negative parallelism ("not X, but Y").
 - Prefer short words, active voice, plain English. Use a technical term without apology when it is the clearest option.
 - Sentence case for headings.
+- Do not explain why a score is what it is unless the entry or a source says so. State the score plainly ("scores a 5 on lock-in and a 4 on power") and give the real reasons the entry already contains. Never write that a fact "earns", "sits behind", "fits" or "is why" for a score.
+- Avoid the habit of ending a sentence with a ", which ..." clause that draws a tidy conclusion. Say the fact and stop, or start a new sentence.
 
 ## Banned closers and stock phrases
 
@@ -47,13 +54,13 @@ Run this before finishing. The full list is on /how-we-write/, drawn from Wikipe
 
 - Words: delve, tapestry, testament, landscape (figurative), pivotal, crucial, vibrant, seamless, robust, leverage, underscore, foster, showcase, "stands as", "serves as".
 - Patterns: rule of three used by reflex, "not only X but Y", "It's important to note", a closing summary that restates the paragraph, headings with colons, bolded lead-ins, vague attributions ("experts say").
-- Our additions: short punchy closers, tidy paired framings, "worth watching", "count the cost".
+- Our additions: short punchy closers, tidy paired framings, "worth watching", "count the cost", causal tails (", which is why ...", "that is what earns ..."), and claims about why people reach for a tool that no source supports.
 - The test that matters: read it aloud. If a sentence could appear in a review of any other tool, replace it with what is true of this one.
 
 ## Process for each review
 
 1. Read the tool's entry, scores, and linked sources. List the facts you are allowed to use.
-2. Pick one story or image that fits this tool and has not been used.
+2. Pick one story, person or pop culture reference that fits this tool and has not been used. If nothing fits, open plainly.
 3. Draft the four movements as flowing paragraphs.
 4. Check every fact against the list, then run the checklist and the em dash search.
 5. Show the before and after to Jeff in batches of about ten, starting from the top of the ranking.
