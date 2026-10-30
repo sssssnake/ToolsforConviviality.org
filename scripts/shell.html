@@ -2253,7 +2253,7 @@ function involve() {
   return `<p class="crumbs"><a href="#home">Home</a> / Get involved</p>
   <div class="page-head" style="margin-top:14px"><h1>Get involved</h1><p>This project is new, and it could grow into something bigger. If you design, write, build, research or just have strong opinions about software, there is room to help shape it.</p></div>
   <div class="prose">
-    <p>Right now it is a volunteer effort and not a paid position, and it may grow into a non-profit one day if enough people care about it. Say whatever you like below: what you could bring, what you would change, what you think of the directory so far. Rough ideas are welcome. If you have a tool to suggest, there is <a href="#submit">a form for that</a>.</p>
+    <p>Right now it is a volunteer effort and not a paid position, and it may grow into a non-profit one day if enough people care about it. Say whatever you like below: what you could bring, what you would change, what you think of the directory so far. Rough ideas are welcome. If you have a tool to suggest, there is <a href="#submit">a form for that</a>. If you are wondering how decisions get made here, <a href="#governance">this page explains</a>.</p>
   </div>
   <form id="involve" novalidate>
     <div class="row2">
@@ -2271,6 +2271,71 @@ function involve() {
     <p>Here is your message. Copy it and email it to <span class="addr">hello@toolsforconviviality.com</span>.</p>
     <pre id="out-text"></pre>
     <div class="copyline"><button class="btn" type="button" id="copy">Copy message</button><span id="copied" class="label" aria-live="polite"></span></div>
+  </div>`;
+}
+
+function transparency() {
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#governance">Governance</a> / Transparency</p>
+  <div class="page-head" style="margin-top:14px"><h1>Transparency</h1><p>What we take, what we refuse, and where the money goes. Last updated 30 October 2026.</p></div>
+  <div class="prose">
+    <h2>What we do not take</h2>
+    <p>We do not sell listings, reviews, rankings or badges. A maker cannot pay to be included, to score higher or to be left out. The site runs no ads, sets no tracking cookies and uses no analytics. If any link on a page ever earns us money, that page will say so next to the link.</p>
+    <h2>Where the money comes from</h2>
+    <p>The only income the site can receive is the optional tip people send through the "Buy us a coffee" link. A tip buys no influence over scores, and nothing is delivered in return.</p>
+    <h2>Where it goes</h2>
+    <p>Toward the domain name, any hosting costs, and the time spent reading, testing and writing about tools.</p>
+    <h2>What has come in so far</h2>
+    <p>As of 30 October 2026, nothing. When there is something to report, we will publish a short note here once a year that says roughly what came in and what it paid for.</p>
+    <h2>Who might have a conflict of interest</h2>
+    <p>The founder also makes small software. Tools he makes are marked <span class="chip made">Made here</span> and are scored with the same rubric as everything else, by the same process.</p>
+    <p>More on how decisions are made is on the <a href="#governance">governance page</a>.</p>
+  </div>`;
+}
+
+function governance() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Governance</p>
+  <div class="page-head" style="margin-top:14px"><h1>Governance</h1><p>Who decides what, and how that could change. Last updated 30 October 2026.</p></div>
+  <div class="prose">
+    <h2>Today</h2>
+    <p>Tools for Conviviality is run by one person, Jeff Humble, in Berlin. He decides what gets reviewed, how it is scored and what is published. That is simple and it is also a weakness, which is why this page writes down how he tries to behave as if more people were watching.</p>
+    <h2>The rubric is public</h2>
+    <p>Every tool is scored 0 to 5 on the same six questions, for a total out of 30, and the verdict bands are fixed. The questions and the bands are on <a href="#method">how we score</a>. Nobody gets a different test, and the giants we review as benchmarks get the same one.</p>
+    <h2>How the rubric changes</h2>
+    <p>If we change a question or a band, we intend to say what changed and why on the how-we-score page, and to rescore the tools that are affected together, so that numbers on different pages stay comparable. Anyone can propose a change through the <a href="#involve">get-involved form</a>.</p>
+    <h2>How reviews are made</h2>
+    <p>Reviews are drafted with the help of AI from public sources: the tool's own site, its documentation, its source code and its published policies. They are then judged against the rubric. Every review carries a date, scores are our opinion, and when a source could not be read the review says so. Our <a href="#voice">writing guide</a> describes the voice we aim for.</p>
+    <h2>Corrections and objections</h2>
+    <p>If you make a tool we reviewed, or you spot a mistake, tell us through the forms on this site. We correct factual errors, and we note changes that move a score. A maker can ask us to stop using their images. A maker cannot buy or veto a score, and we will not change one because it was unwelcome.</p>
+    <h2>Money and independence</h2>
+    <p>The <a href="#transparency">transparency page</a> says what we take and refuse and where tips go. In short: no paid listings, no ads, no trackers.</p>
+    <h2>What might change</h2>
+    <p>This project is new. If enough people want to help, it may become a non-profit with a board and a written charter. Until then, this page describes how one person tries to act like one.</p>
+  </div>`;
+}
+
+function voice() {
+  return `<p class="crumbs"><a href="#home">Home</a> / <a href="#governance">Governance</a> / How we write</p>
+  <div class="page-head" style="margin-top:14px"><h1>How we write</h1><p>A writing guide for the reviews and pages on this site, drawn from the way Ivan Illich wrote about tools. Last updated 30 October 2026.</p></div>
+  <div class="prose">
+    <p>Much of this site is drafted with AI, and AI writing has a recognisable smell: smooth, eager, vague and a little too pleased with everything. This guide is a check against that. It borrows from Illich's habits as a writer, not from his sentences, and nobody is asked to imitate him.</p>
+    <h2>Start with what the tool does to a person</h2>
+    <p>Begin from what you can do after using it that you could not do before, and what you can no longer do without it. A feature list tells you what a tool has. The question this site cares about is what it does to the person holding it.</p>
+    <h2>Find the limit</h2>
+    <p>Illich asked at what point a good tool turns on the people it serves. Ask it of every review: where does this stop helping? A tool can be excellent at its job and still be too much, and the review should say where.</p>
+    <h2>Plain words, named things</h2>
+    <p>Say the thing. "You need an account and a connection" beats "limited offline capability". Use short, concrete words, and active verbs. Cut anything that could appear in a review of any product: seamless, robust, powerful, empowering, landscape, ecosystem, game-changing.</p>
+    <h2>Judge, and show the evidence</h2>
+    <p>Reach a verdict and put the reason next to it, with a source the reader can open. Praise and criticism both get a fact. Say what we know and what we only infer, and say when a source could not be read.</p>
+    <h2>Serious, not solemn</h2>
+    <p>Write as one grown-up to another about something that matters. Dry is fine and a little wry is better. Never scold the reader, never snigger at a maker.</p>
+    <h2>Human scale</h2>
+    <p>Talk about people, workshops and neighbours, not users, stakeholders and solutions. Use "you". Say what the tool asks of you, in time, money, attention and hardware.</p>
+    <h2>Illich's words, sparingly</h2>
+    <p>Words such as convivial, radical monopoly and counterproductivity are useful, and they are also easy to overuse. Use one only when it says something plainer words cannot, and explain it the first time it appears on a page. Quote him briefly and credit him, and prefer to paraphrase.</p>
+    <h2>An example</h2>
+    <p><b>Before:</b> “Fooocus is built on Stable Diffusion XL and aims to feel like Midjourney without the subscription: you type what you want and it handles the dials for you.”</p>
+    <p><b>After:</b> “Fooocus asks one thing of you, which is to say what you want. It chooses the settings, runs the model on your own graphics card and carries on working with no connection once the first download is done. Its author now fixes bugs and adds nothing new, so what you install is a finished tool, and a finished tool is a fair thing to own.”</p>
+    <p>The second version is not better because it is nicer. It tells you what the tool asks of you, where the work happens and what the future holds.</p>
   </div>`;
 }
 
@@ -2385,7 +2450,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.com";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", transparency: "/transparency/", governance: "/governance/", voice: "/how-we-write/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2430,6 +2495,9 @@ function seo(id) {
   if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
+  if (id === "transparency") return out("Transparency", "What Tools for Conviviality takes, what it refuses, and where the money goes.", { noindex: true });
+  if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
+  if (id === "voice") return out("How we write", "A writing guide for the reviews on this site, drawn from Ivan Illich's habits as a writer.", { noindex: true });
   if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
   if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
@@ -2489,6 +2557,9 @@ function render() {
   else if (h === "compare") { html = compareIndex(); nav = ""; }
   else if (h.startsWith("cmp-")) { html = compare(h.slice(4)); nav = ""; }
   else if (h === "involve") { html = involve(); nav = ""; }
+  else if (h === "transparency") html = transparency();
+  else if (h === "governance") html = governance();
+  else if (h === "voice") html = voice();
   else if (h === "thanks") html = thanks();
   else html = notFound();
   setView(html);
