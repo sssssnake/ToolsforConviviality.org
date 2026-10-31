@@ -115,8 +115,8 @@ main .wrap { padding-block: 48px 64px; }
 .hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
 .purposes { margin-top: 32px; border-top: 1px solid var(--line); }
 .purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
-.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); flex: 1 1 auto; min-width: 0; }
-.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; flex: none; }
+.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); flex: 1 1 45%; min-width: 0; }
+.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); flex: 0 1 52%; text-align: right; line-height: 1.5; }
 .purpose:hover .p-verb { color: var(--accent); }
 .purpose:hover .p-meta { color: var(--fg); }
 
@@ -2829,13 +2829,14 @@ function about() {
   return `<p class="crumbs"><a href="#home">Home</a> / About</p>
   <div class="page-head" style="margin-top:14px"><h1>About this directory</h1><p>A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.</p></div>
   <div class="prose">
+    <p><b>This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher.</b></p>
     <p>We review tools from independent makers, from one-person vibe-coded experiments to established open-source projects, and score them on how much they put the possibilities in your hands. Now and then we review one of the giants too, as <a href="#benchmarks">benchmarks</a>, so there is something to measure against.</p>
     <h2>Who makes this</h2>
     <p>I'm Jeff Humble, a tech and UX guy based in Berlin. I started this site as a way to show off the tools I like: small, honest ones that do their job and leave you free to go. For years I couldn't say what they had in common, until I read Ivan Illich's book and found the word for it.</p>
     <p>It matters more now that AI can help almost anyone build software. There will be far more tools, and we need a new standard for judging which ones deserve our time. I wanted to reward the tools that protect the people using them, so that makers have a reason to build that way.</p>
     <p>If you find the directory useful and want to help keep it running, you can <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">buy us a coffee</a> with a one-off tip through Stripe. The tip is entirely optional, it buys no influence over scores, and the site stays free and ad-free either way.</p>
     <h2>About the book</h2>
-    <p>This website is an independent project inspired by Ivan Illich's 1973 book <i>Tools for Conviviality</i>. We are not affiliated with or endorsed by Illich's estate or his publishers. We paraphrase its ideas and quote it rarely and briefly, with a source.</p>
+    <p>The book is <i>Tools for Conviviality</i>, published in 1973. This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher. We paraphrase its ideas and quote it rarely and briefly, with a source.</p>
     <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
     <h2>About the reviews</h2>
     <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
@@ -2909,6 +2910,7 @@ function governance() {
   return `<p class="crumbs"><a href="#home">Home</a> / Governance</p>
   <div class="page-head" style="margin-top:14px"><h1>Governance</h1><p>Who decides what, and how that could change. Last updated 30 October 2026.</p></div>
   <div class="prose">
+    <p><b>This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher.</b></p>
     <h2>Who runs it</h2>
     <p>One person, Jeff Humble in Berlin, decides what gets reviewed, how it is scored and what is published. This page says how he tries to act as if more people were watching.</p>
     <h2>Scoring</h2>
@@ -2927,6 +2929,7 @@ function impressum() {
   return `<p class="crumbs"><a href="#home">Home</a> / Legal notice</p>
   <div class="page-head" style="margin-top:14px"><h1>Legal notice</h1><p>Impressum. Information pursuant to § 5 DDG (German Digital Services Act).</p></div>
   <div class="prose">
+    <p><b>This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher.</b></p>
     <p>Jeffrey Humble<br>Peschkestr. 5<br>12161 Berlin<br>Germany</p>
     <p>Email: <span class="addr">hello@toolsforconviviality.com</span></p>
     <p>Responsible for content under § 18 (2) MStV: Jeffrey Humble, address as above.</p>
