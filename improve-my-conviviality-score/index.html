@@ -427,6 +427,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
 .theme-btn:hover, .theme-btn:focus-visible { color: var(--fg); border-color: var(--fg); }
 .what-core{font-size:clamp(22px,3vw,30px);line-height:1.35;max-width:30em;margin:28px 0 8px;color:var(--ink)}
 </style>
+<script data-goatcounter="https://toolsforconviviality.goatcounter.com/count" data-goatcounter-settings="{&quot;no_onload&quot;: true}" async="" src="//gc.zgo.at/count.js"></script>
 <script src="/assets/ascii-bg.js" defer=""></script>
 <link rel="stylesheet" href="/assets/footer.css">
 <script src="/assets/footer-waves.js" defer=""></script>
@@ -2907,7 +2908,7 @@ function governance() {
     <h2>Reviews and corrections</h2>
     <p>Reviews are drafted with the help of AI from public sources and judged against the rubric. Each carries a date, and the scores are our opinion. If you spot a mistake, tell us through the forms on this site, and we will fix factual errors and note any change that moves a score. A maker can ask us to stop using their images but cannot buy or veto a score.</p>
     <h2>Money</h2>
-    <p>We do not sell listings, reviews, rankings or badges, and the site runs no ads, sets no tracking cookies and uses no analytics. The only income is the optional "Buy us a coffee" tip, which buys no influence and goes toward the domain, hosting and our time. As of 30 October 2026 nothing has come in, and once something does we will publish a short note each year saying roughly what came in and what it paid for. If a link on a page ever earns us money, that page will say so next to the link.</p>
+    <p>We do not sell listings, reviews, rankings or badges, and the site runs no ads, sets no tracking cookies and counts visits with GoatCounter, which stores no personal data (see the privacy policy). The only income is the optional "Buy us a coffee" tip, which buys no influence and goes toward the domain, hosting and our time. As of 30 October 2026 nothing has come in, and once something does we will publish a short note each year saying roughly what came in and what it paid for. If a link on a page ever earns us money, that page will say so next to the link.</p>
     <h2>Conflict of interest</h2>
     <p>The founder also makes small software. Tools he makes are marked <span class="chip made">Made here</span> and are scored with the same rubric as everything else.</p>
     <h2>What might change</h2>
@@ -2929,9 +2930,11 @@ function impressum() {
 
 function privacy() {
   return `<p class="crumbs"><a href="#home">Home</a> / Privacy policy</p>
-  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say. Last updated 30 October 2026.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>Privacy policy</h1><p>Datenschutz. Kept short because there is little to say. Last updated 31 October 2026.</p></div>
   <div class="prose">
-    <p>This site sets no cookies, runs no analytics and loads no third-party trackers. Fonts are served from this site's own server.</p>
+    <p>This site sets no cookies and loads no advertising or profiling trackers. Fonts are served from this site's own server.</p>
+    <h2>Counting visits</h2>
+    <p>We count visits with <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, an open-source analytics service, so we can see which pages people read and where they came from. When you open a page, your browser asks GoatCounter's servers for a small script, and the script reports the page you are on, its title, the page you came from and your country. According to <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a> it keeps only aggregated counts, stores no IP address, no User-Agent and no tracker ID, sets no cookies and stores nothing in your browser, and shares nothing with third parties. It uses your IP address and your browser's User-Agent for up to eight hours in memory to recognise a repeat visit and to work out your country, and does not save them. We have switched off the browser, system, region, language and screen size options, and we do not store individual page views. Our basis is our legitimate interest in knowing how the site is used (Art. 6(1)(f) GDPR). You can block the script with a content blocker and the site works the same.</p>
     <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
     <h2>If you buy us a coffee</h2>
     <p>The "Buy us a coffee" link takes you to a payment page hosted by Stripe, and Stripe's <a href="https://stripe.com/privacy" target="_blank" rel="noopener">privacy policy</a> applies there, including any cookies it sets. Nothing from Stripe loads on this site before you click. Stripe processes your card or wallet details, which we never see, and it may do so in the United States under its own safeguards.</p>
@@ -2947,7 +2950,7 @@ function thanks() {
   return `<section class="nf">
     <div class="nf-num" aria-hidden="true"><i class="nf-c"></i></div>
     <h1>Thank you for the coffee</h1>
-    <p class="nf-lede">Your tip goes toward the domain, the hosting and the time spent reviewing tools. Nothing is delivered in return, and it buys no influence over scores. The directory stays free, with no accounts and no tracking. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
+    <p class="nf-lede">Your tip goes toward the domain, the hosting and the time spent reviewing tools. Nothing is delivered in return, and it buys no influence over scores. The directory stays free, with no accounts and no cookies. If you would like to tell people about it, here is a card to share, and sharing is entirely optional.</p>
     <canvas id="coffee-card" class="coffee-card" role="img" aria-label="Share card that reads: I bought Tools for Conviviality a coffee. toolsforconviviality.org"></canvas>
     <div class="nf-links" style="margin-top:22px">
       <button class="btn primary" type="button" id="share-coffee">Share that you bought us a coffee <span aria-hidden="true">↗</span></button>
@@ -3073,9 +3076,21 @@ function seo(id) {
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
   if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
   if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
-  if (id === "privacy") return out("Privacy policy", "This site sets no cookies and runs no analytics.", { noindex: true });
+  if (id === "privacy") return out("Privacy policy", "This site sets no cookies and counts visits without tracking people.", { noindex: true });
   if (id.startsWith("size-")) return out("Directory by maker size", "Tools filtered by the size of their maker.", { noindex: true });
   return out("Page not found", "That page doesn't exist.", { noindex: true });
+}
+// GoatCounter: the site changes pages without reloading, so each page view is reported by hand, once per path.
+let gcLast = null, gcPending = null, gcTimer = null;
+function countView(path, title) {
+  if (navigator.webdriver || path === gcLast) return;
+  gcLast = path; gcPending = { path, title };
+  if (gcTimer) return;
+  gcTimer = setInterval(() => {
+    if (!window.goatcounter || !window.goatcounter.count) return;
+    clearInterval(gcTimer); gcTimer = null;
+    if (gcPending) { window.goatcounter.count(gcPending); gcPending = null; }
+  }, 100);
 }
 function applySeo(id) {
   const s = seo(id), path = id === "__404" ? location.pathname : idToPath(id), $ = x => document.getElementById(x);
@@ -3083,6 +3098,7 @@ function applySeo(id) {
   $("m-desc").setAttribute("content", s.desc);
   $("m-robots").setAttribute("content", s.noindex ? "noindex,follow" : "index,follow,max-image-preview:large");
   $("m-canon").setAttribute("href", SITE + path);
+  countView(path, s.title);
   $("og-type").setAttribute("content", s.type); $("og-title").setAttribute("content", s.title); $("og-desc").setAttribute("content", s.desc);
   $("og-url").setAttribute("content", SITE + path); $("og-image").setAttribute("content", s.image);
   $("ld").textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": s.ld });
