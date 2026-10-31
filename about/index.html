@@ -396,7 +396,7 @@ textarea { min-height: 96px; resize: vertical; }
 footer { border-top: 1px solid var(--line); }
 .hit-counter { flex-basis: 100%; display: flex; align-items: center; gap: 12px; margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .hit-digits { display: inline-flex; gap: 2px; }
-.hit-digits b { display: inline-block; min-width: 1.5em; padding: 4px 3px; text-align: center; font: 600 14px/1.2 var(--mono); color: var(--accent); background: linear-gradient(to bottom, var(--panel) 0 50%, var(--panel-2) 50% 100%); border: 1px solid var(--line); border-radius: 2px; font-variant-numeric: tabular-nums; }
+.hit-digits b { display: inline-block; min-width: 1.5em; padding: 4px 3px; text-align: center; font: 600 14px/1.2 var(--mono); color: #f1f2ed; background: linear-gradient(to bottom, #2547d4 0 50%, #193bc5 50% 100%); border: 1px solid #10268a; border-radius: 2px; font-variant-numeric: tabular-nums; }
 footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
 .foot-cats { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px 20px; align-items: baseline; padding-bottom: 16px; border-bottom: 1px solid var(--line); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; }
 .foot-cats .label { margin: 0; color: var(--muted); font-family: inherit; text-transform: none; letter-spacing: 0; font-size: 15px; }
@@ -494,7 +494,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">Buy us a coffee</a>
       <button class="theme-btn" type="button" id="theme" aria-label="Switch between light and dark mode" title="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"></path></svg></button>
     </div>
-    <p class="hit-counter" id="hit-counter" hidden=""><span class="hit-label">Pages read on this site</span><span class="hit-digits" id="hit-digits" aria-live="off"></span></p>
+    <p class="hit-counter" id="hit-counter" hidden=""><span class="hit-label">Visitors to this site</span><span class="hit-digits" id="hit-digits" aria-live="off"></span></p>
     <div class="foot-right">
       <span class="foot-brand"><span class="foot-c" aria-hidden="true"></span><span>Digital tools that serve the humans using them.</span></span>
     </div>
@@ -2941,7 +2941,7 @@ function privacy() {
   <div class="prose">
     <p>This site sets no cookies and loads no advertising or profiling trackers. Fonts are served from this site's own server.</p>
     <h2>Counting visits</h2>
-    <p>We count visits with <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, an open-source analytics service, so we can see which pages people read and where they came from. When you open a page, your browser asks GoatCounter's servers for a small script, and the script reports the page you are on, its title, the page you came from and your country. According to <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a> it keeps only aggregated counts, stores no IP address, no User-Agent and no tracker ID, sets no cookies and stores nothing in your browser, and shares nothing with third parties. It uses your IP address and your browser's User-Agent for up to eight hours in memory to recognise a repeat visit and to work out your country, and does not save them. We have switched off the browser, system, region, language and screen size options, and we do not store individual page views. The total number of pages read, shown in the footer, is public and is read from GoatCounter when you open a page. Our basis is our legitimate interest in knowing how the site is used (Art. 6(1)(f) GDPR). You can block the script with a content blocker and the site works the same.</p>
+    <p>We count visits with <a href="https://www.goatcounter.com/" target="_blank" rel="noopener">GoatCounter</a>, an open-source analytics service, so we can see which pages people read and where they came from. When you open a page, your browser asks GoatCounter's servers for a small script, and the script reports the page you are on, its title, the page you came from and your country. According to <a href="https://www.goatcounter.com/help/privacy" target="_blank" rel="noopener">GoatCounter's privacy policy</a> it keeps only aggregated counts, stores no IP address, no User-Agent and no tracker ID, sets no cookies and stores nothing in your browser, and shares nothing with third parties. It uses your IP address and your browser's User-Agent for up to eight hours in memory to recognise a repeat visit and to work out your country, and does not save them. We have switched off the browser, system, region, language and screen size options, and we do not store individual page views. The total count shown in the footer is public and is read from GoatCounter when you open a page. Our basis is our legitimate interest in knowing how the site is used (Art. 6(1)(f) GDPR). You can block the script with a content blocker and the site works the same.</p>
     <p>This site is hosted on GitHub Pages, run by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. To deliver the site, GitHub processes technical data such as your IP address in its server logs, and that data may be processed in the United States. How GitHub handles it is described in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>.</p>
     <h2>If you buy us a coffee</h2>
     <p>The "Buy us a coffee" link takes you to a payment page hosted by Stripe, and Stripe's <a href="https://stripe.com/privacy" target="_blank" rel="noopener">privacy policy</a> applies there, including any cookies it sets. Nothing from Stripe loads on this site before you click. Stripe processes your card or wallet details, which we never see, and it may do so in the United States under its own safeguards.</p>
@@ -3091,7 +3091,7 @@ function seo(id) {
 (function hitCounter() {
   if (navigator.webdriver) return;
   fetch("https://toolsforconviviality.goatcounter.com/counter/TOTAL.json").then(r => r.ok ? r.json() : null).then(d => {
-    const n = d && String(d.count).replace(/\D/g, ""); if (!n) return;
+    const n = d && d.count_unique != null && String(d.count_unique).replace(/\D/g, ""); if (!n) return;
     document.getElementById("hit-digits").innerHTML = n.padStart(6, "0").split("").map(c => `<b>${c}</b>`).join("");
     document.getElementById("hit-counter").hidden = false;
   }).catch(() => {});
