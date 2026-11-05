@@ -1793,11 +1793,11 @@ function home() {
   </section>
   <section class="sizes how">
     <p class="label">How it works</p>
-    <h2>Six questions, one score, no payment.</h2>
+    <h2>Six questions, one score, never for sale.</h2>
     <div class="size-grid">
       <a class="size-cell" href="#method"><span class="size-letter">6</span><span>Six questions</span><small>Footprint, lock-in, self-direction, power, longevity and delivery, like a heuristic evaluation of how software treats its people.</small></a>
       <a class="size-cell" href="#method"><span class="size-letter">30</span><span>Scored out of 30</span><small>Each tool gets 0 to 5 on every question and a verdict from Convivial to Restrictive. Scores are dated and open to change.</small></a>
-      <a class="size-cell" href="#about"><span class="size-letter">0</span><span>Paid for by nobody</span><small>We take no payment for listings, reviews or badges, so a score means what it says.</small></a>
+      <a class="size-cell" href="#about"><span class="size-letter">0</span><span>Scores aren't for sale</span><small>Payment never changes a score, so a score means what it says. Anything sponsored is labelled.</small></a>
       <a class="size-cell" href="#improve"><span class="size-letter">+</span><span>Make software?</span><small>A free field guide shows which changes raise a score, and what they do to your income.</small></a>
     </div>
   </section>
@@ -2269,7 +2269,7 @@ const AGENT_PROMPT = [
 "STEP 6. PREPARE A SUBMISSION (optional, and only if the human wants one)",
 "Ask: 'Would you like me to prepare a submission to the directory?' If they say no, stop here. If yes, prepare a suggestion with these fields: name, url, what (one or two sentences), size (S, M or L: who makes it), scope (gadget, tool or system), cat (category: agents, notes, files, maps, search, news, browsers, apps, video, music, home, office, passwords, photos, effects, design, talk, social, email, books or collect), price, source (link to public code, if any), img (a logo or screenshot link we may use, if any), data (what happens to people's data), rel (your connection: I made it, I help make it, or I just use it), self (your honest scores and evidence from Step 5) and update (yes, with a list of what changed, if the tool is already listed).",
 "Build a prefilled link by URL-encoding those values into https://toolsforconviviality.org/suggest/?name=...&url=...&what=...&size=...&scope=...&cat=...&price=...&source=...&img=...&data=...&rel=...&self=...&update=...",
-"Give the link to the human. They open it, check the text, and send it to hello@toolsforconviviality.org themselves. Never send email, post a form or contact the directory on the human's behalf. There is no payment and no guarantee: the directory scores every tool independently, and your self-assessment is only a starting point.",
+"Give the link to the human. They open it, check the text, and send it to hello@toolsforconviviality.org themselves. Never send email, post a form or contact the directory on the human's behalf. There is no guarantee of any score: the directory scores every tool independently, and your self-assessment is only a starting point.",
 "",
 "STEP 7. REPORT",
 "Tell the human what you proposed, what they approved, what you changed and on which branch, the scores before and after with evidence, which decisions are still waiting on them, and the prefilled link if they asked for one."
@@ -2289,7 +2289,7 @@ function forAgents() {
   <div class="prose">
     <p class="note">Prefer to do it yourself? Read the <a href="#improve">field guide for human makers</a>, a free PDF with the same audit.</p>
     <p>If you are building software with an AI coding agent, this page is for you, and for the agent. The prompt below makes the agent read your project, score it on the six questions we use for every tool, propose improvements and wait for your approval before it changes anything, then offer to prepare a submission to this directory. It works for a new tool or for one that is already listed and has since improved.</p>
-    <p>It does not buy a good score. Every submission is reviewed and scored independently, we take no payment, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
+    <p>It does not buy a good score. Every submission is reviewed and scored independently, and the agent's self-assessment is only a starting point. What it does is point your agent at the things that make a tool easy to use, easy to leave and hard to turn against its users, and those are the same things that raise the score.</p>
     <h2>How to use it</h2>
     <p>Open your project in a coding agent such as Claude Code, Codex or Cursor, paste the prompt, and answer the questions it asks you along the way. The prompt is built to stop and ask. It reads your project and shows you its audit and a numbered list of proposed changes first, changes nothing until you approve specific items, works on a new branch in small commits, and never pushes, deploys, publishes or sends anything on its own. Licensing, pricing, data and privacy changes always need a separate yes.</p>
   </div>
@@ -2404,12 +2404,12 @@ function about() {
     <h2>Who makes this</h2>
     <p>I'm Jeff Humble, a tech and UX guy based in Berlin. I started this site as a way to show off the tools I like: small, honest ones that do their job and leave you free to go. For years I couldn't say what they had in common, until I read Ivan Illich's book and found the word for it.</p>
     <p>It matters more now that AI can help almost anyone build software. There will be far more tools, and we need a new standard for judging which ones deserve our time. I wanted to reward the tools that protect the people using them, so that makers have a reason to build that way.</p>
-    <p>If you find the directory useful and want to help keep it running, you can <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">buy us a coffee</a> with a one-off tip through Stripe. The tip is entirely optional, it buys no influence over scores, and the site stays free and ad-free either way.</p>
+    <p>If you find the directory useful and want to help keep it running, you can <a href="https://buy.stripe.com/eVqfZhfm68Cugz5bGs7bW01" target="_blank" rel="noopener">buy us a coffee</a> with a one-off tip through Stripe. The tip is entirely optional and buys no influence over scores, and the site stays free to read either way.</p>
     <h2>About the book</h2>
     <p>The book is <i>Tools for Conviviality</i>, published in 1973. This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher. We paraphrase its ideas and quote it rarely and briefly, with a source.</p>
     <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
     <h2>About the reviews</h2>
-    <p>Scores reflect our judgement on the date shown on each review and may change as tools change. We don't take payment for listings or reviews. If that ever changes for a link, the page will say so.</p>
+    <p>Scores reflect our judgement on the date shown on each review and may change as tools change. Scores are never for sale. Some pages may carry sponsored content or paid links, and where they do, the page says so next to it.</p>
     <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
     <h2>Corrections</h2>
     <p>If you make a tool we have reviewed, or you spot a mistake in any review, including the benchmarks, tell us through the <a href="#submit">suggestion form</a> or at <span class="addr">hello@toolsforconviviality.org</span> and we will check it and correct it. Reviews state our opinion and rely on public sources, and where something is only alleged, we say so and keep it out of the score. Product and company names belong to their owners, and we are not affiliated with any of them.</p>
@@ -2455,7 +2455,7 @@ function involve() {
   return `<p class="crumbs"><a href="#home">Home</a> / Get involved</p>
   <div class="page-head" style="margin-top:14px"><h1>Get involved</h1><p>This project is new, and it could grow into something bigger. If you design, write, build, research or just have strong opinions about software, there is room to help shape it.</p></div>
   <div class="prose">
-    <p>Right now it is a volunteer effort and not a paid position, and it may grow into a non-profit one day if enough people care about it. Say whatever you like below: what you could bring, what you would change, what you think of the directory so far. Rough ideas are welcome. If you have a tool to suggest, there is <a href="#submit">a form for that</a>. If you are wondering how decisions get made here, <a href="#governance">this page explains</a>.</p>
+    <p>Right now it is a volunteer effort and not a paid position, and it may grow into something more formal one day if enough people care about it. Say whatever you like below: what you could bring, what you would change, what you think of the directory so far. Rough ideas are welcome. If you have a tool to suggest, there is <a href="#submit">a form for that</a>. If you are wondering how decisions get made here, <a href="#governance">this page explains</a>.</p>
   </div>
   <form id="involve" novalidate>
     <div class="row2">
@@ -2478,7 +2478,7 @@ function involve() {
 
 function governance() {
   return `<p class="crumbs"><a href="#home">Home</a> / Governance</p>
-  <div class="page-head" style="margin-top:14px"><h1>Governance</h1><p>Who decides what, and how that could change. Last updated 30 October 2026.</p></div>
+  <div class="page-head" style="margin-top:14px"><h1>Governance</h1><p>Who decides what, and how that could change. Last updated 5 November 2026.</p></div>
   <div class="prose">
     <p><b>This website is an independent project inspired by Ivan Illich's book, with no connection to his estate or publisher.</b></p>
     <h2>Who runs it</h2>
@@ -2488,11 +2488,11 @@ function governance() {
     <h2>Reviews and corrections</h2>
     <p>Reviews are drafted with the help of AI from public sources and judged against the rubric. Each carries a date, and the scores are our opinion. If you spot a mistake, tell us through the forms on this site, and we will fix factual errors and note any change that moves a score. A maker can ask us to stop using their images but cannot buy or veto a score.</p>
     <h2>Money</h2>
-    <p>We do not sell listings, reviews, rankings or badges, and the site runs no ads, sets no tracking cookies and counts visits with GoatCounter, which stores no personal data (see the privacy policy). The only income is the optional "Buy us a coffee" tip, which buys no influence and goes toward the domain, hosting and our time. As of 30 October 2026 nothing has come in, and once something does we will publish a short note each year saying roughly what came in and what it paid for. If a link on a page ever earns us money, that page will say so next to the link.</p>
+    <p>Scores are never for sale. No payment changes a score, a verdict or a badge, and a maker cannot buy or veto one. The site sets no tracking cookies and counts visits with GoatCounter, which stores no personal data (see the privacy policy). It may earn money in several ways, including the optional "Buy us a coffee" tip, sponsored content and links that earn us a commission, and that money goes toward the domain, hosting and our time. Anything sponsored or paid is labelled as such next to it, and a sponsored review is scored with the same rubric as every other review.</p>
     <h2>Conflict of interest</h2>
-    <p>The founder also makes small software. Tools he makes are marked <span class="chip made">Made here</span> and are scored with the same rubric as everything else.</p>
+    <p>The founder also makes small software. Tools he makes are marked <span class="chip made">Made here</span> and are scored with the same rubric as everything else. If he is paid for a review, it is marked as sponsored and scored the same way.</p>
     <h2>What might change</h2>
-    <p>This project is new and may become a non-profit with a board and a written charter if enough people want to help.</p>
+    <p>This project is new and may grow into something more formal, with a written charter, if enough people want to help.</p>
   </div>`;
 }
 function impressum() {
