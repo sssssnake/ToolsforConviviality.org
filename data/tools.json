@@ -1203,5 +1203,37 @@
     "name": "Moltis",
     "url": "https://github.com/moltis-org/moltis",
     "repo": "moltis-org/moltis"
+  },
+  {
+    "slug": "affine",
+    "name": "AFFiNE",
+    "url": "https://affine.pro",
+    "repo": "toeverything/affine"
+  },
+  {
+    "slug": "wbo",
+    "name": "WBO",
+    "url": "https://github.com/lovasoa/whitebophir",
+    "repo": "lovasoa/whitebophir"
+  },
+  {
+    "slug": "drawio",
+    "name": "draw.io",
+    "url": "https://www.drawio.com",
+    "repo": "jgraph/drawio"
+  },
+  {
+    "slug": "tldraw",
+    "name": "tldraw",
+    "url": "https://tldraw.dev",
+    "repo": "tldraw/tldraw"
+  },
+  {
+    "slug": "miro",
+    "name": "Miro",
+    "url": "https://miro.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
