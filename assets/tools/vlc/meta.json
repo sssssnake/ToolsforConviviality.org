@@ -1,0 +1,29 @@
+{
+  "slug": "vlc",
+  "name": "VLC",
+  "source": "https://www.videolan.org/vlc/",
+  "capturedAt": "2026-11-05T16:52:31.032Z",
+  "alt": "Screenshot of the VLC website",
+  "pageTitle": "Official download of VLC media player, the best Open Source player - VideoLAN",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/vlc/shot-480.webp",
+    "960": "assets/tools/vlc/shot-960.webp",
+    "1600": "assets/tools/vlc/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/vlc/mobile-390.webp",
+    "780": "assets/tools/vlc/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/vlc/icon-128.webp",
+    "256": "assets/tools/vlc/icon-256.webp",
+    "from": "https://images.videolan.org/images/favicon-192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

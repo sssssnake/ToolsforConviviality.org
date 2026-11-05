@@ -1,0 +1,34 @@
+{
+  "slug": "affine",
+  "name": "AFFiNE",
+  "source": "https://affine.pro",
+  "capturedAt": "2026-11-05T16:52:41.855Z",
+  "alt": "Screenshot of the AFFiNE website",
+  "pageTitle": "AFFiNE — Open-Source Knowledge Base Software",
+  "pageDescription": "AFFiNE combines docs, whiteboards, databases, and optional AI in one local-first workspace. MIT-licensed editor; self-host free for up to 10 seats per workspace.",
+  "shot": {
+    "480": "assets/tools/affine/shot-480.webp",
+    "960": "assets/tools/affine/shot-960.webp",
+    "1600": "assets/tools/affine/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/affine/mobile-390.webp",
+    "780": "assets/tools/affine/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/affine/icon-128.webp",
+    "256": "assets/tools/affine/icon-256.webp",
+    "from": "https://affine.pro/favicon-96.png",
+    "sourceWidth": 96,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/affine/social-600.webp",
+    "1200": "assets/tools/affine/social-1200.webp",
+    "from": "https://affine.pro/og.jpeg"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

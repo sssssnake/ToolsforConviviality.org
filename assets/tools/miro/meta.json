@@ -1,0 +1,28 @@
+{
+  "slug": "miro",
+  "name": "Miro",
+  "source": "https://miro.com",
+  "capturedAt": "2026-11-05T16:53:20.641Z",
+  "alt": "Screenshot of the Miro website",
+  "pageTitle": "AI Innovation Workspace | Miro",
+  "pageDescription": "Speed up product development from ideation to launch. Align teams, break tool silos and ship what customers need in one AI-powered visual platform.",
+  "icon": {
+    "128": "assets/tools/miro/icon-128.webp",
+    "256": "assets/tools/miro/icon-256.webp",
+    "from": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/miro/social-600.webp",
+    "1200": "assets/tools/miro/social-1200.webp",
+    "from": "https://framerusercontent.com/assets/Bab0War93Jeq5MpDPwqKFiyI.png"
+  },
+  "color": "#f8d838",
+  "colorFrom": "icon",
+  "notes": [
+    "dismissed banner with button:has-text(\"Reject all\")",
+    "screenshot skipped by override"
+  ]
+}

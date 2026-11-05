@@ -1,113 +1,36 @@
 {
-  "startedAt": "2026-10-30T21:40:52.602Z",
+  "startedAt": "2026-11-05T16:52:28.881Z",
   "captured": [
     {
-      "slug": "aider",
+      "slug": "vlc",
       "notes": []
     },
     {
-      "slug": "cline",
+      "slug": "affine",
       "notes": []
     },
     {
-      "slug": "opencode",
+      "slug": "wbo",
       "notes": []
     },
     {
-      "slug": "kilo-code",
-      "notes": []
-    },
-    {
-      "slug": "zed",
-      "notes": []
-    },
-    {
-      "slug": "github-copilot",
+      "slug": "drawio",
       "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "anythingllm",
-      "notes": []
-    },
-    {
-      "slug": "librechat",
-      "notes": []
-    },
-    {
-      "slug": "open-webui",
-      "notes": []
-    },
-    {
-      "slug": "chatbox",
-      "notes": []
-    },
-    {
-      "slug": "khoj",
-      "notes": []
-    },
-    {
-      "slug": "piper",
-      "notes": []
-    },
-    {
-      "slug": "kokoro",
-      "notes": [
-        "dismissed banner with button:has-text(\"Dismiss\")",
         "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
+        "icon taken from the favicon service",
+        "social image failed: HTTP 404 for https://www.drawio.com/img/blog/drawio-social-card.png"
       ]
     },
     {
-      "slug": "chatterbox",
+      "slug": "tldraw",
       "notes": []
     },
     {
-      "slug": "espeak-ng",
-      "notes": []
-    },
-    {
-      "slug": "sherpatts",
-      "notes": []
-    },
-    {
-      "slug": "elevenlabs",
+      "slug": "miro",
       "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
         "screenshot skipped by override"
       ]
-    },
-    {
-      "slug": "open-interpreter",
-      "notes": []
-    },
-    {
-      "slug": "openai-codex",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "claude-code",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "nanobot",
-      "notes": []
-    },
-    {
-      "slug": "nanoclaw",
-      "notes": []
-    },
-    {
-      "slug": "ironclaw",
-      "notes": []
-    },
-    {
-      "slug": "moltis",
-      "notes": []
     }
   ],
   "skipped": [
@@ -790,13 +713,104 @@
     {
       "slug": "zoom",
       "reason": "recent"
-    }
-  ],
-  "failed": [
+    },
     {
-      "slug": "vlc",
-      "error": "page.goto: Download is starting\nCall log:\n  - navigating to \"https://www.videolan.org/vlc/\", waiting until \"load\"\n"
+      "slug": "aider",
+      "reason": "recent"
+    },
+    {
+      "slug": "cline",
+      "reason": "recent"
+    },
+    {
+      "slug": "opencode",
+      "reason": "recent"
+    },
+    {
+      "slug": "kilo-code",
+      "reason": "recent"
+    },
+    {
+      "slug": "zed",
+      "reason": "recent"
+    },
+    {
+      "slug": "github-copilot",
+      "reason": "recent"
+    },
+    {
+      "slug": "anythingllm",
+      "reason": "recent"
+    },
+    {
+      "slug": "librechat",
+      "reason": "recent"
+    },
+    {
+      "slug": "open-webui",
+      "reason": "recent"
+    },
+    {
+      "slug": "chatbox",
+      "reason": "recent"
+    },
+    {
+      "slug": "khoj",
+      "reason": "recent"
+    },
+    {
+      "slug": "piper",
+      "reason": "recent"
+    },
+    {
+      "slug": "kokoro",
+      "reason": "recent"
+    },
+    {
+      "slug": "chatterbox",
+      "reason": "recent"
+    },
+    {
+      "slug": "espeak-ng",
+      "reason": "recent"
+    },
+    {
+      "slug": "sherpatts",
+      "reason": "recent"
+    },
+    {
+      "slug": "elevenlabs",
+      "reason": "recent"
+    },
+    {
+      "slug": "open-interpreter",
+      "reason": "recent"
+    },
+    {
+      "slug": "openai-codex",
+      "reason": "recent"
+    },
+    {
+      "slug": "claude-code",
+      "reason": "recent"
+    },
+    {
+      "slug": "nanobot",
+      "reason": "recent"
+    },
+    {
+      "slug": "nanoclaw",
+      "reason": "recent"
+    },
+    {
+      "slug": "ironclaw",
+      "reason": "recent"
+    },
+    {
+      "slug": "moltis",
+      "reason": "recent"
     }
   ],
-  "finishedAt": "2026-10-30T21:45:21.313Z"
+  "failed": [],
+  "finishedAt": "2026-11-05T16:53:34.866Z"
 }

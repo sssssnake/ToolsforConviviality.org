@@ -1,0 +1,33 @@
+{
+  "slug": "wbo",
+  "name": "WBO",
+  "source": "https://github.com/lovasoa/whitebophir",
+  "capturedAt": "2026-11-05T16:52:50.383Z",
+  "alt": "Screenshot of the WBO website",
+  "pageTitle": "GitHub - lovasoa/whitebophir: Online collaborative Whiteboard that is simple, free, easy to use and to deploy · GitHub",
+  "pageDescription": "Online collaborative Whiteboard that is simple, free, easy to use and  to deploy - lovasoa/whitebophir",
+  "shot": {
+    "480": "assets/tools/wbo/shot-480.webp",
+    "960": "assets/tools/wbo/shot-960.webp",
+    "1600": "assets/tools/wbo/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/wbo/mobile-390.webp",
+    "780": "assets/tools/wbo/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/wbo/icon-128.webp",
+    "256": "assets/tools/wbo/icon-256.webp",
+    "svg": "assets/tools/wbo/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/wbo/social-600.webp",
+    "1200": "assets/tools/wbo/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/8eedf352aff3d793be2272b99edd4e666b78116e7d134835df97a7c855fc7386/lovasoa/whitebophir"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

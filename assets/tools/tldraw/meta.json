@@ -1,0 +1,34 @@
+{
+  "slug": "tldraw",
+  "name": "tldraw",
+  "source": "https://tldraw.dev",
+  "capturedAt": "2026-11-05T16:53:08.001Z",
+  "alt": "Screenshot of the tldraw website",
+  "pageTitle": "tldraw: Infinite Canvas SDK for React",
+  "pageDescription": "The tldraw SDK provides tools, services, and APIs to build beautiful whiteboards and infinite canvas applications with real-time collaboration and a powerful React-based canvas.",
+  "shot": {
+    "480": "assets/tools/tldraw/shot-480.webp",
+    "960": "assets/tools/tldraw/shot-960.webp",
+    "1600": "assets/tools/tldraw/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/tldraw/mobile-390.webp",
+    "780": "assets/tools/tldraw/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/tldraw/icon-128.webp",
+    "256": "assets/tools/tldraw/icon-256.webp",
+    "from": "https://tldraw.dev/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/tldraw/social-600.webp",
+    "1200": "assets/tools/tldraw/social-1200.webp",
+    "from": "https://cdn.sanity.io/images/ij3ytvrl/production/9bbdab1656512165d2426e787a553be0a8fd60a6-512x256.webp?w=1200&fit=max"
+  },
+  "color": "#000000",
+  "colorFrom": "theme-color",
+  "notes": []
+}

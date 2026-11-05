@@ -6212,7 +6212,205 @@
       "colorFrom": "theme-color",
       "notes": [],
       "cfg": "[\"https://github.com/moltis-org/moltis\",null,null]"
+    },
+    "vlc": {
+      "slug": "vlc",
+      "name": "VLC",
+      "source": "https://www.videolan.org/vlc/",
+      "capturedAt": "2026-11-05T16:52:31.032Z",
+      "alt": "Screenshot of the VLC website",
+      "pageTitle": "Official download of VLC media player, the best Open Source player - VideoLAN",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/vlc/shot-480.webp",
+        "960": "assets/tools/vlc/shot-960.webp",
+        "1600": "assets/tools/vlc/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/vlc/mobile-390.webp",
+        "780": "assets/tools/vlc/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/vlc/icon-128.webp",
+        "256": "assets/tools/vlc/icon-256.webp",
+        "from": "https://images.videolan.org/images/favicon-192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.videolan.org/vlc/\",null,null]"
+    },
+    "affine": {
+      "slug": "affine",
+      "name": "AFFiNE",
+      "source": "https://affine.pro",
+      "capturedAt": "2026-11-05T16:52:41.855Z",
+      "alt": "Screenshot of the AFFiNE website",
+      "pageTitle": "AFFiNE — Open-Source Knowledge Base Software",
+      "pageDescription": "AFFiNE combines docs, whiteboards, databases, and optional AI in one local-first workspace. MIT-licensed editor; self-host free for up to 10 seats per workspace.",
+      "shot": {
+        "480": "assets/tools/affine/shot-480.webp",
+        "960": "assets/tools/affine/shot-960.webp",
+        "1600": "assets/tools/affine/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/affine/mobile-390.webp",
+        "780": "assets/tools/affine/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/affine/icon-128.webp",
+        "256": "assets/tools/affine/icon-256.webp",
+        "from": "https://affine.pro/favicon-96.png",
+        "sourceWidth": 96,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/affine/social-600.webp",
+        "1200": "assets/tools/affine/social-1200.webp",
+        "from": "https://affine.pro/og.jpeg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://affine.pro\",null,null]"
+    },
+    "wbo": {
+      "slug": "wbo",
+      "name": "WBO",
+      "source": "https://github.com/lovasoa/whitebophir",
+      "capturedAt": "2026-11-05T16:52:50.383Z",
+      "alt": "Screenshot of the WBO website",
+      "pageTitle": "GitHub - lovasoa/whitebophir: Online collaborative Whiteboard that is simple, free, easy to use and to deploy · GitHub",
+      "pageDescription": "Online collaborative Whiteboard that is simple, free, easy to use and  to deploy - lovasoa/whitebophir",
+      "shot": {
+        "480": "assets/tools/wbo/shot-480.webp",
+        "960": "assets/tools/wbo/shot-960.webp",
+        "1600": "assets/tools/wbo/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/wbo/mobile-390.webp",
+        "780": "assets/tools/wbo/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/wbo/icon-128.webp",
+        "256": "assets/tools/wbo/icon-256.webp",
+        "svg": "assets/tools/wbo/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/wbo/social-600.webp",
+        "1200": "assets/tools/wbo/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/8eedf352aff3d793be2272b99edd4e666b78116e7d134835df97a7c855fc7386/lovasoa/whitebophir"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/lovasoa/whitebophir\",null,null]"
+    },
+    "drawio": {
+      "slug": "drawio",
+      "name": "draw.io",
+      "source": "https://www.drawio.com",
+      "capturedAt": "2026-11-05T16:53:00.616Z",
+      "alt": "Screenshot of the draw.io website",
+      "pageTitle": "Security-first diagramming for teams | draw.io",
+      "pageDescription": "Free diagramming application with 100M+ users. Store your data wherever you want—we can't access it.",
+      "shot": {
+        "480": "assets/tools/drawio/shot-480.webp",
+        "960": "assets/tools/drawio/shot-960.webp",
+        "1600": "assets/tools/drawio/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/drawio/mobile-390.webp",
+        "780": "assets/tools/drawio/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/drawio/icon-128.webp",
+        "256": "assets/tools/drawio/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "color": "#e88808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service",
+        "social image failed: HTTP 404 for https://www.drawio.com/img/blog/drawio-social-card.png"
+      ],
+      "cfg": "[\"https://www.drawio.com\",null,null]"
+    },
+    "tldraw": {
+      "slug": "tldraw",
+      "name": "tldraw",
+      "source": "https://tldraw.dev",
+      "capturedAt": "2026-11-05T16:53:08.001Z",
+      "alt": "Screenshot of the tldraw website",
+      "pageTitle": "tldraw: Infinite Canvas SDK for React",
+      "pageDescription": "The tldraw SDK provides tools, services, and APIs to build beautiful whiteboards and infinite canvas applications with real-time collaboration and a powerful React-based canvas.",
+      "shot": {
+        "480": "assets/tools/tldraw/shot-480.webp",
+        "960": "assets/tools/tldraw/shot-960.webp",
+        "1600": "assets/tools/tldraw/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/tldraw/mobile-390.webp",
+        "780": "assets/tools/tldraw/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/tldraw/icon-128.webp",
+        "256": "assets/tools/tldraw/icon-256.webp",
+        "from": "https://tldraw.dev/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/tldraw/social-600.webp",
+        "1200": "assets/tools/tldraw/social-1200.webp",
+        "from": "https://cdn.sanity.io/images/ij3ytvrl/production/9bbdab1656512165d2426e787a553be0a8fd60a6-512x256.webp?w=1200&fit=max"
+      },
+      "color": "#000000",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://tldraw.dev\",null,null]"
+    },
+    "miro": {
+      "slug": "miro",
+      "name": "Miro",
+      "source": "https://miro.com",
+      "capturedAt": "2026-11-05T16:53:20.641Z",
+      "alt": "Screenshot of the Miro website",
+      "pageTitle": "AI Innovation Workspace | Miro",
+      "pageDescription": "Speed up product development from ideation to launch. Align teams, break tool silos and ship what customers need in one AI-powered visual platform.",
+      "icon": {
+        "128": "assets/tools/miro/icon-128.webp",
+        "256": "assets/tools/miro/icon-256.webp",
+        "from": "https://framerusercontent.com/images/6FBG66PBxjV2QFaDfIdUi5mi9A.png",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/miro/social-600.webp",
+        "1200": "assets/tools/miro/social-1200.webp",
+        "from": "https://framerusercontent.com/assets/Bab0War93Jeq5MpDPwqKFiyI.png"
+      },
+      "color": "#f8d838",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://miro.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-10-30T21:45:21.310Z"
+  "updatedAt": "2026-11-05T16:53:34.863Z"
 }

@@ -1,0 +1,34 @@
+{
+  "slug": "drawio",
+  "name": "draw.io",
+  "source": "https://www.drawio.com",
+  "capturedAt": "2026-11-05T16:53:00.616Z",
+  "alt": "Screenshot of the draw.io website",
+  "pageTitle": "Security-first diagramming for teams | draw.io",
+  "pageDescription": "Free diagramming application with 100M+ users. Store your data wherever you want—we can't access it.",
+  "shot": {
+    "480": "assets/tools/drawio/shot-480.webp",
+    "960": "assets/tools/drawio/shot-960.webp",
+    "1600": "assets/tools/drawio/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/drawio/mobile-390.webp",
+    "780": "assets/tools/drawio/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/drawio/icon-128.webp",
+    "256": "assets/tools/drawio/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "color": "#e88808",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service",
+    "social image failed: HTTP 404 for https://www.drawio.com/img/blog/drawio-social-card.png"
+  ]
+}
