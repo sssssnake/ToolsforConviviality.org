@@ -77,7 +77,7 @@ p { margin: 0; }
 main .wrap { padding-block: 48px 64px; }
 
 /* Home */
-.home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: start; }
+.home { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 48px; align-items: center; }
 .hero { position: relative; }
 .hero > * { position: relative; z-index: 1; }
 .hero h1 { font-size: clamp(44px, 7vw, 76px); line-height: .98; color: var(--accent); margin-top: 14px; }
@@ -113,10 +113,15 @@ main .wrap { padding-block: 48px 64px; }
   .ticker-track [data-dup] { display: none; }
 }
 .hero .lede { margin-top: 22px; color: var(--fg); max-width: 54ch; font-size: 17px; }
-.purposes { margin-top: 32px; border-top: 1px solid var(--line); }
-.purpose { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); text-decoration: none; }
-.purpose .p-verb { font-size: clamp(19px, 2.4vw, 22px); flex: 1 1 45%; min-width: 0; }
-.purpose .p-meta { font-family: var(--mono); font-size: 12px; color: var(--muted); flex: 0 1 52%; text-align: right; line-height: 1.5; }
+.start-here { margin-top: 56px; }
+.start-here .start { font-size: 15px; font-weight: 500; color: var(--muted); margin: 0 0 24px; font-family: var(--mono); letter-spacing: .06em; text-transform: uppercase; }
+.pgroups { columns: 3 300px; column-gap: 48px; }
+.pgroup { break-inside: avoid; margin-bottom: 40px; }
+.pg-name { margin: 0; padding-bottom: 8px; border-bottom: 2px solid var(--accent); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); display: flex; justify-content: space-between; gap: 12px; }
+.pg-name span { color: var(--muted); }
+.purpose { display: block; padding-block: 12px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.purpose .p-verb { display: block; font-size: 19px; line-height: 1.25; }
+.purpose .p-meta { display: block; margin-top: 4px; font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.5; }
 .purpose:hover .p-verb { color: var(--accent); }
 .purpose:hover .p-meta { color: var(--fg); }
 
@@ -394,7 +399,8 @@ textarea { min-height: 96px; resize: vertical; }
 
 /* Footer */
 footer { border-top: 1px solid var(--line); }
-.hit-counter { flex-basis: 100%; display: flex; align-items: center; gap: 12px; margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.hit-counter { flex-basis: 100%; display: flex; align-items: center; gap: 12px; margin: 0; font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: inherit; opacity: .8; }
+.hit-counter[hidden] { display: none; }
 .hit-digits { display: inline-flex; gap: 2px; }
 .hit-digits b { display: inline-block; min-width: 1.5em; padding: 4px 3px; text-align: center; font: 600 14px/1.2 var(--mono); color: #f1f2ed; background: linear-gradient(to bottom, #2547d4 0 50%, #193bc5 50% 100%); border: 1px solid #10268a; border-radius: 2px; font-variant-numeric: tabular-nums; }
 footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding-block: 22px 32px; font-size: 14px; align-items: center; }
@@ -421,7 +427,6 @@ footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wr
   .tool-row.ranked .score-mini { grid-column: 2; }
   main .wrap { padding-block: 32px 48px; }
   .row2 { grid-template-columns: minmax(0, 1fr); }
-  .purpose { flex-direction: column; gap: 2px; }
   .tool-row { grid-template-columns: minmax(0, 1fr); }
   .score-mini { justify-items: start; text-align: left; grid-auto-flow: column; align-items: baseline; gap: 10px; }
 }
@@ -489,7 +494,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
 
 <footer>
   <div class="wrap">
-    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/code/">Coding agents</a><a href="/category/agents/">Personal agents</a><a href="/category/local-ai/">Local AI</a><a href="/category/ai-images/">AI image tools</a><a href="/category/dictation/">Dictation &amp; transcription</a><a href="/category/tts/">Text to speech</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/files/">Files &amp; sync</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/search/">Search</a><a href="/category/translate/">Translation</a><a href="/category/news/">News &amp; feeds</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/photos/">Photos</a><a href="/category/effects/">Photo &amp; video effects</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/whiteboards/">Whiteboards &amp; diagrams</a><a href="/category/talk/">Chat</a><a href="/category/meet/">Video calls</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/calendar/">Calendar</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/browsers/">Browsers</a><a href="/category/apps/">App stores</a><a href="/category/video/">Video</a><a href="/category/music/">Music</a><a href="/category/home/">Home &amp; network</a><a href="/category/office/">Office</a><a href="/category/collect/">Collecting &amp; research</a></nav>
+    <nav class="foot-cats" id="foot-cats" aria-label="Categories"><span class="label">Categories</span><a href="/category/code/">Coding agents</a><a href="/category/agents/">Personal agents</a><a href="/category/local-ai/">Local AI</a><a href="/category/ai-images/">AI image tools</a><a href="/category/dictation/">Dictation &amp; transcription</a><a href="/category/tts/">Text to speech</a><a href="/category/notes/">Writing &amp; notes</a><a href="/category/office/">Office</a><a href="/category/collect/">Collecting &amp; research</a><a href="/category/whiteboards/">Whiteboards &amp; diagrams</a><a href="/category/design/">Design &amp; creative tools</a><a href="/category/effects/">Photo &amp; video effects</a><a href="/category/talk/">Chat</a><a href="/category/meet/">Video calls</a><a href="/category/social/">Social feeds</a><a href="/category/email/">Email</a><a href="/category/calendar/">Calendar</a><a href="/category/news/">News &amp; feeds</a><a href="/category/books/">Books &amp; libraries</a><a href="/category/video/">Video</a><a href="/category/music/">Music</a><a href="/category/search/">Search</a><a href="/category/maps/">Maps &amp; places</a><a href="/category/translate/">Translation</a><a href="/category/files/">Files &amp; sync</a><a href="/category/photos/">Photos</a><a href="/category/passwords/">Passwords &amp; security</a><a href="/category/browsers/">Browsers</a><a href="/category/apps/">App stores</a><a href="/category/home/">Home &amp; network</a></nav>
     <p class="foot-cta"><span>Got a tool you love, or an idea for this directory? Help shape this project:</span> <a href="/suggest/">Suggest a tool <span aria-hidden="true">↗</span></a> <a href="/get-involved/">Get involved <span aria-hidden="true">↗</span></a></p>
     <div class="foot-links">
       <a href="/how-we-score/">How we score</a>
@@ -564,6 +569,28 @@ const CATS = [
   { id: "office", name: "Office", verb: "Write, calculate and present", instead: "Microsoft 365 and Google Docs" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
+// Homepage groups. Any category missing here still appears, under "More".
+const GROUPS = [
+  { name: "AI on my own terms", cats: ["code", "agents", "local-ai", "ai-images", "dictation", "tts"] },
+  { name: "Write, think and make", cats: ["notes", "office", "collect", "whiteboards", "design", "effects"] },
+  { name: "Talk and meet", cats: ["talk", "meet", "social", "email", "calendar"] },
+  { name: "Read, watch and listen", cats: ["news", "books", "video", "music"] },
+  { name: "Find things out", cats: ["search", "maps", "translate"] },
+  { name: "Keep my things safe", cats: ["files", "photos", "passwords"] },
+  { name: "Run my devices", cats: ["browsers", "apps", "home"] }
+];
+function groupedCats() {
+  const seen = new Set(), out = [];
+  GROUPS.forEach(g => {
+    const cats = g.cats.map(id => CATS.find(c => c.id === id)).filter(Boolean);
+    cats.forEach(c => seen.add(c.id));
+    if (cats.length) out.push({ name: g.name, cats });
+  });
+  const rest = CATS.filter(c => !seen.has(c.id));
+  if (rest.length) out.push({ name: "More", cats: rest });
+  return out;
+}
+
 const TOOLS = [
   { slug: "localsend", name: "LocalSend", cat: "files", size: "M", scope: "gadget", url: "https://localsend.org",
     one: "Send files between any two devices on the same Wi-Fi.", replaces: "AirDrop, Google Quick Share",
@@ -2254,11 +2281,6 @@ function home() {
       <h1>${heroTitle()}</h1>
       <p class="lede">Small, independent tools, scored out of 30 on six questions from Ivan Illich's <i>Tools for Conviviality</i>. Does the software serve you, or the other way around?</p>
       <div class="hero-cta"><a class="btn primary" href="#ranking">See the ranking <span aria-hidden="true">↗</span></a><a class="btn" href="#what">What is conviviality? <span aria-hidden="true">↗</span></a></div>
-      <h2 class="start">Or start with what you want to do</h2>
-      <div class="purposes">${CATS.map(c => {
-        const list = toolsIn(c.id);
-        return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""} ↗</span></a>`;
-      }).join("")}</div>
     </section>
     <aside>
       <div class="card feature" aria-live="polite">
@@ -2280,6 +2302,13 @@ function home() {
       </div>
     </aside>
   </div>
+  <section class="start-here" aria-labelledby="start-h">
+    <h2 class="start" id="start-h">Or start with what you want to do</h2>
+    <div class="pgroups">${groupedCats().map(g => `<div class="pgroup"><p class="pg-name">${esc(g.name)} <span>${g.cats.reduce((n, c) => n + toolsIn(c.id).length, 0)} tools</span></p>${g.cats.map(c => {
+      const list = toolsIn(c.id);
+      return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""}</span></a>`;
+    }).join("")}</div>`).join("")}</div>
+  </section>
   <section class="sizes how">
     <p class="label">How it works</p>
     <h2>Six questions, one score, no payment.</h2>
@@ -3303,7 +3332,7 @@ document.addEventListener("click", e => {
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
-document.getElementById("foot-cats").innerHTML = '<span class="label">Categories</span>' + CATS.map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("");
+document.getElementById("foot-cats").innerHTML = '<span class="label">Categories</span>' + groupedCats().flatMap(g => g.cats).map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("");
 fixLinks(document);
 render();
 </script>
