@@ -6,10 +6,24 @@ import { chromium } from "playwright";
 import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createHash } from "node:crypto";
 
 const SITE = "https://toolsforconviviality.org";
 const ROOT = process.cwd();
-const shell = await fs.readFile(path.join(ROOT, "scripts/shell.html"), "utf8");
+const rawShell = await fs.readFile(path.join(ROOT, "scripts/shell.html"), "utf8");
+
+// The app script holds the data for the whole directory and is about 440 KB. Left inline, it was copied into
+// every page, so each review cost a visitor half a megabyte for a few kilobytes of text. It now goes into one
+// shared file named after a hash of its contents: browsers keep it between pages, and a new build gets a new
+// name, so a page and its script never get out of step. scripts/shell.html stays the file you edit.
+const appScript = [...rawShell.matchAll(/<script>([\s\S]*?)<\/script>/g)].sort((a, b) => b[1].length - a[1].length)[0];
+if (!appScript || appScript[1].length < 50000) throw new Error("Could not find the app script in scripts/shell.html");
+const appFile = `app.${createHash("sha256").update(appScript[1]).digest("hex").slice(0, 10)}.js`;
+for (const f of await fs.readdir(path.join(ROOT, "assets"))) {
+  if (/^app\.[0-9a-f]{10}\.js$/.test(f) && f !== appFile) await fs.rm(path.join(ROOT, "assets", f));
+}
+await fs.writeFile(path.join(ROOT, "assets", appFile), appScript[1]);
+const shell = rawShell.replace(appScript[0], () => `<script src="/assets/${appFile}"></script>`);
 const TYPES = { ".js": "text/javascript", ".css": "text/css", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".webp": "image/webp", ".woff2": "font/woff2", ".txt": "text/plain", ".xml": "application/xml", ".html": "text/html" };
 
 // Serves real files (assets, fonts) from disk and the empty shell for every page route.
