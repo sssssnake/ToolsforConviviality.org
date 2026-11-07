@@ -1235,5 +1235,53 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "goatcounter",
+    "name": "GoatCounter",
+    "url": "https://www.goatcounter.com",
+    "repo": "arp242/goatcounter"
+  },
+  {
+    "slug": "plausible",
+    "name": "Plausible",
+    "url": "https://plausible.io",
+    "repo": "plausible/analytics"
+  },
+  {
+    "slug": "umami",
+    "name": "Umami",
+    "url": "https://umami.is",
+    "repo": "umami-software/umami"
+  },
+  {
+    "slug": "matomo",
+    "name": "Matomo",
+    "url": "https://matomo.org",
+    "repo": "matomo-org/matomo"
+  },
+  {
+    "slug": "fathom",
+    "name": "Fathom Analytics",
+    "url": "https://usefathom.com"
+  },
+  {
+    "slug": "simple-analytics",
+    "name": "Simple Analytics",
+    "url": "https://www.simpleanalytics.com"
+  },
+  {
+    "slug": "posthog",
+    "name": "PostHog",
+    "url": "https://posthog.com",
+    "repo": "PostHog/posthog"
+  },
+  {
+    "slug": "google-analytics",
+    "name": "Google Analytics",
+    "url": "https://marketingplatform.google.com/about/analytics/",
+    "capture": {
+      "shot": false
+    }
   }
 ]
