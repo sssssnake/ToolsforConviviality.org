@@ -277,8 +277,8 @@ main .wrap { padding-block: 48px 64px; }
 .compare h2 { font-size: 20px; margin: 0 0 4px; }
 .compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
 .cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
-.cmp:hover { border-color: var(--accent); }
+.bcard { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.bcard:hover { border-color: var(--accent); }
 .cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .about-cat { margin-top: 48px; }
@@ -475,7 +475,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/tldraw/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/tldraw/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>tldraw</h3><p class="one">A canvas toolkit for developers, with a hosted whiteboard app built on it.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Source available</span><span class="chip">SDK</span></div></div></div>
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
-  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="cmp" href="/benchmarks/miro/"><span class="logo sm"><img src="/assets/tools/miro/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Miro</b><small>Benchmark review</small></span><span class="cmp-s"><b>11<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
+  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/miro/"><span class="logo sm"><img src="/assets/tools/miro/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Miro</b><small>Benchmark review</small></span><span class="cmp-s"><b>11<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>A shared canvas is the closest thing most teams have to a wall they can all write on, and the best known one is a subscription. On Miro's free plan only the three most recent boards stay editable, and its export page lists images, PDF and CSV and mentions no backup you could load back into an editor. <a href="/tools/excalidraw/">Excalidraw</a> is a free browser whiteboard that needs no account for basic use, and <a href="/tools/affine/">AFFiNE</a> puts documents and a whiteboard together in a workspace you can host yourself.</p><p><a href="/tools/wbo/">WBO</a> is a small self-hosted board where many people draw at once, <a href="/tools/drawio/">draw.io</a> is a diagram editor with open source code, and <a href="/tools/tldraw/">tldraw</a> is a canvas toolkit with a hosted app and a license that asks for a key in production.</p><h2>How to choose</h2><p>Ask what you are making and who has to edit it. A quick sketch with colleagues suits Excalidraw, a diagram you draw alone suits draw.io, and a workspace that holds your notes beside your boards suits AFFiNE. If you plan to keep your boards for years, check how each tool exports before you fill it.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a free alternative to Miro?</h3><p><a href="/tools/excalidraw/">Excalidraw</a> is a free browser whiteboard that needs no account for basic use, and its code is MIT licensed.</p></div><div class="qa"><h3>Is there an open source alternative to Miro that I can host myself?</h3><p><a href="/tools/affine/">AFFiNE</a> is MIT licensed and can be run with Docker, and <a href="/tools/wbo/">WBO</a> is AGPL-3.0 licensed and runs with Docker or Node.js.</p></div><div class="qa"><h3>Can I draw diagrams with other people in real time?</h3><p><a href="/tools/excalidraw/">Excalidraw</a> offers live collaboration that is end-to-end encrypted, and <a href="/tools/wbo/">WBO</a> updates its board in real time for everyone connected. The draw.io repository says its version does not support real-time collaborative editing.</p></div></section></div></div></main>
 
 <footer>
@@ -502,7 +502,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.e02fbd3aba.js"></script>
+<script src="/assets/app.98ed099dba.js"></script>
 
 
 

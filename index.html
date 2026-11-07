@@ -277,8 +277,8 @@ main .wrap { padding-block: 48px 64px; }
 .compare h2 { font-size: 20px; margin: 0 0 4px; }
 .compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
 .cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
-.cmp:hover { border-color: var(--accent); }
+.bcard { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.bcard:hover { border-color: var(--accent); }
 .cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .about-cat { margin-top: 48px; }
@@ -472,12 +472,12 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <aside>
       <div class="card feature" aria-live="polite">
         <p class="label">A random tool in the collection</p>
-        <h2>Ladybird</h2>
-        <p class="desc">A new browser built from scratch, on an engine that nobody else controls.</p>
-        <ul><li>Instead of Chrome, Edge</li><li>Small maker · Tool</li><li><span class="score-chip s2"><b>22/30</b> · Leaning convivial</span></li></ul>
-        <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter"><i class="on" style="--d:0"></i><i class="on" style="--d:1"></i><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Lock-in</span><span class="meter"><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i></span><b>5</b></div><div class="meter-row"><span>Self-direction</span><span class="meter"><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i></span><b>5</b></div><div class="meter-row"><span>Power</span><span class="meter"><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Longevity</span><span class="meter"><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i><i></i><i></i></span><b>3</b></div><div class="meter-row"><span>Delivery</span><span class="meter"><i class="on" style="--d:10"></i><i></i><i></i><i></i><i></i></span><b>1</b></div></div>
+        <h2>Flathub</h2>
+        <p class="desc">The main app store for Linux, built on the Flatpak format.</p>
+        <ul><li>Instead of Microsoft Store, Mac App Store</li><li>Medium maker · System</li><li><span class="score-chip s2"><b>24/30</b> · Leaning convivial</span></li></ul>
+        <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter"><i class="on" style="--d:0"></i><i class="on" style="--d:1"></i><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Lock-in</span><span class="meter"><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Self-direction</span><span class="meter"><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Power</span><span class="meter"><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Longevity</span><span class="meter"><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Delivery</span><span class="meter"><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i><i class="on" style="--d:13"></i><i></i></span><b>4</b></div></div>
         <div class="btn-row">
-          <a class="btn" href="/tools/ladybird/">Read the review <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="/tools/flathub/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
         </div>
       </div>
@@ -533,7 +533,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.e02fbd3aba.js"></script>
+<script src="/assets/app.98ed099dba.js"></script>
 
 
 

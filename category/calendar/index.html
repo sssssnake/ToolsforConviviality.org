@@ -277,8 +277,8 @@ main .wrap { padding-block: 48px 64px; }
 .compare h2 { font-size: 20px; margin: 0 0 4px; }
 .compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
 .cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
-.cmp:hover { border-color: var(--accent); }
+.bcard { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.bcard:hover { border-color: var(--accent); }
 .cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .about-cat { margin-top: 48px; }
@@ -477,7 +477,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/proton-calendar/"><span class="rank-n" aria-label="Rank 6">6</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/proton-calendar/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Proton Calendar</h3><p class="one">An end-to-end encrypted calendar from Proton, where Proton says it cannot read your event details.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Encrypted</span><span class="chip">Hosted</span><span class="chip">Free plan</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
-  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="cmp" href="/benchmarks/google-calendar/"><span class="logo sm"><img src="/assets/tools/google-calendar/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Calendar</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
+  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-calendar/"><span class="logo sm"><img src="/assets/tools/google-calendar/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Calendar</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>A calendar is a quiet record of your life, and the standard that lets you keep it anywhere is CalDAV. <a href="/tools/radicale/">Radicale</a> and <a href="/tools/baikal/">Baïkal</a> are small servers that speak it, <a href="/tools/davx5/">DAVx5</a> points an Android phone at them, and <a href="/tools/fossify-calendar/">Fossify Calendar</a> and <a href="/tools/etar/">Etar</a> are plain Android calendar apps that show what the phone syncs. <a href="/tools/proton-calendar/">Proton Calendar</a> takes another route, a hosted calendar where Proton says it cannot read event details.</p><p>Most of these are parts of a set, so read them together. A server, a sync app and a calendar app make a calendar that is yours, and each piece is free software you can swap.</p><h2>How to choose</h2><p>Decide who will run the server. If you can host something small, <a href="/tools/radicale/">Radicale</a> or <a href="/tools/baikal/">Baïkal</a> with <a href="/tools/davx5/">DAVx5</a> gives you a calendar with no company in it. If you want it done for you, <a href="/tools/proton-calendar/">Proton Calendar</a> is a hosted option with encryption. Either way, check that invitations from people on Google still reach you, since shared calendars are where the giant keeps its hold.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What can I use instead of Google Calendar on Android?</h3><p><a href="/tools/fossify-calendar/">Fossify Calendar</a> and <a href="/tools/etar/">Etar</a> are open calendar apps, and <a href="/tools/davx5/">DAVx5</a> syncs them with a server you choose.</p></div><div class="qa"><h3>Can I host my own calendar?</h3><p>Yes. <a href="/tools/radicale/">Radicale</a> and <a href="/tools/baikal/">Baïkal</a> are CalDAV servers for calendars and contacts.</p></div><div class="qa"><h3>Is there an encrypted calendar?</h3><p><a href="/tools/proton-calendar/">Proton Calendar</a> encrypts event details end to end, and Proton says it cannot read them.</p></div></section></div></div></main>
 
 <footer>
@@ -504,7 +504,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.e02fbd3aba.js"></script>
+<script src="/assets/app.98ed099dba.js"></script>
 
 
 

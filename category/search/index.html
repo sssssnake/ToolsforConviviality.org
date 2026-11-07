@@ -277,8 +277,8 @@ main .wrap { padding-block: 48px 64px; }
 .compare h2 { font-size: 20px; margin: 0 0 4px; }
 .compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
 .cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
-.cmp:hover { border-color: var(--accent); }
+.bcard { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.bcard:hover { border-color: var(--accent); }
 .cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .about-cat { margin-top: 48px; }
@@ -475,7 +475,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/mojeek/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/mojeek/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Mojeek</h3><p class="one">A search engine with its own index and no tracking.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">No tracking</span><span class="chip">Own index</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
-  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="cmp" href="/benchmarks/google-search/"><span class="logo sm"><img src="/assets/tools/google-search/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Search</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
+  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-search/"><span class="logo sm"><img src="/assets/tools/google-search/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Search</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Google handles most of the world's searches, and its results sit between ads. The alternatives work differently. <a href="/tools/kagi/">Kagi</a> is a search engine you pay for, which is how it avoids ads, <a href="/tools/mojeek/">Mojeek</a> builds its own index and says it does not track you, <a href="/tools/marginalia/">Marginalia Search</a> digs up the small personal web, and <a href="/tools/searxng/">SearXNG</a> asks many engines at once and hides who you are. <a href="/tools/kiwix/">Kiwix</a> puts Wikipedia and other libraries on your device for questions you can answer offline.</p><p>None matches Google on every query, and several do better on some.</p><h2>How to choose</h2><p>Decide what you are searching for. For everyday questions, a paid engine like <a href="/tools/kagi/">Kagi</a> or a metasearch like <a href="/tools/searxng/">SearXNG</a> comes closest. For finding interesting writing, <a href="/tools/marginalia/">Marginalia Search</a> beats the giants. For facts, an offline copy of Wikipedia is quicker than you'd expect. Expect to pay, or to accept a smaller index.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a search engine with no ads?</h3><p><a href="/tools/kagi/">Kagi</a> sells search by subscription, so it carries no ads. The trade-off is paying for it. <a href="/tools/marginalia/">Marginalia Search</a> is free and ad-free but covers a narrow slice of the web.</p></div><div class="qa"><h3>Is there a search engine that does not track me?</h3><p><a href="/tools/mojeek/">Mojeek</a> says it does not track searches and runs its own index, and <a href="/tools/searxng/">SearXNG</a> hides your identity from the engines it queries. Both claims rest on what the operators say.</p></div><div class="qa"><h3>Can I read Wikipedia offline?</h3><p>Yes. <a href="/tools/kiwix/">Kiwix</a> downloads Wikipedia and other collections to read with no connection.</p></div></section></div></div></main>
 
 <footer>
@@ -502,7 +502,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.e02fbd3aba.js"></script>
+<script src="/assets/app.98ed099dba.js"></script>
 
 
 

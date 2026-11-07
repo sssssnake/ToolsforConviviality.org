@@ -277,8 +277,8 @@ main .wrap { padding-block: 48px 64px; }
 .compare h2 { font-size: 20px; margin: 0 0 4px; }
 .compare > p { color: var(--muted); font-size: 15px; margin: 0 0 14px; }
 .cmp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
-.cmp { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
-.cmp:hover { border-color: var(--accent); }
+.bcard { display: grid; grid-template-columns: 44px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 16px 12px 12px; border: 1px dashed var(--line); text-decoration: none; }
+.bcard:hover { border-color: var(--accent); }
 .cmp-t { display: grid; gap: 2px; } .cmp-t b { font-weight: 500; font-size: 17px; } .cmp-t small { color: var(--muted); font-size: 12px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .cmp-s { display: grid; justify-items: end; gap: 2px; } .cmp-s b { font-family: var(--display); font-size: 24px; line-height: 1; font-weight: 600; } .cmp-s b span { font-size: 13px; color: var(--muted); font-family: var(--body); font-weight: 400; }
 .about-cat { margin-top: 48px; }
@@ -475,7 +475,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/aurora-store/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/aurora-store/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Aurora Store</h3><p class="one">A way into the Google Play catalogue without a Google account.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">No account</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
-  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="cmp" href="/benchmarks/google-play/"><span class="logo sm"><img src="/assets/tools/google-play/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Play</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
+  <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-play/"><span class="logo sm"><img src="/assets/tools/google-play/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Play</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>An app store decides what exists on your phone. <a href="/tools/f-droid/">F-Droid</a> lists only free software and tells you what each app does with your data, <a href="/tools/obtainium/">Obtainium</a> installs apps straight from their makers, <a href="/tools/izzyondroid/">IzzyOnDroid</a> adds more open source apps to F-Droid, <a href="/tools/aurora-store/">Aurora Store</a> reaches the Play catalogue without an account, and <a href="/tools/flathub/">Flathub</a> does the same job for Linux desktops.</p><p>These are mostly for Android and Linux, because Apple's phones do not allow stores of this kind.</p><h2>How to choose</h2><p>Start with <a href="/tools/f-droid/">F-Droid</a> and see whether the apps you need are there. For the rest, <a href="/tools/obtainium/">Obtainium</a> and <a href="/tools/aurora-store/">Aurora Store</a> fill gaps. Expect fewer big brand names and more small tools made by people who care about the details.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an alternative to the Google Play Store?</h3><p><a href="/tools/f-droid/">F-Droid</a> is a store for free and open source Android apps, run by a nonprofit.</p></div><div class="qa"><h3>Can I get Play Store apps without a Google account?</h3><p><a href="/tools/aurora-store/">Aurora Store</a> lets you browse and install them without signing in, though it still depends on Google's servers.</p></div><div class="qa"><h3>What about iPhones?</h3><p>Apple does not allow other stores in most places, so these tools are mainly for Android and Linux.</p></div></section></div></div></main>
 
 <footer>
@@ -502,7 +502,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.e02fbd3aba.js"></script>
+<script src="/assets/app.98ed099dba.js"></script>
 
 
 
