@@ -2169,7 +2169,6 @@ function tool(slug, isBench) {
 /* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
 const PAIRS = [
   { g: "whatsapp", t: "deltachat", cost: "Delta Chat sends messages over ordinary email, so it reaches anyone with an address, but your friends need to install it for the full chat experience, and the circle you can reach is small next to three billion.", move: "Install it, add a friend by scanning their QR code, and keep WhatsApp running until your closest group follows." },
-  { g: "whatsapp", t: "signal", cost: "Signal still asks for a phone number to sign up, although a username can now hide it, and it lives on donations, so it depends on that staying true. Its circle of users is smaller than WhatsApp's.", move: "Chat history does not come across easily from WhatsApp, so keep the old app until your groups have moved." },
   { g: "adobe-creative-cloud", t: "krita", cost: "Krita is a painting and illustration program. It does not replace Photoshop's photo retouching, Illustrator's vector work or Premiere's video editing, so a studio that lives in the whole suite will need a few tools instead of one.", move: "Open a PSD file in Krita to see how much carries over, then add Inkscape for vector work and GIMP for photos." },
   { g: "chatgpt", t: "ollama", cost: "The models run on your own computer, so answers depend on your hardware and on the open models you pick. They are good, and usually behind the biggest hosted models on hard tasks. In return nothing you type leaves the machine.", move: "Install Ollama, pull a small model first, and step up to a larger one if your memory allows." },
   { g: "google-drive", t: "syncthing", cost: "Syncthing keeps copies of your folders on your own devices. It has no web page for sharing a link and no live co-editing, and at least one device has to be on for a file to travel.", move: "Download your Drive with Google Takeout, point Syncthing at the folder, and add your other devices." },
@@ -2191,7 +2190,6 @@ const PAIRS = [
   { g: "midjourney", t: "ai-horde", cost: "AI Horde is slower and plainer. You wait in a volunteer queue, choose from the models people host, and will not match Midjourney's most polished styles. In return it is free, needs no account, and there is no subscription to cancel.", move: "Try the Generate page with no sign-up, then move to Fooocus or ComfyUI on your own graphics card if you want speed and privacy." },
   { g: "microsoft-365", t: "libreoffice", cost: "LibreOffice opens and saves Word, Excel and PowerPoint files, though complicated layouts can shift. It has no built-in shared editing like 365, so teams that write together in real time need something else, such as ONLYOFFICE.", move: "Open your most complicated documents first to see how they hold up, then switch the rest." },
   { g: "miro", t: "excalidraw", cost: "Excalidraw is built for quick sketches, and we did not find the templates, voting or timer that Miro lists on its paid plans, so a facilitated workshop may feel bare. Your drawing is saved in the browser or as a file, and sharing with a team means sharing a live link.", move: "Export what you need from Miro as images, PDF or CSV first, since its export page mentions no backup that loads into another editor, then open Excalidraw and redraw the boards you still use." },
-  { g: "miro", t: "affine", cost: "AFFiNE is a whole workspace for documents and boards, so there is more to run and learn than a drawing tool, and its page names no export formats, so we could not confirm how easily a board leaves it. Features such as single sign-on are described as coming in a paid Enterprise tier.", move: "Try the Docker setup with one board, bring across what you need from Miro as images or CSV, and keep Miro's three free editable boards until you trust it." },
   { g: "pinterest", t: "arena", cost: "Are.na is built for gathering and arranging, with no ads, likes or feed tuned to keep you there, so you will not get the stream of new ideas Pinterest serves. It is closed source and free with a paid membership, and we have not yet checked the company's size and funding.", move: "Pinterest's terms do not describe how to export a collection, so we could not confirm you can take one with you. Start a channel in Are.na for one board you care about and save the images and links you want to keep as you go." },
   { g: "claude", t: "jan", cost: "Jan's local models are smaller than the largest hosted ones, so expect some difference in quality, and the better models need a good computer. Its page says little about who runs the project.", move: "Install Jan on Windows, Mac or Linux, download a model such as Llama, Gemma or Qwen, and keep Claude for the jobs that need the larger model. Jan can also connect to Anthropic's models with your own key if you choose." },
   { g: "otter", t: "vibe", cost: "Vibe works on audio and video files you give it, and we found nothing on its page about joining a meeting live as Otter does. The page mentions summaries through the Claude API, transcribing from YouTube and automatic updates, so read the offline claim as covering the transcription itself, and one developer runs the project.", move: "Record the meeting with your usual tool, drop the file into Vibe, pick a Whisper model and export to SRT, VTT, TXT, DOCX or PDF." },
@@ -2203,8 +2201,6 @@ const PAIRS = [
   { g: "claude-code", t: "aider", cost: "Aider installs with pip and runs in a terminal, so it will feel steep to people who have never opened one, and you pick and pay for the model yourself. Its page shows no release dates, so we scored its longevity on the size of the project alone.", move: "Install Aider, run it in your project folder with the model of your choice, local ones included, and try it on one small task next to Claude Code before you switch." },
   { g: "elevenlabs", t: "kokoro", cost: "Kokoro takes a pip install and a little Python, and we have not listened to enough of it to rate its voices against ElevenLabs. A very small group holds the project together, so Longevity is a 3.", move: "Install the kokoro package and espeak-ng, pick one of the 54 voices in version 1.0, and generate speech on your own machine with nothing sent to a company." },
   { g: "google-analytics", t: "goatcounter", cost: "GoatCounter keeps to simple counts, and we did not see the audience, funnel or advertising tools that Google's product offers on the page we read. The repository belongs to a personal account and its README asks readers for financial support, so the project leans on its maker and its donors.", move: "Add its script, about 3.5 KB, next to your Google tag for a few weeks, compare the numbers, and then remove the Google tag." },
-  { g: "google-analytics", t: "plausible", cost: "The self-hosted Community Edition leaves out funnels, ecommerce revenue goals, single sign-on and the sites API and gets community support only, while the cloud service is paid and we did not read its prices. The company says it is funded only by its subscribers.", move: "Add Plausible's tracker next to Google's for a month, check the numbers against each other, then switch off the Google tag. Choose the cloud service to skip the server, or run the Community Edition if you are happy to handle backups and updates yourself." },
-  { g: "google-analytics", t: "umami", cost: "Self-hosting Umami needs Node.js and PostgreSQL that you look after, its default login is admin and umami until you change it, and we did not find the cloud prices.", move: "Run it with Docker, change the default password straight away, add its script next to your Google tag for a few weeks to compare, then remove Google's." }
 ];
 const pairSlug = p => `${p.t}-vs-${p.g}`;
 const pairOf = slug => PAIRS.find(p => pairSlug(p) === slug);
@@ -2213,7 +2209,7 @@ const chipClass = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
 const joinNames = a => a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
 
 function compareSummary(p) {
-  const [a, b] = pairTools(p), na = total(a), nb = total(b);
+  const [b, a] = pairTools(p).reverse(), na = total(a), nb = total(b);
   const aw = CRITERIA.filter((k, i) => a.s[i] > b.s[i]).map(k => k.name.toLowerCase());
   const bw = CRITERIA.filter((k, i) => b.s[i] > a.s[i]).map(k => k.name.toLowerCase());
   let s = `${a.name} scores ${na} out of 30 and ${b.name} scores ${nb}.`;
@@ -2224,7 +2220,7 @@ function compareSummary(p) {
 }
 function compare(slug) {
   const p = pairOf(slug); if (!p) return notFound();
-  const [a, b] = pairTools(p);
+  const [tool, big] = pairTools(p), a = big, b = tool;
   const side = (t, tag) => `<div class="cmp-side">${logo(t, "lg")}<h2><a href="#${t.bench ? "bench" : "tool"}-${t.slug}">${esc(t.name)}</a></h2><p class="cmp-tag">${tag}</p><span class="score-chip s${chipClass(total(t))}"><b>${total(t)}/30</b> · ${band(total(t))}</span><p class="one">${esc(t.one)}</p></div>`;
   const row = (label, x, y, win) => `<div class="cmp-row"><div class="cmp-label">${label}</div><div class="cmp-cell${win === 1 ? " win" : ""}">${x}</div><div class="cmp-cell${win === 2 ? " win" : ""}">${y}</div></div>`;
   const meter = (t, i) => `<span class="meter" aria-hidden="true">${[0, 1, 2, 3, 4].map(j => `<i class="${j < t.s[i] ? "on" : ""}"></i>`).join("")}</span><b aria-label="${t.s[i]} out of 5">${t.s[i]}</b>`;
@@ -2235,7 +2231,7 @@ function compare(slug) {
   return `<p class="crumbs"><a href="#home">Home</a> / <a href="#compare">Compare</a> / ${esc(a.name)} vs ${esc(b.name)}</p>
   <div class="page-head" style="margin-top:14px"><h1>${esc(a.name)} vs ${esc(b.name)}</h1><p>${esc(compareSummary(p))}</p></div>
   <div class="cmp">
-    <div class="cmp-row cmp-head"><div class="cmp-label"></div>${side(a, "The small tool")}${side(b, "The giant")}</div>
+    <div class="cmp-row cmp-head"><div class="cmp-label"></div>${side(a, "The giant")}${side(b, "The small tool")}</div>
     ${crit}${facts}
   </div>
   <div class="prose">
@@ -2243,22 +2239,22 @@ function compare(slug) {
     <p>${esc(p.cost)}</p>
     <h2>How to move</h2>
     <p>${esc(p.move)}</p>
-    <p>Scores are our opinion on six questions from Ivan Illich, based on public sources and dated ${REVIEWED}. Read the full reviews of <a href="#tool-${a.slug}">${esc(a.name)}</a> and <a href="#bench-${b.slug}">${esc(b.name)}</a>, or see <a href="#method">how we score</a>.</p>
+    <p>Scores are our opinion on six questions from Ivan Illich, based on public sources and dated ${REVIEWED}. Read the full reviews of <a href="#bench-${a.slug}">${esc(a.name)}</a> and <a href="#tool-${b.slug}">${esc(b.name)}</a>, or see <a href="#method">how we score</a>.</p>
     ${others.length ? `<p>Also instead of ${esc(b.name)}: ${others.map(o => { const [x] = pairTools(o); return `<a href="#cmp-${pairSlug(o)}">${esc(x.name)}</a>`; }).join(", ")}.</p>` : ""}
   </div>
-  <div class="visit"><a class="btn primary" href="${a.url}" target="_blank" rel="noopener">Visit ${esc(a.name)} <span aria-hidden="true">↗</span></a> <a class="btn" href="#cat-${a.cat}">More tools for “${esc(catOf(a.cat).verb.toLowerCase())}” <span aria-hidden="true">↗</span></a></div>`;
+  <div class="visit"><a class="btn primary" href="${b.url}" target="_blank" rel="noopener">Visit ${esc(b.name)} <span aria-hidden="true">↗</span></a> <a class="btn" href="#cat-${b.cat}">More tools for “${esc(catOf(b.cat).verb.toLowerCase())}” <span aria-hidden="true">↗</span></a></div>`;
 }
 function compareIndex() {
   return `<p class="crumbs"><a href="#home">Home</a> / Compare</p>
   <div class="page-head" style="margin-top:14px"><h1>Compare: the giants and what can replace them</h1><p>Each page sets a big, familiar product next to the best small tool that does the same job, scored on the same six questions.</p></div>
-  <div class="tool-list">${PAIRS.map(p => { const [a, b] = pairTools(p), na = total(a), nb = total(b);
-    return `<a class="tool-row" href="#cmp-${pairSlug(p)}"><div class="lead">${logo(a, "sm")}<div><h3>${esc(a.name)} vs ${esc(b.name)}</h3><p class="one">${esc(b.one)}</p></div></div><div class="score-mini"><b>${na}<span>/30</span></b><span class="verdict-mini v${chipClass(na)}">vs ${nb}</span></div></a>`; }).join("")}</div>
+  <div class="tool-list">${PAIRS.map(p => { const [tool, big] = pairTools(p), na = total(big), nb = total(tool);
+    return `<a class="tool-row" href="#cmp-${pairSlug(p)}"><div class="lead">${logo(big, "sm")}<div><h3>${esc(big.name)} vs ${esc(tool.name)}</h3><p class="one">${esc(big.one)}</p></div></div><div class="score-mini"><b>${na}<span>/30</span></b><span class="verdict-mini v${chipClass(na)}">vs ${nb}</span></div></a>`; }).join("")}</div>
   <div class="prose"><p>These are judgment calls, not a verdict that one tool fits everyone. Where several tools could replace a giant, we picked the one that fits the same job most closely, and the full <a href="#directory">directory</a> has the rest.</p></div>`;
 }
 function compareLinks(t) {
   const list = PAIRS.filter(p => t.bench ? p.g === t.slug : p.t === t.slug);
   if (!list.length) return "";
-  return `<p class="bench-note"><b>Side by side.</b> ${list.map(p => { const [a, b] = pairTools(p); return `<a href="#cmp-${pairSlug(p)}">${esc(a.name)} vs ${esc(b.name)}</a>`; }).join(" · ")}</p>`;
+  return `<p class="bench-note"><b>Side by side.</b> ${list.map(p => { const [tool, big] = pairTools(p); return `<a href="#cmp-${pairSlug(p)}">${esc(big.name)} vs ${esc(tool.name)}</a>`; }).join(" · ")}</p>`;
 }
 
 const REFS = [
@@ -2726,8 +2722,8 @@ function seo(id) {
     const list = toolsIn(c.id); const k = CATCOPY[c.id]; return out(k ? k.h1 : `${c.name}: alternatives to ${c.instead}`, k ? `${k.lede} ${list.map(x => x.name).join(", ")}, each reviewed and scored for how convivial it is.` : `${c.verb}, instead of ${c.instead}.`, { ld: [crumbs([["Home", "/"], ["Directory", "/directory/"], [c.name, idToPath(id)]]), listLd(list)] }); }
   if (id === "compare") return out("Compare the giants with the tools that replace them", "Side-by-side scores for big products such as WhatsApp, Gmail and Chrome and the best small tool that can replace each, on Illich's six tests.", { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"]])] });
   if (id.startsWith("cmp-")) { const p = pairOf(id.slice(4)); if (!p) return out("Page not found", "That page doesn't exist.", { noindex: true });
-    const [a, b] = pairTools(p);
-    return out(`${a.name} vs ${b.name}: scores side by side (${total(a)} vs ${total(b)})`, `${compareSummary(p)} What you give up by switching, and how to move.`, { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"], [`${a.name} vs ${b.name}`, idToPath(id)]]), listLd([a, b])] }); }
+    const [tool, big] = pairTools(p);
+    return out(`${big.name} vs ${tool.name}: scores side by side (${total(big)} vs ${total(tool)})`, `${compareSummary(p)} What you give up by switching, and how to move.`, { ld: [crumbs([["Home", "/"], ["Compare", "/compare/"], [`${big.name} vs ${tool.name}`, idToPath(id)]]), listLd([big, tool])] }); }
   if (id === "improve") return out("Improve my conviviality score: a field guide for software makers", "A free 12-page PDF and checklist for making your app more convivial, with what reviewers look at for each of the six questions and a plain answer on how it affects your income.", { ld: [crumbs([["Home", "/"], ["Improve my conviviality score", "/improve-my-conviviality-score/"]])] });
   if (id === "agents") return out("For AI agents: build a more convivial tool", "A prompt for coding agents that audits a project against six questions from Ivan Illich, makes it more convivial, and prepares a submission to the directory.", { ld: [crumbs([["Home", "/"], ["For AI agents", "/for-agents/"]])] });
   if (id === "benchmarks") return out("Benchmarks: how Word, WhatsApp and Gmail score", "How a few of the biggest tools score on the same six questions we use for small ones, as examples of what everything else is measured against.", { ld: [crumbs([["Home", "/"], ["Benchmarks", "/benchmarks/"]])] });
