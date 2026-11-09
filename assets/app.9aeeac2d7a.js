@@ -1803,7 +1803,7 @@ function shot(t) {
     <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}, shown to help you recognise the tool. It belongs to its maker. <a href="#about">Ask us to remove it</a>.</p>`;
 }
 function chips(t) {
-  return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}${t.made ? '<span class="chip made">Made here</span>' : ""}</div>`;
+  return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}</div>`;
 }
 function row(t, rank) {
   const n = total(t);
@@ -2479,8 +2479,6 @@ function method() {
     <p>If you work in design, think of the six questions as a heuristic evaluation of the tool's relationship with its people. Footprint is efficiency, and Lock-in asks whether a file is a door you can walk through or a wall. Self-direction covers learnability, user control and the absence of dark patterns such as streaks, nag screens and fake urgency. Power looks at who the product answers to, Longevity at whether your work outlasts the vendor, and Delivery at whether the interface keeps the promises its marketing makes.</p>
     <h2>Badges</h2>
     <p>Every tool in the directory has a badge on its review page that shows its score and verdict. A badge reports a dated review and is not a certification, we charge nothing for it, and it comes in versions for light and dark pages. It always shows the tool's current score, so it changes if the review does, and the maker is asked to link it to the review.</p>
-    <h2>Our own tools</h2>
-    <p class="note">The founder of this site makes small software too. Those tools are scored with the same rubric and always carry a <span class="chip made">Made here</span> label.</p>
     <h2>Credit where it's due</h2>
     <p>The idea of a convivial tool comes from Ivan Illich's 1973 book <i>Tools for Conviviality</i>, and the six questions follow the structure of its third chapter. The rubric itself is our own interpretation. Andrea Vetter's Matrix for Convivial Technology (2018) took on a similar task for engineers and is well worth reading.</p>
   </div>
@@ -2502,7 +2500,6 @@ function about() {
     <p>Please read the book itself. You can <a href="https://www.worldcat.org/oclc/828971" target="_blank" rel="noopener">find it in a library near you</a>, <a href="https://bookshop.org/p/books/tools-for-conviviality-ivan-illich/eb3b8f563b3662fe" target="_blank" rel="noopener">buy it from an independent bookshop through Bookshop.org</a>, or order it from your local bookshop.</p>
     <h2>About the reviews</h2>
     <p>Scores reflect our judgement on the date shown on each review and may change as tools change.</p>
-    <p>Tools marked <span class="chip made">Made here</span> are built by the site's founder and are scored with the same rubric as everything else.</p>
     <h2>Corrections</h2>
     <p>If you make a tool we have reviewed, or you spot a mistake in any review, including the benchmarks, tell us through the <a href="#submit">suggestion form</a> or at <span class="addr">hello@toolsforconviviality.org</span> and we will check it and correct it. Reviews state our opinion and rely on public sources, and where something is only alleged, we say so and keep it out of the score. Product and company names belong to their owners, and we are not affiliated with any of them.</p>
     <h2>Pictures</h2>
@@ -2581,8 +2578,6 @@ function governance() {
     <p>Reviews are drafted with the help of AI from public sources and judged against the rubric. Each carries a date, and the scores are our opinion. If you spot a mistake, tell us through the forms on this site, and we will fix factual errors and note any change that moves a score. A maker can ask us to stop using their images.</p>
     <h2>Money</h2>
     <p>The site sets no tracking cookies and counts visits with GoatCounter, which stores no personal data (see the privacy policy). It earns money mainly through the optional "Buy us a coffee" tip, and that money goes toward the domain, hosting and our time.</p>
-    <h2>Conflict of interest</h2>
-    <p>The founder also makes small software. Tools he makes are marked <span class="chip made">Made here</span> and are scored with the same rubric as everything else.</p>
     <h2>What might change</h2>
     <p>This project is new and may grow into something more formal, with a written charter, if enough people want to help.</p>
   </div>`;
