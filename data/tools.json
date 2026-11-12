@@ -1283,5 +1283,57 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "listmonk",
+    "name": "listmonk",
+    "url": "https://listmonk.app",
+    "repo": "knadh/listmonk"
+  },
+  {
+    "slug": "ghost",
+    "name": "Ghost",
+    "url": "https://ghost.org",
+    "repo": "TryGhost/Ghost"
+  },
+  {
+    "slug": "buttondown",
+    "name": "Buttondown",
+    "url": "https://buttondown.com"
+  },
+  {
+    "slug": "keila",
+    "name": "Keila",
+    "url": "https://www.keila.io",
+    "repo": "pentacent/keila"
+  },
+  {
+    "slug": "mautic",
+    "name": "Mautic",
+    "url": "https://www.mautic.org",
+    "repo": "mautic/mautic"
+  },
+  {
+    "slug": "sendy",
+    "name": "Sendy",
+    "url": "https://sendy.co"
+  },
+  {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "url": "https://mailchimp.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "kit",
+    "name": "Kit",
+    "url": "https://kit.com"
+  },
+  {
+    "slug": "mailerlite",
+    "name": "MailerLite",
+    "url": "https://www.mailerlite.com"
   }
 ]
