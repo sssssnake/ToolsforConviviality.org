@@ -1314,11 +1314,6 @@
     "repo": "mautic/mautic"
   },
   {
-    "slug": "sendy",
-    "name": "Sendy",
-    "url": "https://sendy.co"
-  },
-  {
     "slug": "mailchimp",
     "name": "Mailchimp",
     "url": "https://mailchimp.com",
@@ -1330,10 +1325,5 @@
     "slug": "kit",
     "name": "Kit",
     "url": "https://kit.com"
-  },
-  {
-    "slug": "mailerlite",
-    "name": "MailerLite",
-    "url": "https://www.mailerlite.com"
   }
 ]
