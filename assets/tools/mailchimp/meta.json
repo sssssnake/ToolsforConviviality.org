@@ -1,0 +1,27 @@
+{
+  "slug": "mailchimp",
+  "name": "Mailchimp",
+  "source": "https://mailchimp.com",
+  "capturedAt": "2026-11-12T22:33:48.876Z",
+  "alt": "Screenshot of the Mailchimp website",
+  "pageTitle": "Email & SMS Marketing Platform | Mailchimp",
+  "pageDescription": "Utilize real-time user behavior data and artificial intelligence to convert more customers. Easy to use, get started for free!",
+  "icon": {
+    "128": "assets/tools/mailchimp/icon-128.webp",
+    "256": "assets/tools/mailchimp/icon-256.webp",
+    "from": "https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/mailchimp-favicons/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/mailchimp/social-600.webp",
+    "1200": "assets/tools/mailchimp/social-1200.webp",
+    "from": "https://mailchimp.com/ctf/images/yzco4xsimv0y/1SB1jCYU95Dh5YDdrucTh0/b8a7462001c1152ff92fef2c02b3b551/Intuit_Mailchimp_-_Wordmark_2023_-_Recirculation_.png"
+  },
+  "color": "#f8d818",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "instagram",
+  "name": "Instagram",
+  "source": "https://www.instagram.com",
+  "capturedAt": "2026-11-12T22:31:30.592Z",
+  "alt": "Screenshot of the Instagram website",
+  "pageTitle": "Instagram",
+  "pageDescription": "Create an account or log in to Instagram - Share what you're into with the people who get you.",
+  "icon": {
+    "128": "assets/tools/instagram/icon-128.webp",
+    "256": "assets/tools/instagram/icon-256.webp",
+    "from": "https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/instagram/social-600.webp",
+    "1200": "assets/tools/instagram/social-1200.webp",
+    "from": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

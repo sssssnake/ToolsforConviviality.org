@@ -4595,13 +4595,29 @@
       "slug": "instagram",
       "name": "Instagram",
       "source": "https://www.instagram.com",
-      "capturedAt": "2026-10-30T07:33:41.247Z",
+      "capturedAt": "2026-11-12T22:31:30.592Z",
+      "alt": "Screenshot of the Instagram website",
+      "pageTitle": "Instagram",
+      "pageDescription": "Create an account or log in to Instagram - Share what you're into with the people who get you.",
       "icon": {
-        "svg": "assets/tools/instagram/icon.svg",
-        "from": "Simple Icons (CC0)",
-        "scalable": true
+        "128": "assets/tools/instagram/icon-128.webp",
+        "256": "assets/tools/instagram/icon-256.webp",
+        "from": "https://static.cdninstagram.com/rsrc.php/yr/r/rzWiSjZRxk5.webp",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
       },
-      "color": "#FF0069"
+      "social": {
+        "600": "assets/tools/instagram/social-600.webp",
+        "1200": "assets/tools/instagram/social-1200.webp",
+        "from": "https://static.cdninstagram.com/rsrc.php/v4/yD/r/R0fBIMurK8v.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.instagram.com\",{\"shot\":false},null]"
     },
     "handy": {
       "slug": "handy",
@@ -6410,7 +6426,514 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://miro.com\",{\"shot\":false},null]"
+    },
+    "goatcounter": {
+      "slug": "goatcounter",
+      "name": "GoatCounter",
+      "source": "https://www.goatcounter.com",
+      "capturedAt": "2026-11-12T22:31:36.393Z",
+      "alt": "Screenshot of the GoatCounter website",
+      "pageTitle": "GoatCounter – open source web analytics",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/goatcounter/shot-480.webp",
+        "960": "assets/tools/goatcounter/shot-960.webp",
+        "1600": "assets/tools/goatcounter/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/goatcounter/mobile-390.webp",
+        "780": "assets/tools/goatcounter/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/goatcounter/icon-128.webp",
+        "256": "assets/tools/goatcounter/icon-256.webp",
+        "from": "https://static.zgo.at/favicon/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.goatcounter.com\",null,null]"
+    },
+    "plausible": {
+      "slug": "plausible",
+      "name": "Plausible",
+      "source": "https://plausible.io",
+      "capturedAt": "2026-11-12T22:31:43.706Z",
+      "alt": "Screenshot of the Plausible website",
+      "pageTitle": "Plausible Analytics | Simple, privacy-friendly Google Analytics alternative",
+      "pageDescription": "Plausible is a lightweight and open-source Google Analytics alternative. Your website data is 100% yours and the privacy of your visitors is respected.",
+      "shot": {
+        "480": "assets/tools/plausible/shot-480.webp",
+        "960": "assets/tools/plausible/shot-960.webp",
+        "1600": "assets/tools/plausible/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/plausible/mobile-390.webp",
+        "780": "assets/tools/plausible/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/plausible/icon-128.webp",
+        "256": "assets/tools/plausible/icon-256.webp",
+        "svg": "assets/tools/plausible/icon.svg",
+        "from": "https://plausible.io/assets/images/icon/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/plausible/social-600.webp",
+        "1200": "assets/tools/plausible/social-1200.webp",
+        "from": "https://plausible.io/assets/images/plausible_promo.jpg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://plausible.io\",null,null]"
+    },
+    "umami": {
+      "slug": "umami",
+      "name": "Umami",
+      "source": "https://umami.is",
+      "capturedAt": "2026-11-12T22:31:50.580Z",
+      "alt": "Screenshot of the Umami website",
+      "pageTitle": "Umami – Open-Source Web and Product Analytics",
+      "pageDescription": "Umami is an open-source web and product analytics platform. Understand acquisition, behavior, conversion, and retention without cookies. Self-host or use Umami Cloud.",
+      "shot": {
+        "480": "assets/tools/umami/shot-480.webp",
+        "960": "assets/tools/umami/shot-960.webp",
+        "1600": "assets/tools/umami/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/umami/mobile-390.webp",
+        "780": "assets/tools/umami/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/umami/icon-128.webp",
+        "256": "assets/tools/umami/icon-256.webp",
+        "from": "https://umami.is/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/umami/social-600.webp",
+        "1200": "assets/tools/umami/social-1200.webp",
+        "from": "https://umami.is/opengraph-image-j8qpfc.png?opengraph-image.05yuy2qyj01mg.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://umami.is\",null,null]"
+    },
+    "matomo": {
+      "slug": "matomo",
+      "name": "Matomo",
+      "source": "https://matomo.org",
+      "capturedAt": "2026-11-12T22:32:06.065Z",
+      "alt": "Screenshot of the Matomo website",
+      "pageTitle": "Privacy-first analytics you can trust - Analytics Platform - Matomo",
+      "pageDescription": "Popular analytics tools can miss up to 40% of traffic. Matomo delivers accurate, GDPR-compliant analytics with full data ownership in a platform teams can set up in minutes.",
+      "shot": {
+        "480": "assets/tools/matomo/shot-480.webp",
+        "960": "assets/tools/matomo/shot-960.webp",
+        "1600": "assets/tools/matomo/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/matomo/mobile-390.webp",
+        "780": "assets/tools/matomo/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/matomo/icon-128.webp",
+        "256": "assets/tools/matomo/icon-256.webp",
+        "from": "https://m-img.org/spai/q_lossless+ret_img+to_webp/matomo.org/wp-content/uploads/2026/04/favicon-matomo-2026-450x450.png",
+        "sourceWidth": 450,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/matomo/social-600.webp",
+        "1200": "assets/tools/matomo/social-1200.webp",
+        "from": "https://matomo.org/wp-content/uploads/2026/04/mockup_matomo-dashboard-2026.webp"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://matomo.org\",null,null]"
+    },
+    "fathom": {
+      "slug": "fathom",
+      "name": "Fathom Analytics",
+      "source": "https://usefathom.com",
+      "capturedAt": "2026-11-12T22:32:15.890Z",
+      "alt": "Screenshot of the Fathom Analytics website",
+      "pageTitle": "Fathom Analytics: Privacy-First Google Analytics Alternative",
+      "pageDescription": "Privacy-focused website analytics from a sustainable company. A GDPR compliant, Google Analytics alternative.",
+      "shot": {
+        "480": "assets/tools/fathom/shot-480.webp",
+        "960": "assets/tools/fathom/shot-960.webp",
+        "1600": "assets/tools/fathom/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/fathom/mobile-390.webp",
+        "780": "assets/tools/fathom/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/fathom/icon-128.webp",
+        "256": "assets/tools/fathom/icon-256.webp",
+        "svg": "assets/tools/fathom/icon.svg",
+        "from": "https://usefathom.com/assets/src/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/fathom/social-600.webp",
+        "1200": "assets/tools/fathom/social-1200.webp",
+        "from": "https://usefathom.com/assets/src/social-share-default.png"
+      },
+      "color": "#383838",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://usefathom.com\",null,null]"
+    },
+    "simple-analytics": {
+      "slug": "simple-analytics",
+      "name": "Simple Analytics",
+      "source": "https://www.simpleanalytics.com",
+      "capturedAt": "2026-11-12T22:32:24.170Z",
+      "alt": "Screenshot of the Simple Analytics website",
+      "pageTitle": "Simple Analytics",
+      "pageDescription": "Run Simple Analytics alongside GA4 to compare observed website traffic. Book a demo to plan a free 30-day proof of concept.",
+      "shot": {
+        "480": "assets/tools/simple-analytics/shot-480.webp",
+        "960": "assets/tools/simple-analytics/shot-960.webp",
+        "1600": "assets/tools/simple-analytics/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/simple-analytics/mobile-390.webp",
+        "780": "assets/tools/simple-analytics/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/simple-analytics/icon-128.webp",
+        "256": "assets/tools/simple-analytics/icon-256.webp",
+        "from": "https://www.simpleanalytics.com/android-chrome-512x512.png?v=2",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/simple-analytics/social-600.webp",
+        "1200": "assets/tools/simple-analytics/social-1200.webp",
+        "from": "https://assets.simpleanalytics.com/social-media/dark-chart.png"
+      },
+      "color": "#eef9ff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.simpleanalytics.com\",null,null]"
+    },
+    "posthog": {
+      "slug": "posthog",
+      "name": "PostHog",
+      "source": "https://posthog.com",
+      "capturedAt": "2026-11-12T22:32:33.706Z",
+      "alt": "Screenshot of the PostHog website",
+      "pageTitle": "PostHog – Your product’s context layer",
+      "pageDescription": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests – all without you having to prompt it.",
+      "shot": {
+        "480": "assets/tools/posthog/shot-480.webp",
+        "960": "assets/tools/posthog/shot-960.webp",
+        "1600": "assets/tools/posthog/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/posthog/mobile-390.webp",
+        "780": "assets/tools/posthog/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/posthog/icon-128.webp",
+        "256": "assets/tools/posthog/icon-256.webp",
+        "svg": "assets/tools/posthog/icon.svg",
+        "from": "https://posthog.com/favicon.svg?v=b269535480be66be70f82b8086587ec6",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/posthog/social-600.webp",
+        "1200": "assets/tools/posthog/social-1200.webp",
+        "from": "https://posthog.com/images/og/default.png"
+      },
+      "color": "#e5e7e0",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://posthog.com\",null,null]"
+    },
+    "google-analytics": {
+      "slug": "google-analytics",
+      "name": "Google Analytics",
+      "source": "https://marketingplatform.google.com/about/analytics/",
+      "capturedAt": "2026-11-12T22:32:43.486Z",
+      "alt": "Screenshot of the Google Analytics website",
+      "pageTitle": "Analytics Tools & Solutions for Your Business - Google Analytics",
+      "pageDescription": "Google Analytics gives you the tools you need to better understand your customers. You can then use those business insights to take action, such as improving your website, creating tailored audience lists, and more.",
+      "icon": {
+        "128": "assets/tools/google-analytics/icon-128.webp",
+        "256": "assets/tools/google-analytics/icon-256.webp",
+        "from": "https://www.gstatic.com/images/branding/googleg_gradient/2x/googleg_gradient_standard_192dp.png",
+        "sourceWidth": 384,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/google-analytics/social-600.webp",
+        "1200": "assets/tools/google-analytics/social-1200.webp",
+        "from": "https://lh3.googleusercontent.com/oz5bCMIFGBqul5z56AbXXgjTcrJQmtYeXJRijeeobpk3qP9CMLrJtkh1LUKkj5fr2pfXxnRu10R0zeFiyCB5dYRWqqvhwSGfTJktKg"
+      },
+      "color": "#2888f8",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"No thanks\")",
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://marketingplatform.google.com/about/analytics/\",{\"shot\":false},null]"
+    },
+    "listmonk": {
+      "slug": "listmonk",
+      "name": "listmonk",
+      "source": "https://listmonk.app",
+      "capturedAt": "2026-11-12T22:32:48.665Z",
+      "alt": "Screenshot of the listmonk website",
+      "pageTitle": "listmonk - Free and open source self-hosted newsletter, mailing list manager, and transactional mails",
+      "pageDescription": "Send e-mail campaigns and transactional e-mails. High performance and features packed into one app.",
+      "shot": {
+        "480": "assets/tools/listmonk/shot-480.webp",
+        "960": "assets/tools/listmonk/shot-960.webp",
+        "1600": "assets/tools/listmonk/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/listmonk/mobile-390.webp",
+        "780": "assets/tools/listmonk/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/listmonk/icon-128.webp",
+        "256": "assets/tools/listmonk/icon-256.webp",
+        "from": "https://listmonk.app/static/images/favicon.webp",
+        "sourceWidth": 64,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/listmonk/social-600.webp",
+        "1200": "assets/tools/listmonk/social-1200.webp",
+        "from": "https://listmonk.app/static/images/thumbnail.webp"
+      },
+      "color": "#0858d8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://listmonk.app\",null,null]"
+    },
+    "ghost": {
+      "slug": "ghost",
+      "name": "Ghost",
+      "source": "https://ghost.org",
+      "capturedAt": "2026-11-12T22:32:55.327Z",
+      "alt": "Screenshot of the Ghost website",
+      "pageTitle": "Ghost: The best open source blog & newsletter platform",
+      "pageDescription": "Beautiful, modern publishing with email newsletters and paid subscriptions built-in. Used by Platformer, 404Media, Lever News, Tangle, The Browser, and thousands more.",
+      "shot": {
+        "480": "assets/tools/ghost/shot-480.webp",
+        "960": "assets/tools/ghost/shot-960.webp",
+        "1600": "assets/tools/ghost/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ghost/mobile-390.webp",
+        "780": "assets/tools/ghost/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/ghost/icon-128.webp",
+        "256": "assets/tools/ghost/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/ghost/social-600.webp",
+        "1200": "assets/tools/ghost/social-1200.webp",
+        "from": "https://ghost.org/images/meta/ghost-6.png"
+      },
+      "color": "#15171a",
+      "colorFrom": "theme-color",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://ghost.org\",null,null]"
+    },
+    "buttondown": {
+      "slug": "buttondown",
+      "name": "Buttondown",
+      "source": "https://buttondown.com",
+      "capturedAt": "2026-11-12T22:33:02.242Z",
+      "alt": "Screenshot of the Buttondown website",
+      "pageTitle": "Buttondown — Newsletter software for people like you",
+      "pageDescription": "Buttondown is the last email platform you'll migrate to. We're focused on your success, not on bleeding you dry.",
+      "shot": {
+        "480": "assets/tools/buttondown/shot-480.webp",
+        "960": "assets/tools/buttondown/shot-960.webp",
+        "1600": "assets/tools/buttondown/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/buttondown/mobile-390.webp",
+        "780": "assets/tools/buttondown/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/buttondown/icon-128.webp",
+        "256": "assets/tools/buttondown/icon-256.webp",
+        "svg": "assets/tools/buttondown/icon.svg",
+        "from": "https://buttondown.com/icon.svg",
+        "scalable": true
+      },
+      "color": "#0069ff",
+      "colorFrom": "theme-color",
+      "notes": [
+        "social image failed: fetch failed"
+      ],
+      "cfg": "[\"https://buttondown.com\",null,null]"
+    },
+    "keila": {
+      "slug": "keila",
+      "name": "Keila",
+      "source": "https://www.keila.io",
+      "capturedAt": "2026-11-12T22:33:24.131Z",
+      "alt": "Screenshot of the Keila website",
+      "pageTitle": "Keila - Open Source Email Newsletters Easy & Reliable",
+      "pageDescription": "A reliable and easy-to-use email newsletter tool. Keila is an Open Source alternative to Mailchimp that you can host yourself.",
+      "shot": {
+        "480": "assets/tools/keila/shot-480.webp",
+        "960": "assets/tools/keila/shot-960.webp",
+        "1600": "assets/tools/keila/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/keila/mobile-390.webp",
+        "780": "assets/tools/keila/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/keila/icon-128.webp",
+        "256": "assets/tools/keila/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/keila/social-600.webp",
+        "1200": "assets/tools/keila/social-1200.webp",
+        "from": "https://www.keila.io/og-images/index_en.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.keila.io\",null,null]"
+    },
+    "mautic": {
+      "slug": "mautic",
+      "name": "Mautic",
+      "source": "https://www.mautic.org",
+      "capturedAt": "2026-11-12T22:33:32.823Z",
+      "alt": "Screenshot of the Mautic website",
+      "pageTitle": "Open Source Marketing Automation - Mautic",
+      "pageDescription": "Mautic provides free and open source marketing automation software available to everyone. Free email marketing and lead management software.",
+      "shot": {
+        "480": "assets/tools/mautic/shot-480.webp",
+        "960": "assets/tools/mautic/shot-960.webp",
+        "1600": "assets/tools/mautic/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/mautic/mobile-390.webp",
+        "780": "assets/tools/mautic/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/mautic/icon-128.webp",
+        "256": "assets/tools/mautic/icon-256.webp",
+        "from": "https://mautic.org/wp-content/uploads/2024/10/iTunesArtwork2x-300x300.png",
+        "sourceWidth": 300,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/mautic/social-600.webp",
+        "1200": "assets/tools/mautic/social-1200.webp",
+        "from": "https://mautic.org/wp-content/uploads/2025/01/free-your-marketing-empowered-by-mautic.jpg"
+      },
+      "color": "#485898",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.mautic.org\",null,null]"
+    },
+    "mailchimp": {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "source": "https://mailchimp.com",
+      "capturedAt": "2026-11-12T22:33:48.876Z",
+      "alt": "Screenshot of the Mailchimp website",
+      "pageTitle": "Email & SMS Marketing Platform | Mailchimp",
+      "pageDescription": "Utilize real-time user behavior data and artificial intelligence to convert more customers. Easy to use, get started for free!",
+      "icon": {
+        "128": "assets/tools/mailchimp/icon-128.webp",
+        "256": "assets/tools/mailchimp/icon-256.webp",
+        "from": "https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/mailchimp-favicons/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/mailchimp/social-600.webp",
+        "1200": "assets/tools/mailchimp/social-1200.webp",
+        "from": "https://mailchimp.com/ctf/images/yzco4xsimv0y/1SB1jCYU95Dh5YDdrucTh0/b8a7462001c1152ff92fef2c02b3b551/Intuit_Mailchimp_-_Wordmark_2023_-_Recirculation_.png"
+      },
+      "color": "#f8d818",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://mailchimp.com\",{\"shot\":false},null]"
+    },
+    "kit": {
+      "slug": "kit",
+      "name": "Kit",
+      "source": "https://kit.com",
+      "capturedAt": "2026-11-12T22:34:01.635Z",
+      "alt": "Screenshot of the Kit website",
+      "pageTitle": "Just a moment...",
+      "pageDescription": "Kit: The creator marketing platform",
+      "shot": {
+        "480": "assets/tools/kit/shot-480.webp",
+        "960": "assets/tools/kit/shot-960.webp",
+        "1600": "assets/tools/kit/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kit/mobile-390.webp",
+        "780": "assets/tools/kit/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/kit/icon-128.webp",
+        "256": "assets/tools/kit/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#48b8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://kit.com\",null,null]"
     }
   },
-  "updatedAt": "2026-11-05T16:53:34.863Z"
+  "updatedAt": "2026-11-12T22:34:22.676Z"
 }

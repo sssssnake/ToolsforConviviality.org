@@ -1,0 +1,33 @@
+{
+  "slug": "plausible",
+  "name": "Plausible",
+  "source": "https://plausible.io",
+  "capturedAt": "2026-11-12T22:31:43.706Z",
+  "alt": "Screenshot of the Plausible website",
+  "pageTitle": "Plausible Analytics | Simple, privacy-friendly Google Analytics alternative",
+  "pageDescription": "Plausible is a lightweight and open-source Google Analytics alternative. Your website data is 100% yours and the privacy of your visitors is respected.",
+  "shot": {
+    "480": "assets/tools/plausible/shot-480.webp",
+    "960": "assets/tools/plausible/shot-960.webp",
+    "1600": "assets/tools/plausible/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/plausible/mobile-390.webp",
+    "780": "assets/tools/plausible/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/plausible/icon-128.webp",
+    "256": "assets/tools/plausible/icon-256.webp",
+    "svg": "assets/tools/plausible/icon.svg",
+    "from": "https://plausible.io/assets/images/icon/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/plausible/social-600.webp",
+    "1200": "assets/tools/plausible/social-1200.webp",
+    "from": "https://plausible.io/assets/images/plausible_promo.jpg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

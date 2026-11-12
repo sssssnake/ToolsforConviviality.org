@@ -1,0 +1,38 @@
+{
+  "slug": "ghost",
+  "name": "Ghost",
+  "source": "https://ghost.org",
+  "capturedAt": "2026-11-12T22:32:55.327Z",
+  "alt": "Screenshot of the Ghost website",
+  "pageTitle": "Ghost: The best open source blog & newsletter platform",
+  "pageDescription": "Beautiful, modern publishing with email newsletters and paid subscriptions built-in. Used by Platformer, 404Media, Lever News, Tangle, The Browser, and thousands more.",
+  "shot": {
+    "480": "assets/tools/ghost/shot-480.webp",
+    "960": "assets/tools/ghost/shot-960.webp",
+    "1600": "assets/tools/ghost/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ghost/mobile-390.webp",
+    "780": "assets/tools/ghost/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/ghost/icon-128.webp",
+    "256": "assets/tools/ghost/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/ghost/social-600.webp",
+    "1200": "assets/tools/ghost/social-1200.webp",
+    "from": "https://ghost.org/images/meta/ghost-6.png"
+  },
+  "color": "#15171a",
+  "colorFrom": "theme-color",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

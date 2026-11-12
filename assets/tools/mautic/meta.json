@@ -1,0 +1,34 @@
+{
+  "slug": "mautic",
+  "name": "Mautic",
+  "source": "https://www.mautic.org",
+  "capturedAt": "2026-11-12T22:33:32.823Z",
+  "alt": "Screenshot of the Mautic website",
+  "pageTitle": "Open Source Marketing Automation - Mautic",
+  "pageDescription": "Mautic provides free and open source marketing automation software available to everyone. Free email marketing and lead management software.",
+  "shot": {
+    "480": "assets/tools/mautic/shot-480.webp",
+    "960": "assets/tools/mautic/shot-960.webp",
+    "1600": "assets/tools/mautic/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/mautic/mobile-390.webp",
+    "780": "assets/tools/mautic/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/mautic/icon-128.webp",
+    "256": "assets/tools/mautic/icon-256.webp",
+    "from": "https://mautic.org/wp-content/uploads/2024/10/iTunesArtwork2x-300x300.png",
+    "sourceWidth": 300,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/mautic/social-600.webp",
+    "1200": "assets/tools/mautic/social-1200.webp",
+    "from": "https://mautic.org/wp-content/uploads/2025/01/free-your-marketing-empowered-by-mautic.jpg"
+  },
+  "color": "#485898",
+  "colorFrom": "icon",
+  "notes": []
+}

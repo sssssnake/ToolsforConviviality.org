@@ -1,0 +1,34 @@
+{
+  "slug": "matomo",
+  "name": "Matomo",
+  "source": "https://matomo.org",
+  "capturedAt": "2026-11-12T22:32:06.065Z",
+  "alt": "Screenshot of the Matomo website",
+  "pageTitle": "Privacy-first analytics you can trust - Analytics Platform - Matomo",
+  "pageDescription": "Popular analytics tools can miss up to 40% of traffic. Matomo delivers accurate, GDPR-compliant analytics with full data ownership in a platform teams can set up in minutes.",
+  "shot": {
+    "480": "assets/tools/matomo/shot-480.webp",
+    "960": "assets/tools/matomo/shot-960.webp",
+    "1600": "assets/tools/matomo/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/matomo/mobile-390.webp",
+    "780": "assets/tools/matomo/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/matomo/icon-128.webp",
+    "256": "assets/tools/matomo/icon-256.webp",
+    "from": "https://m-img.org/spai/q_lossless+ret_img+to_webp/matomo.org/wp-content/uploads/2026/04/favicon-matomo-2026-450x450.png",
+    "sourceWidth": 450,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/matomo/social-600.webp",
+    "1200": "assets/tools/matomo/social-1200.webp",
+    "from": "https://matomo.org/wp-content/uploads/2026/04/mockup_matomo-dashboard-2026.webp"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

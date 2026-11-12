@@ -1,0 +1,33 @@
+{
+  "slug": "posthog",
+  "name": "PostHog",
+  "source": "https://posthog.com",
+  "capturedAt": "2026-11-12T22:32:33.706Z",
+  "alt": "Screenshot of the PostHog website",
+  "pageTitle": "PostHog – Your product’s context layer",
+  "pageDescription": "PostHog automatically diagnoses problems, fixes bugs, and generates pull requests – all without you having to prompt it.",
+  "shot": {
+    "480": "assets/tools/posthog/shot-480.webp",
+    "960": "assets/tools/posthog/shot-960.webp",
+    "1600": "assets/tools/posthog/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/posthog/mobile-390.webp",
+    "780": "assets/tools/posthog/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/posthog/icon-128.webp",
+    "256": "assets/tools/posthog/icon-256.webp",
+    "svg": "assets/tools/posthog/icon.svg",
+    "from": "https://posthog.com/favicon.svg?v=b269535480be66be70f82b8086587ec6",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/posthog/social-600.webp",
+    "1200": "assets/tools/posthog/social-1200.webp",
+    "from": "https://posthog.com/images/og/default.png"
+  },
+  "color": "#e5e7e0",
+  "colorFrom": "theme-color",
+  "notes": []
+}

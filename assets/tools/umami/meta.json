@@ -1,0 +1,34 @@
+{
+  "slug": "umami",
+  "name": "Umami",
+  "source": "https://umami.is",
+  "capturedAt": "2026-11-12T22:31:50.580Z",
+  "alt": "Screenshot of the Umami website",
+  "pageTitle": "Umami – Open-Source Web and Product Analytics",
+  "pageDescription": "Umami is an open-source web and product analytics platform. Understand acquisition, behavior, conversion, and retention without cookies. Self-host or use Umami Cloud.",
+  "shot": {
+    "480": "assets/tools/umami/shot-480.webp",
+    "960": "assets/tools/umami/shot-960.webp",
+    "1600": "assets/tools/umami/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/umami/mobile-390.webp",
+    "780": "assets/tools/umami/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/umami/icon-128.webp",
+    "256": "assets/tools/umami/icon-256.webp",
+    "from": "https://umami.is/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/umami/social-600.webp",
+    "1200": "assets/tools/umami/social-1200.webp",
+    "from": "https://umami.is/opengraph-image-j8qpfc.png?opengraph-image.05yuy2qyj01mg.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "goatcounter",
+  "name": "GoatCounter",
+  "source": "https://www.goatcounter.com",
+  "capturedAt": "2026-11-12T22:31:36.393Z",
+  "alt": "Screenshot of the GoatCounter website",
+  "pageTitle": "GoatCounter – open source web analytics",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/goatcounter/shot-480.webp",
+    "960": "assets/tools/goatcounter/shot-960.webp",
+    "1600": "assets/tools/goatcounter/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/goatcounter/mobile-390.webp",
+    "780": "assets/tools/goatcounter/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/goatcounter/icon-128.webp",
+    "256": "assets/tools/goatcounter/icon-256.webp",
+    "from": "https://static.zgo.at/favicon/apple-touch-icon.png",
+    "sourceWidth": 180,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

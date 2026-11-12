@@ -1,35 +1,86 @@
 {
-  "startedAt": "2026-11-05T16:52:28.881Z",
+  "startedAt": "2026-11-12T22:31:29.449Z",
   "captured": [
     {
-      "slug": "vlc",
-      "notes": []
-    },
-    {
-      "slug": "affine",
-      "notes": []
-    },
-    {
-      "slug": "wbo",
-      "notes": []
-    },
-    {
-      "slug": "drawio",
+      "slug": "instagram",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service",
-        "social image failed: HTTP 404 for https://www.drawio.com/img/blog/drawio-social-card.png"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "tldraw",
+      "slug": "goatcounter",
       "notes": []
     },
     {
-      "slug": "miro",
+      "slug": "plausible",
+      "notes": []
+    },
+    {
+      "slug": "umami",
+      "notes": []
+    },
+    {
+      "slug": "matomo",
+      "notes": []
+    },
+    {
+      "slug": "fathom",
+      "notes": []
+    },
+    {
+      "slug": "simple-analytics",
+      "notes": []
+    },
+    {
+      "slug": "posthog",
+      "notes": []
+    },
+    {
+      "slug": "google-analytics",
       "notes": [
-        "dismissed banner with button:has-text(\"Reject all\")",
+        "dismissed banner with button:has-text(\"No thanks\")",
         "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "listmonk",
+      "notes": []
+    },
+    {
+      "slug": "ghost",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "buttondown",
+      "notes": [
+        "social image failed: fetch failed"
+      ]
+    },
+    {
+      "slug": "keila",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "mautic",
+      "notes": []
+    },
+    {
+      "slug": "mailchimp",
+      "notes": [
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "kit",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
     }
   ],
@@ -299,10 +350,6 @@
       "reason": "recent"
     },
     {
-      "slug": "instagram",
-      "reason": "robots.txt disallows"
-    },
-    {
       "slug": "tiktok",
       "reason": "recent"
     },
@@ -472,6 +519,10 @@
     },
     {
       "slug": "flathub",
+      "reason": "recent"
+    },
+    {
+      "slug": "vlc",
       "reason": "recent"
     },
     {
@@ -809,8 +860,28 @@
     {
       "slug": "moltis",
       "reason": "recent"
+    },
+    {
+      "slug": "affine",
+      "reason": "recent"
+    },
+    {
+      "slug": "wbo",
+      "reason": "recent"
+    },
+    {
+      "slug": "drawio",
+      "reason": "recent"
+    },
+    {
+      "slug": "tldraw",
+      "reason": "recent"
+    },
+    {
+      "slug": "miro",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-05T16:53:34.866Z"
+  "finishedAt": "2026-11-12T22:34:22.679Z"
 }

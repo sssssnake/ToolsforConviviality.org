@@ -1,0 +1,33 @@
+{
+  "slug": "fathom",
+  "name": "Fathom Analytics",
+  "source": "https://usefathom.com",
+  "capturedAt": "2026-11-12T22:32:15.890Z",
+  "alt": "Screenshot of the Fathom Analytics website",
+  "pageTitle": "Fathom Analytics: Privacy-First Google Analytics Alternative",
+  "pageDescription": "Privacy-focused website analytics from a sustainable company. A GDPR compliant, Google Analytics alternative.",
+  "shot": {
+    "480": "assets/tools/fathom/shot-480.webp",
+    "960": "assets/tools/fathom/shot-960.webp",
+    "1600": "assets/tools/fathom/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/fathom/mobile-390.webp",
+    "780": "assets/tools/fathom/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/fathom/icon-128.webp",
+    "256": "assets/tools/fathom/icon-256.webp",
+    "svg": "assets/tools/fathom/icon.svg",
+    "from": "https://usefathom.com/assets/src/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/fathom/social-600.webp",
+    "1200": "assets/tools/fathom/social-1200.webp",
+    "from": "https://usefathom.com/assets/src/social-share-default.png"
+  },
+  "color": "#383838",
+  "colorFrom": "icon",
+  "notes": []
+}

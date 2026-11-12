@@ -1,0 +1,38 @@
+{
+  "slug": "keila",
+  "name": "Keila",
+  "source": "https://www.keila.io",
+  "capturedAt": "2026-11-12T22:33:24.131Z",
+  "alt": "Screenshot of the Keila website",
+  "pageTitle": "Keila - Open Source Email Newsletters Easy & Reliable",
+  "pageDescription": "A reliable and easy-to-use email newsletter tool. Keila is an Open Source alternative to Mailchimp that you can host yourself.",
+  "shot": {
+    "480": "assets/tools/keila/shot-480.webp",
+    "960": "assets/tools/keila/shot-960.webp",
+    "1600": "assets/tools/keila/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/keila/mobile-390.webp",
+    "780": "assets/tools/keila/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/keila/icon-128.webp",
+    "256": "assets/tools/keila/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/keila/social-600.webp",
+    "1200": "assets/tools/keila/social-1200.webp",
+    "from": "https://www.keila.io/og-images/index_en.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

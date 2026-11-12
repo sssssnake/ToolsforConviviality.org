@@ -1,0 +1,30 @@
+{
+  "slug": "buttondown",
+  "name": "Buttondown",
+  "source": "https://buttondown.com",
+  "capturedAt": "2026-11-12T22:33:02.242Z",
+  "alt": "Screenshot of the Buttondown website",
+  "pageTitle": "Buttondown — Newsletter software for people like you",
+  "pageDescription": "Buttondown is the last email platform you'll migrate to. We're focused on your success, not on bleeding you dry.",
+  "shot": {
+    "480": "assets/tools/buttondown/shot-480.webp",
+    "960": "assets/tools/buttondown/shot-960.webp",
+    "1600": "assets/tools/buttondown/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/buttondown/mobile-390.webp",
+    "780": "assets/tools/buttondown/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/buttondown/icon-128.webp",
+    "256": "assets/tools/buttondown/icon-256.webp",
+    "svg": "assets/tools/buttondown/icon.svg",
+    "from": "https://buttondown.com/icon.svg",
+    "scalable": true
+  },
+  "color": "#0069ff",
+  "colorFrom": "theme-color",
+  "notes": [
+    "social image failed: fetch failed"
+  ]
+}
