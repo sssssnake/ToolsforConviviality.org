@@ -2654,8 +2654,8 @@ function about() {
 
 function submit() {
   const opts = o => Object.entries(o).map(([k, v]) => `<option value="${k}">${k.length < 3 ? k + " · " : ""}${v.name}</option>`).join("");
-  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool or category</p>
-  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool or category</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else. If a whole category is missing, tell us that too: we add a category when the best-known tool in it is not convivial and a better one exists.</p></div>
+  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool</p>
+  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else.</p></div>
   <form id="suggest" novalidate>
     <div class="row2">
       <div class="field"><label for="f-name">Tool name</label><input id="f-name" required></div>
@@ -2670,13 +2670,34 @@ function submit() {
       <div class="field"><label for="f-cat">Category</label><select id="f-cat">${CATS.map(c => `<option>${esc(c.name)}</option>`).join("")}<option>Something else</option></select></div>
       <div class="field"><label for="f-price">Price</label><input id="f-price" placeholder="Free, pay once, subscription…"></div>
     </div>
-    <div class="field"><label for="f-newcat">Suggesting a category? Which one is missing?</label><input id="f-newcat" placeholder="For example: website builders. Name the best-known tool in it today."></div>
     <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
     <div class="field"><label for="f-img">A logo or screenshot we may use, if you have one</label><input id="f-img" type="url" placeholder="https://… link to an image or press kit"></div>
     <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
-    <div class="field"><label for="f-upd">What are you suggesting?</label><select id="f-upd"><option value="new">New tool</option><option value="update">Update to a listed tool</option><option value="category">New category</option></select></div>
+    <div class="field"><label for="f-upd">Is this a new tool, or an update to one already listed?</label><select id="f-upd"><option value="new">New tool</option><option value="update">Update to a listed tool</option></select></div>
     <div class="field"><label for="f-self">Your own answers to the six questions, with scores out of 5 and evidence (optional)</label><textarea id="f-self" placeholder="Footprint 4: works offline, 3 dependencies. Lock-in 5: exports JSON and Markdown…"></textarea></div>
     <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
+    <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
+  </form>
+  <div class="submit-out" id="out" hidden>
+    <p>Here is your suggestion. Copy it and email it to <span class="addr">hello@toolsforconviviality.org</span>.</p>
+    <pre id="out-text"></pre>
+    <div class="copyline"><button class="btn" type="button" id="copy">Copy suggestion</button><span id="copied" class="label" aria-live="polite"></span></div>
+  </div>`;
+}
+
+function suggestCategory() {
+  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a category</p>
+  <div class="page-head" style="margin-top:14px"><h1>Suggest a category</h1><p>Is there a kind of software the directory doesn't cover yet? Tell us which one. We add a category when the best-known tool in it is not convivial and a better one exists, so the most useful suggestions name that leader and say what it gets wrong.</p></div>
+  <form id="suggest-cat" novalidate>
+    <div class="field"><label for="c-name">Category</label><input id="c-name" placeholder="For example: website builders, backup, budgeting"></div>
+    <div class="field"><label for="c-job">What job does this kind of software do?</label><textarea id="c-job" rows="3" placeholder="In a sentence or two, as you would explain it to a friend."></textarea></div>
+    <div class="field"><label for="c-leader">The best-known tool in it today</label><input id="c-leader" placeholder="The one most people reach for first"></div>
+    <div class="field"><label for="c-why">What does it get wrong?</label><textarea id="c-why" rows="4" placeholder="Lock-in, tracking, nag screens, pricing that punishes leaving, anything that took options away from you."></textarea></div>
+    <div class="field"><label for="c-alts">Better tools you know of</label><textarea id="c-alts" rows="3" placeholder="Names and links, if you have them. Small and independent is welcome."></textarea></div>
+    <div class="row2">
+      <div class="field"><label for="c-name2">Your name (optional)</label><input id="c-name2" autocomplete="name"></div>
+      <div class="field"><label for="c-reach">Where we can reach you (optional)</label><input id="c-reach" placeholder="Email, a site, a profile…"></div>
+    </div>
     <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
   </form>
   <div class="submit-out" id="out" hidden>
@@ -2842,7 +2863,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.org";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", governance: "/governance/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", suggestcat: "/suggest-a-category/", governance: "/governance/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -2884,8 +2905,9 @@ function seo(id) {
   if (id === "what") return out("What is conviviality? Illich's idea applied to software", "Ivan Illich called tools convivial when people can use them freely and bend them to their own purposes. What that means for the software you use every day.", { ld: [crumbs([["Home", "/"], ["What is conviviality?", "/what-is-conviviality/"]])] });
   if (id === "method") return out("How we score tools: six questions from Ivan Illich", "Every tool is scored 0 to 5 on six questions about footprint, lock-in, self-direction, power, longevity and delivery, for a total out of 30.", { ld: [crumbs([["Home", "/"], ["How we score", "/how-we-score/"]])] });
   if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
-  if (id === "submit") return out("Suggest a tool or category for the directory", "Made something small and useful, or found a tool or category we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
+  if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
+  if (id === "suggestcat") return out("Suggest a category", "Tell us which kind of software the directory is missing, and which well-known tool in it is not convivial.", { noindex: true });
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
   if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
   if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
@@ -2969,6 +2991,7 @@ function render() {
   else if (h === "compare") { html = compareIndex(); nav = ""; }
   else if (h.startsWith("cmp-")) { html = compare(h.slice(4)); nav = ""; }
   else if (h === "involve") { html = involve(); nav = ""; }
+  else if (h === "suggestcat") { html = suggestCategory(); nav = ""; }
   else if (h === "governance") html = governance();
   else if (h === "thanks") html = thanks();
   else html = notFound();
@@ -2994,6 +3017,20 @@ function bind() {
     set("f-rel", "rel", (o, v) => o.text.toLowerCase() === v);
     set("f-upd", "update", (o, v) => o.value === (v === "no" || v === "new" ? "new" : "update"));
   }
+  const cform = document.getElementById("suggest-cat");
+  if (cform) cform.onsubmit = e => {
+    e.preventDefault();
+    const v = id => document.getElementById(id).value.trim() || "(not given)";
+    const text = `Category: ${v("c-name")}\nThe job it does: ${v("c-job")}\nBest-known tool today: ${v("c-leader")}\nWhat it gets wrong: ${v("c-why")}\nBetter tools I know of: ${v("c-alts")}\nName: ${v("c-name2")}\nReach me at: ${v("c-reach")}`;
+    document.getElementById("out-text").textContent = text;
+    const out = document.getElementById("out"); out.hidden = false;
+    document.getElementById("copy").onclick = async () => {
+      const msg = document.getElementById("copied");
+      try { await navigator.clipboard.writeText(text); msg.textContent = "Copied"; }
+      catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("out-text")); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); msg.textContent = "Selected, press copy"; }
+    };
+    out.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  };
   const iform = document.getElementById("involve");
   if (iform) iform.onsubmit = e => {
     e.preventDefault();
@@ -3013,7 +3050,7 @@ function bind() {
   if (form) form.onsubmit = e => {
     e.preventDefault();
     const v = id => document.getElementById(id).value.trim() || "(not given)";
-    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nMissing category: ${v("f-newcat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nSuggesting: ${v("f-upd")}\nSelf-assessment: ${v("f-self")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nNew or update: ${v("f-upd")}\nSelf-assessment: ${v("f-self")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
     document.getElementById("out-text").textContent = text;
     const out = document.getElementById("out"); out.hidden = false;
     document.getElementById("copy").onclick = async () => {
