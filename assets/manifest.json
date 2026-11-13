@@ -6933,7 +6933,241 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://kit.com\",null,null]"
+    },
+    "liberapay": {
+      "slug": "liberapay",
+      "name": "Liberapay",
+      "source": "https://liberapay.com",
+      "capturedAt": "2026-11-13T18:00:39.141Z",
+      "alt": "Screenshot of the Liberapay website",
+      "pageTitle": "Liberapay",
+      "pageDescription": "We help you fund the creators and projects you appreciate.",
+      "shot": {
+        "480": "assets/tools/liberapay/shot-480.webp",
+        "960": "assets/tools/liberapay/shot-960.webp",
+        "1600": "assets/tools/liberapay/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/liberapay/mobile-390.webp",
+        "780": "assets/tools/liberapay/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/liberapay/icon-128.webp",
+        "256": "assets/tools/liberapay/icon-256.webp",
+        "from": "https://liberapay.com/assets/liberapay/icon-v2_black-on-yellow.200.png?etag=.KRU9oDkj1mlMXWqrHpaKQA~~",
+        "sourceWidth": 200,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/liberapay/social-600.webp",
+        "1200": "assets/tools/liberapay/social-1200.webp",
+        "from": "https://liberapay.com/assets/liberapay/icon-v2_black-on-yellow.200.png?etag=.KRU9oDkj1mlMXWqrHpaKQA~~"
+      },
+      "color": "#f6c915",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://liberapay.com\",null,null]"
+    },
+    "open-collective": {
+      "slug": "open-collective",
+      "name": "Open Collective",
+      "source": "https://opencollective.com",
+      "capturedAt": "2026-11-13T18:00:56.948Z",
+      "alt": "Screenshot of the Open Collective website",
+      "pageTitle": "Raise, manage and disburse money with full transparency. - Open Collective",
+      "pageDescription": "Open Collective is a legal and financial toolbox for groups. It’s a fundraising + legal status + money management platform for your community. What do you want to do?",
+      "shot": {
+        "480": "assets/tools/open-collective/shot-480.webp",
+        "960": "assets/tools/open-collective/shot-960.webp",
+        "1600": "assets/tools/open-collective/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/open-collective/mobile-390.webp",
+        "780": "assets/tools/open-collective/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/open-collective/icon-128.webp",
+        "256": "assets/tools/open-collective/icon-256.webp",
+        "from": "https://opencollective.com/static/images/favicon.ico.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/open-collective/social-600.webp",
+        "1200": "assets/tools/open-collective/social-1200.webp",
+        "from": "https://opencollective.com/static/images/opencollective-og.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://opencollective.com\",null,null]"
+    },
+    "ko-fi": {
+      "slug": "ko-fi",
+      "name": "Ko-fi",
+      "source": "https://ko-fi.com",
+      "capturedAt": "2026-11-13T18:01:05.209Z",
+      "alt": "Screenshot of the Ko-fi website",
+      "pageTitle": "Ko-fi | Make money doing what you love",
+      "pageDescription": "Join 1,000,000+ creators! Set up your free page to get tips, sell products, offer memberships, and grow your community.",
+      "shot": {
+        "480": "assets/tools/ko-fi/shot-480.webp",
+        "960": "assets/tools/ko-fi/shot-960.webp",
+        "1600": "assets/tools/ko-fi/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ko-fi/mobile-390.webp",
+        "780": "assets/tools/ko-fi/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/ko-fi/icon-128.webp",
+        "256": "assets/tools/ko-fi/icon-256.webp",
+        "from": "https://ko-fi.com/apple-touch-icon.png",
+        "sourceWidth": 76,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/ko-fi/social-600.webp",
+        "1200": "assets/tools/ko-fi/social-1200.webp",
+        "from": "https://storage.ko-fi.com/cdn/og.png?v=2"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://ko-fi.com\",null,null]"
+    },
+    "github-sponsors": {
+      "slug": "github-sponsors",
+      "name": "GitHub Sponsors",
+      "source": "https://github.com/sponsors",
+      "capturedAt": "2026-11-13T18:01:12.294Z",
+      "alt": "Screenshot of the GitHub Sponsors website",
+      "pageTitle": "GitHub Sponsors · GitHub",
+      "pageDescription": "Invest in the open source projects you depend on with GitHub Sponsors.",
+      "shot": {
+        "480": "assets/tools/github-sponsors/shot-480.webp",
+        "960": "assets/tools/github-sponsors/shot-960.webp",
+        "1600": "assets/tools/github-sponsors/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/github-sponsors/mobile-390.webp",
+        "780": "assets/tools/github-sponsors/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/github-sponsors/icon-128.webp",
+        "256": "assets/tools/github-sponsors/icon-256.webp",
+        "svg": "assets/tools/github-sponsors/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/github-sponsors/social-600.webp",
+        "1200": "assets/tools/github-sponsors/social-1200.webp",
+        "from": "https://images.ctfassets.net/8aevphvgewt8/5qMNDWPY4K9OFwHgPxYPs2/2616e45724da607c2b892f7b8e7da49e/sponsors-945335f065cc.jpg"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/sponsors\",null,null]"
+    },
+    "buy-me-a-coffee": {
+      "slug": "buy-me-a-coffee",
+      "name": "Buy Me a Coffee",
+      "source": "https://buymeacoffee.com",
+      "capturedAt": "2026-11-13T18:01:23.244Z",
+      "alt": "Screenshot of the Buy Me a Coffee website",
+      "pageTitle": "Buy Me a Coffee",
+      "pageDescription": "Buy Me a Coffee is the best way for creators and artists to accept support and membership from their fans.",
+      "shot": {
+        "480": "assets/tools/buy-me-a-coffee/shot-480.webp",
+        "960": "assets/tools/buy-me-a-coffee/shot-960.webp",
+        "1600": "assets/tools/buy-me-a-coffee/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/buy-me-a-coffee/mobile-390.webp",
+        "780": "assets/tools/buy-me-a-coffee/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/buy-me-a-coffee/icon-128.webp",
+        "256": "assets/tools/buy-me-a-coffee/icon-256.webp",
+        "from": "https://cdn.buymeacoffee.com/assets/homepage/meta/apple-icon-180x180.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/buy-me-a-coffee/social-600.webp",
+        "1200": "assets/tools/buy-me-a-coffee/social-1200.webp",
+        "from": "https://cdn.buymeacoffee.com/assets/homepage/meta/home-page-og.png"
+      },
+      "color": "#f8d808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://buymeacoffee.com\",null,null]"
+    },
+    "steady": {
+      "slug": "steady",
+      "name": "Steady",
+      "source": "https://steady.page",
+      "capturedAt": "2026-11-13T18:01:31.072Z",
+      "alt": "Screenshot of the Steady website",
+      "pageTitle": "Just a moment...",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/steady/shot-480.webp",
+        "960": "assets/tools/steady/shot-960.webp",
+        "1600": "assets/tools/steady/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/steady/mobile-390.webp",
+        "780": "assets/tools/steady/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/steady/icon-128.webp",
+        "256": "assets/tools/steady/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#281838",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://steady.page\",null,null]"
+    },
+    "patreon": {
+      "slug": "patreon",
+      "name": "Patreon",
+      "source": "https://www.patreon.com",
+      "capturedAt": "2026-11-13T18:01:52.465Z",
+      "alt": "Screenshot of the Patreon website",
+      "pageTitle": "Just a moment...",
+      "pageDescription": null,
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/patreon/icon-128.webp",
+        "256": "assets/tools/patreon/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.patreon.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-12T22:34:22.676Z"
+  "updatedAt": "2026-11-13T18:02:03.650Z"
 }

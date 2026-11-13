@@ -1,0 +1,34 @@
+{
+  "slug": "ko-fi",
+  "name": "Ko-fi",
+  "source": "https://ko-fi.com",
+  "capturedAt": "2026-11-13T18:01:05.209Z",
+  "alt": "Screenshot of the Ko-fi website",
+  "pageTitle": "Ko-fi | Make money doing what you love",
+  "pageDescription": "Join 1,000,000+ creators! Set up your free page to get tips, sell products, offer memberships, and grow your community.",
+  "shot": {
+    "480": "assets/tools/ko-fi/shot-480.webp",
+    "960": "assets/tools/ko-fi/shot-960.webp",
+    "1600": "assets/tools/ko-fi/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/ko-fi/mobile-390.webp",
+    "780": "assets/tools/ko-fi/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/ko-fi/icon-128.webp",
+    "256": "assets/tools/ko-fi/icon-256.webp",
+    "from": "https://ko-fi.com/apple-touch-icon.png",
+    "sourceWidth": 76,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/ko-fi/social-600.webp",
+    "1200": "assets/tools/ko-fi/social-1200.webp",
+    "from": "https://storage.ko-fi.com/cdn/og.png?v=2"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

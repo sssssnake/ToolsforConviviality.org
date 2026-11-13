@@ -1,84 +1,37 @@
 {
-  "startedAt": "2026-11-12T22:31:29.449Z",
+  "startedAt": "2026-11-13T18:00:35.627Z",
   "captured": [
     {
-      "slug": "instagram",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "goatcounter",
+      "slug": "liberapay",
       "notes": []
     },
     {
-      "slug": "plausible",
+      "slug": "open-collective",
       "notes": []
     },
     {
-      "slug": "umami",
+      "slug": "ko-fi",
       "notes": []
     },
     {
-      "slug": "matomo",
+      "slug": "github-sponsors",
       "notes": []
     },
     {
-      "slug": "fathom",
+      "slug": "buy-me-a-coffee",
       "notes": []
     },
     {
-      "slug": "simple-analytics",
-      "notes": []
-    },
-    {
-      "slug": "posthog",
-      "notes": []
-    },
-    {
-      "slug": "google-analytics",
-      "notes": [
-        "dismissed banner with button:has-text(\"No thanks\")",
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "listmonk",
-      "notes": []
-    },
-    {
-      "slug": "ghost",
+      "slug": "steady",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
     },
     {
-      "slug": "buttondown",
+      "slug": "patreon",
       "notes": [
-        "social image failed: fetch failed"
-      ]
-    },
-    {
-      "slug": "keila",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
-      ]
-    },
-    {
-      "slug": "mautic",
-      "notes": []
-    },
-    {
-      "slug": "mailchimp",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "kit",
-      "notes": [
+        "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
@@ -347,6 +300,10 @@
     },
     {
       "slug": "peertube",
+      "reason": "recent"
+    },
+    {
+      "slug": "instagram",
       "reason": "recent"
     },
     {
@@ -880,8 +837,68 @@
     {
       "slug": "miro",
       "reason": "recent"
+    },
+    {
+      "slug": "goatcounter",
+      "reason": "recent"
+    },
+    {
+      "slug": "plausible",
+      "reason": "recent"
+    },
+    {
+      "slug": "umami",
+      "reason": "recent"
+    },
+    {
+      "slug": "matomo",
+      "reason": "recent"
+    },
+    {
+      "slug": "fathom",
+      "reason": "recent"
+    },
+    {
+      "slug": "simple-analytics",
+      "reason": "recent"
+    },
+    {
+      "slug": "posthog",
+      "reason": "recent"
+    },
+    {
+      "slug": "google-analytics",
+      "reason": "recent"
+    },
+    {
+      "slug": "listmonk",
+      "reason": "recent"
+    },
+    {
+      "slug": "ghost",
+      "reason": "recent"
+    },
+    {
+      "slug": "buttondown",
+      "reason": "recent"
+    },
+    {
+      "slug": "keila",
+      "reason": "recent"
+    },
+    {
+      "slug": "mautic",
+      "reason": "recent"
+    },
+    {
+      "slug": "mailchimp",
+      "reason": "recent"
+    },
+    {
+      "slug": "kit",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-12T22:34:22.679Z"
+  "finishedAt": "2026-11-13T18:02:03.653Z"
 }

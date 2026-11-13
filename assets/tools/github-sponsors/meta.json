@@ -1,0 +1,33 @@
+{
+  "slug": "github-sponsors",
+  "name": "GitHub Sponsors",
+  "source": "https://github.com/sponsors",
+  "capturedAt": "2026-11-13T18:01:12.294Z",
+  "alt": "Screenshot of the GitHub Sponsors website",
+  "pageTitle": "GitHub Sponsors · GitHub",
+  "pageDescription": "Invest in the open source projects you depend on with GitHub Sponsors.",
+  "shot": {
+    "480": "assets/tools/github-sponsors/shot-480.webp",
+    "960": "assets/tools/github-sponsors/shot-960.webp",
+    "1600": "assets/tools/github-sponsors/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/github-sponsors/mobile-390.webp",
+    "780": "assets/tools/github-sponsors/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/github-sponsors/icon-128.webp",
+    "256": "assets/tools/github-sponsors/icon-256.webp",
+    "svg": "assets/tools/github-sponsors/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/github-sponsors/social-600.webp",
+    "1200": "assets/tools/github-sponsors/social-1200.webp",
+    "from": "https://images.ctfassets.net/8aevphvgewt8/5qMNDWPY4K9OFwHgPxYPs2/2616e45724da607c2b892f7b8e7da49e/sponsors-945335f065cc.jpg"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

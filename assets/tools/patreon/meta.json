@@ -1,0 +1,25 @@
+{
+  "slug": "patreon",
+  "name": "Patreon",
+  "source": "https://www.patreon.com",
+  "capturedAt": "2026-11-13T18:01:52.465Z",
+  "alt": "Screenshot of the Patreon website",
+  "pageTitle": "Just a moment...",
+  "pageDescription": null,
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/patreon/icon-128.webp",
+    "256": "assets/tools/patreon/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

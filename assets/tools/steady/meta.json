@@ -1,0 +1,33 @@
+{
+  "slug": "steady",
+  "name": "Steady",
+  "source": "https://steady.page",
+  "capturedAt": "2026-11-13T18:01:31.072Z",
+  "alt": "Screenshot of the Steady website",
+  "pageTitle": "Just a moment...",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/steady/shot-480.webp",
+    "960": "assets/tools/steady/shot-960.webp",
+    "1600": "assets/tools/steady/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/steady/mobile-390.webp",
+    "780": "assets/tools/steady/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/steady/icon-128.webp",
+    "256": "assets/tools/steady/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#281838",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}
