@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/nextcloud/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/nextcloud/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Nextcloud</h3><p class="one">Your own file storage, calendar and contacts, on a server you choose.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Self-hostable</span></div></div></div>
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-drive/"><span class="logo sm"><img src="/assets/tools/google-drive/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Drive</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>People use cloud storage for two different jobs: getting a file from here to there, and keeping a copy somewhere safe and in sync. Different tools fit each job better than one giant service does. <a href="/tools/localsend/">LocalSend</a> moves files directly between devices on the same network, <a href="/tools/syncthing/">Syncthing</a> keeps folders in step between your own computers, and <a href="/tools/cryptomator/">Cryptomator</a> locks files before they reach whatever cloud folder you already use.</p><p>None of these needs you to hand your files to a company that earns money from knowing about them. <a href="/tools/nextcloud/">Nextcloud</a> gives you your own cloud, and <a href="/tools/pairdrop/">PairDrop</a> sends files to a nearby device from the browser.</p><h2>How to choose</h2><p>Decide first whether you need a transfer, a sync or a vault. For a one-off handover, a direct transfer needs nothing stored anywhere. For files you work on across machines, syncing directly between your own devices means no third party holds them. If you already pay for cloud storage and can't leave, encrypting before upload keeps the provider from reading anything.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to AirDrop for Windows and Android?</h3><p><a href="/tools/localsend/">LocalSend</a> works across Windows, Mac, Linux, Android and iOS over the same Wi-Fi, with no account.</p></div><div class="qa"><h3>Can I sync files without a cloud service?</h3><p>Yes. <a href="/tools/syncthing/">Syncthing</a> copies changes straight between your own devices. It takes some setup, and on phones the Android options are less settled than on the desktop.</p></div><div class="qa"><h3>How do I keep using Google Drive or OneDrive but keep my files private?</h3><p><a href="/tools/cryptomator/">Cryptomator</a> encrypts your files into a vault inside the folder first, so the provider only ever sees scrambled data.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

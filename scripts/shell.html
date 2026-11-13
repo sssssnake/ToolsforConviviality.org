@@ -221,6 +221,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -2713,7 +2727,28 @@ const CATCOPY = {
       ["How do I listen to audiobooks without Audible?", "Buy or borrow audio files you can keep and play them with {audiobookshelf}, which runs on your own server, or with any player that opens the files. Check that the audiobook comes without copy protection before you pay."],
       ["Are free ebooks any good?", "Yes, for older books. {standard-ebooks} editions are carefully typeset, and {gutenberg} holds more than 75,000 titles, though the formatting varies."]] }
 };
+const FEES = {
+  donations: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each platform's own pages in November 2026. Fees change, so check the linked page before you commit, and \"not stated\" means we did not find it, not that it is free.",
+    cols: ["Platform fee", "Processing", "Also charged", "Paid out via"],
+    rows: [
+      { slug: "patreon", bench: true, v: ["10% on pages published after 4 Aug 2025; legacy plans 5%, 8% or 11%", "2.9% + $0.30 above $3, 5% + $0.10 at or below $3 (card, US dollar payout)", "2.5% currency conversion, a payout fee by method, Apple's 30% on iOS purchases", "Patreon"], src: ["Creator fees overview", "https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview"] },
+      { slug: "liberapay", v: ["None, it takes no cut of payments", "Set by the processor, about 3% on average for Stripe and 5.1% for PayPal", "Not stated", "Stripe or PayPal"], src: ["FAQ", "https://liberapay.com/about/faq"] },
+      { slug: "ko-fi", v: ["0% on one-off tips; 5% on memberships and sales on the free plan, none on Gold at $12 a month", "PayPal or Stripe charge their own fees, usually around 3% + $0.30", "No buyer, payout or marketing fees", "Your own PayPal or Stripe account"], src: ["Pricing", "https://ko-fi.com/pricing"] },
+      { slug: "github-sponsors", v: ["0% on personal accounts; up to 6% on organisations", "3% card fee for organisations, avoidable by paying through invoiced billing", "Not stated", "Not stated"], src: ["Fees and taxes", "https://docs.github.com/en/enterprise-cloud@latest/sponsors/sponsoring-open-source-contributors/about-sponsorships-fees-and-taxes"] },
+      { slug: "buy-me-a-coffee", v: ["5% per transaction, no monthly fee", "Stripe, 2.9% + $0.30", "0.5% on payouts, +1% for supporters outside the US, +0.5% on subscriptions", "Your Stripe account"], src: ["Calculating charges", "https://help.buymeacoffee.com/en/articles/8105744-how-to-calculate-charges-on-your-payment"] },
+      { slug: "steady", v: ["10% commission on revenue", "Card 1.9% + €0.30, PayPal 2.49% + €0.35, direct debit 1% + €0.20", "VAT is handled for you; chargebacks cost €30 on cards", "Steady"], src: ["Pricing", "https://steady.page/en/pricing"], src2: ["Transaction costs", "https://help.steady.page/en/articles/6265627-what-are-the-transaction-costs-that-steady-passes-on-to-you"] },
+      { slug: "open-collective", v: ["Set by your fiscal host, commonly 0% to 10%; 15% of the host's fee goes to the platform", "Not stated", "Not stated", "Your fiscal host"], src: ["Pricing", "https://docs.opencollective.com/help/about/pricing"] }
+    ]
+  }
+};
 const linkify = s => esc(s).replace(/\{([a-z0-9-]+)\}/g, (m, slug) => { const t = TOOLS.find(x => x.slug === slug); return t ? `<a href="#tool-${slug}">${esc(t.name)}</a>` : m; });
+
+function feeTable(f) {
+  const nm = r => { const b = r.bench ? BENCH.find(x => x.slug === r.slug) : TOOLS.find(x => x.slug === r.slug); return { n: b ? b.name : r.slug, h: (r.bench ? "#bench-" : "#tool-") + r.slug }; };
+  return `<section class="feetab" aria-label="${esc(f.h)}"><h2>${esc(f.h)}</h2><p>${esc(f.intro)}</p><div class="fee-scroll" tabindex="0" role="region" aria-label="${esc(f.h)}, scrolls sideways on small screens"><table class="fees"><thead><tr><th scope="col">Platform</th>${f.cols.map(c => `<th scope="col">${esc(c)}</th>`).join("")}<th scope="col">Source</th></tr></thead><tbody>${f.rows.map(r => { const x = nm(r); return `<tr><th scope="row"><a href="${x.h}">${esc(x.n)}</a>${r.bench ? "<small>Benchmark</small>" : ""}</th>${r.v.map(v => `<td>${esc(v)}</td>`).join("")}<td>${[r.src, r.src2].filter(Boolean).map(u => `<a href="${esc(u[1])}" rel="noopener" target="_blank">${esc(u[0])}</a>`).join("<br>")}</td></tr>`; }).join("")}</tbody></table></div></section>`;
+}
 
 function category(id) {
   const c = catOf(id); if (!c) return notFound();
@@ -2724,6 +2759,7 @@ function category(id) {
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   <p class="list-note">Ranked by score out of 30, most convivial first.</p>
   <div class="tool-list">${list.map(t => row(t, rk.get(t.slug))).join("")}</div>
+  ${FEES[id] ? feeTable(FEES[id]) : ""}
   ${bench.length ? `<section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid">${bench.map(x => `<a class="bcard" href="#bench-${x.slug}">${logo(x, "sm")}<span class="cmp-t"><b>${esc(x.name)}</b><small>Benchmark review</small></span><span class="cmp-s"><b>${total(x)}<span>/30</span></b><small class="verdict-mini v${vcls(total(x))}">${band(total(x))}</small></span></a>`).join("")}</div></section>` : ""}
   ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}</div>`;
 }

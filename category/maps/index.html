@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/osmand/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/osmand/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>OsmAnd</h3><p class="one">Offline OpenStreetMap maps and navigation for Android and iOS, with a setting for nearly everything.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Works offline</span><span class="chip">Free tier</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-maps/"><span class="logo sm"><img src="/assets/tools/google-maps/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Maps</b><small>Benchmark review</small></span><span class="cmp-s"><b>17<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Google Maps is an excellent map run by an advertising company, and those two facts are connected. Maps that run on your phone from downloaded regions, built on OpenStreetMap data that volunteers edit and anyone may use, cut the connection. <a href="/tools/comaps/">CoMaps</a> gets you from A to B with no account and no trail, <a href="/tools/osmand/">OsmAnd</a> packs offline navigation and a setting for nearly everything into one app, and <a href="/tools/openstreetmap/">OpenStreetMap</a> is the map itself, which you can browse, download and edit.</p><p>The field is young, so we only list what we have looked at closely, and more reviews will follow. <a href="/tools/organic-maps/">Organic Maps</a> is a polished offline map and <a href="/tools/transportr/">Transportr</a> plans public transport trips.</p><h2>How to choose</h2><p>Ask three things. Does it work with no signal, because a good offline map is also a more reliable one on a hike or in a tunnel. Does it need an account, and does it say what it collects. And can you tell who pays for it. The honest trade-off with every alternative to Google Maps today is live traffic and business listings, where the giant still leads.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a Google Maps alternative that works offline?</h3><p>Yes. <a href="/tools/comaps/">CoMaps</a> and <a href="/tools/osmand/">OsmAnd</a> let you download a region once and then search and navigate with no connection, and <a href="/tools/comaps/">CoMaps</a> needs no account.</p></div><div class="qa"><h3>Do I give up traffic information?</h3><p>Mostly, yes. Offline maps can't match Google on live traffic or on opening hours for busy places, and some days that matters.</p></div><div class="qa"><h3>Where does the map data come from?</h3><p>From OpenStreetMap, a map edited by volunteers around the world. It has gaps in some places, and you can fix them yourself.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

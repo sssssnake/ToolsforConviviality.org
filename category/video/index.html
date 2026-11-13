@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -476,6 +490,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/freetube/"><span class="rank-n" aria-label="Rank 3">3</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/freetube/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>FreeTube</h3><p class="one">A desktop app for watching YouTube without an account.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">No account</span></div></div></div>
     <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/youtube/"><span class="logo sm"><img src="/assets/tools/youtube/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>YouTube</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Video sites choose what plays next and watch what you watch. <a href="/tools/vlc/">VLC</a> plays almost any file, <a href="/tools/mpv/">mpv</a> does it with a bare window, <a href="/tools/kodi/">Kodi</a> turns a computer into a media centre for your TV, <a href="/tools/jellyfin/">Jellyfin</a> streams your own films and shows from your own server, and <a href="/tools/newpipe/">NewPipe</a> and <a href="/tools/freetube/">FreeTube</a> let you watch YouTube without an account or ads.</p><p>Most of these work best with video you own, and the YouTube viewers carry a risk: they depend on YouTube's pages, so they can break until their volunteers fix them.</p><h2>How to choose</h2><p>For one device, <a href="/tools/vlc/">VLC</a> is all most people need. If you have a library and a spare computer, <a href="/tools/jellyfin/">Jellyfin</a> or <a href="/tools/kodi/">Kodi</a> make it feel like a streaming service. To keep watching YouTube with less tracking, <a href="/tools/newpipe/">NewPipe</a> on Android and <a href="/tools/freetube/">FreeTube</a> on the desktop are the closest fit.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to YouTube?</h3><p><a href="/tools/newpipe/">NewPipe</a> on Android and <a href="/tools/freetube/">FreeTube</a> on the desktop show YouTube videos with no account or ads, and <a href="/tools/peertube/">PeerTube</a>, in Social feeds, is a federated video site run by many hosts.</p></div><div class="qa"><h3>What plays every video file?</h3><p><a href="/tools/vlc/">VLC</a> and <a href="/tools/mpv/">mpv</a> play nearly every format with no account or ads.</p></div><div class="qa"><h3>Can I have my own Netflix?</h3><p><a href="/tools/jellyfin/">Jellyfin</a> and <a href="/tools/kodi/">Kodi</a> serve the films and shows you own to your TV and other devices.</p></div></section></div></div></main>
 
@@ -503,7 +518,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

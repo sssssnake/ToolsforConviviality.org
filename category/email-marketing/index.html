@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -476,6 +490,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/kit/"><span class="rank-n" aria-label="Rank 6">6</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/kit/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Kit</h3><p class="one">Email marketing for creators, formerly ConvertKit, with a free plan up to 10,000 subscribers.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Hosted</span><span class="chip">Creators</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/mailchimp/"><span class="logo sm"><img src="/assets/tools/mailchimp/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Mailchimp</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Mailchimp's free plan allows 250 contacts and no automations, its paid plans were listed at $13, $20 and $350 a month for the first year, and Intuit owns it. <a href="/tools/listmonk/">listmonk</a> runs as one program next to a PostgreSQL database under AGPL-3.0, and <a href="/tools/keila/">Keila</a> is an AGPL tool made in Germany that you can also use hosted.</p><p><a href="/tools/mautic/">Mautic</a> is a marketing automation platform governed by its community, <a href="/tools/ghost/">Ghost</a> is a publishing site with newsletters built in, <a href="/tools/buttondown/">Buttondown</a> is a hosted newsletter service that says it is profitable and self-funded, and <a href="/tools/kit/">Kit</a> is a hosted service for creators with a free plan up to 10,000 subscribers.</p><h2>How to choose</h2><p>Start with where the sending happens. Buttondown, Kit and Ghost(Pro) handle delivery for you. listmonk, Keila and Mautic leave you to pick and look after a sending service, and the reputation of that domain is yours.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an open source alternative to Mailchimp?</h3><p><a href="/tools/listmonk/">listmonk</a>, <a href="/tools/keila/">Keila</a> and <a href="/tools/mautic/">Mautic</a> are open source, and each can be run on your own server.</p></div><div class="qa"><h3>Is there a free alternative to Mailchimp?</h3><p><a href="/tools/listmonk/">listmonk</a> is free to self-host, and <a href="/tools/kit/">Kit</a> has a free plan for up to 10,000 subscribers, with Kit branding and email support only.</p></div><div class="qa"><h3>Can I take my subscribers with me?</h3><p>Mailchimp exports contacts in a ZIP, once every 24 hours. <a href="/tools/buttondown/">Buttondown</a> exports subscribers as a CSV, and a self-hosted tool keeps them in a database you control.</p></div></section></div></div></main>
 
@@ -503,7 +518,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

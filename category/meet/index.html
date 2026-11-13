@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/element-call/"><span class="rank-n" aria-label="Rank 4">4</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/element-call/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Element Call</h3><p class="one">Group video calls on the open Matrix network, from the makers of Element.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Open source</span><span class="chip">Encrypted</span><span class="chip">Open protocol</span></div></div></div>
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/zoom/"><span class="logo sm"><img src="/assets/tools/zoom/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Zoom</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>A video call needs a server somewhere, and the question is whose. <a href="/tools/jitsi-meet/">Jitsi Meet</a> is the easy start, a link that opens in a browser, and 8x8 sells a hosted version. <a href="/tools/bigbluebutton/">BigBlueButton</a> is built for classes, with slides, polls and breakout rooms. <a href="/tools/element-call/">Element Call</a> brings calls to Matrix, <a href="/tools/galene/">Galène</a> is a light server for small groups, and <a href="/tools/jami/">Jami</a> skips servers altogether and says its calls run peer to peer.</p><p>Hosting your own call server is a real job, and the quality you get depends on the machine and the network, so try one with a few friends before you move a whole team.</p><h2>How to choose</h2><p>Start with who you are meeting. For a quick call with people who will not install anything, a browser link like <a href="/tools/jitsi-meet/">Jitsi Meet</a> works. For classes, <a href="/tools/bigbluebutton/">BigBlueButton</a>. For a team already on Matrix, <a href="/tools/element-call/">Element Call</a>. For a small group on a tiny server, <a href="/tools/galene/">Galène</a>.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an open-source alternative to Zoom?</h3><p><a href="/tools/jitsi-meet/">Jitsi Meet</a> is Apache-2.0 licensed and runs in a browser, and <a href="/tools/bigbluebutton/">BigBlueButton</a> suits classes and webinars.</p></div><div class="qa"><h3>Can I run video meetings on my own server?</h3><p>Yes. <a href="/tools/jitsi-meet/">Jitsi Meet</a>, <a href="/tools/bigbluebutton/">BigBlueButton</a>, <a href="/tools/element-call/">Element Call</a> and <a href="/tools/galene/">Galène</a> can all be self-hosted, and <a href="/tools/galene/">Galène</a> asks for very moderate server resources.</p></div><div class="qa"><h3>Is there a video call app without a central server?</h3><p><a href="/tools/jami/">Jami</a> says it is completely peer to peer. That is the project's own claim, and we found no audit.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

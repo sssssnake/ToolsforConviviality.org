@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/lingva/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/lingva/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Lingva Translate</h3><p class="one">A Google Translate front end that fetches translations without your browser visiting Google.</p><div class="chips"><span class="chip">S · Gadget</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">No account</span></div></div></div>
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-translate/"><span class="logo sm"><img src="/assets/tools/google-translate/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Translate</b><small>Benchmark review</small></span><span class="cmp-s"><b>17<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Pasting a private message into a free translator hands the text to whoever runs it. The tools here translate on your own device or your own server. <a href="/tools/firefox-translations/">Firefox Translations</a> does it inside the browser, <a href="/tools/translate-locally/">Translate Locally</a> and <a href="/tools/argos-translate/">Argos Translate</a> run on your computer, <a href="/tools/libretranslate/">LibreTranslate</a> gives you a translation server of your own, and <a href="/tools/lingva/">Lingva Translate</a> is a middleman that keeps your browser away from Google, although the translations still come from there.</p><p>The trade-off is coverage. The offline models handle fewer languages than the biggest services, so try your language pair before you commit.</p><h2>How to choose</h2><p>Start with where you read. In a browser, the Firefox feature is the easy way in. For documents or a team, run <a href="/tools/libretranslate/">LibreTranslate</a> or <a href="/tools/translate-locally/">Translate Locally</a>. Check that your language pair exists, because coverage differs more than anything else.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an offline alternative to Google Translate?</h3><p><a href="/tools/firefox-translations/">Firefox Translations</a> works offline once the language packs are installed, and <a href="/tools/translate-locally/">Translate Locally</a> and <a href="/tools/argos-translate/">Argos Translate</a> run on your own computer.</p></div><div class="qa"><h3>Can I run my own translation server?</h3><p>Yes. <a href="/tools/libretranslate/">LibreTranslate</a> is a self-hosted server with an API, powered by Argos Translate.</p></div><div class="qa"><h3>Does Lingva stop Google from seeing what I translate?</h3><p>Lingva says it prevents Google from tracking you, but the translations still come from Google through scraping, and its page does not say what Google can see of the instance's requests.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

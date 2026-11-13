@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/simplex/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">S</span><div><h3>SimpleX Chat</h3><p class="one">A messenger with no user IDs, not even a phone number.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Encrypted</span></div></div></div>
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/whatsapp/"><span class="logo sm"><img src="/assets/tools/whatsapp/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>WhatsApp</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Most of us keep several chat apps open at once because each of our friends and teams chose a different one. <a href="/tools/signal/">Signal</a> is the easy private option, run by a nonprofit with encryption on by default. <a href="/tools/element/">Element</a> runs on the open Matrix standard, so different providers can talk to each other and you can host it yourself. <a href="/tools/deltachat/">Delta Chat</a> builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down. <a href="/tools/simplex/">SimpleX Chat</a> works without any user ID and <a href="/tools/briar/">Briar</a> works without the internet.</p><h2>How to choose</h2><p>The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control. Look at who runs the network and whether you could take your contacts with you.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is a private alternative to WhatsApp?</h3><p><a href="/tools/signal/">Signal</a> offers end-to-end encryption by default and is run by a nonprofit. <a href="/tools/element/">Element</a> and <a href="/tools/deltachat/">Delta Chat</a> are open alternatives that are harder to start with and harder for anyone to shut down.</p></div><div class="qa"><h3>Is there a messaging app that doesn't need a phone number?</h3><p><a href="/tools/deltachat/">Delta Chat</a> runs on email, so you sign up with an address or a chat relay and give out no phone number.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

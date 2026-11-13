@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -477,6 +491,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/nanoclaw/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>NanoClaw</h3><p class="one">A small assistant that runs each agent in its own Linux container and keeps credentials outside it.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Containers</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <div class="prose about-cat"><h2>About these tools</h2><p>A personal agent waits in the background, answers in the chat apps you already use, remembers things and acts on your behalf, so you want it running on a machine you control. <a href="/tools/openclaw/">OpenClaw</a> started this style of assistant, <a href="/tools/hermes-agent/">Hermes Agent</a> learns skills from the tasks it does, and <a href="/tools/nanobot/">nanobot</a> is a small Python version with local model support. <a href="/tools/nanoclaw/">NanoClaw</a> runs each agent in a container, <a href="/tools/ironclaw/">IronClaw</a> sandboxes its tools in WebAssembly, and <a href="/tools/moltis/">Moltis</a> is a single Rust program.</p><p>They act with your files and logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted.</p><h2>How to choose</h2><p>Start with how much setup you can take. <a href="/tools/nanobot/">nanobot</a> is the gentlest, <a href="/tools/openclaw/">OpenClaw</a> and <a href="/tools/hermes-agent/">Hermes Agent</a> have the biggest following, and <a href="/tools/nanoclaw/">NanoClaw</a>, <a href="/tools/ironclaw/">IronClaw</a> and <a href="/tools/moltis/">Moltis</a> are for people who want sandboxing first. Then check which model provider each needs, since a few default to a hosted one.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an open-source alternative to hosted AI assistants?</h3><p>Yes. <a href="/tools/openclaw/">OpenClaw</a>, <a href="/tools/hermes-agent/">Hermes Agent</a>, <a href="/tools/nanobot/">nanobot</a>, <a href="/tools/nanoclaw/">NanoClaw</a>, <a href="/tools/ironclaw/">IronClaw</a> and <a href="/tools/moltis/">Moltis</a> are open source agents you run on your own computer or server.</p></div><div class="qa"><h3>Are personal agents safe to run?</h3><p>They can be, with care. They act with your logins, so keep their access narrow, run them in a container where you can, and treat incoming messages as untrusted. <a href="/tools/nanoclaw/">NanoClaw</a>, <a href="/tools/ironclaw/">IronClaw</a> and <a href="/tools/moltis/">Moltis</a> are built around sandboxing.</p></div><div class="qa"><h3>Do I still need an AI model provider?</h3><p>Not always. <a href="/tools/nanobot/">nanobot</a> supports local models through Ollama and vLLM, and <a href="/tools/hermes-agent/">Hermes Agent</a> and <a href="/tools/openclaw/">OpenClaw</a> can use models you choose. <a href="/tools/ironclaw/">IronClaw</a> asks for a provider API key during setup.</p></div></section></div></div></main>
 
 <footer>
@@ -503,7 +518,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

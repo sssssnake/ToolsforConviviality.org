@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/feedbin/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/feedbin/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Feedbin</h3><p class="one">A paid feed reader that also turns newsletters into feeds.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Paid</span><span class="chip">RSS</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-news/"><span class="logo sm"><img src="/assets/tools/google-news/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google News</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Google News decides which stories you see first. An RSS reader turns that around: you pick the sites, and they appear as they publish, with no ranking. <a href="/tools/netnewswire/">NetNewsWire</a> does this on Apple devices, <a href="/tools/freshrss/">FreshRSS</a> and <a href="/tools/miniflux/">Miniflux</a> run on a server you control, <a href="/tools/feedbin/">Feedbin</a> is a paid hosted service, and <a href="/tools/newsboat/">Newsboat</a> lives in the terminal.</p><p>RSS is an open format that has worked for more than twenty years, so you can switch readers and take your subscriptions with you.</p><h2>How to choose</h2><p>Pick by who does the work. <a href="/tools/netnewswire/">NetNewsWire</a> and <a href="/tools/feedbin/">Feedbin</a> need no setup, <a href="/tools/freshrss/">FreshRSS</a> and <a href="/tools/miniflux/">Miniflux</a> give you control for a little effort, and <a href="/tools/newsboat/">Newsboat</a> suits people who like a terminal. All of them export your list as OPML, so no choice is permanent.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to Google News?</h3><p>An RSS reader. <a href="/tools/netnewswire/">NetNewsWire</a> on Apple devices and <a href="/tools/freshrss/">FreshRSS</a> on a server you run show the sites you subscribe to, with no algorithm choosing for you.</p></div><div class="qa"><h3>How do I find feeds to follow?</h3><p>Most news sites and blogs publish a feed, and a reader can usually find it from the site's address.</p></div><div class="qa"><h3>Can I move between readers?</h3><p>Yes. Readers import and export subscriptions as OPML files.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

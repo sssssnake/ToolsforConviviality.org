@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>26<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a><a class="tool-row ranked" href="/tools/audiobookshelf/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/audiobookshelf/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Audiobookshelf</h3><p class="one">A server you run yourself for your audiobooks, podcasts and ebooks, with apps to listen on your phone.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Self-hosted</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/kindle/"><span class="logo sm"><img src="/assets/tools/kindle/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Amazon Kindle</b><small>Benchmark review</small></span><span class="cmp-s"><b>13<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Buying a book from the Kindle store means buying a licence to read it inside Amazon's system, on Amazon's terms. The book sits in a format only Amazon's apps and devices are built around, and it can be changed or taken back without your say. That is the opposite of a convivial tool, because the shelf only works as long as the store is willing.</p><p>You can leave without giving up reading. <a href="/tools/standard-ebooks/">Standard Ebooks</a> and <a href="/tools/gutenberg/">Project Gutenberg</a> give you tens of thousands of free books as plain files. <a href="/tools/calibre/">Calibre</a> keeps your library in a folder on your own computer and converts between formats. <a href="/tools/koreader/">KOReader</a> replaces the reading app on your device, and <a href="/tools/audiobookshelf/">Audiobookshelf</a> does the same job for audiobooks if you want out of Audible.</p><p>A public library lends ebooks and audiobooks too, usually through an app, and it is the oldest convivial tool on this page. Buying from authors and publishers who sell files without copy protection is the other piece, because a file you can move is a book you own.</p><h2>How to choose</h2><p>Start with where your books are stored and whether you could read them if the store vanished tomorrow. A folder of open files is the safe answer. Then check that your reader opens what you keep, since some devices take only certain formats, and that you are happy to run anything that needs a server. Leave your existing Kindle purchases where they are until you know what you want to do with them.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to the Kindle store?</h3><p>There is no single replacement, and that is the point. Free libraries such as <a href="/tools/standard-ebooks/">Standard Ebooks</a> and <a href="/tools/gutenberg/">Project Gutenberg</a> cover older books, your public library covers new ones, and <a href="/tools/calibre/">Calibre</a> holds everything you own. Some authors and publishers sell books without copy protection.</p></div><div class="qa"><h3>Can I move my Kindle books to Calibre?</h3><p>Books bought from Amazon are usually protected, and the rules on removing that protection differ from country to country, so we don't cover how to do it. The safe path is to keep reading them in the Kindle app and to buy new books as files you can keep.</p></div><div class="qa"><h3>Can I keep my Kindle device?</h3><p>Yes, with limits. A Kindle opens files you load onto it, and <a href="/tools/koreader/">KOReader</a> can replace its reading software once the device is unlocked. Many people simply move to an e-reader that takes open formats.</p></div><div class="qa"><h3>How do I listen to audiobooks without Audible?</h3><p>Buy or borrow audio files you can keep and play them with <a href="/tools/audiobookshelf/">Audiobookshelf</a>, which runs on your own server, or with any player that opens the files. Check that the audiobook comes without copy protection before you pay.</p></div><div class="qa"><h3>Are free ebooks any good?</h3><p>Yes, for older books. <a href="/tools/standard-ebooks/">Standard Ebooks</a> editions are carefully typeset, and <a href="/tools/gutenberg/">Project Gutenberg</a> holds more than 75,000 titles, though the formatting varies.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

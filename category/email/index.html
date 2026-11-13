@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -474,6 +488,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a><a class="tool-row ranked" href="/tools/tuta/"><span class="rank-n" aria-label="Rank 5">5</span>
     <div class="lead"><span class="logo sm"><img src="/assets/tools/tuta/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Tuta</h3><p class="one">Encrypted email, calendar and contacts from a German company.</p><div class="chips"><span class="chip">S · System</span><span class="chip">Encrypted</span><span class="chip">Free tier</span><span class="chip">No ads</span></div></div></div>
     <div class="score-mini"><b>19<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/gmail/"><span class="logo sm"><img src="/assets/tools/gmail/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Gmail</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Email is the one messaging system nobody owns, and Gmail has quietly turned it into a Google account. <a href="/tools/thunderbird/">Thunderbird</a> is a free app that works with the mail you already have and keeps a copy on your computer, so you can leave a provider without losing your archive. <a href="/tools/proton-mail/">Proton Mail</a> and <a href="/tools/tuta/">Tuta</a> are encrypted mail services from European companies that say they are paid for by subscribers, not advertising.</p><p>The first fixes how you read mail and the other two fix where it lives, and you can use both. <a href="/tools/ferdium/">Ferdium</a> takes a different route and puts your email and chat accounts in one desktop window, which does not replace Gmail or Outlook but makes them easier to live with. <a href="/tools/posteo/">Posteo</a> is a paid mailbox from a small Berlin company.</p><h2>How to choose</h2><p>Start with whether you can leave: a service that speaks standard mail protocols lets you move your archive, and one that does not locks you in a little. Then look at who pays for the service, and whether you want your own domain, so your address survives any change of provider.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is a private alternative to Gmail?</h3><p><a href="/tools/proton-mail/">Proton Mail</a> and <a href="/tools/tuta/">Tuta</a> are encrypted email services with free plans, and both say they do not use ads.</p></div><div class="qa"><h3>Can I leave Gmail and keep my emails?</h3><p>Yes. Use an app like <a href="/tools/thunderbird/">Thunderbird</a> to download your mail over IMAP, then move it to a new provider. A domain of your own makes the next move easy.</p></div><div class="qa"><h3>Can I read all my email and chat accounts in one place?</h3><p><a href="/tools/ferdium/">Ferdium</a> gathers your email and messaging accounts, including WhatsApp and Slack, in one desktop app, so you manage them side by side.</p></div><div class="qa"><h3>Is there a free email app that isn't Outlook?</h3><p><a href="/tools/thunderbird/">Thunderbird</a> is free, open source and handles mail, calendar and contacts for any provider.</p></div></section></div></div></main>
 
@@ -501,7 +516,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 

@@ -220,6 +220,20 @@ main .wrap { padding-block: 48px 64px; }
 .cmp-side h2 { font-size: 20px; margin: 10px 0 2px; }
 .cmp-side h2 a { text-decoration: none; }
 .cmp-tag { margin: 0 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.feetab { margin: 40px 0 8px; }
+.feetab h2 { margin: 0 0 6px; }
+.feetab > p { margin: 0 0 14px; color: var(--muted); font-size: 15px; max-width: 70ch; }
+.fee-scroll { overflow-x: auto; border-block: 1px solid var(--line); -webkit-overflow-scrolling: touch; }
+.fee-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.fees { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 14px; line-height: 1.45; }
+.fees th, .fees td { text-align: left; vertical-align: top; padding: 10px 14px 10px 0; border-bottom: 1px solid var(--line); }
+.fees tr:last-child td { border-bottom: 0; }
+.fees thead th { font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.fees tbody th { font-weight: 600; min-width: 130px; }
+.fees tbody th a { text-decoration: none; }
+.fees tbody th small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.fees td a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
+.fee-note { margin: 10px 0 0; font-size: 13px; color: var(--muted); }
 .cmp-side .one { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
 @media (max-width: 560px) { .cmp-row { grid-template-columns: 1fr 1fr; } .cmp-label { grid-column: 1 / -1; padding-bottom: 4px; } .cmp-head .cmp-label { display: none; } }
 .related { margin-top: 40px; }
@@ -471,12 +485,12 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <aside>
       <div class="card feature" aria-live="polite">
         <p class="label">A random tool in the collection</p>
-        <h2>NetNewsWire</h2>
-        <p class="desc">A fast, free RSS reader that brings the sites you choose to you.</p>
-        <ul><li>Instead of Google News, algorithmic feeds</li><li>Small maker · Tool</li><li><span class="score-chip s1"><b>27/30</b> · Convivial</span></li></ul>
-        <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter"><i class="on" style="--d:0"></i><i class="on" style="--d:1"></i><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i></span><b>5</b></div><div class="meter-row"><span>Lock-in</span><span class="meter"><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Self-direction</span><span class="meter"><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i></span><b>5</b></div><div class="meter-row"><span>Power</span><span class="meter"><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Longevity</span><span class="meter"><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i></span><b>5</b></div><div class="meter-row"><span>Delivery</span><span class="meter"><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i><i class="on" style="--d:13"></i><i></i></span><b>4</b></div></div>
+        <h2>Calibre</h2>
+        <p class="desc">Manages, converts and reads your ebook library on your own computer.</p>
+        <ul><li>Instead of Kindle's walled library, Apple Books</li><li>Small maker · Tool</li><li><span class="score-chip s1"><b>26/30</b> · Convivial</span></li></ul>
+        <div class="meters"><div class="meter-row"><span>Footprint</span><span class="meter"><i class="on" style="--d:0"></i><i class="on" style="--d:1"></i><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Lock-in</span><span class="meter"><i class="on" style="--d:2"></i><i class="on" style="--d:3"></i><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i></span><b>5</b></div><div class="meter-row"><span>Self-direction</span><span class="meter"><i class="on" style="--d:4"></i><i class="on" style="--d:5"></i><i class="on" style="--d:6"></i><i></i><i></i></span><b>3</b></div><div class="meter-row"><span>Power</span><span class="meter"><i class="on" style="--d:6"></i><i class="on" style="--d:7"></i><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i></i></span><b>4</b></div><div class="meter-row"><span>Longevity</span><span class="meter"><i class="on" style="--d:8"></i><i class="on" style="--d:9"></i><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i></span><b>5</b></div><div class="meter-row"><span>Delivery</span><span class="meter"><i class="on" style="--d:10"></i><i class="on" style="--d:11"></i><i class="on" style="--d:12"></i><i class="on" style="--d:13"></i><i class="on" style="--d:14"></i></span><b>5</b></div></div>
         <div class="btn-row">
-          <a class="btn" href="/tools/netnewswire/">Read the review <span aria-hidden="true">↗</span></a>
+          <a class="btn" href="/tools/calibre/">Read the review <span aria-hidden="true">↗</span></a>
           <button class="btn ghost" type="button" id="another">Show me another <span aria-hidden="true">↻</span></button>
         </div>
       </div>
@@ -532,7 +546,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.15f014f730.js"></script>
+<script src="/assets/app.c8f70556bc.js"></script>
 
 
 
