@@ -1325,5 +1325,45 @@
     "slug": "kit",
     "name": "Kit",
     "url": "https://kit.com"
+  },
+  {
+    "slug": "liberapay",
+    "name": "Liberapay",
+    "url": "https://liberapay.com",
+    "repo": "liberapay/liberapay.com"
+  },
+  {
+    "slug": "open-collective",
+    "name": "Open Collective",
+    "url": "https://opencollective.com",
+    "repo": "opencollective/opencollective-api"
+  },
+  {
+    "slug": "ko-fi",
+    "name": "Ko-fi",
+    "url": "https://ko-fi.com"
+  },
+  {
+    "slug": "github-sponsors",
+    "name": "GitHub Sponsors",
+    "url": "https://github.com/sponsors"
+  },
+  {
+    "slug": "buy-me-a-coffee",
+    "name": "Buy Me a Coffee",
+    "url": "https://buymeacoffee.com"
+  },
+  {
+    "slug": "steady",
+    "name": "Steady",
+    "url": "https://steady.page"
+  },
+  {
+    "slug": "patreon",
+    "name": "Patreon",
+    "url": "https://www.patreon.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
