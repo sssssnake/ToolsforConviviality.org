@@ -2586,7 +2586,7 @@ function improve() {
     <p>The PDF gives each question a page with what a reviewer looks at, what a 1, a 3 and a 5 look like, what to change this week and this month, and the evidence worth showing. The questions are the same ones used on <a href="#method">How we score</a>.</p>
     <ul>${CRITERIA.map(k => `<li><b>${k.name}.</b> ${k.q}</li>`).join("")}</ul>
     <h2>What about money?</h2>
-    <p>Conviviality scores how a tool earns, and it doesn't score whether the tool charges. Cryptomator charges about 30 euros for mobile editing and scores 27, and Bitwarden has paid plans and scores 25. One-time purchases, subscriptions for hosting or sync, paid support, and donations don't cost a tool any points. Advertising, selling data, charging to export and trial traps do. We have no evidence that a higher score earns more, and the PDF says so, along with a way to count what you would give up. The short version: charge for the service, not for the exit.</p>
+    <p>Conviviality scores how a tool earns, and it doesn't score whether the tool charges. Cryptomator charges about 30 euros for mobile editing and scores 27, and Bitwarden has paid plans and scores 25. One-time purchases, subscriptions for hosting or sync, paid support, and donations don't cost a tool any points. Advertising, selling data, charging to export and trial traps do. We have no evidence that a higher score earns more, and the PDF says so, along with a way to count what you would give up. The short version: charge for the service, not for the exit. What the score does give you is a plain list of what to fix, and it costs nothing to earn.</p>
     <h2>Using an AI coding agent?</h2>
     <p>The same audit exists as a prompt you can paste into Claude Code, Codex or Cursor. See <a href="#agents">For AI agents</a>.</p>
     <h2>When you're ready</h2>
@@ -2609,6 +2609,8 @@ function method() {
     <div class="band-cell b4"><b>Restrictive</b><span>0 to 9</span></div>
   </div>
   <div class="prose">
+    <h2>Who does the scoring</h2>
+    <p>An AI model does the first pass. It reads each tool's own pages, repository and policies and applies the six questions the same way every time, so a score does not swing with a reviewer's mood or taste on a given day. It works only from public sources and does not use the tool, which means a score is a reading of what the maker says and shows, and it can be wrong or miss something. A person checks every review before it goes up, and we correct mistakes when people point them out through the <a href="#submit">suggestion form</a>.</p>
     <h2>Size: who makes it</h2>
     <dl class="def">${Object.entries(SIZES).map(([k, v]) => `<dt>${k}</dt><dd>${v.def}</dd>`).join("")}</dl>
     <h2>Scope: how much of your life it holds</h2>
@@ -2652,8 +2654,8 @@ function about() {
 
 function submit() {
   const opts = o => Object.entries(o).map(([k, v]) => `<option value="${k}">${k.length < 3 ? k + " · " : ""}${v.name}</option>`).join("");
-  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool</p>
-  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else.</p></div>
+  return `<p class="crumbs"><a href="#home">Home</a> / Suggest a tool or category</p>
+  <div class="page-head" style="margin-top:14px"><h1>Suggest a tool or category</h1><p>Made something small and useful, or found something we should know about? Vibe-coded apps are welcome. Fill this in and we'll review it against the same six questions as everything else. If a whole category is missing, tell us that too: we add a category when the best-known tool in it is not convivial and a better one exists.</p></div>
   <form id="suggest" novalidate>
     <div class="row2">
       <div class="field"><label for="f-name">Tool name</label><input id="f-name" required></div>
@@ -2668,10 +2670,11 @@ function submit() {
       <div class="field"><label for="f-cat">Category</label><select id="f-cat">${CATS.map(c => `<option>${esc(c.name)}</option>`).join("")}<option>Something else</option></select></div>
       <div class="field"><label for="f-price">Price</label><input id="f-price" placeholder="Free, pay once, subscription…"></div>
     </div>
+    <div class="field"><label for="f-newcat">Suggesting a category? Which one is missing?</label><input id="f-newcat" placeholder="For example: website builders. Name the best-known tool in it today."></div>
     <div class="field"><label for="f-source">Source code link, if public</label><input id="f-source"></div>
     <div class="field"><label for="f-img">A logo or screenshot we may use, if you have one</label><input id="f-img" type="url" placeholder="https://… link to an image or press kit"></div>
     <div class="field"><label for="f-data">What happens to people's data?</label><textarea id="f-data" placeholder="Stays on the device, synced to our server, needs an account…"></textarea></div>
-    <div class="field"><label for="f-upd">Is this a new tool, or an update to one already listed?</label><select id="f-upd"><option value="new">New tool</option><option value="update">Update to a listed tool</option></select></div>
+    <div class="field"><label for="f-upd">What are you suggesting?</label><select id="f-upd"><option value="new">New tool</option><option value="update">Update to a listed tool</option><option value="category">New category</option></select></div>
     <div class="field"><label for="f-self">Your own answers to the six questions, with scores out of 5 and evidence (optional)</label><textarea id="f-self" placeholder="Footprint 4: works offline, 3 dependencies. Lock-in 5: exports JSON and Markdown…"></textarea></div>
     <div class="field"><label for="f-rel">Your connection to it</label><select id="f-rel"><option>I made it</option><option>I help make it</option><option>I just use it</option></select></div>
     <button class="btn" type="submit" style="width:auto">Prepare my suggestion <span aria-hidden="true">→</span></button>
@@ -2881,7 +2884,7 @@ function seo(id) {
   if (id === "what") return out("What is conviviality? Illich's idea applied to software", "Ivan Illich called tools convivial when people can use them freely and bend them to their own purposes. What that means for the software you use every day.", { ld: [crumbs([["Home", "/"], ["What is conviviality?", "/what-is-conviviality/"]])] });
   if (id === "method") return out("How we score tools: six questions from Ivan Illich", "Every tool is scored 0 to 5 on six questions about footprint, lock-in, self-direction, power, longevity and delivery, for a total out of 30.", { ld: [crumbs([["Home", "/"], ["How we score", "/how-we-score/"]])] });
   if (id === "about") return out("About this directory", "A public directory of small, independent software for people who want to depend a little less on the largest companies on the internet.");
-  if (id === "submit") return out("Suggest a tool for the directory", "Made something small and useful, or found a tool we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
+  if (id === "submit") return out("Suggest a tool or category for the directory", "Made something small and useful, or found a tool or category we should know about? Vibe-coded apps are welcome. Send it in and we will review it.");
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
   if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
@@ -3010,7 +3013,7 @@ function bind() {
   if (form) form.onsubmit = e => {
     e.preventDefault();
     const v = id => document.getElementById(id).value.trim() || "(not given)";
-    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nNew or update: ${v("f-upd")}\nSelf-assessment: ${v("f-self")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
+    const text = `Tool: ${v("f-name")}\nLink: ${v("f-url")}\nWhat it does: ${v("f-what")}\nWho makes it: ${v("f-size")}\nScope: ${v("f-scope")}\nCategory: ${v("f-cat")}\nMissing category: ${v("f-newcat")}\nPrice: ${v("f-price")}\nSource: ${v("f-source")}\nImage we may use: ${v("f-img")}\nSuggesting: ${v("f-upd")}\nSelf-assessment: ${v("f-self")}\nData: ${v("f-data")}\nConnection: ${v("f-rel")}`;
     document.getElementById("out-text").textContent = text;
     const out = document.getElementById("out"); out.hidden = false;
     document.getElementById("copy").onclick = async () => {
