@@ -2225,6 +2225,35 @@ const CATCOPY = {
       ["Are free ebooks any good?", "Yes, for older books. {standard-ebooks} editions are carefully typeset, and {gutenberg} holds more than 75,000 titles, though the formatting varies."]] }
 };
 const FEES = {
+  analytics: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pages in November 2026. Most pricing pages use sliders, so where a price is missing it means the page text did not show it. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Self-hosting and extras"],
+    rows: [
+      { slug: "google-analytics", bench: true, v: ["Standard properties are free", "Analytics 360 raises the limits; no price on the limits page", "Data volume limits, such as 10 million events per query before sampling and 14 months of retention", "No"], src: ["Property limits", "https://support.google.com/analytics/answer/9826983?hl=en-GB"] },
+      { slug: "goatcounter", v: ["Hosted free for reasonable public use", "None, donations go through GitHub Sponsors", "Nothing, though millions of pageviews a day is too much and should be self-hosted", "Free to self-host"], src: ["goatcounter.com", "https://goatcounter.com/"] },
+      { slug: "plausible", v: ["30-day trial with all Business features, no card", "At 10,000 pageviews: Starter $9, Growth $14, Business $19 a month; the 100,000 price was not in the page text", "Pageviews and custom events; yearly billing saves two months", "Community Edition is free, without funnels, revenue goals or single sign-on"], src: ["Pricing", "https://plausible.io/#pricing"], src2: ["Plans", "https://plausible.io/docs/subscription-plans"] },
+      { slug: "umami", v: ["Hobby is $0: 100K events a month, 1 site, 6 months of data", "Pro $20 with 1 million events and up to 20 sites; Business $200 with 10 million events", "Events, sites and how long data is kept", "Free to self-host"], src: ["Pricing", "https://umami.is/pricing"] },
+      { slug: "matomo", v: ["On-Premise Community is free, with unlimited users and hits", "Cloud from 29 a month, in hit tiers from 50,000 up to 5 million; the price per tier was not shown", "Hits, which include events and downloads as well as pageviews", "On-Premise Team costs 275 € for up to 4 users"], src: ["Pricing", "https://matomo.org/pricing/"] },
+      { slug: "fathom", v: ["None, 7-day trial with a card", "$15 up to 100,000 pageviews, $25 up to 200,000, $45 up to 500,000 a month", "Pageviews; every plan includes 50 sites and more come in packs of 50 for $10 a month", "No"], src: ["Pricing", "https://usefathom.com/pricing"] },
+      { slug: "simple-analytics", v: ["Free for hobby sites: unlimited pageviews under fair use, 5 sites, 1 month of history, a badge on your site", "$20 a month at 100,000 pageviews, on a slider up to 2.5 million", "Pageviews, and $20 a month for each extra user", "No"], src: ["Pricing", "https://www.simpleanalytics.com/pricing"] },
+      { slug: "posthog", v: ["The first 1 million events a month", "Pay as you go: $0.00005 an event from 1 to 2 million, falling to $0.000009 above 250 million", "Events", "Open source and free to self-host"], src: ["Product analytics pricing", "https://posthog.com/docs/product-analytics/pricing"] }
+    ]
+  },
+  "email-marketing": {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pages in November 2026. Most pricing pages use sliders, so where a price is missing it means the page text did not show it. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Self-hosting and extras"],
+    rows: [
+      { slug: "mailchimp", bench: true, v: ["250 contacts, 500 sends a month, 1 audience", "Essentials $13, Standard $20, Premium $350 a month, shown for the first 12 months at the entry tier", "Contacts and sends, with 15% off Standard and Premium from 10,000 contacts; overages apply and the rate is not shown", "No"], src: ["Pricing", "https://mailchimp.com/pricing/"] },
+      { slug: "listmonk", v: ["Free and open source", "None from listmonk; its page links to unaffiliated hosts and shows no prices", "Your server and the SMTP service you send through", "A single binary or Docker, plus PostgreSQL"], src: ["listmonk.app", "https://listmonk.app/"] },
+      { slug: "ghost", v: ["A free signup; trial length not stated", "Starter $18, Publisher $29, Business $199 a month, billed yearly", "Members, capped at 1,000 on Starter and Publisher and 10,000 on Business, though the Business card and table disagree", "0% from Ghost on paid subscriptions, and payment processor fees still apply"], src: ["Pricing", "https://ghost.org/pricing/"] },
+      { slug: "buttondown", v: ["The first 100 subscribers", "Subscriber tiers were not readable; add-ons are $9 each for tagging, paid subscriptions and analytics, $29 for automations and $79 for teams", "Active subscribers, at most one email a day to the full list", "50% off for registered non-profits"], src: ["Pricing", "https://buttondown.com/pricing"] },
+      { slug: "keila", v: ["None, the FAQ says", "Hosted from €8 a month for 2,000 emails to €32 for 15,000", "Emails sent, with unlimited contacts", "Open source (AGPLv3) with an official Docker image; bring SMTP, SES, Mailgun, Postmark or SendGrid"], src: ["Try Keila", "https://www.keila.io/try"] },
+      { slug: "mautic", v: ["A 14-day trial with no card; the software is free", "Managed and hosted options are linked, with no prices on the page", "Not stated", "Self-host on your own infrastructure"], src: ["mautic.org", "https://www.mautic.org/"] },
+      { slug: "kit", v: ["Free up to 10,000 subscribers", "At 1,000 subscribers: Creator $33 a month ($390 billed yearly), Pro $66 ($50 for the first year); no prices at 10,000", "Subscribers", "3.5% + 30c on digital products and subscriptions on every plan"], src: ["Pricing", "https://kit.com/pricing"] }
+    ]
+  },
   donations: {
     h: "What it costs",
     intro: "The numbers people shop on, read from each platform's own pages in November 2026. Fees change, so check the linked page before you commit, and \"not stated\" means we did not find it, not that it is free.",
