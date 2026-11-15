@@ -7419,7 +7419,446 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://www.notion.com\",{\"shot\":false},null]"
+    },
+    "grist": {
+      "slug": "grist",
+      "name": "Grist",
+      "source": "https://www.getgrist.com",
+      "capturedAt": "2026-11-15T08:14:16.556Z",
+      "alt": "Screenshot of the Grist website",
+      "pageTitle": "Spreadsheet Software to End Data Chaos | Grist",
+      "pageDescription": "Grist is a relational spreadsheet-database that empowers you to organize your data, your way. Get started with a free trial.",
+      "shot": {
+        "480": "assets/tools/grist/shot-480.webp",
+        "960": "assets/tools/grist/shot-960.webp",
+        "1600": "assets/tools/grist/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/grist/mobile-390.webp",
+        "780": "assets/tools/grist/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/grist/icon-128.webp",
+        "256": "assets/tools/grist/icon-256.webp",
+        "from": "https://www.getgrist.com/wp-content/uploads/2023/03/cropped-Grist-Favicon-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/grist/social-600.webp",
+        "1200": "assets/tools/grist/social-1200.webp",
+        "from": "https://www.getgrist.com/wp-content/uploads/2026/04/thumbnail.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.getgrist.com\",null,null]"
+    },
+    "baserow": {
+      "slug": "baserow",
+      "name": "Baserow",
+      "source": "https://baserow.io",
+      "capturedAt": "2026-11-15T08:14:26.057Z",
+      "alt": "Screenshot of the Baserow website",
+      "pageTitle": "No-code open source database & application builder | Baserow",
+      "pageDescription": "Discover Baserow, the open-source no-code platform for building databases and applications. No code or technical skills needed. Start creating for free today!",
+      "shot": {
+        "480": "assets/tools/baserow/shot-480.webp",
+        "960": "assets/tools/baserow/shot-960.webp",
+        "1600": "assets/tools/baserow/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/baserow/mobile-390.webp",
+        "780": "assets/tools/baserow/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/baserow/icon-128.webp",
+        "256": "assets/tools/baserow/icon-256.webp",
+        "from": "https://baserow.io/img/favicon_192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/baserow/social-600.webp",
+        "1200": "assets/tools/baserow/social-1200.webp",
+        "from": "https://baserow.io/img/baserow_open_graph.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Got it\")"
+      ],
+      "cfg": "[\"https://baserow.io\",null,null]"
+    },
+    "nocodb": {
+      "slug": "nocodb",
+      "name": "NocoDB",
+      "source": "https://nocodb.com",
+      "capturedAt": "2026-11-15T08:14:39.600Z",
+      "alt": "Screenshot of the NocoDB website",
+      "pageTitle": "NocoDB Cloud",
+      "pageDescription": "Instantly turn your Database into a No-Code Platform",
+      "shot": {
+        "480": "assets/tools/nocodb/shot-480.webp",
+        "960": "assets/tools/nocodb/shot-960.webp",
+        "1600": "assets/tools/nocodb/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/nocodb/mobile-390.webp",
+        "780": "assets/tools/nocodb/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/nocodb/icon-128.webp",
+        "256": "assets/tools/nocodb/icon-256.webp",
+        "from": "https://cdn.nocodb.com/marketing-site/20261114093909/images/webclip.png",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/nocodb/social-600.webp",
+        "1200": "assets/tools/nocodb/social-1200.webp",
+        "from": "https://cdn.prod.website-files.com/650a7aeba6c28976499496bb/686278d1c40e23ec5f1ac414_66245a0c0a05baffdf947012613f7c7b_Website%20Thumbnail.png"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://nocodb.com\",null,null]"
+    },
+    "visidata": {
+      "slug": "visidata",
+      "name": "VisiData",
+      "source": "https://www.visidata.org",
+      "capturedAt": "2026-11-15T08:14:49.557Z",
+      "alt": "Screenshot of the VisiData website",
+      "pageTitle": "Open-source data multitool | VisiData",
+      "pageDescription": "Command-line interactive multitool for tabular data.",
+      "shot": {
+        "480": "assets/tools/visidata/shot-480.webp",
+        "960": "assets/tools/visidata/shot-960.webp",
+        "1600": "assets/tools/visidata/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/visidata/mobile-390.webp",
+        "780": "assets/tools/visidata/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/visidata/icon-128.webp",
+        "256": "assets/tools/visidata/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/visidata/social-600.webp",
+        "1200": "assets/tools/visidata/social-1200.webp",
+        "from": "https://www.visidata.org/images/meta/og.jpg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.visidata.org\",null,null]"
+    },
+    "marp": {
+      "slug": "marp",
+      "name": "Marp",
+      "source": "https://marp.app",
+      "capturedAt": "2026-11-15T08:14:57.633Z",
+      "alt": "Screenshot of the Marp website",
+      "pageTitle": "Marp: Markdown Presentation Ecosystem",
+      "pageDescription": "Marp (also known as the Markdown Presentation Ecosystem) provides an intuitive experience for creating beautiful slide decks. You only have to focus on writing your story in a Markdown document.",
+      "shot": {
+        "480": "assets/tools/marp/shot-480.webp",
+        "960": "assets/tools/marp/shot-960.webp",
+        "1600": "assets/tools/marp/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/marp/mobile-390.webp",
+        "780": "assets/tools/marp/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/marp/icon-128.webp",
+        "256": "assets/tools/marp/icon-256.webp",
+        "from": "https://marp.app/apple-touch-icon-180x180.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/marp/social-600.webp",
+        "1200": "assets/tools/marp/social-1200.webp",
+        "from": "https://marp.app/assets/og-image.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://marp.app\",null,null]"
+    },
+    "slidev": {
+      "slug": "slidev",
+      "name": "Slidev",
+      "source": "https://sli.dev",
+      "capturedAt": "2026-11-15T08:15:04.830Z",
+      "alt": "Screenshot of the Slidev website",
+      "pageTitle": "Slidev",
+      "pageDescription": "Presentation slides for developers",
+      "shot": {
+        "480": "assets/tools/slidev/shot-480.webp",
+        "960": "assets/tools/slidev/shot-960.webp",
+        "1600": "assets/tools/slidev/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/slidev/mobile-390.webp",
+        "780": "assets/tools/slidev/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/slidev/icon-128.webp",
+        "256": "assets/tools/slidev/icon-256.webp",
+        "from": "https://sli.dev/favicon.png",
+        "sourceWidth": 330,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/slidev/social-600.webp",
+        "1200": "assets/tools/slidev/social-1200.webp",
+        "from": "https://sli.dev/og-image.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://sli.dev\",null,null]"
+    },
+    "revealjs": {
+      "slug": "revealjs",
+      "name": "reveal.js",
+      "source": "https://revealjs.com",
+      "capturedAt": "2026-11-15T08:15:11.900Z",
+      "alt": "Screenshot of the reveal.js website",
+      "pageTitle": "The HTML presentation framework | reveal.js",
+      "pageDescription": "Documentation and demos for the open source reveal.js HTML presentation framework.",
+      "shot": {
+        "480": "assets/tools/revealjs/shot-480.webp",
+        "960": "assets/tools/revealjs/shot-960.webp",
+        "1600": "assets/tools/revealjs/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/revealjs/mobile-390.webp",
+        "780": "assets/tools/revealjs/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/revealjs/icon-128.webp",
+        "256": "assets/tools/revealjs/icon-256.webp",
+        "svg": "assets/tools/revealjs/icon.svg",
+        "from": "https://revealjs.com/images/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/revealjs/social-600.webp",
+        "1200": "assets/tools/revealjs/social-1200.webp",
+        "from": "https://revealjs.com/images/meta/reveal-og-card-1200-630.png"
+      },
+      "color": "#f7fafc",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://revealjs.com\",null,null]"
+    },
+    "quarto": {
+      "slug": "quarto",
+      "name": "Quarto",
+      "source": "https://quarto.org",
+      "capturedAt": "2026-11-15T08:15:20.446Z",
+      "alt": "Screenshot of the Quarto website",
+      "pageTitle": "Quarto",
+      "pageDescription": "An open source technical publishing system for creating beautiful articles, websites, blogs, books, slides, and more. Supports Python, R, Julia, and JavaScript.",
+      "shot": {
+        "480": "assets/tools/quarto/shot-480.webp",
+        "960": "assets/tools/quarto/shot-960.webp",
+        "1600": "assets/tools/quarto/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/quarto/mobile-390.webp",
+        "780": "assets/tools/quarto/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/quarto/icon-128.webp",
+        "256": "assets/tools/quarto/icon-256.webp",
+        "from": "https://quarto.org/assets/images/favicon.png",
+        "sourceWidth": 67,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/quarto/social-600.webp",
+        "1200": "assets/tools/quarto/social-1200.webp",
+        "from": "https://quarto.org/assets/images/quarto-dark-bg.jpeg"
+      },
+      "color": "#78b8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://quarto.org\",null,null]"
+    },
+    "presenterm": {
+      "slug": "presenterm",
+      "name": "presenterm",
+      "source": "https://github.com/mfontanini/presenterm",
+      "capturedAt": "2026-11-15T08:15:26.947Z",
+      "alt": "Screenshot of the presenterm website",
+      "pageTitle": "GitHub - mfontanini/presenterm: A markdown terminal slideshow tool · GitHub",
+      "pageDescription": "A markdown terminal slideshow tool. Contribute to mfontanini/presenterm development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/presenterm/shot-480.webp",
+        "960": "assets/tools/presenterm/shot-960.webp",
+        "1600": "assets/tools/presenterm/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/presenterm/mobile-390.webp",
+        "780": "assets/tools/presenterm/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/presenterm/icon-128.webp",
+        "256": "assets/tools/presenterm/icon-256.webp",
+        "svg": "assets/tools/presenterm/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/9716395dc9aa5b72ca528ae884721d2682f78ec119fbb6c085fe715d0a6c379c/mfontanini/presenterm"
+      ],
+      "cfg": "[\"https://github.com/mfontanini/presenterm\",null,null]"
+    },
+    "hedgedoc": {
+      "slug": "hedgedoc",
+      "name": "HedgeDoc",
+      "source": "https://hedgedoc.org",
+      "capturedAt": "2026-11-15T08:15:35.607Z",
+      "alt": "Screenshot of the HedgeDoc website",
+      "pageTitle": "HedgeDoc - Ideas grow better together",
+      "pageDescription": "HedgeDoc (formerly known as CodiMD) is an open-source, web-based, self-hosted, collaborative markdown editor.",
+      "shot": {
+        "480": "assets/tools/hedgedoc/shot-480.webp",
+        "960": "assets/tools/hedgedoc/shot-960.webp",
+        "1600": "assets/tools/hedgedoc/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/hedgedoc/mobile-390.webp",
+        "780": "assets/tools/hedgedoc/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/hedgedoc/icon-128.webp",
+        "256": "assets/tools/hedgedoc/icon-256.webp",
+        "from": "https://hedgedoc.org/icons/apple-touch-icon.png",
+        "sourceWidth": 180,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/hedgedoc/social-600.webp",
+        "1200": "assets/tools/hedgedoc/social-1200.webp",
+        "from": "https://hedgedoc.org/icons/apple-touch-icon.png"
+      },
+      "color": "#b51f08",
+      "colorFrom": "theme-color",
+      "notes": [
+        "manifest unreadable: HTTP 403 for https://hedgedoc.org/icons/site.webmanifest"
+      ],
+      "cfg": "[\"https://hedgedoc.org\",null,null]"
+    },
+    "la-suite-docs": {
+      "slug": "la-suite-docs",
+      "name": "La Suite Docs",
+      "source": "https://github.com/suitenumerique/docs",
+      "capturedAt": "2026-11-15T08:15:41.719Z",
+      "alt": "Screenshot of the La Suite Docs website",
+      "pageTitle": "GitHub - suitenumerique/docs: Docs is an open-source text editor: web-native, made for real-time collaboration, cleanly structured documents and sub-documents with full ownership of your data. Built to scale with Django and React. · GitHub",
+      "pageDescription": "Docs is an open-source text editor: web-native, made for real-time collaboration, cleanly structured documents and sub-documents with full ownership of your data. Built to scale with Django and React. - suitenumerique/docs",
+      "shot": {
+        "480": "assets/tools/la-suite-docs/shot-480.webp",
+        "960": "assets/tools/la-suite-docs/shot-960.webp",
+        "1600": "assets/tools/la-suite-docs/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/la-suite-docs/mobile-390.webp",
+        "780": "assets/tools/la-suite-docs/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/la-suite-docs/icon-128.webp",
+        "256": "assets/tools/la-suite-docs/icon-256.webp",
+        "svg": "assets/tools/la-suite-docs/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/la-suite-docs/social-600.webp",
+        "1200": "assets/tools/la-suite-docs/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/849d2576e6e12ae49fb1014d5e105bf138cc8c2aaf00b112f156e4748a01df95/suitenumerique/docs"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/suitenumerique/docs\",null,null]"
+    },
+    "microsoft-excel": {
+      "slug": "microsoft-excel",
+      "name": "Microsoft Excel",
+      "source": "https://www.microsoft.com/en-us/microsoft-365/excel",
+      "capturedAt": "2026-11-15T08:15:49.993Z",
+      "alt": "Screenshot of the Microsoft Excel website",
+      "pageTitle": "Microsoft Excel | Free Online Spreadsheets Software",
+      "pageDescription": " Microsoft Excel is the industry leading spreadsheet application and data analysis tool. Explore free spreadsheet software tools with advanced features in Excel.",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/microsoft-excel/icon-128.webp",
+        "256": "assets/tools/microsoft-excel/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f84828",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.microsoft.com/en-us/microsoft-365/excel\",{\"shot\":false},null]"
+    },
+    "microsoft-powerpoint": {
+      "slug": "microsoft-powerpoint",
+      "name": "Microsoft PowerPoint",
+      "source": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+      "capturedAt": "2026-11-15T08:16:00.397Z",
+      "alt": "Screenshot of the Microsoft PowerPoint website",
+      "pageTitle": "PowerPoint | Presentations and Slides Online | Microsoft 365",
+      "pageDescription": "Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a powerful presentation maker to tell your story.",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/microsoft-powerpoint/icon-128.webp",
+        "256": "assets/tools/microsoft-powerpoint/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#f84828",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.microsoft.com/en-us/microsoft-365/powerpoint\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-15T08:02:04.899Z"
+  "updatedAt": "2026-11-15T08:16:09.014Z"
 }

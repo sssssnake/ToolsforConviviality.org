@@ -1,0 +1,34 @@
+{
+  "slug": "slidev",
+  "name": "Slidev",
+  "source": "https://sli.dev",
+  "capturedAt": "2026-11-15T08:15:04.830Z",
+  "alt": "Screenshot of the Slidev website",
+  "pageTitle": "Slidev",
+  "pageDescription": "Presentation slides for developers",
+  "shot": {
+    "480": "assets/tools/slidev/shot-480.webp",
+    "960": "assets/tools/slidev/shot-960.webp",
+    "1600": "assets/tools/slidev/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/slidev/mobile-390.webp",
+    "780": "assets/tools/slidev/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/slidev/icon-128.webp",
+    "256": "assets/tools/slidev/icon-256.webp",
+    "from": "https://sli.dev/favicon.png",
+    "sourceWidth": 330,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/slidev/social-600.webp",
+    "1200": "assets/tools/slidev/social-1200.webp",
+    "from": "https://sli.dev/og-image.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

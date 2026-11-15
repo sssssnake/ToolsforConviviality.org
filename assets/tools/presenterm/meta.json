@@ -1,0 +1,30 @@
+{
+  "slug": "presenterm",
+  "name": "presenterm",
+  "source": "https://github.com/mfontanini/presenterm",
+  "capturedAt": "2026-11-15T08:15:26.947Z",
+  "alt": "Screenshot of the presenterm website",
+  "pageTitle": "GitHub - mfontanini/presenterm: A markdown terminal slideshow tool · GitHub",
+  "pageDescription": "A markdown terminal slideshow tool. Contribute to mfontanini/presenterm development by creating an account on GitHub.",
+  "shot": {
+    "480": "assets/tools/presenterm/shot-480.webp",
+    "960": "assets/tools/presenterm/shot-960.webp",
+    "1600": "assets/tools/presenterm/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/presenterm/mobile-390.webp",
+    "780": "assets/tools/presenterm/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/presenterm/icon-128.webp",
+    "256": "assets/tools/presenterm/icon-256.webp",
+    "svg": "assets/tools/presenterm/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": [
+    "social image failed: HTTP 429 for https://opengraph.githubassets.com/9716395dc9aa5b72ca528ae884721d2682f78ec119fbb6c085fe715d0a6c379c/mfontanini/presenterm"
+  ]
+}

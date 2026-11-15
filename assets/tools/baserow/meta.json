@@ -1,0 +1,36 @@
+{
+  "slug": "baserow",
+  "name": "Baserow",
+  "source": "https://baserow.io",
+  "capturedAt": "2026-11-15T08:14:26.057Z",
+  "alt": "Screenshot of the Baserow website",
+  "pageTitle": "No-code open source database & application builder | Baserow",
+  "pageDescription": "Discover Baserow, the open-source no-code platform for building databases and applications. No code or technical skills needed. Start creating for free today!",
+  "shot": {
+    "480": "assets/tools/baserow/shot-480.webp",
+    "960": "assets/tools/baserow/shot-960.webp",
+    "1600": "assets/tools/baserow/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/baserow/mobile-390.webp",
+    "780": "assets/tools/baserow/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/baserow/icon-128.webp",
+    "256": "assets/tools/baserow/icon-256.webp",
+    "from": "https://baserow.io/img/favicon_192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/baserow/social-600.webp",
+    "1200": "assets/tools/baserow/social-1200.webp",
+    "from": "https://baserow.io/img/baserow_open_graph.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "dismissed banner with button:has-text(\"Got it\")"
+  ]
+}

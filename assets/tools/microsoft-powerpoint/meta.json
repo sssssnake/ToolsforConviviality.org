@@ -1,0 +1,25 @@
+{
+  "slug": "microsoft-powerpoint",
+  "name": "Microsoft PowerPoint",
+  "source": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+  "capturedAt": "2026-11-15T08:16:00.397Z",
+  "alt": "Screenshot of the Microsoft PowerPoint website",
+  "pageTitle": "PowerPoint | Presentations and Slides Online | Microsoft 365",
+  "pageDescription": "Microsoft PowerPoint empowers you to create clean slideshow presentations and intricate pitch decks and gives you a powerful presentation maker to tell your story.",
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/microsoft-powerpoint/icon-128.webp",
+    "256": "assets/tools/microsoft-powerpoint/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f84828",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

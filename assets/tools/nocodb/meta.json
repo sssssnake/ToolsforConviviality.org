@@ -1,0 +1,34 @@
+{
+  "slug": "nocodb",
+  "name": "NocoDB",
+  "source": "https://nocodb.com",
+  "capturedAt": "2026-11-15T08:14:39.600Z",
+  "alt": "Screenshot of the NocoDB website",
+  "pageTitle": "NocoDB Cloud",
+  "pageDescription": "Instantly turn your Database into a No-Code Platform",
+  "shot": {
+    "480": "assets/tools/nocodb/shot-480.webp",
+    "960": "assets/tools/nocodb/shot-960.webp",
+    "1600": "assets/tools/nocodb/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/nocodb/mobile-390.webp",
+    "780": "assets/tools/nocodb/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/nocodb/icon-128.webp",
+    "256": "assets/tools/nocodb/icon-256.webp",
+    "from": "https://cdn.nocodb.com/marketing-site/20261114093909/images/webclip.png",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/nocodb/social-600.webp",
+    "1200": "assets/tools/nocodb/social-1200.webp",
+    "from": "https://cdn.prod.website-files.com/650a7aeba6c28976499496bb/686278d1c40e23ec5f1ac414_66245a0c0a05baffdf947012613f7c7b_Website%20Thumbnail.png"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

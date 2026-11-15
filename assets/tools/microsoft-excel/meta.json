@@ -1,0 +1,25 @@
+{
+  "slug": "microsoft-excel",
+  "name": "Microsoft Excel",
+  "source": "https://www.microsoft.com/en-us/microsoft-365/excel",
+  "capturedAt": "2026-11-15T08:15:49.993Z",
+  "alt": "Screenshot of the Microsoft Excel website",
+  "pageTitle": "Microsoft Excel | Free Online Spreadsheets Software",
+  "pageDescription": " Microsoft Excel is the industry leading spreadsheet application and data analysis tool. Explore free spreadsheet software tools with advanced features in Excel.",
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/microsoft-excel/icon-128.webp",
+    "256": "assets/tools/microsoft-excel/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#f84828",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override",
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

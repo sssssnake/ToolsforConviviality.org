@@ -1,0 +1,34 @@
+{
+  "slug": "quarto",
+  "name": "Quarto",
+  "source": "https://quarto.org",
+  "capturedAt": "2026-11-15T08:15:20.446Z",
+  "alt": "Screenshot of the Quarto website",
+  "pageTitle": "Quarto",
+  "pageDescription": "An open source technical publishing system for creating beautiful articles, websites, blogs, books, slides, and more. Supports Python, R, Julia, and JavaScript.",
+  "shot": {
+    "480": "assets/tools/quarto/shot-480.webp",
+    "960": "assets/tools/quarto/shot-960.webp",
+    "1600": "assets/tools/quarto/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/quarto/mobile-390.webp",
+    "780": "assets/tools/quarto/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/quarto/icon-128.webp",
+    "256": "assets/tools/quarto/icon-256.webp",
+    "from": "https://quarto.org/assets/images/favicon.png",
+    "sourceWidth": 67,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/quarto/social-600.webp",
+    "1200": "assets/tools/quarto/social-1200.webp",
+    "from": "https://quarto.org/assets/images/quarto-dark-bg.jpeg"
+  },
+  "color": "#78b8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

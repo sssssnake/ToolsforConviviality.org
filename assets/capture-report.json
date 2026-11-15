@@ -1,17 +1,73 @@
 {
-  "startedAt": "2026-11-15T08:01:43.425Z",
+  "startedAt": "2026-11-15T08:14:15.328Z",
   "captured": [
     {
-      "slug": "manus",
+      "slug": "grist",
+      "notes": []
+    },
+    {
+      "slug": "baserow",
       "notes": [
-        "screenshot skipped by override"
+        "dismissed banner with button:has-text(\"Got it\")"
       ]
     },
     {
-      "slug": "notion",
+      "slug": "nocodb",
+      "notes": []
+    },
+    {
+      "slug": "visidata",
       "notes": [
-        "dismissed banner with button:has-text(\"Reject all\")",
-        "screenshot skipped by override"
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "marp",
+      "notes": []
+    },
+    {
+      "slug": "slidev",
+      "notes": []
+    },
+    {
+      "slug": "revealjs",
+      "notes": []
+    },
+    {
+      "slug": "quarto",
+      "notes": []
+    },
+    {
+      "slug": "presenterm",
+      "notes": [
+        "social image failed: HTTP 429 for https://opengraph.githubassets.com/9716395dc9aa5b72ca528ae884721d2682f78ec119fbb6c085fe715d0a6c379c/mfontanini/presenterm"
+      ]
+    },
+    {
+      "slug": "hedgedoc",
+      "notes": [
+        "manifest unreadable: HTTP 403 for https://hedgedoc.org/icons/site.webmanifest"
+      ]
+    },
+    {
+      "slug": "la-suite-docs",
+      "notes": []
+    },
+    {
+      "slug": "microsoft-excel",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ]
+    },
+    {
+      "slug": "microsoft-powerpoint",
+      "notes": [
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
       ]
     }
   ],
@@ -927,8 +983,16 @@
     {
       "slug": "lyx",
       "reason": "recent"
+    },
+    {
+      "slug": "manus",
+      "reason": "recent"
+    },
+    {
+      "slug": "notion",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-15T08:02:04.902Z"
+  "finishedAt": "2026-11-15T08:16:09.017Z"
 }

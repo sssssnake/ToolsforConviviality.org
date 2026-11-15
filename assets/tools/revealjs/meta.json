@@ -1,0 +1,33 @@
+{
+  "slug": "revealjs",
+  "name": "reveal.js",
+  "source": "https://revealjs.com",
+  "capturedAt": "2026-11-15T08:15:11.900Z",
+  "alt": "Screenshot of the reveal.js website",
+  "pageTitle": "The HTML presentation framework | reveal.js",
+  "pageDescription": "Documentation and demos for the open source reveal.js HTML presentation framework.",
+  "shot": {
+    "480": "assets/tools/revealjs/shot-480.webp",
+    "960": "assets/tools/revealjs/shot-960.webp",
+    "1600": "assets/tools/revealjs/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/revealjs/mobile-390.webp",
+    "780": "assets/tools/revealjs/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/revealjs/icon-128.webp",
+    "256": "assets/tools/revealjs/icon-256.webp",
+    "svg": "assets/tools/revealjs/icon.svg",
+    "from": "https://revealjs.com/images/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/revealjs/social-600.webp",
+    "1200": "assets/tools/revealjs/social-1200.webp",
+    "from": "https://revealjs.com/images/meta/reveal-og-card-1200-630.png"
+  },
+  "color": "#f7fafc",
+  "colorFrom": "theme-color",
+  "notes": []
+}

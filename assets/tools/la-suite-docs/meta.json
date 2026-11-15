@@ -1,0 +1,33 @@
+{
+  "slug": "la-suite-docs",
+  "name": "La Suite Docs",
+  "source": "https://github.com/suitenumerique/docs",
+  "capturedAt": "2026-11-15T08:15:41.719Z",
+  "alt": "Screenshot of the La Suite Docs website",
+  "pageTitle": "GitHub - suitenumerique/docs: Docs is an open-source text editor: web-native, made for real-time collaboration, cleanly structured documents and sub-documents with full ownership of your data. Built to scale with Django and React. · GitHub",
+  "pageDescription": "Docs is an open-source text editor: web-native, made for real-time collaboration, cleanly structured documents and sub-documents with full ownership of your data. Built to scale with Django and React. - suitenumerique/docs",
+  "shot": {
+    "480": "assets/tools/la-suite-docs/shot-480.webp",
+    "960": "assets/tools/la-suite-docs/shot-960.webp",
+    "1600": "assets/tools/la-suite-docs/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/la-suite-docs/mobile-390.webp",
+    "780": "assets/tools/la-suite-docs/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/la-suite-docs/icon-128.webp",
+    "256": "assets/tools/la-suite-docs/icon-256.webp",
+    "svg": "assets/tools/la-suite-docs/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/la-suite-docs/social-600.webp",
+    "1200": "assets/tools/la-suite-docs/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/849d2576e6e12ae49fb1014d5e105bf138cc8c2aaf00b112f156e4748a01df95/suitenumerique/docs"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

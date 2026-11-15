@@ -1,0 +1,38 @@
+{
+  "slug": "visidata",
+  "name": "VisiData",
+  "source": "https://www.visidata.org",
+  "capturedAt": "2026-11-15T08:14:49.557Z",
+  "alt": "Screenshot of the VisiData website",
+  "pageTitle": "Open-source data multitool | VisiData",
+  "pageDescription": "Command-line interactive multitool for tabular data.",
+  "shot": {
+    "480": "assets/tools/visidata/shot-480.webp",
+    "960": "assets/tools/visidata/shot-960.webp",
+    "1600": "assets/tools/visidata/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/visidata/mobile-390.webp",
+    "780": "assets/tools/visidata/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/visidata/icon-128.webp",
+    "256": "assets/tools/visidata/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/visidata/social-600.webp",
+    "1200": "assets/tools/visidata/social-1200.webp",
+    "from": "https://www.visidata.org/images/meta/og.jpg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}
