@@ -555,7 +555,7 @@ const CATS = [
   { id: "video", name: "Video", verb: "Watch without being watched", instead: "YouTube and Netflix" },
   { id: "music", name: "Music", verb: "Play music I own", instead: "Spotify and Apple Music" },
   { id: "home", name: "Home & network", verb: "Run my home on my own terms", instead: "Alexa and Google Home" },
-  { id: "office", name: "Office", verb: "Write, calculate and present", instead: "Microsoft 365 and Google Docs" },
+  { id: "office", name: "Office", verb: "Calculate, present and edit together", instead: "Microsoft 365 and Google Docs" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 // Homepage groups. Any category missing here still appears, under "More".
@@ -2723,9 +2723,9 @@ const CATCOPY = {
     faq: [["Is there an alternative to Alexa or Google Home?", "{home-assistant} is the leading open source option and runs on your own hardware."],
       ["Do I need to know how to code?", "Not to begin with, though {esphome} and {zigbee2mqtt} reward some tinkering."],
       ["How do I block ads across my whole network?", "{pi-hole} runs on a small computer and blocks known ad and tracking servers for every device."]] },
-  office: { h1: "Alternatives to Microsoft 365 and Google Docs", lede: "Write, calculate and present, with files that stay yours.",
+  office: { h1: "Alternatives to Microsoft 365 and Google Docs", lede: "Spreadsheets, slides and shared documents, with files that stay yours.",
     intro: ["Office work leaves a lot of files behind, and those files last longer than the subscriptions that made them. {libreoffice} writes, calculates and presents in an open format, {onlyoffice} looks and behaves like Microsoft's suite, {collabora-online} puts LibreOffice in a browser with live editing, {etherpad} is a plain page everyone types in at once, and {gnumeric} is a lean spreadsheet.",
-      "Microsoft files open in all of them, with the odd shift in a complex layout."],
+      "Microsoft files open in all of them, with the odd shift in a complex layout. For a word processor on its own, see the Writing category."],
     choose: "For one person, {libreoffice} is the straightforward choice. For a team editing together, look at {collabora-online} or {onlyoffice} on a server you run or rent, or use {etherpad} when plain text is enough.",
     faq: [["What is a free alternative to Microsoft Office?", "{libreoffice} is a full suite from a nonprofit, and it saves in an open format."],
       ["Can we edit together like Google Docs?", "{collabora-online}, {onlyoffice} and {etherpad} support live editing, usually on a server you set up."],
