@@ -1494,5 +1494,62 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "wordpress",
+    "name": "WordPress",
+    "url": "https://wordpress.org",
+    "repo": "WordPress/WordPress"
+  },
+  {
+    "slug": "publii",
+    "name": "Publii",
+    "url": "https://getpublii.com",
+    "repo": "GetPublii/Publii"
+  },
+  {
+    "slug": "silex",
+    "name": "Silex",
+    "url": "https://www.silex.me",
+    "repo": "silexlabs/Silex"
+  },
+  {
+    "slug": "webstudio",
+    "name": "Webstudio",
+    "url": "https://webstudio.is",
+    "repo": "webstudio-is/webstudio"
+  },
+  {
+    "slug": "neocities",
+    "name": "Neocities",
+    "url": "https://neocities.org",
+    "repo": "neocities/neocities"
+  },
+  {
+    "slug": "bear-blog",
+    "name": "Bear Blog",
+    "url": "https://bearblog.dev",
+    "repo": "HermanMartinus/bearblog"
+  },
+  {
+    "slug": "carrd",
+    "name": "Carrd",
+    "url": "https://carrd.com"
+  },
+  {
+    "slug": "squarespace",
+    "name": "Squarespace",
+    "url": "https://www.squarespace.com",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "wix",
+    "name": "Wix",
+    "url": "https://www.wix.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]

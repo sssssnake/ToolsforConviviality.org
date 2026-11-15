@@ -55,6 +55,7 @@ const CATS = [
   { id: "office", name: "Office suites", verb: "Work in one suite or write together", instead: "Microsoft 365 and Google Docs" },
   { id: "spreadsheets", name: "Spreadsheets", verb: "Calculate and keep track of data", instead: "Microsoft Excel and Google Sheets" },
   { id: "slides", name: "Slides", verb: "Make a presentation", instead: "Microsoft PowerPoint and Google Slides" },
+  { id: "websites", name: "Websites", verb: "Build a website", instead: "Squarespace and Wix" },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
 ];
 // Homepage groups. Any category missing here still appears, under "More".
@@ -66,7 +67,7 @@ const GROUPS = [
   { name: "Find things out", cats: ["search", "maps", "translate"] },
   { name: "Keep my things safe", cats: ["files", "photos", "passwords"] },
   { name: "Run my devices", cats: ["browsers", "apps", "home"] },
-  { name: "Publish a site", cats: ["analytics", "email-marketing", "donations"] }
+  { name: "Publish a site", cats: ["websites", "analytics", "email-marketing", "donations"] }
 ];
 function groupedCats() {
   const seen = new Set(), out = [];
@@ -1566,7 +1567,57 @@ const TOOLS = [
     tags: ["Open source", "Government-built", "Self-hostable"], s: [3, 5, 4, 4, 4, 3],
     body: ["Governments are slow to build software and quick to buy it, so it stands out when two of them write a document editor in the open. The repository describes La Suite Docs as an open-source collaborative editor for writing, organizing and sharing documents in real time, and says it is a joint initiative led by France's DINUM and Germany's ZenDiS, with the Netherlands being onboarded.",
       "La Suite Docs scores a 5 on lock-in, a 4 on self-direction, power and longevity and a 3 on footprint and delivery. The repository shows the MIT license and about 16,800 stars, and it lists live cursors, comments, subpages, offline editing, and import and export for .docx, .md and .odt. PDF export relies on BlockNote XL packages under the GPL, so an MIT-only build leaves it out.",
-      "Self-hosting runs on Kubernetes or Docker Compose, with community routes for Nix and YunoHost. Scores are our reading of public sources."] }
+      "Self-hosting runs on Kubernetes or Docker Compose, with community routes for Nix and YunoHost. Scores are our reading of public sources."] },
+  { slug: "wordpress", name: "WordPress", cat: "websites", size: "M", scope: "system", url: "https://wordpress.org",
+    one: "The free publishing software behind a large share of the web, which you run on your own host.", replaces: "Squarespace, Wix",
+    price: "Free software; hosting and a domain cost extra", source: "Open source (GPL-2.0 or later)", platforms: "Web, self-hosted on PHP with MySQL or MariaDB",
+    tags: ["Open source", "Self-hostable", "Website builder"], s: [3, 4, 4, 3, 5, 4],
+    body: ["WordPress began in 2003 as a fork of an older blogging program called b2/cafelog, started by Mike Little and Matt Mullenweg, and a fork is a fitting origin for software whose licence lets anyone take a copy and carry on. The page at wordpress.org lists four freedoms under the GPL, to run it for any purpose, to study and change it, to redistribute it and to distribute your modified versions, and says the mission is to democratize publishing.",
+      "WordPress scores a 5 on longevity, a 4 on lock-in, self-direction and delivery and a 3 on footprint and power. The download is free and currently offers version 7.1.4, and the page recommends PHP 8.3 or newer with MySQL 8.4 or MariaDB 10.11 or newer, so you need a host that provides that or the skill to set it up yourself. Themes change how a site looks and plugins add features such as shops, forms and memberships.",
+      "The untidy part is who steers the project. Since September 2024 WP Engine, a company that hosts WordPress sites, and Automattic, the company led by Matt Mullenweg, have been in a legal fight over trademarks and over WordPress.org, and in December 2024 a federal judge ordered WordPress.org to restore WP Engine's access while the case went on. On 24 September 2026, according to webhosting.today, the judge revived four antitrust claims against Automattic and dismissed its trademark counterclaims in its own right, with a jury trial scheduled for October 2027. Those are allegations and rulings in a live case, and the software itself stays free under the GPL either way.",
+      "Owning it means a site on a server you pay for or run, a database you can copy, and a list of updates that you or your host keeps up with."] },
+  { slug: "publii", name: "Publii", cat: "websites", size: "S", scope: "tool", url: "https://getpublii.com",
+    one: "A free desktop app for building a static website on your own computer.", replaces: "Squarespace, Wix",
+    price: "Free; themes come in free and premium versions", source: "Open source (GPL-3.0)", platforms: "Windows, Mac, Linux",
+    tags: ["Open source", "Static site", "Desktop app"], s: [5, 5, 4, 4, 3, 4],
+    body: ["A printed poster costs the printer nothing extra each time someone looks at it, and a static website works the same way, because the pages are made once and handed out exactly as they are. Publii's site calls itself a free, open-source desktop CMS for static websites, so you write and manage the site on your own computer and publish the finished files to a host.",
+      "Publii scores a 5 on footprint and lock-in, a 4 on self-direction, power and delivery and a 3 on longevity. The repository carries the GPL-3.0 licence with TidyCustoms as the copyright holder, has about 7,300 stars and shows version 0.47.9. The app runs on Windows, macOS and Linux and publishes to GitHub Pages, GitLab Pages, Netlify, Amazon S3, Google Cloud or an FTP or SFTP server, or you can export the files by hand.",
+      "Themes come free and premium, and plugins extend what a site can do. Living with it means a folder of site files on your machine, a host you chose, and no login page to keep patched."] },
+  { slug: "silex", name: "Silex", cat: "websites", size: "M", scope: "tool", url: "https://www.silex.me",
+    one: "A free visual builder for static websites, run by a French non-profit.", replaces: "Squarespace, Wix",
+    price: "Free, with hosting included on the official instance", source: "Open source (AGPL-3.0)", platforms: "Web, or self-hosted",
+    tags: ["Open source", "Non-profit", "Visual builder"], s: [4, 5, 4, 5, 3, 3],
+    body: ["Most website builders are shops that rent you a stall, and Silex is closer to a community workshop where the tools belong to the people who use them. Its site describes a visual editor with CMS integration and hosting included, all as a free and open-source platform, and says all features are free of charge.",
+      "Silex scores a 5 on lock-in and power, a 4 on footprint and self-direction and a 3 on longevity and delivery. The software is licensed AGPL and the repository describes it as an online tool for visually creating static sites with dynamic data, with about 3,000 stars. Silex Labs, a French non-profit based in Paris, maintains it, and it is an OW2 project funded by the NGI0 Commons Fund.",
+      "You can start at v3.silex.me with nothing to install, or follow the documentation to self-host, and managed hosting and advice are arranged by joining the chat. Using it feels like drawing a page in a browser and getting a plain static site out the other end."] },
+  { slug: "webstudio", name: "Webstudio", cat: "websites", size: "M", scope: "tool", url: "https://webstudio.is",
+    one: "An open-source visual website builder that describes itself as a Webflow alternative.", replaces: "Squarespace, Wix, Webflow",
+    price: "Free; Pro $15 a month billed yearly", source: "Open source (AGPL-3.0-or-later)", platforms: "Web, or self-hosted",
+    tags: ["Open source", "Visual builder", "Self-hostable"], s: [4, 4, 4, 4, 3, 4],
+    body: ["The counter on Webstudio's home page says its sites served 7.48 terabytes of pages in the last 30 days, across 229,800 projects, which is a lot of traffic for a builder that calls itself open source and community-driven. It is a visual editor that gives you control over CSS, and it can pull content from a headless CMS, a CRM or a database.",
+      "Webstudio scores a 4 on footprint, lock-in, self-direction, power and delivery and a 3 on longevity. The core is licensed AGPL-3.0-or-later, while an optional animation package is proprietary and sits under an end-user licence from Webstudio, Inc. The repository has about 8,900 stars. Webstudio Cloud is the managed option, hosted on Cloudflare, and the page says you can export your site and deploy it anywhere, through the command-line tool, to GitHub Pages, Netlify, Cloudflare Pages or Vercel.",
+      "The Free plan costs nothing and Pro is $15 a month billed yearly, with 100,000 monthly page views included and $20 per 100,000 beyond that. Team is $35 a month. Living with it means designing in the browser and shipping the result wherever you like."] },
+  { slug: "neocities", name: "Neocities", cat: "websites", size: "S", scope: "tool", url: "https://neocities.org",
+    one: "Free web hosting for independent sites, in the spirit of the 1990s home page.", replaces: "Squarespace, Wix",
+    price: "Free; Supporter $5 a month", source: "Open source backend", platforms: "Web",
+    tags: ["Hosting", "Static site", "No ads"], s: [5, 5, 4, 5, 4, 3],
+    body: ["Yahoo closed GeoCities in 2009, taking with it a huge pile of hand-made home pages, and Neocities arrived in 2013 to bring that kind of site back. Its page says it hosts 1,834,900 web sites, that it has no investors and no advertising, and that supporters and donations have paid for it since 2013.",
+      "Neocities scores a 5 on footprint, lock-in and power, a 4 on self-direction and longevity and a 3 on delivery. You write the pages yourself, either in the in-browser HTML editor or by uploading files from your own editor, and the Supporter plan adds a command-line tool, WebDAV and SFTP. The backend code is published on GitHub, where it has about 1,900 stars.",
+      "Free accounts get 1 GB of storage and 200 GB of bandwidth. Supporter costs $5 a month for 50 GB and 3,000 GB, and adds custom domains with SSL, multiple sites and no limits on upload file types. Living with it means a folder of files you made and a small host that sells you nothing."] },
+  { slug: "bear-blog", name: "Bear Blog", cat: "websites", size: "S", scope: "tool", url: "https://bearblog.dev",
+    one: "A minimal blogging platform with no trackers, no scripts and no stylesheets.", replaces: "Squarespace blogs",
+    price: "Free, with a paid upgrade", source: "Source-available (Bear Blog License 2.0)", platforms: "Web",
+    tags: ["Blog", "No trackers", "Minimal"], s: [5, 3, 3, 4, 3, 4],
+    body: ["The home page promises no trackers, no javascript and no stylesheets, just your words, and says posts come to about 2.7 kb a page. Bear Blog is a blogging platform built and maintained by Herman Martinus, with free themes, RSS and Atom feeds, custom domains and email newsletters.",
+      "Bear Blog scores a 5 on footprint, a 4 on power and delivery and a 3 on lock-in, self-direction and longevity. The source is on GitHub, where it has about 5,200 stars, under the Bear Blog License 2.0, which lets you modify and share the code but forbids offering it as a hosted or managed service. The README says it is not possible to individually self-host a Bear Blog.",
+      "The docs cover custom CSS themes, a discovery feed, private blogs, analytics, comments and a guide to migrating an existing blog, and the paid upgrade comes as a subscription or a lifetime purchase. Living with it means a blog that loads instantly and looks the way plain text looks."] },
+  { slug: "carrd", name: "Carrd", cat: "websites", size: "S", scope: "tool", url: "https://carrd.com",
+    one: "One-page sites for profiles, landing pages and email signups, from $19 a year.", replaces: "Squarespace, Wix",
+    price: "Free for three sites; Pro from $19 a year", source: "Closed source", platforms: "Web",
+    tags: ["One page", "Cheap", "Closed source"], s: [4, 3, 4, 4, 3, 4],
+    body: ["A one-page site is the business card of the web, and Carrd sells ten of them for $19 a year. Its home page calls Carrd simple, responsive and free, with up to three sites per account and all the core features at no cost.",
+      "Carrd scores a 4 on footprint, self-direction, power and delivery and a 3 on lock-in and longevity. Pro adds custom domains with SSL, forms that connect to services such as Mailchimp and Kit, embeds, analytics through Google Analytics, Plausible or Matomo, and the removal of the Made with Carrd footer. Pro Plus, from $49 a year for 25 sites, adds redirects and password protection, and it is the plan that lets you download a site as a zip of unminified HTML, CSS and JS. Carrd Inc. runs it, and there is a 7-day free trial of Pro.",
+      "Living with it means a handful of small pages, each one built in a browser editor, that cost less than lunch for the year."] },
 ];
 
 const BENCH = [
@@ -1825,10 +1876,33 @@ const BENCH = [
     tags: ["Benchmark", "Closed source", "Hosted"], s: [2, 2, 2, 1, 3, 4],
     body: ["Plenty of teams run on a wiki that began as one person's tidy page, and Notion is where many of those pages grew up, with notes, documents, databases and project boards all held in one hosted workspace. Notion Labs, Inc. runs it from San Francisco, and everything lives on its servers, so your notes are only as available as the company and your connection allow.",
       "The pricing page lists a free plan with 7 days of page history and 5 MB files, Plus at $10 and Business at $20 per member per month with 30 and 90 days of history and 5 GB files, and says yearly billing saves up to 20%. A workspace with several members is limited in how many blocks it can hold on the free plan. Notion AI is a limited trial on Free and Plus, and Business includes its agent.",
-      "Leaving is possible but clumsy. The help page says you can export pages as PDF, HTML or Markdown, databases as CSV, and a whole workspace from Settings, but the file arrives by email link that expires after 7 days, can take up to 30 hours to build, and cannot be uploaded again to recreate the workspace. Callouts export as HTML because Markdown has no equivalent. Notion delivers very well, so Delivery is a 4, and Power is a 1 because the company sets the terms and the price. Compare it with the tools in Notes."] }
+      "Leaving is possible but clumsy. The help page says you can export pages as PDF, HTML or Markdown, databases as CSV, and a whole workspace from Settings, but the file arrives by email link that expires after 7 days, can take up to 30 hours to build, and cannot be uploaded again to recreate the workspace. Callouts export as HTML because Markdown has no equivalent. Notion delivers very well, so Delivery is a 4, and Power is a 1 because the company sets the terms and the price. Compare it with the tools in Notes."] },
+  { slug: "squarespace", name: "Squarespace", cat: "websites", size: "XL", scope: "tool", url: "https://www.squarespace.com",
+    one: "The design-led website builder whose name many people use for the whole idea.", replaces: "The tool the website builders here are measured against",
+    price: "From €12 a month billed yearly", source: "Closed source", platforms: "Web",
+    tags: ["Benchmark", "Closed source", "Subscription"], s: [2, 2, 3, 1, 3, 4],
+    body: ["Squarespace has sponsored so many podcasts and videos that for many people its name stands for the idea of making your own website. In 2024 it agreed to be taken private by the investment firm Permira in a deal Permira announced at $6.9 billion.",
+      "Its pricing page, read from Germany, lists Basic at €12 a month, Core at €18, Plus at €32 and Advanced at €69, all billed yearly with 30% off the monthly price, and a 14-day free trial with no card needed. Every plan includes hosting and unlimited bandwidth, and the plans differ in store features, with a 2% fee on online store sales on Basic and none above it, and card rates that fall from 2.0% plus €0.25 on Basic to 1.5% plus €0.25 on Advanced.",
+      "Leaving takes work. Squarespace's help page says an export can only be a file in WordPress format, that it carries layout pages, one blog page with its posts and up to 1,000 comments per post, and text and image blocks, and that store pages, portfolio pages, drafts, style settings and custom CSS stay behind. Trial sites cannot be exported, and content cannot move from one Squarespace site to another. Squarespace scores a 4 on Delivery for its polished sites and a 1 on Power, since the price and the platform are the company's to set. Compare it with the tools in Websites."] },
+  { slug: "wix", name: "Wix", cat: "websites", size: "XL", scope: "tool", url: "https://www.wix.com",
+    one: "A drag-and-drop site builder with a free plan, where the site has to stay on Wix.", replaces: "The tool the website builders here are measured against",
+    price: "Free with Wix branding; from $17 a month billed yearly", source: "Closed source", platforms: "Web",
+    tags: ["Benchmark", "Closed source", "Subscription"], s: [2, 1, 3, 1, 3, 4],
+    body: ["Suppose you spent a year decorating a rented flat under rules that said nothing could leave the building, and you have the shape of the deal Wix offers. Creating a site is free, and the help page says a Wix site has to be hosted and operated on Wix's servers, because its architecture does not support external hosting.",
+      "The plans page lists Light at $17 a month, Core at $29, Business at $39 and Business Elite at $159, all as yearly prices, with 2 GB, 50 GB, 100 GB and unlimited storage and room for 2, 5, 10 and 100 collaborators. Prices vary by location, and a Premium plan lets you connect your own domain and remove Wix branding. Most plans include a voucher for one year of a free domain, which only works on a new domain bought from Wix.",
+      "The one workaround Wix describes is embedding the site somewhere else, and it says it cannot provide support for that and may lose control of how the site looks or works. Wix scores a 1 on Lock-in and a 4 on Delivery, since it gets a working site up with little effort. Compare it with the tools in Websites."] },
 ].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
+"wordpress": ["Free publishing software under the GPL, run on your own host", "Themes and plugins add a shop, forms or memberships", "Automattic and WP Engine are in a legal dispute over WordPress.org"],
+"publii": ["A desktop app that builds a static site on your own computer", "GPL-3.0, publishes to GitHub Pages, Netlify, S3 or FTP", "Themes come free and premium"],
+"silex": ["A visual builder for static sites from a French non-profit", "AGPL, free, with hosting included on the official instance", "Start at v3.silex.me or self-host"],
+"webstudio": ["A visual builder for people who want control over CSS", "Free plan, Pro $15 a month billed yearly, and AGPL core code", "Export and deploy to GitHub Pages, Netlify, Cloudflare Pages or Vercel"],
+"neocities": ["Free hosting for hand-made sites, 1 GB and 200 GB bandwidth", "Supporter is $5 a month for 50 GB, custom domains and SFTP", "No advertising and no investors"],
+"bear-blog": ["A blog with no trackers, scripts or stylesheets, about 2.7 kb a page", "Custom domains, RSS, newsletters and free themes", "The licence forbids offering it as a hosted service"],
+"carrd": ["One-page sites, free for three, Pro from $19 a year", "Pro adds custom domains, forms, embeds and analytics", "Pro Plus downloads a site as a zip of HTML, CSS and JS"],
+"squarespace": ["The design-led site builder sponsored on countless podcasts", "From €12 a month billed yearly, with a 14-day trial", "Export is a WordPress-format file of some page types"],
+"wix": ["A drag-and-drop builder with a free plan that shows Wix branding", "Light $17, Core $29, Business $39 a month billed yearly", "Wix says the site has to be hosted on its servers"],
 "aider": ["Edits your files from a terminal, using almost any model including local ones", "Apache-2.0, free, and your model provider is the only bill", "Needs pip and a terminal"],
 "cline": ["Edits files and runs commands in your editor, terminal or desktop, with local models supported", "Apache-2.0, made by a company called Cline Bot Inc", "A wide range of surfaces, from JetBrains to chat connectors"],
 "opencode": ["Works with any model provider you give an API key", "MIT licensed, from a company called Anomaly", "A paid model service called Zen sits beside the free tool"],
@@ -2343,6 +2417,14 @@ const CATCOPY = {
     faq: [["Is there a free alternative to PowerPoint?", "Yes. {marp}, {slidev}, {revealjs}, {quarto} and {presenterm} are free and open source, and {libreoffice} includes Impress."],
       ["Can these export PowerPoint files?", "{marp} exports PowerPoint, and {quarto} lists PowerPoint among its slide formats."],
       ["What if I want to drag boxes around?", "These tools are written in text. The Impress program in {libreoffice} is a point-and-click option."]] },
+  websites: { h1: "Alternatives to Squarespace and Wix", lede: "Websites you can keep, in tools that let your pages leave with you.",
+    intro: ["A Squarespace or Wix site lives on the company's servers, and the way out is narrow. Squarespace exports a WordPress-format file that leaves some page types behind, and Wix says its sites have to stay on Wix. {publii} builds a static site on your computer and publishes it to any host, {silex} and {webstudio} are visual builders that produce sites you can host yourself, and {wordpress} is the free software behind much of the web.",
+      "For something smaller, {neocities} hosts hand-made pages for free, {bear-blog} is a plain blog with no trackers, and {carrd} makes one-page sites for $19 a year. {ghost}, listed under Email marketing, suits a publication with a newsletter."],
+    choose: "Start with how much you want to build. For a single page, {carrd} is the quickest. For a blog, {bear-blog} is the lightest and {wordpress} the most flexible. For a whole site that you drag together in a browser, look at {silex} or {webstudio}, and for files you fully own, {publii} and {neocities} are the plainest.",
+    faq: [["Is there a free alternative to Squarespace?", "Yes. {wordpress}, {publii}, {silex} and {webstudio} are free and open source, and {neocities} hosts sites for free."],
+      ["Can I export my Squarespace site?", "Squarespace exports a WordPress-format file with layout pages, one blog and text and image blocks, so {wordpress} is the natural place to import it."],
+      ["Can I move a Wix site to another host?", "Wix says a site has to be hosted on its servers, so moving means rebuilding the pages, for example in {silex} or {webstudio}."],
+      ["Which of these needs no coding?", "{silex}, {webstudio}, {carrd} and {publii} are built for people who do not write code, and {wordpress} works the same way once a host has installed it."]] },
   design: { h1: "Alternatives to Adobe Creative Cloud", lede: "Draw, lay out, edit and render without a subscription, in tools that keep your files open.",
     intro: ["Creative Cloud is rented software. Stop paying and your files still exist, but the programs that open them are gone, and the formats are built around Adobe's apps. Designers feel this most, because a project can outlive the licence it started under.",
       "The open field is stronger than it used to be. {inkscape} covers vector work, {gimp} and {krita} cover photos and painting, {darktable} handles RAW, {blender} covers 3D, {kdenlive} covers video, and {penpot} is an interface design tool that works in the browser. A newer group uses AI: {comfyui} runs image models on your own machine, and {artcraft} is an open-source studio for composing AI images and video. {affinity} is the one commercial option here, free to use but owned by Canva.",
@@ -2421,6 +2503,22 @@ const CATCOPY = {
       ["Are free ebooks any good?", "Yes, for older books. {standard-ebooks} editions are carefully typeset, and {gutenberg} holds more than 75,000 titles, though the formatting varies."]] }
 };
 const FEES = {
+  websites: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each tool's own pages in November 2026. Squarespace prices are the euro prices shown in Germany and Wix prices are the yearly dollar prices on its plans page. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Hosting and export"],
+    rows: [
+      { slug: "squarespace", bench: true, v: ["A 14-day trial, no card needed", "Basic €12, Core €18, Plus €32, Advanced €69 a month, billed yearly", "Plan and store features: a 2% store fee on Basic and none above, card rates from 2.0% + €0.25 down to 1.5% + €0.25", "Hosted by Squarespace; export is a WordPress-format file of some page types"], src: ["Pricing", "https://www.squarespace.com/pricing"], src2: ["Exporting your site", "https://support.squarespace.com/hc/en-us/articles/206566687-Exporting-your-site"] },
+      { slug: "wix", bench: true, v: ["A free plan, with Wix branding", "Light $17, Core $29, Business $39, Business Elite $159 a month, billed yearly", "Storage from 2 GB to unlimited, 2 to 100 collaborators, and ecommerce features", "Hosted on Wix's servers"], src: ["Plans", "https://www.wix.com/plans"], src2: ["Exporting or embedding your Wix site", "https://support.wix.com/en/article/exporting-or-embedding-your-wix-site-elsewhere"] },
+      { slug: "wordpress", v: ["Free software under the GPL", "No licence fee; a host and a domain cost extra", "Your host, plus any themes and plugins you buy", "Self-hosted; the download page recommends PHP 8.3 or newer with MySQL 8.4 or MariaDB 10.11 or newer"], src: ["Download", "https://wordpress.org/download/"] },
+      { slug: "publii", v: ["Free desktop app", "Free; themes come free and premium", "Premium themes and your own hosting", "Runs on Windows, Mac and Linux; deploys to GitHub Pages, GitLab Pages, Netlify, S3, Google Cloud or FTP and SFTP"], src: ["Publii", "https://getpublii.com/"] },
+      { slug: "silex", v: ["Free, with all features", "Free; managed hosting is arranged through the chat", "Nothing", "Hosting included on the official instance, or self-host"], src: ["Silex", "https://www.silex.me"] },
+      { slug: "webstudio", v: ["A free plan", "Pro $15 a month billed yearly; Team $35", "Monthly page views: Pro includes 100,000 and charges $20 per 100,000 beyond", "Export and deploy to GitHub Pages, Netlify, Cloudflare Pages or Vercel, or self-host"], src: ["Pricing", "https://webstudio.is/pricing"] },
+      { slug: "neocities", v: ["Free: 1 GB storage and 200 GB bandwidth", "Supporter $5 a month", "Storage and bandwidth: 50 GB and 3,000 GB on Supporter, which also adds custom domains", "Hosted by Neocities; upload by browser editor, CLI, WebDAV or SFTP"], src: ["Supporter plans", "https://neocities.org/supporter"] },
+      { slug: "bear-blog", v: ["A free blog with free themes", "A paid upgrade, as a subscription or a lifetime purchase", "Your choice of subscription or lifetime", "Hosted by Bear Blog, with RSS and Atom feeds"], src: ["Upgrade docs", "https://docs.bearblog.dev/upgrading-from-subscription-to-lifetime/"] },
+      { slug: "carrd", v: ["Free for up to three sites, with Made with Carrd branding", "Pro Standard from $19 a year for 10 sites; Pro Plus from $49 a year for 25", "Number of sites; Plus adds redirects, password protection and variables", "Hosted by Carrd; Pro Plus can download a site as a zip of HTML, CSS and JS"], src: ["Pro plans", "https://carrd.com/pro"], src2: ["Downloading a site", "https://carrd.com/docs/sites/downloading"] }
+    ]
+  },
   spreadsheets: {
     h: "What it costs",
     intro: "The numbers people shop on, read from each tool's own pages in November 2026, in US dollars. Fees change, so check the linked page before you commit.",
@@ -2636,6 +2734,8 @@ function tool(slug, isBench) {
 
 /* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
 const PAIRS = [
+  { g: "squarespace", t: "wordpress", cost: "WordPress asks you to find a host and keep the software and plugins up to date, and Squarespace's export brings across only some page types.", move: "Export your Squarespace site as the WordPress-format file, import it into a WordPress install, and see which pages arrive." },
+  { g: "wix", t: "silex", cost: "Silex is free and includes hosting on its official instance, and a Wix site cannot be exported, so each page gets rebuilt by hand.", move: "Rebuild your home page in Silex at v3.silex.me, publish it, and compare it with the Wix original." },
   { g: "microsoft-excel", t: "grist", cost: "Grist links tables the way a database does and stores each document in SQLite. The free plan caps a document at 5,000 records.", move: "Import one workbook that has grown too big for comfort, link its tabs as tables, and keep Excel for the sheets other people send you." },
   { g: "microsoft-powerpoint", t: "marp", cost: "Marp has no drag-and-drop canvas, because you write slides as Markdown and export. It exports to PowerPoint, HTML and PDF, and it needs Chrome or Chromium to convert.", move: "Write one short deck in Marp, export it as a PowerPoint file, and see whether you miss the mouse." },
   { g: "notion", t: "obsidian", cost: "Obsidian keeps notes as Markdown files on your own device. Sync is a paid add-on at $4 a month billed yearly.", move: "Export a few pages from Notion as Markdown, open the folder in Obsidian, and see how much of your structure carries over before you move a whole workspace." },
@@ -3205,7 +3305,7 @@ function currentId() {
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { "spreadsheets": "BusinessApplication", "slides": "BusinessApplication", "writing": "BusinessApplication", "donations": "BusinessApplication", "email-marketing": "BusinessApplication", "analytics": "BusinessApplication", "whiteboards": "BusinessApplication", "code": "DeveloperApplication", "local-ai": "UtilitiesApplication", "tts": "MultimediaApplication", "dictation": "UtilitiesApplication", "translate": "ReferenceApplication", "calendar": "BusinessApplication", "meet": "CommunicationApplication", "ai-images": "MultimediaApplication", notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
+const APPCAT = { "websites": "BusinessApplication", "spreadsheets": "BusinessApplication", "slides": "BusinessApplication", "writing": "BusinessApplication", "donations": "BusinessApplication", "email-marketing": "BusinessApplication", "analytics": "BusinessApplication", "whiteboards": "BusinessApplication", "code": "DeveloperApplication", "local-ai": "UtilitiesApplication", "tts": "MultimediaApplication", "dictation": "UtilitiesApplication", "translate": "ReferenceApplication", "calendar": "BusinessApplication", "meet": "CommunicationApplication", "ai-images": "MultimediaApplication", notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {

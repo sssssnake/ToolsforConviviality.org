@@ -45,6 +45,7 @@
   <url><loc>https://toolsforconviviality.org/category/office/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/category/spreadsheets/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/category/slides/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.org/category/websites/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/category/collect/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/tools/localsend/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.org/tools/netnewswire/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
@@ -245,6 +246,13 @@
   <url><loc>https://toolsforconviviality.org/tools/presenterm/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.org/tools/hedgedoc/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.org/tools/la-suite-docs/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/wordpress/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/publii/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/silex/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/webstudio/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/neocities/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/bear-blog/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
+  <url><loc>https://toolsforconviviality.org/tools/carrd/</loc><lastmod>2026-11-15</lastmod><priority>0.8</priority></url>
   <url><loc>https://toolsforconviviality.org/benchmarks/microsoft-excel/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.org/benchmarks/microsoft-powerpoint/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.org/benchmarks/microsoft-word/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
@@ -286,7 +294,11 @@
   <url><loc>https://toolsforconviviality.org/benchmarks/patreon/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.org/benchmarks/manus/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.org/benchmarks/notion/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.org/benchmarks/squarespace/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
+  <url><loc>https://toolsforconviviality.org/benchmarks/wix/</loc><lastmod>2026-11-15</lastmod><priority>0.6</priority></url>
   <url><loc>https://toolsforconviviality.org/compare/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.org/compare/wordpress-vs-squarespace/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
+  <url><loc>https://toolsforconviviality.org/compare/silex-vs-wix/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/compare/grist-vs-microsoft-excel/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/compare/marp-vs-microsoft-powerpoint/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
   <url><loc>https://toolsforconviviality.org/compare/obsidian-vs-notion/</loc><lastmod>2026-11-15</lastmod><priority>0.7</priority></url>
