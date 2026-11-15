@@ -75,6 +75,7 @@ p { margin: 0; }
 .nav a { text-decoration: none; padding-block: 4px; border-bottom: 1.5px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--band-fg); }
 
+main { overflow-x: clip; }
 main .wrap { padding-block: 48px 64px; }
 
 /* Home */
@@ -525,22 +526,22 @@ const SCOPES = {
 };
 const CATS = [
   { id: "code", name: "Coding agents", verb: "Code with an AI agent I control", instead: "Claude Code, Codex and GitHub Copilot" },
-  { id: "agents", name: "Personal agents", verb: "Get an assistant that works for me", instead: "Hosted AI assistants and agents" },
+  { id: "agents", name: "Personal agents", verb: "Get an assistant that works for me", instead: "Manus and other hosted AI agents" },
   { id: "local-ai", name: "Local AI", verb: "Chat with AI on my own machine", instead: "ChatGPT and Claude" },
   { id: "ai-images", name: "AI image tools", verb: "Make images with AI on my terms", instead: "Midjourney, DALL-E and Adobe Firefly" },
   { id: "dictation", name: "Dictation & transcription", verb: "Turn speech into text without sending it away", instead: "Otter.ai and cloud voice typing" },
   { id: "tts", name: "Text to speech", verb: "Hear text read aloud without a subscription", instead: "ElevenLabs" },
   { id: "notes", name: "Notes", verb: "Keep my own notes", instead: "OneNote, Evernote and Notion" },
   { id: "writing", name: "Writing", verb: "Write letters, reports and books", instead: "Microsoft Word" },
-  { id: "files", name: "Files & sync", verb: "Move files between my devices", instead: "Google Drive, OneDrive, AirDrop" },
+  { id: "files", name: "Files & sync", verb: "Move files between my devices", instead: "Google Drive, OneDrive and AirDrop" },
   { id: "maps", name: "Maps & places", verb: "Find my way without being tracked", instead: "Google Maps" },
   { id: "search", name: "Search", verb: "Search without being tracked", instead: "Google Search" },
   { id: "translate", name: "Translation", verb: "Translate without handing over my text", instead: "Google Translate and DeepL" },
   { id: "news", name: "News & feeds", verb: "Read the news I chose", instead: "Google News" },
-  { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager, Microsoft Authenticator" },
+  { id: "passwords", name: "Passwords & security", verb: "Keep my passwords safe", instead: "Google Password Manager and Microsoft Authenticator" },
   { id: "photos", name: "Photos", verb: "Keep my photos private", instead: "Google Photos and iCloud Photos" },
-  { id: "effects", name: "Photo & video effects", verb: "Edit and play with pictures and video", instead: "Instagram filters, Snapchat lenses, Teams backgrounds" },
-  { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator, Premiere" },
+  { id: "effects", name: "Photo & video effects", verb: "Edit and play with pictures and video", instead: "Instagram filters, Snapchat lenses and Teams backgrounds" },
+  { id: "design", name: "Design & creative tools", verb: "Draw, design and edit", instead: "Adobe Creative Cloud, Photoshop, Illustrator and Premiere" },
   { id: "whiteboards", name: "Whiteboards & diagrams", verb: "Think together on a canvas", instead: "Miro, FigJam and Mural" },
   { id: "analytics", name: "Website analytics", verb: "Count visitors without tracking them", instead: "Google Analytics" },
   { id: "email-marketing", name: "Email marketing", verb: "Email your readers and customers", instead: "Mailchimp" },
@@ -550,7 +551,7 @@ const CATS = [
   { id: "social", name: "Social feeds", verb: "Share and follow without being hooked", instead: "Instagram, TikTok and Facebook" },
   { id: "email", name: "Email", verb: "Send and read email", instead: "Gmail and Outlook" },
   { id: "calendar", name: "Calendar", verb: "Keep my schedule to myself", instead: "Google Calendar" },
-  { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books, Google Play Books" },
+  { id: "books", name: "Books & libraries", verb: "Own my books", instead: "Kindle, Audible, Apple Books and Google Play Books" },
   { id: "browsers", name: "Browsers", verb: "Browse the web", instead: "Chrome and Edge" },
   { id: "apps", name: "App stores", verb: "Get apps without a gatekeeper", instead: "Google Play and the App Store" },
   { id: "video", name: "Video", verb: "Watch without being watched", instead: "YouTube and Netflix" },
@@ -560,7 +561,7 @@ const CATS = [
   { id: "spreadsheets", name: "Spreadsheets", verb: "Calculate and keep track of data", instead: "Microsoft Excel and Google Sheets" },
   { id: "slides", name: "Slides", verb: "Make a presentation", instead: "Microsoft PowerPoint and Google Slides" },
   { id: "websites", name: "Websites", verb: "Build a website", instead: "Squarespace and Wix" },
-  { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest, Google Keep boards" }
+  { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest and Google Keep" }
 ];
 // Homepage groups. Any category missing here still appears, under "More".
 const GROUPS = [
