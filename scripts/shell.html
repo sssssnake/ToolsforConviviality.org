@@ -121,6 +121,7 @@ main .wrap { padding-block: 48px 64px; }
 .pg-name { margin: 0; padding-bottom: 8px; border-bottom: 2px solid var(--accent); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); display: flex; justify-content: space-between; gap: 12px; }
 .pg-name span { color: var(--muted); }
 .purpose { display: block; padding-block: 12px; border-bottom: 1px solid var(--line); text-decoration: none; }
+.purpose .p-rep { display: block; margin-bottom: 4px; font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.4; }
 .purpose .p-verb { display: block; font-size: 19px; line-height: 1.25; }
 .purpose .p-meta { display: block; margin-top: 4px; font-family: var(--mono); font-size: 12px; color: var(--muted); line-height: 1.5; }
 .purpose:hover .p-verb { color: var(--accent); }
@@ -2740,7 +2741,7 @@ function home() {
     <h2 class="start" id="start-h">Or start with what you want to do</h2>
     <div class="pgroups">${groupedCats().map(g => `<div class="pgroup"><p class="pg-name">${esc(g.name)} <span>${g.cats.reduce((n, c) => n + toolsIn(c.id).length, 0)} tools</span></p>${g.cats.map(c => {
       const list = toolsIn(c.id);
-      return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""}</span></a>`;
+      return `<a class="purpose" href="#cat-${c.id}">${c.instead ? `<span class="p-rep">Replaces ${esc(c.instead)}</span>` : ""}<span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""}</span></a>`;
     }).join("")}</div>`).join("")}</div>
   </section>
   <section class="sizes how">

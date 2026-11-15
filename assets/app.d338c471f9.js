@@ -2237,7 +2237,7 @@ function home() {
     <h2 class="start" id="start-h">Or start with what you want to do</h2>
     <div class="pgroups">${groupedCats().map(g => `<div class="pgroup"><p class="pg-name">${esc(g.name)} <span>${g.cats.reduce((n, c) => n + toolsIn(c.id).length, 0)} tools</span></p>${g.cats.map(c => {
       const list = toolsIn(c.id);
-      return `<a class="purpose" href="#cat-${c.id}"><span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""}</span></a>`;
+      return `<a class="purpose" href="#cat-${c.id}">${c.instead ? `<span class="p-rep">Replaces ${esc(c.instead)}</span>` : ""}<span class="p-verb">${esc(c.verb)}</span><span class="p-meta">${list.slice(0, 4).map(x => x.name).join(", ")}${list.length > 4 ? ` +${list.length - 4}` : ""}</span></a>`;
     }).join("")}</div>`).join("")}</div>
   </section>
   <section class="sizes how">
