@@ -7858,7 +7858,318 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.microsoft.com/en-us/microsoft-365/powerpoint\",{\"shot\":false},null]"
+    },
+    "wordpress": {
+      "slug": "wordpress",
+      "name": "WordPress",
+      "source": "https://wordpress.org",
+      "capturedAt": "2026-11-15T08:43:14.345Z",
+      "alt": "Screenshot of the WordPress website",
+      "pageTitle": "Blog Tool, Publishing Platform, and CMS | WordPress.org",
+      "pageDescription": "Open source software which you can use to easily create a beautiful website, blog, or app.",
+      "shot": {
+        "480": "assets/tools/wordpress/shot-480.webp",
+        "960": "assets/tools/wordpress/shot-960.webp",
+        "1600": "assets/tools/wordpress/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/wordpress/mobile-390.webp",
+        "780": "assets/tools/wordpress/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/wordpress/icon-128.webp",
+        "256": "assets/tools/wordpress/icon-256.webp",
+        "from": "https://s.w.org/images/wmark.png",
+        "sourceWidth": 1000,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/wordpress/social-600.webp",
+        "1200": "assets/tools/wordpress/social-1200.webp",
+        "from": "https://wordpress.org/files/2024/04/wordpress-homepage-ogimage-202404.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://wordpress.org\",null,null]"
+    },
+    "publii": {
+      "slug": "publii",
+      "name": "Publii",
+      "source": "https://getpublii.com",
+      "capturedAt": "2026-11-15T08:43:21.208Z",
+      "alt": "Screenshot of the Publii website",
+      "pageTitle": "Publii: Free Open-Source Static CMS for Fast, Secure Websites",
+      "pageDescription": "Publii is a free, open-source desktop CMS for static websites. Write locally, publish to any host - no database, no PHP, no admin panel, no tracking by default.",
+      "shot": {
+        "480": "assets/tools/publii/shot-480.webp",
+        "960": "assets/tools/publii/shot-960.webp",
+        "1600": "assets/tools/publii/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/publii/mobile-390.webp",
+        "780": "assets/tools/publii/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/publii/icon-128.webp",
+        "256": "assets/tools/publii/icon-256.webp",
+        "svg": "assets/tools/publii/icon.svg",
+        "from": "https://getpublii.com/media/plugins/faviconStudio/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/publii/social-600.webp",
+        "1200": "assets/tools/publii/social-1200.webp",
+        "from": "https://getpublii.com/media/website/publii-cms-2.png"
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://getpublii.com\",null,null]"
+    },
+    "silex": {
+      "slug": "silex",
+      "name": "Silex",
+      "source": "https://www.silex.me",
+      "capturedAt": "2026-11-15T08:43:30.552Z",
+      "alt": "Screenshot of the Silex website",
+      "pageTitle": "Silex: Free Website Builder, Libre Software, Open-Source No-Code",
+      "pageDescription": "Create fast websites visually, free open source tool for professional web designers and no-code developers.",
+      "shot": {
+        "480": "assets/tools/silex/shot-480.webp",
+        "960": "assets/tools/silex/shot-960.webp",
+        "1600": "assets/tools/silex/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/silex/mobile-390.webp",
+        "780": "assets/tools/silex/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/silex/icon-128.webp",
+        "256": "assets/tools/silex/icon-256.webp",
+        "from": "https://cloud.squidex.io/api/assets/silex-me/cf1604c7-3f07-4a1d-b68b-36535579c7d4/",
+        "sourceWidth": 177,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/silex/social-600.webp",
+        "1200": "assets/tools/silex/social-1200.webp",
+        "from": "https://cloud.squidex.io/api/assets/silex-me/8d450123-4646-4851-8180-bfeb096294ed/"
+      },
+      "color": "#f85878",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.silex.me\",null,null]"
+    },
+    "webstudio": {
+      "slug": "webstudio",
+      "name": "Webstudio",
+      "source": "https://webstudio.is",
+      "capturedAt": "2026-11-15T08:43:39.657Z",
+      "alt": "Screenshot of the Webstudio website",
+      "pageTitle": "Webstudio — Advanced Open Source Website Builder",
+      "pageDescription": "Webstudio is an open source website builder that empowers creators to build highly maintainable and fast websites using modern web standards.",
+      "shot": {
+        "480": "assets/tools/webstudio/shot-480.webp",
+        "960": "assets/tools/webstudio/shot-960.webp",
+        "1600": "assets/tools/webstudio/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/webstudio/mobile-390.webp",
+        "780": "assets/tools/webstudio/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/webstudio/icon-128.webp",
+        "256": "assets/tools/webstudio/icon-256.webp",
+        "from": "https://webstudio.is/cgi/image/logo-transparent__i_1fYszux9N-08rI-K0F.png?width=144&quality=100&height=144&fit=pad&format=auto",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/webstudio/social-600.webp",
+        "1200": "assets/tools/webstudio/social-1200.webp",
+        "from": "https://webstudio.is/cgi/image/visual-builder_6p7VS5-OlwHXPek83iJwo.png?format=raw"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://webstudio.is\",null,null]"
+    },
+    "neocities": {
+      "slug": "neocities",
+      "name": "Neocities",
+      "source": "https://neocities.org",
+      "capturedAt": "2026-11-15T08:43:49.406Z",
+      "alt": "Screenshot of the Neocities website",
+      "pageTitle": "Neocities: Create your own free website!",
+      "pageDescription": "Create and surf awesome websites for free.",
+      "shot": {
+        "480": "assets/tools/neocities/shot-480.webp",
+        "960": "assets/tools/neocities/shot-960.webp",
+        "1600": "assets/tools/neocities/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/neocities/mobile-390.webp",
+        "780": "assets/tools/neocities/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/neocities/icon-128.webp",
+        "256": "assets/tools/neocities/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/neocities/social-600.webp",
+        "1200": "assets/tools/neocities/social-1200.webp",
+        "from": "https://neocities.org/img/og/index.jpg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://neocities.org\",null,null]"
+    },
+    "bear-blog": {
+      "slug": "bear-blog",
+      "name": "Bear Blog",
+      "source": "https://bearblog.dev",
+      "capturedAt": "2026-11-15T08:43:57.662Z",
+      "alt": "Screenshot of the Bear Blog website",
+      "pageTitle": "Bear Blog",
+      "pageDescription": "Free, no-nonsense, super-fast blogging",
+      "shot": {
+        "480": "assets/tools/bear-blog/shot-480.webp",
+        "960": "assets/tools/bear-blog/shot-960.webp",
+        "1600": "assets/tools/bear-blog/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/bear-blog/mobile-390.webp",
+        "780": "assets/tools/bear-blog/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/bear-blog/icon-128.webp",
+        "256": "assets/tools/bear-blog/icon-256.webp",
+        "svg": "assets/tools/bear-blog/icon.svg",
+        "from": "https://bearblog.dev/static/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/bear-blog/social-600.webp",
+        "1200": "assets/tools/bear-blog/social-1200.webp",
+        "from": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/herman-1683556668-0.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://bearblog.dev\",null,null]"
+    },
+    "carrd": {
+      "slug": "carrd",
+      "name": "Carrd",
+      "source": "https://carrd.com",
+      "capturedAt": "2026-11-15T08:44:03.129Z",
+      "alt": "Screenshot of the Carrd website",
+      "pageTitle": "Carrd - Simple, free, fully responsive one-page sites for pretty much anything",
+      "pageDescription": "A free platform for building simple, fully responsive one-page sites for pretty much anything.",
+      "shot": {
+        "480": "assets/tools/carrd/shot-480.webp",
+        "960": "assets/tools/carrd/shot-960.webp",
+        "1600": "assets/tools/carrd/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/carrd/mobile-390.webp",
+        "780": "assets/tools/carrd/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/carrd/icon-128.webp",
+        "256": "assets/tools/carrd/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/carrd/social-600.webp",
+        "1200": "assets/tools/carrd/social-1200.webp",
+        "from": "https://carrd.com/assets/images/etc/share.jpg"
+      },
+      "color": "#685888",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://carrd.com\",null,null]"
+    },
+    "squarespace": {
+      "slug": "squarespace",
+      "name": "Squarespace",
+      "source": "https://www.squarespace.com",
+      "capturedAt": "2026-11-15T08:44:09.962Z",
+      "alt": "Screenshot of the Squarespace website",
+      "pageTitle": "Website Builder – Easily Create Your Own Website — Squarespace",
+      "pageDescription": "Create a website and grow your business with a free Squarespace trial. Start with customizable website templates, AI website builder tools, or a domain name.",
+      "icon": {
+        "128": "assets/tools/squarespace/icon-128.webp",
+        "256": "assets/tools/squarespace/icon-256.webp",
+        "from": "https://media-www.sqspcdn.com/logos/apple-touch-icon-1024.png",
+        "sourceWidth": 1024,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/squarespace/social-600.webp",
+        "1200": "assets/tools/squarespace/social-1200.webp",
+        "from": "http://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/6a8c4a1bc1eded3ace8618c3/1787578907734/Thumbnail.png?format=1500w"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.squarespace.com\",{\"shot\":false},null]"
+    },
+    "wix": {
+      "slug": "wix",
+      "name": "Wix",
+      "source": "https://www.wix.com",
+      "capturedAt": "2026-11-15T08:44:22.276Z",
+      "alt": "Screenshot of the Wix website",
+      "pageTitle": "Wix.com - The platform trusted by millions of businesses",
+      "pageDescription": "Build the business you have in mind on a platform trusted by millions. Hosting, business tools, domains and marketing built in. Try it for free.",
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/wix/icon-128.webp",
+        "256": "assets/tools/wix/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/wix/social-600.webp",
+        "1200": "assets/tools/wix/social-1200.webp",
+        "from": "https://static.wixstatic.com/media/bb826b_8fa6020e3db94dac9b6eaafc0fd8897a~mv2.jpg/v1/fill/w_1200,h_630,al_c/bb826b_8fa6020e3db94dac9b6eaafc0fd8897a~mv2.jpg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Close\")",
+        "screenshot skipped by override",
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://www.wix.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-15T08:16:09.014Z"
+  "updatedAt": "2026-11-15T08:44:29.233Z"
 }

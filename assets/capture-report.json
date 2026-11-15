@@ -1,70 +1,50 @@
 {
-  "startedAt": "2026-11-15T08:14:15.328Z",
+  "startedAt": "2026-11-15T08:43:11.953Z",
   "captured": [
     {
-      "slug": "grist",
+      "slug": "wordpress",
       "notes": []
     },
     {
-      "slug": "baserow",
-      "notes": [
-        "dismissed banner with button:has-text(\"Got it\")"
-      ]
-    },
-    {
-      "slug": "nocodb",
+      "slug": "publii",
       "notes": []
     },
     {
-      "slug": "visidata",
+      "slug": "silex",
+      "notes": []
+    },
+    {
+      "slug": "webstudio",
+      "notes": []
+    },
+    {
+      "slug": "neocities",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
     },
     {
-      "slug": "marp",
+      "slug": "bear-blog",
       "notes": []
     },
     {
-      "slug": "slidev",
-      "notes": []
-    },
-    {
-      "slug": "revealjs",
-      "notes": []
-    },
-    {
-      "slug": "quarto",
-      "notes": []
-    },
-    {
-      "slug": "presenterm",
+      "slug": "carrd",
       "notes": [
-        "social image failed: HTTP 429 for https://opengraph.githubassets.com/9716395dc9aa5b72ca528ae884721d2682f78ec119fbb6c085fe715d0a6c379c/mfontanini/presenterm"
-      ]
-    },
-    {
-      "slug": "hedgedoc",
-      "notes": [
-        "manifest unreadable: HTTP 403 for https://hedgedoc.org/icons/site.webmanifest"
-      ]
-    },
-    {
-      "slug": "la-suite-docs",
-      "notes": []
-    },
-    {
-      "slug": "microsoft-excel",
-      "notes": [
-        "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
     },
     {
-      "slug": "microsoft-powerpoint",
+      "slug": "squarespace",
       "notes": [
+        "screenshot skipped by override"
+      ]
+    },
+    {
+      "slug": "wix",
+      "notes": [
+        "dismissed banner with button:has-text(\"Close\")",
         "screenshot skipped by override",
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
@@ -991,8 +971,60 @@
     {
       "slug": "notion",
       "reason": "recent"
+    },
+    {
+      "slug": "grist",
+      "reason": "recent"
+    },
+    {
+      "slug": "baserow",
+      "reason": "recent"
+    },
+    {
+      "slug": "nocodb",
+      "reason": "recent"
+    },
+    {
+      "slug": "visidata",
+      "reason": "recent"
+    },
+    {
+      "slug": "marp",
+      "reason": "recent"
+    },
+    {
+      "slug": "slidev",
+      "reason": "recent"
+    },
+    {
+      "slug": "revealjs",
+      "reason": "recent"
+    },
+    {
+      "slug": "quarto",
+      "reason": "recent"
+    },
+    {
+      "slug": "presenterm",
+      "reason": "recent"
+    },
+    {
+      "slug": "hedgedoc",
+      "reason": "recent"
+    },
+    {
+      "slug": "la-suite-docs",
+      "reason": "recent"
+    },
+    {
+      "slug": "microsoft-excel",
+      "reason": "recent"
+    },
+    {
+      "slug": "microsoft-powerpoint",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-15T08:16:09.017Z"
+  "finishedAt": "2026-11-15T08:44:29.235Z"
 }

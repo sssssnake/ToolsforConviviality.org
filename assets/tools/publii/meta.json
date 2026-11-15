@@ -1,0 +1,33 @@
+{
+  "slug": "publii",
+  "name": "Publii",
+  "source": "https://getpublii.com",
+  "capturedAt": "2026-11-15T08:43:21.208Z",
+  "alt": "Screenshot of the Publii website",
+  "pageTitle": "Publii: Free Open-Source Static CMS for Fast, Secure Websites",
+  "pageDescription": "Publii is a free, open-source desktop CMS for static websites. Write locally, publish to any host - no database, no PHP, no admin panel, no tracking by default.",
+  "shot": {
+    "480": "assets/tools/publii/shot-480.webp",
+    "960": "assets/tools/publii/shot-960.webp",
+    "1600": "assets/tools/publii/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/publii/mobile-390.webp",
+    "780": "assets/tools/publii/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/publii/icon-128.webp",
+    "256": "assets/tools/publii/icon-256.webp",
+    "svg": "assets/tools/publii/icon.svg",
+    "from": "https://getpublii.com/media/plugins/faviconStudio/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/publii/social-600.webp",
+    "1200": "assets/tools/publii/social-1200.webp",
+    "from": "https://getpublii.com/media/website/publii-cms-2.png"
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

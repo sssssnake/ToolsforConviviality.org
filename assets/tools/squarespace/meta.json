@@ -1,0 +1,27 @@
+{
+  "slug": "squarespace",
+  "name": "Squarespace",
+  "source": "https://www.squarespace.com",
+  "capturedAt": "2026-11-15T08:44:09.962Z",
+  "alt": "Screenshot of the Squarespace website",
+  "pageTitle": "Website Builder – Easily Create Your Own Website — Squarespace",
+  "pageDescription": "Create a website and grow your business with a free Squarespace trial. Start with customizable website templates, AI website builder tools, or a domain name.",
+  "icon": {
+    "128": "assets/tools/squarespace/icon-128.webp",
+    "256": "assets/tools/squarespace/icon-256.webp",
+    "from": "https://media-www.sqspcdn.com/logos/apple-touch-icon-1024.png",
+    "sourceWidth": 1024,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/squarespace/social-600.webp",
+    "1200": "assets/tools/squarespace/social-1200.webp",
+    "from": "http://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/6a8c4a1bc1eded3ace8618c3/1787578907734/Thumbnail.png?format=1500w"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

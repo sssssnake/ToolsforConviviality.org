@@ -1,0 +1,38 @@
+{
+  "slug": "neocities",
+  "name": "Neocities",
+  "source": "https://neocities.org",
+  "capturedAt": "2026-11-15T08:43:49.406Z",
+  "alt": "Screenshot of the Neocities website",
+  "pageTitle": "Neocities: Create your own free website!",
+  "pageDescription": "Create and surf awesome websites for free.",
+  "shot": {
+    "480": "assets/tools/neocities/shot-480.webp",
+    "960": "assets/tools/neocities/shot-960.webp",
+    "1600": "assets/tools/neocities/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/neocities/mobile-390.webp",
+    "780": "assets/tools/neocities/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/neocities/icon-128.webp",
+    "256": "assets/tools/neocities/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/neocities/social-600.webp",
+    "1200": "assets/tools/neocities/social-1200.webp",
+    "from": "https://neocities.org/img/og/index.jpg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

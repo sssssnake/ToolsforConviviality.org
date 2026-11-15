@@ -1,0 +1,38 @@
+{
+  "slug": "carrd",
+  "name": "Carrd",
+  "source": "https://carrd.com",
+  "capturedAt": "2026-11-15T08:44:03.129Z",
+  "alt": "Screenshot of the Carrd website",
+  "pageTitle": "Carrd - Simple, free, fully responsive one-page sites for pretty much anything",
+  "pageDescription": "A free platform for building simple, fully responsive one-page sites for pretty much anything.",
+  "shot": {
+    "480": "assets/tools/carrd/shot-480.webp",
+    "960": "assets/tools/carrd/shot-960.webp",
+    "1600": "assets/tools/carrd/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/carrd/mobile-390.webp",
+    "780": "assets/tools/carrd/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/carrd/icon-128.webp",
+    "256": "assets/tools/carrd/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/carrd/social-600.webp",
+    "1200": "assets/tools/carrd/social-1200.webp",
+    "from": "https://carrd.com/assets/images/etc/share.jpg"
+  },
+  "color": "#685888",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

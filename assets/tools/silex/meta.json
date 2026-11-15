@@ -1,0 +1,34 @@
+{
+  "slug": "silex",
+  "name": "Silex",
+  "source": "https://www.silex.me",
+  "capturedAt": "2026-11-15T08:43:30.552Z",
+  "alt": "Screenshot of the Silex website",
+  "pageTitle": "Silex: Free Website Builder, Libre Software, Open-Source No-Code",
+  "pageDescription": "Create fast websites visually, free open source tool for professional web designers and no-code developers.",
+  "shot": {
+    "480": "assets/tools/silex/shot-480.webp",
+    "960": "assets/tools/silex/shot-960.webp",
+    "1600": "assets/tools/silex/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/silex/mobile-390.webp",
+    "780": "assets/tools/silex/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/silex/icon-128.webp",
+    "256": "assets/tools/silex/icon-256.webp",
+    "from": "https://cloud.squidex.io/api/assets/silex-me/cf1604c7-3f07-4a1d-b68b-36535579c7d4/",
+    "sourceWidth": 177,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/silex/social-600.webp",
+    "1200": "assets/tools/silex/social-1200.webp",
+    "from": "https://cloud.squidex.io/api/assets/silex-me/8d450123-4646-4851-8180-bfeb096294ed/"
+  },
+  "color": "#f85878",
+  "colorFrom": "icon",
+  "notes": []
+}

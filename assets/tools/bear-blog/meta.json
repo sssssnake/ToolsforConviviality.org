@@ -1,0 +1,33 @@
+{
+  "slug": "bear-blog",
+  "name": "Bear Blog",
+  "source": "https://bearblog.dev",
+  "capturedAt": "2026-11-15T08:43:57.662Z",
+  "alt": "Screenshot of the Bear Blog website",
+  "pageTitle": "Bear Blog",
+  "pageDescription": "Free, no-nonsense, super-fast blogging",
+  "shot": {
+    "480": "assets/tools/bear-blog/shot-480.webp",
+    "960": "assets/tools/bear-blog/shot-960.webp",
+    "1600": "assets/tools/bear-blog/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/bear-blog/mobile-390.webp",
+    "780": "assets/tools/bear-blog/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/bear-blog/icon-128.webp",
+    "256": "assets/tools/bear-blog/icon-256.webp",
+    "svg": "assets/tools/bear-blog/icon.svg",
+    "from": "https://bearblog.dev/static/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/bear-blog/social-600.webp",
+    "1200": "assets/tools/bear-blog/social-1200.webp",
+    "from": "https://bear-images.sfo2.cdn.digitaloceanspaces.com/herman-1683556668-0.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}

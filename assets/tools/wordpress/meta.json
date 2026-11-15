@@ -1,0 +1,34 @@
+{
+  "slug": "wordpress",
+  "name": "WordPress",
+  "source": "https://wordpress.org",
+  "capturedAt": "2026-11-15T08:43:14.345Z",
+  "alt": "Screenshot of the WordPress website",
+  "pageTitle": "Blog Tool, Publishing Platform, and CMS | WordPress.org",
+  "pageDescription": "Open source software which you can use to easily create a beautiful website, blog, or app.",
+  "shot": {
+    "480": "assets/tools/wordpress/shot-480.webp",
+    "960": "assets/tools/wordpress/shot-960.webp",
+    "1600": "assets/tools/wordpress/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/wordpress/mobile-390.webp",
+    "780": "assets/tools/wordpress/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/wordpress/icon-128.webp",
+    "256": "assets/tools/wordpress/icon-256.webp",
+    "from": "https://s.w.org/images/wmark.png",
+    "sourceWidth": 1000,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/wordpress/social-600.webp",
+    "1200": "assets/tools/wordpress/social-1200.webp",
+    "from": "https://wordpress.org/files/2024/04/wordpress-homepage-ogimage-202404.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}
