@@ -1365,5 +1365,37 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "zettlr",
+    "name": "Zettlr",
+    "url": "https://www.zettlr.com",
+    "repo": "Zettlr/Zettlr"
+  },
+  {
+    "slug": "apostrophe",
+    "name": "Apostrophe",
+    "url": "https://apps.gnome.org/Apostrophe/"
+  },
+  {
+    "slug": "calligra-words",
+    "name": "Calligra Words",
+    "url": "https://calligra.org/"
+  },
+  {
+    "slug": "typst",
+    "name": "Typst",
+    "url": "https://typst.app",
+    "repo": "typst/typst"
+  },
+  {
+    "slug": "ia-writer",
+    "name": "iA Writer",
+    "url": "https://ia.net/writer"
+  },
+  {
+    "slug": "lyx",
+    "name": "LyX",
+    "url": "https://www.lyx.org"
   }
 ]
