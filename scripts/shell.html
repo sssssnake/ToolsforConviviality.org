@@ -645,9 +645,9 @@ const TOOLS = [
       "It is closed source, the price shuts some people out, and nothing stays with you if you stop paying. It is a good product and a fair example of convenience and conviviality pulling apart."] },
   { slug: "bitwarden", name: "Bitwarden", cat: "passwords", size: "L", scope: "system", url: "https://bitwarden.com",
     one: "A password manager with an open-source core and a generous free tier.", replaces: "Google Password Manager, Microsoft Authenticator",
-    price: "Free; premium about $10 a year", source: "Open core", platforms: "Every major platform and browser",
+    price: "Free; Premium $19.80 a year, Families $47.88 a year", source: "Open core", platforms: "Every major platform and browser",
     tags: ["Open source core", "Free tier", "Self-hostable"], s: [4,5,4,3,4,5],
-    body: ["Bitwarden stores passwords well, works on every major platform and browser, and lets you export your whole vault or host it yourself, so leaving is easy. The core apps are GPL and the server is AGPL. It is free, with a premium plan for about $10 a year.",
+    body: ["Bitwarden stores passwords well, works on every major platform and browser, and lets you export your whole vault or host it yourself, so leaving is easy. The core apps are GPL and the server is AGPL. It is free, with a Premium plan at $19.80 a year and a Families plan for up to six people at $47.88 a year, both billed annually.",
       "Bitwarden scores a 5 on lock-in and delivery, a 4 on footprint, self-direction and longevity and a 3 on power.",
       "Power is a 3 because the company has been steadily moving toward an open-core model. In October 2026 it announced that the versions in the app stores will be its commercially licensed builds, while the GPL code stays on GitHub. That follows a 2024 scare over a restrictive build licence, which the company fixed after pushback.",
       "We will re-score if anything else changes."] },
@@ -2225,7 +2225,22 @@ const BENCH = [
     body: ["A busker's case on a busy street collects from people who were already walking past, and Patreon is a case that follows the busker home. Its pricing page says it is free to start and takes 10% of the income you earn, and its creator fees overview says that standard 10% plan applies to pages published after 4 August 2025. Pages older than that stay on a legacy plan, and the same overview lists them as Founders at 5%, Pro at 8% and Pro plus Merch at 11%, with the Founders plan closed to new creators since 7 May 2019 and the other two closed since 4 August 2025.",
       "Patreon scores a 4 on delivery, a 3 on lock-in and longevity, a 2 on footprint and self-direction and a 1 on power. The pricing page lists subscriptions, membership tiers, one-time payments, newsletters, native video and livestreaming, free trials and discounts and podcast hosting, and says Patreon handles payments and taxes. The fees overview adds payment processing, and its table for legacy pages lists 2.9% plus $0.30 on card payments above $3 with a US dollar payout and 5% plus $0.10 on payments of $3 or less, along with a 2.5% fee on any payment made in a currency different from your payout currency, a payout fee that depends on method and currency, and Apple's 30% charge on purchases made in the iOS app. Sales of posts and digital products carry a platform fee of 5% to 12% depending on the plan.",
       "The standard plan includes a hosted page, monthly and annual memberships, digital product sales, video hosting of up to 100 hours a month once you have paying fans, community chats and polls, and audience insights. The overview says an older page moves onto it when you unpublish the page, even briefly, when Patreon unpublishes it for any reason, or when you republish after 4 August 2025.",
-      "The pricing page lists exportable email lists, so Lock-in is a 3 and not lower, though we did not read what the export contains or the terms. In practice it is the place where supporters already have an account, with a tenth of your income going to the platform. As of November 2026 this is our opinion, based on public sources, and if you spot an error, write to hello@toolsforconviviality.org and we will check it and correct it. Compare it with the tools in Donations & memberships."] },].map(t => Object.assign(t, { bench: true }));
+      "The pricing page lists exportable email lists, so Lock-in is a 3 and not lower, though we did not read what the export contains or the terms. In practice it is the place where supporters already have an account, with a tenth of your income going to the platform. As of November 2026 this is our opinion, based on public sources, and if you spot an error, write to hello@toolsforconviviality.org and we will check it and correct it. Compare it with the tools in Donations & memberships."] },
+  { slug: "manus", name: "Manus", cat: "agents", size: "XL", scope: "system", url: "https://manus.im",
+    one: "A hosted agent that takes a goal and hands back the finished work, and one whose owners changed twice in a year.", replaces: "The tool the personal agents are measured against",
+    price: "Free plan; paid plans from $20 a month", source: "Closed source", platforms: "Web, Mac, Windows, iOS, Android",
+    tags: ["Benchmark", "Closed source", "Hosted agent"], s: [2, 2, 2, 1, 1, 4],
+    body: ["Most people who hand a task to an agent want to describe the job and come back to a result, and Manus is built for exactly that. Its own comparison page says it takes a goal and plans, executes and delivers a finished result, runs tasks in a secure sandbox, and works through a web app and desktop and mobile apps, and it lists a free plan with paid plans from $20 a month.",
+      "The ownership story is the part that matters here. Press reports said Meta agreed to buy Manus for about $2 billion, and on 11 August 2026 Manus announced it was returning to independent operations after Chinese regulators intervened. According to a summary of that announcement, data created by certain users since 29 December 2025 was to be deleted, with free backups available until 23 August 2026 and a restoration portal opening afterwards, and Manus said this was a regulatory step and not a security incident. Reports of a Tencent-led buyback came from unnamed sources, and we could not confirm who owns the company now.",
+      "Manus scores a 4 on Delivery because it does the job it advertises. It scores a 1 on Power and on Longevity, since the company can change hands and the terms with it, and a 2 on footprint, lock-in and self-direction, because your tasks and files live on its servers and a backup window came with a deadline. Compare it with the tools in Personal agents."] },
+  { slug: "notion", name: "Notion", cat: "notes", size: "XL", scope: "system", url: "https://www.notion.com",
+    one: "The notes, wiki and database workspace that millions of teams keep their thinking in.", replaces: "The tool the notes apps are measured against",
+    price: "Free; Plus $10 and Business $20 per member per month", source: "Closed source", platforms: "Web, desktop and mobile apps",
+    tags: ["Benchmark", "Closed source", "Hosted"], s: [2, 2, 2, 1, 3, 4],
+    body: ["Plenty of teams run on a wiki that began as one person's tidy page, and Notion is where many of those pages grew up, with notes, documents, databases and project boards all held in one hosted workspace. Notion Labs, Inc. runs it from San Francisco, and everything lives on its servers, so your notes are only as available as the company and your connection allow.",
+      "The pricing page lists a free plan with 7 days of page history and 5 MB files, Plus at $10 and Business at $20 per member per month with 30 and 90 days of history and 5 GB files, and says yearly billing saves up to 20%. A workspace with several members is limited in how many blocks it can hold on the free plan, and the page gives no figure. Notion AI is a limited trial on Free and Plus, and Business includes its agent.",
+      "Leaving is possible but clumsy. The help page says you can export pages as PDF, HTML or Markdown, databases as CSV, and a whole workspace from Settings, but the file arrives by email link that expires after 7 days, can take up to 30 hours to build, and cannot be uploaded again to recreate the workspace. Callouts export as HTML because Markdown has no equivalent. Notion delivers very well, so Delivery is a 4, and Power is a 1 because the company sets the terms and the price. We did not check whether it works offline. Compare it with the tools in Notes."] }
+].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
 "aider": ["Edits your files from a terminal, using almost any model including local ones", "Apache-2.0, free, and your model provider is the only bill", "Needs pip and a terminal, and the page shows no release dates"],
@@ -2344,6 +2359,8 @@ const HL = {
 "wbo": ["Many people draw at once on a large board, updated in real time", "AGPL-3.0, run with Docker or Node.js", "One account owns the repository, and we could not see recent commit dates"],
 "drawio": ["A client-side diagram editor with Apache-2.0 code", "No real-time collaborative editing in this version", "Self-hosting is described as a test version, with a paid production version"],
 "tldraw": ["An SDK for building infinite canvas apps, with a hosted app on top", "Free in development, with a license key needed for production use", "The repository says it is not accepting contributions at this time"],
+"notion": ["A hosted workspace for notes, wikis and databases, sold per member", "Exports as Markdown, HTML, PDF and CSV, but an export cannot be re-imported", "Free plan, then $10 or $20 a member a month, with up to 20% off yearly"],
+"manus": ["A hosted agent that runs tasks in a sandbox and delivers the result", "Free plan, with paid plans from $20 a month", "Changed hands in 2026, and some users' data was deleted in the unwind"],
 "miro": ["A hosted service on Miro's servers, sold per member", "Free plan: unlimited boards, but only the three most recent stay editable", "Exports are images, PDF and CSV, with no backup file mentioned"],
 "goatcounter": ["Open source analytics, hosted free or run as one binary with SQLite or PostgreSQL", "The script adds about 3.5 KB, and the project says it uses no cookies", "This site uses it, and the page we read does not name the licence"],
 "plausible": ["Cookie-free analytics from an independent company, in the cloud or self-hosted", "Community Edition is AGPL-3.0 and leaves out funnels, revenue goals and single sign-on", "Released twice a year, with community-only support"],
@@ -2791,6 +2808,59 @@ const CATCOPY = {
       ["Are free ebooks any good?", "Yes, for older books. {standard-ebooks} editions are carefully typeset, and {gutenberg} holds more than 75,000 titles, though the formatting varies."]] }
 };
 const FEES = {
+  notes: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pricing pages in November 2026, in the currency each page showed us from Berlin. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Self-hosting and extras"],
+    rows: [
+      { slug: "notion", bench: true, v: ["Free plan: 7 days of page history and 5 MB files", "Plus $10 and Business $20 per member per month; up to 20% off yearly", "Members, page history (7, 30 or 90 days) and file size (5 MB free, 5 GB paid)", "No; AI is a limited trial on Free and Plus, and custom agents cost $10 per 1,000 credits"], src: ["Pricing", "https://www.notion.com/en-US/pricing"] },
+      { slug: "obsidian", v: ["The app is free, with no sign-up and no stated limits", "Sync $4 per user per month billed yearly, $5 monthly; Publish $8 per site per month yearly, $10 monthly; Catalyst $25 once", "Users for Sync, sites for Publish; the page lists no storage caps", "Notes are files on your device; Commercial use is listed at $50 per user per year; 40% off for students and nonprofits"], src: ["Pricing", "https://obsidian.md/pricing"] },
+      { slug: "joplin", v: ["The app is free and open source; no free cloud plan on the pricing page", "Basic €2.99 a month (€2.40 billed yearly), Pro €5.99 (€4.79), Pro 100 GB €9.99 (€7.99), Teams €7.99 per user", "Storage (2, 30 or 100 GB), maximum note size (10 or 200 MB), and sharing, which starts at Pro", "Joplin Server Business for self-hosting from €3.33 per user a month; 50% education discount"], src: ["Plans", "https://joplinapp.org/plans/"] },
+      { slug: "cryptpad", v: ["A free account on a public instance; the page gives no storage figure", "Paid individual, team and organization plans on cryptpad.fr run from €5 to €100 a month", "Storage and support; the page lists no storage per tier", "Self-hosting is free; a managed instance starts at €1,500 a year"], src: ["Pricing", "https://cryptpad.org/pricing/"] },
+      { slug: "notesnook", v: ["Free: 50 MB of storage a month, 10 MB files, 50 notebooks, end-to-end encrypted", "Essential $1.99 a month ($19.99 yearly), Pro $6.99 ($69.99), Believer $8.99 ($89.99); 5-year plans for Pro and Believer", "Storage (1, 10 or 25 GB a month), file size (100 MB, 1 GB, 5 GB), and notebook limits", "Cancelling moves you to the free plan and keeps your notes"], src: ["Pricing", "https://notesnook.com/pricing/"] },
+      { slug: "logseq", v: ["Free; the page we read states no paid plan", "None stated", "Nothing stated", "Open source; the page does not name the license"], src: ["logseq.com", "https://logseq.com/"] },
+      { slug: "tiddlywiki", v: ["Free", "None", "Nothing", "Open source; the whole notebook is one file you keep"], src: ["tiddlywiki.com", "https://tiddlywiki.com/"] }
+    ]
+  },
+  passwords: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pricing pages in November 2026, in the currency each page showed us from Berlin. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Self-hosting and extras"],
+    rows: [
+      { slug: "google-password-manager", bench: true, v: ["Free, built into Chrome and Android", "None", "Nothing, though it ties your passwords to one Google account", "No"], src: ["Password Manager", "https://passwords.google.com"] },
+      { slug: "bitwarden", v: ["Free forever: unlimited devices and passwords, passkeys, and sharing with one other person", "Premium $19.80 a year ($1.65 a month); Families $47.88 a year for six", "Users and features such as the built-in authenticator, file attachments and emergency access", "Self-hosting is listed on the Enterprise plan at $6 per user a month; the page is unclear for individuals"], src: ["Pricing", "https://bitwarden.com/pricing/"] },
+      { slug: "keepassxc", v: ["Free and open source", "None", "Nothing", "Your passwords sit in one file on your own computer; syncing is up to you"], src: ["keepassxc.org", "https://keepassxc.org/"] },
+      { slug: "proton-pass", v: ["Free: unlimited logins and devices, 2 vaults, 10 hide-my-email aliases, 1 GB", "Pass Plus $1.99 a month on yearly billing ($23.88 first year, then $35.88); Family $2.79 ($33.48, then $59.88); Unlimited $6.49 ($77.88, then $119.88)", "Users, vaults, aliases and extras such as item history, file attachments and integrated 2FA", "Unlimited bundles other Proton services; no self-hosting listed"], src: ["Pricing", "https://proton.me/pass/pricing"] },
+      { slug: "keepassdx", v: ["Free, with optional paid features that we did not price", "See the project page", "Nothing we could read", "Android app that opens KeePass files"], src: ["keepassdx.com", "https://www.keepassdx.com/"] },
+      { slug: "pass", v: ["Free", "None", "Nothing", "Passwords are encrypted files in a folder you own"], src: ["passwordstore.org", "https://www.passwordstore.org/"] }
+    ]
+  },
+  email: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pricing pages in November 2026, in the currency each page showed us from Berlin. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Custom domains and extras"],
+    rows: [
+      { slug: "gmail", bench: true, v: ["Free, with 15 GB shared across Gmail, Drive and Photos", "Google One Basic 100 GB €1.99 a month; Google AI Plus 2 TB €9.99; Google AI Pro 5 TB €21.99 (monthly billing)", "Storage, shared with up to 5 others; the higher plans add Gemini features", "Custom domains come through Google Workspace, which we did not price"], src: ["Google One", "https://one.google.com/about/plans"] },
+      { slug: "proton-mail", v: ["Free: 1 GB, 1 encrypted address, 150 messages a day, 25 MB attachments", "Mail Plus $2.49 a month on yearly billing ($29.88 first year, then $47.88); Unlimited $6.49 ($77.88, then $119.88)", "Storage (1 GB, 15 GB, 500 GB), addresses and domains", "Mail Plus has 1 custom domain, Unlimited has 3; Free has no IMAP or SMTP for other mail apps"], src: ["Pricing", "https://proton.me/mail/pricing"] },
+      { slug: "tuta", v: ["Free: 1 GB, one calendar, 3 labels", "Revolutionary €3 a month paid yearly (€3.60 monthly); Legend €8 yearly (€9.60 monthly)", "Storage (1 GB, 20 GB, 500 GB), extra addresses (15 or 30) and calendars", "Custom domains: 3 on Revolutionary, 10 on Legend; prices include taxes"], src: ["Pricing", "https://tuta.com/pricing"] },
+      { slug: "posteo", v: ["No free plan and no trial that we found", "€1 a month for 4 GB, with all features", "Storage, up to 50 GB at €0.25 per extra GB a month", "Pay in advance by PayPal, bank transfer, card or cash"], src: ["Features", "https://posteo.de/en/site/features"] },
+      { slug: "thunderbird", v: ["Free and open source", "None", "Nothing; mail itself comes from your own provider", "A mail app, not a mail service"], src: ["thunderbird.net", "https://www.thunderbird.net/"] },
+      { slug: "ferdium", v: ["Free and open source", "None", "Nothing", "Brings your existing mail and chat services into one window"], src: ["ferdium.org", "https://ferdium.org/"] }
+    ]
+  },
+  photos: {
+    h: "What it costs",
+    intro: "The numbers people shop on, read from each service's own pricing pages in November 2026, in the currency each page showed us from Berlin. Fees change, so check the linked page before you commit.",
+    cols: ["Free option", "Paid price", "What the price scales with", "Self-hosting and extras"],
+    rows: [
+      { slug: "google-photos", bench: true, v: ["Free to 15 GB, shared across Gmail, Drive and Photos", "Google One Basic 100 GB €1.99 a month; Google AI Plus 2 TB €9.99; Google AI Pro 5 TB €21.99 (monthly billing)", "Storage, shared with up to 5 others", "No"], src: ["Google One", "https://one.google.com/about/plans"] },
+      { slug: "ente", v: ["Free: 10 GB", "Starter 50 GB $2.49 a month ($29.88 yearly); Popular 200 GB $4.99 ($59.88); Pro 1 TB $9.99 ($119.88); Pro+ 2 TB $19.99 ($239.88)", "Storage", "Family sharing for up to 5 members at no extra cost; the code is open"], src: ["ente.com", "https://ente.com/"] },
+      { slug: "immich", v: ["Free to self-host", "The page we read lists no price; it links a Purchase page that we did not open", "Nothing stated", "Self-hosted; AGPL"], src: ["immich.app", "https://immich.app/"] },
+      { slug: "photoprism", v: ["Community edition is free to self-host", "Essentials €2 a month, Plus from €6, billed monthly; hosted by PikaPods from $6.50", "Edition, and for the hosted option, the plan", "Self-hosted; the card text on the page showed €200 and €600, which we took to be a formatting error"], src: ["Editions", "https://www.photoprism.app/editions"] },
+      { slug: "piwigo", v: ["Free to self-host, with installation, updates and backups left to you", "Cloud Pro €384 a year (€32 a month) for 10 GB; Team €1,308 for 100 GB; Enterprise €2,628 for 250 GB; VIP €5,268 for 1 TB; excl. VAT", "Storage and the number of administrators; extra storage from €5.50 a month per 50 GB", "30-day free trial for the hosted plans"], src: ["Pricing", "https://piwigo.org/pricing"] },
+      { slug: "digikam", v: ["Free and open source", "None", "Nothing", "A desktop photo manager, with no hosting"], src: ["digikam.org", "https://www.digikam.org/"] }
+    ]
+  },
   writing: {
     h: "What it costs",
     intro: "The numbers people shop on, read from each tool's own pages in November 2026. Prices are in US dollars. Fees change, so check the linked page before you commit.",
@@ -2940,6 +3010,8 @@ function tool(slug, isBench) {
 
 /* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
 const PAIRS = [
+  { g: "notion", t: "obsidian", cost: "Obsidian keeps notes as Markdown files on your own device. We did not confirm it offers Notion's shared databases or live team editing, so a team wiki may be harder. Sync is a paid add-on at $4 a month billed yearly.", move: "Export a few pages from Notion as Markdown, open the folder in Obsidian, and see how much of your structure carries over before you move a whole workspace." },
+  { g: "manus", t: "openclaw", cost: "OpenClaw runs on a computer you look after and needs a model provider that you set up, so there is more to install than with a hosted agent. We did not compare how well the two finish the same task.", move: "Run OpenClaw in a container with narrow access, give it one small recurring job, and keep Manus for the tasks you want handled without setup." },
   { g: "microsoft-word", t: "zettlr", cost: "Zettlr writes Markdown, so it has no page view like Word's, and layout comes from export templates. We did not confirm Word export on the page we read. It is free and supported by donations, and your writing stays in plain text files.", move: "Write one new document in Zettlr, and keep Word for files that other people need to edit." },
   { g: "whatsapp", t: "deltachat", cost: "Delta Chat sends messages over ordinary email, so it reaches anyone with an address, but your friends need to install it for the full chat experience, and the circle you can reach is small next to three billion.", move: "Install it, add a friend by scanning their QR code, and keep WhatsApp running until your closest group follows." },
   { g: "adobe-creative-cloud", t: "krita", cost: "Krita is a painting and illustration program. It does not replace Photoshop's photo retouching, Illustrator's vector work or Premiere's video editing, so a studio that lives in the whole suite will need a few tools instead of one.", move: "Open a PSD file in Krita to see how much carries over, then add Inkscape for vector work and GIMP for photos." },

@@ -1397,5 +1397,21 @@
     "slug": "lyx",
     "name": "LyX",
     "url": "https://www.lyx.org"
+  },
+  {
+    "slug": "manus",
+    "name": "Manus",
+    "url": "https://manus.im",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "url": "https://www.notion.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
