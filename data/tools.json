@@ -1413,5 +1413,86 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "grist",
+    "name": "Grist",
+    "url": "https://www.getgrist.com",
+    "repo": "gristlabs/grist-core"
+  },
+  {
+    "slug": "baserow",
+    "name": "Baserow",
+    "url": "https://baserow.io"
+  },
+  {
+    "slug": "nocodb",
+    "name": "NocoDB",
+    "url": "https://nocodb.com",
+    "repo": "nocodb/nocodb"
+  },
+  {
+    "slug": "visidata",
+    "name": "VisiData",
+    "url": "https://www.visidata.org",
+    "repo": "saulpw/visidata"
+  },
+  {
+    "slug": "marp",
+    "name": "Marp",
+    "url": "https://marp.app",
+    "repo": "marp-team/marp"
+  },
+  {
+    "slug": "slidev",
+    "name": "Slidev",
+    "url": "https://sli.dev",
+    "repo": "slidevjs/slidev"
+  },
+  {
+    "slug": "revealjs",
+    "name": "reveal.js",
+    "url": "https://revealjs.com",
+    "repo": "hakimel/reveal.js"
+  },
+  {
+    "slug": "quarto",
+    "name": "Quarto",
+    "url": "https://quarto.org",
+    "repo": "quarto-dev/quarto-cli"
+  },
+  {
+    "slug": "presenterm",
+    "name": "presenterm",
+    "url": "https://github.com/mfontanini/presenterm",
+    "repo": "mfontanini/presenterm"
+  },
+  {
+    "slug": "hedgedoc",
+    "name": "HedgeDoc",
+    "url": "https://hedgedoc.org",
+    "repo": "hedgedoc/hedgedoc"
+  },
+  {
+    "slug": "la-suite-docs",
+    "name": "La Suite Docs",
+    "url": "https://github.com/suitenumerique/docs",
+    "repo": "suitenumerique/docs"
+  },
+  {
+    "slug": "microsoft-excel",
+    "name": "Microsoft Excel",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/excel",
+    "capture": {
+      "shot": false
+    }
+  },
+  {
+    "slug": "microsoft-powerpoint",
+    "name": "Microsoft PowerPoint",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/powerpoint",
+    "capture": {
+      "shot": false
+    }
   }
 ]
