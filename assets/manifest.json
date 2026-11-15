@@ -7363,7 +7363,63 @@
         "no usable icon found (an .ico favicon alone can't be converted)"
       ],
       "cfg": "[\"https://www.lyx.org\",null,null]"
+    },
+    "manus": {
+      "slug": "manus",
+      "name": "Manus",
+      "source": "https://manus.im",
+      "capturedAt": "2026-11-15T08:01:44.508Z",
+      "alt": "Screenshot of the Manus website",
+      "pageTitle": "Manus: Hands On AI",
+      "pageDescription": "Manus is the action engine that goes beyond answers to execute tasks, automate workflows, and extend your human reach.",
+      "icon": {
+        "128": "assets/tools/manus/icon-128.webp",
+        "256": "assets/tools/manus/icon-256.webp",
+        "svg": "assets/tools/manus/icon.svg",
+        "from": "https://manus.im/icon.svg?icon.2kbcs13ndm9it.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/manus/social-600.webp",
+        "1200": "assets/tools/manus/social-1200.webp",
+        "from": "https://files.manuscdn.com/webapp/media/ogBanner.png"
+      },
+      "color": "#f8f8f7",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://manus.im\",{\"shot\":false},null]"
+    },
+    "notion": {
+      "slug": "notion",
+      "name": "Notion",
+      "source": "https://www.notion.com",
+      "capturedAt": "2026-11-15T08:01:59.912Z",
+      "alt": "Screenshot of the Notion website",
+      "pageTitle": "The AI workspace that works for you. | Notion",
+      "pageDescription": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+      "icon": {
+        "128": "assets/tools/notion/icon-128.webp",
+        "256": "assets/tools/notion/icon-256.webp",
+        "from": "https://www.notion.com/front-static/logo-ios.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/notion/social-600.webp",
+        "1200": "assets/tools/notion/social-1200.webp",
+        "from": "https://www.notion.com/front-static/meta/teams-and-agents.jpg"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.notion.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-15T01:36:59.856Z"
+  "updatedAt": "2026-11-15T08:02:04.899Z"
 }

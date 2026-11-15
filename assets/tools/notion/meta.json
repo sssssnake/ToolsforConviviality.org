@@ -1,0 +1,28 @@
+{
+  "slug": "notion",
+  "name": "Notion",
+  "source": "https://www.notion.com",
+  "capturedAt": "2026-11-15T08:01:59.912Z",
+  "alt": "Screenshot of the Notion website",
+  "pageTitle": "The AI workspace that works for you. | Notion",
+  "pageDescription": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
+  "icon": {
+    "128": "assets/tools/notion/icon-128.webp",
+    "256": "assets/tools/notion/icon-256.webp",
+    "from": "https://www.notion.com/front-static/logo-ios.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/notion/social-600.webp",
+    "1200": "assets/tools/notion/social-1200.webp",
+    "from": "https://www.notion.com/front-static/meta/teams-and-agents.jpg"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": [
+    "dismissed banner with button:has-text(\"Reject all\")",
+    "screenshot skipped by override"
+  ]
+}

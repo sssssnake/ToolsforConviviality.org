@@ -1,32 +1,17 @@
 {
-  "startedAt": "2026-11-15T01:36:05.377Z",
+  "startedAt": "2026-11-15T08:01:43.425Z",
   "captured": [
     {
-      "slug": "zettlr",
-      "notes": []
-    },
-    {
-      "slug": "apostrophe",
-      "notes": []
-    },
-    {
-      "slug": "calligra-words",
+      "slug": "manus",
       "notes": [
-        "social image failed: HTTP 404 for https://cdn.kde.org/screenshots/calligra/calligrawords.png"
+        "screenshot skipped by override"
       ]
     },
     {
-      "slug": "typst",
-      "notes": []
-    },
-    {
-      "slug": "ia-writer",
-      "notes": []
-    },
-    {
-      "slug": "lyx",
+      "slug": "notion",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)"
+        "dismissed banner with button:has-text(\"Reject all\")",
+        "screenshot skipped by override"
       ]
     }
   ],
@@ -918,8 +903,32 @@
     {
       "slug": "patreon",
       "reason": "recent"
+    },
+    {
+      "slug": "zettlr",
+      "reason": "recent"
+    },
+    {
+      "slug": "apostrophe",
+      "reason": "recent"
+    },
+    {
+      "slug": "calligra-words",
+      "reason": "recent"
+    },
+    {
+      "slug": "typst",
+      "reason": "recent"
+    },
+    {
+      "slug": "ia-writer",
+      "reason": "recent"
+    },
+    {
+      "slug": "lyx",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-15T01:36:59.858Z"
+  "finishedAt": "2026-11-15T08:02:04.902Z"
 }
