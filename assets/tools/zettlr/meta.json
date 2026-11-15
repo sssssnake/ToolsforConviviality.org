@@ -1,0 +1,34 @@
+{
+  "slug": "zettlr",
+  "name": "Zettlr",
+  "source": "https://www.zettlr.com",
+  "capturedAt": "2026-11-15T01:36:07.398Z",
+  "alt": "Screenshot of the Zettlr website",
+  "pageTitle": "Your One-Stop Publication Workbench | Zettlr",
+  "pageDescription": "Your One-Stop Publication Workbench. Author Markdown documents with ease. For researchers, journalists, and writers.",
+  "shot": {
+    "480": "assets/tools/zettlr/shot-480.webp",
+    "960": "assets/tools/zettlr/shot-960.webp",
+    "1600": "assets/tools/zettlr/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/zettlr/mobile-390.webp",
+    "780": "assets/tools/zettlr/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/zettlr/icon-128.webp",
+    "256": "assets/tools/zettlr/icon-256.webp",
+    "from": "https://www.zettlr.com/themes/zettlr/assets/img/256x256.png",
+    "sourceWidth": 256,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/zettlr/social-600.webp",
+    "1200": "assets/tools/zettlr/social-1200.webp",
+    "from": "https://zettlr.com/storage/app/media/img/social_media_img.png"
+  },
+  "color": "#189868",
+  "colorFrom": "icon",
+  "notes": []
+}

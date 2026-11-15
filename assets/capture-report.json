@@ -1,39 +1,32 @@
 {
-  "startedAt": "2026-11-13T18:00:35.627Z",
+  "startedAt": "2026-11-15T01:36:05.377Z",
   "captured": [
     {
-      "slug": "liberapay",
+      "slug": "zettlr",
       "notes": []
     },
     {
-      "slug": "open-collective",
+      "slug": "apostrophe",
       "notes": []
     },
     {
-      "slug": "ko-fi",
-      "notes": []
-    },
-    {
-      "slug": "github-sponsors",
-      "notes": []
-    },
-    {
-      "slug": "buy-me-a-coffee",
-      "notes": []
-    },
-    {
-      "slug": "steady",
+      "slug": "calligra-words",
       "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
+        "social image failed: HTTP 404 for https://cdn.kde.org/screenshots/calligra/calligrawords.png"
       ]
     },
     {
-      "slug": "patreon",
+      "slug": "typst",
+      "notes": []
+    },
+    {
+      "slug": "ia-writer",
+      "notes": []
+    },
+    {
+      "slug": "lyx",
       "notes": [
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
+        "no usable icon found (an .ico favicon alone can't be converted)"
       ]
     }
   ],
@@ -897,8 +890,36 @@
     {
       "slug": "kit",
       "reason": "recent"
+    },
+    {
+      "slug": "liberapay",
+      "reason": "recent"
+    },
+    {
+      "slug": "open-collective",
+      "reason": "recent"
+    },
+    {
+      "slug": "ko-fi",
+      "reason": "recent"
+    },
+    {
+      "slug": "github-sponsors",
+      "reason": "recent"
+    },
+    {
+      "slug": "buy-me-a-coffee",
+      "reason": "recent"
+    },
+    {
+      "slug": "steady",
+      "reason": "recent"
+    },
+    {
+      "slug": "patreon",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-13T18:02:03.653Z"
+  "finishedAt": "2026-11-15T01:36:59.858Z"
 }

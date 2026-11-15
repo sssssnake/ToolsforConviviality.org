@@ -1,0 +1,34 @@
+{
+  "slug": "apostrophe",
+  "name": "Apostrophe",
+  "source": "https://apps.gnome.org/Apostrophe/",
+  "capturedAt": "2026-11-15T01:36:18.421Z",
+  "alt": "Screenshot of the Apostrophe website",
+  "pageTitle": "Apostrophe – Apps for GNOME",
+  "pageDescription": "Edit Markdown in style – Focus on your writing with a clean, distraction-free markdown editor. \nFeatures: \nAn UI tailored to comfortable writingA distraction-free modeDark, light and sepia themesEverything you expect from a t...",
+  "shot": {
+    "480": "assets/tools/apostrophe/shot-480.webp",
+    "960": "assets/tools/apostrophe/shot-960.webp",
+    "1600": "assets/tools/apostrophe/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/apostrophe/mobile-390.webp",
+    "780": "assets/tools/apostrophe/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/apostrophe/icon-128.webp",
+    "256": "assets/tools/apostrophe/icon-256.webp",
+    "from": "https://static.gnome.org/catalog/app-icon-symbolic/128/light/org.gnome.gitlab.somas.Apostrophe.png",
+    "sourceWidth": 128,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/apostrophe/social-600.webp",
+    "1200": "assets/tools/apostrophe/social-1200.webp",
+    "from": "https://static.gnome.org/catalog/app-icon-with-background/128/org.gnome.gitlab.somas.Apostrophe.png"
+  },
+  "color": "#90ded5",
+  "colorFrom": "theme-color",
+  "notes": []
+}

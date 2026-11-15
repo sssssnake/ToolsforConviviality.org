@@ -1,0 +1,34 @@
+{
+  "slug": "typst",
+  "name": "Typst",
+  "source": "https://typst.app",
+  "capturedAt": "2026-11-15T01:36:34.931Z",
+  "alt": "Screenshot of the Typst website",
+  "pageTitle": "Typst: The new foundation for documents",
+  "pageDescription": "Typst is the new foundation for documents. Sign up now and experience limitless power to write, create, and automate anything that you can fit on a page.",
+  "shot": {
+    "480": "assets/tools/typst/shot-480.webp",
+    "960": "assets/tools/typst/shot-960.webp",
+    "1600": "assets/tools/typst/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/typst/mobile-390.webp",
+    "780": "assets/tools/typst/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/typst/icon-128.webp",
+    "256": "assets/tools/typst/icon-256.webp",
+    "from": "https://typst.app/assets/maskable_icon.png",
+    "sourceWidth": 1024,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/typst/social-600.webp",
+    "1200": "assets/tools/typst/social-1200.webp",
+    "from": "https://typst.app/assets/social.png"
+  },
+  "color": "#239dad",
+  "colorFrom": "theme-color",
+  "notes": []
+}

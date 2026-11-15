@@ -1,0 +1,23 @@
+{
+  "slug": "lyx",
+  "name": "LyX",
+  "source": "https://www.lyx.org",
+  "capturedAt": "2026-11-15T01:36:52.915Z",
+  "alt": "Screenshot of the LyX website",
+  "pageTitle": "LyX | LyX – The Document Processor",
+  "pageDescription": null,
+  "shot": {
+    "480": "assets/tools/lyx/shot-480.webp",
+    "960": "assets/tools/lyx/shot-960.webp",
+    "1600": "assets/tools/lyx/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/lyx/mobile-390.webp",
+    "780": "assets/tools/lyx/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "color": null,
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)"
+  ]
+}

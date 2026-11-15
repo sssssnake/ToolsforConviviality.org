@@ -1,0 +1,31 @@
+{
+  "slug": "calligra-words",
+  "name": "Calligra Words",
+  "source": "https://calligra.org/",
+  "capturedAt": "2026-11-15T01:36:25.788Z",
+  "alt": "Screenshot of the Calligra Words website",
+  "pageTitle": "Calligra Suite",
+  "pageDescription": "Calligra - handle your text documents, spreadsheets and presentations",
+  "shot": {
+    "480": "assets/tools/calligra-words/shot-480.webp",
+    "960": "assets/tools/calligra-words/shot-960.webp",
+    "1600": "assets/tools/calligra-words/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/calligra-words/mobile-390.webp",
+    "780": "assets/tools/calligra-words/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/calligra-words/icon-128.webp",
+    "256": "assets/tools/calligra-words/icon-256.webp",
+    "from": "https://calligra.org/android-chrome-512x512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#1f99f3",
+  "colorFrom": "theme-color",
+  "notes": [
+    "social image failed: HTTP 404 for https://cdn.kde.org/screenshots/calligra/calligrawords.png"
+  ]
+}

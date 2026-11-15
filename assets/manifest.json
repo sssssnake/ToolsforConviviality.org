@@ -7167,7 +7167,203 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.patreon.com\",{\"shot\":false},null]"
+    },
+    "zettlr": {
+      "slug": "zettlr",
+      "name": "Zettlr",
+      "source": "https://www.zettlr.com",
+      "capturedAt": "2026-11-15T01:36:07.398Z",
+      "alt": "Screenshot of the Zettlr website",
+      "pageTitle": "Your One-Stop Publication Workbench | Zettlr",
+      "pageDescription": "Your One-Stop Publication Workbench. Author Markdown documents with ease. For researchers, journalists, and writers.",
+      "shot": {
+        "480": "assets/tools/zettlr/shot-480.webp",
+        "960": "assets/tools/zettlr/shot-960.webp",
+        "1600": "assets/tools/zettlr/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/zettlr/mobile-390.webp",
+        "780": "assets/tools/zettlr/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/zettlr/icon-128.webp",
+        "256": "assets/tools/zettlr/icon-256.webp",
+        "from": "https://www.zettlr.com/themes/zettlr/assets/img/256x256.png",
+        "sourceWidth": 256,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/zettlr/social-600.webp",
+        "1200": "assets/tools/zettlr/social-1200.webp",
+        "from": "https://zettlr.com/storage/app/media/img/social_media_img.png"
+      },
+      "color": "#189868",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://www.zettlr.com\",null,null]"
+    },
+    "apostrophe": {
+      "slug": "apostrophe",
+      "name": "Apostrophe",
+      "source": "https://apps.gnome.org/Apostrophe/",
+      "capturedAt": "2026-11-15T01:36:18.421Z",
+      "alt": "Screenshot of the Apostrophe website",
+      "pageTitle": "Apostrophe – Apps for GNOME",
+      "pageDescription": "Edit Markdown in style – Focus on your writing with a clean, distraction-free markdown editor. \nFeatures: \nAn UI tailored to comfortable writingA distraction-free modeDark, light and sepia themesEverything you expect from a t...",
+      "shot": {
+        "480": "assets/tools/apostrophe/shot-480.webp",
+        "960": "assets/tools/apostrophe/shot-960.webp",
+        "1600": "assets/tools/apostrophe/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/apostrophe/mobile-390.webp",
+        "780": "assets/tools/apostrophe/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/apostrophe/icon-128.webp",
+        "256": "assets/tools/apostrophe/icon-256.webp",
+        "from": "https://static.gnome.org/catalog/app-icon-symbolic/128/light/org.gnome.gitlab.somas.Apostrophe.png",
+        "sourceWidth": 128,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/apostrophe/social-600.webp",
+        "1200": "assets/tools/apostrophe/social-1200.webp",
+        "from": "https://static.gnome.org/catalog/app-icon-with-background/128/org.gnome.gitlab.somas.Apostrophe.png"
+      },
+      "color": "#90ded5",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://apps.gnome.org/Apostrophe/\",null,null]"
+    },
+    "calligra-words": {
+      "slug": "calligra-words",
+      "name": "Calligra Words",
+      "source": "https://calligra.org/",
+      "capturedAt": "2026-11-15T01:36:25.788Z",
+      "alt": "Screenshot of the Calligra Words website",
+      "pageTitle": "Calligra Suite",
+      "pageDescription": "Calligra - handle your text documents, spreadsheets and presentations",
+      "shot": {
+        "480": "assets/tools/calligra-words/shot-480.webp",
+        "960": "assets/tools/calligra-words/shot-960.webp",
+        "1600": "assets/tools/calligra-words/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/calligra-words/mobile-390.webp",
+        "780": "assets/tools/calligra-words/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/calligra-words/icon-128.webp",
+        "256": "assets/tools/calligra-words/icon-256.webp",
+        "from": "https://calligra.org/android-chrome-512x512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#1f99f3",
+      "colorFrom": "theme-color",
+      "notes": [
+        "social image failed: HTTP 404 for https://cdn.kde.org/screenshots/calligra/calligrawords.png"
+      ],
+      "cfg": "[\"https://calligra.org/\",null,null]"
+    },
+    "typst": {
+      "slug": "typst",
+      "name": "Typst",
+      "source": "https://typst.app",
+      "capturedAt": "2026-11-15T01:36:34.931Z",
+      "alt": "Screenshot of the Typst website",
+      "pageTitle": "Typst: The new foundation for documents",
+      "pageDescription": "Typst is the new foundation for documents. Sign up now and experience limitless power to write, create, and automate anything that you can fit on a page.",
+      "shot": {
+        "480": "assets/tools/typst/shot-480.webp",
+        "960": "assets/tools/typst/shot-960.webp",
+        "1600": "assets/tools/typst/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/typst/mobile-390.webp",
+        "780": "assets/tools/typst/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/typst/icon-128.webp",
+        "256": "assets/tools/typst/icon-256.webp",
+        "from": "https://typst.app/assets/maskable_icon.png",
+        "sourceWidth": 1024,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/typst/social-600.webp",
+        "1200": "assets/tools/typst/social-1200.webp",
+        "from": "https://typst.app/assets/social.png"
+      },
+      "color": "#239dad",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://typst.app\",null,null]"
+    },
+    "ia-writer": {
+      "slug": "ia-writer",
+      "name": "iA Writer",
+      "source": "https://ia.net/writer",
+      "capturedAt": "2026-11-15T01:36:45.263Z",
+      "alt": "Screenshot of the iA Writer website",
+      "pageTitle": "iA Writer: The Benchmark of Markdown Writing Apps",
+      "pageDescription": "Plain text. Total focus. The Industry standard Markdown text editor. Available for Mac, iPhone, iPad, Android, and Windows. Download it now, try it for free",
+      "shot": {
+        "480": "assets/tools/ia-writer/shot-480.webp",
+        "960": "assets/tools/ia-writer/shot-960.webp",
+        "1600": "assets/tools/ia-writer/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/ia-writer/mobile-390.webp",
+        "780": "assets/tools/ia-writer/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/ia-writer/icon-128.webp",
+        "256": "assets/tools/ia-writer/icon-256.webp",
+        "from": "https://static.ia.net/favicon-192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/ia-writer/social-600.webp",
+        "1200": "assets/tools/ia-writer/social-1200.webp",
+        "from": "https://static.ia.net/2023/01/og-writer.webp"
+      },
+      "color": "#f9f9f9",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://ia.net/writer\",null,null]"
+    },
+    "lyx": {
+      "slug": "lyx",
+      "name": "LyX",
+      "source": "https://www.lyx.org",
+      "capturedAt": "2026-11-15T01:36:52.915Z",
+      "alt": "Screenshot of the LyX website",
+      "pageTitle": "LyX | LyX – The Document Processor",
+      "pageDescription": null,
+      "shot": {
+        "480": "assets/tools/lyx/shot-480.webp",
+        "960": "assets/tools/lyx/shot-960.webp",
+        "1600": "assets/tools/lyx/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/lyx/mobile-390.webp",
+        "780": "assets/tools/lyx/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "color": null,
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)"
+      ],
+      "cfg": "[\"https://www.lyx.org\",null,null]"
     }
   },
-  "updatedAt": "2026-11-13T18:02:03.650Z"
+  "updatedAt": "2026-11-15T01:36:59.856Z"
 }
