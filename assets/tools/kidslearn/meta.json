@@ -1,0 +1,33 @@
+{
+  "slug": "kidslearn",
+  "name": "KidsLearn",
+  "source": "https://github.com/vivekg7/kidslearn",
+  "capturedAt": "2026-11-17T10:50:06.200Z",
+  "alt": "Screenshot of the KidsLearn website",
+  "pageTitle": "GitHub - vivekg7/kidslearn: Ad-free learning app for kids: English and Hindi alphabets, numbers, tables, colours and shapes, with spoken pronunciation. No ads, no internet. · GitHub",
+  "pageDescription": "Ad-free learning app for kids: English and Hindi alphabets, numbers, tables, colours and shapes, with spoken pronunciation. No ads, no internet. - vivekg7/kidslearn",
+  "shot": {
+    "480": "assets/tools/kidslearn/shot-480.webp",
+    "960": "assets/tools/kidslearn/shot-960.webp",
+    "1600": "assets/tools/kidslearn/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/kidslearn/mobile-390.webp",
+    "780": "assets/tools/kidslearn/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/kidslearn/icon-128.webp",
+    "256": "assets/tools/kidslearn/icon-256.webp",
+    "svg": "assets/tools/kidslearn/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/kidslearn/social-600.webp",
+    "1200": "assets/tools/kidslearn/social-1200.webp",
+    "from": "https://opengraph.githubassets.com/5281a2a3ad30d424845aedb48fe760ae80b37a7cc9c5cb1409a1e6fd1e3dd24a/vivekg7/kidslearn"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

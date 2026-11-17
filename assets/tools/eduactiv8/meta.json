@@ -1,0 +1,29 @@
+{
+  "slug": "eduactiv8",
+  "name": "eduActiv8",
+  "source": "https://www.eduactiv8.org",
+  "capturedAt": "2026-11-17T10:49:57.323Z",
+  "alt": "Screenshot of the eduActiv8 website",
+  "pageTitle": "eduActiv8 — Free Educational Activities for Young Learners",
+  "pageDescription": "eduActiv8 — free, open-source educational activities for children aged 3–10. Works fully offline on Windows, macOS, and Linux. No ads, no accounts, no internet required.",
+  "shot": {
+    "480": "assets/tools/eduactiv8/shot-480.webp",
+    "960": "assets/tools/eduactiv8/shot-960.webp",
+    "1600": "assets/tools/eduactiv8/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/eduactiv8/mobile-390.webp",
+    "780": "assets/tools/eduactiv8/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/eduactiv8/icon-128.webp",
+    "256": "assets/tools/eduactiv8/icon-256.webp",
+    "from": "https://www.eduactiv8.org/assets/icons/android-icon-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "color": "#ffffff",
+  "colorFrom": "theme-color",
+  "notes": []
+}

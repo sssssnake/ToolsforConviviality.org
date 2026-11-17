@@ -8373,7 +8373,203 @@
       "colorFrom": "theme-color",
       "notes": [],
       "cfg": "[\"https://backgroundkiller.com\",null,null]"
+    },
+    "antura": {
+      "slug": "antura",
+      "name": "Antura",
+      "source": "https://github.com/vgwb/Antura",
+      "capturedAt": "2026-11-17T10:49:38.463Z",
+      "alt": "Screenshot of the Antura website",
+      "pageTitle": "GitHub - vgwb/Antura: the award winning open source literacy and language learning game for kids · GitHub",
+      "pageDescription": "the award winning open source literacy and language learning game for kids - vgwb/Antura",
+      "shot": {
+        "480": "assets/tools/antura/shot-480.webp",
+        "960": "assets/tools/antura/shot-960.webp",
+        "1600": "assets/tools/antura/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/antura/mobile-390.webp",
+        "780": "assets/tools/antura/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/antura/icon-128.webp",
+        "256": "assets/tools/antura/icon-256.webp",
+        "svg": "assets/tools/antura/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/antura/social-600.webp",
+        "1200": "assets/tools/antura/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/166197484/3cf38fa8-ea24-4ac9-b770-c1825e0e1709"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/vgwb/Antura\",null,null]"
+    },
+    "gcompris": {
+      "slug": "gcompris",
+      "name": "GCompris",
+      "source": "https://gcompris.net",
+      "capturedAt": "2026-11-17T10:49:47.423Z",
+      "alt": "Screenshot of the GCompris website",
+      "pageTitle": "GCompris Educational Software",
+      "pageDescription": "educational software gcompris. Logiciel educatif gcompris",
+      "shot": {
+        "480": "assets/tools/gcompris/shot-480.webp",
+        "960": "assets/tools/gcompris/shot-960.webp",
+        "1600": "assets/tools/gcompris/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/gcompris/mobile-390.webp",
+        "780": "assets/tools/gcompris/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/gcompris/icon-128.webp",
+        "256": "assets/tools/gcompris/icon-256.webp",
+        "from": "https://gcompris.net/favicon.png",
+        "sourceWidth": 32,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/gcompris/social-600.webp",
+        "1200": "assets/tools/gcompris/social-1200.webp",
+        "from": "https://gcompris.net/images/gcompris.png"
+      },
+      "color": "#080808",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://gcompris.net\",null,null]"
+    },
+    "eduactiv8": {
+      "slug": "eduactiv8",
+      "name": "eduActiv8",
+      "source": "https://www.eduactiv8.org",
+      "capturedAt": "2026-11-17T10:49:57.323Z",
+      "alt": "Screenshot of the eduActiv8 website",
+      "pageTitle": "eduActiv8 — Free Educational Activities for Young Learners",
+      "pageDescription": "eduActiv8 — free, open-source educational activities for children aged 3–10. Works fully offline on Windows, macOS, and Linux. No ads, no accounts, no internet required.",
+      "shot": {
+        "480": "assets/tools/eduactiv8/shot-480.webp",
+        "960": "assets/tools/eduactiv8/shot-960.webp",
+        "1600": "assets/tools/eduactiv8/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/eduactiv8/mobile-390.webp",
+        "780": "assets/tools/eduactiv8/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/eduactiv8/icon-128.webp",
+        "256": "assets/tools/eduactiv8/icon-256.webp",
+        "from": "https://www.eduactiv8.org/assets/icons/android-icon-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "color": "#ffffff",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://www.eduactiv8.org\",null,null]"
+    },
+    "kidslearn": {
+      "slug": "kidslearn",
+      "name": "KidsLearn",
+      "source": "https://github.com/vivekg7/kidslearn",
+      "capturedAt": "2026-11-17T10:50:06.200Z",
+      "alt": "Screenshot of the KidsLearn website",
+      "pageTitle": "GitHub - vivekg7/kidslearn: Ad-free learning app for kids: English and Hindi alphabets, numbers, tables, colours and shapes, with spoken pronunciation. No ads, no internet. · GitHub",
+      "pageDescription": "Ad-free learning app for kids: English and Hindi alphabets, numbers, tables, colours and shapes, with spoken pronunciation. No ads, no internet. - vivekg7/kidslearn",
+      "shot": {
+        "480": "assets/tools/kidslearn/shot-480.webp",
+        "960": "assets/tools/kidslearn/shot-960.webp",
+        "1600": "assets/tools/kidslearn/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/kidslearn/mobile-390.webp",
+        "780": "assets/tools/kidslearn/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/kidslearn/icon-128.webp",
+        "256": "assets/tools/kidslearn/icon-256.webp",
+        "svg": "assets/tools/kidslearn/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/kidslearn/social-600.webp",
+        "1200": "assets/tools/kidslearn/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/5281a2a3ad30d424845aedb48fe760ae80b37a7cc9c5cb1409a1e6fd1e3dd24a/vivekg7/kidslearn"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/vivekg7/kidslearn\",null,null]"
+    },
+    "lingoplaytime": {
+      "slug": "lingoplaytime",
+      "name": "LingoPlaytime",
+      "source": "https://lingoplaytime.com",
+      "capturedAt": "2026-11-17T10:50:14.507Z",
+      "alt": "Screenshot of the LingoPlaytime website",
+      "pageTitle": "LingoPlaytime: language games for toddlers in bilingual and multilingual families",
+      "pageDescription": "Free language games for toddlers in multilingual families. Your child taps, mashes and hears real words in up to four languages, with their own name. No ads, no accounts.",
+      "shot": {
+        "480": "assets/tools/lingoplaytime/shot-480.webp",
+        "960": "assets/tools/lingoplaytime/shot-960.webp",
+        "1600": "assets/tools/lingoplaytime/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/lingoplaytime/mobile-390.webp",
+        "780": "assets/tools/lingoplaytime/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/lingoplaytime/icon-128.webp",
+        "256": "assets/tools/lingoplaytime/icon-256.webp",
+        "from": "https://lingoplaytime.com/favicon-512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/lingoplaytime/social-600.webp",
+        "1200": "assets/tools/lingoplaytime/social-1200.webp",
+        "from": "https://lingoplaytime.com/assets/og.jpg"
+      },
+      "color": "#f8f8f8",
+      "colorFrom": "icon",
+      "notes": [],
+      "cfg": "[\"https://lingoplaytime.com\",null,null]"
+    },
+    "lingokids": {
+      "slug": "lingokids",
+      "name": "Lingokids",
+      "source": "https://lingokids.com",
+      "capturedAt": "2026-11-17T10:50:23.404Z",
+      "alt": "Screenshot of the Lingokids website",
+      "pageTitle": "Lingokids: Safe Kids Games, Shows & Songs in 3 Languages",
+      "pageDescription": "Ad-free games, shows and songs for kids ages 2 to 8, now in English, Spanish and Portuguese. 4,000+ activities, 100% safe. Download free.",
+      "icon": {
+        "128": "assets/tools/lingokids/icon-128.webp",
+        "256": "assets/tools/lingokids/icon-256.webp",
+        "from": "https://lingokids.com/wp-content/uploads/2026/06/cropped-Lingokids_Facebook_Avatar-1-192x192.png",
+        "sourceWidth": 192,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/lingokids/social-600.webp",
+        "1200": "assets/tools/lingokids/social-1200.webp",
+        "from": "https://lingokids.com/wp-content/uploads/2025/05/ScreenShots-0-00-10-08.png"
+      },
+      "color": "#f8f8e8",
+      "colorFrom": "icon",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://lingokids.com\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-17T10:06:49.420Z"
+  "updatedAt": "2026-11-17T10:50:29.956Z"
 }

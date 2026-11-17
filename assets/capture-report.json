@@ -1,9 +1,31 @@
 {
-  "startedAt": "2026-11-17T10:06:34.896Z",
+  "startedAt": "2026-11-17T10:49:35.537Z",
   "captured": [
     {
-      "slug": "backgroundkiller",
+      "slug": "antura",
       "notes": []
+    },
+    {
+      "slug": "gcompris",
+      "notes": []
+    },
+    {
+      "slug": "eduactiv8",
+      "notes": []
+    },
+    {
+      "slug": "kidslearn",
+      "notes": []
+    },
+    {
+      "slug": "lingoplaytime",
+      "notes": []
+    },
+    {
+      "slug": "lingokids",
+      "notes": [
+        "screenshot skipped by override"
+      ]
     }
   ],
   "skipped": [
@@ -1034,8 +1056,12 @@
     {
       "slug": "remove-bg",
       "reason": "recent"
+    },
+    {
+      "slug": "backgroundkiller",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-17T10:06:49.422Z"
+  "finishedAt": "2026-11-17T10:50:29.958Z"
 }

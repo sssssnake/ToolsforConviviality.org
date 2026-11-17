@@ -1,0 +1,27 @@
+{
+  "slug": "lingokids",
+  "name": "Lingokids",
+  "source": "https://lingokids.com",
+  "capturedAt": "2026-11-17T10:50:23.404Z",
+  "alt": "Screenshot of the Lingokids website",
+  "pageTitle": "Lingokids: Safe Kids Games, Shows & Songs in 3 Languages",
+  "pageDescription": "Ad-free games, shows and songs for kids ages 2 to 8, now in English, Spanish and Portuguese. 4,000+ activities, 100% safe. Download free.",
+  "icon": {
+    "128": "assets/tools/lingokids/icon-128.webp",
+    "256": "assets/tools/lingokids/icon-256.webp",
+    "from": "https://lingokids.com/wp-content/uploads/2026/06/cropped-Lingokids_Facebook_Avatar-1-192x192.png",
+    "sourceWidth": 192,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/lingokids/social-600.webp",
+    "1200": "assets/tools/lingokids/social-1200.webp",
+    "from": "https://lingokids.com/wp-content/uploads/2025/05/ScreenShots-0-00-10-08.png"
+  },
+  "color": "#f8f8e8",
+  "colorFrom": "icon",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}

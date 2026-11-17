@@ -1,0 +1,34 @@
+{
+  "slug": "lingoplaytime",
+  "name": "LingoPlaytime",
+  "source": "https://lingoplaytime.com",
+  "capturedAt": "2026-11-17T10:50:14.507Z",
+  "alt": "Screenshot of the LingoPlaytime website",
+  "pageTitle": "LingoPlaytime: language games for toddlers in bilingual and multilingual families",
+  "pageDescription": "Free language games for toddlers in multilingual families. Your child taps, mashes and hears real words in up to four languages, with their own name. No ads, no accounts.",
+  "shot": {
+    "480": "assets/tools/lingoplaytime/shot-480.webp",
+    "960": "assets/tools/lingoplaytime/shot-960.webp",
+    "1600": "assets/tools/lingoplaytime/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/lingoplaytime/mobile-390.webp",
+    "780": "assets/tools/lingoplaytime/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/lingoplaytime/icon-128.webp",
+    "256": "assets/tools/lingoplaytime/icon-256.webp",
+    "from": "https://lingoplaytime.com/favicon-512.png",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/lingoplaytime/social-600.webp",
+    "1200": "assets/tools/lingoplaytime/social-1200.webp",
+    "from": "https://lingoplaytime.com/assets/og.jpg"
+  },
+  "color": "#f8f8f8",
+  "colorFrom": "icon",
+  "notes": []
+}

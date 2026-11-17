@@ -1,0 +1,33 @@
+{
+  "slug": "antura",
+  "name": "Antura",
+  "source": "https://github.com/vgwb/Antura",
+  "capturedAt": "2026-11-17T10:49:38.463Z",
+  "alt": "Screenshot of the Antura website",
+  "pageTitle": "GitHub - vgwb/Antura: the award winning open source literacy and language learning game for kids · GitHub",
+  "pageDescription": "the award winning open source literacy and language learning game for kids - vgwb/Antura",
+  "shot": {
+    "480": "assets/tools/antura/shot-480.webp",
+    "960": "assets/tools/antura/shot-960.webp",
+    "1600": "assets/tools/antura/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/antura/mobile-390.webp",
+    "780": "assets/tools/antura/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/antura/icon-128.webp",
+    "256": "assets/tools/antura/icon-256.webp",
+    "svg": "assets/tools/antura/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/antura/social-600.webp",
+    "1200": "assets/tools/antura/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/166197484/3cf38fa8-ea24-4ac9-b770-c1825e0e1709"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

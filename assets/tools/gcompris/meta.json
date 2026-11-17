@@ -1,0 +1,34 @@
+{
+  "slug": "gcompris",
+  "name": "GCompris",
+  "source": "https://gcompris.net",
+  "capturedAt": "2026-11-17T10:49:47.423Z",
+  "alt": "Screenshot of the GCompris website",
+  "pageTitle": "GCompris Educational Software",
+  "pageDescription": "educational software gcompris. Logiciel educatif gcompris",
+  "shot": {
+    "480": "assets/tools/gcompris/shot-480.webp",
+    "960": "assets/tools/gcompris/shot-960.webp",
+    "1600": "assets/tools/gcompris/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/gcompris/mobile-390.webp",
+    "780": "assets/tools/gcompris/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/gcompris/icon-128.webp",
+    "256": "assets/tools/gcompris/icon-256.webp",
+    "from": "https://gcompris.net/favicon.png",
+    "sourceWidth": 32,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/gcompris/social-600.webp",
+    "1200": "assets/tools/gcompris/social-1200.webp",
+    "from": "https://gcompris.net/images/gcompris.png"
+  },
+  "color": "#080808",
+  "colorFrom": "icon",
+  "notes": []
+}
