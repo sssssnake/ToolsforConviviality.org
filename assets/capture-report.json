@@ -1,33 +1,6 @@
 {
-  "startedAt": "2026-11-17T10:49:35.537Z",
-  "captured": [
-    {
-      "slug": "antura",
-      "notes": []
-    },
-    {
-      "slug": "gcompris",
-      "notes": []
-    },
-    {
-      "slug": "eduactiv8",
-      "notes": []
-    },
-    {
-      "slug": "kidslearn",
-      "notes": []
-    },
-    {
-      "slug": "lingoplaytime",
-      "notes": []
-    },
-    {
-      "slug": "lingokids",
-      "notes": [
-        "screenshot skipped by override"
-      ]
-    }
-  ],
+  "startedAt": "2026-11-17T11:13:30.656Z",
+  "captured": [],
   "skipped": [
     {
       "slug": "localsend",
@@ -1060,8 +1033,28 @@
     {
       "slug": "backgroundkiller",
       "reason": "recent"
+    },
+    {
+      "slug": "antura",
+      "reason": "recent"
+    },
+    {
+      "slug": "gcompris",
+      "reason": "recent"
+    },
+    {
+      "slug": "eduactiv8",
+      "reason": "recent"
+    },
+    {
+      "slug": "lingoplaytime",
+      "reason": "recent"
+    },
+    {
+      "slug": "lingokids",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-17T10:50:29.958Z"
+  "finishedAt": "2026-11-17T11:13:31.080Z"
 }
