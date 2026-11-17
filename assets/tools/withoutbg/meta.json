@@ -1,0 +1,38 @@
+{
+  "slug": "withoutbg",
+  "name": "withoutBG",
+  "source": "https://withoutbg.com",
+  "capturedAt": "2026-11-17T10:00:41.989Z",
+  "alt": "Screenshot of the withoutBG website",
+  "pageTitle": "Background Removal API and Open Model | withoutBG",
+  "pageDescription": "Two models, one kit. Self-host the open-weight model (Apache-2.0) or call the managed cloud API. Docs, sample results, comparisons, and datasets included.",
+  "shot": {
+    "480": "assets/tools/withoutbg/shot-480.webp",
+    "960": "assets/tools/withoutbg/shot-960.webp",
+    "1600": "assets/tools/withoutbg/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/withoutbg/mobile-390.webp",
+    "780": "assets/tools/withoutbg/mobile-780.webp"
+  },
+  "iconFallback": true,
+  "icon": {
+    "128": "assets/tools/withoutbg/icon-128.webp",
+    "256": "assets/tools/withoutbg/icon-256.webp",
+    "from": "favicon service",
+    "sourceWidth": 48,
+    "scalable": false,
+    "lowRes": true
+  },
+  "social": {
+    "600": "assets/tools/withoutbg/social-600.webp",
+    "1200": "assets/tools/withoutbg/social-1200.webp",
+    "from": "https://withoutbg.com/images/og-default.png"
+  },
+  "color": "#7828c8",
+  "colorFrom": "icon",
+  "notes": [
+    "no usable icon found (an .ico favicon alone can't be converted)",
+    "icon taken from the favicon service"
+  ]
+}

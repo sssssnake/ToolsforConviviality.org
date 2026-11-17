@@ -1,0 +1,33 @@
+{
+  "slug": "backgroundremover",
+  "name": "backgroundremover",
+  "source": "https://github.com/nadermx/backgroundremover",
+  "capturedAt": "2026-11-17T10:00:51.806Z",
+  "alt": "Screenshot of the backgroundremover website",
+  "pageTitle": "GitHub - nadermx/backgroundremover: Background Remover lets you Remove Background from images and video using AI with a simple command line interface that is free and open source. · GitHub",
+  "pageDescription": "Background Remover lets you Remove Background from images and video using AI with a simple command line interface that is free and open source. - nadermx/backgroundremover",
+  "shot": {
+    "480": "assets/tools/backgroundremover/shot-480.webp",
+    "960": "assets/tools/backgroundremover/shot-960.webp",
+    "1600": "assets/tools/backgroundremover/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/backgroundremover/mobile-390.webp",
+    "780": "assets/tools/backgroundremover/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/backgroundremover/icon-128.webp",
+    "256": "assets/tools/backgroundremover/icon-256.webp",
+    "svg": "assets/tools/backgroundremover/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/backgroundremover/social-600.webp",
+    "1200": "assets/tools/backgroundremover/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/370209029/28943cc2-9da6-4886-901a-92080cd0d939"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

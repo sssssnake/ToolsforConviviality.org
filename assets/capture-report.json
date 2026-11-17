@@ -1,53 +1,29 @@
 {
-  "startedAt": "2026-11-15T08:43:11.953Z",
+  "startedAt": "2026-11-17T10:00:29.921Z",
   "captured": [
     {
-      "slug": "wordpress",
+      "slug": "rembg",
       "notes": []
     },
     {
-      "slug": "publii",
-      "notes": []
-    },
-    {
-      "slug": "silex",
-      "notes": []
-    },
-    {
-      "slug": "webstudio",
-      "notes": []
-    },
-    {
-      "slug": "neocities",
+      "slug": "withoutbg",
       "notes": [
         "no usable icon found (an .ico favicon alone can't be converted)",
         "icon taken from the favicon service"
       ]
     },
     {
-      "slug": "bear-blog",
+      "slug": "backgroundremover",
       "notes": []
     },
     {
-      "slug": "carrd",
-      "notes": [
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
-      ]
+      "slug": "imgly-background-removal",
+      "notes": []
     },
     {
-      "slug": "squarespace",
+      "slug": "remove-bg",
       "notes": [
         "screenshot skipped by override"
-      ]
-    },
-    {
-      "slug": "wix",
-      "notes": [
-        "dismissed banner with button:has-text(\"Close\")",
-        "screenshot skipped by override",
-        "no usable icon found (an .ico favicon alone can't be converted)",
-        "icon taken from the favicon service"
       ]
     }
   ],
@@ -1023,8 +999,44 @@
     {
       "slug": "microsoft-powerpoint",
       "reason": "recent"
+    },
+    {
+      "slug": "wordpress",
+      "reason": "recent"
+    },
+    {
+      "slug": "publii",
+      "reason": "recent"
+    },
+    {
+      "slug": "silex",
+      "reason": "recent"
+    },
+    {
+      "slug": "webstudio",
+      "reason": "recent"
+    },
+    {
+      "slug": "neocities",
+      "reason": "recent"
+    },
+    {
+      "slug": "bear-blog",
+      "reason": "recent"
+    },
+    {
+      "slug": "carrd",
+      "reason": "recent"
+    },
+    {
+      "slug": "squarespace",
+      "reason": "recent"
+    },
+    {
+      "slug": "wix",
+      "reason": "recent"
     }
   ],
   "failed": [],
-  "finishedAt": "2026-11-15T08:44:29.235Z"
+  "finishedAt": "2026-11-17T10:01:15.225Z"
 }

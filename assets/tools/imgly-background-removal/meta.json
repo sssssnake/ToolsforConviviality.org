@@ -1,0 +1,33 @@
+{
+  "slug": "imgly-background-removal",
+  "name": "IMG.LY Background Removal",
+  "source": "https://github.com/imgly/background-removal-js",
+  "capturedAt": "2026-11-17T10:01:00.265Z",
+  "alt": "Screenshot of the IMG.LY Background Removal website",
+  "pageTitle": "GitHub - imgly/background-removal-js: Remove backgrounds from images directly in the browser environment with ease and no additional costs or privacy concerns. Explore an interactive demo. · GitHub",
+  "pageDescription": "Remove backgrounds from images directly in the browser environment with ease and no additional costs or privacy concerns. Explore an interactive demo. - imgly/background-removal-js",
+  "shot": {
+    "480": "assets/tools/imgly-background-removal/shot-480.webp",
+    "960": "assets/tools/imgly-background-removal/shot-960.webp",
+    "1600": "assets/tools/imgly-background-removal/shot-1600.webp"
+  },
+  "mobile": {
+    "390": "assets/tools/imgly-background-removal/mobile-390.webp",
+    "780": "assets/tools/imgly-background-removal/mobile-780.webp"
+  },
+  "icon": {
+    "128": "assets/tools/imgly-background-removal/icon-128.webp",
+    "256": "assets/tools/imgly-background-removal/icon-256.webp",
+    "svg": "assets/tools/imgly-background-removal/icon.svg",
+    "from": "https://github.githubassets.com/favicons/favicon.svg",
+    "scalable": true
+  },
+  "social": {
+    "600": "assets/tools/imgly-background-removal/social-600.webp",
+    "1200": "assets/tools/imgly-background-removal/social-1200.webp",
+    "from": "https://repository-images.githubusercontent.com/657577902/a8dadd77-aff5-4240-972d-a98615cf52b2"
+  },
+  "color": "#1e2327",
+  "colorFrom": "theme-color",
+  "notes": []
+}

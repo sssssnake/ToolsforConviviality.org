@@ -8169,7 +8169,176 @@
         "icon taken from the favicon service"
       ],
       "cfg": "[\"https://www.wix.com\",{\"shot\":false},null]"
+    },
+    "rembg": {
+      "slug": "rembg",
+      "name": "rembg",
+      "source": "https://github.com/danielgatis/rembg",
+      "capturedAt": "2026-11-17T10:00:32.845Z",
+      "alt": "Screenshot of the rembg website",
+      "pageTitle": "GitHub - danielgatis/rembg: Rembg is a tool to remove images background · GitHub",
+      "pageDescription": "Rembg is a tool to remove images background. Contribute to danielgatis/rembg development by creating an account on GitHub.",
+      "shot": {
+        "480": "assets/tools/rembg/shot-480.webp",
+        "960": "assets/tools/rembg/shot-960.webp",
+        "1600": "assets/tools/rembg/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/rembg/mobile-390.webp",
+        "780": "assets/tools/rembg/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/rembg/icon-128.webp",
+        "256": "assets/tools/rembg/icon-256.webp",
+        "svg": "assets/tools/rembg/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/rembg/social-600.webp",
+        "1200": "assets/tools/rembg/social-1200.webp",
+        "from": "https://opengraph.githubassets.com/202eb25cf540917cac114b48b73279a8b3c101760c6bc5b3657f1509c0281418/danielgatis/rembg"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/danielgatis/rembg\",null,null]"
+    },
+    "withoutbg": {
+      "slug": "withoutbg",
+      "name": "withoutBG",
+      "source": "https://withoutbg.com",
+      "capturedAt": "2026-11-17T10:00:41.989Z",
+      "alt": "Screenshot of the withoutBG website",
+      "pageTitle": "Background Removal API and Open Model | withoutBG",
+      "pageDescription": "Two models, one kit. Self-host the open-weight model (Apache-2.0) or call the managed cloud API. Docs, sample results, comparisons, and datasets included.",
+      "shot": {
+        "480": "assets/tools/withoutbg/shot-480.webp",
+        "960": "assets/tools/withoutbg/shot-960.webp",
+        "1600": "assets/tools/withoutbg/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/withoutbg/mobile-390.webp",
+        "780": "assets/tools/withoutbg/mobile-780.webp"
+      },
+      "iconFallback": true,
+      "icon": {
+        "128": "assets/tools/withoutbg/icon-128.webp",
+        "256": "assets/tools/withoutbg/icon-256.webp",
+        "from": "favicon service",
+        "sourceWidth": 48,
+        "scalable": false,
+        "lowRes": true
+      },
+      "social": {
+        "600": "assets/tools/withoutbg/social-600.webp",
+        "1200": "assets/tools/withoutbg/social-1200.webp",
+        "from": "https://withoutbg.com/images/og-default.png"
+      },
+      "color": "#7828c8",
+      "colorFrom": "icon",
+      "notes": [
+        "no usable icon found (an .ico favicon alone can't be converted)",
+        "icon taken from the favicon service"
+      ],
+      "cfg": "[\"https://withoutbg.com\",null,null]"
+    },
+    "backgroundremover": {
+      "slug": "backgroundremover",
+      "name": "backgroundremover",
+      "source": "https://github.com/nadermx/backgroundremover",
+      "capturedAt": "2026-11-17T10:00:51.806Z",
+      "alt": "Screenshot of the backgroundremover website",
+      "pageTitle": "GitHub - nadermx/backgroundremover: Background Remover lets you Remove Background from images and video using AI with a simple command line interface that is free and open source. · GitHub",
+      "pageDescription": "Background Remover lets you Remove Background from images and video using AI with a simple command line interface that is free and open source. - nadermx/backgroundremover",
+      "shot": {
+        "480": "assets/tools/backgroundremover/shot-480.webp",
+        "960": "assets/tools/backgroundremover/shot-960.webp",
+        "1600": "assets/tools/backgroundremover/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/backgroundremover/mobile-390.webp",
+        "780": "assets/tools/backgroundremover/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/backgroundremover/icon-128.webp",
+        "256": "assets/tools/backgroundremover/icon-256.webp",
+        "svg": "assets/tools/backgroundremover/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/backgroundremover/social-600.webp",
+        "1200": "assets/tools/backgroundremover/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/370209029/28943cc2-9da6-4886-901a-92080cd0d939"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/nadermx/backgroundremover\",null,null]"
+    },
+    "imgly-background-removal": {
+      "slug": "imgly-background-removal",
+      "name": "IMG.LY Background Removal",
+      "source": "https://github.com/imgly/background-removal-js",
+      "capturedAt": "2026-11-17T10:01:00.265Z",
+      "alt": "Screenshot of the IMG.LY Background Removal website",
+      "pageTitle": "GitHub - imgly/background-removal-js: Remove backgrounds from images directly in the browser environment with ease and no additional costs or privacy concerns. Explore an interactive demo. · GitHub",
+      "pageDescription": "Remove backgrounds from images directly in the browser environment with ease and no additional costs or privacy concerns. Explore an interactive demo. - imgly/background-removal-js",
+      "shot": {
+        "480": "assets/tools/imgly-background-removal/shot-480.webp",
+        "960": "assets/tools/imgly-background-removal/shot-960.webp",
+        "1600": "assets/tools/imgly-background-removal/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/imgly-background-removal/mobile-390.webp",
+        "780": "assets/tools/imgly-background-removal/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/imgly-background-removal/icon-128.webp",
+        "256": "assets/tools/imgly-background-removal/icon-256.webp",
+        "svg": "assets/tools/imgly-background-removal/icon.svg",
+        "from": "https://github.githubassets.com/favicons/favicon.svg",
+        "scalable": true
+      },
+      "social": {
+        "600": "assets/tools/imgly-background-removal/social-600.webp",
+        "1200": "assets/tools/imgly-background-removal/social-1200.webp",
+        "from": "https://repository-images.githubusercontent.com/657577902/a8dadd77-aff5-4240-972d-a98615cf52b2"
+      },
+      "color": "#1e2327",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://github.com/imgly/background-removal-js\",null,null]"
+    },
+    "remove-bg": {
+      "slug": "remove-bg",
+      "name": "remove.bg",
+      "source": "https://www.remove.bg",
+      "capturedAt": "2026-11-17T10:01:08.704Z",
+      "alt": "Screenshot of the remove.bg website",
+      "pageTitle": "Remove Background from Image for Free – remove.bg",
+      "pageDescription": "Remove image backgrounds automatically in 5 seconds with just one click. Don't spend hours manually picking pixels. Upload your photo now & see the magic.",
+      "icon": {
+        "128": "assets/tools/remove-bg/icon-128.webp",
+        "256": "assets/tools/remove-bg/icon-256.webp",
+        "from": "https://www.remove.bg/android-chrome-512x512.png?v=fc0bfce6e1310f1539afec9729716721",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/remove-bg/social-600.webp",
+        "1200": "assets/tools/remove-bg/social-1200.webp",
+        "from": "https://sb.kaleidousercontent.com/67418/600x315/48eb30a742/emilia-og-image.jpg"
+      },
+      "color": "#f7f9fa",
+      "colorFrom": "theme-color",
+      "notes": [
+        "screenshot skipped by override"
+      ],
+      "cfg": "[\"https://www.remove.bg\",{\"shot\":false},null]"
     }
   },
-  "updatedAt": "2026-11-15T08:44:29.233Z"
+  "updatedAt": "2026-11-17T10:01:15.222Z"
 }

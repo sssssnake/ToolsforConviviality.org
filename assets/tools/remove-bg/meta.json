@@ -1,0 +1,27 @@
+{
+  "slug": "remove-bg",
+  "name": "remove.bg",
+  "source": "https://www.remove.bg",
+  "capturedAt": "2026-11-17T10:01:08.704Z",
+  "alt": "Screenshot of the remove.bg website",
+  "pageTitle": "Remove Background from Image for Free – remove.bg",
+  "pageDescription": "Remove image backgrounds automatically in 5 seconds with just one click. Don't spend hours manually picking pixels. Upload your photo now & see the magic.",
+  "icon": {
+    "128": "assets/tools/remove-bg/icon-128.webp",
+    "256": "assets/tools/remove-bg/icon-256.webp",
+    "from": "https://www.remove.bg/android-chrome-512x512.png?v=fc0bfce6e1310f1539afec9729716721",
+    "sourceWidth": 512,
+    "scalable": false,
+    "lowRes": false
+  },
+  "social": {
+    "600": "assets/tools/remove-bg/social-600.webp",
+    "1200": "assets/tools/remove-bg/social-1200.webp",
+    "from": "https://sb.kaleidousercontent.com/67418/600x315/48eb30a742/emilia-og-image.jpg"
+  },
+  "color": "#f7f9fa",
+  "colorFrom": "theme-color",
+  "notes": [
+    "screenshot skipped by override"
+  ]
+}
