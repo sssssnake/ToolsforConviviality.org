@@ -1589,5 +1589,41 @@
     "name": "Background Killer",
     "url": "https://backgroundkiller.com",
     "repo": "PigroSoft/BackgroundKiller.com"
+  },
+  {
+    "slug": "antura",
+    "name": "Antura",
+    "url": "https://github.com/vgwb/Antura",
+    "repo": "vgwb/Antura"
+  },
+  {
+    "slug": "gcompris",
+    "name": "GCompris",
+    "url": "https://gcompris.net"
+  },
+  {
+    "slug": "eduactiv8",
+    "name": "eduActiv8",
+    "url": "https://www.eduactiv8.org",
+    "repo": "imiolek-ireneusz/eduactiv8"
+  },
+  {
+    "slug": "kidslearn",
+    "name": "KidsLearn",
+    "url": "https://github.com/vivekg7/kidslearn",
+    "repo": "vivekg7/kidslearn"
+  },
+  {
+    "slug": "lingoplaytime",
+    "name": "LingoPlaytime",
+    "url": "https://lingoplaytime.com"
+  },
+  {
+    "slug": "lingokids",
+    "name": "Lingokids",
+    "url": "https://lingokids.com",
+    "capture": {
+      "shot": false
+    }
   }
 ]
