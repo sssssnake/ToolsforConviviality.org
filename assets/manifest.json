@@ -8338,7 +8338,42 @@
         "screenshot skipped by override"
       ],
       "cfg": "[\"https://www.remove.bg\",{\"shot\":false},null]"
+    },
+    "backgroundkiller": {
+      "slug": "backgroundkiller",
+      "name": "Background Killer",
+      "source": "https://backgroundkiller.com",
+      "capturedAt": "2026-11-17T10:06:37.363Z",
+      "alt": "Screenshot of the Background Killer website",
+      "pageTitle": "Free Background Remover, Full Size | Background Killer",
+      "pageDescription": "Free background remover and remove.bg alternative. Cut out any photo and download a full-size transparent PNG, with no sign-up. It runs in your browser, so your photo stays on your device.",
+      "shot": {
+        "480": "assets/tools/backgroundkiller/shot-480.webp",
+        "960": "assets/tools/backgroundkiller/shot-960.webp",
+        "1600": "assets/tools/backgroundkiller/shot-1600.webp"
+      },
+      "mobile": {
+        "390": "assets/tools/backgroundkiller/mobile-390.webp",
+        "780": "assets/tools/backgroundkiller/mobile-780.webp"
+      },
+      "icon": {
+        "128": "assets/tools/backgroundkiller/icon-128.webp",
+        "256": "assets/tools/backgroundkiller/icon-256.webp",
+        "from": "https://backgroundkiller.com/icon-512.png",
+        "sourceWidth": 512,
+        "scalable": false,
+        "lowRes": false
+      },
+      "social": {
+        "600": "assets/tools/backgroundkiller/social-600.webp",
+        "1200": "assets/tools/backgroundkiller/social-1200.webp",
+        "from": "https://backgroundkiller.com/og.jpg"
+      },
+      "color": "#101112",
+      "colorFrom": "theme-color",
+      "notes": [],
+      "cfg": "[\"https://backgroundkiller.com\",null,null]"
     }
   },
-  "updatedAt": "2026-11-17T10:01:15.222Z"
+  "updatedAt": "2026-11-17T10:06:49.420Z"
 }
