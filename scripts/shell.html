@@ -495,7 +495,6 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="#method">How we score</a>
       <a href="#benchmarks">Benchmarks</a>
       <a href="#compare">Compare</a>
-      <a href="#guides">More guides</a>
       <a href="#improve">Improve your score</a>
       <a href="#agents">For AI agents</a>
       <a href="#about">About &amp; disclaimers</a>
@@ -3236,7 +3235,7 @@ function category(id) {
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   <p class="list-note">Ranked by score out of 30, most convivial first.</p>
   <div class="tool-list">${list.map(t => row(t, rk.get(t.slug))).join("")}</div>
-  ${childCats(id).length ? `<section class="compare" aria-label="Smaller guides"><h2>Smaller guides</h2><p>Narrower jobs within ${esc(c.name)}, each with its own comparison.</p><div class="guide-list">${childCats(id).map(g => `<a class="guide-card" href="#cat-${g.id}"><b>${esc(CATCOPY[g.id] ? CATCOPY[g.id].h1 : g.name)}</b><small>${toolsIn(g.id).slice(0, 5).map(x => esc(x.name)).join(", ")}</small></a>`).join("")}</div></section>` : ""}
+  ${childCats(id).length ? `<section class="compare" aria-label="Smaller categories"><h2>Smaller categories</h2><p>Narrower jobs within ${esc(c.name)}, each with its own comparison.</p><div class="guide-list">${childCats(id).map(g => `<a class="guide-card" href="#cat-${g.id}"><b>${esc(CATCOPY[g.id] ? CATCOPY[g.id].h1 : g.name)}</b><small>${toolsIn(g.id).slice(0, 5).map(x => esc(x.name)).join(", ")}</small></a>`).join("")}</div></section>` : ""}
   ${FEES[id] ? feeTable(FEES[id]) : ""}
   ${bench.length ? `<section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid">${bench.map(x => `<a class="bcard" href="#bench-${x.slug}">${logo(x, "sm")}<span class="cmp-t"><b>${esc(x.name)}</b><small>Benchmark review</small></span><span class="cmp-s"><b>${total(x)}<span>/30</span></b><small class="verdict-mini v${vcls(total(x))}">${band(total(x))}</small></span></a>`).join("")}</div></section>` : ""}
   ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}</div>`;
@@ -3260,7 +3259,7 @@ function directory(preset) {
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
   <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "score" ? ranks.get(t.slug) : 0)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
-  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here. Smaller jobs live on the <a href="#guides">More guides</a> page.</p></div>`;
+  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here. Smaller jobs live on the <a href="#guides">More categories</a> page.</p></div>`;
 }
 
 function badgeBox(t) {
@@ -3699,8 +3698,8 @@ function submit() {
 
 function guides() {
   const hid = CATS.filter(c => c.hidden);
-  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / More guides</p>
-  <div class="page-head" style="margin-top:14px"><h1>More guides</h1><p>Smaller jobs that do not need a place on the homepage. Each has its own comparison and its own benchmark review.</p></div>
+  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / More categories</p>
+  <div class="page-head" style="margin-top:14px"><h1>More categories</h1><p>Smaller jobs that do not need a place on the homepage. Each has its own comparison and its own benchmark review.</p></div>
   <div class="guide-list">${hid.map(g => { const l = toolsIn(g.id); return `<a class="guide-card" href="#cat-${g.id}"><b>${esc(CATCOPY[g.id] ? CATCOPY[g.id].h1 : g.name)}</b><small>${g.parent ? esc(catOf(g.parent).name) + " · " : ""}${l.length} tools: ${l.slice(0, 5).map(x => esc(x.name)).join(", ")}${l.length > 5 ? ` +${l.length - 5}` : ""}</small></a>`; }).join("")}</div></div>`;
 }
 function suggestCategory() {
@@ -3881,7 +3880,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.org";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", suggestcat: "/suggest-a-category/", governance: "/governance/", guides: "/guides/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", suggestcat: "/suggest-a-category/", governance: "/governance/", guides: "/more-categories/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -3927,7 +3926,7 @@ function seo(id) {
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
   if (id === "suggestcat") return out("Suggest a category", "Tell us which kind of software the directory is missing, and which well-known tool in it is not convivial.", { noindex: true });
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
-  if (id === "guides") return out("More guides", "Smaller comparisons that sit inside a bigger category, such as tools for removing the background from a photo.");
+  if (id === "guides") return out("More categories", "Smaller comparisons that sit inside a bigger category, such as tools for removing the background from a photo.");
   if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
   if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and counts visits without tracking people.", { noindex: true });
@@ -4104,7 +4103,7 @@ document.addEventListener("click", e => {
   render(); window.scrollTo(0, 0);
 });
 window.addEventListener("popstate", () => { render(); window.scrollTo(0, 0); });
-document.getElementById("foot-cats").innerHTML = '<span class="label">Categories</span>' + groupedCats().flatMap(g => g.cats).map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("");
+document.getElementById("foot-cats").innerHTML = '<span class="label">Categories</span>' + groupedCats().flatMap(g => g.cats).map(c => `<a href="#cat-${c.id}">${esc(c.name)}</a>`).join("") + '<a href="#guides"><b>More categories</b></a>';
 fixLinks(document);
 render();
 </script>
