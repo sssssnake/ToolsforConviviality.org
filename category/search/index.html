@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/mojeek/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Mojeek</h3><p class="one">A search engine with its own index and no tracking.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">No tracking</span><span class="chip">Own index</span></div></div></div>
     <div class="score-mini"><b>20<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/google-search/"><span class="logo sm"><img src="/assets/tools/google-search/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Google Search</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Google handles most of the world's searches, and its results sit between ads. The alternatives work differently. <a href="/tools/kagi/">Kagi</a> is a search engine you pay for, which is how it avoids ads, <a href="/tools/mojeek/">Mojeek</a> builds its own index and says it does not track you, <a href="/tools/marginalia/">Marginalia Search</a> digs up the small personal web, and <a href="/tools/searxng/">SearXNG</a> asks many engines at once and hides who you are. <a href="/tools/kiwix/">Kiwix</a> puts Wikipedia and other libraries on your device for questions you can answer offline.</p><p>None matches Google on every query, and several do better on some.</p><h2>How to choose</h2><p>Decide what you are searching for. For everyday questions, a paid engine like <a href="/tools/kagi/">Kagi</a> or a metasearch like <a href="/tools/searxng/">SearXNG</a> comes closest. For finding interesting writing, <a href="/tools/marginalia/">Marginalia Search</a> beats the giants. For facts, an offline copy of Wikipedia is quicker than you'd expect. Expect to pay, or to accept a smaller index.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a search engine with no ads?</h3><p><a href="/tools/kagi/">Kagi</a> sells search by subscription, so it carries no ads. The trade-off is paying for it. <a href="/tools/marginalia/">Marginalia Search</a> is free and ad-free but covers a narrow slice of the web.</p></div><div class="qa"><h3>Is there a search engine that does not track me?</h3><p><a href="/tools/mojeek/">Mojeek</a> says it does not track searches and runs its own index, and <a href="/tools/searxng/">SearXNG</a> hides your identity from the engines it queries. Both claims rest on what the operators say.</p></div><div class="qa"><h3>Can I read Wikipedia offline?</h3><p>Yes. <a href="/tools/kiwix/">Kiwix</a> downloads Wikipedia and other collections to read with no connection.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

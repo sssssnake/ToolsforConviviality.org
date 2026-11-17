@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -484,6 +491,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated October 2026.</p>
       <div class="chips"><span class="chip">XL · System</span><span class="chip">Benchmark</span><span class="chip">Closed source</span><span class="chip">Hosted</span></div>
       
+      
       <p>A busker's case on a busy street collects from people who were already walking past, and Patreon is a case that follows the busker home. Its pricing page says it is free to start and takes 10% of the income you earn, and its creator fees overview says that standard 10% plan applies to pages published after 4 August 2025. Pages older than that stay on a legacy plan, and the same overview lists them as Founders at 5%, Pro at 8% and Pro plus Merch at 11%, with the Founders plan closed to new creators since 7 May 2019 and the other two closed since 4 August 2025.</p><p>Patreon scores a 4 on delivery, a 3 on lock-in and longevity, a 2 on footprint and self-direction and a 1 on power. The pricing page lists subscriptions, membership tiers, one-time payments, newsletters, native video and livestreaming, free trials and discounts and podcast hosting, and says Patreon handles payments and taxes. The fees overview adds payment processing, and its table for legacy pages lists 2.9% plus $0.30 on card payments above $3 with a US dollar payout and 5% plus $0.10 on payments of $3 or less, along with a 2.5% fee on any payment made in a currency different from your payout currency, a payout fee that depends on method and currency, and Apple's 30% charge on purchases made in the iOS app. Sales of posts and digital products carry a platform fee of 5% to 12% depending on the plan.</p><p>The standard plan includes a hosted page, monthly and annual memberships, digital product sales, video hosting of up to 100 hours a month once you have paying fans, community chats and polls, and audience insights. The overview says an older page moves onto it when you unpublish the page, even briefly, when Patreon unpublishes it for any reason, or when you republish after 4 August 2025.</p><p>The pricing page lists exportable email lists. In practice it is the place where supporters already have an account, with a tenth of your income going to the platform. As of November 2026 this is our opinion, based on public sources, and if you spot an error, write to hello@toolsforconviviality.org and we will check it and correct it. Compare it with the tools in Donations &amp; memberships.</p>
       <ul class="points" aria-label="What makes Patreon unusual"><h2>What stands out</h2><li>A standard 10% plan for pages published after August 2025, says its fees overview</li><li>Processing, 2.5% currency conversion and payout fees come on top, and Apple takes 30% of iOS purchases</li><li>Legacy plans run 5%, 8% or 11%, and unpublishing an older page, even briefly, moves it onto the standard 10%</li></ul>
       <div class="visit"><a class="btn" href="https://www.patreon.com" target="_blank" rel="noopener">Visit Patreon <span aria-hidden="true">↗</span></a></div>
@@ -514,6 +522,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -530,7 +539,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -484,6 +491,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated October 2026.</p>
       <div class="chips"><span class="chip">XL · System</span><span class="chip">Benchmark</span><span class="chip">Closed source</span><span class="chip">Free tier</span></div>
       
+      
       <p>Drive is where files go when someone says “just put it in the folder”, and Delivery is a 5 because they show up on every device and sharing just works. It also puts your files in one company's hands. The 15 GB of free storage is shared with Gmail and Google Photos, Google holds the encryption keys and so can access your content, and client-side encryption is limited to certain Workspace business plans. Docs, Sheets and Slides use Google's own formats unless you export them.</p><p>Leaving is possible but takes effort, and Drive has had rough patches. A 2023 bug in Drive for desktop made some files disappear, a 2023 class action alleges Google deleted files from paying users without enough notice, and free storage has not grown since 2013. Compare it with the sync tools in the directory, which keep your files on devices you own.</p>
       <ul class="points" aria-label="What makes Google Drive unusual"><h2>What stands out</h2><li>Files appear on every device and sharing just works</li><li>15 GB free, shared with Gmail and Google Photos</li><li>Docs, Sheets and Slides use Google's own formats unless you export</li></ul>
       <div class="visit"><a class="btn" href="https://drive.google.com" target="_blank" rel="noopener">Visit Google Drive <span aria-hidden="true">↗</span></a></div>
@@ -514,6 +522,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -530,7 +539,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/funkwhale/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Funkwhale</h3><p class="one">A federated audio platform where communities host their own music.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Federated</span></div></div></div>
     <div class="score-mini"><b>22<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/spotify/"><span class="logo sm"><img src="/assets/tools/spotify/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Spotify</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Streaming services rent you the music and learn from what you play. <a href="/tools/navidrome/">Navidrome</a> streams your own files to your phone, <a href="/tools/ampache/">Ampache</a> does it from a long-running web app, <a href="/tools/strawberry/">Strawberry</a> organises a big library on your computer, <a href="/tools/mopidy/">Mopidy</a> is a music server you can shape, and <a href="/tools/funkwhale/">Funkwhale</a> lets communities host audio for each other.</p><p>All of them work best with music you own, which is the trade: you do the collecting, and nobody can take it away.</p><h2>How to choose</h2><p>If you already have your music as files, <a href="/tools/strawberry/">Strawberry</a> on a computer or <a href="/tools/navidrome/">Navidrome</a> for streaming to your phone will feel familiar. If you like tinkering, <a href="/tools/mopidy/">Mopidy</a> gives the most control. Expect to supply your own music.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an alternative to Spotify?</h3><p><a href="/tools/navidrome/">Navidrome</a> streams your own music files from a server you run, and <a href="/tools/funkwhale/">Funkwhale</a> is a federated option.</p></div><div class="qa"><h3>Can I stream my own music to my phone?</h3><p>Yes. <a href="/tools/navidrome/">Navidrome</a> and <a href="/tools/ampache/">Ampache</a> serve your collection to apps on your phone.</p></div><div class="qa"><h3>What organises a big music library?</h3><p><a href="/tools/strawberry/">Strawberry</a> handles tags, playlists and large collections on your computer.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

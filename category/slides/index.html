@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/presenterm/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>presenterm</h3><p class="one">A Markdown slideshow that runs in your terminal.</p><div class="chips"><span class="chip">S · Gadget</span><span class="chip">Open source</span><span class="chip">Terminal</span><span class="chip">Slides</span></div></div></div>
     <div class="score-mini"><b>24<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/microsoft-powerpoint/"><span class="logo sm"><img src="/assets/tools/microsoft-powerpoint/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Microsoft PowerPoint</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>A slide deck made in a text file is small, easy to version and opens anywhere. <a href="/tools/marp/">Marp</a> turns Markdown into HTML, PDF or PowerPoint, <a href="/tools/slidev/">Slidev</a> adds live code for developers, and <a href="/tools/revealjs/">reveal.js</a> is a browser framework that many other tools build on. <a href="/tools/quarto/">Quarto</a> makes slides from code and data as one of many outputs, and <a href="/tools/presenterm/">presenterm</a> runs a Markdown deck in your terminal.</p><p>These tools suit people who are comfortable writing text. For dragging boxes around a slide, see <a href="/tools/libreoffice/">LibreOffice</a>, which includes Impress, under Office suites.</p><h2>How to choose</h2><p>Start with where the deck will be shown. For a PDF or a PowerPoint file to send around, <a href="/tools/marp/">Marp</a> is the simplest. For a talk with live code, look at <a href="/tools/slidev/">Slidev</a> or <a href="/tools/presenterm/">presenterm</a>. For slides built from analysis, <a href="/tools/quarto/">Quarto</a> reruns the code each time.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a free alternative to PowerPoint?</h3><p>Yes. <a href="/tools/marp/">Marp</a>, <a href="/tools/slidev/">Slidev</a>, <a href="/tools/revealjs/">reveal.js</a>, <a href="/tools/quarto/">Quarto</a> and <a href="/tools/presenterm/">presenterm</a> are free and open source, and <a href="/tools/libreoffice/">LibreOffice</a> includes Impress.</p></div><div class="qa"><h3>Can these export PowerPoint files?</h3><p><a href="/tools/marp/">Marp</a> exports PowerPoint, and <a href="/tools/quarto/">Quarto</a> lists PowerPoint among its slide formats.</p></div><div class="qa"><h3>What if I want to drag boxes around?</h3><p>These tools are written in text. The Impress program in <a href="/tools/libreoffice/">LibreOffice</a> is a point-and-click option.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

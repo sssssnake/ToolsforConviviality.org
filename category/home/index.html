@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/zigbee2mqtt/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div><h3>Zigbee2MQTT</h3><p class="one">Frees Zigbee devices from their makers' hubs and apps.</p><div class="chips"><span class="chip">S · Tool</span><span class="chip">Open source</span><span class="chip">Local</span></div></div></div>
     <div class="score-mini"><b>25<span>/30</span></b><span class="verdict-mini v1">Convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/amazon-alexa/"><span class="logo sm"><img src="/assets/tools/amazon-alexa/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Amazon Alexa</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Smart home gadgets usually come with an account and a company server that has to stay up. <a href="/tools/home-assistant/">Home Assistant</a> runs the whole house on your own hardware, <a href="/tools/openhab/">openHAB</a> does the same from an older project, <a href="/tools/esphome/">ESPHome</a> builds devices you program yourself, <a href="/tools/zigbee2mqtt/">Zigbee2MQTT</a> replaces each brand's hub with one adapter, and <a href="/tools/pi-hole/">Pi-hole</a> blocks ads and trackers across your network.</p><p>The common thread is local control, so the lights still work when the internet does not.</p><h2>How to choose</h2><p>Most people should begin with <a href="/tools/home-assistant/">Home Assistant</a> and buy devices that work locally. Be ready for a real learning curve, and for the fact that the easiest gadgets are often the ones tied to a vendor.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there an alternative to Alexa or Google Home?</h3><p><a href="/tools/home-assistant/">Home Assistant</a> is the leading open source option and runs on your own hardware.</p></div><div class="qa"><h3>Do I need to know how to code?</h3><p>Not to begin with, though <a href="/tools/esphome/">ESPHome</a> and <a href="/tools/zigbee2mqtt/">Zigbee2MQTT</a> reward some tinkering.</p></div><div class="qa"><h3>How do I block ads across my whole network?</h3><p><a href="/tools/pi-hole/">Pi-hole</a> runs on a small computer and blocks known ad and tracking servers for every device.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

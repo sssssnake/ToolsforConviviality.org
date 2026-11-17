@@ -1551,5 +1551,37 @@
     "capture": {
       "shot": false
     }
+  },
+  {
+    "slug": "rembg",
+    "name": "rembg",
+    "url": "https://github.com/danielgatis/rembg",
+    "repo": "danielgatis/rembg"
+  },
+  {
+    "slug": "withoutbg",
+    "name": "withoutBG",
+    "url": "https://withoutbg.com",
+    "repo": "withoutbg/withoutbg"
+  },
+  {
+    "slug": "backgroundremover",
+    "name": "backgroundremover",
+    "url": "https://github.com/nadermx/backgroundremover",
+    "repo": "nadermx/backgroundremover"
+  },
+  {
+    "slug": "imgly-background-removal",
+    "name": "IMG.LY Background Removal",
+    "url": "https://github.com/imgly/background-removal-js",
+    "repo": "imgly/background-removal-js"
+  },
+  {
+    "slug": "remove-bg",
+    "name": "remove.bg",
+    "url": "https://www.remove.bg",
+    "capture": {
+      "shot": false
+    }
   }
 ]

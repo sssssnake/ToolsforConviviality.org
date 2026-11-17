@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm" style="background:#2b8a3e;color:#fff" aria-hidden="true">S</span><div><h3>SimpleX Chat</h3><p class="one">A messenger with no user IDs, not even a phone number.</p><div class="chips"><span class="chip">M · System</span><span class="chip">Open source</span><span class="chip">Encrypted</span></div></div></div>
     <div class="score-mini"><b>21<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/whatsapp/"><span class="logo sm"><img src="/assets/tools/whatsapp/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>WhatsApp</b><small>Benchmark review</small></span><span class="cmp-s"><b>14<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Most of us keep several chat apps open at once because each of our friends and teams chose a different one. <a href="/tools/signal/">Signal</a> is the easy private option, run by a nonprofit with encryption on by default. <a href="/tools/element/">Element</a> runs on the open Matrix standard, so different providers can talk to each other and you can host it yourself. <a href="/tools/deltachat/">Delta Chat</a> builds chat on top of ordinary email, so there is no phone number to give and no company that can shut the network down. <a href="/tools/simplex/">SimpleX Chat</a> works without any user ID and <a href="/tools/briar/">Briar</a> works without the internet.</p><h2>How to choose</h2><p>The hard part of any chat alternative is that it only works if the people you talk to use it too. Start with a tool that works alongside the apps you already have, then move the conversations that matter most to somewhere you control. Look at who runs the network and whether you could take your contacts with you.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is a private alternative to WhatsApp?</h3><p><a href="/tools/signal/">Signal</a> offers end-to-end encryption by default and is run by a nonprofit. <a href="/tools/element/">Element</a> and <a href="/tools/deltachat/">Delta Chat</a> are open alternatives that are harder to start with and harder for anyone to shut down.</p></div><div class="qa"><h3>Is there a messaging app that doesn't need a phone number?</h3><p><a href="/tools/deltachat/">Delta Chat</a> runs on email, so you sign up with an address or a chat relay and give out no phone number.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -492,6 +499,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/chatterbox/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Chatterbox</h3><p class="one">An MIT-licensed text-to-speech model with voice cloning, from a company that sells voice AI.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Voice cloning</span></div></div></div>
     <div class="score-mini"><b>23<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/elevenlabs/"><span class="logo sm"><img src="/assets/tools/elevenlabs/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>ElevenLabs</b><small>Benchmark review</small></span><span class="cmp-s"><b>16<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>Speech that sounds like a person used to require sending your text to a company. <a href="/tools/piper/">Piper</a> and <a href="/tools/kokoro/">Kokoro</a> run neural voices locally, <a href="/tools/chatterbox/">Chatterbox</a> adds voice cloning, <a href="/tools/espeak-ng/">eSpeak NG</a> is the tiny classic that covers more than a hundred languages, and <a href="/tools/sherpatts/">SherpaTTS</a> brings Piper voices to Android.</p><p>Most of these are building blocks for people who can run a command line, so expect some setup, and listen to samples before you commit, since voices differ more than the licences do.</p><h2>How to choose</h2><p>Decide where you need the voice. On a phone, <a href="/tools/sherpatts/">SherpaTTS</a>. In a script or a home server, <a href="/tools/piper/">Piper</a> or <a href="/tools/kokoro/">Kokoro</a>. For cloning, <a href="/tools/chatterbox/">Chatterbox</a>, knowing its output is watermarked. For the widest language coverage on almost any device, <a href="/tools/espeak-ng/">eSpeak NG</a>.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>Is there a free alternative to ElevenLabs?</h3><p><a href="/tools/piper/">Piper</a>, <a href="/tools/kokoro/">Kokoro</a> and <a href="/tools/chatterbox/">Chatterbox</a> are free and run on your own computer, and <a href="/tools/sherpatts/">SherpaTTS</a> does the job on Android.</p></div><div class="qa"><h3>Can I clone a voice locally?</h3><p><a href="/tools/chatterbox/">Chatterbox</a> says it clones from a short reference clip, and every file it creates carries a Resemble AI watermark.</p></div><div class="qa"><h3>Which one covers the most languages?</h3><p><a href="/tools/espeak-ng/">eSpeak NG</a> supports more than 100 languages and accents, though its voices sound more robotic than neural ones.</p></div></section></div></div></main>
 
@@ -503,6 +511,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -519,7 +528,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

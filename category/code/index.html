@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -496,6 +503,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
     <div class="lead"><span class="logo sm"><img src="/assets/tools/kilo-code/icon.svg" alt="" loading="lazy" width="72" height="72"></span><div><h3>Kilo Code</h3><p class="one">An open-source coding agent for VS Code, JetBrains and the terminal that charges model prices with no markup.</p><div class="chips"><span class="chip">M · Tool</span><span class="chip">Open source</span><span class="chip">Free</span><span class="chip">Bring your own model</span></div></div></div>
     <div class="score-mini"><b>23<span>/30</span></b><span class="verdict-mini v2">Leaning convivial</span></div></a></div>
   
+  
   <section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid"><a class="bcard" href="/benchmarks/github-copilot/"><span class="logo sm"><img src="/assets/tools/github-copilot/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>GitHub Copilot</b><small>Benchmark review</small></span><span class="cmp-s"><b>15<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a><a class="bcard" href="/benchmarks/openai-codex/"><span class="logo sm"><img src="/assets/tools/openai-codex/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>OpenAI Codex</b><small>Benchmark review</small></span><span class="cmp-s"><b>20<span>/30</span></b><small class="verdict-mini v2">Leaning convivial</small></span></a><a class="bcard" href="/benchmarks/claude-code/"><span class="logo sm"><img src="/assets/tools/claude-code/icon.svg" alt="" loading="lazy" width="72" height="72"></span><span class="cmp-t"><b>Claude Code</b><small>Benchmark review</small></span><span class="cmp-s"><b>17<span>/30</span></b><small class="verdict-mini v3">Mixed</small></span></a></div></section>
   <div class="prose about-cat"><h2>About these tools</h2><p>The famous coding agents arrive with one company's models and one company's data policy. These ones separate the three. <a href="/tools/goose/">goose</a> is a general agent that works well on code, <a href="/tools/aider/">Aider</a> works in a terminal with almost any model, <a href="/tools/cline/">Cline</a> and <a href="/tools/opencode/">OpenCode</a> do the same in editors and terminals, <a href="/tools/kilo-code/">Kilo Code</a> adds a cloud agent and bills at provider prices, <a href="/tools/open-interpreter/">Open Interpreter</a> aims at cheaper open models, and <a href="/tools/zed/">Zed</a> is an editor where the AI can be turned off with a setting.</p><p>You pay your model provider directly, so the bill moves with how much you use it, and a coding agent can run commands on your machine, so read what it asks to do before you approve it. We reviewed Claude Code, OpenAI Codex and GitHub Copilot as benchmarks.</p><h2>How to choose</h2><p>Decide where you want it to live. In a terminal, <a href="/tools/aider/">Aider</a>, <a href="/tools/opencode/">OpenCode</a> or <a href="/tools/open-interpreter/">Open Interpreter</a>. Inside your editor, <a href="/tools/cline/">Cline</a> or <a href="/tools/kilo-code/">Kilo Code</a>. If you want a new editor with the AI optional, <a href="/tools/zed/">Zed</a>. For an agent that does more than code, <a href="/tools/goose/">goose</a>. Then check whether local models are supported, because that decides whether your code ever leaves the machine.</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><div class="qa"><h3>What is an open-source alternative to Claude Code?</h3><p><a href="/tools/aider/">Aider</a>, <a href="/tools/cline/">Cline</a>, <a href="/tools/opencode/">OpenCode</a> and <a href="/tools/goose/">goose</a> are open source and work with your choice of model, and <a href="/tools/zed/">Zed</a> is an open-source editor with optional AI.</p></div><div class="qa"><h3>Can I use a local model for coding?</h3><p><a href="/tools/aider/">Aider</a> says it connects to local models, <a href="/tools/cline/">Cline</a> lists Ollama and LM Studio, and <a href="/tools/goose/">goose</a> lists Ollama among its providers.</p></div><div class="qa"><h3>Is Codex open source?</h3><p>The OpenAI Codex command line tool is Apache-2.0 licensed, but it is built to use OpenAI's models and a ChatGPT login, so we reviewed it as a benchmark.</p></div></section></div></div></main>
 
@@ -507,6 +515,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -523,7 +532,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

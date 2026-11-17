@@ -278,6 +278,13 @@ main .wrap { padding-block: 48px 64px; }
 .tool-row:hover h3 { color: var(--accent); }
 .tool-row h3 { font-size: 22px; }
 .tool-row .one { color: var(--muted); margin-top: 2px; font-size: 15px; }
+.disc { font-family: var(--mono); font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; background: var(--gold); color: var(--on-accent); padding: 3px 8px; border-radius: 2px; }
+.disc-note { border-left: 4px solid var(--gold); background: var(--panel-2); padding: 10px 14px; margin: 14px 0 6px; font-size: 15px; }
+.guide-list { display: grid; gap: 14px; margin-top: 18px; }
+.guide-card { display: block; border: 1px solid var(--line); background: var(--panel-2); padding: 14px 16px; text-decoration: none; }
+.guide-card:hover { border-color: var(--accent); }
+.guide-card b { font-size: 18px; display: block; }
+.guide-card small { display: block; color: var(--muted); font-family: var(--mono); font-size: 12px; margin-top: 4px; line-height: 1.5; }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .chip { font-family: var(--mono); font-size: 11px; letter-spacing: .05em; text-transform: uppercase; border: 1px solid var(--line); padding: 2px 7px; color: var(--muted); }
 .score-mini { text-align: right; display: grid; gap: 2px; justify-items: end; }
@@ -483,6 +490,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <div class="review-head"><span class="logo lg"><img src="/assets/tools/ko-fi/icon-256.webp" alt="" loading="lazy" width="72" height="72"></span><div class="page-head"><h1>Ko-fi</h1><p>A tip jar and membership page with no fee on one-off tips.</p></div></div>
       <p class="instead">Instead of <b>Patreon</b></p>
       <div class="chips"><span class="chip">S · Tool</span><span class="chip">Hosted</span><span class="chip">No fee on tips</span></div>
+      
       <figure class="window" style="margin-inline:0"><div class="bar"><i></i><i></i><i></i><span>ko-fi.com</span></div>
     <img src="/assets/tools/ko-fi/shot-960.webp" srcset="/assets/tools/ko-fi/shot-480.webp 480w, /assets/tools/ko-fi/shot-960.webp 960w, /assets/tools/ko-fi/shot-1600.webp 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="Screenshot of the Ko-fi website" loading="lazy" width="960" height="600"></figure>
     <p class="shot-credit">Screenshot from ko-fi.com, taken 2026-11-13, shown to help you recognise the tool. It belongs to its maker. <a href="/about/">Ask us to remove it</a>.</p>
@@ -519,6 +527,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
       <a href="/how-we-score/">How we score</a>
       <a href="/benchmarks/">Benchmarks</a>
       <a href="/compare/">Compare</a>
+      <a href="/guides/">More guides</a>
       <a href="/improve-my-conviviality-score/">Improve your score</a>
       <a href="/for-agents/">For AI agents</a>
       <a href="/about/">About &amp; disclaimers</a>
@@ -535,7 +544,7 @@ try { var saved = localStorage.getItem("tfc-theme"); if (saved === "dark" || sav
   </div>
 </footer>
 
-<script src="/assets/app.9a8f53894c.js"></script>
+<script src="/assets/app.f92e759626.js"></script>
 
 
 

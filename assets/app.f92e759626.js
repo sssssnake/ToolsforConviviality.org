@@ -56,6 +56,7 @@ const CATS = [
   { id: "spreadsheets", name: "Spreadsheets", verb: "Calculate and keep track of data", instead: "Microsoft Excel and Google Sheets" },
   { id: "slides", name: "Slides", verb: "Make a presentation", instead: "Microsoft PowerPoint and Google Slides" },
   { id: "websites", name: "Websites", verb: "Build a website", instead: "Squarespace and Wix" },
+  { id: "remove-bg", name: "Remove backgrounds", verb: "Cut the background out of a photo", instead: "remove.bg", parent: "design", hidden: true },
   { id: "collect", name: "Collecting & research", verb: "Collect and connect ideas", instead: "Pinterest and Google Keep" }
 ];
 // Homepage groups. Any category missing here still appears, under "More".
@@ -76,7 +77,7 @@ function groupedCats() {
     cats.forEach(c => seen.add(c.id));
     if (cats.length) out.push({ name: g.name, cats });
   });
-  const rest = CATS.filter(c => !seen.has(c.id));
+  const rest = CATS.filter(c => !seen.has(c.id) && !c.hidden);
   if (rest.length) out.push({ name: "More", cats: rest });
   return out;
 }
@@ -1618,6 +1619,34 @@ const TOOLS = [
     body: ["A one-page site is the business card of the web, and Carrd sells ten of them for $19 a year. Its home page calls Carrd simple, responsive and free, with up to three sites per account and all the core features at no cost.",
       "Carrd scores a 4 on footprint, self-direction, power and delivery and a 3 on lock-in and longevity. Pro adds custom domains with SSL, forms that connect to services such as Mailchimp and Kit, embeds, analytics through Google Analytics, Plausible or Matomo, and the removal of the Made with Carrd footer. Pro Plus, from $49 a year for 25 sites, adds redirects and password protection, and it is the plan that lets you download a site as a zip of unminified HTML, CSS and JS. Carrd Inc. runs it, and there is a 7-day free trial of Pro.",
       "Living with it means a handful of small pages, each one built in a browser editor, that cost less than lunch for the year."] },
+  { slug: "rembg", name: "rembg", cat: "remove-bg", size: "S", scope: "tool", url: "https://github.com/danielgatis/rembg",
+    one: "A command, library and server that cuts the background out of an image on your own machine.", replaces: "remove.bg",
+    price: "Free", source: "Open source (MIT)", platforms: "Windows, Mac, Linux, with Python 3.11 to 3.13 or Docker",
+    tags: ["Open source", "Command line", "Runs locally"], s: [4, 5, 3, 4, 4, 4],
+    body: ["Anyone who has tried to trace a head of curly hair with a lasso tool knows why this job was once sold by the picture, and rembg is the free version, a command that takes an image and hands back the same picture with the background gone. The repository describes it as usable from the command line, as a Python library, as an HTTP server or as a Docker container.",
+      "rembg scores a 5 on lock-in, a 4 on footprint, power, longevity and delivery and a 3 on self-direction. The code is MIT licensed with copyright held by Daniel Gatis from 2020, and the repository has about 25,300 stars and 562 commits. It needs Python 3.11 to 3.13 and downloads models to a folder in your home directory on first use. It can load U2-Net, IS-Net, several BiRefNet variants and others, and PhotoRoom is listed as a sponsor.",
+      "The catch is in the models. The repository says model weights carry their own licences, and the default one, bria-rmbg, needs a paid agreement for commercial use. Two cloud backends, withoutBG and Atlas Cloud, are also supported and send your images to external servers. Using it means a terminal, a folder of pictures and a cutout for each one in seconds."] },
+  { slug: "withoutbg", name: "withoutBG", cat: "remove-bg", size: "S", scope: "tool", url: "https://withoutbg.com",
+    one: "Open model weights and a Mac app for removing backgrounds locally, with a paid API beside them.", replaces: "remove.bg",
+    price: "Free to run locally; hosted API with 50 free credits", source: "Open source SDK (Apache-2.0), open weights under their own terms", platforms: "Mac app, Python, Docker, web",
+    tags: ["Open weights", "Runs locally", "Paid API"], s: [4, 5, 4, 3, 4, 4],
+    body: ["Many services give you a free taste and sell you the rest, and withoutBG publishes its model weights and sells a hosted API next to them. The site says you can run the open model with Python, Docker or a macOS app with no API key, and that the weights are published in ONNX format on Hugging Face.",
+      "withoutBG scores a 5 on lock-in, a 4 on footprint, self-direction, longevity and delivery and a 3 on power. The Python SDK is Apache-2.0 and has about 1,300 stars on GitHub, and the repository says the open model carries further terms, the withoutBG Open Model License, Meta's DINOv3 licence for the backbone weights and MIT for BiRefNet. The Mac app does drag-and-drop batches and offers a local API for tools such as GIMP and Blender, and there is a GIMP 3 plugin.",
+      "The hosted Pro Model API runs in Frankfurt, gives new accounts 50 free credits and then charges for credit packs or a subscription, and the Pro Model Self-Host licence costs €3,600 plus VAT as a one-off fee. The site says API images are processed in memory and discarded and are not used for training. Living with it means a Mac app that cuts out a folder of photos without a network."] },
+  { slug: "backgroundremover", name: "backgroundremover", cat: "remove-bg", size: "S", scope: "tool", url: "https://github.com/nadermx/backgroundremover",
+    one: "A command-line tool that removes backgrounds from images and from video.", replaces: "remove.bg",
+    price: "Free", source: "Open source (MIT, models Apache-2.0)", platforms: "Linux, Windows, Docker, with Python, PyTorch and ffmpeg",
+    tags: ["Open source", "Command line", "Video"], s: [3, 5, 3, 4, 4, 4],
+    body: ["Cutting a subject out of a video frame by frame is called rotoscoping, and it used to be a job for a patient animator. backgroundremover does it with one command, and its README lists .mp4, .mov, .webm, .ogg and .gif inputs and transparent .mov, .webm or .gif outputs alongside plain images.",
+      "backgroundremover scores a 5 on lock-in, a 4 on power, longevity and delivery and a 3 on footprint and self-direction. The code is MIT licensed, the models are Apache 2.0, and the repository has about 8,200 stars and 190 commits. You install it with pip and it needs Python, PyTorch and ffmpeg 4.4 or newer, runs on a CUDA graphics card when there is one and on the processor otherwise, and can also run as a local HTTP server.",
+      "Johnathan Nader maintains it and built it to power BackgroundRemoverAI.com, and the README lists Lucas Nestler, Tim Scarfe and Daniel Gatis as other copyright holders. Using it means installing a few developer tools once and then pointing it at a folder of clips."] },
+  { slug: "imgly-background-removal", name: "IMG.LY Background Removal", cat: "remove-bg", size: "M", scope: "gadget", url: "https://github.com/imgly/background-removal-js",
+    one: "A JavaScript library that removes backgrounds inside the browser tab.", replaces: "remove.bg",
+    price: "Free under AGPL-3.0; other licences on request", source: "Open source (AGPL-3.0)", platforms: "Browser, Node.js",
+    tags: ["Open source", "Library", "For developers"], s: [4, 4, 2, 3, 3, 4],
+    body: ["Most background removers take your photo somewhere else to do the work, and this one is a library that does it in the browser tab. IMG.LY publishes it as an npm package that removes image backgrounds directly in the browser, with a separate Node.js package for servers.",
+      "IMG.LY Background Removal scores a 4 on footprint, lock-in and delivery, a 3 on power and longevity and a 2 on self-direction. It is licensed AGPL-3.0, the repository says IMG.LY can be contacted about other licensing options, and it has about 7,400 stars. The company IMG.LY maintains it.",
+      "It is a building block rather than an app, so using it means writing a web page around it. It suits someone who wants cutouts inside their own tool without sending pictures to anyone."] },
 ];
 
 const BENCH = [
@@ -1891,9 +1920,21 @@ const BENCH = [
     body: ["Suppose you spent a year decorating a rented flat under rules that said nothing could leave the building, and you have the shape of the deal Wix offers. Creating a site is free, and the help page says a Wix site has to be hosted and operated on Wix's servers, because its architecture does not support external hosting.",
       "The plans page lists Light at $17 a month, Core at $29, Business at $39 and Business Elite at $159, all as yearly prices, with 2 GB, 50 GB, 100 GB and unlimited storage and room for 2, 5, 10 and 100 collaborators. Prices vary by location, and a Premium plan lets you connect your own domain and remove Wix branding. Most plans include a voucher for one year of a free domain, which only works on a new domain bought from Wix.",
       "The one workaround Wix describes is embedding the site somewhere else, and it says it cannot provide support for that and may lose control of how the site looks or works. Wix scores a 1 on Lock-in and a 4 on Delivery, since it gets a working site up with little effort. Compare it with the tools in Websites."] },
+  { slug: "remove-bg", name: "remove.bg", cat: "remove-bg", size: "XL", scope: "tool", url: "https://www.remove.bg",
+    one: "The one-click background remover that is leaving the web to live inside Canva.", replaces: "The tool the background removers here are measured against",
+    price: "Standalone site closes on 1 December 2026", source: "Closed source", platforms: "Web, mobile app, API",
+    tags: ["Benchmark", "Closed source", "Closing"], s: [2, 2, 3, 1, 1, 4],
+    body: ["Removing the background from a photo used to mean tracing around the subject for an hour with a pen tool, and remove.bg made it one upload. Its home page now carries a notice that its background removal is moving to Canva and that the standalone website will no longer be available from 1 December 2026 at 9:00am CET.",
+      "Canva acquired remove.bg in 2021, according to AlternativeTo. The page describes bulk editing of up to 500 images per minute, integrations with Figma, Photoshop and Zapier, a mobile app and an AI background generator, and the site links to API documentation. Photos go to remove.bg's servers to be processed.",
+      "remove.bg scores a 4 on Delivery, a 3 on Self-direction, a 2 on Footprint and Lock-in and a 1 on Power and Longevity, because the decision to close the site belongs to Canva and the standalone product will not outlast the year. Compare it with the tools in Remove backgrounds."] },
 ].map(t => Object.assign(t, { bench: true }));
 
 const HL = {
+"rembg": ["A command, Python library or server that cuts backgrounds out of images locally", "MIT licensed, about 25,300 stars, models download on first use", "The default model needs a paid agreement for commercial use"],
+"withoutbg": ["Open weights and a Mac app that remove backgrounds without a network", "SDK is Apache-2.0; the hosted API gives 50 free credits", "Pro Model Self-Host costs 3,600 euros plus VAT, once"],
+"backgroundremover": ["Removes backgrounds from images and from video, from one command", "MIT code and Apache 2.0 models, about 8,200 stars", "Needs Python, PyTorch and ffmpeg"],
+"imgly-background-removal": ["A JavaScript library that removes backgrounds inside the browser", "AGPL-3.0, with other licences from IMG.LY on request", "A building block for developers, not an app"],
+"remove-bg": ["The one-click background remover owned by Canva since 2021", "Its standalone site closes on 1 December 2026", "Background removal is moving into Canva"],
 "wordpress": ["Free publishing software under the GPL, run on your own host", "Themes and plugins add a shop, forms or memberships", "Automattic and WP Engine are in a legal dispute over WordPress.org"],
 "publii": ["A desktop app that builds a static site on your own computer", "GPL-3.0, publishes to GitHub Pages, Netlify, S3 or FTP", "Themes come free and premium"],
 "silex": ["A visual builder for static sites from a French non-profit", "AGPL, free, with hosting included on the official instance", "Start at v3.silex.me or self-host"],
@@ -2150,7 +2191,8 @@ const HL = {
 const total = t => t.s.reduce((a, b) => a + b, 0);
 const band = n => n >= 25 ? "Convivial" : n >= 18 ? "Leaning convivial" : n >= 10 ? "Mixed" : "Restrictive";
 const catOf = id => CATS.find(c => c.id === id);
-const toolsIn = id => TOOLS.filter(t => t.cat === id).sort((a, b) => total(b) - total(a));
+const toolsIn = id => TOOLS.filter(t => t.cat === id || (catOf(t.cat) || {}).parent === id).sort((a, b) => total(b) - total(a));
+const childCats = id => CATS.filter(c => c.parent === id);
 const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 const view = document.getElementById("view");
 let featureIndex = Math.floor(Math.random() * TOOLS.length);
@@ -2177,8 +2219,14 @@ function shot(t) {
     <img src="${esc(A(w[960]))}" srcset="${esc(A(w[480]))} 480w, ${esc(A(w[960]))} 960w, ${esc(A(w[1600]))} 1600w" sizes="(min-width: 900px) 640px, 100vw" alt="${esc(im.shot ? im.alt : "Preview image for " + t.name)}" loading="lazy" width="960" height="600"></figure>
     <p class="shot-credit">${kind} from ${esc(host)}, taken ${day}, shown to help you recognise the tool. It belongs to its maker. <a href="#about">Ask us to remove it</a>.</p>`;
 }
+const DISCLOSURES = {
+  author: { label: "Made by the author", note: "This tool is made by the author of this site. It is scored on the same six questions, from the same kind of public sources, as every other tool here." },
+  sponsored: { label: "Sponsored", note: "The maker paid for this listing. It is scored on the same six questions, from the same kind of public sources, as every other tool here." }
+};
+const discBadge = t => t.disclosure && DISCLOSURES[t.disclosure] ? `<span class="disc">${esc(DISCLOSURES[t.disclosure].label)}</span>` : "";
+const discNote = t => t.disclosure && DISCLOSURES[t.disclosure] ? `<p class="disc-note"><b>${esc(DISCLOSURES[t.disclosure].label)}.</b> ${esc(DISCLOSURES[t.disclosure].note)}</p>` : "";
 function chips(t) {
-  return `<div class="chips"><span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}</div>`;
+  return `<div class="chips">${discBadge(t)}<span class="chip">${t.size} · ${SCOPES[t.scope].name}</span>${t.tags.map(x => `<span class="chip">${esc(x)}</span>`).join("")}</div>`;
 }
 function row(t, rank) {
   const n = total(t);
@@ -2425,6 +2473,13 @@ const CATCOPY = {
       ["Can I export my Squarespace site?", "Squarespace exports a WordPress-format file with layout pages, one blog and text and image blocks, so {wordpress} is the natural place to import it."],
       ["Can I move a Wix site to another host?", "Wix says a site has to be hosted on its servers, so moving means rebuilding the pages, for example in {silex} or {webstudio}."],
       ["Which of these needs no coding?", "{silex}, {webstudio}, {carrd} and {publii} are built for people who do not write code, and {wordpress} works the same way once a host has installed it."]] },
+  "remove-bg": { h1: "Alternatives to remove.bg", lede: "Cut the background out of a photo on your own machine, with tools that keep working when a website closes.",
+    intro: ["remove.bg says its standalone website closes on 1 December 2026 and that its background removal is moving to Canva. The tools here run on your own computer or in your own browser, so the cutouts do not depend on a company keeping a site open. {rembg} is the best known, a command and Python library, {withoutbg} publishes open model weights and a Mac app, {backgroundremover} also handles video, and {imgly-background-removal} is a library for putting the feature in your own web page.",
+      "Models have their own licences, and some of the ones these tools can load limit commercial use, so check the one you use before you sell the results."],
+    choose: "Start with how you work. For a point-and-click Mac app, {withoutbg} is the closest. For scripts and batches, {rembg} is the usual choice, and {backgroundremover} adds video. To put cutouts inside your own web page, look at {imgly-background-removal}.",
+    faq: [["Is remove.bg shutting down?", "Its home page says the standalone website will no longer be available from 1 December 2026 and that background removal is moving to Canva."],
+      ["Is there a free alternative to remove.bg?", "Yes. {rembg}, {withoutbg}, {backgroundremover} and {imgly-background-removal} are free to run yourself."],
+      ["Can I remove a background without uploading my photo?", "Yes. {rembg}, {withoutbg} and {backgroundremover} run on your own machine, and {imgly-background-removal} runs inside the browser."]] },
   design: { h1: "Alternatives to Adobe Creative Cloud", lede: "Draw, lay out, edit and render without a subscription, in tools that keep your files open.",
     intro: ["Creative Cloud is rented software. Stop paying and your files still exist, but the programs that open them are gone, and the formats are built around Adobe's apps. Designers feel this most, because a project can outlive the licence it started under.",
       "The open field is stronger than it used to be. {inkscape} covers vector work, {gimp} and {krita} cover photos and painting, {darktable} handles RAW, {blender} covers 3D, {kdenlive} covers video, and {penpot} is an interface design tool that works in the browser. A newer group uses AI: {comfyui} runs image models on your own machine, and {artcraft} is an open-source studio for composing AI images and video. {affinity} is the one commercial option here, free to use but owned by Canva.",
@@ -2655,10 +2710,11 @@ function category(id) {
   const list = toolsIn(id), k = CATCOPY[id], bench = BENCH.filter(x => x.cat === id);
   let last = null, r = 0; const rk = new Map(list.map((t, i) => { if (total(t) !== last) { r = i + 1; last = total(t); } return [t.slug, r]; }));
   const vcls = n => n >= 25 ? 1 : n >= 18 ? 2 : n >= 10 ? 3 : 4;
-  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${esc(c.name)}</p>
+  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / <a href="#directory">Directory</a> / ${c.parent ? `<a href="#cat-${c.parent}">${esc(catOf(c.parent).name)}</a> / ` : ""}${esc(c.name)}</p>
   <div class="page-head" style="margin-top:14px"><h1>${esc(k ? k.h1 : c.name)}</h1><p>${esc(k ? k.lede : "Instead of " + c.instead + ".")}</p></div>
   <p class="list-note">Ranked by score out of 30, most convivial first.</p>
   <div class="tool-list">${list.map(t => row(t, rk.get(t.slug))).join("")}</div>
+  ${childCats(id).length ? `<section class="compare" aria-label="Smaller guides"><h2>Smaller guides</h2><p>Narrower jobs within ${esc(c.name)}, each with its own comparison.</p><div class="guide-list">${childCats(id).map(g => `<a class="guide-card" href="#cat-${g.id}"><b>${esc(CATCOPY[g.id] ? CATCOPY[g.id].h1 : g.name)}</b><small>${toolsIn(g.id).slice(0, 5).map(x => esc(x.name)).join(", ")}</small></a>`).join("")}</div></section>` : ""}
   ${FEES[id] ? feeTable(FEES[id]) : ""}
   ${bench.length ? `<section class="compare" aria-label="For comparison"><h2>For comparison</h2><p>The big names these tools are measured against. We review them as benchmarks, so they sit outside the directory.</p><div class="cmp-grid">${bench.map(x => `<a class="bcard" href="#bench-${x.slug}">${logo(x, "sm")}<span class="cmp-t"><b>${esc(x.name)}</b><small>Benchmark review</small></span><span class="cmp-s"><b>${total(x)}<span>/30</span></b><small class="verdict-mini v${vcls(total(x))}">${band(total(x))}</small></span></a>`).join("")}</div></section>` : ""}
   ${k ? `<div class="prose about-cat"><h2>About these tools</h2>${k.intro.map(p => `<p>${linkify(p)}</p>`).join("")}<h2>How to choose</h2><p>${linkify(k.choose)}</p></div><section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2>${k.faq.map(([q, a]) => `<div class="qa"><h3>${esc(q)}</h3><p>${linkify(a)}</p></div>`).join("")}</section>` : ""}</div>`;
@@ -2682,7 +2738,7 @@ function directory(preset) {
     ${grp("verdict", "Verdict", [["all", "Any"], ["leaning", "Leaning convivial or better"], ["convivial", "Convivial"]])}
   </div>
   <div class="tool-list">${list.length ? list.map(t => row(t, filt.sort === "score" ? ranks.get(t.slug) : 0)).join("") : (filt.size === "XL" ? '<p class="empty">The giants are not listed in the directory. See how a few of them score on the <a href="#benchmarks">benchmarks page</a>.</p>' : '<p class="empty">Nothing here yet. If you know a tool that fits, <a href="#submit">suggest it</a>.</p>')}</div>
-  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here.</p></div>`;
+  <div class="prose"><p>A total hides detail, so open a review to see how a tool did on each of the six questions, and pick within a category when you are choosing, because a password manager and a painting program do different jobs. The giants we reviewed as <a href="#benchmarks">benchmarks</a> are not ranked here. Smaller jobs live on the <a href="#guides">More guides</a> page.</p></div>`;
 }
 
 function badgeBox(t) {
@@ -2708,6 +2764,7 @@ function tool(slug, isBench) {
       <div class="review-head">${logo(t, "lg")}<div class="page-head"><h1>${esc(t.name)}</h1><p>${esc(t.one)}</p></div></div>
       ${isBench ? `<p class="bench-note"><b>Benchmark review.</b> Giants are reviewed rarely, to show what the tools in the directory are measured against. This one is not listed in the directory, and it is an example, not a recommendation. Scores are our opinion on the six questions, based on public sources and dated ${REVIEWED}.</p>` : `<p class="instead">Instead of <b>${esc(t.replaces)}</b></p>`}
       ${chips(t)}
+      ${isBench ? "" : discNote(t)}
       ${shot(t)}
       ${t.body.map(p => `<p>${esc(p)}</p>`).join("")}
       ${t.points && t.points.length ? `<ul class="points" aria-label="What makes ${esc(t.name)} unusual"><h2>What stands out</h2>${t.points.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
@@ -2734,6 +2791,7 @@ function tool(slug, isBench) {
 
 /* ---------- Compare pages: a giant next to the best small tool that can replace it ---------- */
 const PAIRS = [
+  { g: "remove-bg", t: "rembg", cost: "rembg is a command rather than a web page, so you work in a terminal, and its default model needs a paid agreement for commercial use.", move: "Install rembg, run it on one photo from your own folder, and compare the cutout with what remove.bg gave you." },
   { g: "squarespace", t: "wordpress", cost: "WordPress asks you to find a host and keep the software and plugins up to date, and Squarespace's export brings across only some page types.", move: "Export your Squarespace site as the WordPress-format file, import it into a WordPress install, and see which pages arrive." },
   { g: "wix", t: "silex", cost: "Silex is free and includes hosting on its official instance, and a Wix site cannot be exported, so each page gets rebuilt by hand.", move: "Rebuild your home page in Silex at v3.silex.me, publish it, and compare it with the Wix original." },
   { g: "microsoft-excel", t: "grist", cost: "Grist links tables the way a database does and stores each document in SQLite. The free plan caps a document at 5,000 records.", move: "Import one workbook that has grown too big for comfort, link its tabs as tables, and keep Excel for the sheets other people send you." },
@@ -3117,6 +3175,12 @@ function submit() {
   </div>`;
 }
 
+function guides() {
+  const hid = CATS.filter(c => c.hidden);
+  return `<div class="cat-page"><p class="crumbs"><a href="#home">Home</a> / More guides</p>
+  <div class="page-head" style="margin-top:14px"><h1>More guides</h1><p>Smaller jobs that do not need a place on the homepage. Each has its own comparison and its own benchmark review.</p></div>
+  <div class="guide-list">${hid.map(g => { const l = toolsIn(g.id); return `<a class="guide-card" href="#cat-${g.id}"><b>${esc(CATCOPY[g.id] ? CATCOPY[g.id].h1 : g.name)}</b><small>${g.parent ? esc(catOf(g.parent).name) + " · " : ""}${l.length} tools: ${l.slice(0, 5).map(x => esc(x.name)).join(", ")}${l.length > 5 ? ` +${l.length - 5}` : ""}</small></a>`; }).join("")}</div></div>`;
+}
 function suggestCategory() {
   return `<p class="crumbs"><a href="#home">Home</a> / Suggest a category</p>
   <div class="page-head" style="margin-top:14px"><h1>Suggest a category</h1><p>Is there a kind of software the directory doesn't cover yet? Tell us which one. We add a category when the best-known tool in it is not convivial and a better one exists, so the most useful suggestions name that leader and say what it gets wrong.</p></div>
@@ -3295,7 +3359,7 @@ function notFound() {
 }
 
 const SITE = "https://toolsforconviviality.org";
-const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", suggestcat: "/suggest-a-category/", governance: "/governance/" };
+const ROUTES = { home: "/", directory: "/directory/", benchmarks: "/benchmarks/", agents: "/for-agents/", improve: "/improve-my-conviviality-score/", what: "/what-is-conviviality/", method: "/how-we-score/", about: "/about/", submit: "/suggest/", impressum: "/legal-notice/", privacy: "/privacy/", thanks: "/thanks/", compare: "/compare/", ranking: "/directory/?order=score", involve: "/get-involved/", suggestcat: "/suggest-a-category/", governance: "/governance/", guides: "/guides/" };
 const idToPath = id => ROUTES[id] || (id.startsWith("cat-") ? `/category/${id.slice(4)}/` : id.startsWith("tool-") ? `/tools/${id.slice(5)}/` : id.startsWith("bench-") ? `/benchmarks/${id.slice(6)}/` : id.startsWith("size-") ? `/size/${id.slice(5)}/` : id.startsWith("cmp-") ? `/compare/${id.slice(4)}/` : "/");
 function currentId() {
   let p = location.pathname.replace(/index\.html$/, ""); if (!p.endsWith("/")) p += "/";
@@ -3305,7 +3369,7 @@ function currentId() {
   return "__404";
 }
 const clip = (s, n) => s.length <= n ? s : s.slice(0, n - 1).replace(/\s+\S*$/, "") + "…";
-const APPCAT = { "websites": "BusinessApplication", "spreadsheets": "BusinessApplication", "slides": "BusinessApplication", "writing": "BusinessApplication", "donations": "BusinessApplication", "email-marketing": "BusinessApplication", "analytics": "BusinessApplication", "whiteboards": "BusinessApplication", "code": "DeveloperApplication", "local-ai": "UtilitiesApplication", "tts": "MultimediaApplication", "dictation": "UtilitiesApplication", "translate": "ReferenceApplication", "calendar": "BusinessApplication", "meet": "CommunicationApplication", "ai-images": "MultimediaApplication", notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
+const APPCAT = { "remove-bg": "DesignApplication", "websites": "BusinessApplication", "spreadsheets": "BusinessApplication", "slides": "BusinessApplication", "writing": "BusinessApplication", "donations": "BusinessApplication", "email-marketing": "BusinessApplication", "analytics": "BusinessApplication", "whiteboards": "BusinessApplication", "code": "DeveloperApplication", "local-ai": "UtilitiesApplication", "tts": "MultimediaApplication", "dictation": "UtilitiesApplication", "translate": "ReferenceApplication", "calendar": "BusinessApplication", "meet": "CommunicationApplication", "ai-images": "MultimediaApplication", notes: "BusinessApplication", files: "UtilitiesApplication", maps: "TravelApplication", search: "ReferenceApplication", news: "ReferenceApplication", passwords: "SecurityApplication", browsers: "BrowserApplication", apps: "UtilitiesApplication", video: "MultimediaApplication", music: "MultimediaApplication", home: "UtilitiesApplication", office: "BusinessApplication", photos: "MultimediaApplication", effects: "MultimediaApplication", social: "SocialNetworkingApplication", talk: "CommunicationApplication", collect: "ReferenceApplication", books: "ReferenceApplication", agents: "UtilitiesApplication", design: "DesignApplication", email: "CommunicationApplication" };
 function crumbs(items) { return { "@type": "BreadcrumbList", itemListElement: items.map(([name, path], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE + path })) }; }
 function listLd(list) { return { "@type": "ItemList", itemListElement: list.map((t, i) => ({ "@type": "ListItem", position: i + 1, url: SITE + idToPath("tool-" + t.slug), name: t.name })) }; }
 function seo(id) {
@@ -3341,6 +3405,7 @@ function seo(id) {
   if (id === "impressum") return out("Legal notice (Impressum)", "Legal notice for Tools for Conviviality.", { noindex: true });
   if (id === "suggestcat") return out("Suggest a category", "Tell us which kind of software the directory is missing, and which well-known tool in it is not convivial.", { noindex: true });
   if (id === "involve") return out("Get involved", "This project is new and could grow into something bigger. Share your ideas, your skills or your feedback on the directory. It is volunteer work, not a paid position.", { ld: [crumbs([["Home", "/"], ["Get involved", "/get-involved/"]])] });
+  if (id === "guides") return out("More guides", "Smaller comparisons that sit inside a bigger category, such as tools for removing the background from a photo.");
   if (id === "governance") return out("Governance", "Who decides what at Tools for Conviviality, and how that could change.", { noindex: true });
   if (id === "thanks") return out("Thank you", "Thank you for supporting Tools for Conviviality.", { noindex: true });
   if (id === "privacy") return out("Privacy policy", "This site sets no cookies and counts visits without tracking people.", { noindex: true });
@@ -3424,6 +3489,7 @@ function render() {
   else if (h.startsWith("cmp-")) { html = compare(h.slice(4)); nav = ""; }
   else if (h === "involve") { html = involve(); nav = ""; }
   else if (h === "suggestcat") { html = suggestCategory(); nav = ""; }
+  else if (h === "guides") { html = guides(); nav = ""; }
   else if (h === "governance") html = governance();
   else if (h === "thanks") html = thanks();
   else html = notFound();
